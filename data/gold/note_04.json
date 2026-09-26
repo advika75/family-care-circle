@@ -1,0 +1,175 @@
+{
+  "id": "note_04",
+  "source_file": "data/raw/note_04.txt",
+  "annotator": "manual (see data/gold/README.md)",
+  "entities": [
+    {
+      "text": "mild persistent asthma",
+      "label": "CONDITION",
+      "start": 80,
+      "end": 102
+    },
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 119,
+      "end": 124
+    },
+    {
+      "text": "wheezing",
+      "label": "SYMPTOM",
+      "start": 126,
+      "end": 134
+    },
+    {
+      "text": "chest tightness",
+      "label": "SYMPTOM",
+      "start": 139,
+      "end": 154
+    },
+    {
+      "text": "viral URI",
+      "label": "CONDITION",
+      "start": 163,
+      "end": 172
+    },
+    {
+      "text": "Shortness of breath",
+      "label": "SYMPTOM",
+      "start": 174,
+      "end": 193
+    },
+    {
+      "text": "albuterol",
+      "label": "MEDICATION",
+      "start": 229,
+      "end": 238
+    },
+    {
+      "text": "Asthma exacerbation",
+      "label": "CONDITION",
+      "start": 328,
+      "end": 347
+    },
+    {
+      "text": "viral upper respiratory infection",
+      "label": "CONDITION",
+      "start": 372,
+      "end": 405
+    },
+    {
+      "text": "Albuterol",
+      "label": "MEDICATION",
+      "start": 432,
+      "end": 441
+    },
+    {
+      "text": "90 mcg",
+      "label": "DOSAGE",
+      "start": 446,
+      "end": 452
+    },
+    {
+      "text": "2 puffs",
+      "label": "DOSAGE",
+      "start": 454,
+      "end": 461
+    },
+    {
+      "text": "every 4 hours",
+      "label": "FREQUENCY",
+      "start": 462,
+      "end": 475
+    },
+    {
+      "text": "as needed",
+      "label": "FREQUENCY",
+      "start": 476,
+      "end": 485
+    },
+    {
+      "text": "wheezing",
+      "label": "SYMPTOM",
+      "start": 490,
+      "end": 498
+    },
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 502,
+      "end": 507
+    },
+    {
+      "text": "Prednisolone",
+      "label": "MEDICATION",
+      "start": 511,
+      "end": 523
+    },
+    {
+      "text": "30 mg",
+      "label": "DOSAGE",
+      "start": 524,
+      "end": 529
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 533,
+      "end": 538
+    },
+    {
+      "text": "4 more days",
+      "label": "DURATION",
+      "start": 543,
+      "end": 554
+    },
+    {
+      "text": "Fluticasone",
+      "label": "MEDICATION",
+      "start": 558,
+      "end": 569
+    },
+    {
+      "text": "44 mcg",
+      "label": "DOSAGE",
+      "start": 570,
+      "end": 576
+    },
+    {
+      "text": "2 puffs",
+      "label": "DOSAGE",
+      "start": 578,
+      "end": 585
+    },
+    {
+      "text": "BID",
+      "label": "FREQUENCY",
+      "start": 586,
+      "end": 589
+    },
+    {
+      "text": "lips turn blue",
+      "label": "SYMPTOM",
+      "start": 695,
+      "end": 709
+    },
+    {
+      "text": "cannot speak full sentences",
+      "label": "SYMPTOM",
+      "start": 711,
+      "end": 738
+    },
+    {
+      "text": "albuterol",
+      "label": "MEDICATION",
+      "start": 743,
+      "end": 752
+    },
+    {
+      "text": "every 4 hours",
+      "label": "FREQUENCY",
+      "start": 776,
+      "end": 789
+    }
+  ]
+}

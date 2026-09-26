@@ -1,0 +1,8 @@
+TELEHEALTH VISIT NOTE (SYNTHETIC)
+Patient: 27 y/o female, not pregnant.
+Subjective: 2 days of dysuria, urinary frequency and urgency, and suprapubic pain. No fever, no flank pain, no vaginal discharge.
+Assessment: Acute uncomplicated cystitis (urinary tract infection).
+Plan:
+1. Nitrofurantoin 100 mg PO BID x 5 days. Take with food.
+2. Phenazopyridine 200 mg PO TID x 2 days for burning with urination; may turn urine orange.
+Increase water intake. Return or seek care for fever, flank pain, vomiting, or symptoms not improving after 48 hours.

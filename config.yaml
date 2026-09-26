@@ -1,0 +1,92 @@
+# Family Care Circle configuration. All paths are relative to the project root.
+
+# Generation backend: transformers | llama_cpp | mock
+# llama_cpp (4-bit GGUF) is the default because fp16 transformers models do not fit in 8 GB of RAM:
+# they get offloaded to disk and become unusably slow. Use transformers on 16 GB+ or a CUDA GPU.
+backend: llama_cpp
+
+# Hugging Face model for the "transformers" backend.
+model_id: Qwen/Qwen2.5-3B-Instruct
+# model_id: Qwen/Qwen2.5-7B-Instruct
+# model_id: meta-llama/Meta-Llama-3-8B-Instruct   # gated: requires `huggingface-cli login`
+
+# Local GGUF file for the "llama_cpp" backend.
+gguf_path: models/qwen2.5-3b-instruct-q4_k_m.gguf
+
+transformers:
+  load_in_4bit: false        # used only if bitsandbytes is installed and CUDA is available
+  torch_dtype: auto
+  device_map: auto
+
+llama_cpp:
+  n_ctx: 4096
+  n_gpu_layers: -1           # -1 = offload all layers (Metal/CUDA); 0 = CPU only
+
+mock:
+  fail_first: 0              # >0 makes the first N calls per persona return "" (exercises retries)
+
+generation:
+  max_new_tokens: 400
+  temperature: 0.2
+  top_p: 0.9
+  seed: 42
+
+# Per-persona overrides. required_labels = entity types that MUST appear in the output
+# (drives the retry loop and the fallback).
+personas:
+  patient_summary:
+    max_new_tokens: 512      # 350 truncated 8/12 Qwen2.5-3B summaries
+    required_labels: [MEDICATION, DOSAGE, FREQUENCY, DURATION]
+  caregiver_checklist:
+    max_new_tokens: 400
+    required_labels: [MEDICATION, DOSAGE, FREQUENCY, DURATION]
+  child_explanation:
+    max_new_tokens: 320      # headroom so the longer v1 prompt is not cut off in the v1-vs-v2 ablation
+    temperature: 0.3
+    required_labels: []
+
+max_retries: 2
+
+prompts:
+  inject_entities: true      # false = no MUST INCLUDE / entity context in prompts (ablation)
+  child_variant: v2          # v1 = original child prompt, v2 = strict rules (<8-word sentences, no names/numbers)
+
+ner:
+  use_hf_model: false
+  hf_model_id: d4data/biomedical-ner-all
+  hf_min_score: 0.6
+  # Maps the HF model's labels onto our schema; unmapped labels are dropped.
+  hf_label_map:
+    Medication: MEDICATION
+    Dosage: DOSAGE
+    Frequency: FREQUENCY
+    Duration: DURATION
+    Sign_symptom: SYMPTOM
+    Disease_disorder: CONDITION
+
+paths:
+  raw_dir: data/raw
+  gold_dir: data/gold
+  outputs_dir: data/outputs
+  results_dir: results
+  figures_dir: results/figures
+
+logging:
+  level: INFO
+
+# Ablations for scripts/run_ablations.py: name -> overrides (dotted keys; every key must already
+# exist above). One run per ablation writes data/outputs_<name>/ and results/ablations/<name>/;
+# with --seeds 0 1 2 each seed gets data/outputs_<name>_seed<k>/ and results/ablations/<name>/seed<k>/.
+# Persona-level settings (personas.<p>.temperature, ...) win over generation.*, so an ablation that
+# changes a generation setting must override them too (the runner warns otherwise).
+ablations:
+  baseline: {}
+  child_v1: {prompts.child_variant: v1}
+  no_ner_injection: {prompts.inject_entities: false}
+  temp_0.7:                  # persona-level temperatures win over generation.temperature, so set them too
+    generation.temperature: 0.7
+    personas.child_explanation.temperature: 0.7
+  no_retry: {max_retries: 0}
+  model_1.5b:
+    model_id: Qwen/Qwen2.5-1.5B-Instruct
+    gguf_path: models/qwen2.5-1.5b-instruct-q4_k_m.gguf   # used only with --backend llama_cpp

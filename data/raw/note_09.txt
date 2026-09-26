@@ -1,0 +1,10 @@
+BEHAVIORAL HEALTH FOLLOW-UP (SYNTHETIC)
+Patient: 39 y/o male.
+Subjective: Low mood, poor sleep, and loss of interest for 2 months. Episodes of anxiety at work. Denies suicidal ideation.
+Assessment: Major depressive disorder, moderate. Generalized anxiety disorder.
+Plan:
+1. Start sertraline 25 mg PO daily for 7 days, then increase to 50 mg PO daily.
+2. Hydroxyzine 25 mg PO TID PRN anxiety, max 3 doses per day.
+3. Melatonin 3 mg PO at bedtime as needed for sleep.
+Discussed that sertraline may take 4-6 weeks for full effect; possible nausea early on.
+Weekly therapy sessions for 12 weeks. Crisis line information provided. Follow up in 4 weeks.

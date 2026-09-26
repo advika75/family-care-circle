@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Models and caches
+models/
+*.gguf
+*.safetensors
+hf_cache/
+
+# Generated outputs (pipeline runs, ablations, figures)
+data/outputs*/
+results/figures/*.png
+results/ablations/**/figures/
+results/ablations_mock/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

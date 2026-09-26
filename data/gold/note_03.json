@@ -1,0 +1,121 @@
+{
+  "id": "note_03",
+  "source_file": "data/raw/note_03.txt",
+  "annotator": "manual (see data/gold/README.md)",
+  "entities": [
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 64,
+      "end": 76
+    },
+    {
+      "text": "headaches",
+      "label": "SYMPTOM",
+      "start": 130,
+      "end": 139
+    },
+    {
+      "text": "dizziness",
+      "label": "SYMPTOM",
+      "start": 149,
+      "end": 158
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 185,
+      "end": 195
+    },
+    {
+      "text": "Essential hypertension",
+      "label": "CONDITION",
+      "start": 307,
+      "end": 329
+    },
+    {
+      "text": "lisinopril",
+      "label": "MEDICATION",
+      "start": 362,
+      "end": 372
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 378,
+      "end": 383
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 384,
+      "end": 389
+    },
+    {
+      "text": "20 mg",
+      "label": "DOSAGE",
+      "start": 393,
+      "end": 398
+    },
+    {
+      "text": "once daily",
+      "label": "FREQUENCY",
+      "start": 399,
+      "end": 409
+    },
+    {
+      "text": "amlodipine",
+      "label": "MEDICATION",
+      "start": 423,
+      "end": 433
+    },
+    {
+      "text": "5 mg",
+      "label": "DOSAGE",
+      "start": 434,
+      "end": 438
+    },
+    {
+      "text": "once daily",
+      "label": "FREQUENCY",
+      "start": 439,
+      "end": 449
+    },
+    {
+      "text": "hydrochlorothiazide",
+      "label": "MEDICATION",
+      "start": 458,
+      "end": 477
+    },
+    {
+      "text": "12.5 mg",
+      "label": "DOSAGE",
+      "start": 478,
+      "end": 485
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 486,
+      "end": 491
+    },
+    {
+      "text": "twice daily",
+      "label": "FREQUENCY",
+      "start": 523,
+      "end": 534
+    },
+    {
+      "text": "14 days",
+      "label": "DURATION",
+      "start": 539,
+      "end": 546
+    },
+    {
+      "text": "dizziness",
+      "label": "SYMPTOM",
+      "start": 671,
+      "end": 680
+    }
+  ]
+}

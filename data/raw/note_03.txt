@@ -1,0 +1,12 @@
+INTERNAL MEDICINE CLINIC NOTE (SYNTHETIC)
+Patient: 64 y/o male, hypertension, here for BP recheck.
+Subjective: Occasional morning headaches and mild dizziness when standing quickly. No chest pain.
+Objective: BP 154/96 (repeat 150/94). HR 78. Labs: creatinine and potassium within normal limits.
+Assessment: Essential hypertension, not at goal.
+Plan:
+1. Increase lisinopril from 10 mg daily to 20 mg once daily.
+2. Continue amlodipine 5 mg once daily.
+3. Add hydrochlorothiazide 12.5 mg daily.
+4. Home blood pressure checks twice daily for 14 days; bring readings to follow-up.
+Low-sodium diet, limit alcohol, walk 30 minutes most days. Rise slowly from sitting to reduce dizziness.
+Follow up in 2 weeks with BMP.

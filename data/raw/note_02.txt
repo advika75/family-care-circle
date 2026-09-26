@@ -1,0 +1,12 @@
+PRIMARY CARE FOLLOW-UP (SYNTHETIC)
+Patient: 58 y/o female with type 2 diabetes mellitus and hyperlipidemia.
+Subjective: Reports fatigue, increased thirst and frequent urination over the past month. Diet adherence inconsistent.
+Objective: HbA1c 8.9% (prior 7.6%). BP 128/80. BMI 33.
+Assessment: Type 2 diabetes mellitus, suboptimally controlled. Hyperlipidemia.
+Plan:
+- Increase metformin from 500 mg BID to 1000 mg BID with meals.
+- Start empagliflozin 10 mg once daily in the morning.
+- Continue atorvastatin 20 mg nightly.
+- Check fasting blood glucose daily for 2 weeks and bring log to next visit.
+- Referral to diabetes education. Repeat HbA1c in 3 months.
+Counseled on hydration and signs of genital yeast infection with empagliflozin.

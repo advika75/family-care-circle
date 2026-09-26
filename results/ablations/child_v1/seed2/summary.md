@@ -1,0 +1,68 @@
+# Evaluation summary
+
+Samples: 12 | backend(s): llama_cpp
+
+Retention: `_first` = first attempt, `_model` = after retries but before the fallback, no suffix = final text (includes the fallback, so it is 100% by construction when a fallback was used).
+
+## Generation metrics (mean ± std over samples)
+
+| metric | mean | std |
+|---|---|---|
+| source_fkgl | 8.052 | 1.192 |
+| patient_summary_fkgl | 5.340 | 0.688 |
+| caregiver_checklist_fkgl | 6.889 | 1.469 |
+| child_explanation_fkgl | 4.514 | 0.732 |
+| patient_summary_fkgl_delta | -2.711 | 0.781 |
+| caregiver_checklist_fkgl_delta | -1.162 | 1.421 |
+| child_explanation_fkgl_delta | -3.537 | 0.886 |
+| source_fre | 54.023 | 9.385 |
+| patient_summary_fre | 79.293 | 4.217 |
+| caregiver_checklist_fre | 64.229 | 8.111 |
+| child_explanation_fre | 83.608 | 4.407 |
+| patient_summary_rouge1 | 0.288 | 0.039 |
+| caregiver_checklist_rouge1 | 0.457 | 0.071 |
+| child_explanation_rouge1 | 0.218 | 0.039 |
+| patient_summary_rougeL | 0.207 | 0.033 |
+| caregiver_checklist_rougeL | 0.298 | 0.080 |
+| child_explanation_rougeL | 0.162 | 0.038 |
+| patient_summary_retention_first | 0.773 | 0.111 |
+| caregiver_checklist_retention_first | 0.786 | 0.191 |
+| patient_summary_retention_model | 0.944 | 0.066 |
+| caregiver_checklist_retention_model | 0.994 | 0.021 |
+| patient_summary_retention | 1.000 | 0.000 |
+| caregiver_checklist_retention | 1.000 | 0.000 |
+| patient_summary_unsupported_numbers | 0.167 | 0.373 |
+| caregiver_checklist_unsupported_numbers | 0.083 | 0.276 |
+| child_explanation_unsupported_numbers | 0.167 | 0.553 |
+| patient_summary_unsupported_meds | 0.000 | 0.000 |
+| caregiver_checklist_unsupported_meds | 0.000 | 0.000 |
+| child_explanation_unsupported_meds | 0.000 | 0.000 |
+| patient_summary_truncation_rate | 0.000 | 0.000 |
+| caregiver_checklist_truncation_rate | 0.000 | 0.000 |
+| child_explanation_truncation_rate | 0.000 | 0.000 |
+| patient_summary_fallback | 0.500 | 0.500 |
+| caregiver_checklist_fallback | 0.083 | 0.276 |
+| child_explanation_fallback | 0.000 | 0.000 |
+| patient_summary_repetition | 0.167 | 0.373 |
+| caregiver_checklist_repetition | 0.000 | 0.000 |
+| child_explanation_repetition | 0.083 | 0.276 |
+| child_explanation_long_sentence_rate | 0.921 | 0.065 |
+| child_explanation_med_names | 2.083 | 1.187 |
+| child_explanation_numbers | 2.167 | 1.772 |
+| format_validity_rate | 1.000 | nan |
+| json_parse_rate | 1.000 | nan |
+| total_retries | 2.667 | 1.247 |
+| fallbacks | 0.583 | 0.640 |
+| latency_total_sec | 81.423 | 19.883 |
+
+## NER vs gold (6 docs)
+
+| label | precision_exact | precision_relaxed | recall_exact | recall_relaxed | f1_exact | f1_relaxed |
+|---|---|---|---|---|---|---|
+| CONDITION | 0.765 | 0.941 | 0.812 | 1.000 | 0.788 | 0.970 |
+| DOSAGE | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 |
+| DURATION | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 |
+| FREQUENCY | 0.966 | 0.966 | 1.000 | 1.000 | 0.982 | 0.982 |
+| MEDICATION | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 |
+| MICRO | 0.959 | 0.979 | 0.959 | 0.979 | 0.959 | 0.979 |
+| SYMPTOM | 0.978 | 0.978 | 0.938 | 0.938 | 0.957 | 0.957 |

@@ -1,0 +1,10 @@
+CARDIOLOGY CLINIC NOTE (SYNTHETIC)
+Patient: 71 y/o female with new atrial fibrillation.
+Subjective: Palpitations and exertional fatigue for 3 weeks. Denies syncope.
+Objective: HR 112, irregularly irregular. Echo: preserved EF.
+Assessment: Atrial fibrillation with rapid ventricular response; CHA2DS2-VASc 4.
+Plan:
+1. Start apixaban 5 mg PO BID for stroke prevention. Do not skip doses.
+2. Start metoprolol succinate 50 mg PO once daily for rate control.
+3. Avoid NSAIDs such as ibuprofen while on apixaban; use acetaminophen 500 mg q6h PRN for pain.
+Report any unusual bleeding, black stools, or dizziness. Holter monitor for 48 hours. Follow up in 4 weeks.

@@ -1,0 +1,139 @@
+{
+  "id": "note_02",
+  "source_file": "data/raw/note_02.txt",
+  "annotator": "manual (see data/gold/README.md)",
+  "entities": [
+    {
+      "text": "type 2 diabetes mellitus",
+      "label": "CONDITION",
+      "start": 63,
+      "end": 87
+    },
+    {
+      "text": "hyperlipidemia",
+      "label": "CONDITION",
+      "start": 92,
+      "end": 106
+    },
+    {
+      "text": "fatigue",
+      "label": "SYMPTOM",
+      "start": 128,
+      "end": 135
+    },
+    {
+      "text": "increased thirst",
+      "label": "SYMPTOM",
+      "start": 137,
+      "end": 153
+    },
+    {
+      "text": "frequent urination",
+      "label": "SYMPTOM",
+      "start": 158,
+      "end": 176
+    },
+    {
+      "text": "Type 2 diabetes mellitus",
+      "label": "CONDITION",
+      "start": 294,
+      "end": 318
+    },
+    {
+      "text": "Hyperlipidemia",
+      "label": "CONDITION",
+      "start": 345,
+      "end": 359
+    },
+    {
+      "text": "metformin",
+      "label": "MEDICATION",
+      "start": 378,
+      "end": 387
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 393,
+      "end": 399
+    },
+    {
+      "text": "BID",
+      "label": "FREQUENCY",
+      "start": 400,
+      "end": 403
+    },
+    {
+      "text": "1000 mg",
+      "label": "DOSAGE",
+      "start": 407,
+      "end": 414
+    },
+    {
+      "text": "BID",
+      "label": "FREQUENCY",
+      "start": 415,
+      "end": 418
+    },
+    {
+      "text": "empagliflozin",
+      "label": "MEDICATION",
+      "start": 439,
+      "end": 452
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 453,
+      "end": 458
+    },
+    {
+      "text": "once daily",
+      "label": "FREQUENCY",
+      "start": 459,
+      "end": 469
+    },
+    {
+      "text": "atorvastatin",
+      "label": "MEDICATION",
+      "start": 497,
+      "end": 509
+    },
+    {
+      "text": "20 mg",
+      "label": "DOSAGE",
+      "start": 510,
+      "end": 515
+    },
+    {
+      "text": "nightly",
+      "label": "FREQUENCY",
+      "start": 516,
+      "end": 523
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 555,
+      "end": 560
+    },
+    {
+      "text": "2 weeks",
+      "label": "DURATION",
+      "start": 565,
+      "end": 572
+    },
+    {
+      "text": "genital yeast infection",
+      "label": "CONDITION",
+      "start": 698,
+      "end": 721
+    },
+    {
+      "text": "empagliflozin",
+      "label": "MEDICATION",
+      "start": 727,
+      "end": 740
+    }
+  ]
+}

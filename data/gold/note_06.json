@@ -1,0 +1,133 @@
+{
+  "id": "note_06",
+  "source_file": "data/raw/note_06.txt",
+  "annotator": "manual (see data/gold/README.md)",
+  "entities": [
+    {
+      "text": "dysuria",
+      "label": "SYMPTOM",
+      "start": 94,
+      "end": 101
+    },
+    {
+      "text": "urinary frequency",
+      "label": "SYMPTOM",
+      "start": 103,
+      "end": 120
+    },
+    {
+      "text": "urgency",
+      "label": "SYMPTOM",
+      "start": 125,
+      "end": 132
+    },
+    {
+      "text": "suprapubic pain",
+      "label": "SYMPTOM",
+      "start": 138,
+      "end": 153
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 158,
+      "end": 163
+    },
+    {
+      "text": "flank pain",
+      "label": "SYMPTOM",
+      "start": 168,
+      "end": 178
+    },
+    {
+      "text": "vaginal discharge",
+      "label": "SYMPTOM",
+      "start": 183,
+      "end": 200
+    },
+    {
+      "text": "Acute uncomplicated cystitis",
+      "label": "CONDITION",
+      "start": 214,
+      "end": 242
+    },
+    {
+      "text": "urinary tract infection",
+      "label": "CONDITION",
+      "start": 244,
+      "end": 267
+    },
+    {
+      "text": "Nitrofurantoin",
+      "label": "MEDICATION",
+      "start": 279,
+      "end": 293
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 294,
+      "end": 300
+    },
+    {
+      "text": "BID",
+      "label": "FREQUENCY",
+      "start": 304,
+      "end": 307
+    },
+    {
+      "text": "5 days",
+      "label": "DURATION",
+      "start": 310,
+      "end": 316
+    },
+    {
+      "text": "Phenazopyridine",
+      "label": "MEDICATION",
+      "start": 337,
+      "end": 352
+    },
+    {
+      "text": "200 mg",
+      "label": "DOSAGE",
+      "start": 353,
+      "end": 359
+    },
+    {
+      "text": "TID",
+      "label": "FREQUENCY",
+      "start": 363,
+      "end": 366
+    },
+    {
+      "text": "2 days",
+      "label": "DURATION",
+      "start": 369,
+      "end": 375
+    },
+    {
+      "text": "burning with urination",
+      "label": "SYMPTOM",
+      "start": 380,
+      "end": 402
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 474,
+      "end": 479
+    },
+    {
+      "text": "flank pain",
+      "label": "SYMPTOM",
+      "start": 481,
+      "end": 491
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 493,
+      "end": 501
+    }
+  ]
+}

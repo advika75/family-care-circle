@@ -1,0 +1,11 @@
+URGENT CARE NOTE (SYNTHETIC)
+Patient: 45 y/o male, nonsmoker.
+HPI: 4 days of productive cough, fever to 102 F, fatigue and pleuritic chest pain. No hypoxia.
+Exam: Crackles right lower lobe. SpO2 95%. CXR: right lower lobe infiltrate.
+Assessment: Community-acquired pneumonia, outpatient management appropriate.
+Plan:
+1. Amoxicillin-clavulanate 875 mg PO BID x 7 days.
+2. Azithromycin 500 mg PO on day 1, then 250 mg PO daily for 4 days.
+3. Benzonatate 100 mg PO TID PRN cough.
+4. Acetaminophen 650 mg PO every 6 hours as needed for fever.
+Rest, fluids. Recheck in 48-72 hours or sooner if shortness of breath or confusion.

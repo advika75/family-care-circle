@@ -1,0 +1,11 @@
+PEDIATRIC EMERGENCY DEPARTMENT DISCHARGE (SYNTHETIC)
+Patient: 9 y/o female with mild persistent asthma.
+HPI: 2 days of cough, wheezing and chest tightness after a viral URI. Shortness of breath with activity.
+ED course: Received albuterol nebulizer x 3 and oral steroid; improved, SpO2 97% on room air at discharge.
+Assessment: Asthma exacerbation, moderate, triggered by viral upper respiratory infection.
+Discharge medications:
+- Albuterol HFA 90 mcg, 2 puffs every 4 hours as needed for wheezing or cough.
+- Prednisolone 30 mg PO daily for 4 more days.
+- Fluticasone 44 mcg, 2 puffs BID; rinse mouth after use.
+Use spacer with all inhalers. Follow up with pediatrician in 2-3 days.
+Return if lips turn blue, cannot speak full sentences, or albuterol needed more often than every 4 hours.

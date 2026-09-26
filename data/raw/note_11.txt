@@ -1,0 +1,11 @@
+HEART FAILURE CLINIC NOTE (SYNTHETIC)
+Patient: 68 y/o male with heart failure with reduced ejection fraction (EF 30%).
+Subjective: 4 lb weight gain in 1 week, ankle swelling, and shortness of breath when lying flat.
+Assessment: Heart failure, mild volume overload.
+Plan:
+1. Increase furosemide to 40 mg PO BID for 3 days, then return to 40 mg PO daily.
+2. Continue carvedilol 6.25 mg PO BID.
+3. Continue sacubitril-valsartan 24/26 mg PO BID.
+4. Potassium chloride 20 mEq PO daily while on the higher furosemide dose.
+Weigh yourself every morning; call if weight rises more than 2 lb in a day. Limit fluids to 2 liters daily and salt to 2 grams daily.
+Recheck BMP in 1 week.

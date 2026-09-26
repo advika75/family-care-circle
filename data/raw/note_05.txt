@@ -1,0 +1,11 @@
+POST-OPERATIVE DISCHARGE INSTRUCTIONS (SYNTHETIC)
+Patient: 34 y/o female, POD 1 s/p laparoscopic appendectomy for acute appendicitis.
+Hospital course: Uncomplicated. Tolerating diet, ambulating, pain controlled.
+Discharge medications:
+1. Acetaminophen 1000 mg PO q8h for 7 days.
+2. Oxycodone 5 mg PO q6h PRN severe pain, for up to 3 days. Do not drive while taking.
+3. Ondansetron 4 mg PO q8h PRN nausea.
+4. Docusate 100 mg PO BID while taking oxycodone to prevent constipation.
+Wound care: Keep incisions clean and dry; may shower after 48 hours. No lifting over 10 lbs for 2 weeks.
+Call surgeon for fever > 101 F, worsening abdominal pain, redness or drainage from incisions, or vomiting.
+Follow up in surgery clinic in 2 weeks.

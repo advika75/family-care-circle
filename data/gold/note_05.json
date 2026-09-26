@@ -1,0 +1,175 @@
+{
+  "id": "note_05",
+  "source_file": "data/raw/note_05.txt",
+  "annotator": "manual (see data/gold/README.md)",
+  "entities": [
+    {
+      "text": "acute appendicitis",
+      "label": "CONDITION",
+      "start": 114,
+      "end": 132
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 195,
+      "end": 199
+    },
+    {
+      "text": "Acetaminophen",
+      "label": "MEDICATION",
+      "start": 238,
+      "end": 251
+    },
+    {
+      "text": "1000 mg",
+      "label": "DOSAGE",
+      "start": 252,
+      "end": 259
+    },
+    {
+      "text": "q8h",
+      "label": "FREQUENCY",
+      "start": 263,
+      "end": 266
+    },
+    {
+      "text": "7 days",
+      "label": "DURATION",
+      "start": 271,
+      "end": 277
+    },
+    {
+      "text": "Oxycodone",
+      "label": "MEDICATION",
+      "start": 282,
+      "end": 291
+    },
+    {
+      "text": "5 mg",
+      "label": "DOSAGE",
+      "start": 292,
+      "end": 296
+    },
+    {
+      "text": "q6h",
+      "label": "FREQUENCY",
+      "start": 300,
+      "end": 303
+    },
+    {
+      "text": "PRN",
+      "label": "FREQUENCY",
+      "start": 304,
+      "end": 307
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 315,
+      "end": 319
+    },
+    {
+      "text": "3 days",
+      "label": "DURATION",
+      "start": 331,
+      "end": 337
+    },
+    {
+      "text": "Ondansetron",
+      "label": "MEDICATION",
+      "start": 369,
+      "end": 380
+    },
+    {
+      "text": "4 mg",
+      "label": "DOSAGE",
+      "start": 381,
+      "end": 385
+    },
+    {
+      "text": "q8h",
+      "label": "FREQUENCY",
+      "start": 389,
+      "end": 392
+    },
+    {
+      "text": "PRN",
+      "label": "FREQUENCY",
+      "start": 393,
+      "end": 396
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 397,
+      "end": 403
+    },
+    {
+      "text": "Docusate",
+      "label": "MEDICATION",
+      "start": 408,
+      "end": 416
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 417,
+      "end": 423
+    },
+    {
+      "text": "BID",
+      "label": "FREQUENCY",
+      "start": 427,
+      "end": 430
+    },
+    {
+      "text": "oxycodone",
+      "label": "MEDICATION",
+      "start": 444,
+      "end": 453
+    },
+    {
+      "text": "constipation",
+      "label": "SYMPTOM",
+      "start": 465,
+      "end": 477
+    },
+    {
+      "text": "2 weeks",
+      "label": "DURATION",
+      "start": 575,
+      "end": 582
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 601,
+      "end": 606
+    },
+    {
+      "text": "abdominal pain",
+      "label": "SYMPTOM",
+      "start": 626,
+      "end": 640
+    },
+    {
+      "text": "redness",
+      "label": "SYMPTOM",
+      "start": 642,
+      "end": 649
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 653,
+      "end": 661
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 681,
+      "end": 689
+    }
+  ]
+}

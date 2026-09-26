@@ -1,0 +1,175 @@
+{
+  "id": "note_01",
+  "source_file": "data/raw/note_01.txt",
+  "annotator": "manual (see data/gold/README.md)",
+  "entities": [
+    {
+      "text": "sore throat",
+      "label": "SYMPTOM",
+      "start": 77,
+      "end": 88
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 119,
+      "end": 124
+    },
+    {
+      "text": "sore throat",
+      "label": "SYMPTOM",
+      "start": 137,
+      "end": 148
+    },
+    {
+      "text": "difficulty swallowing",
+      "label": "SYMPTOM",
+      "start": 150,
+      "end": 171
+    },
+    {
+      "text": "headache",
+      "label": "SYMPTOM",
+      "start": 176,
+      "end": 184
+    },
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 202,
+      "end": 207
+    },
+    {
+      "text": "Decreased appetite",
+      "label": "SYMPTOM",
+      "start": 209,
+      "end": 227
+    },
+    {
+      "text": "rash",
+      "label": "SYMPTOM",
+      "start": 232,
+      "end": 236
+    },
+    {
+      "text": "Streptococcal pharyngitis",
+      "label": "CONDITION",
+      "start": 345,
+      "end": 370
+    },
+    {
+      "text": "strep throat",
+      "label": "CONDITION",
+      "start": 372,
+      "end": 384
+    },
+    {
+      "text": "Amoxicillin",
+      "label": "MEDICATION",
+      "start": 396,
+      "end": 407
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 408,
+      "end": 414
+    },
+    {
+      "text": "BID",
+      "label": "FREQUENCY",
+      "start": 418,
+      "end": 421
+    },
+    {
+      "text": "10 days",
+      "label": "DURATION",
+      "start": 424,
+      "end": 431
+    },
+    {
+      "text": "Ibuprofen",
+      "label": "MEDICATION",
+      "start": 485,
+      "end": 494
+    },
+    {
+      "text": "200 mg",
+      "label": "DOSAGE",
+      "start": 495,
+      "end": 501
+    },
+    {
+      "text": "q6h",
+      "label": "FREQUENCY",
+      "start": 505,
+      "end": 508
+    },
+    {
+      "text": "PRN",
+      "label": "FREQUENCY",
+      "start": 509,
+      "end": 512
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 513,
+      "end": 518
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 522,
+      "end": 526
+    },
+    {
+      "text": "Acetaminophen",
+      "label": "MEDICATION",
+      "start": 531,
+      "end": 544
+    },
+    {
+      "text": "325 mg",
+      "label": "DOSAGE",
+      "start": 545,
+      "end": 551
+    },
+    {
+      "text": "q4-6h",
+      "label": "FREQUENCY",
+      "start": 555,
+      "end": 560
+    },
+    {
+      "text": "as needed",
+      "label": "FREQUENCY",
+      "start": 561,
+      "end": 570
+    },
+    {
+      "text": "ibuprofen",
+      "label": "MEDICATION",
+      "start": 574,
+      "end": 583
+    },
+    {
+      "text": "drooling",
+      "label": "SYMPTOM",
+      "start": 719,
+      "end": 727
+    },
+    {
+      "text": "trouble breathing",
+      "label": "SYMPTOM",
+      "start": 729,
+      "end": 746
+    },
+    {
+      "text": "rash",
+      "label": "SYMPTOM",
+      "start": 768,
+      "end": 772
+    }
+  ]
+}

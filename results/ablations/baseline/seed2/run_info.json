@@ -1,0 +1,14 @@
+{
+  "name": "baseline",
+  "overrides": {},
+  "backend": "llama_cpp",
+  "model": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+  "notes_total": 12,
+  "notes_generated": 0,
+  "status": "ok",
+  "error": null,
+  "started_at": "2026-09-26T09:28:05+00:00",
+  "notes_skipped": 12,
+  "generation_sec": 0.0,
+  "runtime_sec": 0.4
+}

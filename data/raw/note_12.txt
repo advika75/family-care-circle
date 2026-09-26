@@ -1,0 +1,10 @@
+FAMILY MEDICINE NOTE (SYNTHETIC)
+Patient: 52 y/o female.
+HPI: 3 days of redness, warmth and swelling on the left lower leg after a garden scratch. Mild pain. No fever.
+Exam: 8 x 6 cm area of erythema, border marked with pen. No abscess.
+Assessment: Nonpurulent cellulitis of left lower leg.
+Plan:
+1. Cephalexin 500 mg PO QID x 7 days.
+2. Ibuprofen 400 mg PO q8h PRN pain, take with food.
+3. Elevate leg when resting.
+Return if redness spreads past pen line, fever, or streaking. Recheck in 2-3 days.

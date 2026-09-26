@@ -1,0 +1,11 @@
+PEDIATRIC URGENT CARE NOTE (SYNTHETIC)
+Patient: 7 y/o male. Chief complaint: sore throat x 2 days.
+HPI: Mother reports fever to 101.8 F, sore throat, difficulty swallowing and headache since Monday. No cough. Decreased appetite. No rash.
+Exam: Tonsillar exudates, tender anterior cervical lymphadenopathy. Rapid strep test positive.
+Assessment: Streptococcal pharyngitis (strep throat).
+Plan:
+1. Amoxicillin 500 mg PO BID x 10 days. Complete the full course even if feeling better.
+2. Ibuprofen 200 mg PO q6h PRN fever or pain.
+3. Acetaminophen 325 mg PO q4-6h as needed if ibuprofen not tolerated.
+Encourage fluids and soft foods. May return to school after 24 hours on antibiotics and fever-free.
+Return precautions: drooling, trouble breathing, unable to drink, or rash.
