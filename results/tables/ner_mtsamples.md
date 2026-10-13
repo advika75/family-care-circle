@@ -1,0 +1,1 @@
+**MTSamples NER (precision/recall/F1 vs gold): not available.** 30 of 30 selected notes have gold annotations, but none are marked 'complete' in the annotation manifest. Run scripts/annotate_mtsamples.py to complete some, then scripts/evaluate_mtsamples_ner.py.

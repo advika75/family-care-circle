@@ -152,6 +152,8 @@ python scripts/error_analysis.py            # data/outputs_baseline_seed0 → re
 python scripts/build_report_tables.py       # report/tables/*.md, filled into report/project_report.md
 python scripts/make_rating_sheet.py         # results/human_eval/rating_sheet.csv + answer_key.csv + RATER_GUIDE.md
 python scripts/aggregate_ratings.py         # results/human_eval/ratings_*.csv → report/tables/human_eval.md
+python scripts/build_results_tables.py      # results/tables/*.{csv,md,tex} + results/tables/figures/*.png
+python scripts/build_limitations.py         # report/limitations.md
 ```
 
 * **Error analysis:** failures fall into `missing_entity`, `fallback_used`, `format_or_retries`,
@@ -161,6 +163,17 @@ python scripts/aggregate_ratings.py         # results/human_eval/ratings_*.csv �
 * **Report tables:** `main`, `retention`, `ablations`, `ner` and `human_eval` replace the text between
   `<!-- TABLE:name -->` and `<!-- /TABLE:name -->`, so re-running never duplicates. With seeds, the per-note tables pool
   all baseline seeds and the ablation table shows mean ± std. Tables built from mock data carry a warning banner.
+* **Results tables (CSV/Markdown/LaTeX) and figures:** `build_results_tables.py` covers the synthetic ablations,
+  the real MTSamples generation metrics, and NER (synthetic, and MTSamples once any gold annotations are marked
+  `complete`) — each table states its dataset and note count, and a missing result file writes an explicit "not
+  available" table instead of a placeholder number. Figures: entity retention and fallback rate by condition
+  (synthetic), and Flesch-Kincaid grade per persona vs. the child persona's ~1st-grade target (both datasets,
+  whichever are available).
+* **Limitations draft:** `build_limitations.py` writes `report/limitations.md` from measured evidence (dataset
+  sizes, gold-annotation counts, hallucination-check failure counts, child FKGL, human-eval rater count) plus
+  fixed structural caveats: the rule-based NER's coverage ceiling (retention only checks what it found, so it can
+  overstate true factual coverage), the tiny synthetic set, FKGL as a weak comprehension proxy, the narrow
+  lexical hallucination checks, and the small (or not-yet-collected) human-eval sample.
 * **Human evaluation (CSV sheet):** raters get shuffled, blinded rows (sample id, persona, source note, text) and
   fill `clarity`, `warmth`, `factual_accuracy` (1–5) and `safety_concerns`. Repeat `--outputs-dir` to compare
   systems blind. Agreement is quadratic-weighted Cohen's κ for 2 raters, or mean pairwise κ for more. The answer

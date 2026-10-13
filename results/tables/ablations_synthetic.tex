@@ -1,0 +1,9 @@
+\begin{tabular}{llrrrrrrrrrrrrr}
+\toprule
+dataset & ablation & n\_notes & n\_seeds & fkgl\_delta\_patient\_summary & fkgl\_delta\_child\_explanation & retention\_patient\_overall & retention\_caregiver\_overall & retention\_patient\_first\_attempt & unsupported\_numbers\_patient\_summary & fallback\_rate & truncation\_rate\_patient\_summary & json\_validity\_rate & mean\_retries & mean\_latency\_sec \\
+\midrule
+Synthetic (12 notes x 3 seeds) & baseline & 12.000000 & 3 & -2.691751 & -4.892928 & 0.962831 & 0.997863 & 0.810328 & 0.138889 & 0.129630 & 0.000000 & 1.000000 & 2.138889 & 98.574444 \\
+Synthetic (12 notes x 3 seeds) & child\_v1 & 12.000000 & 3 & -2.691751 & -3.674335 & 0.962831 & 0.997863 & 0.810328 & 0.138889 & 0.129630 & 0.000000 & 1.000000 & 2.138889 & 73.890611 \\
+Synthetic (12 notes x 3 seeds) & no\_ner\_injection & 12.000000 & 3 & -2.584747 & -4.993985 & 0.883391 & 0.909577 & 0.692543 & 0.277778 & 0.305556 & 0.027778 & 1.000000 & 3.416667 & 86.124500 \\
+\bottomrule
+\end{tabular}
