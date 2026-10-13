@@ -11,7 +11,7 @@ from typing import Any
 from src.generator import Generator, build_generator
 from src.matching import unique_entities
 from src.ner import EntityExtractor, group_regimens
-from src.postprocess import generate_with_retries, parse_checklist, validate_output
+from src.postprocess import generate_with_retries, parse_checklist, redact_contradicted_dosages, validate_output
 from src.prompts import PERSONAS, build_messages
 from src.utils import read_text, set_seed
 
@@ -45,7 +45,7 @@ class FamilyCarePipeline:
         regimens = group_regimens(entities, text)
         record: dict[str, Any] = {"id": doc_id}
         retries, missing, first_missing, fallbacks, latency, params = {}, {}, {}, {}, {}, {}
-        truncated, truncated_attempts = {}, {}
+        truncated, truncated_attempts, redacted_dosages = {}, {}, {}
 
         for persona in PERSONAS:
             pcfg = self._persona_cfg(persona)
@@ -73,15 +73,19 @@ class FamilyCarePipeline:
                 source=text,
                 entities=entities,
             )
+            final_text, redacted = redact_contradicted_dosages(result.text, text)
+            if redacted:
+                result.fallback_used = True  # a contradicted dose is a hard validation failure
             latency[persona] = round(time.perf_counter() - t0, 3)
             retries[persona] = result.retries
             missing[persona] = [m["text"] for m in result.missing]
             first_missing[persona] = [m["text"] for m in result.first_missing]
             fallbacks[persona] = result.fallback_used
             truncated_attempts[persona] = attempt_flags
+            redacted_dosages[persona] = redacted
             # Truncation of the text that was kept (None if every attempt was empty).
             truncated[persona] = attempt_flags[result.used_attempt] if result.used_attempt is not None else None
-            record[persona] = parse_checklist(result.text) if persona == "caregiver_checklist" else result.text
+            record[persona] = parse_checklist(final_text) if persona == "caregiver_checklist" else final_text
             logger.info("[%s] %s done in %.2fs (retries=%d)", doc_id, persona, latency[persona], result.retries)
 
         errors = validate_output(record)
@@ -105,6 +109,7 @@ class FamilyCarePipeline:
                     "fallback_used": fallbacks,
                     "truncated": truncated,
                     "truncated_attempts": truncated_attempts,
+                    "redacted_dosages": redacted_dosages,
                     "latency_sec": latency,
                     "valid": not errors,
                     "validation_errors": errors,

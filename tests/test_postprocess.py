@@ -5,8 +5,10 @@ from __future__ import annotations
 from src.postprocess import (
     add_fallback,
     clean_output,
+    find_contradicted_dosages,
     generate_with_retries,
     parse_checklist,
+    redact_contradicted_dosages,
     validate_output,
 )
 
@@ -109,6 +111,52 @@ def test_hallucination_check_is_skipped_without_source():
     """Backward compatibility: callers that don't pass ``source`` see the old missing-only behavior."""
     result = generate_with_retries(lambda m: "Take aspirin.", [], [], "caregiver_checklist", max_retries=0)
     assert not result.fallback_used and result.retries == 0
+
+
+def test_find_contradicted_dosages_flags_wrong_directive_dose():
+    """Regression for mtsamples_Accidental_Celesta_Ingestion_-_ER_Visit: the source says Celesta
+    tablets are 40 mg each, but the caregiver draft instructed "give the patient 20 mg"."""
+    source = "Patient ingested two to three tablets of Celesta 40 mg per tablet."
+    text = "Give the patient 20 mg of Celesta in the morning, as prescribed by the doctor."
+    found = find_contradicted_dosages(text, source)
+    assert len(found) == 1 and found[0]["dose"] == "20 mg"
+
+
+def test_find_contradicted_dosages_accepts_matching_dose():
+    source = "Patient ingested two to three tablets of Celesta 40 mg per tablet."
+    text = "Give the patient 40 mg of Celesta in the morning."
+    assert find_contradicted_dosages(text, source) == []
+
+
+def test_find_contradicted_dosages_accepts_spelled_out_source_dose():
+    """A dose the rule-based NER would miss (spelled-out number, no digit) must still count as
+    supported, so a real fact is never redacted just because the extractor has a lexicon gap
+    (regression guard: this bit the first version of the check, see mtsamples_Carpal_Ligament_Release_-_2
+    and mtsamples_Acute_Inferior_Myocardial_Infarction, where "One mL" and "81 milligrams" are genuinely
+    in the source but were not extracted as DOSAGE entities)."""
+    source = "One mL of Celestone was introduced into the carpal tunnel."
+    text = "Give the patient 1 mL of Celestone."
+    assert find_contradicted_dosages(text, source) == []
+
+
+def test_find_contradicted_dosages_noop_without_source():
+    text = "Give the patient 20 mg of Celesta in the morning."
+    assert find_contradicted_dosages(text, "") == []
+
+
+def test_redact_contradicted_dosages_replaces_wrong_dose():
+    source = "Patient ingested two to three tablets of Celesta 40 mg per tablet."
+    text = "Give the patient 20 mg of Celesta in the morning, as prescribed by the doctor."
+    fixed, redacted = redact_contradicted_dosages(text, source)
+    assert redacted == ["20 mg"]
+    assert "20 mg" not in fixed and "the dose your care team prescribed" in fixed
+
+
+def test_redact_contradicted_dosages_leaves_correct_dose_alone():
+    source = "Patient ingested two to three tablets of Celesta 40 mg per tablet."
+    text = "Give the patient 40 mg of Celesta in the morning."
+    fixed, redacted = redact_contradicted_dosages(text, source)
+    assert redacted == [] and fixed == text
 
 
 def test_truncation_flag_follows_the_kept_attempt():

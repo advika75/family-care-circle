@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 from typing import Any, Callable
 
 from src.evaluator import unsupported_meds
-from src.matching import find_missing
+from src.matching import find_missing, normalize
 from src.prompts import PERSONAS, build_retry_messages
 
 logger = logging.getLogger(__name__)
@@ -22,6 +22,11 @@ _PREAMBLE_RE = re.compile(
 )
 _ROLE_PREFIX_RE = re.compile(r"^\s*(?:assistant|answer|output|response)\s*:\s*", re.IGNORECASE)
 _BULLET_RE = re.compile(r"^\s*(?:[-*•]|\d+[.)]|\[\s?[xX ]?\s?\])\s+")
+_DOSE_UNIT = r"mg|mcg|g|ml|meq|iu|units?"
+# A dosing verb followed, within a short gap, by a number + dose unit: "give ... 20 mg", "administer 5mL".
+_DOSE_DIRECTIVE_RE = re.compile(
+    rf"\b(?:give|administer|take|dose)\b[^.?!\n]{{0,40}}?(\d+(?:\.\d+)?)\s?({_DOSE_UNIT})\b", re.IGNORECASE
+)
 
 # Used only when every attempt came back empty.
 EMPTY_FALLBACK = {
@@ -90,6 +95,42 @@ def add_fallback(text: str, missing: list[dict[str, Any]], persona: str) -> str:
     listed = "; ".join(f"{m['text']} ({m['label'].lower()})" for m in missing)
     note = f"Important details from your care team's note: {listed}."
     return f"{text.strip()}\n\n{note}".strip()
+
+
+def find_contradicted_dosages(text: str, source: str) -> list[dict[str, Any]]:
+    """Directive dosing language ("give the patient 20 mg") whose dose appears nowhere in the source.
+
+    Checks the normalized source text directly rather than NER-extracted DOSAGE entities, since the
+    rule-based extractor misses spelled-out numbers and units ("81 milligrams", "One mL") that are
+    nonetheless genuinely in the note; grounding against entities alone would flag those as
+    contradictions and redact a fact that was actually correct.
+    """
+    if not text or not source:
+        return []
+    normalized_source = normalize(source)
+    found = []
+    for m in _DOSE_DIRECTIVE_RE.finditer(text):
+        dose = f"{m.group(1)} {m.group(2)}"
+        norm_dose = normalize(dose)
+        if not re.search(rf"(?<![a-z0-9]){re.escape(norm_dose)}(?![a-z0-9])", normalized_source):
+            found.append({"start": m.start(1), "end": m.end(2), "dose": dose})
+    return found
+
+
+def redact_contradicted_dosages(text: str, source: str) -> tuple[str, list[str]]:
+    """Replace a directive dose that appears nowhere in the source note with a safe placeholder.
+
+    A hard validation failure, not a retry: this runs on the attempt already kept (first-try success or
+    post-fallback), so a wrong dose never reaches the final output even if it slipped past the retry loop.
+    Returns the (possibly unchanged) text and the list of doses that were redacted.
+    """
+    contradictions = find_contradicted_dosages(text, source)
+    if not contradictions:
+        return text, []
+    out = text
+    for c in sorted(contradictions, key=lambda c: c["start"], reverse=True):
+        out = f"{out[:c['start']]}the dose your care team prescribed{out[c['end']:]}"
+    return out, [c["dose"] for c in contradictions]
 
 
 @dataclass

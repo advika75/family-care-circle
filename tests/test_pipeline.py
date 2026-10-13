@@ -49,6 +49,27 @@ def test_metadata_fields(sample_note, mock_config):
     assert record["id"] == "note_x" and record["entities"] and record["regimens"]
 
 
+def test_pipeline_redacts_contradicted_dosage_directive(mock_config):
+    """Regression for mtsamples_Accidental_Celesta_Ingestion_-_ER_Visit: a generated caregiver instruction
+    asserted "give 20 mg" when the note's only DOSAGE entity is 40 mg; the pipeline must not ship the
+    wrong directive, and must record it as a forced fallback."""
+    note = "Patient ingested Celesta 40 mg tablets. Mom should watch for drowsiness.\n"
+
+    class WrongDoseGenerator(MockGenerator):
+        def generate(self, messages, **overrides):
+            prompt = next(m["content"] for m in messages if m["role"] == "user" and "AUDIENCE:" in m["content"])
+            if "caregiver" in prompt.lower():
+                self.last_truncated = False
+                return "- Give the patient 20 mg of Celesta in the morning.\n- Watch for drowsiness."
+            return super().generate(messages, **overrides)
+
+    record = FamilyCarePipeline(mock_config, generator=WrongDoseGenerator()).run(note, "celesta")
+    checklist_text = " ".join(record["caregiver_checklist"])
+    assert "20 mg" not in checklist_text
+    assert record["metadata"]["fallback_used"]["caregiver_checklist"]
+    assert record["metadata"]["redacted_dosages"]["caregiver_checklist"] == ["20 mg"]
+
+
 def test_pipeline_uses_configured_child_variant(sample_note, mock_config):
     seen = []
 
