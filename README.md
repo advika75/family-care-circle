@@ -161,10 +161,25 @@ python scripts/aggregate_ratings.py         # results/human_eval/ratings_*.csv �
 * **Report tables:** `main`, `retention`, `ablations`, `ner` and `human_eval` replace the text between
   `<!-- TABLE:name -->` and `<!-- /TABLE:name -->`, so re-running never duplicates. With seeds, the per-note tables pool
   all baseline seeds and the ablation table shows mean ± std. Tables built from mock data carry a warning banner.
-* **Human evaluation:** raters get shuffled, blinded rows (sample id, persona, source note, text) and fill
-  `clarity`, `warmth`, `factual_accuracy` (1–5) and `safety_concerns`. Repeat `--outputs-dir` to compare systems blind.
-  Agreement is quadratic-weighted Cohen's κ for 2 raters, or mean pairwise κ for more. The answer key is never
-  overwritten without `--force`.
+* **Human evaluation (CSV sheet):** raters get shuffled, blinded rows (sample id, persona, source note, text) and
+  fill `clarity`, `warmth`, `factual_accuracy` (1–5) and `safety_concerns`. Repeat `--outputs-dir` to compare
+  systems blind. Agreement is quadratic-weighted Cohen's κ for 2 raters, or mean pairwise κ for more. The answer
+  key is never overwritten without `--force`.
+* **Human evaluation (local rating UI):** a second, UI-based workflow for rating the `baseline` vs.
+  `no_ner_injection` conditions on `factual_accuracy`, `completeness`, `readability` and `persona_suitability`
+  (1–5), plus a "missing or wrong medical fact" checkbox with a free-text note.
+
+  ```bash
+  python scripts/build_rating_set.py                         # results/human_eval/rating_set.json + answer_key.csv
+  python scripts/rate_outputs.py --rater alice                # open http://127.0.0.1:8766/ ; a second rater
+  python scripts/rate_outputs.py --rater bob --port 8767       #   runs this with a different --rater (and --port
+                                                                #   if running at the same time)
+  python scripts/aggregate_human_ratings.py                  # report/tables/human_eval_conditions.md
+  ```
+
+  Each rater's answers are saved incrementally to `results/human_eval/ratings_<rater>.json` (so a rater can stop
+  and resume) and the UI never loads the answer key, so condition labels stay hidden at the code level. Aggregation
+  reports per-condition-and-persona means, flag counts and quadratic-weighted Cohen's κ (0 or 1 rater: "n/a").
 
 ## Metrics
 
@@ -227,3 +242,7 @@ results/             metrics, ablations/, error_analysis.*, human_eval/
 tests/               one test file per src module; mock backend only
 report/              project_report.md (+ tables/)
 ```
+
+### Public Dataset Evaluation
+
+The synthetic dataset remains the controlled evaluation set. MTSamples is an external/public source of clinical transcription notes; public evaluation uses a reproducibly selected subset (up to 100 notes). Generation stays fully local. Gold annotations use the existing span-based JSON format and are only used for a manually annotated subset. Dataset files may need to be obtained separately depending on access and licensing. Place an authorized CSV at `data/public/mtsamples/source.csv`, then prepare notes with `python scripts/prepare_mtsamples.py`. Set `dataset: mtsamples` in `config.yaml` to run the configured pipeline and evaluation commands on that subset.

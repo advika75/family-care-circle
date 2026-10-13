@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import itertools
+import json
 import logging
 import math
 import random
@@ -23,6 +24,29 @@ SHEET_COLUMNS = ["sample_id", "persona", "source_note", "text", *RATING_METRICS,
 KEY_COLUMNS = ["sample_id", "system", "note_id", "persona"]
 SCALE = (1, 2, 3, 4, 5)
 
+# Dimensions for the UI-based condition rating set (build_condition_rating_set / rate_outputs.py), distinct
+# from the older clarity/warmth/factual_accuracy CSV sheet above, which make_rating_sheet still serves as-is.
+RATING_DIMENSIONS = ("factual_accuracy", "completeness", "readability", "persona_suitability")
+
+
+def _sample_blinded_items(
+    systems: dict[str, list[dict[str, Any]]], n_notes: int, seed: int, personas: Iterable[str] = PERSONAS
+) -> tuple[list[tuple[str, str, str]], dict[str, dict[str, dict[str, Any]]]]:
+    """Notes present in every system, sampled and shuffled into ``(system, note_id, persona)`` triples.
+
+    Shared by :func:`make_rating_sheet` and :func:`build_condition_rating_set` so both blind and shuffle
+    the same way. Also returns ``by_system`` (``{system: {note_id: record}}``) for looking up the text.
+    """
+    by_system = {name: {r["id"]: r for r in records} for name, records in systems.items()}
+    common = sorted(set.intersection(*(set(v) for v in by_system.values()))) if by_system else []
+    if not common:
+        raise ValueError("No note ids are shared by all systems.")
+    rng = random.Random(seed)
+    notes = sorted(rng.sample(common, min(n_notes, len(common))))
+    items = [(system, note, persona) for system in by_system for note in notes for persona in personas]
+    rng.shuffle(items)
+    return items, by_system
+
 
 def make_rating_sheet(
     systems: dict[str, list[dict[str, Any]]], n_notes: int = 6, seed: int = 42
@@ -33,14 +57,7 @@ def make_rating_sheet(
     contributes one row per system and persona. Sample ids are assigned after shuffling, so they carry
     no information about system, note or order.
     """
-    by_system = {name: {r["id"]: r for r in records} for name, records in systems.items()}
-    common = sorted(set.intersection(*(set(v) for v in by_system.values()))) if by_system else []
-    if not common:
-        raise ValueError("No note ids are shared by all systems.")
-    rng = random.Random(seed)
-    notes = sorted(rng.sample(common, min(n_notes, len(common))))
-    items = [(system, note, persona) for system in by_system for note in notes for persona in PERSONAS]
-    rng.shuffle(items)
+    items, by_system = _sample_blinded_items(systems, n_notes, seed)
     sheet_rows, key_rows = [], []
     for i, (system, note, persona) in enumerate(items, 1):
         record = by_system[system][note]
@@ -52,6 +69,30 @@ def make_rating_sheet(
                            "text": text, **{m: "" for m in RATING_METRICS}, "safety_concerns": ""})
         key_rows.append({"sample_id": sample_id, "system": system, "note_id": note, "persona": persona})
     return pd.DataFrame(sheet_rows, columns=SHEET_COLUMNS), pd.DataFrame(key_rows, columns=KEY_COLUMNS)
+
+
+def build_condition_rating_set(
+    systems: dict[str, list[dict[str, Any]]], n_notes: int = 6, seed: int = 42
+) -> tuple[list[dict[str, Any]], pd.DataFrame]:
+    """Blinded items for the local rating UI (``scripts/rate_outputs.py``), plus the answer key.
+
+    Unlike :func:`make_rating_sheet`, items carry no condition/system label at all (not even an empty
+    placeholder column for one) — the UI only ever sees ``sample_id``, ``persona``, ``source_note`` and
+    ``text``. The answer key (``[sample_id, system, note_id, persona]``) is returned separately and must
+    be kept away from raters.
+    """
+    items, by_system = _sample_blinded_items(systems, n_notes, seed)
+    rows, key_rows = [], []
+    for i, (system, note, persona) in enumerate(items, 1):
+        record = by_system[system][note]
+        sample_id = f"S{i:03d}"
+        text = persona_text(record, persona)
+        if persona == "caregiver_checklist":
+            text = "\n".join(f"- {line}" for line in text.splitlines())
+        rows.append({"sample_id": sample_id, "persona": persona,
+                     "source_note": record.get("source_text", ""), "text": text})
+        key_rows.append({"sample_id": sample_id, "system": system, "note_id": note, "persona": persona})
+    return rows, pd.DataFrame(key_rows, columns=KEY_COLUMNS)
 
 
 def rater_name(path: Path) -> str:
@@ -99,6 +140,84 @@ def load_ratings(paths: Iterable[Path], key: pd.DataFrame) -> tuple[pd.DataFrame
     return pd.DataFrame(long_rows), pd.DataFrame(concerns)
 
 
+def rating_set_paths(out_dir: str | Path) -> tuple[Path, Path]:
+    """(rating_set.json, answer_key.csv) paths for a human-eval output directory."""
+    out_dir = Path(out_dir)
+    return out_dir / "rating_set.json", out_dir / "answer_key.csv"
+
+
+def rater_json_path(out_dir: str | Path, rater: str) -> Path:
+    """Path to one rater's JSON ratings file: ``results/human_eval/ratings_<rater>.json``."""
+    return Path(out_dir) / f"ratings_{rater}.json"
+
+
+def read_rater_ratings(path: str | Path) -> dict[str, dict[str, Any]]:
+    """Read one rater's JSON file (``{sample_id: {scores, missing_or_wrong_fact, ...}}``), or ``{}``."""
+    path = Path(path)
+    if not path.is_file():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError(f"{path}: expected a JSON object keyed by sample_id")
+    return data
+
+
+def write_rater_rating(path: str | Path, sample_id: str, payload: dict[str, Any]) -> dict[str, Any]:
+    """Merge ``payload`` into one sample's entry in a rater's JSON file and save it (so progress survives
+    a restart). Returns the full updated ratings dict."""
+    path = Path(path)
+    ratings = read_rater_ratings(path)
+    ratings[sample_id] = payload
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(ratings, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return ratings
+
+
+def load_condition_ratings(
+    paths: Iterable[Path], key: pd.DataFrame, metrics: Iterable[str] = RATING_DIMENSIONS
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Read completed rater JSON files into long format ``[rater, sample_id, system, persona, metric, score]``.
+
+    Also returns rows with a missing/wrong-fact flag or a non-empty note:
+    ``[rater, sample_id, system, persona, flagged, note]``. Missing scores and samples not yet rated by a
+    given rater are simply absent, not an error; a score outside 1-5 is dropped with a warning.
+    """
+    long_rows, flags = [], []
+    key_idx = key.set_index("sample_id")
+    for path in paths:
+        path = Path(path)
+        rater = rater_name(path)
+        data = read_rater_ratings(path)
+        unknown = set(data) - set(key_idx.index)
+        if unknown:
+            raise ValueError(f"{path}: sample ids not in the answer key: {sorted(unknown)[:5]}")
+        dropped = 0
+        for sample_id, payload in data.items():
+            info = key_idx.loc[sample_id]
+            scores = payload.get("scores", {}) if isinstance(payload, dict) else {}
+            for metric in metrics:
+                if metric not in scores or scores[metric] in (None, ""):
+                    continue
+                try:
+                    score = int(scores[metric])
+                except (TypeError, ValueError):
+                    score = None
+                if score not in SCALE:
+                    dropped += 1
+                    continue
+                long_rows.append({"rater": rater, "sample_id": sample_id, "system": info["system"],
+                                  "persona": info["persona"], "metric": metric, "score": score})
+            flagged = bool(payload.get("missing_or_wrong_fact")) if isinstance(payload, dict) else False
+            note = str(payload.get("missing_or_wrong_fact_note", "")).strip() if isinstance(payload, dict) else ""
+            if flagged or note:
+                flags.append({"rater": rater, "sample_id": sample_id, "system": info["system"],
+                              "persona": info["persona"], "flagged": flagged, "note": note})
+        if dropped:
+            logger.warning("%s: dropped %d rating(s) outside 1-5 or not numeric.", path, dropped)
+    return (pd.DataFrame(long_rows, columns=["rater", "sample_id", "system", "persona", "metric", "score"]),
+            pd.DataFrame(flags, columns=["rater", "sample_id", "system", "persona", "flagged", "note"]))
+
+
 def summarize_ratings(ratings: pd.DataFrame) -> pd.DataFrame:
     """Mean, SD and count per system, persona and metric."""
     grouped = ratings.groupby(["system", "persona", "metric"])["score"]
@@ -114,11 +233,15 @@ def _kappa(a: list[int], b: list[int]) -> float:
     return float(value)
 
 
-def agreement(ratings: pd.DataFrame) -> pd.DataFrame:
-    """Inter-rater agreement per metric: quadratic-weighted Cohen's kappa (2 raters) or mean pairwise kappa."""
+def agreement(ratings: pd.DataFrame, metrics: Iterable[str] = RATING_METRICS) -> pd.DataFrame:
+    """Inter-rater agreement per metric: quadratic-weighted Cohen's kappa (2 raters) or mean pairwise kappa.
+
+    Gracefully reports "n/a (needs 2+ raters)" with a NaN kappa for 0 or 1 rater, and NaN for a metric
+    with fewer than 2 jointly-rated items, rather than raising.
+    """
     rows = []
     raters = sorted(ratings["rater"].unique()) if not ratings.empty else []
-    for metric in RATING_METRICS:
+    for metric in metrics:
         wide = ratings[ratings["metric"] == metric].pivot_table(index="sample_id", columns="rater", values="score")
         if len(raters) < 2:
             rows.append({"metric": metric, "raters": len(raters), "method": "n/a (needs 2+ raters)",
@@ -164,4 +287,32 @@ def ratings_markdown(summary: pd.DataFrame, agree: pd.DataFrame, concerns: pd.Da
         lines.append(f"| {r['metric']} | {r['raters']} | {r['method']} | {kappa} | {r['items']} |")
     lines += ["", f"_Mean ± SD of 1–5 ratings from {n_raters} rater(s), blinded to system. Safety flags = number of "
                   "non-empty safety-concern comments. κ: quadratic-weighted Cohen's kappa (ordinal scale)._"]
+    return "\n".join(lines)
+
+
+def condition_ratings_markdown(summary: pd.DataFrame, agree: pd.DataFrame, flags: pd.DataFrame, n_raters: int) -> str:
+    """Markdown tables for the condition rating set: per-condition means plus agreement and fact-flag counts."""
+    header = ["Condition", "Persona", "Factual accuracy", "Completeness", "Readability", "Persona suitability",
+              "Missing/wrong-fact flags"]
+    lines = ["| " + " | ".join(header) + " |", "|" + "|".join("---" for _ in header) + "|"]
+    for (system, persona), grp in summary.groupby(["system", "persona"], sort=False):
+        cells = [system, PRETTY.get(persona, persona)]
+        for metric in RATING_DIMENSIONS:
+            r = grp[grp["metric"] == metric]
+            if r.empty:
+                cells.append("–")
+            else:
+                m, s, n = r.iloc[0]["mean"], r.iloc[0]["std"], int(r.iloc[0]["n"])
+                cells.append(f"{m:.2f} ± {s:.2f} (n={n})" if s == s else f"{m:.2f} (n={n})")
+        n_flags = 0 if flags.empty else int(((flags["system"] == system) & (flags["persona"] == persona)
+                                              & flags["flagged"]).sum())
+        cells.append(str(n_flags))
+        lines.append("| " + " | ".join(cells) + " |")
+    lines += ["", "| Metric | Raters | Agreement | κ | Items |", "|---|---|---|---|---|"]
+    for _, r in agree.iterrows():
+        kappa = "–" if r["kappa"] != r["kappa"] else f"{r['kappa']:.2f}"
+        lines.append(f"| {r['metric']} | {r['raters']} | {r['method']} | {kappa} | {r['items']} |")
+    lines += ["", f"_Mean ± SD of 1-5 ratings from {n_raters} rater(s), blinded to condition. "
+                  "Missing/wrong-fact flags = number of samples where the rater checked that box. "
+                  "κ: quadratic-weighted Cohen's kappa (ordinal scale)._"]
     return "\n".join(lines)
