@@ -84,6 +84,33 @@ def test_validate_output():
     assert len(validate_output(bad)) == 2
 
 
+def test_retry_feedback_names_hallucinated_medication():
+    """Regression for mtsamples_Carotid_Cerebral_Arteriograms / mtsamples_Aortobifemoral_Bypass_-_1 /
+    mtsamples_Arterial_Imaging: the caregiver draft invented "aspirin" as a post-procedure instruction
+    though no medication was mentioned in the source note."""
+    source = "PROCEDURE: Carotid cerebral arteriogram. No medications were administered during the procedure."
+    outputs = iter([
+        "- Take aspirin daily to prevent clots.",
+        "- Watch the puncture site for bleeding or swelling.",
+    ])
+    seen = []
+
+    def fake(messages):
+        seen.append(messages)
+        return next(outputs)
+
+    result = generate_with_retries(fake, [{"role": "user", "content": "x"}], [], "caregiver_checklist",
+                                    max_retries=1, source=source, entities=[])
+    assert "aspirin" in seen[1][-1]["content"].lower()  # retry feedback names the invented drug
+    assert not result.fallback_used and "aspirin" not in result.text.lower()
+
+
+def test_hallucination_check_is_skipped_without_source():
+    """Backward compatibility: callers that don't pass ``source`` see the old missing-only behavior."""
+    result = generate_with_retries(lambda m: "Take aspirin.", [], [], "caregiver_checklist", max_retries=0)
+    assert not result.fallback_used and result.retries == 0
+
+
 def test_truncation_flag_follows_the_kept_attempt():
     outputs = iter([("Take amoxicillin 500 mg", True), ("Take amoxicillin 500 mg twice a day for 10 days.", False)])
     flags = []

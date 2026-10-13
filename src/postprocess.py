@@ -8,6 +8,7 @@ import re
 from dataclasses import dataclass, field
 from typing import Any, Callable
 
+from src.evaluator import unsupported_meds
 from src.matching import find_missing
 from src.prompts import PERSONAS, build_retry_messages
 
@@ -102,6 +103,7 @@ class GenerationResult:
     fallback_used: bool = False
     first_missing: list[dict[str, Any]] = field(default_factory=list)
     used_attempt: int | None = None  # 0-based index of the attempt whose text was kept (None: all empty)
+    hallucinated_meds: list[str] = field(default_factory=list)
 
 
 def generate_with_retries(
@@ -110,14 +112,20 @@ def generate_with_retries(
     required: list[dict[str, Any]],
     persona: str,
     max_retries: int = 2,
+    source: str = "",
+    entities: list[dict[str, Any]] = (),
 ) -> GenerationResult:
-    """Generate, clean and check a persona text, retrying with feedback when it is empty or incomplete.
+    """Generate, clean and check a persona text, retrying with feedback when it is empty, incomplete or
+    mentions a medication the note doesn't.
 
-    Retries happen when the cleaned output is empty or misses any ``required`` entity. After
-    ``max_retries`` retries, the best attempt (fewest missing entities) is kept and the missing
-    entities are appended by :func:`add_fallback`.
+    Retries happen when the cleaned output is empty, misses any ``required`` entity, or (when ``source``
+    is given) names a medication that neither the source text nor ``entities`` supports. After
+    ``max_retries`` retries, the attempt with the fewest combined issues is kept and the missing entities
+    are appended by :func:`add_fallback`. Hallucinated medications are reported but not stripped: the
+    ``source``/``entities`` check is only engaged when ``source`` is non-empty, so callers that don't pass
+    it see unchanged behavior.
     """
-    best: tuple[str, list[dict[str, Any]], int] | None = None
+    best: tuple[str, int, list[dict[str, Any]], list[str], int] | None = None
     first_missing: list[dict[str, Any]] | None = None
     convo = messages
     attempts = 0
@@ -125,16 +133,22 @@ def generate_with_retries(
         attempts = attempt + 1
         text = clean_output(generate_fn(convo), persona)
         missing = find_missing(text, required) if text else list(required)
+        hallucinated = unsupported_meds(text, source, entities)["unsupported"] if text and source else []
         if first_missing is None:
             first_missing = missing
-        if text and (best is None or len(missing) < len(best[1])):
-            best = (text, missing, attempt)
-        if text and not missing:
+        issues = len(missing) + len(hallucinated)
+        if text and (best is None or issues < best[1]):
+            best = (text, issues, missing, hallucinated, attempt)
+        if text and not missing and not hallucinated:
             return GenerationResult(text=text, attempts=attempts, retries=attempt, first_missing=first_missing,
                                     used_attempt=attempt)
-        logger.info("%s attempt %d: %s", persona, attempts, "empty output" if not text else f"{len(missing)} missing")
-        convo = build_retry_messages(messages, text, missing if text else [])
-    text, missing, used = best if best else (EMPTY_FALLBACK.get(persona, ""), list(required), None)
+        logger.info("%s attempt %d: %s", persona, attempts,
+                    "empty output" if not text else f"{len(missing)} missing, {len(hallucinated)} hallucinated")
+        convo = build_retry_messages(messages, text, missing if text else [], hallucinated)
+    if best:
+        text, _, missing, hallucinated, used = best
+    else:
+        text, missing, hallucinated, used = EMPTY_FALLBACK.get(persona, ""), list(required), [], None
     return GenerationResult(
         text=add_fallback(text, missing, persona),
         attempts=attempts,
@@ -143,6 +157,7 @@ def generate_with_retries(
         fallback_used=True,
         first_missing=first_missing or [],
         used_attempt=used,
+        hallucinated_meds=hallucinated,
     )
 
 

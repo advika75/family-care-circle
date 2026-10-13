@@ -45,6 +45,12 @@ def test_retry_messages_name_missing_facts():
     assert "empty" in build_retry_messages(msgs, "", [])[-1]["content"]
 
 
+def test_retry_messages_name_hallucinated_medication():
+    msgs = [{"role": "user", "content": "x"}]
+    retry = build_retry_messages(msgs, "draft", [], ["aspirin"])
+    assert "aspirin" in retry[-1]["content"] and "not in the patient's note" in retry[-1]["content"]
+
+
 def test_child_prompt_variants(sample_note):
     v1 = build_messages("child_explanation", sample_note, [], [], [], child_variant="v1")[1]["content"]
     v2 = build_messages("child_explanation", sample_note, [], [], [], child_variant="v2")[1]["content"]

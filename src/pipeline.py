@@ -70,6 +70,8 @@ class FamilyCarePipeline:
                 required,
                 persona,
                 self.max_retries,
+                source=text,
+                entities=entities,
             )
             latency[persona] = round(time.perf_counter() - t0, 3)
             retries[persona] = result.retries

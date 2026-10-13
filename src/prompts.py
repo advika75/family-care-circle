@@ -151,15 +151,22 @@ def build_messages(
 
 
 def build_retry_messages(
-    messages: list[dict[str, str]], previous_output: str, missing: list[dict[str, Any]]
+    messages: list[dict[str, str]], previous_output: str, missing: list[dict[str, Any]],
+    hallucinated: list[str] = (),
 ) -> list[dict[str, str]]:
-    """Extend a conversation with the previous attempt and feedback about what was missing or wrong."""
+    """Extend a conversation with the previous attempt and feedback about what was missing or invented."""
+    parts = []
     if missing:
         items = ", ".join(f"{m['text']} ({m['label'].lower()})" for m in missing)
-        feedback = (
-            f"Your answer left out these required facts: {items}. Rewrite the whole answer so that it "
-            "includes every one of them, following the same instructions."
+        parts.append(f"Your answer left out these required facts: {items}.")
+    if hallucinated:
+        items = ", ".join(hallucinated)
+        parts.append(
+            f"Your answer mentions medication(s) that are not in the patient's note: {items}. Remove any "
+            "medication, dose or instruction that the note does not actually state."
         )
+    if parts:
+        feedback = " ".join(parts) + " Rewrite the whole answer so that it follows the same instructions."
     else:
         feedback = "Your answer was empty. Please write the full answer following the instructions."
     return [
