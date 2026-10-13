@@ -101,6 +101,22 @@ python scripts/run_evaluation.py --outputs-dir data/outputs_qwen3b --results-dir
 python scripts/run_pipeline.py --input data/raw --backend transformers --model-id Qwen/Qwen2.5-1.5B-Instruct
 ```
 
+## Demo
+
+A local Streamlit app: pick a note from `data/raw` or paste your own, see extracted entities highlighted by
+label, the three persona outputs side by side, and per-output status (retries, fallback-appended facts,
+truncation, redacted contradicted doses, unsupported-medication/number flags).
+
+```bash
+pip install streamlit                                      # not needed for the pipeline, evaluation or tests
+streamlit run scripts/demo_app.py                          # real model, backend from config.yaml
+streamlit run scripts/demo_app.py -- --mock-backend          # no model download or inference, instant UI
+```
+
+The model loads once per session (`st.cache_resource`), not on every click, so a real run stays usable on an
+8 GB M1 with the default `llama_cpp` backend; the first "Generate" click shows a loading spinner while the
+model loads. `--mock-backend` skips the model entirely for fast UI iteration.
+
 ## Ablations
 
 Ablations live under `ablations:` in `config.yaml`: a name plus dotted-key overrides of the base config.

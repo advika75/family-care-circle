@@ -12,6 +12,13 @@ pandas>=2.0
 numpy>=1.24
 pytest>=7.4
 
+# "llama_cpp" backend (GGUF models; required on 8 GB machines). Needs build flags; on macOS:
+#   SDK=$(xcrun --show-sdk-path)
+#   CXXFLAGS="-nostdinc++ -isystem $SDK/usr/include/c++/v1" CMAKE_ARGS="-DGGML_METAL=on -DGGML_NATIVE=OFF" \
+#     pip install --no-cache-dir "llama-cpp-python>=0.2.80"
+llama-cpp-python>=0.2.80
+
+streamlit>=1.38            # scripts/demo_app.py and its test; not needed for the pipeline or evaluation
+
 # Optional backends: need platform-specific build flags, install manually (see README)
-# llama-cpp-python>=0.2.80      # "llama_cpp" backend (GGUF models; required on 8 GB machines)
 # bitsandbytes>=0.43            # 4-bit loading for the transformers backend (CUDA GPUs only)
