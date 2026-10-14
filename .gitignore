@@ -15,11 +15,20 @@ models/
 *.safetensors
 hf_cache/
 
+# External MTSamples files and locally prepared clinical text
+data/public/mtsamples/source.csv
+data/public/mtsamples/notes/*.txt
+data/public/mtsamples/notes/subset.json
+data/public/mtsamples/outputs/
+
 # Generated outputs (pipeline runs, ablations, figures)
 data/outputs*/
 results/figures/*.png
 results/ablations/**/figures/
 results/ablations_mock/
+
+# make reproduce-small scratch output
+.reproduce_small/
 
 # OS / editor
 .DS_Store

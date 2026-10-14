@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
+import sys
 from types import SimpleNamespace
 
 from src.generator import LlamaCppGenerator, MockGenerator, TransformersGenerator, build_generator
 from src.prompts import build_messages
+from src.utils import file_sha256
 
 
 def test_build_generator_rejects_unknown_backend(mock_config):
@@ -21,6 +23,17 @@ def test_build_generator_rejects_unknown_backend(mock_config):
 def test_mock_backend_is_selected_and_needs_no_model(mock_config):
     gen = build_generator(mock_config)
     assert isinstance(gen, MockGenerator) and gen.backend == "mock" and gen.model_id == "mock"
+    assert gen.model_hash is None  # no model file to fingerprint
+
+
+def test_llama_cpp_records_a_content_hash_of_the_model_file(tmp_path, monkeypatch):
+    """The exact bytes in use should be identifiable from metadata, not just a possibly-ambiguous path."""
+    fake_path = tmp_path / "fake.gguf"
+    fake_path.write_bytes(b"not a real gguf, just enough bytes to hash" * 10)
+    fake_module = SimpleNamespace(Llama=lambda **kwargs: SimpleNamespace(create_chat_completion=lambda **kw: None))
+    monkeypatch.setitem(sys.modules, "llama_cpp", fake_module)
+    gen = LlamaCppGenerator(str(fake_path), {"seed": 0})
+    assert gen.model_hash == f"sha256:{file_sha256(fake_path)}"
 
 
 def test_mock_writes_must_include_facts(sample_note):

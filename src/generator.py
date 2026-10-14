@@ -15,7 +15,7 @@ import re
 from abc import ABC, abstractmethod
 from typing import Any
 
-from src.utils import resolve_path, set_seed
+from src.utils import file_sha256, resolve_path, set_seed
 
 logger = logging.getLogger(__name__)
 
@@ -38,6 +38,11 @@ class Generator(ABC):
 
     #: Whether the most recent generate() call stopped because it hit max_new_tokens (None = unknown).
     last_truncated: bool | None = None
+
+    #: Content-addressed identifier for the exact model weights in use, e.g. "sha256:<hex>" for a local
+    #: GGUF file. None when it isn't cheaply available (mock backend; a transformers model whose resolved
+    #: revision couldn't be determined offline).
+    model_hash: str | None = None
 
     def configure(self, generation_cfg: dict[str, Any]) -> None:
         """(Re)set default generation parameters and seed, e.g. to reuse a loaded model across runs."""
@@ -86,6 +91,8 @@ class TransformersGenerator(Generator):
         logger.info("Loading %s (this can take a while the first time)...", model_id)
         self.model = AutoModelForCausalLM.from_pretrained(model_id, **kwargs)
         self.model.eval()
+        commit_hash = getattr(self.model.config, "_commit_hash", None)
+        self.model_hash = f"hf_commit:{commit_hash}" if commit_hash else None
         offloaded = {d for d in (getattr(self.model, "hf_device_map", None) or {}).values() if d in ("cpu", "disk")}
         if offloaded:
             logger.warning(
@@ -160,6 +167,7 @@ class LlamaCppGenerator(Generator):
         path = resolve_path(gguf_path)
         if not path.exists():
             raise FileNotFoundError(f"GGUF model not found: {path} (set gguf_path in config.yaml)")
+        self.model_hash = f"sha256:{file_sha256(path)}"
         cpp_cfg = cpp_cfg or {}
         self.llm = Llama(
             model_path=str(path),

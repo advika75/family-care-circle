@@ -98,6 +98,7 @@ class FamilyCarePipeline:
                 "metadata": {
                     "backend": self.generator.backend,
                     "model_id": self.generator.model_id,
+                    "model_hash": self.generator.model_hash,
                     "generation_params": params,
                     "seed": self.generator.seed,
                     "max_retries": self.max_retries,

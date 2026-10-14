@@ -42,9 +42,11 @@ def test_pipeline_records_truncation_per_persona(sample_note, mock_config):
 def test_metadata_fields(sample_note, mock_config):
     record = FamilyCarePipeline(mock_config).run(sample_note, "note_x")
     meta = record["metadata"]
-    for key in ("backend", "model_id", "generation_params", "seed", "retries", "fallback_used", "truncated",
-                "latency_sec", "valid", "missing_first_attempt", "missing_after_retries", "child_variant"):
+    for key in ("backend", "model_id", "model_hash", "generation_params", "seed", "retries", "fallback_used",
+                "truncated", "latency_sec", "valid", "missing_first_attempt", "missing_after_retries",
+                "child_variant"):
         assert key in meta, key
+    assert meta["model_hash"] is None  # mock backend has no model file to fingerprint
     assert set(meta["latency_sec"]) == {"patient_summary", "caregiver_checklist", "child_explanation", "total"}
     assert record["id"] == "note_x" and record["entities"] and record["regimens"]
 

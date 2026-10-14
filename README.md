@@ -243,6 +243,54 @@ Prompts always go through `tokenizer.apply_chat_template`; no model-specific spe
 generation defaults are temperature 0.2, top-p 0.9 and seed 42. The `personas:` section sets `max_new_tokens` per
 persona: patient 512 (350 truncated 8 of 12 Qwen2.5-3B summaries), caregiver 400, child 320.
 
+## Reproducibility
+
+* **Pinned dependencies:** `requirements.txt` pins exact versions (not `>=` ranges) last tested together; `pip
+  install -r requirements.txt` reproduces that environment. Bump a pin deliberately and re-run the full test
+  suite before relying on it.
+* **Seeds and model identity in every run's metadata:** each output JSON's `metadata` records `seed` (default
+  42; also set via `generation.seed` in `config.yaml`), `model_id`, and `model_hash` — `sha256:<hex>` of the
+  exact `.gguf` file for the `llama_cpp` backend, or `hf_commit:<hash>` for `transformers` when the loaded
+  model exposes a resolved revision (`None` for the mock backend and for a `transformers` model whose revision
+  isn't available offline). This lets you confirm two runs used byte-identical weights, not just the same
+  `model_id` string.
+* **`make reproduce-small`:** runs the full test suite, then one pass of the real pipeline and evaluation code
+  paths on the mock backend (`.reproduce_small/`, git-ignored). Fully local and fast (no model download); not a
+  substitute for a real run, just a sanity check that the wiring isn't broken. `make clean-reproduce-small`
+  removes the scratch output.
+* **Exact commands for every experiment already run in this repo**, in order:
+
+  ```bash
+  pip install -r requirements.txt
+  make reproduce-small                                                          # sanity check, no model needed
+
+  # Synthetic ablations (baseline, child_v1, no_ner_injection), 3 seeds each, Qwen2.5-3B-Instruct Q4_K_M:
+  python scripts/run_ablations.py --backend llama_cpp --seeds 0 1 2
+  python scripts/error_analysis.py                                             # results/error_analysis.{md,json}
+  python scripts/build_report_tables.py                                        # fills report/project_report.md
+
+  # MTSamples (100 real notes, seed 42; see "Public Dataset Evaluation" above for obtaining source.csv):
+  python scripts/prepare_mtsamples.py
+  python scripts/run_pipeline.py --dataset mtsamples --backend llama_cpp       # resumable; --force to redo
+  python scripts/run_evaluation.py --dataset mtsamples
+  python scripts/evaluate_mtsamples_ner.py                                     # "not available" until gold is complete
+  python scripts/error_analysis.py --outputs-dir data/public/mtsamples/outputs --results-dir results/mtsamples
+
+  # Human evaluation (UI-based; see "Analysis and reporting" above for the CSV-sheet alternative):
+  python scripts/build_rating_set.py
+  python scripts/rate_outputs.py --rater <name>                                # repeat per rater, different --port
+  python scripts/aggregate_human_ratings.py
+
+  # Report-ready outputs:
+  python scripts/build_results_tables.py                                       # results/tables/*
+  python scripts/build_limitations.py                                          # report/limitations.md
+  ```
+
+  The MTSamples run depends on `data/public/mtsamples/source.csv`, which is not redistributed (see "Public
+  Dataset Evaluation"); without it, the MTSamples steps above are not reproducible by someone else from this
+  repo alone, and `build_results_tables.py` / `build_limitations.py` will correctly report those tables as "not
+  available" instead of fabricating numbers.
+
 ## Project layout
 
 ```

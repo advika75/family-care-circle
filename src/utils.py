@@ -56,6 +56,17 @@ def set_seed(seed: int) -> None:
         pass
 
 
+def file_sha256(path: str | Path, chunk_size: int = 1 << 20) -> str:
+    """SHA-256 of a file's contents, streamed in chunks so multi-GB model files don't need to fit in memory."""
+    import hashlib
+
+    digest = hashlib.sha256()
+    with open(resolve_path(path), "rb") as f:
+        for chunk in iter(lambda: f.read(chunk_size), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def read_text(path: str | Path) -> str:
     """Read a UTF-8 text file."""
     return resolve_path(path).read_text(encoding="utf-8")
