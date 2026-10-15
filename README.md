@@ -322,4 +322,10 @@ report/              project_report.md (+ tables/)
 
 ### Public Dataset Evaluation
 
-The synthetic dataset remains the controlled evaluation set. MTSamples is an external/public source of clinical transcription notes; public evaluation uses a reproducibly selected subset (up to 100 notes). Generation stays fully local. Gold annotations use the existing span-based JSON format and are only used for a manually annotated subset. Dataset files may need to be obtained separately depending on access and licensing. Place an authorized CSV at `data/public/mtsamples/source.csv`, then prepare notes with `python scripts/prepare_mtsamples.py`. Set `dataset: mtsamples` in `config.yaml` to run the configured pipeline and evaluation commands on that subset.
+The synthetic dataset remains the controlled evaluation set. MTSamples is an external/public source of clinical transcription notes; public evaluation uses a reproducibly selected subset (up to 100 notes). Generation stays fully local. Gold annotations use the existing span-based JSON format and are only used for a manually annotated subset.
+
+Download the Medical Transcriptions CSV from [Kaggle's MTSamples dataset](https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions) (sign in to Kaggle if prompted), then place or rename the CSV to `data/public/mtsamples/source.csv`. Rebuild the prepared notes and `subset.json` with `python scripts/prepare_mtsamples.py --input data/public/mtsamples/source.csv --seed 42`; the default seed is 42. The CSV is not redistributed here.
+
+Place the Qwen GGUF at the `gguf_path` configured in `config.yaml` (the default is `models/qwen2.5-3b-instruct-q4_k_m.gguf`; the alternate 1.5B model is also under `models/`). These GGUF files are not tracked. The checked-in run metadata does not record a GGUF SHA256; to record the exact local file hash, run `shasum -a 256 models/<model-file>.gguf` and retain the output with the run metadata.
+
+Set `dataset: mtsamples` in `config.yaml` to run the configured pipeline and evaluation commands on that subset.

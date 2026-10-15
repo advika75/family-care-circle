@@ -1,5 +1,23 @@
 # Family Care Circle configuration. All paths are relative to the project root.
 
+# Select the dataset used by the default pipeline and evaluation commands.
+dataset: synthetic
+datasets:
+  synthetic:
+    raw_dir: data/raw
+    gold_dir: data/gold
+    outputs_dir: data/outputs
+    results_dir: results
+    figures_dir: results/figures
+  mtsamples:
+    raw_dir: data/public/mtsamples/notes
+    gold_dir: data/public/mtsamples/gold
+    outputs_dir: data/public/mtsamples/outputs
+    results_dir: results/mtsamples
+    figures_dir: results/mtsamples/figures
+    max_notes: 100
+    seed: 42
+
 # Generation backend: transformers | llama_cpp | mock
 # llama_cpp (4-bit GGUF) is the default because fp16 transformers models do not fit in 8 GB of RAM:
 # they get offloaded to disk and become unusably slow. Use transformers on 16 GB+ or a CUDA GPU.

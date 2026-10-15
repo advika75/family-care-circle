@@ -44,6 +44,34 @@ def test_evaluate_outputs_without_ner_and_empty_folder(outputs_dir, tmp_path):
         evaluate_outputs(tmp_path / "empty", tmp_path / "r2", {})
 
 
+def test_evaluate_outputs_allows_public_set_without_gold(outputs_dir, tmp_path):
+    raw_dir, gold_dir = tmp_path / "notes", tmp_path / "gold"
+    raw_dir.mkdir()
+    gold_dir.mkdir()
+    config = {"dataset": "mtsamples", "datasets": {"mtsamples": {
+        "raw_dir": str(raw_dir), "gold_dir": str(gold_dir)}}}
+    result = evaluate_outputs(outputs_dir, tmp_path / "results", config, extract_fn=extract_entities)
+    assert result["ner"] is None
+
+
+def test_public_incomplete_gold_is_not_scored_and_results_stay_isolated(outputs_dir, tmp_path):
+    raw_dir, gold_dir = tmp_path / "notes", tmp_path / "gold"
+    raw_dir.mkdir()
+    gold_dir.mkdir()
+    (gold_dir / "annotation_manifest.json").write_text(
+        '{"annotations":[{"id":"sample","source_file":"sample.txt","status":"pending"}]}',
+        encoding="utf-8",
+    )
+    public_results = tmp_path / "results" / "mtsamples"
+    config = {"dataset": "mtsamples", "datasets": {"mtsamples": {
+        "raw_dir": str(raw_dir), "gold_dir": str(gold_dir), "results_dir": str(public_results)}}}
+    result = evaluate_outputs(outputs_dir, public_results, config, extract_fn=extract_entities)
+    assert result["ner"].empty
+    assert (public_results / "metrics.csv").is_file()
+    assert (public_results / "ner_metrics.csv").is_file()
+    assert not (tmp_path / "results" / "metrics.csv").is_file()
+
+
 def test_markdown_table():
     md = markdown_table(pd.DataFrame({"x": [1.23456]}, index=pd.Index(["a"], name="metric")))
     assert md.splitlines() == ["| metric | x |", "|---|---|", "| a | 1.235 |"]

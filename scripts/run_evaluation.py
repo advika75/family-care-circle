@@ -21,6 +21,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.ner import EntityExtractor  # noqa: E402
+from src.datasets import dataset_config  # noqa: E402
 from src.reporting import evaluate_outputs  # noqa: E402
 from src.utils import load_config, resolve_path, setup_logging  # noqa: E402
 
@@ -29,6 +30,7 @@ def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--config", default="config.yaml")
+    parser.add_argument("--dataset", choices=["synthetic", "mtsamples"], help="Dataset configured in config.yaml")
     parser.add_argument("--outputs-dir", default=None, help="Pipeline JSON outputs (default: paths.outputs_dir)")
     parser.add_argument("--results-dir", default=None, help="Where to write metrics (default: paths.results_dir)")
     parser.add_argument("--skip-ner", action="store_true", help="Skip NER evaluation against gold")
@@ -38,9 +40,9 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     """Entry point."""
     args = parse_args()
-    config = load_config(args.config)
+    config = load_config(args.config, {"dataset": args.dataset})
     log = setup_logging(config.get("logging", {}).get("level", "INFO"))
-    paths = config.get("paths", {})
+    paths = dataset_config(config)
     outputs_dir = resolve_path(args.outputs_dir or paths.get("outputs_dir", "data/outputs"))
     results_dir = resolve_path(args.results_dir or paths.get("results_dir", "results"))
     # An explicit --results-dir keeps its figures alongside it instead of in the configured figures_dir.

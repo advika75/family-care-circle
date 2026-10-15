@@ -15,11 +15,13 @@ models/
 *.safetensors
 hf_cache/
 
-# External MTSamples files and locally prepared clinical text
+# Large or regenerable inputs and dated backups
 data/public/mtsamples/source.csv
-data/public/mtsamples/notes/*.txt
-data/public/mtsamples/notes/subset.json
-data/public/mtsamples/outputs/
+data/backup_2026-09-24/
+results/ablations_backup_2026-09-24/
+
+# External MTSamples files and locally prepared clinical text
+# Prepared notes, annotations, outputs, and results are tracked for reproduction.
 
 # Generated outputs (pipeline runs, ablations, figures)
 data/outputs*/
