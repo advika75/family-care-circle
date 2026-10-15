@@ -1,0 +1,89 @@
+{
+  "id": "mtsamples_Diabetic_Foot_Care",
+  "patient_summary": "Hello there, you're an 83-year-old lady who came to see me today because you want to take care of your feet. You told me that your left big toe nail is growing into your skin, which is causing you some pain. We checked your feet and found that your toenails are thick and a bit yellow. Your toes feel warm, and there's no hair growth on your feet or legs. Your toes are also a bit longer than normal.\n\nI noticed that your toenails are also a bit discolored. I've diagnosed this as onychocryptosis, which means your toenails are growing into your skin.\n\nFor your toenail, I've prescribed a special cream that you need to apply to the nail area twice a day. It will help reduce the pain and prevent further damage. You should use this cream for at least a month.\n\nI also want you to check your feet every day for any new signs of infection. If you see any redness, swelling, or warmth, or if you have any pain, you should call me right away. These could be signs of an infection.\n\nRemember to keep your feet clean and dry, and wear comfortable, non-binding shoes. I want you to feel better, and I'm here to help you.",
+  "caregiver_checklist": [
+    "Give the patient a warm, clean washcloth to soak her feet for 10 minutes, twice daily.",
+    "Check the patient's feet for any signs of redness, swelling, or open sores.",
+    "Watch for changes in skin color or temperature, especially in the toes and feet.",
+    "Call the healthcare provider if the patient reports pain, increased warmth, or if the toe becomes more red or swollen.",
+    "Schedule a follow-up appointment in 2 weeks to reassess the toenail ingrowth and foot condition.",
+    "Check the patient's blood sugar levels as directed by the healthcare provider.",
+    "Watch for signs of infection such as increased warmth, redness, or pus.",
+    "Call the healthcare provider if any signs of infection are noted.",
+    "Schedule a podiatry appointment to address the ingrown toenail and toenail hypertrophy."
+  ],
+  "child_explanation": "You have a toenail that's grown into your skin a bit. You're getting special care from the doctors and nurses. They're taking good care of you. Your toenails are thick and hard, like a cookie. The doctors will help make it better. You're safe, and you're in good hands.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "S - ,An 83-year-old diabetic female presents today stating that she would like diabetic foot care.,O - ,On examination, the lateral aspect of her left great toenail is deeply ingrown.  Her toenails are thick and opaque.  Vibratory sensation appears to be intact.  Dorsal pedal pulses are 1/4.  There is no hair growth seen on her toes, feet or lower legs.  Her feet are warm to the touch.  All of her toenails are hypertrophic, opaque, elongated and discolored.,A - ,1.  Onychocryptosis.,\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 12.604,
+      "caregiver_checklist": 8.579,
+      "child_explanation": 4.255,
+      "total": 25.451
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T06:01:27+00:00"
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "id": "mtsamples_Hip_Fracture_-_Rehab_Consult",
+  "patient_summary": "Hello there, you've been admitted to the hospital because you had a fall and now you have a broken hip. You're feeling some pain and having trouble moving around. You've been given some medicines to help you feel better. Here's what you need to take and when:\n\n1. You need to take Albuterol every day. This is a special medicine that helps open your airways when you have trouble breathing.\n2. You also need to take Aspirin every day. This is a medicine that helps with pain and swelling.\n3. You have to take Amiodarone every day. This is a medicine that helps your heart beat normally.\n4. You also need to take penicillin once a day. This is a medicine that helps fight infections.\n5. You have to take Combivent every day. This is a medicine that helps open your airways when you have trouble breathing.\n\nYou're going to see the doctors and therapists to help you move around and get better. They want you to do more activities, but you need to start slowly and build up your strength. If you have any problems or if you feel worse, you should tell the nurses or doctors right away. They are there to help you.",
+  "caregiver_checklist": [
+    "Check all medications are taken as prescribed, including penicillin daily.",
+    "Watch for signs of pneumonia, such as fever, cough, or shortness of breath.",
+    "Call if there are any new or worsening symptoms.",
+    "Schedule a follow-up appointment with the pulmonologist if pneumonia persists.",
+    "Give Albuterol inhaler as prescribed, using the spacer if needed.",
+    "Watch for side effects of Albuterol, such as wheezing or chest tightness.",
+    "Call if there are any side effects or if breathing difficulties worsen.",
+    "Schedule a follow-up appointment with the pulmonologist if symptoms persist.",
+    "Give Aspirin as prescribed, taking it with food if needed.",
+    "Watch for gastrointestinal bleeding or ulcers with Aspirin use.",
+    "Call if there are any gastrointestinal issues or if bleeding occurs.",
+    "Schedule a follow-up appointment with the pharmacist if Aspirin use is unclear.",
+    "Give Amiodarone daily, as prescribed, and monitor for thyroid issues.",
+    "Watch for side effects of Amiodarone, such as thyroid problems or liver issues.",
+    "Call if there are any side effects or if thyroid function tests are abnormal.",
+    "Schedule a follow-up appointment with the cardiologist if Amiodarone use is unclear."
+  ],
+  "child_explanation": "You had a fall and hurt your hip. Doctors found you had a big crack in it. You're in a special hospital to get better. Grown-ups and doctors are taking care of you. You're like a puzzle piece fitting into a bigger picture. You're getting help for your hip, your heart, your lungs, and your brain. You're doing well and will get to move around more soon.",
+  "entities": [
+    {
+      "text": "Pain",
+      "label": "SYMPTOM",
+      "start": 356,
+      "end": 360
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 510,
+      "end": 519
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 521,
+      "end": 533
+    },
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 585,
+      "end": 598
+    },
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 600,
+      "end": 614
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 616,
+      "end": 626
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 628,
+      "end": 635
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 938,
+      "end": 947
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 953,
+      "end": 965
+    },
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 1311,
+      "end": 1324
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 1427,
+      "end": 1446
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 1529,
+      "end": 1539
+    },
+    {
+      "text": "penicillin",
+      "label": "MEDICATION",
+      "start": 1639,
+      "end": 1649
+    },
+    {
+      "text": "Albuterol",
+      "label": "MEDICATION",
+      "start": 1703,
+      "end": 1712
+    },
+    {
+      "text": "Aspirin",
+      "label": "MEDICATION",
+      "start": 1780,
+      "end": 1787
+    },
+    {
+      "text": "Amiodarone",
+      "label": "MEDICATION",
+      "start": 1793,
+      "end": 1803
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2041,
+      "end": 2046
+    },
+    {
+      "text": "headache",
+      "label": "SYMPTOM",
+      "start": 2113,
+      "end": 2121
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 2123,
+      "end": 2129
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 2134,
+      "end": 2142
+    },
+    {
+      "text": "fevers",
+      "label": "SYMPTOM",
+      "start": 2144,
+      "end": 2150
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 2152,
+      "end": 2158
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 2162,
+      "end": 2181
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 2185,
+      "end": 2195
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 2734,
+      "end": 2741
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 2743,
+      "end": 2753
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 2807,
+      "end": 2819
+    },
+    {
+      "text": "Hypothyroidism",
+      "label": "CONDITION",
+      "start": 2825,
+      "end": 2839
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 3004,
+      "end": 3013
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "penicillin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Albuterol",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Aspirin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Amiodarone",
+      "dosages": [],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "ADMISSION DIAGNOSIS: , Left hip fracture.,CHIEF COMPLAINT: , Diminished function, secondary to the above.,HISTORY: , This pleasant 70-year-old gentleman had a ground-level fall at home on 05/05/03 and was brought into ABCD Medical Center, evaluated by Dr. X and brought in for orthopedic stay.  He had left hip fracture identified on x-rays at that time.  Pain and inability to ambulate brought him in.  He was evaluated and then underwent medical consultation as well, where they found a history of resolving pneumonia, hypertension, chronic obstructive pulmonary disease, congestive heart failure, hypothyroidism, depression, anxiety, seizure and chronic renal failure, as well as anemia.  His medical issues are under good control.  The patient underwent left femoral neck fixation with hemiarthroplasty on that left side on 05/06/03.  The patient has had some medical issues including respiratory insufficiency, perioperative anemia, pneumonia, and hypertension.  Cardiology has followed closely, and the patient has responded well to medical treatment, as well as physical therapy and occupational therapy.  He is gradually tolerating more activities with less difficulties, made good progress and tolerated more consistent and more prolonged interventions.,PAST MEDICAL HISTORY: , Positive for congestive heart failure, chronic renal insufficiency, azotemia, hyperglycemia, coronary artery disease, history of paroxysmal atrial fibrillation.  Remote history of subdural hematoma precluding the use of Coumadin.  History of depression, panic attacks on Doxepin.  Perioperative anemia.  Swallowing difficulties.,ALLERGIES:,  Zyloprim, penicillin, Vioxx, NSAIDs.,CURRENT MEDICATIONS,1.  Heparin.,2.  Albuterol inhaler.,3.  Combivent.,4.  Aldactone.,5.  Doxepin.,6.  Xanax.,7.  Aspirin.,8.  Amiodarone.,9.  Tegretol.,10.  Synthroid.,11.  Colace.,SOCIAL HISTORY: , Lives in a 1-story home with 1 step down; wife is there.  Speech and language pathology following with current swallowing dysfunction.  He is minimum assist for activities of daily living, bed mobility.,REVIEW OF SYSTEMS:,  Currently negative for headache, nausea and vomiting, fevers, chills or shortness of breath or chest pain.,PHYSICAL EXAMINATION,HEENT:  Oropharynx clear.,CV:  Regular rate and rhythm without murmurs, rubs or gallops.,LUNGS:  Clear to auscultation bilaterally.,ABDOMEN:  Nontender, nondistended.  Bowel sounds positive.,EXTREMITIES:  Without clubbing, cyanosis, or edema.,NEUROLOGIC:  There are no focal motor or sensory losses to the lower extremities.  Bulk and tone normal in the lower extremities.  Wound site has healed well with staples out.,IMPRESSION ,1.  Status post left hip fracture and hemiarthroplasty.,2.  History of panic attack, anxiety, depression.,3.  Myocardial infarction with stent placement.,4.  Hypertension.,5.  Hypothyroidism.,6.  Subdural hematoma.,7.  Seizures.,8.  History of chronic obstructive pulmonary disease.  Recent respiratory insufficiency.,9.  Renal insufficiency.,10.  Recent pneumonia.,11.  O2 requiring.,12.  Perioperative anemia.,PLAN: , Rehab transfer as soon as medically cleared.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 16.006,
+      "caregiver_checklist": 16.531,
+      "child_explanation": 8.394,
+      "total": 40.945
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T06:14:03+00:00"
+  }
+}

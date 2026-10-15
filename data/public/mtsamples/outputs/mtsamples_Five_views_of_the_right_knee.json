@@ -1,0 +1,102 @@
+{
+  "id": "mtsamples_Five_views_of_the_right_knee",
+  "patient_summary": "Hello there, you've been feeling some pain in your right knee. You had surgery there, and you couldn't straighten your leg afterwards. The doctor took five x-rays of your knee to check if there were any problems. The x-rays showed no broken bones, dislocated joints, or other serious issues. \n\nThe doctor also noticed some lines on the bones, which is a normal part of growing. They also saw that your kneecap is a little higher than usual, which might be why you're having pain. \n\nThe doctor thinks you're okay, but you should take some medicine to help with the pain. You should take the medicine three times a day for a few days. If you have any trouble moving your leg or if the pain gets worse, you should call your doctor right away. \n\nRemember, if you have any questions or if you're worried, you can always ask your doctor or nurse. They're here to help you.",
+  "caregiver_checklist": [
+    "Check the patient's leg for any signs of swelling or deformity.",
+    "Watch for increased pain or changes in the leg's appearance.",
+    "Schedule a follow-up appointment in 2 weeks for further evaluation.",
+    "Call the healthcare provider if the patient experiences severe pain or inability to bear weight.",
+    "Check the patient's knee alignment and patella position daily.",
+    "Monitor for any signs of infection, such as redness, warmth, or pus.",
+    "Call the healthcare provider if the patient develops fever or signs of infection.",
+    "Schedule an X-ray in 6 months to monitor growth and development.",
+    "Check for any new or worsening symptoms and report them to the healthcare provider."
+  ],
+  "child_explanation": "You had a doctor check your knee. They looked at it from different angles. No broken bones were found. But they saw some lines growing on your bones. And your kneecap seems a little higher than usual. Grown-ups and doctors are taking good care of you. You'll be okay.",
+  "entities": [
+    {
+      "text": "Pain",
+      "label": "SYMPTOM",
+      "start": 49,
+      "end": 53
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 125,
+      "end": 129
+    }
+  ],
+  "regimens": [],
+  "source_text": "EXAM: , Five views of the right knee.,HISTORY: , Pain.  The patient is status-post surgery, he could not straighten his leg, pain in the back of the knee.,TECHNIQUE:,  Five views of the right knee were evaluated.  There are no priors for comparison.,FINDINGS: , Five views of the right knee were evaluated and they reveal there is no evidence of any displaced fractures, dislocations, or subluxations.  There are multiple areas of growth arrest lines seen in the distal aspect of the femur and proximal aspect of the tibia.  There is also appearance of a high-riding patella suggestive of patella alta.,IMPRESSION:,1.  No evidence of any displaced fractures, dislocations, or subluxations.,2.  Growth arrest lines seen in the distal femur and proximal tibia.,3.  Questionable appearance of a slightly high-riding patella, possibly suggesting patella alta.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 9.661,
+      "caregiver_checklist": 7.462,
+      "child_explanation": 4.466,
+      "total": 21.598
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T06:08:10+00:00"
+  }
+}

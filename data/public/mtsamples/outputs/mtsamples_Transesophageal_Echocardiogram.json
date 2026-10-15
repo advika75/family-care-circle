@@ -1,0 +1,121 @@
+{
+  "id": "mtsamples_Transesophageal_Echocardiogram",
+  "patient_summary": "Hello there, you've had a visit to the doctor today. They did a special test called a transesophageal echocardiogram. This test helps them see your heart better. They also did something called a cardioversion, which is like a shock to your heart to try and get it to beat normally again.\n\nYou had some medicines before the test:\n- 4 mg of a medicine called Versed\n- 50 mcg of a medicine called fentanyl\n\nThe test showed that your heart is working well, but your heart's left atrium (the top part of your heart) is a bit bigger than normal. They also saw that your heart's left atrial appendage (a small pouch in the heart) doesn't have any clots. Your heart's valves look okay, and your heart is beating normally in the right places.\n\nAfter the test, they tried to get your heart to beat normally again with a shock. But it didn't work, so they will keep you on some medicines to help your heart beat normally. They might give you a beta-blocker or a calcium channel blocker to help your heart beat slower and more steadily.\n\nIf you feel short of breath or have any other symptoms, you should tell your doctor right away. They will help you feel better.",
+  "caregiver_checklist": [
+    "Give 4 mg of Versed and 50 mcg of fentanyl to the patient.",
+    "Check the patient's heart rhythm after cardioversion.",
+    "Watch for signs of complications like fever, rash, or difficulty breathing.",
+    "Call the healthcare provider if the patient develops new symptoms.",
+    "Schedule a follow-up appointment in 1 week for monitoring.",
+    "Check the patient's heart rhythm and ECG at home if possible.",
+    "Watch for signs of worsening shortness of breath or chest pain.",
+    "Call the healthcare provider if the patient's shortness of breath worsens.",
+    "Schedule a repeat echocardiogram in 3 months to monitor the atrial fibrillation.",
+    "Call the healthcare provider if the patient experiences frequent palpitations."
+  ],
+  "child_explanation": "You had a big heart beat that wasn't normal. Your doctors gave you medicine to help calm your heart. They also did a special test to look at your heart. Your heart is working well, but it's a bit bigger than usual. They put tiny helpers in your heart to keep track of your heartbeat. Now they want to keep giving you medicine to help your heart beat better. Grown-ups are taking good care of you.",
+  "entities": [
+    {
+      "text": "Atrial fibrillation",
+      "label": "CONDITION",
+      "start": 96,
+      "end": 115
+    },
+    {
+      "text": "Shortness of breath",
+      "label": "SYMPTOM",
+      "start": 149,
+      "end": 168
+    },
+    {
+      "text": "4 mg",
+      "label": "DOSAGE",
+      "start": 266,
+      "end": 270
+    },
+    {
+      "text": "50 mcg",
+      "label": "DOSAGE",
+      "start": 285,
+      "end": 291
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 1728,
+      "end": 1747
+    }
+  ],
+  "regimens": [],
+  "source_text": "EXAM: , Transesophageal echocardiogram and direct current cardioversion.,REASON FOR EXAM:  ,1.  Atrial fibrillation with rapid ventricular rate.,2.  Shortness of breath.,PROCEDURE: , After informed consent was obtained, the patient was then sedated using a total of 4 mg of Versed and 50 mcg of fentanyl.  Following this, transesophageal probe was placed in the esophagus.  Transesophageal views of the heart were then obtained.,FINDINGS:,1.  Left ventricle is of normal size.  Overall LV systolic function is preserved.  Estimated ejection fraction is 60% to 65%.  No wall motion abnormalities are noted.,2.  Left atrium is dilated.,3.  Left atrial appendage is free of clots.,4.  Right atrium is of normal size.,5.  Right ventricle is of normal size.,6.  Mitral valve shows evidence of mild MAC.,7.  Aortic valve is sclerotic without significant restriction of leaflet motion.,8.  Tricuspid valve appears normal.,9.  Pulmonic valve appears normal.,10.  Pacer wires are noted in the right atrium and in the right ventricle.,11.  Doppler interrogation of moderate mitral regurgitation is present.,12.  Mild-to-moderate AI is seen.,13.  No significant TR is noted.,14.  No significant TI is noted.,15.  No pericardial disease seen.,IMPRESSION:,1.  Preserved left ventricular systolic function.,2.  Dilated left atrium.,3.  Moderate mitral regurgitation.,4.  Aortic valve sclerosis with mild-to-moderate aortic insufficiency.,5.  Left atrial appendage is free of clots.,Following these, direct current cardioversion was performed.  Three biphasic shock waves of 150 and two of 200 joules were then applied to the patient's chest in anteroposterior direction without success in conversion to sinus rhythm.  The patient remained in atrial fibrillation.,PLAN: , Plan will be to continue medical therapy.  We will consider using beta-blocker, calcium channel blockers for better ventricular rate control.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 17.024,
+      "caregiver_checklist": 10.69,
+      "child_explanation": 7.894,
+      "total": 35.621
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T08:06:27+00:00"
+  }
+}

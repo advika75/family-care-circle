@@ -1,0 +1,104 @@
+{
+  "id": "mtsamples_Paracentesis",
+  "patient_summary": "Hello you, it sounds like you had a big abdominal mass that was causing a lot of fluid to build up in your belly. Your doctors took a special tool called a pigtail catheter to drain the fluid. They did this a few times to help you feel better. \n\nNow, your doctors found out that more fluid has built up again. So they came to the hospital to drain it again. They used a syringe to take out 700 mL of clear fluid. They connected it to a bag so you can keep track of how much fluid is left. \n\nYour doctors will see you next week to check on you and make sure you're okay. They want to make sure the fluid isn't building up too much again. If you have any more fluid or if you feel sick or have pain, you should call your doctors right away. They want you to be healthy and comfortable.",
+  "caregiver_checklist": [
+    "Check if the pigtail catheter is shut off and not open at home.",
+    "Watch for signs of infection such as fever, redness, or increased drainage.",
+    "Call the healthcare provider if fever exceeds 100.4°F (38°C) or if signs of infection appear.",
+    "Schedule an appointment with the healthcare provider next Monday for follow-up.",
+    "Monitor the patient's symptoms and keep a log of fluid drainage, including 700 mL.",
+    "Call the healthcare provider if the drainage increases or if new symptoms appear.",
+    "Schedule a repeat CAT scan in three days to assess the mass and fluid accumulation, including 700 mL of drainage.",
+    "Call the healthcare provider if the patient experiences severe pain or difficulty breathing."
+  ],
+  "child_explanation": "You had a big bump in your tummy. You got a tiny straw to help the bump go away. Grown-ups and doctors are taking care of you. You had some clear liquid come out. It's okay, you're getting better. You'll come back in a few days. You'll learn how to use the straw then.",
+  "entities": [
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 1251,
+      "end": 1259
+    },
+    {
+      "text": "700 mL",
+      "label": "DOSAGE",
+      "start": 1321,
+      "end": 1327
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Abdominal mass.,POSTOPERATIVE DIAGNOSIS: , Abdominal mass.,PROCEDURE:,  Paracentesis.,DESCRIPTION OF PROCEDURE:  ,This 64-year-old female has stage II endometrial carcinoma, which had been resected before and treated with chemotherapy and radiation.  At the present time, the patient is under radiation treatment.  Two weeks ago or so, she developed a large abdominal mass, which was cystic in nature and the radiologist inserted a pigtail catheter in the emergency room.  We proceeded to admit the patient and drained a significant amount of clear fluid in the subsequent days.  The cytology of the fluid was negative and the culture was also negative.  Eventually, the patient was sent home with the pigtail shut off and the patient a week later underwent a repeat CAT scan of the abdomen and pelvis.,The CAT scan showed accumulation of the fluid and the mass almost achieving 80% of the previous size.  Therefore, I called the patient home and she came to the emergency department where the service was provided.  At that time, I proceeded to work on the pigtail catheter after obtaining an informed consent and preparing and draping the area in the usual fashion.  Unfortunately, the catheter was open.  I did not have a drainage system at that time.  So, I withdrew directly with a syringe 700 mL of clear fluid.  The system was connected to the draining bag, and the patient was instructed to keep a log and how to use equipment.  She was given an appointment to see me in the office next Monday, which is three days from now.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "700 mL"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 13.685,
+      "caregiver_checklist": 20.625,
+      "child_explanation": 7.213,
+      "total": 41.531
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T07:39:32+00:00"
+  }
+}

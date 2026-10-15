@@ -1,0 +1,119 @@
+{
+  "id": "mtsamples_Bunionectomy_Osteotomy",
+  "patient_summary": "Hello there, you've had a surgery on your right foot to fix a painful bunion. You'll be taking some medicines after the surgery. Here's what you need to know:\n\n1. **Medicines to take:**\n   - Dexamethasone: 500 mg. This is a special medicine to help reduce swelling and pain. You'll take this once a day, after you wake up from the surgery.\n   - Vicodin ES: You'll take this medicine every 4 to 6 hours as needed for pain. It's okay to take it more often if you need it.\n   - Naprosyn: You'll take this medicine twice a day, each time with a full glass of water. Each time you take it, you'll have 500 mg.\n\n2. **When to get help:**\n   - If you have any problems with your foot, like swelling, redness, or if you feel very sick, you should call the doctor or the hospital right away.\n   - If you have any side effects from the medicines, like a rash, itching, or if you feel dizzy, you should also call the doctor right away.\n\n3. **What to do:**\n   - You'll be walking with crutches for a few days. It's important to follow the doctor's instructions about how much weight you can put on your foot.\n   - You'll be given emergency contact numbers to call if you have any problems.\n   - You'll be discharged from the hospital in stable condition, but you'll need to follow up with your doctor.\n\nRemember, it's important to follow your doctor's instructions and take your medicines as directed. If you have any questions or concerns, don't hesitate to ask your doctor or nurse. They're there to help you.",
+  "caregiver_checklist": [
+    "Check that the patient has taken the dexamethasone 500 mg as directed.",
+    "Watch for signs of infection, such as increased redness, swelling, or fever.",
+    "Call if the patient experiences severe pain that is not relieved by the prescribed pain medication.",
+    "Schedule a follow-up appointment with Dr. X in 2 weeks.",
+    "Call if the patient notices any changes in the appearance or function of the foot.",
+    "Watch for signs of poor healing, such as excessive swelling or drainage from the wound.",
+    "Call if the patient experiences any signs of nerve damage, such as numbness or tingling.",
+    "Check the patient's foot for proper weight-bearing and alignment with crutches.",
+    "Monitor the patient for signs of complications, such as nerve damage or poor healing.",
+    "Call if the patient experiences any signs of nerve damage, such as numbness or tingling.",
+    "Schedule a postoperative X-ray in 4-6 weeks to assess healing progress."
+  ],
+  "child_explanation": "You had a painful bump on your big toe for a while. Now you're having a special operation to fix it. The doctors and nurses are taking good care of you. They gave you medicine to help you sleep. They made a small cut on your toe and did some work inside. Now your toe feels better and can move more. You'll need to rest your foot for a few days and use crutches. The grown-ups will check on you soon.",
+  "entities": [
+    {
+      "text": "dexamethasone",
+      "label": "MEDICATION",
+      "start": 5166,
+      "end": 5179
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 5907,
+      "end": 5911
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 5942,
+      "end": 5948
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "dexamethasone",
+      "dosages": [
+        "500 mg"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "PREOPERATIVE DIAGNOSES:,1.  Hallux valgus, right foot.,2.  Hallux interphalangeus, right foot.,POSTOPERATIVE DIAGNOSES:,1.  Hallux valgus, right foot.,2.  Hallux interphalangeus, right foot.,PROCEDURES PERFORMED:,1.  Bunionectomy with distal first metatarsal osteotomy and internal screw fixation, right foot.,2.  Akin bunionectomy, right toe with internal wire fixation.,ANESTHESIA: , TIVA/local.,HISTORY:  ,This 51-year-old female presents to ABCD preoperative holding area after keeping herself NPO since mid night for a surgery on her painful bunion through her right foot.  The patient has a history of gradual onset of a painful bunion over the past several years.  She has tried conservative methods such as wide shoes, accommodative padding on an outpatient basis with Dr. X all of which have provided inadequate relief.  At this time, she desires attempted surgical correction.  The risks versus benefits of the procedure have been discussed with the patient in detail by Dr. X and the consent is available on the chart for review.,PROCEDURE IN DETAIL: , After IV was established by the Department of Anesthesia, the patient was taken to the operating room via cart and placed on the operative table in supine position and a safety strap was placed across her waist for her protection.  Copious amounts of Webril were applied about the right ankle and a pneumatic ankle tourniquet was placed over the Webril.,After adequate IV sedation was administered by the Department of Anesthesia, a total of 15 cc of 1:1 mixture of 0.5% Marcaine plain and 1% Lidocaine plain was injected into the foot in a standard Mayo block fashion.  The foot was elevated off the table.  Esmarch bandages were used to exsanguinate the right foot.  The pneumatic ankle tourniquet was elevated to 250 mmHg.  The foot was lowered in the operative field and the sterile stockinet was reflected.  A sterile Betadine was wiped away with a wet and dry sponge and one toothpick was used to test anesthesia, which was found to be adequate.  Attention was directed to the first metatarsophalangeal joint, which was found to be contracted, laterally deviated, and had decreased range of motion.  A #10 blade was used to make a 4 cm dorsolinear incision.  A #15 blade was used to deepen the incision through the subcutaneous layer.  All superficial subcutaneous vessels were ligated with electrocautery.  Next, a linear capsular incision was made down the bone with a #15 blade.  The capsule was elevated medially and laterally off the metatarsal head and the metatarsal head was delivered into the wound.  A hypertrophic medial eminence was resected with a sagittal saw taking care not to strike the head.  The medial plantar aspect of the metatarsal head had some erosive changes and eburnation.  Next, a 0.45 inch Kirschner wire was placed with some access guide slightly plantar flexing the metatarsal taking care not to shorten it.  A sagittal saw was used to make a long-arm Austin osteotomy in the usual fashion.  Standard lateral release was also performed as well as a lateral capsulotomy freeing the fibular sesamoid complex.,The capital head was shifted laterally and impacted on the residual metatarsal head.  Nice correction was achieved and excellent bone to bone contact was achieved.  The bone stock was slightly decreased, but adequate.  Next, a 0.45 inch Kirschner wire was used to temporarily fixate the metatarsal capital fragment.  A 2.7 x 18 mm Synthes cortical screw was thrown using standard AO technique.  Excellent rigid fixation was achieved.  A second 2.0 x 80 mm Synthes fully threaded cortical screw was also thrown using standard AO technique at the proximal aspect of the metatarsal head.  Again, an excellent rigid fixation was obtained and the screws were tight.  The temporary fixation was removed.  A medial overhanging bone was resected with a sagittal saw.  The foot was loaded and the hallux was found to have an interphalangeus deformity present.,A sagittal saw was used to make a proximal cut in approximately 1 cm dorsal to the base of the proximal phalanx, leaving a lateral intact cortical hinge.  A distal cut parallel with the nail base was performed and a standard proximal Akin osteotomy was done.,After the wedge bone was removed, the saw blade was reinserted and used to tether the osteotomy with counter-pressure used to close down the osteotomy.  A #15 drill blade was used to drill two converging holes on the medial aspect of the bone.  A #28 gauge monofilament wire was inserted loop to loop and pulled through the bone.  The monofilament wire was twisted down and tapped into the distal drill hole.  The foot was loaded again and the toe had an excellent cosmetic straight appearance and the range of motion of the first metatarsophalangeal joint was then improved.  Next, reciprocating rasps were used to smooth all bony surfaces.  Copious amounts of sterile saline was used to flush the joint.  Next, a #3-0 Vicryl was used to reapproximate the capsular periosteal tissue layer.  Next, #4-0 Vicryl was used to close the subcutaneous layer.  #5-0 Vicryl was used to the close the subcuticular layer in a running fashion.  Next, 1 cc of dexamethasone phosphate was then instilled in the joint.  The Steri-Strips were applied followed by standard postoperative dressing consisting of Owen silk, 4 x 4s, Kling, Kerlix, and Coban.  The pneumatic ankle tourniquet was released and immediate hyperemic flush was noted to the digits.  The patient tolerated the above anesthesia and procedure without complications.  She was transported via cart to the Postanesthesia Care Unit with vital signs stable and vascular status intact to the right foot.  She is to be partial weightbearing with crutches.  She is to follow with Dr. X.  She was given emergency contact numbers and instructions to call if problems arise.  She was given prescription for Vicodin ES #25 one p.o. q.4-6h. p.r.n. pain and Naprosyn one p.o. b.i.d.  500 mg.  She was discharged in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 27.025,
+      "caregiver_checklist": 17.395,
+      "child_explanation": 12.985,
+      "total": 57.427
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T05:50:34+00:00"
+  }
+}

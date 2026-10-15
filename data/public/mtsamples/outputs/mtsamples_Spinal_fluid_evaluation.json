@@ -1,0 +1,162 @@
+{
+  "id": "mtsamples_Spinal_fluid_evaluation",
+  "patient_summary": "Hello there, little one. I'm here to explain what's happening to you and what you need to do. You've been feeling sick for about 15 days now. Your mommy and grandma told us that you started having jelly-like red-brown poop and were also throwing up after eating. The doctors checked you and found that your body was fighting something, which is why your white blood cell count was high. They also noticed that your blood levels of sodium, potassium, and other things weren't quite right.\n\nThe doctors gave you some medicine called ampicillin and cefotaxime, and another one called Rocephin. They also did a special test called a barium enema, but it showed nothing. Because you were still sick, they sent you to Children's Hospital for more care.\n\nYou're taking a medicine called nystatin for something called thrush, which is a type of yeast that can grow on your tongue. You don't have any allergies, and you don't have any past surgeries or immunizations. You live at home with your mommy and grandma, and there's no smoking at home. You're a small, well-developed baby girl, and you're doing okay overall.\n\nThe doctors think you might have a viral infection, but they're not sure yet. They gave you some IV fluids to help with the dehydration you were having. You're still a bit upset, but you're eating a little bit and burping. They're going to keep a close eye on you to make sure you're getting better.\n\nIf you start to feel worse or if you have any new symptoms, you should tell the nurses or doctors right away. They're here to help you get better. The doctors gave you 0.5 mL of each of the medicines ampicillin, cefotaxime, and Rocephin.",
+  "caregiver_checklist": [
+    "Check the patient's temperature, pulse, and respirations every 4 hours.",
+    "Watch for signs of dehydration such as dry mouth, fewer wet diapers, or lethargy.",
+    "Call the healthcare team if the patient's diarrhea or vomiting worsens.",
+    "Schedule a follow-up appointment in 2 weeks for continued monitoring.",
+    "Call if the patient develops a rash or if thrush symptoms persist.",
+    "Schedule a repeat stool test in 5 days if diarrhea continues.",
+    "Call if the patient's electrolyte levels change significantly.",
+    "Watch for signs of infection such as fever or increased lethargy.",
+    "Schedule a repeat blood test in 5 days to monitor white blood cell count.",
+    "Call if the patient shows signs of acidosis or worsening dehydration.",
+    "Schedule a repeat i-STAT in 4 hours to monitor base excess levels.",
+    "Call if the patient's appetite decreases or if they stop burping.",
+    "Other duration: 15-day",
+    "Other dosage: 0.5 mL"
+  ],
+  "child_explanation": "You have a tummy bug, you know, like when you get the yucky tummy feeling. Your tummy is upset, so you're not eating as much and you're throwing up a bit. The doctors gave you some medicine to help. They also did a special test to check inside your tummy. The grown-ups and doctors are taking care of you. You're just a tiny bit dehydrated, but they're giving you more drinks to help. You'll be okay, and the doctors will keep watching you.",
+  "entities": [
+    {
+      "text": "15-day",
+      "label": "DURATION",
+      "start": 16,
+      "end": 22
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 1092,
+      "end": 1104
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 1555,
+      "end": 1563
+    },
+    {
+      "text": "diarrhea",
+      "label": "SYMPTOM",
+      "start": 1573,
+      "end": 1581
+    },
+    {
+      "text": "15-day",
+      "label": "DURATION",
+      "start": 1774,
+      "end": 1780
+    },
+    {
+      "text": "rash",
+      "label": "SYMPTOM",
+      "start": 2525,
+      "end": 2529
+    },
+    {
+      "text": "upper respiratory infection",
+      "label": "CONDITION",
+      "start": 2755,
+      "end": 2782
+    },
+    {
+      "text": "urinary tract infection",
+      "label": "CONDITION",
+      "start": 2801,
+      "end": 2824
+    },
+    {
+      "text": "0.5 mL",
+      "label": "DOSAGE",
+      "start": 3962,
+      "end": 3968
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 5128,
+      "end": 5136
+    }
+  ],
+  "regimens": [],
+  "source_text": "HISTORY:  ,This 15-day-old female presents to Children's Hospital and transferred from Hospital Emergency Department for further evaluation.  Information is obtained in discussion with the mother and the grandmother in review of previous medical records.  This patient had the onset on the day of presentation of a jelly-like red-brown stool started on Tuesday morning.  Then, the patient was noted to vomit after feeds.  The patient was evaluated at Hospital with further evaluation with laboratory data showing a white blood cell count elevated at 22.2; hemoglobin 14.1; sodium 138; potassium 7.2, possibly hemolyzed; chloride 107; CO2 23; BUN 17; creatinine 1.2; and glucose of 50, which was repeated and found to be stable in that range.  The patient underwent a barium enema, which was read by the radiologist as negative.  The patient was transferred to Children's Hospital for further evaluation after being given doses of ampicillin, cefotaxime, and Rocephin.,PAST MEDICAL HISTORY: , Further, the patient was born in Hospital.  Birth weight was 6 pounds 4 ounces.  There was maternal hypertension.  Mother denies group B strep or herpes.  Otherwise, no past medical history.,IMMUNIZATIONS: , None today.,MEDICATIONS: , Thrush medicine identified as nystatin.,ALLERGIES: , Denied.,PAST SURGICAL HISTORY: , Denied.,SOCIAL HISTORY:  ,Here with mother and grandmother, lives at home.  There is no smoking at home.,FAMILY HISTORY: , None noted exposures.,REVIEW OF SYSTEMS:  ,The patient is fed Enfamil, bottle-fed.  Has had decreased feeding, has had vomiting, has had diarrhea, otherwise negative on the 10 plus systems reviewed.,PHYSICAL EXAMINATION:,VITAL SIGNS/GENERAL:  On physical examination, the initial temperature 97.5, pulse 140, respirations 48 on this 2 kg 15-day-old female who is small, well-developed female, age appropriate.,HEENT: Head is atraumatic and normocephalic with a soft and flat anterior fontanelle.  Pupils are equal, round, and reactive to light.  Grossly conjugate.  Bilateral red reflex appreciated bilaterally.  Clear TMs, nose, and oropharynx.  There is a kind of abundant thrush and white patches on the tongue.,NECK:  Supple, full, painless, and nontender range of motion.,CHEST:  Clear to auscultation, equal, and stable.,HEART:  Regular without rubs or murmurs, and femoral pulses are appreciated bilaterally.,ABDOMEN:  Soft and nontender.  No hepatosplenomegaly or masses.,GENITALIA:  Female genitalia is present on a visual examination.,SKIN:  No significant bruising, lesions, or rash.,EXTREMITIES:  Moves all extremities, and nontender.  No deformity.,NEUROLOGICALLY:  Eyes open, moves all extremities, grossly age appropriate.,MEDICAL DECISION MAKING: , The differential entertained on this patient includes upper respiratory infection, gastroenteritis, urinary tract infection, dehydration, acidosis, and viral syndrome.  The patient is evaluated in the emergency department laboratory data, which shows a white blood cell count of 13.1, hemoglobin 14.0, platelets 267,000, 7 stabs, 68 segs, 15 lymphs, and 9 monos.  Serum electrolytes not normal.  Sodium 138, potassium 5.0, chloride 107, CO2 acidotic at 18, glucose normal at 88, and BUN markedly elevated at 22 as is the creatinine of 1.4.  AST and ALT were elevated as well at 412 and 180 respectively.  A cath urinalysis showing no signs of infection.  Spinal fluid evaluation, please see procedure note below.  White count 0, red count 2060.  Gram stain negative.,PROCEDURE NOTE: , After discussion of the risks, benefits, and indications, and obtaining informed consent with the family and their agreement to proceed, this patient was placed in the left lateral position and using aseptic Betadine preparation, sterile draping, and sterile technique pursued throughout, this patient's L4- L5 interspace was anesthetized with the 1% lidocaine solution following the above sterile preparation, entered with a 22-gauge styletted spinal needle of approximately 0.5 mL clear CSF, they were very slow to obtain.  The fluid was obtained, the needle was removed, and sterile bandage was placed.  The fluid was sent to laboratory for further evaluation (aunt and grandmother) were present throughout the period of time during this procedure and the procedure was tolerated well.  An i-STAT initially obtained showed somewhat of an acidosis with a base excess of -12.  A repeat i-STAT after a bolus of normal saline and a second bolus of normal saline, her maintenance rate of D5 half showed a base excess of -11, which is slowly improving, but not very fast.  Based on the above having this patient consulted to the Hospitalist Service at 2326 hours of request, this patient was consulted to PICU with the plan that the patient need to have continued IV fluids.  Showing signs of dehydration, a third bolus of normal saline was provided, twice maintenance D5 half was continued.  The patient was admitted to the Hospitalist Service for continued IV fluids.  The patient maintains to have clear lungs, has been feeding well here in the department, took virtually a whole small bottle of the appropriate formula.  She has not had any vomiting, is burping.  The patient is admitted for continued close observation and rehydration due to the working diagnoses of gastroenteritis, metabolic acidosis, and dehydration.  Critical care time on this patient is less than 30 minutes, exclusive, otherwise time has been spent evaluating this patient according to this patient's care and admission to the Hospitalist Service.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "0.5 mL"
+      ],
+      "caregiver_checklist": [
+        "15-day",
+        "0.5 mL"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 55.561,
+      "caregiver_checklist": 30.083,
+      "child_explanation": 13.51,
+      "total": 99.171
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T07:57:25+00:00"
+  }
+}

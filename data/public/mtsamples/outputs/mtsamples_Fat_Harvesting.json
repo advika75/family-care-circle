@@ -1,0 +1,114 @@
+{
+  "id": "mtsamples_Fat_Harvesting",
+  "patient_summary": "Hello there! I'm here to explain what happened during your recent procedure and what you need to do next. It's important to understand everything so you can take good care of yourself.\n\nYou had a small cut made in your thigh to get some fat. Then, a special liquid called PhysioSol was used to clean the fat. PhysioSol has insulin in it, which is a medicine that helps control blood sugar levels. You needed 100 units of regular insulin.\n\nAfter that, the fat was put into a special tool to make it easier to inject. A doctor used a tiny mirror to look at your throat and then put the fat into your throat muscles. You did a good job during the procedure and felt well afterward.\n\nNow, you need to take insulin as your doctor tells you. You should check your blood sugar levels as often as your doctor suggests. If you have any questions or feel sick, you should call your doctor right away. They are there to help you and answer any concerns you might have.",
+  "caregiver_checklist": [
+    "Check that the patient has received insulin as directed by the surgeon (100 units).",
+    "Watch for signs of hypoglycemia such as tremors, confusion, or irritability.",
+    "Schedule a follow-up appointment with the surgeon in 2 weeks.",
+    "Call the surgeon if the patient experiences any unusual symptoms.",
+    "Check the patient's blood sugar levels as directed by the surgeon.",
+    "Monitor for signs of infection at the injection site.",
+    "Call the surgeon if the patient develops redness, swelling, or discharge at the injection site.",
+    "Schedule a laryngoscopy in 6 months to assess the healing of the TA muscles.",
+    "Check the patient's voice and swallowing function at home.",
+    "Call the surgeon if the patient experiences difficulty speaking or swallowing.",
+    "Schedule a follow-up appointment with the surgeon if the patient's voice does not improve."
+  ],
+  "child_explanation": "You had a little operation today, you know. The doctors took some of your tummy fat and put it in your throat. It's like they're giving you tiny helpers to make your voice sound nice. You're in good hands with the doctors and nurses. You'll feel better soon, don't worry.",
+  "entities": [
+    {
+      "text": "100 units",
+      "label": "DOSAGE",
+      "start": 773,
+      "end": 782
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 794,
+      "end": 801
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "insulin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Incompetent glottis.,POSTOPERATIVE DIAGNOSIS:,  Incompetent glottis.,OPERATION PERFORMED:,1.  Fat harvesting from the upper thigh.,2.  Micro-laryngoscopy.,3.  Fat injection thyroplasty.,FINDINGS AND PROCEDURE: , With the patient in the supine position under adequate general endotracheal anesthesia, the operative area was prepped and draped in a routine fashion.  A 1-cm incision was made in the upper thigh, and approximately 5 cc of fat was liposuctioned from the subcutaneous space.  After this had been accomplished, the wound was closed with an interrupted subcuticular suture of 4-0 chromic and a light compression dressing was applied.,Next, the fat was placed in a urine strainer and copiously washed using 100 cc of PhysioSol containing 100 units of regular insulin.  After this had been accomplished, it was placed in a 3-cc BD syringe and, thence, into the Stasney fat injector device.  Next, a Dedo laryngoscope was used to visualize the larynx, and approximately *** cc of fat was injected into the right TA muscle and *** cc of fat into the left TA muscle.,The patient tolerated the procedure well and was returned to the recovery room in satisfactory condition.  Estimated blood loss was negligible.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "100 units"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 10.852,
+      "caregiver_checklist": 17.815,
+      "child_explanation": 5.196,
+      "total": 33.872
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T06:06:26+00:00"
+  }
+}

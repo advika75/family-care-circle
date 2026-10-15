@@ -1,0 +1,136 @@
+{
+  "id": "mtsamples_Status_Post_T_A",
+  "patient_summary": "Hello there, little one. I'm glad to hear that you're feeling better after your surgery. Let me explain what's going on and what you need to do next.\n\nYou had a big operation to remove your tonsils and adenoids, and also cleaned out your sinuses. You've been having some problems with your throat and sinuses, like snoring, infections, and not sleeping well. Your doctor cleaned everything up and you did really well. You stayed overnight at the hospital, but your mom helped you take fluids and you went home that evening.\n\nYou finished taking a medicine called Augmentin, and after a few days, you stopped taking another medicine called Lortab. Your mom hasn't noticed anything unusual with your voice, but you don't like the taste of foods that are a bit sour, like tomato sauce. You haven't had any bleeding or discharge from your nose.\n\nYour doctor said you can use some ibuprofen if your mouth or jaws are still a bit sensitive. You can chew gum and eat crunchy foods like potato chips. Your doctor explained that your sinuses and tonsils were having problems for a while, but they're healing now. You can keep eating your favorite foods, but you might need to be careful when you open your mouth really wide, like when you brush your teeth.\n\nYour doctor told your mom that everything looks good, and you don't have any other restrictions. Your doctor will write to Dr. XYZ to let them know about your healing. You'll keep seeing your family doctor for regular check-ups, and your doctor is happy to see you anytime if you need help.\n\nYou seem to be breathing better and feeling much better. You can keep eating your favorite foods and doing the things you enjoy. Just be careful when you open your mouth wide, and if you have any pain or if you don't feel better, let your doctor know. You're doing great!",
+  "caregiver_checklist": [
+    "Check Augmentin levels in the child's blood to ensure it's not needed anymore.",
+    "Schedule a follow-up appointment with the child's family doctor in 6 weeks.",
+    "Watch for any new symptoms like fever, severe pain, or difficulty breathing.",
+    "Call if the child's voice changes or becomes hoarse.",
+    "Call if the child has any new symptoms like fever, severe pain, or difficulty breathing.",
+    "Call if the child experiences any unusual bleeding or nosebleeds.",
+    "Check if the child is still sensitive to acidic foods and adjust the diet if necessary.",
+    "Schedule a dental appointment to check the child's mouth and jaw sensitivity.",
+    "Give ibuprofen in case his mouth or jaws are still sensitive, especially when brushing teeth or opening mouth wide."
+  ],
+  "child_explanation": "You had a big operation to clean out your throat and sinuses. Your body is still working hard to heal. You're feeling much better now. You can eat crunchy foods and use ibuprofen if it hurts. Your voice sounds clear, and you breathe better. Grown-ups and doctors are taking good care of you. You'll keep seeing your family doctor.",
+  "entities": [
+    {
+      "text": "fatigue",
+      "label": "SYMPTOM",
+      "start": 238,
+      "end": 245
+    },
+    {
+      "text": "Augmentin",
+      "label": "MEDICATION",
+      "start": 465,
+      "end": 474
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 718,
+      "end": 726
+    },
+    {
+      "text": "ibuprofen",
+      "label": "MEDICATION",
+      "start": 971,
+      "end": 980
+    },
+    {
+      "text": "sinusitis",
+      "label": "CONDITION",
+      "start": 1262,
+      "end": 1271
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Augmentin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "ibuprofen",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "SUBJECTIVE:,  A 6-year-old boy who underwent tonsillectomy and adenoidectomy two weeks ago.  Also, I cleaned out his maxillary sinuses.  Symptoms included loud snoring at night, sinus infections, throat infections, not sleeping well, and fatigue.  The surgery went well, and I had planned for him to stay overnight, but Mom reminds me that by about 8 p.m. the night nurse gotten him to take fluids well and we let him go home then that evening.  He finished up his Augmentin, by a day or two later he was off the Lortab.  Mom has not noticed any unusual voice change.  No swallowing difficulty except he does not like the taste of acidic foods such as tomato sauce.  He has not had any nasal discharge or ever had any bleeding.  He seems to be breathing better.,OBJECTIVE:,  Exam looks good.  The pharynx is well healed.  Tongue mobility is normal.  Voice sounds clear.  Nasal passages reveal no discharge or crusting.,RECOMMENDATION:,  I told Mom it is okay to use some ibuprofen in case his mouth or jaws are still sensitive.  He says it seems to hurt if he opens his mouth real wide such as when he brushes his teeth.  It is okay to chew gum and it is okay to eat crunchy foods such as potato chips.  The pathologist described the expected changes of chronic sinusitis and chronic hypertrophic tonsillitis and adenoiditis, and there were no atypical findings on the laboratories.,I am glad he has healed up well.  There are no other restrictions or limitations.  I told Mom, I had written to Dr. XYZ to let her know of the findings.  The child will continue his regular followup visits with his family doctor, and I told Mom I would be happy to see him anytime if needed.  He did very well after surgery and he seems to feel better and breathe a lot better after his throat and sinus procedure.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "ibuprofen"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 22.24,
+      "caregiver_checklist": 19.681,
+      "child_explanation": 6.476,
+      "total": 48.412
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T07:59:18+00:00"
+  }
+}

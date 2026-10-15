@@ -1,0 +1,218 @@
+{
+  "id": "mtsamples_Cervicalgia",
+  "patient_summary": "Hello there, it looks like you're dealing with some health problems. Let's go over what we know and what you need to do next.\n\n### What's Going On?\nYou have some health problems like high blood pressure and depression. You also have some pain in your arms and neck. You have a history of cancer in your family, and you have some other health issues too. You don't drink alcohol or smoke, but you do have some teeth that need to be pulled.\n\n### What Medicines Do You Need?\nYou don't have any medicines listed right now. Your doctor will prescribe some to help with your high blood pressure and depression. You also need to take aspirin, which is a medicine that can help with pain and swelling. Your doctor will tell you how much to take and when to take it.\n\n### How Do You Take Your Medicines?\nYou'll need to take your aspirin every day. Your doctor will give you instructions on how many to take and when. You might need to take other medicines too, but your doctor will prescribe those for you. Make sure to take them exactly as your doctor tells you.\n\n### When Should You Get Help?\nIf you have any of these symptoms, you should get help right away:\n- Headaches\n- Dizziness\n- Sore throat\n- Difficulty swallowing\n- Chest pain\n- Shortness of breath\n- Cough\n- Swelling in your feet and ankles\n- Anxiety\n- Rashes\n\nIf you have any of these symptoms, you should call your doctor or go to the emergency room right away. If you're not sure if you need to go, you should always call your doctor's office. They will tell you what to do.\n\n### Next Steps\nYour doctor will get your MRI and x-rays taken. They want to see the MRI to make sure the plate in your neck is okay. They want to remove the plate so you can eat and drink better and so you can have your shoulder surgery. They will see you next week to discuss everything and answer any questions you have.\n\nI hope this helps you understand what's going on. If you have any more questions, you can always ask your doctor or nurse. They are here to help you.",
+  "caregiver_checklist": [
+    "Check for any new rashes or lesions.",
+    "Watch for any new or worsening symptoms like headaches, dizziness, sore throat, difficulty swallowing, chest pain, shortness of breath, cough, swelling, anxiety, or rashes.",
+    "Call if you notice any of the warning signs.",
+    "Schedule the MRI to be reviewed by Dr. L.",
+    "Call if you have any questions, concerns, or complications.",
+    "Schedule a follow-up appointment as per the plan.",
+    "Take note of any aspirin use or interactions."
+  ],
+  "child_explanation": "You have some health problems like your mom and dad. You and your brothers are healthy, but your aunts have cancer. Grown-ups and doctors are taking care of you. You have a special plate in your neck from a surgery. You have some pain in your arms, so you can't eat or drink easily. The doctors want to take out the plate to help you eat better. They will check your arms and neck again. You and the doctors will talk more about your pain.",
+  "entities": [
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 353,
+      "end": 365
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 420,
+      "end": 430
+    },
+    {
+      "text": "Aspirin",
+      "label": "MEDICATION",
+      "start": 565,
+      "end": 572
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 664,
+      "end": 676
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 678,
+      "end": 688
+    },
+    {
+      "text": "Headaches",
+      "label": "SYMPTOM",
+      "start": 947,
+      "end": 956
+    },
+    {
+      "text": "dizziness",
+      "label": "SYMPTOM",
+      "start": 974,
+      "end": 983
+    },
+    {
+      "text": "sore throat",
+      "label": "SYMPTOM",
+      "start": 989,
+      "end": 1000
+    },
+    {
+      "text": "Difficulty swallowing",
+      "label": "SYMPTOM",
+      "start": 1008,
+      "end": 1029
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1081,
+      "end": 1085
+    },
+    {
+      "text": "Shortness of breath",
+      "label": "SYMPTOM",
+      "start": 1155,
+      "end": 1174
+    },
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 1179,
+      "end": 1184
+    },
+    {
+      "text": "Chest pain",
+      "label": "SYMPTOM",
+      "start": 1197,
+      "end": 1207
+    },
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 1212,
+      "end": 1220
+    },
+    {
+      "text": "Anxiety",
+      "label": "SYMPTOM",
+      "start": 1259,
+      "end": 1266
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 1271,
+      "end": 1281
+    },
+    {
+      "text": "rashes",
+      "label": "SYMPTOM",
+      "start": 2530,
+      "end": 2536
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 2874,
+      "end": 2878
+    },
+    {
+      "text": "difficulty swallowing",
+      "label": "SYMPTOM",
+      "start": 3940,
+      "end": 3961
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 4688,
+      "end": 4692
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Aspirin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "FAMILY HISTORY: , Her father died at the age of 80 from prostate cancer.  Her mother died at the age of 67.  She did abuse alcohol.  She had a brother died at the age of 70 from bone and throat cancer.  She has two sons, ages 37 and 38 years old who are healthy.  She has two daughters, ages 60 and 58 years old, both with cancer.  She describes cancer hypertension, nervous condition, kidney disease, lung disease, and depression in her family.,SOCIAL HISTORY: , She is married and has support at home.  Denies tobacco, alcohol, and illicit drug use.,ALLERGIES: , Aspirin.,MEDICATIONS:  ,The patient does not list any current medications.,PAST MEDICAL HISTORY: , Hypertension, depression, and osteoporosis.,PAST SURGICAL HISTORY: , She has had over her over her lifetime four back surgeries and in 2005 she had anterior cervical discectomy and fusion of C3 through C7 by Dr. L.  She is G10, P7, no cesarean sections.,REVIEW OF SYSTEMS: , HEENT:  Headaches, vision changes, dizziness, and sore throat.  GI:  Difficulty swallowing.  Musculoskeletal:  She is right-handed with joint pain, stiffness, decreased range of motion, and arthritis.  Respiratory:  Shortness of breath and cough.  Cardiac:  Chest pain and swelling in her feet and ankle.  Psychiatric:  Anxiety and depression.  Urinary:  Negative and noncontributory.  Hem-Onc:  Negative and noncontributory.  Vascular:  Negative and noncontributory.  Genital:  Negative and noncontributory.,PHYSICAL EXAMINATION:,  On physical exam, she is 5 feet tall and currently weighs 110 pounds; weight one year ago was 145 pounds.  BP 138/78, pulse is 64.  General:  A well-developed, well-nourished female, in no acute distress.  HEENT exam, head is atraumatic and normocephalic.  Eyes, sclerae are anicteric.  Teeth, she does have some poor dentition.  She does say that she needs some of her teeth pulled on her lower mouth.  Cranial nerves II, III, IV, and VI, vision is intact and visual fields are full to confrontation.  EOMs are full bilaterally.  Pupils are equal, round, and reactive to light.  Cranial nerves V and VII, normal facial sensation and symmetrical facial movements.  Cranial nerve VIII, hearing is intact, although decreased bilaterally right worse than left.  Cranial nerves IX, X, and XII, tongue protrudes midline and palate elevates symmetrically.  Cranial nerve XI, strong and symmetrical shoulder shrugs against resistance.  Cardiac, regular rate and rhythm.  Chest and lungs are clear bilaterally.  Skin is warm and dry.  Normal turgor and texture.  No rashes or lesions are noted.  General musculoskeletal exam reveals no gross deformity, fasciculations, and atrophy.  Peripheral vascular, no cyanosis, clubbing, or edema.  She does have some tremoring of her bilateral upper arms as she said.  Strength testing reveals difficulty when testing due to the fact that the patient does have a lot of pain, but she seems to be pretty equal in the bilateral upper extremities with no obvious weakness noted.  She is about 4+/5 in the deltoids, biceps, triceps, wrist flexors, wrist extensors, dorsal interossei, and grip strength.,It is much more painful for her on the left.  Deep tendon reflexes are 2+ bilaterally only at biceps, triceps, and brachioradialis, knees, and ankles.  No ankle clonus is elicited.  Hoffmann's is negative bilaterally.  Sensation is intact.  She ambulates with slow short steps.  No spastic gait is noted.  She has appropriate station and gait with no assisted devices, although she states that she is supposed to be using a cane.  She does not bring one in with her today.,FINDINGS: , Patient brings in cervical spine x-rays and she has had an MRI taken but does not bring that in with her today.  She will obtain that and x rays, which showed at cervical plate C3, C4, C5, C6, and C7 anteriorly with some lifting with the most lifted area at the C3 level.  No fractures are noted.,ASSESSMENT: , Cervicalgia, cervical radiculopathy, and difficulty swallowing status post cervical fusion C3 through C7 with lifting of the plate.,PLAN:,  We went ahead and obtained an EKG in the office today, which demonstrated normal sinus rhythm.  She went ahead and obtained her x-rays and will pick her MRI and return to the office for surgical consultation with Dr. L first available.  She would like the plate removed, so that she can eat and drink better, so that she can proceed with her shoulder surgery.  All questions and concerns were addressed with her.  Warning signs and symptoms were gone over with her.  If she should have any further questions, concerns, or complications, she will contact our office immediately; otherwise, we will see her as scheduled.  I am quite worried about the pain that she is having in her arms, so I would like to see the MRI as well.  Case was reviewed and discussed with Dr. L.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "Aspirin"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 28.25,
+      "caregiver_checklist": 17.566,
+      "child_explanation": 11.74,
+      "total": 57.566
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T05:54:34+00:00"
+  }
+}

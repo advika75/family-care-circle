@@ -1,0 +1,119 @@
+{
+  "id": "mtsamples_Total_Abdominal_Hysterectomy_-_2",
+  "patient_summary": "Hello there! I'll explain what's happening and what you need to do next in simple terms.\n\nYou had a surgery called a total abdominal hysterectomy. This means they removed your uterus and some other parts of your body. The surgery was successful, and there were no problems during the procedure. You had some pain before the surgery, and they also found some extra tissue in your pelvis called endometriosis. They removed this tissue too.\n\nHere's what you need to do:\n- Take the medicines your doctor gave you. These medicines will help you feel better and prevent infections. You'll take them by mouth, and you'll need to take them for a few days.\n- Drink plenty of water. Your body needs to stay hydrated.\n- You might feel some pain after the surgery. If you have severe pain, or if you have a fever, or if you feel very sick, you should call your doctor right away. They might want you to come back to the hospital.\n- You can go home after the surgery. You'll need to rest and take it easy for a few days. You might feel tired or have some bleeding from your vagina. This is normal and will stop on its own.\n- You'll have follow-up appointments to make sure you're healing well. Your doctor will tell you when these are.\n- You'll need to take care of yourself and follow the instructions your doctor gives you. If you have any questions, don't hesitate to ask your doctor or nurse.",
+  "caregiver_checklist": [
+    "Give the patient a pain medication as prescribed.",
+    "Check the patient for signs of bleeding, such as bright red blood in the urine or on the dressing.",
+    "Watch for signs of infection, such as fever, redness, or increased pain.",
+    "Call the doctor if the patient experiences severe pain, heavy bleeding, or signs of infection.",
+    "Schedule a follow-up appointment within 2 weeks to monitor recovery.",
+    "Call the doctor if the patient experiences persistent pain, fever, or signs of infection.",
+    "Watch for signs of bowel issues, such as constipation or abdominal pain.",
+    "Call the doctor if the patient experiences bowel issues or if the pain does not improve."
+  ],
+  "child_explanation": "You had a big ouchie in your tummy. But don't worry, the doctors and grown-ups took good care of you. They used a special team of tiny helpers to take out the ouchie. Now you'll feel much better. You'll need to rest for a few days. The doctors will check you to make sure you're healing well. You're in good hands, you'll be okay.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 64,
+      "end": 68
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 135,
+      "end": 139
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 5644,
+      "end": 5652
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 7123,
+      "end": 7131
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 7180,
+      "end": 7188
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES:,1.  Enlarged fibroid uterus.,2.  Pelvic pain.,POSTOPERATIVE DIAGNOSES:,1.  Enlarged fibroid uterus.,2.  Pelvic pain.,3.  Pelvic endometriosis.,PROCEDURE PERFORMED: ,Total abdominal hysterectomy.,ANESTHESIA: , General endotracheal and spinal with Astramorph.,COMPLICATIONS: , None.,ESTIMATED BLOOD LOSS: , 200 cc.,FLUIDS:  ,2400 cc of crystalloids.,URINE OUTPUT: , 100 cc of clear urine.,INDICATIONS:,  This is a 40-year-old female gravida-0 with a history of longstanding enlarged fibroid uterus.  On ultrasound, the uterus measured 14 cm x 6.5 cm x 7.8 cm.  She had received two dosage of Lupron to help shrink the fibroid.  Her most recent Pap smear was normal.,FINDINGS: , On a manual exam, the uterus is enlarged approximately 14 to 16 weeks size with multiple fibroids palpated.  On laparotomy, the uterus did have multiple pedunculated fibroids, the largest being approximately 7 cm.  The bilateral tubes and ovaries appeared normal.,There was evidence of endometriosis on the posterior wall of the uterus as well as the bilateral infundibulopelvic ligament.  There was some adhesions of the bowel to the left ovary and infundibulopelvic ligament and as well as to the right infundibulopelvic ligament.,PROCEDURE:,  After consent was obtained, the patient was taken to the operating room where spinal anesthetic was first administered and then general anesthetic.  The patient was placed in the dorsal supine position and prepped and draped in normal sterile fashion.  A Pfannenstiel skin incision was made and carried to the underlying Mayo fashion using the second knife.  The fascia was incised in midline and the incision extended laterally using Mayo scissors.  The superior aspect of the fascial incision was grasped with Kocher clamps, tented up, and dissected off the underlying rectus muscle both bluntly and sharply with Mayo scissors.  Attention was then turned to the inferior aspect of the incision, which in a similar fashion was grasped with Kocher clamps, tented up and dissected off the underlying rectus muscles.  The rectus muscles were separated in the midline and the peritoneum was identified, grasped with hemostat, and entered sharply with Metzenbaum scissors.  This incision was extended superiorly and inferiorly with good visualization of the bladder.  The uterus was then brought up out of the incision.  The bowel adhesions were carefully taken down using Metzenbaum scissors.  Good hemostasis was noted at this point.  The self-retaining retractor was then placed.  The bladder blade was placed.  The bowel was gently packed with moist laparotomy sponges and held in place with the blade on the GYN extension.  The uterus was then grasped with a Lahey clamp and brought up out of the incision.  The left round ligament was identified and grasped with Allis clamp and tented up.  A hemostat was passed in the avascular area beneath the round ligament.  A suture #0 Vicryl was used to suture ligate the round ligament.  Two hemostats were placed across the round ligament proximal to the previously placed suture and the Mayo scissors were used to transect the round ligament.  An avascular area of the broad ligament was then identified and entered bluntly.  The suture of #0 Vicryl was then used to suture ligate the left uterovarian ligament.  Two straight Ochsner's were placed across the uterovarian ligament proximal to the previous suture.  The ligament was then transected and suture ligated with #0 Vicryl.  Attention was then turned to the right round ligament, which in a similar fashion was tented up with an Allis clamp.  An avascular area was entered beneath the round ligament using a hemostat and the round ligament was suture ligated and transected.  An avascular area of the broad ligament was then entered bluntly and the right uterovarian ligament was then suture ligated with #0 Vicryl.,Two straight Ochsner's were placed across the ligament proximal to previous suture.  This was then transected and suture ligated again with #0 Vicryl.  The left uterine peritoneum was then identified and grasped with Allis clamps.  The vesicouterine peritoneum was then transected and then entered using Metzenbaum scissors.  This incision was extended across the anterior portion of the uterus and the bladder flap was taken down.  It was sharply advanced with Metzenbaum scissors and then bluntly using a moist Ray-Tec.  The Ray-Tec was left in place at this point to ensure that the bladder was below the level of the cervix.  The bilateral uterine arteries then were skeletonized with Metzenbaum scissors and clamped bilaterally using straight Ochsner's.  Each were then transected and suture ligated with #0 Vicryl.  A curved Ochsner was then placed on either side of the cervix.  The tissue was transected using a long knife and suture ligated with #0 Vicryl.  Incidentally, prior to taking down the round ligaments, a pedunculated fibroid and the right fundal portion of the uterus was injected with Vasopressin and removed using a Bovie.  The cervix was then grasped with a Lahey clamp.  The cervicovaginal fascia was then taken down first using the long-handed knife and then a back handle of the knife to bring the fascia down below the level of the cervix.  A double-pointed scissors were used to enter the vaginal vault below the level of the cervix.  A straight Ochsner was placed on the vaginal vault.  The Jorgenson scissors were used to amputate the cervix and the uterus off of the underlying vaginal tissue.  The vaginal cuff was then reapproximated with #0 Vicryl in a running locked fashion and the pelvis was copiously irrigated.  There was a small area of bleeding noted on the underside of the bladder.  The bladder was tented up using an Allis clamp and a figure-of-eight suture of #3-0 Vicryl was placed with excellent hemostasis noted at this point.  The uterosacral ligaments were then incorporated into the vaginal cuff and the cuff was synched down.  A figure-of-eight suture of #0 Vicryl was placed in the midline of the vaginal cuff in attempt to incorporate the bilateral round ligament.  The round ligament was too short.  It would be a maximal amount of stretch to incorporate, therefore, only the left round ligament was incorporated into the vaginal cuff.  The bilateral adnexal areas were then re-peritonealized with #3-0 Vicryl in a running fashion.  The bladder flap was reapproximated to the vaginal cuff using one interrupted suture.  The pelvis was again irrigated at this point with excellent hemostasis noted.  Approximately 200 cc of saline with methylene blue was placed into the Foley to inflate the bladder.  There was no spillage of blue fluid into the abdomen.  The fluid again was allowed to drain.  All sponges were then removed and the bowel was allowed to return to its anatomical position.  The peritoneum was then reapproximated with #0 Vicryl in a running fashion.  The fascia was reapproximated also with #0 Vicryl in a running fashion.  The skin was then closed with staples.,A previously placed Betadine soaked Ray-Tec was removed from the patient's vagina and sponge stick was used to assess any bleeding in the vaginal vault.  There was no appreciable bleeding.  The patient tolerated the procedure well.  Sponge, lap, and needle counts were correct x2.  The patient was taken to the recovery room in satisfactory condition.  She will be followed immediately postoperatively within the hospital.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 26.269,
+      "caregiver_checklist": 17.426,
+      "child_explanation": 15.249,
+      "total": 58.96
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T08:03:19+00:00"
+  }
+}

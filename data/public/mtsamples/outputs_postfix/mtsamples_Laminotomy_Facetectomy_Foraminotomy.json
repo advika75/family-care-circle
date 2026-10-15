@@ -1,0 +1,116 @@
+{
+  "id": "mtsamples_Laminotomy_Facetectomy_Foraminotomy",
+  "patient_summary": "Hello there! I'm here to explain what happened during your surgery and what you need to do next. You had a procedure to help with your pain in your back. The doctors found that you had a problem with your spine, which was causing you pain. They did a few things to fix it:\n\n1. They opened up your spine to take pressure off the nerves that were being pinched. They did this at two different levels: L4 and L5, and L5 and S1. They also put in screws to help stabilize your spine.\n\n2. They took some bone from your lower back and used it to help heal your spine. They also put in a special material called bone graft to help the bone grow together.\n\n3. They also put in a special material called bone morphogenic protein (BMP) to help the bone grow.\n\nYou will need to take some medicine after the surgery. The doctors gave you 200 mL of your own blood back to help you recover. You will also need to take 600 mL of a special fluid called cell saver blood back.\n\nHere are the steps you need to follow:\n- Take the medicines your doctor gave you. Follow the instructions on the bottles.\n- Keep the wound clean and dry. Don't let anyone touch it unless your doctor says it's okay.\n- If you have any pain, fever, or if you feel weak or dizzy, call your doctor right away. This could be a sign of a problem that needs to be checked.\n\nYou did a great job understanding everything and following the instructions. You're in good hands, and you'll be okay. If you have any more questions, just ask your doctor or nurse.",
+  "caregiver_checklist": [
+    "Other dosage: 600 mL",
+    "Other dosage: 200 mL",
+    "Check the patient's pain level using a numeric rating scale (NRS) or verbal descriptor scale (VDS) every 4 hours.",
+    "Watch for signs of increased pain, such as a NRS score of 8 or higher, or any new or worsening pain.",
+    "Call the healthcare provider if the patient's pain does not improve after 2 doses of pain medication.",
+    "Schedule a follow-up appointment with the surgeon in 2 weeks to monitor the patient's recovery.",
+    "Call the healthcare provider if the patient experiences any signs of infection, such as fever, redness, swelling, or discharge from the incision site.",
+    "Schedule a physical therapy appointment to start the patient's rehabilitation program as soon as possible."
+  ],
+  "child_explanation": "You had a big problem in your back, like a tight blanket squeezing nerves. Doctors fixed it by making a tiny hole to let the nerves breathe. They took a little bit of your own bone to help the bones grow back together. Now you'll have less pain, and you'll be taking care of you and your doctors. They're making sure you feel better, you know.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 982,
+      "end": 986
+    },
+    {
+      "text": "600 mL",
+      "label": "DOSAGE",
+      "start": 4303,
+      "end": 4309
+    },
+    {
+      "text": "200 mL",
+      "label": "DOSAGE",
+      "start": 4332,
+      "end": 4338
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES: , Right lumbosacral radiculopathy secondary to lumbar spondylolysis.,POSTOPERATIVE DIAGNOSES: , Right lumbosacral radiculopathy secondary to lumbar spondylolysis.,OPERATION PERFORMED:,1.  Right L4 and L5 transpedicular decompression of distal right L4 and L5 nerve roots.,2.  Right L4-L5 and right L5-S1 laminotomies, medial facetectomies, and foraminotomies, decompression of right L5 and S1 nerve roots.,3.  Right L4-S1 posterolateral fusion with local bone graft.,4.  Left L4 through S1 segmental pedicle screw instrumentation.,5.  Preparation harvesting of local bone graft.,ANESTHESIA: , General endotracheal.,PREPARATION:,  Povidone-iodine.,INDICATION: , This is a gentleman with right-sided lumbosacral radiculopathy, MRI disclosed and lateral recess stenosis at the L4-5, L5-S1 foraminal narrowing in L4 and L5 roots.  The patient was felt to be a candidate for decompression stabilization pulling distraction between the screws to relieve radicular pain.  The patient understood major risks and complications such as death and paralysis seemingly rare, main concern is a 10 to 15% of failure rate to respond to surgery for which further surgery may or may not be indicated, small risk of wound infection, spinal fluid leak.  The patient is understanding and agreed to proceed and signed the consent.,PROCEDURE: , The patient was brought to the operating room, peripheral venous lines were placed.  General anesthesia was induced.  The patient was intubated.  Foley catheter was in place.  The patient laid prone onto the OSI table using 6-post, pressure points were carefully padded; the back was shaved, sterilely prepped and draped.  A previous incision was infiltrated with local and incised with a scalpel.  The posterior spine on the right side was exposed in routine fashion along with transverse processes in L4-L5 in the sacral ala.  Laminotomies were then performed at L4-L5 and L5-S1 in a similar fashion using Midas Rex drill with AM8 bit, inferior portion of lamina below and superior portion of lamina above, and the medial facet was drilled down to the thin shelf of bone.  The thin shelf of bone along the ligamentum flavum moved in a piecemeal fashion with 2 and 3 mm Kerrison, bone was harvested throughout to be used for bone grafting.  The L5 and S1 roots were completely unroofed in the lateral recess working lateral to the markedly hypertrophied facet joints.  Transpedicular approaches were carried out for both L4 and L5 roots working lateral to medial and medial to lateral with foraminotomies, L4-L5 roots were extensively decompressed.  Pars interarticularis were maintained.  Using angled 2-mm Kerrisons hypertrophied ligamentum flavum, the superior facet of S1 and L5 was resected increasing the dimensions for the foramen passed lateral to medial and medial to lateral without further compromise.  Pedicle screws were placed L4-L5 and S1 on the right side.  Initial hole began with Midas Rex drill, deepened with a gear shift and with 4.5 mm tap, palpating with pedicle probe.  It showed no penetration outside the pedicle vertebral body.  At L4-L5 5.5 x 45 mm screws were placed and at S1 5.5 x 40 mm screw was placed.  Good bone purchase was obtained.  Gelfoam was placed over the roots laterally, corticated transverse processes lateral facet joints were prepared, small infuse sponge was placed posterolaterally on the right side, then the local bone graft from L4 to S1.  Traction was applied between the L4-L5, L5-S1 screws locking notes were tightened out, heads were rotated fractured off about 2-3 mm traction were applied at each side, further opening the foramen for the exiting roots.  Prior to placement of BMP, the wound was irrigated with antibiotic irrigation.  Medium Hemovac drain was placed in the depth of wound, brought out through a separate stab incision.  Deep fascia was closed with #1 Vicryl, subcutaneous fascia with #1 Vicryl, and subcuticular with 2-0 Vicryl.  Skin was stapled.  The drain was sutured in place with 2-0 Vicryl and connected to closed drain system.  The patient was laid supine on the bed, extubated, and taken to recovery room in satisfactory condition.  The patient tolerated the procedure well without apparent complication.  Final sponge and needle counts are correct.  Estimated blood loss 600 mL.,The patient received 200 mL of cell saver blood back.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "600 mL",
+        "200 mL"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 21.225,
+      "caregiver_checklist": 21.013,
+      "child_explanation": 8.723,
+      "total": 50.979
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-13T07:18:14+00:00"
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "id": "mtsamples_Q-Fever_Endocarditis",
+  "patient_summary": "Hello there! I'm here to talk about your health. You're currently taking some medicines to help you feel better. Here's what you need to know:\n\nYou are taking two main medicines:\n- Doxycycline: This is a medicine you take twice a day. You're taking 150 mg each time. Your mom told me you're doing a good job with this.\n- Hydroxychloroquine: This is a medicine you take three times a day. You're taking 200 mg each time. Your mom also said you're doing well with this.\n\nYou are also taking these medicines:\n- Digoxin: You take this once a day. You're taking 0.25 mg each time.\n- Aspirin: You take this once a day.\n- Warfarin: You take this once a day.\n- Furosemide: You take this once a day.\n\nYour mom told me you have some loose stools sometimes, but you're managing it okay. You had some surgery to fix a valve problem, and you're doing well at home. Your doctor will check your levels of these medicines again in a few weeks. They will also check your blood and do some tests to make sure everything is okay. Your most recent doxycycline level was 6.5 mcg/mL, which is higher than what they usually want to see.\n\nIf you have any problems or if you feel sick, you should tell your mom or the doctor right away. Remember to take your medicines as directed. Your mom will help you with this. Keep us updated, and we'll see you in four weeks.",
+  "caregiver_checklist": [
+    "Check doxycycline and hydroxychloroquine levels again.",
+    "Watch for any new symptoms like fever or fatigue.",
+    "Call if there are any signs of infection or worsening heart murmur.",
+    "Schedule a follow-up appointment in 4 weeks.",
+    "Check for any changes in bowel habits, especially if they become more frequent.",
+    "Monitor for signs of kidney problems, such as dark urine or swelling.",
+    "Call if there are any signs of heart problems, such as shortness of breath or chest pain.",
+    "Schedule a comprehensive metabolic panel and CBC test.",
+    "Watch for signs of liver problems, such as yellowing of the skin or eyes.",
+    "Call if there are any signs of gastrointestinal bleeding.",
+    "Call if there are any signs of allergic reactions or rash.",
+    "Monitor digoxin levels as per the plan.",
+    "Watch for aspirin levels as per the plan.",
+    "Watch for warfarin levels as per the plan.",
+    "Watch for furosemide levels as per the plan.",
+    "Watch for doxycycline levels as per the plan (150 mg, twice daily).",
+    "Watch for hydroxychloroquine levels as per the plan (200 mg, three times a day).",
+    "Watch for doxycycline levels as per the plan (6.5 mcg)."
+  ],
+  "child_explanation": "You have some tummy troubles, you know, like when you eat too much candy and feel a bit sick. But don't worry, you're taking good care of yourself. The doctors and grown-ups are watching over you. You had a big surgery, but you're doing great at home. You're still on your special medicines, like tiny helpers. They'll keep checking to make sure everything is okay.",
+  "entities": [
+    {
+      "text": "doxycycline",
+      "label": "MEDICATION",
+      "start": 108,
+      "end": 119
+    },
+    {
+      "text": "150 mg",
+      "label": "DOSAGE",
+      "start": 120,
+      "end": 126
+    },
+    {
+      "text": "twice daily",
+      "label": "FREQUENCY",
+      "start": 136,
+      "end": 147
+    },
+    {
+      "text": "200 mg",
+      "label": "DOSAGE",
+      "start": 178,
+      "end": 184
+    },
+    {
+      "text": "three times a day",
+      "label": "FREQUENCY",
+      "start": 194,
+      "end": 211
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 218,
+      "end": 223
+    },
+    {
+      "text": "digoxin",
+      "label": "MEDICATION",
+      "start": 257,
+      "end": 264
+    },
+    {
+      "text": "aspirin",
+      "label": "MEDICATION",
+      "start": 266,
+      "end": 273
+    },
+    {
+      "text": "warfarin",
+      "label": "MEDICATION",
+      "start": 275,
+      "end": 283
+    },
+    {
+      "text": "furosemide",
+      "label": "MEDICATION",
+      "start": 289,
+      "end": 299
+    },
+    {
+      "text": "obesity",
+      "label": "CONDITION",
+      "start": 1377,
+      "end": 1384
+    },
+    {
+      "text": "Doxycycline",
+      "label": "MEDICATION",
+      "start": 1597,
+      "end": 1608
+    },
+    {
+      "text": "doxycycline",
+      "label": "MEDICATION",
+      "start": 1757,
+      "end": 1768
+    },
+    {
+      "text": "6.5 mcg",
+      "label": "DOSAGE",
+      "start": 1824,
+      "end": 1831
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 1839,
+      "end": 1844
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 2098,
+      "end": 2103
+    },
+    {
+      "text": "doxycycline",
+      "label": "MEDICATION",
+      "start": 2139,
+      "end": 2150
+    },
+    {
+      "text": "doxycycline",
+      "label": "MEDICATION",
+      "start": 2403,
+      "end": 2414
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 2436,
+      "end": 2441
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "doxycycline",
+      "dosages": [
+        "150 mg",
+        "200 mg"
+      ],
+      "frequencies": [
+        "twice daily",
+        "three times a day"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "digoxin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "aspirin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "warfarin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "furosemide",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "doxycycline",
+      "dosages": [
+        "6.5 mcg"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "HISTORY OF PRESENT ILLNESS: , This is a follow-up visit on this 16-year-old male who is currently receiving doxycycline 150 mg by mouth twice daily as well as hydroxychloroquine 200 mg by mouth three times a day for Q-fever endocarditis.  He is also taking digoxin, aspirin, warfarin, and furosemide.  Mother reports that he does have problems with 2-3 loose stools per day since September, but tolerates this relatively well.  This has not increased in frequency recently.,Mark recently underwent surgery at Children's Hospital and had on 10/15/2007, replacement of pulmonary homograft valve, resection of a pulmonary artery pseudoaneurysm, and insertion of Gore-Tex membrane pericardial substitute.  He tolerated this procedure well.  He has been doing well at home since that time.,PHYSICAL EXAMINATION:,VITAL SIGNS:  Temperature is 98.5, pulse 84, respirations 19, blood pressure 101/57, weight 77.7 kg, and height 159.9 cm.,GENERAL APPEARANCE:  Well-developed, well-nourished, slightly obese, slightly dysmorphic male in no obvious distress.,HEENT:  Remarkable for the badly degenerated left lower molar.  Funduscopic exam is unremarkable.,NECK:  Supple without adenopathy.,CHEST:  Clear including the sternal wound.,CARDIOVASCULAR:  A 3/6 systolic murmur heard best over the upper left sternal border.,ABDOMEN:  Soft.  He does have an enlarged spleen, however, given his obesity, I cannot accurately measure its size.,GU:  Deferred.,EXTREMITIES:  Examination of extremities reveals no embolic phenomenon.,SKIN:  Free of lesions.,NEUROLOGIC:  Grossly within normal limits.,LABORATORY DATA: , Doxycycline level obtained on 10/05/2007 as an outpatient was less than 0.5.  Hydroxychloroquine level obtained at that time was undetectable.  Of note is that doxycycline level obtained while in the hospital on 10/21/2007 was 6.5 mcg/mL.  Q-fever serology obtained on 10/05/2007 was positive for phase I antibodies in 1/2/6 and phase II antibodies at 1/128, which is an improvement over previous elevated titers.  Studies on the pulmonary valve tissue removed at surgery are pending.,IMPRESSION: , Q-fever endocarditis.,PLAN:  ,1.  Continue doxycycline and hydroxychloroquine.  I carefully questioned mother about compliance and concomitant use of dairy products while taking these medications.  She assures me that he is compliant with his medications.  We will however repeat his hydroxychloroquine and doxycycline levels.,2.  Repeat Q-fever serology.,3.  Comprehensive metabolic panel and CBC.,4.  Return to clinic in 4 weeks.,5.  Clotting times are being followed by Dr. X.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "6.5 mcg"
+      ],
+      "caregiver_checklist": [
+        "150 mg",
+        "twice daily",
+        "200 mg",
+        "three times a day",
+        "digoxin",
+        "aspirin",
+        "warfarin",
+        "furosemide",
+        "6.5 mcg"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 49.772,
+      "caregiver_checklist": 54.076,
+      "child_explanation": 10.862,
+      "total": 114.724
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T07:49:42+00:00"
+  }
+}

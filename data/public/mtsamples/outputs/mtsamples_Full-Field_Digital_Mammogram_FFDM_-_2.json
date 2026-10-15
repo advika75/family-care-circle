@@ -1,0 +1,92 @@
+{
+  "id": "mtsamples_Full-Field_Digital_Mammogram_FFDM_-_2",
+  "patient_summary": "Hello there! I'm here to explain what happened during your recent mammogram and what we found. It's important to understand that mammograms are used to check for breast cancer, especially in women like you who have had it before.\n\nHere's what we found:\n- Your right breast is smaller than your left breast.\n- There is a scar from your previous surgery and some skin changes.\n- The breast tissue looks a bit different, but it's normal for it to look this way after surgery and radiation.\n- We saw some small, harmless spots that are common in older women.\n- We didn't see any new or growing spots that could be cancer.\n\nThe most important thing to remember is that we didn't see any signs of cancer. This is good news! We recommend that you have a mammogram every year, or sooner if you have any new symptoms.\n\nThe doctors used special equipment to take the pictures, and they found no signs of cancer. If you have any concerns or new symptoms, you should talk to your doctor right away. They can help you understand what to do next.\n\nRemember, it's okay to ask questions if you don't understand something. Your doctor and nurses are here to help you.",
+  "caregiver_checklist": [
+    "Check the patient's right breast for any new signs of mass or skin changes.",
+    "Watch for any new symptoms such as pain, swelling, or discharge.",
+    "Call the healthcare provider if the patient experiences any new symptoms.",
+    "Schedule the next annual screening mammogram.",
+    "Check the patient's right breast for any new signs of skin changes or mass.",
+    "Watch for any new symptoms such as pain, swelling, or discharge.",
+    "Call the healthcare provider if the patient experiences any new symptoms.",
+    "Schedule the next annual screening mammogram.",
+    "Check the patient's right breast for any new signs of skin changes or mass.",
+    "Watch for any new symptoms such as pain, swelling, or discharge.",
+    "Call the healthcare provider if the patient experiences any new symptoms.",
+    "Schedule the next annual screening mammogram."
+  ],
+  "child_explanation": "You had a mammogram, you know. The doctors and grown-ups took care of you. Your breasts are smaller now, but they look the same. There's a scar and some thick skin. Your breast is mostly fat and a bit bumpy. It's not changed much. There's a few tiny spots that look normal. No big spots or changes. The doctors think everything looks okay. They say to come back in a few years for another check-up.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "EXAM: , Screening full-field digital mammogram.,HISTORY:,  Screening examination of a 58-year-old female who currently denies complaints.  Patient has had diagnosis of right breast cancer in 1984 with subsequent radiation therapy.  The patient's sister was also diagnosed with breast cancer at the age of 59.,TECHNIQUE: , Standard digital mammographic imaging was performed.  The examination was performed with iCAD Second Look Version 7.2.,COMPARISON: , Most recently obtained __________.,FINDINGS: , The right breast is again smaller than the left.  There is a scar marker with underlying skin thickening and retraction along the upper margin of the right breast.  The breasts are again composed of a mixture of adipose tissue and a moderate amount of heterogeneously-dense fibroglandular tissue.  There is again some coarsening of the right breast parenchyma with architectural distortion which is unchanged and most consistent with postsurgical and postradiation changes.  A few benign-appearing microcalcifications are present.,No dominant malignant-appearing mass lesion, developing area of architectural distortion or suspicious-appearing cluster of microcalcifications are identified.  The skin is stable.  No enlarged axillary lymph node is seen.,IMPRESSION:,1.  No significant interval changes are seen.  No mammographic evidence of malignancy is identified.,2.  Annual screening mammography is recommended or sooner if clinical symptoms warrant.,BIRADS Classification 2 - Benign,MAMMOGRAPHY INFORMATION:,1.  A certain percentage of cancers, probably 10% to 15%, will not be identified by mammography.,2.  Lack of radiographic evidence of malignancy should not delay a biopsy if a clinically suspicious mass is present.,3.  These images were obtained with FDA-approved digital mammography equipment, and iCAD Second Look Software Version 7.2 was utilized.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 12.886,
+      "caregiver_checklist": 10.92,
+      "child_explanation": 7.718,
+      "total": 31.544
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T06:10:12+00:00"
+  }
+}

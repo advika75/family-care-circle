@@ -1,0 +1,200 @@
+{
+  "id": "mtsamples_Gen_Med_Consult_-_12",
+  "patient_summary": "Hello there, it looks like you're feeling weak and shaky, and you're having trouble breathing when you walk around. This has been going on for a while, but it's gotten worse recently. You've had some other health problems in the past, like heart disease, high blood pressure, and diabetes. You also had a problem with your heart a few years ago, and you've had some infections in your urinary system.\n\nWe're not sure exactly what's causing your shortness of breath, but we think it might be related to your heart. We'll ask your mom to help us review your medical history so we can understand more. We might also do a stress test to see how your heart is working.\n\nWe know you have high blood pressure, but we're not sure if you're taking any medicine for it. We need you to tell us the names of any medicines you're taking, so we can make sure you're getting the right treatment.\n\nWe also know you have diabetes, but we're not sure if you're taking any medicine for it. We'll need to ask you more about your diabetes to help us decide what to do next.\n\nRight now, we're going to check your blood pressure and do some tests to see what's going on. If you feel weak or shaky, or if you have any other symptoms, please let us know right away. We're here to help you feel better.",
+  "caregiver_checklist": [
+    "Check patient’s blood pressure and pulse at home and report to the care team.",
+    "Watch for signs of shortness of breath, chest pain, or palpitations.",
+    "Call the care team if the patient experiences chest pain or shortness of breath.",
+    "Schedule a stress test to evaluate for possible coronary artery disease.",
+    "Check the patient’s blood sugar levels and report to the care team.",
+    "Watch for signs of diabetes complications such as infections or nerve damage.",
+    "Call the care team if the patient experiences any new symptoms.",
+    "Schedule a follow-up appointment in 2 weeks to review progress and adjust treatment as needed.",
+    "Check for signs of hyperlipidemia such as skin changes or abdominal pain.",
+    "Watch for signs of urinary tract infections such as fever or cloudy urine.",
+    "Call the care team if the patient experiences any new symptoms or signs of infections."
+  ],
+  "child_explanation": "You have a tummy ache and feel weak and shaky, you know? It's like your body is tired and needs some help. Grown-ups and doctors are taking care of you. They want to find out what's making you feel this way. You might be a bit confused, but you're safe. The doctors will check you and ask lots of questions to understand better. They'll also look at your past history to help figure things out. It might take a few days to find the answer, but you're in good hands.",
+  "entities": [
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 213,
+      "end": 232
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 272,
+      "end": 282
+    },
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 296,
+      "end": 301
+    },
+    {
+      "text": "syncope",
+      "label": "SYMPTOM",
+      "start": 348,
+      "end": 355
+    },
+    {
+      "text": "palpitations",
+      "label": "SYMPTOM",
+      "start": 372,
+      "end": 384
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 765,
+      "end": 777
+    },
+    {
+      "text": "diabetes",
+      "label": "CONDITION",
+      "start": 790,
+      "end": 798
+    },
+    {
+      "text": "hyperlipidemia",
+      "label": "CONDITION",
+      "start": 923,
+      "end": 937
+    },
+    {
+      "text": "urinary tract infections",
+      "label": "CONDITION",
+      "start": 975,
+      "end": 999
+    },
+    {
+      "text": "stroke",
+      "label": "CONDITION",
+      "start": 1321,
+      "end": 1327
+    },
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 1344,
+      "end": 1357
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 1488,
+      "end": 1498
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 1513,
+      "end": 1518
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 1520,
+      "end": 1526
+    },
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 1536,
+      "end": 1541
+    },
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 1585,
+      "end": 1593
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 2470,
+      "end": 2482
+    },
+    {
+      "text": "diabetes",
+      "label": "CONDITION",
+      "start": 2728,
+      "end": 2736
+    }
+  ],
+  "regimens": [],
+  "source_text": "CHIEF COMPLAINT:,  Weak and shaky.,HISTORY OF PRESENT ILLNESS:,  The patient is a 75-year-old, Caucasian female who comes in today with complaint of feeling weak and shaky.  When questioned further, she described shortness of breath primarily with ambulation.  She denies chest pain.  She denies cough, hemoptysis, dyspnea, and wheeze.  She denies syncope, presyncope, or palpitations.  Her symptoms are fairly longstanding but have been worsening as of late.,PAST MEDICAL HISTORY:,  She has had a fairly extensive past medical history but is a somewhat poor historian and is unable to provide details about her history.  She states that she has underlying history of heart disease but is not able to elaborate to any significant extent.  She also has a history of hypertension and type II diabetes but is not currently taking any medication.  She has also had a history of pulmonary embolism approximately four years ago, hyperlipidemia, peptic ulcer disease, and recurrent urinary tract infections.  Surgeries include an appendectomy, cesarean section, cataracts, and hernia repair.,CURRENT MEDICATIONS:,  She is on two different medications, neither of which she can remember the name and why she is taking it.,ALLERGIES: , She has no known medical allergies.,FAMILY HISTORY:,  Remarkable for coronary artery disease, stroke, and congestive heart failure.,SOCIAL HISTORY:,  She is a widow, lives alone.  Denies any tobacco or alcohol use.,REVIEW OF SYSTEMS:,  Dyspnea on exertion.  No chest pain or tightness, fever, chills, sweats, cough, hemoptysis, or wheeze, or lower extremity swelling.,PHYSICAL EXAMINATION:,General:  She is alert but seems somewhat confused and is not able to provide specific details about her past history.,Vital Signs:  Blood pressure:  146/80.  Pulse:  68.  Weight:  147 pounds.,HEENT:  Unremarkable.,Neck:  Supple without JVD, adenopathy, or bruit.,Chest:  Clear to auscultation.,Cardiovascular:  Regular rate and rhythm.,Abdomen:  Soft.,Extremities:  No edema.,LABORATORY:,  O2 sat 100% at rest and with exertion.  Electrocardiogram was normal sinus rhythm.  Nonspecific S-T segment changes.  Chest x-ray pending.,ASSESSMENT/PLAN:,1.  Dyspnea on exertion, uncertain etiology.  Mother would be concerned about the possibility of coronary artery disease given the patient’s underlying risk factors.  We will have the patient sign a release of records so that we can review her previous history.  Consider setting up for a stress test.,2.  Hypertension, blood pressure is acceptable today.  I am not certain as to what, if the patient’s is on any antihypertensive agents.  We will need to have her call us what the names of her medications, so we can see exactly what she is taking.,3.  History of diabetes.  Again, not certain as to whether the patient is taking anything for this particular problem when she last had a hemoglobin A1C.  I have to obtain some further history and review records before proceeding with treatment recommendations.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 17.255,
+      "caregiver_checklist": 12.014,
+      "child_explanation": 8.891,
+      "total": 38.175
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T06:11:58+00:00"
+  }
+}

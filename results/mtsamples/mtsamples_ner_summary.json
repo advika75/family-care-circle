@@ -1,0 +1,69 @@
+{
+  "dataset": "MTSamples",
+  "matching": "exact (start, end, label)",
+  "ner": "rule-based (extract_rule_based)",
+  "evaluated_note_count": 0,
+  "skipped_note_count": 30,
+  "gold_entity_count": 0,
+  "predicted_entity_count": 0,
+  "metrics": {
+    "CONDITION": {
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "DOSAGE": {
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "DURATION": {
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "FREQUENCY": {
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "MEDICATION": {
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "SYMPTOM": {
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "MICRO": {
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "evaluated_note_ids": [],
+  "evaluation_timestamp_utc": "2026-10-13T06:47:50.208472+00:00"
+}

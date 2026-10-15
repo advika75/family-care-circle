@@ -1,0 +1,91 @@
+{
+  "id": "mtsamples_2-D_Echocardiogram_-_1",
+  "patient_summary": "Hi there! I wanted to talk to you about the results from your recent heart check-up. The doctors used special tools to look at your heart and here's what they found:\n\n1. Your left heart, which is the top part of your heart, is a little bigger than normal. The left side of your heart is about 4.7 centimeters wide. That's a bit bigger than usual.\n\n2. The right side of your heart, which is the bottom part, looks normal. The left side, which is also bottom, looks normal too.\n\n3. Your heart muscle is working well. It's pumping blood out of your heart at about 51% of the time it should. That's pretty good! Your heart muscle is also relaxing well when it's not pumping blood.\n\n4. There's no extra fluid around your heart, which is good.\n\n5. The valves in your heart, which are like little doors that help blood flow through your heart, look normal. They're all working well.\n\n6. Your blood pressure in the upper part of your body (the part that pushes blood to your head and arms) is a bit lower than normal. It's about 36 millimeters of mercury (mmHg).\n\n7. There's a tiny bit of extra blood leaking backwards in your heart valves. It's not a big problem, but it's something we need to keep an eye on.\n\nYou don't need to take any new medicines right now. The doctors will check your heart again in a few months to see if everything is still looking good. If you ever feel dizzy, short of breath, or have chest pain, you should tell your parents and they should call the doctors right away. They can help you feel better.",
+  "caregiver_checklist": [
+    "Check left atrial size and monitor for any changes.",
+    "Watch for signs of heart failure such as shortness of breath, swelling.",
+    "Schedule follow-up echocardiogram in 6 months.",
+    "Call if symptoms of heart failure worsen.",
+    "Check blood pressure and monitor for any changes.",
+    "Watch for signs of valve regurgitation.",
+    "Call if valve regurgitation worsens.",
+    "Schedule echocardiogram if valve regurgitation is severe.",
+    "Check for signs of pericardial effusion.",
+    "Call if pericardial effusion is noted.",
+    "Schedule echocardiogram if pericardial effusion is present."
+  ],
+  "child_explanation": "You have a small problem in your heart. Your heart is a bit bigger on one side, but everything else is normal. Grown-ups and doctors are taking good care of you. They're like a team of tiny helpers watching over you. You'll feel better soon. Just relax and let them help you.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "2-D M-MODE: , ,1.  Left atrial enlargement with left atrial diameter of 4.7 cm.,2.  Normal size right and left ventricle.,3.  Normal LV systolic function with left ventricular ejection fraction of 51%.,4.  Normal LV diastolic function.,5.  No pericardial effusion.,6.  Normal morphology of aortic valve, mitral valve, tricuspid valve, and pulmonary valve.,7.  PA systolic pressure is 36 mmHg.,DOPPLER: , ,1.  Mild mitral and tricuspid regurgitation.,2.  Trace aortic and pulmonary regurgitation.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 19.802,
+      "caregiver_checklist": 6.443,
+      "child_explanation": 3.785,
+      "total": 30.038
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T05:41:26+00:00"
+  }
+}

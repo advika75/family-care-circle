@@ -1,0 +1,196 @@
+{
+  "id": "mtsamples_Consult_-_Knee_Pain",
+  "patient_summary": "Hello there! I'm here to help you understand what's happening with your knee. You've been having pain in your left knee for about five days. It's a bit better, but you still feel a pinching pain when you put weight on it. You can't bend your knee as much as you'd like, and you have trouble with your knee being in a bent position. You're using Tylenol No. 3 and ibuprofen to help with the pain, but it's not helping much.\n\nYou have some swelling in your knee, and it hurts when you touch the inside part of your knee. You also have some swelling on the inside of your knee. You're using ice and heat to help with the pain, but it's still bothering you.\n\nYou're also trying to lose weight, and you're following a diet called Medifast. You're using a special ACE bandage to help your knee. Your doctor has given you refills on Tylenol No. 3 and ibuprofen. You're also taking a medicine called Nexium to help with any stomach discomfort you might have from the ibuprofen.\n\nYou're going to try to lose weight, and your doctor thinks that will help your knee. You're also going to start physical therapy and do some exercises at home. Your doctor will check on you in four weeks. If you still have pain after that, you might need another knee check-up.\n\nRemember, it's important to follow your doctor's advice and take your medicines as they tell you. If you have any more pain or if you have any other problems, you should let your doctor know right away. You're also taking a medication called PENICILLIN, which is 20 mg a day, taken once a day.",
+  "caregiver_checklist": [
+    "Check ibuprofen dosage and frequency.",
+    "Watch for signs of allergy to ibuprofen.",
+    "Call if ibuprofen side effects persist.",
+    "Schedule follow-up in four weeks.",
+    "Call if pain persists or worsens.",
+    "Check for signs of infection.",
+    "Watch for signs of kidney problems.",
+    "Call if swelling increases.",
+    "Schedule gastric bypass surgery.",
+    "Call if weight loss progress is slow.",
+    "Call if allergic to penicillin.",
+    "Schedule penicillin dosage and frequency, 20 mg daily.",
+    "Watch for signs of penicillin allergy.",
+    "Call if penicillin side effects persist."
+  ],
+  "child_explanation": "You have health problems, like being very heavy. You're also having some pain and swelling in your knee. Your grown-ups and doctors are taking care of you. They want you to lose some weight. It's like giving your body a break. You can use ice or heat when it hurts. You're already using some medicine, but it's not helping much. You'll see the doctors again in a few weeks. If you still feel bad, they might do another check.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 29,
+      "end": 33
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 147,
+      "end": 151
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 309,
+      "end": 313
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 441,
+      "end": 445
+    },
+    {
+      "text": "ibuprofen",
+      "label": "MEDICATION",
+      "start": 543,
+      "end": 552
+    },
+    {
+      "text": "PENICILLIN",
+      "label": "MEDICATION",
+      "start": 599,
+      "end": 609
+    },
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 1541,
+      "end": 1549
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1596,
+      "end": 1600
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1684,
+      "end": 1688
+    },
+    {
+      "text": "Obesity",
+      "label": "CONDITION",
+      "start": 2185,
+      "end": 2192
+    },
+    {
+      "text": "20 mg",
+      "label": "DOSAGE",
+      "start": 2910,
+      "end": 2915
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2925,
+      "end": 2930
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "ibuprofen",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "PENICILLIN",
+      "dosages": [
+        "20 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "CHIEF COMPLAINT:,  Left knee pain.,SUBJECTIVE: , This is a 36-year-old white female who presents to the office today with a complaint of left knee pain.  She is approximately five days after a third Synvisc injection.  She states that the knee is 35% to 40 % better, but continues to have a constant pinching pain when she full weight bears, cannot handle having her knee in flexion, has decreased range of motion with extension.  Rates her pain in her knee as a 10/10.  She does alternate ice and heat.  She is using Tylenol No. 3 p.r.n. and ibuprofen OTC p.r.n. with minimal relief.,ALLERGIES,1.  PENICILLIN.,2.  KEFLEX.,3.  BACTRIM.,4.  SULFA.,5.  ACE BANDAGES.,MEDICATIONS,1.  Toprol.,2.  Xanax.,3.  Advair.,4.  Ventolin.,5.  Tylenol No.  3.,6.  Advil.,REVIEW OF SYSTEMS:,  Will be starting the Medifast diet, has discussed this with her PCP, who encouraged her to have gastric bypass, but the patient would like to try this Medifast diet first.  Other than this, denies any further problems with her eyes, ears, nose, throat, heart, lungs, GI, GU, musculoskeletal, nervous system, except what is noted above and below.,PHYSICAL EXAMINATION,VITAL SIGNS:  Pulse 72, blood pressure 130/88, respirations 16, height 5 feet 6.5 inches.,GENERAL:  This is a 36-year-old white female who is A&O x3, in no apparent distress with a pleasant affect.  She is well developed, well nourished, appears her stated age.,EXTREMITIES:  Orthopedic evaluation of the left knee reveals there to be well-healed portholes.  She does have some medial joint line swelling.  Negative ballottement.  She has significant pain to palpation of the medial joint line, none of the lateral joint line.  She has no pain to palpation on the popliteal fossa.  Range of motion is approximately -5 degrees to 95 degrees of flexion.  It should be noted that she has extreme hyperextension on the right with 95+ degrees of flexion on the right.  She has a click with McMurray.  Negative anterior-posterior drawer.  No varus or valgus instability noted.  Positive patellar grind test.  Calf is soft and nontender.  Gait is stable and antalgic on the left.,ASSESSMENT,1.  Osteochondral defect, torn meniscus, left knee.,2.  Obesity.,PLAN: , I have encouraged the patient to work on weight reduction, as this will only benefit her knee.  I did discuss treatment options at length with the patient, but I think the best plan for her would be to work on weight reduction.  She questions whether she needs a total knee; I don't believe she needs total knee replacement.  She may, however, at some point need an arthroscopy.  I have encouraged her to start formal physical therapy and a home exercise program.  Will use ice or heat p.r.n.  I have given her refills on Tylenol No.  3, Flector patch, and Relafen not to be taken with any other anti-inflammatory.  She does have some abdominal discomfort with the anti-inflammatories, was started on Nexium 20 mg one p.o. daily.  She will follow up in our office in four weeks.  If she has not gotten any relief with formal physical therapy and the above-noted treatments, we will discuss with Dr. X whether she would benefit from another knee arthroscopy.  The patient shows a good understanding of this treatment plan and agrees.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "PENICILLIN",
+        "20 mg",
+        "daily"
+      ],
+      "caregiver_checklist": [
+        "PENICILLIN",
+        "20 mg",
+        "daily"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 56.004,
+      "caregiver_checklist": 24.024,
+      "child_explanation": 9.423,
+      "total": 89.467
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T05:59:27+00:00"
+  }
+}

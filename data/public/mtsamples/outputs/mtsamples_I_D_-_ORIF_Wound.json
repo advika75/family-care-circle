@@ -1,0 +1,119 @@
+{
+  "id": "mtsamples_I_D_-_ORIF_Wound",
+  "patient_summary": "Hello there, you're in the hospital right now. You had a surgery to fix your foot bones, and it's been a few days since the surgery. You had some problems with the wound, so the doctors had to clean it out again. They also put a special bandage called a VAC on your foot to help it heal better.\n\nHere's what you need to do:\n\n1. You'll need to use a walker for your leg for the next few days. Your doctor will give you instructions on how to use it.\n2. The nurses will change the special bandage called VAC on your leg on Sunday.\n3. The plastic surgery team will do a local flap to help your wound heal completely.\n\nYou might feel some pain or stiffness in your leg, but that's normal. If you have any pain, you can take the medicine your doctor gave you. If you have any bleeding or drainage, or if you have a fever, you should tell the nurses right away. They will check you and make sure you're okay.\n\nRemember to follow the instructions from the doctors and nurses. They're here to help you get better. If you have any questions, don't hesitate to ask. You're doing great!",
+  "caregiver_checklist": [
+    "Give the patient a dose of antibiotics as per the plan, and schedule the VAC change for Sunday.",
+    "Check for signs of drainage, bleeding, or pain. Watch for fever or signs of infection.",
+    "Call the healthcare team if the patient develops signs of infection such as fever, increased drainage, or pain.",
+    "Watch for signs of wound dehiscence, excessive bleeding, or other complications.",
+    "Call the healthcare team if the patient experiences severe pain or stiffness.",
+    "Schedule a follow-up appointment with the surgeon in 2 weeks to assess the wound healing.",
+    "Call the healthcare team if the patient experiences any unexpected symptoms or complications.",
+    "Monitor the wound for signs of infection or healing, and report any issues to the healthcare team."
+  ],
+  "child_explanation": "You had an ouchie on your leg. The doctors and grown-ups took care of it. They cleaned your ouchie very carefully. They used a special team of tiny helpers to make your ouchie better. You'll need to rest your leg for a few days. Then the nurses will change the bandage. After that, the plastic doctors will do more work. You're in good hands, you'll be okay.",
+  "entities": [
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 607,
+      "end": 615
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 935,
+      "end": 943
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1008,
+      "end": 1012
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1815,
+      "end": 1823
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 1898,
+      "end": 1906
+    }
+  ],
+  "regimens": [],
+  "source_text": "TITLE OF OPERATION:,1.  Irrigation and debridement of postoperative wound infection (CPT code 10180).,2.  Removal of foreign body, deep (CPT code 28192).,3.  Placement of vacuum-assisted closure device, less than 50 centimeter squared (CPT code 97605).,PREOP DIAGNOSIS: , Postoperative wound infection, complicated (ICD-9 code 998.59).,POSTOP DIAGNOSIS: , Postoperative wound infection, complicated (ICD-9 code 998.59).,PROCEDURE DETAIL:  ,The patient is a 59-year-old gentleman who is status post open reduction and internal fixation of bilateral calcanei.  He was admitted for a left wound breakdown with drainage.  He underwent an irrigation and debridement with VAC placement 72 hours prior to this operative visit.  It was decided to bring him back for a repeat irrigation and debridement and VAC change prior to Plastics doing a local flap.  The risks of surgery were discussed in detail including, but not limited to infection, bleeding, injuries to nerves and vital structures, need for reoperation, pain or stiffness, arthritis, fracture, the risk of anesthesia.  The patient understood these risks and wished to proceed.  The patient was admitted, and the operative site was marked.,The patient was brought to the operating room and given general anesthetic.  He was placed in the right lateral decubitus, and all bony prominences were well padded.  An axillary roll was placed.  A well-padded thigh tourniquet was placed on the left leg.  The patient then received antibiotics on the floor prior to coming down to the operating room which satisfied the preoperative requirement.  Left leg was then prepped and draped in usual sterile fashion.  The previous five antibiotic spacer beads were removed without difficulty.  The wound was then rongeured and curetted, and all bone was cleaned down to healthy bleeding bone.  The wound actually looked quite good with evidence of purulence or drainage.  Skin edges appeared to be viable.  Hardware all looked to be intact.  At this point, the wound was irrigated with 9 liters of bibiotic solution.  A VAC sponge was then placed over the wound, and the patient's leg was placed into a posterior splint.  The patient was awakened and then taken to recovery in good condition.,Dr. X was present for the timeouts and for all critical portions of the procedure.  He was immediately available for any questions during the case.,PLAN:,1.  A CAM walker boots.,2.  A VAC change on Sunday by the nurse.,3.  A flap per Plastic Surgery.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 13.917,
+      "caregiver_checklist": 9.508,
+      "child_explanation": 7.161,
+      "total": 30.622
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T07:04:45+00:00"
+  }
+}

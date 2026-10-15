@@ -1,0 +1,103 @@
+{
+  "id": "mtsamples_Gastric_Bypass_-_Preop_Eval",
+  "patient_summary": "Hello there! You're here for a check-up before your big surgery. The doctors have looked at you and checked all the important parts of your body. You're doing well and are ready for the operation. \n\nYou're going to have a special surgery to help you lose weight. The doctors have talked to you about what might happen during the surgery and after. Some things that could happen are: death, a problem with your lungs, a leak in your tummy, needing to have another surgery, staying in the hospital for a long time, a problem with your tummy, a problem with your small intestine, bleeding, or getting an infection. \n\nThe doctors want you to keep eating the special food called Medifast until the day of your surgery. They want to make sure you're ready for the big operation. \n\nIf you have any questions or feel sick, you should tell the doctors or nurses right away. They're here to help you. You're doing great!",
+  "caregiver_checklist": [
+    "Review patient's weight and diet adherence daily.",
+    "Check for signs of bleeding, such as blood in stool or vomit.",
+    "Watch for signs of infection like fever, redness, or swelling.",
+    "Call the healthcare provider if any new symptoms appear.",
+    "Schedule a follow-up appointment within 2 weeks of surgery.",
+    "Monitor for signs of dehydration, such as dark urine or decreased urination.",
+    "Call if there are any concerns about the patient's recovery.",
+    "Schedule a post-surgery appointment to discuss recovery and next steps.",
+    "Watch for signs of bowel obstruction, such as severe abdominal pain or vomiting.",
+    "Call if there are any signs of anastomotic leak, such as severe abdominal pain or vomiting."
+  ],
+  "child_explanation": "You're doing great, you're strong. You're ready for the important surgery. Grown-ups and doctors are taking care of you. They checked your heart and helped you eat healthy. Your tummy feels good, and you're not sick. You'll eat your special food until the day of surgery. Then you'll be ready for your new tummy.",
+  "entities": [
+    {
+      "text": "obesity",
+      "label": "CONDITION",
+      "start": 525,
+      "end": 532
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 854,
+      "end": 862
+    }
+  ],
+  "regimens": [],
+  "source_text": "REASON FOR VISIT:,  Preop evaluation regarding gastric bypass surgery.,The patient has gone through the evaluation process and has been cleared from psychological, nutritional, and cardiac standpoint, also had great success on the preop Medifast diet.,PHYSICAL EXAMINATION: , The patient is alert and oriented x3.  Temperature of 97.9, pulse of 76, blood pressure of 114/74, weight of 247.4 pounds.  Abdomen:  Soft, nontender, and nondistended.,ASSESSMENT AND PLAN:,  The patient is currently in stable condition with morbid obesity, scheduled for gastric bypass surgery in less than two weeks.  Risks and benefits of the procedure were reiterated with the patient and significant other and mother, which included but not limited to death, pulmonary embolism, anastomotic leak, reoperation, prolonged hospitalization, stricture, small bowel obstruction, bleeding, and infection.  Questions regarding hospital course and recovery were addressed.  We will continue on the Medifast diet until the time of surgery and cleared for surgery.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 10.493,
+      "caregiver_checklist": 7.665,
+      "child_explanation": 4.899,
+      "total": 23.065
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T06:11:20+00:00"
+  }
+}

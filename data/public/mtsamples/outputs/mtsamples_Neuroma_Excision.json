@@ -1,0 +1,126 @@
+{
+  "id": "mtsamples_Neuroma_Excision",
+  "patient_summary": "Hello there! I'm here to tell you about what happened during your surgery and what you need to do next. It's a bit of a long story, but I'll try to make it as simple as possible.\n\nYou had a surgery to remove a Morton's neuroma, which is a painful condition in your foot. The surgery was done under general anesthesia, which means you were asleep during the procedure. Your foot was prepped and draped in a sterile way to keep it clean and safe.\n\nThe surgeon made a small cut in your foot and carefully removed the Morton's neuroma. They also cleaned the area with lots of saline to make sure everything was clean. They then stitched your foot up and put some special bandages on it.\n\nYou were given a special medicine called dexamethasone to help reduce swelling. It's a steroid medicine, and you were given 4 mg of it. You were also given another medicine called Marcaine and Xylocaine to help you feel less pain during the surgery. You were given 0.5 mL of this mixture.\n\nAfter the surgery, you were taken to the recovery room to wake up. You were given instructions about what to do after the surgery, and you were also given a prescription for pain medicine. You'll need to follow up with me in about 4 days for a dressing change.\n\nIf you have any pain or if you notice any redness, swelling, or if you have any signs of infection (like fever or pus), you should call me right away. It's important to let me know if you have any concerns.\n\nYou did a great job during the surgery, and you'll be okay. Just follow the instructions and take the medicines as directed. If you have any questions, don't hesitate to ask. I'm here to help you.",
+  "caregiver_checklist": [
+    "Give 0.5 mL of dexamethasone phosphate injection (4 mg/mL) to the patient.",
+    "Check for signs of infection, such as redness, swelling, or increased pain, starting 24 hours after surgery.",
+    "Watch for signs of nerve damage, such as decreased sensation or weakness, starting 24 hours after surgery.",
+    "Call the surgeon if the patient experiences severe pain, numbness, or weakness in the foot.",
+    "Schedule a follow-up appointment with the surgeon in 4 days for dressing change.",
+    "Check the incision site for signs of bleeding or drainage.",
+    "Watch for signs of allergic reaction to the anesthesia, such as hives or difficulty breathing.",
+    "Call the surgeon if the patient develops a fever or chills.",
+    "Schedule a postoperative appointment with the patient's primary care provider in 4 weeks for a full recovery assessment."
+  ],
+  "child_explanation": "You had a problem in your foot that was causing you pain. The doctors are taking care of you. They made a small cut in your foot to remove the problem. It will feel a bit sore for a few days. But you're in good hands. The grown-ups and doctors are doing their best to help you feel better.",
+  "entities": [
+    {
+      "text": "0.5 mL",
+      "label": "DOSAGE",
+      "start": 472,
+      "end": 478
+    },
+    {
+      "text": "dexamethasone",
+      "label": "MEDICATION",
+      "start": 479,
+      "end": 492
+    },
+    {
+      "text": "4 mg",
+      "label": "DOSAGE",
+      "start": 504,
+      "end": 508
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 2217,
+      "end": 2221
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "dexamethasone",
+      "dosages": [
+        "4 mg"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Morton's neuroma, third interspace, left foot.,POSTOPERATIVE DIAGNOSIS:,  Morton's neuroma, third interspace, left foot.,OPERATION PERFORMED: , Excision of neuroma, third interspace, left foot.,ANESTHESIA: , General (local was confirmed by surgeon).,HEMOSTASIS: , Ankle pneumatic tourniquet 225 mmHg.,TOURNIQUET TIME: , 18 minutes.  Electrocautery was necessary.,INJECTABLES: , 50:50 mixture of 0.5% Marcaine and 1% Xylocaine, both plain.  Also, 0.5 mL dexamethasone phosphate (4 mg/mL).,INDICATIONS: , Please see dictated H&P for specifics.,PROCEDURE:  ,After proper identification was made, the patient was brought to the operating room and placed on the table in supine position.  The patient was then placed under general anesthesia.  A local block was then injected into the third ray of the left foot.  The left foot was then prepped with chlorhexidine gluconate and then draped in the usual sterile technique.  The left foot was then exsanguinated with an Esmarch bandage and elevated and an ankle pneumatic tourniquet was then inflated.  Attention was then directed to the third interspace where a longitudinal incision was placed just proximal to the webspace.  The incision was deepened via sharp and blunt dissection with care taken to protect all vital structures.  Identification of the neuroma was made following plantar flexion of the digits.  It was grasped with a hemostat and it was dissected in toto and removed.  It was then sent to pathology.  The area was then flushed with copious amounts of sterile saline.  Closure was with 4-0 Vicryl in the subcutaneous tissue and then running subcuticular 4-0 nylon suture in the skin.  Steri-Strips were then placed over that area.  A sterile compressive dressing consisting of saline-soaked gauze, ABD, Kling, Coban was placed over the foot.  The tourniquet was then released.  Good flow was noted to return to all digits.  The patient did tolerate the procedure well.  He left the operating room with all vital signs stable and neurovascular status intact.  The patient went to the recovery.  The patient previously had been given both oral and written preoperative as well as postoperative instructions and a prescription for pain.  The patient will follow up with me in approximately 4 days for dressing change.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "4 mg"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 26.545,
+      "caregiver_checklist": 26.198,
+      "child_explanation": 8.487,
+      "total": 61.239
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T07:36:57+00:00"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "mtsamples_Umbilical_Hernia_Repair",
+  "patient_summary": "Hello there! I'm here to tell you about what happened to you yesterday. You had a little surgery to fix a problem in your tummy called an umbilical hernia. A hernia is when part of your tummy sticks out. The doctors fixed this by making a small cut in your skin and then putting everything back where it belongs. They also stitched your skin back together.\n\nYou didn't have any problems during the surgery, and they used a special medicine called Marcaine to help with the stitches. After the surgery, they put some bandages on you and made sure you were okay to go home. You were taken to a special room where they can watch you closely to make sure you're doing well.\n\nIf you have any pain, you should tell the nurses or doctors. They can give you medicine if you need it. They'll tell you how often to take it. If you have any problems or if you're in a lot of pain, you should call the hospital or your doctor right away. They're there to help you.",
+  "caregiver_checklist": [
+    "Give the patient a pain medication as prescribed.",
+    "Check the patient’s vital signs every hour for the first 6 hours.",
+    "Watch for signs of infection such as redness, swelling, or fever.",
+    "Call the healthcare provider if the patient has a fever over 100.4°F.",
+    "Schedule a follow-up appointment within 2 weeks.",
+    "Monitor for signs of hernia recurrence such as protrusion or pain.",
+    "Watch for signs of bleeding or excessive drainage.",
+    "Call the healthcare provider if the patient has any concerns or symptoms.",
+    "Schedule a postoperative ultrasound within 1 week.",
+    "Call the healthcare provider if the patient has nausea or vomiting."
+  ],
+  "child_explanation": "You had a little tummy tuck. The doctors carefully fixed your tummy. You're safe now. They're taking good care of you. You'll feel better soon. You're in good hands.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Umbilical hernia.,POSTOPERATIVE DIAGNOSIS: , Umbilical hernia.,PROCEDURE PERFORMED: , Repair of umbilical hernia.,ANESTHESIA: , General.,COMPLICATIONS: , None.,ESTIMATED BLOOD LOSS: , Minimal.,PROCEDURE IN DETAIL:  ,The patient was prepped and draped in the sterile fashion.  An infraumbilical incision was formed and taken down to the fascia.  The umbilical hernia carefully reduced back into the cavity, and the fascia was closed with interrupted vertical mattress sutures to approximate the fascia, and then the wounds were infiltrated with 0.25% Marcaine.  The skin was reattached to the fascia with 2-0 Vicryls.  The skin was approximated with 2-0 Vicryl subcutaneous and then 4-0 Monocryl subcuticular stitches, dressed with Steri-Strips and 4 x 4's.  Patient was extubated and taken to the recovery area in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 30.939,
+      "caregiver_checklist": 6.981,
+      "child_explanation": 3.36,
+      "total": 41.285
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-13T07:21:10+00:00"
+  }
+}

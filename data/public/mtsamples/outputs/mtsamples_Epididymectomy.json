@@ -1,0 +1,98 @@
+{
+  "id": "mtsamples_Epididymectomy",
+  "patient_summary": "Hello there, you had a small operation today. The doctor removed some extra parts of your testicle called the epididymis. It's a normal part of your testicle, but sometimes it needs to be removed if it's causing problems.\n\nYou will need to take some medicines after the operation. Here's what you need to do:\n\n- Take 1 tablet of a medicine called Marcaine. You'll need to do this twice a day for 3 days. It will help with any pain you might feel.\n- Take 1 tablet of another medicine called a steroid. You'll need to take this once a day for 3 days. It will help with any swelling or redness you might have.\n- Take 1 tablet of a pain medicine called Tylenol. You'll need to take this 3 times a day for 3 days. It will help with any pain you feel.\n\nIf you have any of these problems, you should call your doctor right away:\n- If you have any bleeding or if you see blood on your bandage.\n- If you have any pain that you can't handle with the Tylenol.\n- If you have any swelling or redness that gets worse.\n\nYou will be sent to the recovery room after the operation. The doctor will make sure you are okay there. You will be sent home when you are feeling better. Remember to follow the instructions for taking your medicines and call your doctor if you have any problems.",
+  "caregiver_checklist": [
+    "Check for any signs of bleeding or swelling.",
+    "Watch for any increased pain or discomfort.",
+    "Call if there is any significant bleeding or swelling.",
+    "Schedule a follow-up appointment in 2 weeks.",
+    "Check for any redness or warmth in the scrotum.",
+    "Watch for any changes in the testicle size or appearance.",
+    "Call if there are any concerns about the testicle or scrotum.",
+    "Schedule a post-operative ultrasound if recommended by the surgeon.",
+    "Check for any discharge or foul odor from the scrotum.",
+    "Watch for any signs of infection such as fever or redness.",
+    "Call if there are any signs of infection or if the pain increases."
+  ],
+  "child_explanation": "You had a little operation today. You were very brave. You were helped by the doctors and nurses. They cleaned your tummy and made a tiny cut. They took out a part of your testicle. It was like taking out a small piece of a puzzle. They carefully took out a soft tube called the epididymis. They made sure you didn't bleed much. You'll be okay. You're in good hands.",
+  "entities": [
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 841,
+      "end": 849
+    }
+  ],
+  "regimens": [],
+  "source_text": "EPIDIDYMECTOMY,OPERATIVE NOTE:  ,The patient was placed in the supine position and prepped and draped in the usual manner.  A transverse scrotal incision was made and carried down to the tunica vaginalis, which was opened.  A small amount of clear fluid was expressed.  The tunica vaginalis was opened and the testicle was brought out through this incision.  The epididymis was separated off the surface of the testicle using a scalpel.  With blunt and sharp dissection, the epididymis was dissected off the testicle.  Bovie was used for hemostasis.  The vessels going to the testicle were preserved without any obvious injury, and a nice viable testicle was present after the epididymis was removed from this.  The blood supply to the epididymis was cauterized using a Bovie and the vas was divided with cautery also.  There was no obvious bleeding.  The cord was infiltrated with 0.25% Marcaine, as was the dartos tissue in the scrotum.  The testicle was replaced in the scrotum.  Skin was closed in two layers using 3-0 chromic catgut for the dartos and a subcuticular closure with the same material.  A dry sterile dressing and compression were applied, and he was sent to the recovery room in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 15.637,
+      "caregiver_checklist": 8.541,
+      "child_explanation": 6.102,
+      "total": 30.301
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T06:03:15+00:00"
+  }
+}

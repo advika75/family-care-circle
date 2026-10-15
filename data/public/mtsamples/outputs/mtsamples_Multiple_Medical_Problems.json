@@ -1,0 +1,377 @@
+{
+  "id": "mtsamples_Multiple_Medical_Problems",
+  "patient_summary": "Hello there, you're in a nursing home right now. I've been checking on you and talking to the nurses. They say you've been a bit confused sometimes and have had accidents in the sink, but you don't do that badly. You're having trouble walking and you fell a few months ago. You've been eating okay, but you've been losing a little bit of weight. You told me you'd like to try some Ensure, which is a special drink to help you eat better.\n\nYou're taking a lot of medicines, and I'll explain them to you. You have aspirin, which is a small pill you take every day. You also have digitek, which you take every other day. You have a special medicine called Toprol XL, which you take every day. You have vitamin B6, which you take every day. You also have Prevacid, which you take every day. You have Oyster Shell calcium with D, which you take three times a day. You have Aricept, which you take every day. You have Tylenol, which you take every four hours when you need it. You have furosemide, which you take every day. You have sublingual Nitro, which you take when you feel a bit short of breath. And you have alprazolam, which you take every day.\n\nYou're also taking some vitamins and minerals. You have B12, which is a big shot you get once a month. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You\n\nImportant details from your care team's note: 1000 mg (dosage); 125 mcg (dosage); 81 mg (dosage); 25 mg (dosage); 100 mg (dosage); 30 mg (dosage); 500 mg (dosage); 5 mg (dosage); 650 mg (dosage); 20 mg (dosage); 0.25 mg (dosage); digoxin (medication); 10 mg (dosage).",
+  "caregiver_checklist": [
+    "Check blood pressure daily and report any significant changes.",
+    "Watch for signs of diarrhea and report to healthcare provider.",
+    "Call if confusion worsens or persists.",
+    "Schedule yearly digoxin levels as ordered.",
+    "Call if you see signs of dehydration or electrolyte imbalance.",
+    "Schedule recheck in a couple of months as recommended.",
+    "Watch for signs of atrial fibrillation and report to healthcare provider.",
+    "Call if you see signs of weakness or fatigue.",
+    "Schedule health supplement to be offered after each meal.",
+    "Check weight weekly and report any significant changes.",
+    "Call if you see signs of dehydration or electrolyte imbalance.",
+    "Take aspirin 81 mg daily.",
+    "Take aspirin 25 mg p.o. every other day alternating with 100 mcg p.o. every other day.",
+    "Take aspirin 100 mg daily.",
+    "Take aspirin 30 mg daily.",
+    "Take aspirin 500 mg t.i.d.",
+    "Take digoxin 10 mg daily.",
+    "Take furosemide 20 mg daily.",
+    "Take furosemide 0.25 mg p.r.n.",
+    "Take vitamin B6 100 mg daily.",
+    "Take vitamin B6 5 mg p.r.n.",
+    "Take vitamin B6 650 mg p.r.n.",
+    "Take vitamin B6 500 mg t.i.d.",
+    "Take vitamin B6 125 mcg p.o. every other day.",
+    "Take vitamin B6 1000 mg IM monthly.",
+    "Take vitamin B6 10 mg daily.",
+    "Take vitamin B6 30 mg daily.",
+    "Take vitamin B6 5 mg p.r.n.",
+    "Take vitamin B6 650 mg p.r.n.",
+    "Take vitamin B6 500 mg t.i.d.",
+    "Take vitamin B6 125 mcg p.o. every"
+  ],
+  "child_explanation": "You have some health problems, like hypertension and a heart rhythm problem. You're feeling tired and confused sometimes. Your legs are weak, and you've fallen before. The doctors and nurses are taking good care of you. You might need a little help from a team of tiny helpers in the medicine to feel better. You'll get more of your special food to help you eat more. We'll check on you in a few weeks to see how you're doing.",
+  "entities": [
+    {
+      "text": "diarrhea",
+      "label": "SYMPTOM",
+      "start": 424,
+      "end": 432
+    },
+    {
+      "text": "1000 mg",
+      "label": "DOSAGE",
+      "start": 593,
+      "end": 600
+    },
+    {
+      "text": "every other day",
+      "label": "FREQUENCY",
+      "start": 630,
+      "end": 645
+    },
+    {
+      "text": "125 mcg",
+      "label": "DOSAGE",
+      "start": 663,
+      "end": 670
+    },
+    {
+      "text": "every other day",
+      "label": "FREQUENCY",
+      "start": 676,
+      "end": 691
+    },
+    {
+      "text": "aspirin",
+      "label": "MEDICATION",
+      "start": 693,
+      "end": 700
+    },
+    {
+      "text": "81 mg",
+      "label": "DOSAGE",
+      "start": 701,
+      "end": 706
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 707,
+      "end": 712
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 726,
+      "end": 731
+    },
+    {
+      "text": "25 mg",
+      "label": "DOSAGE",
+      "start": 743,
+      "end": 748
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 749,
+      "end": 754
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 767,
+      "end": 773
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 774,
+      "end": 779
+    },
+    {
+      "text": "30 mg",
+      "label": "DOSAGE",
+      "start": 790,
+      "end": 795
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 796,
+      "end": 801
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 831,
+      "end": 837
+    },
+    {
+      "text": "5 mg",
+      "label": "DOSAGE",
+      "start": 854,
+      "end": 858
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 859,
+      "end": 864
+    },
+    {
+      "text": "650 mg",
+      "label": "DOSAGE",
+      "start": 874,
+      "end": 880
+    },
+    {
+      "text": "furosemide",
+      "label": "MEDICATION",
+      "start": 895,
+      "end": 905
+    },
+    {
+      "text": "20 mg",
+      "label": "DOSAGE",
+      "start": 906,
+      "end": 911
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 912,
+      "end": 917
+    },
+    {
+      "text": "0.25 mg",
+      "label": "DOSAGE",
+      "start": 970,
+      "end": 977
+    },
+    {
+      "text": "Fatigue",
+      "label": "SYMPTOM",
+      "start": 1828,
+      "end": 1835
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 1879,
+      "end": 1891
+    },
+    {
+      "text": "digoxin",
+      "label": "MEDICATION",
+      "start": 1918,
+      "end": 1925
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 1960,
+      "end": 1965
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 1966,
+      "end": 1971
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 2012,
+      "end": 2031
+    },
+    {
+      "text": "digoxin",
+      "label": "MEDICATION",
+      "start": 2061,
+      "end": 2068
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "aspirin",
+      "dosages": [
+        "81 mg",
+        "25 mg",
+        "100 mg",
+        "30 mg",
+        "500 mg",
+        "5 mg",
+        "650 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "furosemide",
+      "dosages": [
+        "20 mg",
+        "0.25 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "digoxin",
+      "dosages": [
+        "10 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "SUBJECTIVE:,  The patient was seen today by me at Nursing Home for her multiple medical problems.  The nurses report that she has been confused at times, having incontinent stool in the sink one time but generally she does not do that poorly.  She does have trouble walking which she attributes to weak legs.  She fell a couple of months ago.  Her eating has been fair.  She has been losing weight a little bit.  She denies diarrhea.  She does complain of feeling listless and unambitious and would like to try some Ensure.,CURRENT MEDICATIONS:,  Her meds are fairly extensive and include B12 1000 mg IM monthly, Digitek 250 p.o. every other day alternating with 125 mcg p.o. every other day, aspirin 81 mg daily, Theragran-M daily, Toprol XL 25 mg daily, vitamin B6 100 mg daily, Prevacid 30 mg daily, Oyster Shell calcium with D 500 mg t.i.d., Aricept 5 mg daily, Tylenol 650 mg q.4h. p.r.n., furosemide 20 mg daily p.r.n., and sublingual Nitro p.r.n., and alprazolam 0.25 mg p.r.n.,ALLERGIES:,  Sulfa and trimethoprim.,OBJECTIVE:,General:  She is a well-developed, well-nourished, elderly female in no acute distress.,Vital Signs:  Her age is 90.  Temperature is 98.5 degrees.  Blood pressure:  100/54.  Pulse:  60.  Respirations:  18.  Weight was 132.6 about a week ago, which is down one pound from couple of months ago.,HEENT:  Head was normocephalic.,Neck:  Supple.,Lungs:  Clear.,Heart:  Regular rate and rhythm.,Abdomen:  Soft, nontender without hepatosplenomegaly or mass.,Extremities:  No calf tenderness or significant ankle edema x 2 in the lower extremities is noted.,Mental Status Exam:  She was uncertain what season we are in.  She thought we were almost in winter.  She did know that today of the week was Friday.  She seemed to recognize me.,ASSESSMENT:,1.  Alzheimer’s dementia.,2.  Gradual weight loss.,3.  Fatigue.,4.  B12 deficiency.,5.  Osteoporosis.,6.  Hypertension.,PLAN:,  I ordered yearly digoxin levels.  Increased her Aricept to 10 mg daily.  She apparently does have intermittent atrial fibrillation as a reason for being on the digoxin.  We will plan to recheck her in a couple of months.  Ordered health supplement to be offered after each meal due to her weight loss.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "1000 mg",
+        "125 mcg",
+        "81 mg",
+        "25 mg",
+        "100 mg",
+        "30 mg",
+        "500 mg",
+        "5 mg",
+        "650 mg",
+        "20 mg",
+        "0.25 mg",
+        "digoxin",
+        "10 mg"
+      ],
+      "caregiver_checklist": [
+        "1000 mg",
+        "every other day",
+        "125 mcg",
+        "aspirin",
+        "81 mg",
+        "25 mg",
+        "100 mg",
+        "30 mg",
+        "500 mg",
+        "5 mg",
+        "650 mg",
+        "furosemide",
+        "20 mg",
+        "0.25 mg",
+        "10 mg"
+      ],
+      "child_explanation": []
+    },
+    "missing_after_retries": {
+      "patient_summary": [
+        "1000 mg",
+        "125 mcg",
+        "81 mg",
+        "25 mg",
+        "100 mg",
+        "30 mg",
+        "500 mg",
+        "5 mg",
+        "650 mg",
+        "20 mg",
+        "0.25 mg",
+        "digoxin",
+        "10 mg"
+      ],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": true,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": true,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        true,
+        true,
+        true
+      ],
+      "caregiver_checklist": [
+        false,
+        true
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "latency_sec": {
+      "patient_summary": 116.889,
+      "caregiver_checklist": 43.853,
+      "child_explanation": 11.175,
+      "total": 171.933
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-09T07:28:29+00:00"
+  }
+}
