@@ -53,7 +53,7 @@ Retention: `_first` = first attempt, `_model` = after retries but before the fal
 | json_parse_rate | 1.000 | nan |
 | total_retries | 1.583 | 0.862 |
 | fallbacks | 0.167 | 0.373 |
-| latency_total_sec | 65.502 | 16.339 |
+| latency_total_sec | 74.078 | 18.214 |
 
 ## NER vs gold (6 docs)
 

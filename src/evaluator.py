@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import json
 from functools import lru_cache
 from pathlib import Path
 from typing import Any, Iterable
@@ -387,12 +388,36 @@ def ner_scores(
 def evaluate_ner_against_gold(
     gold_dir: str | Path, raw_dir: str | Path, extract_fn: Any
 ) -> pd.DataFrame:
-    """Run ``extract_fn(text)`` on each note that has a gold file and score exact and relaxed matches."""
+    """Run NER against gold files, using only ``complete`` manifest entries when present."""
+    from src.datasets import load_annotation
+
+    gold_dir, raw_dir = Path(gold_dir), Path(raw_dir)
     docs = []
-    for gold_path in list_files(gold_dir, (".json",)):
-        gold = read_json(gold_path)
-        text = read_text(Path(raw_dir) / f"{gold_path.stem}.txt")
+    manifest_path = gold_dir / "annotation_manifest.json"
+    if manifest_path.is_file():
+        try:
+            manifest = read_json(manifest_path)
+        except (OSError, json.JSONDecodeError) as exc:
+            raise ValueError(f"Cannot read annotation manifest {manifest_path}: {exc}") from exc
+        entries = manifest.get("annotations") if isinstance(manifest, dict) else None
+        if not isinstance(entries, list):
+            raise ValueError(f"Invalid annotation manifest {manifest_path}: expected annotations list")
+        sources = [(entry.get("id"), entry.get("source_file")) for entry in entries
+                   if isinstance(entry, dict) and entry.get("status") == "complete"]
+    else:
+        sources = [(p.stem, f"{p.stem}.txt") for p in list_files(gold_dir, (".json",))]
+    for note_id, source_file in sources:
+        if not isinstance(note_id, str) or not note_id or not isinstance(source_file, str) or not source_file:
+            raise ValueError(f"Malformed completed annotation entry in {manifest_path}")
+        gold_path = gold_dir / f"{note_id}.json"
+        note_path = raw_dir / Path(source_file.replace("\\", "/")).name
+        text = read_text(note_path)
+        gold = load_annotation(gold_path, note_path)
+        if gold["id"] != note_id:
+            raise ValueError(f"Completed note {note_id}: annotation id is {gold['id']!r}")
         docs.append((extract_fn(text), gold["entities"]))
+    if not docs:
+        return pd.DataFrame(columns=["mode", "label", "precision", "recall", "f1", "tp", "fp", "fn", "n_docs"])
     rows = []
     for mode in ("exact", "relaxed"):
         for label, s in ner_scores(docs, mode).items():

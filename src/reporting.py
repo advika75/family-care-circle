@@ -127,13 +127,18 @@ def evaluate_outputs(
 
     ner = None
     if extract_fn is not None:
-        paths = config.get("paths", {})
-        ner = evaluate_ner_against_gold(paths.get("gold_dir", "data/gold"),
-                                        resolve_path(paths.get("raw_dir", "data/raw")), extract_fn)
-        ner.to_csv(results_dir / "ner_metrics.csv", index=False)
-        table = ner.pivot(index="label", columns="mode", values=["precision", "recall", "f1"])
-        table.columns = [f"{metric}_{mode}" for metric, mode in table.columns]
-        lines += [f"\n## NER vs gold ({int(ner['n_docs'].iloc[0])} docs)\n", markdown_table(table)]
+        from src.datasets import dataset_config
+        paths = dataset_config(config)
+        gold_dir = resolve_path(paths.get("gold_dir", "data/gold"))
+        if gold_dir.is_dir() and list_files(gold_dir, (".json",)):
+            ner = evaluate_ner_against_gold(gold_dir, resolve_path(paths.get("raw_dir", "data/raw")), extract_fn)
+            ner.to_csv(results_dir / "ner_metrics.csv", index=False)
+            if not ner.empty:
+                table = ner.pivot(index="label", columns="mode", values=["precision", "recall", "f1"])
+                table.columns = [f"{metric}_{mode}" for metric, mode in table.columns]
+                lines += [f"\n## NER vs gold ({int(ner['n_docs'].iloc[0])} docs)\n", markdown_table(table)]
+            else:
+                lines += ["\n## NER vs gold\n\nNo completed gold annotations; NER metrics unavailable.\n"]
 
     plot_readability(metrics, figures_dir / "readability_before_after.png")
     plot_retention(metrics, figures_dir / "entity_retention.png")
