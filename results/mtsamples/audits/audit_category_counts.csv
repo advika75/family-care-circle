@@ -1,0 +1,19 @@
+kind,category,count
+retention,true omission,0
+retention,matcher failure,0
+retention,extraction error,0
+retention,unclear,0
+retention,pending / blank,40
+unsupported_numbers,true fabrication,0
+unsupported_numbers,equivalent,0
+unsupported_numbers,format mismatch,0
+unsupported_numbers,other,0
+unsupported_numbers,pending / blank,60
+retention_stratum,caregiver_checklist:DOSAGE,16
+retention_stratum,caregiver_checklist:DURATION,1
+retention_stratum,caregiver_checklist:FREQUENCY,4
+retention_stratum,caregiver_checklist:MEDICATION,4
+retention_stratum,patient_summary:DOSAGE,10
+retention_stratum,patient_summary:DURATION,1
+retention_stratum,patient_summary:FREQUENCY,2
+retention_stratum,patient_summary:MEDICATION,2

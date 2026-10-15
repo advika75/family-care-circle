@@ -1,0 +1,541 @@
+note_id,persona,label,entity,source_context,first_attempt_missing_entity,final_output,human_label
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary,caregiver_checklist,DOSAGE,6.25 mg,"tor 10 mg p.o. at bedtime.,3.  Nitro-Dur patch 0.3 mg per hour one patch daily.,4.  Phenergan syrup 6.25 mg p.o. q.4h. p.r.n.,5.  Synthroid 0.175 mg p.o. daily.,6.  Zyrtec 10 mg p.o. daily.,7.  Lamictal 100",6.25 mg,"Check the patient's blood glucose levels every 4 hours.
+Monitor for signs of hypoglycemia or hyperglycemia.
+Watch for any new or worsening symptoms of pneumonia.
+Call the patient's oncologist, Dr. Z, if she hasn't been reached yet.
+Schedule a follow-up appointment with Dr. X in 5-7 days.
+Call Dr. A if insulin pump adjustments are needed.
+Follow up with Dr. B regarding J-tube issues.
+Call Dr. Y if colon cancer symptoms change.
+Schedule a follow-up appointment with Dr. Z, her oncologist.
+Schedule a follow-up appointment with Dr. A, her endocrinologist.
+Call Dr. B if J-tube issues persist.
+Schedule a follow-up appointment with Dr. Y, her colon cancer specialist.
+Medication: insulin | dose: 150 mg, 100 mg, 200 mg | how often: in the morning.
+Medication: insulin | dose: 3 units, 0.8 units, 0.2 units | how often: every 12 hours (twice a day).
+Medication: insulin | dose: 750 mg, 12.5 mg, 40 mg, 100 mg, 150 mg, 10 mg, 0.3 mg, 6.25 mg, 0.175 mg, 325 mg, 400 mg, 50 mcg, 500 mg, 200 units, 800mg, 160 mg | how often: daily (once a day), twice a day, in the morning, at bedtime, every 12 hours (twice a day), 3 days.",
+mtsamples_Eye_Examination_-_H_P,caregiver_checklist,DOSAGE,31.25 mg,"ntation, GI upset.,MEDICATION HISTORY:,  Patient is currently taking amoxicillin-clavulanate 125 mg-31.25 mg tablet, chewable medication was prescribed by A. General Practitioner MD, Adrenocot 0.5 mg tablet m",31.25 mg,"Check patient’s temperature, headache, nausea, and dizziness every hour for the first 6 hours.
+Call the patient’s healthcare provider if symptoms persist or worsen.
+Schedule a follow-up appointment in 12 months.
+Watch for signs of aspirin allergy such as disorientation or GI upset.
+Call the healthcare provider if the patient experiences any of these symptoms.
+Monitor for signs of amoxicillin-clavulanate side effects like rash, itching, or difficulty breathing.
+Schedule a return eye examination in 12 months.
+Call the healthcare provider if vision changes or new symptoms develop.
+Medication: aspirin | dose: 125 mg | how often: BID (twice a day)
+Medication: amoxicillin-clavulanate | dose: 125 mg, 31.25 mg, 0.5 mg, 12.5 mg | how often: BID (twice a day)",
+mtsamples_Attempted_Suicide_-_Consult,caregiver_checklist,DOSAGE,1 mg," information is known to Dr. X.,DISCHARGE MEDICATIONS:,The patient is discharged with:,1.  Klonopin 1 mg t.i.d. p.r.n.,2.  Extended-release lithium 450 mg b.i.d.,3.  Depakote 1000 mg b.i.d.,4.  Seroquel 1",1 mg,"Check that the patient has all medications from the hospital bag.
+Monitor for signs of agitation or psychomotor hyperactivity.
+Watch for any new or worsening depressive symptoms.
+Call Dr. X for a follow-up appointment in four days.
+Schedule a follow-up appointment with the patient's outpatient psychiatrist.
+Watch for signs of suicidal or self-harming thoughts or behaviors.
+Call emergency services if the patient appears acutely unsafe.
+Call the patient's girlfriend to inform her of the discharge and follow-up plan.
+Check the patient's benzodiazepine levels if available.
+Call the patient's girlfriend to inform her of the discharge and follow-up plan.
+Confirm with the care team: 1 mg (dosage)
+Confirm with the care team: 450 mg (dosage)
+Confirm with the care team: 1000 mg (dosage)",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,caregiver_checklist,DOSAGE,200 units,"patch transdermal q.72h.,14.  Calcium and vitamin D combination, calcium carbonate 500 mg/vitamin D 200 units one tab p.o. t.i.d.,15.  Bactrim DS 800mg/160 mg tablet one tablet q.12h. x3 days.,16.  Levaquin 75",200 units,"Check the patient's blood glucose levels every 4 hours.
+Monitor for signs of hypoglycemia or hyperglycemia.
+Watch for any new or worsening symptoms of pneumonia.
+Call the patient's oncologist, Dr. Z, if she hasn't been reached yet.
+Schedule a follow-up appointment with Dr. X in 5-7 days.
+Call Dr. A if insulin pump adjustments are needed.
+Follow up with Dr. B regarding J-tube issues.
+Call Dr. Y if colon cancer symptoms change.
+Schedule a follow-up appointment with Dr. Z, her oncologist.
+Schedule a follow-up appointment with Dr. A, her endocrinologist.
+Call Dr. B if J-tube issues persist.
+Schedule a follow-up appointment with Dr. Y, her colon cancer specialist.
+Medication: insulin | dose: 150 mg, 100 mg, 200 mg | how often: in the morning.
+Medication: insulin | dose: 3 units, 0.8 units, 0.2 units | how often: every 12 hours (twice a day).
+Medication: insulin | dose: 750 mg, 12.5 mg, 40 mg, 100 mg, 150 mg, 10 mg, 0.3 mg, 6.25 mg, 0.175 mg, 325 mg, 400 mg, 50 mcg, 500 mg, 200 units, 800mg, 160 mg | how often: daily (once a day), twice a day, in the morning, at bedtime, every 12 hours (twice a day), 3 days.",
+mtsamples_Knee_Surgery_-_Discharge_Summary,caregiver_checklist,DOSAGE,200 mg,"TIME OF DISCHARGE: , The patient is advised to continue taking the following medications:  Celebrex 200 mg daily, for one month, Colace 100 mg b.i.d. for one month, Protonix 40 mg b.i.d. for one month, Synt",200 mg,"Check oxycodone SR 20 mg every 12 hours for five days.
+Schedule oxycodone SR 10 mg every 12 hours for five days.
+Give oxycodone SR 20 mg, 40 mg, 100 mg, 200 mg, 137 mcg, 20 mg, 10 mg, 5/325 mg daily.
+Give trazodone 50 mg at bedtime for two weeks.
+Schedule trazodone 0.25 mg daily for 30 days.
+Watch for rashes, especially on the right upper extremity and right side of the abdomen.
+Call if there is any new or worsening pain, especially at a certain position.
+Call if there are any new symptoms such as dysuria, incomplete bladder emptying, or voiding difficulties.
+Schedule follow-up appointment with Dr. A on 09/21/2007 at noon.
+Call if there are any new or worsening symptoms of anxiety or insomnia.
+Call if there are any new or worsening symptoms of constipation.
+Call if there are any new or worsening symptoms of hypertension or hypothyroidism.
+Call if there are any new or worsening symptoms of GERD.
+Call if there are any new or worsening symptoms of migraine headaches.
+Schedule INR test on 09/03/2007 and follow up with Dr. A.
+Schedule 2 units of Coumadin daily for one month.
+Schedule 7 mg of Coumadin daily for 30 days.",
+mtsamples_I_D_-_Auricular_Hematoma,caregiver_checklist,DOSAGE,5 mL,"h 1:100,000 dilution of epinephrine totaling 2 mL.,COMPLICATIONS:,  None.,FINDINGS: , Approximately 5 mL of serosanguineous drainage.,PROCEDURE: , The patient underwent an incision and drainage procedure",5 mL,"Check for drainage at the antihelix fold above the concha bullosa.
+Watch for signs of infection such as redness, warmth, or increased drainage.
+Call the healthcare provider if drainage increases or becomes more pus-like.
+Schedule a follow-up appointment in 2 weeks for wound care and drainage assessment.
+Call the healthcare provider if there are any signs of worsening symptoms.
+Schedule a referral to a specialist for further evaluation if needed.
+Call the healthcare provider if the wound does not improve or if there are any concerns.
+Schedule a suture removal appointment if the wound is healing well and no drainage is noted.
+Other dosage: 2 mL (Xylocaine 1% with 1:100,000 dilution)
+Other dosage: 5 mL (Approximately 5 mL of serosanguineous drainage)",
+mtsamples_Hyperthyroidism_Following_Pregnancy,caregiver_checklist,DOSAGE,40mg,"Urine pregnancy test was negative.,HOSPITAL COURSE: , After admission, she was given propranolol at 40mg daily and continued on telemetry.  On the 2nd day of treatment, the patient still complained of che",40mg,"Give the patient a 10mg dose of citalopram once daily.
+Check the patient's blood pressure and heart rate daily.
+Watch for signs of hypothyroidism such as fatigue, weight gain, and cold intolerance.
+Call the endocrinologist if the patient's thyroid function tests are abnormal.
+Schedule a follow-up appointment with the ophthalmologist in 6 weeks.
+Call the patient if she experiences new or worsening symptoms of depression.
+Schedule a thyroid function test in 6 weeks.
+Call the patient if she has any signs of hypothyroidism.
+Schedule a thyroid function test at 6-12 months.
+Call the patient if she experiences any pregnancy symptoms or signs of hyperthyroidism.
+Schedule a follow-up appointment with the obstetrician to discuss contraception options.
+Give the patient a 10mg dose of tramadol as needed (PRN).
+Give the patient 40mg of propranolol daily.
+Give the patient 60mg of propranolol twice daily.",
+mtsamples_First_Followup_-_Shunt_Surgery,caregiver_checklist,DOSAGE,20 mg,".,MEDICATIONS: , Plavix 75 mg p.o. q.d., metoprolol 25 mg p.o. q.d., Flomax 0.4 mg p.o. q.d., Zocor 20 mg p.o. q.d., Detrol LA 4 mg p.o. q.d., lisinopril 10 mg p.o. q.d., Imodium daily, Omega-3, fish oil,",20 mg,"Check Mr. A’s blood pressure and heart rate daily.
+Watch for any new or worsening headaches or pain.
+Call if Mr. A experiences any new or worsening symptoms.
+Schedule a follow-up CT scan in three months.
+Call if Mr. A’s gait score drops below 15/28.
+Watch for any new or worsening urinary incontinence or urgency.
+Call if Mr. A’s cognitive scores drop below 24/30.
+Schedule a refill for his metoprolol 25 mg daily.
+Schedule a refill for his Flomax 0.4 mg daily.
+Schedule a refill for his Detrol LA 4 mg daily.
+Schedule a refill for his lisinopril 10 mg daily.
+Schedule a refill for his Zocor 20 mg daily.
+Call if Mr. A’s pain increases to 3/10 or higher.
+Schedule a refill for his Plavix 75 mg daily.",
+mtsamples_Eye_Examination_-_H_P,caregiver_checklist,DOSAGE,125 mg,"disorientation, GI upset.,MEDICATION HISTORY:,  Patient is currently taking amoxicillin-clavulanate 125 mg-31.25 mg tablet, chewable medication was prescribed by A. General Practitioner MD, Adrenocot 0.5 mg",125 mg,"Check patient’s temperature, headache, nausea, and dizziness every hour for the first 6 hours.
+Call the patient’s healthcare provider if symptoms persist or worsen.
+Schedule a follow-up appointment in 12 months.
+Watch for signs of aspirin allergy such as disorientation or GI upset.
+Call the healthcare provider if the patient experiences any of these symptoms.
+Monitor for signs of amoxicillin-clavulanate side effects like rash, itching, or difficulty breathing.
+Schedule a return eye examination in 12 months.
+Call the healthcare provider if vision changes or new symptoms develop.
+Medication: aspirin | dose: 125 mg | how often: BID (twice a day)
+Medication: amoxicillin-clavulanate | dose: 125 mg, 31.25 mg, 0.5 mg, 12.5 mg | how often: BID (twice a day)",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,caregiver_checklist,DOSAGE,0.3 mg,"re as follows:,1.  Coreg 12.5 mg p.o. b.i.d.,2.  Lipitor 10 mg p.o. at bedtime.,3.  Nitro-Dur patch 0.3 mg per hour one patch daily.,4.  Phenergan syrup 6.25 mg p.o. q.4h. p.r.n.,5.  Synthroid 0.175 mg p.o.",0.3 mg,"Check the patient's blood glucose levels every 4 hours.
+Monitor for signs of hypoglycemia or hyperglycemia.
+Watch for any new or worsening symptoms of pneumonia.
+Call the patient's oncologist, Dr. Z, if she hasn't been reached yet.
+Schedule a follow-up appointment with Dr. X in 5-7 days.
+Call Dr. A if insulin pump adjustments are needed.
+Follow up with Dr. B regarding J-tube issues.
+Call Dr. Y if colon cancer symptoms change.
+Schedule a follow-up appointment with Dr. Z, her oncologist.
+Schedule a follow-up appointment with Dr. A, her endocrinologist.
+Call Dr. B if J-tube issues persist.
+Schedule a follow-up appointment with Dr. Y, her colon cancer specialist.
+Medication: insulin | dose: 150 mg, 100 mg, 200 mg | how often: in the morning.
+Medication: insulin | dose: 3 units, 0.8 units, 0.2 units | how often: every 12 hours (twice a day).
+Medication: insulin | dose: 750 mg, 12.5 mg, 40 mg, 100 mg, 150 mg, 10 mg, 0.3 mg, 6.25 mg, 0.175 mg, 325 mg, 400 mg, 50 mcg, 500 mg, 200 units, 800mg, 160 mg | how often: daily (once a day), twice a day, in the morning, at bedtime, every 12 hours (twice a day), 3 days.",
+mtsamples_Q-Fever_Endocarditis,caregiver_checklist,DOSAGE,6.5 mcg,s undetectable.  Of note is that doxycycline level obtained while in the hospital on 10/21/2007 was 6.5 mcg/mL.  Q-fever serology obtained on 10/05/2007 was positive for phase I antibodies in 1/2/6 and phase,6.5 mcg,"Check doxycycline and hydroxychloroquine levels again.
+Watch for any new symptoms like fever or fatigue.
+Call if there are any signs of infection or worsening heart murmur.
+Schedule a follow-up appointment in 4 weeks.
+Check for any changes in bowel habits, especially if they become more frequent.
+Monitor for signs of kidney problems, such as dark urine or swelling.
+Call if there are any signs of heart problems, such as shortness of breath or chest pain.
+Schedule a comprehensive metabolic panel and CBC test.
+Watch for signs of liver problems, such as yellowing of the skin or eyes.
+Call if there are any signs of gastrointestinal bleeding.
+Call if there are any signs of allergic reactions or rash.
+Monitor digoxin levels as per the plan.
+Watch for aspirin levels as per the plan.
+Watch for warfarin levels as per the plan.
+Watch for furosemide levels as per the plan.
+Watch for doxycycline levels as per the plan (150 mg, twice daily).
+Watch for hydroxychloroquine levels as per the plan (200 mg, three times a day).
+Watch for doxycycline levels as per the plan (6.5 mcg).",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary,caregiver_checklist,DOSAGE,100 mg, necessary intervention at that time would be to increase her Lamictal to 150 mg in the morning and 100 mg in the evening with gradual increase of the dosage until she was on 200 mg b.i.d.  Regarding the hy,100 mg,"Check the patient's blood glucose levels every 4 hours.
+Monitor for signs of hypoglycemia or hyperglycemia.
+Watch for any new or worsening symptoms of pneumonia.
+Call the patient's oncologist, Dr. Z, if she hasn't been reached yet.
+Schedule a follow-up appointment with Dr. X in 5-7 days.
+Call Dr. A if insulin pump adjustments are needed.
+Follow up with Dr. B regarding J-tube issues.
+Call Dr. Y if colon cancer symptoms change.
+Schedule a follow-up appointment with Dr. Z, her oncologist.
+Schedule a follow-up appointment with Dr. A, her endocrinologist.
+Call Dr. B if J-tube issues persist.
+Schedule a follow-up appointment with Dr. Y, her colon cancer specialist.
+Medication: insulin | dose: 150 mg, 100 mg, 200 mg | how often: in the morning.
+Medication: insulin | dose: 3 units, 0.8 units, 0.2 units | how often: every 12 hours (twice a day).
+Medication: insulin | dose: 750 mg, 12.5 mg, 40 mg, 100 mg, 150 mg, 10 mg, 0.3 mg, 6.25 mg, 0.175 mg, 325 mg, 400 mg, 50 mcg, 500 mg, 200 units, 800mg, 160 mg | how often: daily (once a day), twice a day, in the morning, at bedtime, every 12 hours (twice a day), 3 days.",
+mtsamples_Eye_Examination_-_H_P,caregiver_checklist,DOSAGE,0.5 mg,"125 mg-31.25 mg tablet, chewable medication was prescribed by A. General Practitioner MD, Adrenocot 0.5 mg tablet medication was prescribed by A. General Practitioner MD, Vioxx 12.5 mg tablet (BID).,PMH: ,",0.5 mg,"Check patient’s temperature, headache, nausea, and dizziness every hour for the first 6 hours.
+Call the patient’s healthcare provider if symptoms persist or worsen.
+Schedule a follow-up appointment in 12 months.
+Watch for signs of aspirin allergy such as disorientation or GI upset.
+Call the healthcare provider if the patient experiences any of these symptoms.
+Monitor for signs of amoxicillin-clavulanate side effects like rash, itching, or difficulty breathing.
+Schedule a return eye examination in 12 months.
+Call the healthcare provider if vision changes or new symptoms develop.
+Medication: aspirin | dose: 125 mg | how often: BID (twice a day)
+Medication: amoxicillin-clavulanate | dose: 125 mg, 31.25 mg, 0.5 mg, 12.5 mg | how often: BID (twice a day)",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary,caregiver_checklist,DOSAGE,3 units,"At discharge, her endocrinologist was contacted.  It was decided to change her insulin pump rate to 3 units per hour from midnight till 6 a.m., from 0.8 units per hour from 6 a.m. until 8 a.m., and then at 0",3 units,"Check the patient's blood glucose levels every 4 hours.
+Monitor for signs of hypoglycemia or hyperglycemia.
+Watch for any new or worsening symptoms of pneumonia.
+Call the patient's oncologist, Dr. Z, if she hasn't been reached yet.
+Schedule a follow-up appointment with Dr. X in 5-7 days.
+Call Dr. A if insulin pump adjustments are needed.
+Follow up with Dr. B regarding J-tube issues.
+Call Dr. Y if colon cancer symptoms change.
+Schedule a follow-up appointment with Dr. Z, her oncologist.
+Schedule a follow-up appointment with Dr. A, her endocrinologist.
+Call Dr. B if J-tube issues persist.
+Schedule a follow-up appointment with Dr. Y, her colon cancer specialist.
+Medication: insulin | dose: 150 mg, 100 mg, 200 mg | how often: in the morning.
+Medication: insulin | dose: 3 units, 0.8 units, 0.2 units | how often: every 12 hours (twice a day).
+Medication: insulin | dose: 750 mg, 12.5 mg, 40 mg, 100 mg, 150 mg, 10 mg, 0.3 mg, 6.25 mg, 0.175 mg, 325 mg, 400 mg, 50 mcg, 500 mg, 200 units, 800mg, 160 mg | how often: daily (once a day), twice a day, in the morning, at bedtime, every 12 hours (twice a day), 3 days.",
+mtsamples_Multiple_Medical_Problems,caregiver_checklist,DOSAGE,100 mg,"mcg p.o. every other day, aspirin 81 mg daily, Theragran-M daily, Toprol XL 25 mg daily, vitamin B6 100 mg daily, Prevacid 30 mg daily, Oyster Shell calcium with D 500 mg t.i.d., Aricept 5 mg daily, Tylenol",100 mg,"Check blood pressure daily and report any significant changes.
+Watch for signs of diarrhea and report to healthcare provider.
+Call if confusion worsens or persists.
+Schedule yearly digoxin levels as ordered.
+Call if you see signs of dehydration or electrolyte imbalance.
+Schedule recheck in a couple of months as recommended.
+Watch for signs of atrial fibrillation and report to healthcare provider.
+Call if you see signs of weakness or fatigue.
+Schedule health supplement to be offered after each meal.
+Check weight weekly and report any significant changes.
+Call if you see signs of dehydration or electrolyte imbalance.
+Take aspirin 81 mg daily.
+Take aspirin 25 mg p.o. every other day alternating with 100 mcg p.o. every other day.
+Take aspirin 100 mg daily.
+Take aspirin 30 mg daily.
+Take aspirin 500 mg t.i.d.
+Take digoxin 10 mg daily.
+Take furosemide 20 mg daily.
+Take furosemide 0.25 mg p.r.n.
+Take vitamin B6 100 mg daily.
+Take vitamin B6 5 mg p.r.n.
+Take vitamin B6 650 mg p.r.n.
+Take vitamin B6 500 mg t.i.d.
+Take vitamin B6 125 mcg p.o. every other day.
+Take vitamin B6 1000 mg IM monthly.
+Take vitamin B6 10 mg daily.
+Take vitamin B6 30 mg daily.
+Take vitamin B6 5 mg p.r.n.
+Take vitamin B6 650 mg p.r.n.
+Take vitamin B6 500 mg t.i.d.
+Take vitamin B6 125 mcg p.o. every",
+mtsamples_Attempted_Suicide_-_Consult,caregiver_checklist,DOSAGE,1000 mg,"arged with:,1.  Klonopin 1 mg t.i.d. p.r.n.,2.  Extended-release lithium 450 mg b.i.d.,3.  Depakote 1000 mg b.i.d.,4.  Seroquel 1000 mg per day.,SOCIAL HISTORY:  ,The patient lives with his girlfriend on an",1000 mg,"Check that the patient has all medications from the hospital bag.
+Monitor for signs of agitation or psychomotor hyperactivity.
+Watch for any new or worsening depressive symptoms.
+Call Dr. X for a follow-up appointment in four days.
+Schedule a follow-up appointment with the patient's outpatient psychiatrist.
+Watch for signs of suicidal or self-harming thoughts or behaviors.
+Call emergency services if the patient appears acutely unsafe.
+Call the patient's girlfriend to inform her of the discharge and follow-up plan.
+Check the patient's benzodiazepine levels if available.
+Call the patient's girlfriend to inform her of the discharge and follow-up plan.
+Confirm with the care team: 1 mg (dosage)
+Confirm with the care team: 450 mg (dosage)
+Confirm with the care team: 1000 mg (dosage)",
+mtsamples_Knee_Surgery_-_Discharge_Summary,caregiver_checklist,DURATION,one month," , The patient is advised to continue taking the following medications:  Celebrex 200 mg daily, for one month, Colace 100 mg b.i.d. for one month, Protonix 40 mg b.i.d. for one month, Synthroid 137 mcg daily,",one month,"Check oxycodone SR 20 mg every 12 hours for five days.
+Schedule oxycodone SR 10 mg every 12 hours for five days.
+Give oxycodone SR 20 mg, 40 mg, 100 mg, 200 mg, 137 mcg, 20 mg, 10 mg, 5/325 mg daily.
+Give trazodone 50 mg at bedtime for two weeks.
+Schedule trazodone 0.25 mg daily for 30 days.
+Watch for rashes, especially on the right upper extremity and right side of the abdomen.
+Call if there is any new or worsening pain, especially at a certain position.
+Call if there are any new symptoms such as dysuria, incomplete bladder emptying, or voiding difficulties.
+Schedule follow-up appointment with Dr. A on 09/21/2007 at noon.
+Call if there are any new or worsening symptoms of anxiety or insomnia.
+Call if there are any new or worsening symptoms of constipation.
+Call if there are any new or worsening symptoms of hypertension or hypothyroidism.
+Call if there are any new or worsening symptoms of GERD.
+Call if there are any new or worsening symptoms of migraine headaches.
+Schedule INR test on 09/03/2007 and follow up with Dr. A.
+Schedule 2 units of Coumadin daily for one month.
+Schedule 7 mg of Coumadin daily for 30 days.",
+mtsamples_Eye_Examination_-_H_P,caregiver_checklist,FREQUENCY,BID,"enocot 0.5 mg tablet medication was prescribed by A. General Practitioner MD, Vioxx 12.5 mg tablet (BID).,PMH: , Past medical history is unremarkable.,PAST SURGICAL HISTORY:,  Patient admits past surgica",BID,"Check patient’s temperature, headache, nausea, and dizziness every hour for the first 6 hours.
+Call the patient’s healthcare provider if symptoms persist or worsen.
+Schedule a follow-up appointment in 12 months.
+Watch for signs of aspirin allergy such as disorientation or GI upset.
+Call the healthcare provider if the patient experiences any of these symptoms.
+Monitor for signs of amoxicillin-clavulanate side effects like rash, itching, or difficulty breathing.
+Schedule a return eye examination in 12 months.
+Call the healthcare provider if vision changes or new symptoms develop.
+Medication: aspirin | dose: 125 mg | how often: BID (twice a day)
+Medication: amoxicillin-clavulanate | dose: 125 mg, 31.25 mg, 0.5 mg, 12.5 mg | how often: BID (twice a day)",
+mtsamples_Infant_Not_Gaining_Weight,caregiver_checklist,FREQUENCY,4 times a day," Enfamil 20 calories, 1-3 ounces per history every 3-4 hours.,ELIMINATION: , The patient urinates 3-4 times a day and has a bowel movement 3-4 times a day.,FAMILY HISTORY/SOCIAL HISTORY: , The patient lives with t",4 times a day,"Check the patient's temperature, heart rate, and respiratory rate every hour.
+Watch for signs of worsening respiratory distress, such as increased crackles or tachypnea.
+Call the primary care physician if the patient's weight does not increase by 2 ounces every 3-4 hours.
+Schedule a follow-up echocardiogram in 1-month.
+Call the care team if the patient shows signs of dehydration, such as decreased urine output or poor skin turgor.
+Schedule a blood culture and CBC in 26-day.
+Watch for signs of heart failure, such as increased peripheral edema or decreased urine output.
+Call the care team if the patient's blood pressure drops below 90/50.
+Schedule a repeat chest x-ray in 2-month.
+Call the care team if the patient's heart murmur becomes more pronounced or radiates to the back.
+Schedule a repeat echocardiogram in 2-month.
+Call the care team if the patient develops new symptoms such as fever, cough, or vomiting.
+Give 1 mg of Lasix twice daily starting tonight.
+Confirm with the care team: 4 times a day (frequency)",
+mtsamples_Infant_Not_Gaining_Weight,caregiver_checklist,FREQUENCY,twice daily,e going to admit and monitor closely tonight.  We will get a chest x-ray and start Lasix at 1 mg/kg twice daily.  We will also get a CBC and check a blood culture and further workup as necessary.,twice daily,"Check the patient's temperature, heart rate, and respiratory rate every hour.
+Watch for signs of worsening respiratory distress, such as increased crackles or tachypnea.
+Call the primary care physician if the patient's weight does not increase by 2 ounces every 3-4 hours.
+Schedule a follow-up echocardiogram in 1-month.
+Call the care team if the patient shows signs of dehydration, such as decreased urine output or poor skin turgor.
+Schedule a blood culture and CBC in 26-day.
+Watch for signs of heart failure, such as increased peripheral edema or decreased urine output.
+Call the care team if the patient's blood pressure drops below 90/50.
+Schedule a repeat chest x-ray in 2-month.
+Call the care team if the patient's heart murmur becomes more pronounced or radiates to the back.
+Schedule a repeat echocardiogram in 2-month.
+Call the care team if the patient develops new symptoms such as fever, cough, or vomiting.
+Give 1 mg of Lasix twice daily starting tonight.
+Confirm with the care team: 4 times a day (frequency)",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,caregiver_checklist,FREQUENCY,at bedtime,"t.  The discharge medications were as follows:,1.  Coreg 12.5 mg p.o. b.i.d.,2.  Lipitor 10 mg p.o. at bedtime.,3.  Nitro-Dur patch 0.3 mg per hour one patch daily.,4.  Phenergan syrup 6.25 mg p.o. q.4h. p.r.n.",at bedtime,"Check the patient's blood glucose levels every 4 hours.
+Monitor for signs of hypoglycemia or hyperglycemia.
+Watch for any new or worsening symptoms of pneumonia.
+Call the patient's oncologist, Dr. Z, if she hasn't been reached yet.
+Schedule a follow-up appointment with Dr. X in 5-7 days.
+Call Dr. A if insulin pump adjustments are needed.
+Follow up with Dr. B regarding J-tube issues.
+Call Dr. Y if colon cancer symptoms change.
+Schedule a follow-up appointment with Dr. Z, her oncologist.
+Schedule a follow-up appointment with Dr. A, her endocrinologist.
+Call Dr. B if J-tube issues persist.
+Schedule a follow-up appointment with Dr. Y, her colon cancer specialist.
+Medication: insulin | dose: 150 mg, 100 mg, 200 mg | how often: in the morning.
+Medication: insulin | dose: 3 units, 0.8 units, 0.2 units | how often: every 12 hours (twice a day).
+Medication: insulin | dose: 750 mg, 12.5 mg, 40 mg, 100 mg, 150 mg, 10 mg, 0.3 mg, 6.25 mg, 0.175 mg, 325 mg, 400 mg, 50 mcg, 500 mg, 200 units, 800mg, 160 mg | how often: daily (once a day), twice a day, in the morning, at bedtime, every 12 hours (twice a day), 3 days.",
+mtsamples_Q-Fever_Endocarditis,caregiver_checklist,MEDICATION,warfarin,"ne 200 mg by mouth three times a day for Q-fever endocarditis.  He is also taking digoxin, aspirin, warfarin, and furosemide.  Mother reports that he does have problems with 2-3 loose stools per day since Sep",warfarin,"Check doxycycline and hydroxychloroquine levels again.
+Watch for any new symptoms like fever or fatigue.
+Call if there are any signs of infection or worsening heart murmur.
+Schedule a follow-up appointment in 4 weeks.
+Check for any changes in bowel habits, especially if they become more frequent.
+Monitor for signs of kidney problems, such as dark urine or swelling.
+Call if there are any signs of heart problems, such as shortness of breath or chest pain.
+Schedule a comprehensive metabolic panel and CBC test.
+Watch for signs of liver problems, such as yellowing of the skin or eyes.
+Call if there are any signs of gastrointestinal bleeding.
+Call if there are any signs of allergic reactions or rash.
+Monitor digoxin levels as per the plan.
+Watch for aspirin levels as per the plan.
+Watch for warfarin levels as per the plan.
+Watch for furosemide levels as per the plan.
+Watch for doxycycline levels as per the plan (150 mg, twice daily).
+Watch for hydroxychloroquine levels as per the plan (200 mg, three times a day).
+Watch for doxycycline levels as per the plan (6.5 mcg).",
+mtsamples_Acute_Inferior_Myocardial_Infarction,caregiver_checklist,MEDICATION,Aspirin,"a banker.,FAMILY HISTORY: , Positive for coronary artery disease (father & brother).,MEDICATIONS: , Aspirin 81 milligrams QDay.  Humulin N. insulin 50 units in a.m.  HCTZ 50 mg QDay.  Nitroglycerin 1/150 sub",Aspirin,"Give the patient 3 nitroglycerin tablets sublingually and monitor for any relief.
+Check the patient’s blood pressure and heart rate regularly.
+Watch for signs of worsening pain, shortness of breath, or new symptoms like fever or chills.
+Call 911 if the patient’s pain increases to a 9 or higher, or if they experience shortness of breath, chest tightness, or dizziness.
+Schedule a follow-up appointment with the cardiologist in 2 weeks.
+Call the healthcare provider if the patient’s symptoms persist or worsen.
+Watch for signs of dehydration, such as dry mouth, decreased urination, or dizziness upon standing.
+Call the healthcare provider if the patient experiences any bleeding episodes.
+Schedule a blood glucose test to monitor for diabetes complications.
+Call the healthcare provider if the patient has any new or worsening symptoms.
+Take the patient’s aspirin (81 mg) as needed (PRN).
+Administer the patient’s insulin (50 units) in the morning (PRN).
+Call the healthcare provider if the patient has any allergic reactions, including an allergic reaction to penicillin.
+Confirm with the care team: 50 mg (dosage)",
+mtsamples_Q-Fever_Endocarditis,caregiver_checklist,MEDICATION,digoxin,"s hydroxychloroquine 200 mg by mouth three times a day for Q-fever endocarditis.  He is also taking digoxin, aspirin, warfarin, and furosemide.  Mother reports that he does have problems with 2-3 loose stool",digoxin,"Check doxycycline and hydroxychloroquine levels again.
+Watch for any new symptoms like fever or fatigue.
+Call if there are any signs of infection or worsening heart murmur.
+Schedule a follow-up appointment in 4 weeks.
+Check for any changes in bowel habits, especially if they become more frequent.
+Monitor for signs of kidney problems, such as dark urine or swelling.
+Call if there are any signs of heart problems, such as shortness of breath or chest pain.
+Schedule a comprehensive metabolic panel and CBC test.
+Watch for signs of liver problems, such as yellowing of the skin or eyes.
+Call if there are any signs of gastrointestinal bleeding.
+Call if there are any signs of allergic reactions or rash.
+Monitor digoxin levels as per the plan.
+Watch for aspirin levels as per the plan.
+Watch for warfarin levels as per the plan.
+Watch for furosemide levels as per the plan.
+Watch for doxycycline levels as per the plan (150 mg, twice daily).
+Watch for hydroxychloroquine levels as per the plan (200 mg, three times a day).
+Watch for doxycycline levels as per the plan (6.5 mcg).",
+mtsamples_First_Followup_-_Shunt_Surgery,caregiver_checklist,MEDICATION,lisinopril,"toprolol 25 mg p.o. q.d., Flomax 0.4 mg p.o. q.d., Zocor 20 mg p.o. q.d., Detrol LA 4 mg p.o. q.d., lisinopril 10 mg p.o. q.d., Imodium daily, Omega-3, fish oil, and Lasix.,MAJOR FINDINGS:,  Mr. A is a pleasant",lisinopril,"Check Mr. A’s blood pressure and heart rate daily.
+Watch for any new or worsening headaches or pain.
+Call if Mr. A experiences any new or worsening symptoms.
+Schedule a follow-up CT scan in three months.
+Call if Mr. A’s gait score drops below 15/28.
+Watch for any new or worsening urinary incontinence or urgency.
+Call if Mr. A’s cognitive scores drop below 24/30.
+Schedule a refill for his metoprolol 25 mg daily.
+Schedule a refill for his Flomax 0.4 mg daily.
+Schedule a refill for his Detrol LA 4 mg daily.
+Schedule a refill for his lisinopril 10 mg daily.
+Schedule a refill for his Zocor 20 mg daily.
+Call if Mr. A’s pain increases to 3/10 or higher.
+Schedule a refill for his Plavix 75 mg daily.",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,patient_summary,DOSAGE,200 units,"patch transdermal q.72h.,14.  Calcium and vitamin D combination, calcium carbonate 500 mg/vitamin D 200 units one tab p.o. t.i.d.,15.  Bactrim DS 800mg/160 mg tablet one tablet q.12h. x3 days.,16.  Levaquin 75",200 units,"Hello there! I'm here to tell you about what's going on with you and the medicines you need to take. You're feeling a bit weak and tired, and you've been having some seizures. You also had low blood sugar and anemia. The doctors treated you for all these problems.
+
+Here's what's happening now:
+- You have a problem in your heart that makes it hard to pump blood. You're taking a medicine called Lasix to help with this. You also have high blood pressure, so you're taking another medicine called Coreg.
+- You have a cancer in your colon that was removed. You're taking a medicine called Lipitor to help with your cholesterol.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal to help with this. The doctors want you to increase the dose to 200 mg twice a day, but you'll need to talk to your doctor about this first.
+- You have diabetes and need to take insulin. You're taking 150 mg in the morning and 100 mg at night. You'll need to use an insulin pump to give you the right amount of insulin at the right times. The insulin pump will be set to different rates at different times of the day:
+  - From midnight to 6 a.m., it will give you 3 units of insulin per hour.
+  - From 6 a.m. to 8 a.m., it will give you 0.8 units per hour.
+  - From 8 a.m. to 6 p.m., it will give you 0.2 units per hour.
+- You have anemia, which means your blood isn't as healthy as it should be. You're taking iron drops to help with this.
+- You have a problem with your stomach that makes it hard to digest food. You're taking Nexium to help with this.
+- You have a problem with your colon that was removed. You're taking antibiotics to help with this. You'll be taking Levaquin for 3 days and Bactrim DS for 3 days. The Bactrim is used to fight a type of bacteria called MRSA, which was found at your J-tube site.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal. Your doctor will help you increase the dose to 200 mg twice a day, but you'll need to talk to them about this first.
+
+Important details from your care team's note: 750 mg (dosage); 12.5 mg (dosage); daily (frequency); 40 mg (dosage); 10 mg (dosage); 0.3 mg (dosage); 6.25 mg (dosage); 0.175 mg (dosage); 325 mg (dosage); 400 mg (dosage); 50 mcg (dosage); 500 mg (dosage); 200 units (dosage); 800mg (dosage); 160 mg (dosage).",
+mtsamples_Multiple_Medical_Problems,patient_summary,DOSAGE,25 mg,"ay alternating with 125 mcg p.o. every other day, aspirin 81 mg daily, Theragran-M daily, Toprol XL 25 mg daily, vitamin B6 100 mg daily, Prevacid 30 mg daily, Oyster Shell calcium with D 500 mg t.i.d., Ar",25 mg,"Hello there, you're in a nursing home right now. I've been checking on you and talking to the nurses. They say you've been a bit confused sometimes and have had accidents in the sink, but you don't do that badly. You're having trouble walking and you fell a few months ago. You've been eating okay, but you've been losing a little bit of weight. You told me you'd like to try some Ensure, which is a special drink to help you eat better.
+
+You're taking a lot of medicines, and I'll explain them to you. You have aspirin, which is a small pill you take every day. You also have digitek, which you take every other day. You have a special medicine called Toprol XL, which you take every day. You have vitamin B6, which you take every day. You also have Prevacid, which you take every day. You have Oyster Shell calcium with D, which you take three times a day. You have Aricept, which you take every day. You have Tylenol, which you take every four hours when you need it. You have furosemide, which you take every day. You have sublingual Nitro, which you take when you feel a bit short of breath. And you have alprazolam, which you take every day.
+
+You're also taking some vitamins and minerals. You have B12, which is a big shot you get once a month. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You have vitamin B6, which you take every day. You
+
+Important details from your care team's note: 1000 mg (dosage); 125 mcg (dosage); 81 mg (dosage); 25 mg (dosage); 100 mg (dosage); 30 mg (dosage); 500 mg (dosage); 5 mg (dosage); 650 mg (dosage); 20 mg (dosage); 0.25 mg (dosage); digoxin (medication); 10 mg (dosage).",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,patient_summary,DOSAGE,50 mcg," mg p.o. at breakfast.,11.  Neurontin 400 mg p.o. t.i.d.,12.  Lasix 40 mg p.o. b.i.d.,13.  Fentanyl 50 mcg patch transdermal q.72h.,14.  Calcium and vitamin D combination, calcium carbonate 500 mg/vitamin D",50 mcg,"Hello there! I'm here to tell you about what's going on with you and the medicines you need to take. You're feeling a bit weak and tired, and you've been having some seizures. You also had low blood sugar and anemia. The doctors treated you for all these problems.
+
+Here's what's happening now:
+- You have a problem in your heart that makes it hard to pump blood. You're taking a medicine called Lasix to help with this. You also have high blood pressure, so you're taking another medicine called Coreg.
+- You have a cancer in your colon that was removed. You're taking a medicine called Lipitor to help with your cholesterol.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal to help with this. The doctors want you to increase the dose to 200 mg twice a day, but you'll need to talk to your doctor about this first.
+- You have diabetes and need to take insulin. You're taking 150 mg in the morning and 100 mg at night. You'll need to use an insulin pump to give you the right amount of insulin at the right times. The insulin pump will be set to different rates at different times of the day:
+  - From midnight to 6 a.m., it will give you 3 units of insulin per hour.
+  - From 6 a.m. to 8 a.m., it will give you 0.8 units per hour.
+  - From 8 a.m. to 6 p.m., it will give you 0.2 units per hour.
+- You have anemia, which means your blood isn't as healthy as it should be. You're taking iron drops to help with this.
+- You have a problem with your stomach that makes it hard to digest food. You're taking Nexium to help with this.
+- You have a problem with your colon that was removed. You're taking antibiotics to help with this. You'll be taking Levaquin for 3 days and Bactrim DS for 3 days. The Bactrim is used to fight a type of bacteria called MRSA, which was found at your J-tube site.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal. Your doctor will help you increase the dose to 200 mg twice a day, but you'll need to talk to them about this first.
+
+Important details from your care team's note: 750 mg (dosage); 12.5 mg (dosage); daily (frequency); 40 mg (dosage); 10 mg (dosage); 0.3 mg (dosage); 6.25 mg (dosage); 0.175 mg (dosage); 325 mg (dosage); 400 mg (dosage); 50 mcg (dosage); 500 mg (dosage); 200 units (dosage); 800mg (dosage); 160 mg (dosage).",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary,patient_summary,DOSAGE,0.3 mg,"re as follows:,1.  Coreg 12.5 mg p.o. b.i.d.,2.  Lipitor 10 mg p.o. at bedtime.,3.  Nitro-Dur patch 0.3 mg per hour one patch daily.,4.  Phenergan syrup 6.25 mg p.o. q.4h. p.r.n.,5.  Synthroid 0.175 mg p.o.",0.3 mg,"Hello there! I'm here to tell you about what's going on with you and the medicines you need to take. You're feeling a bit weak and tired, and you've been having some seizures. You also had low blood sugar and anemia. The doctors treated you for all these problems.
+
+Here's what's happening now:
+- You have a problem in your heart that makes it hard to pump blood. You're taking a medicine called Lasix to help with this. You also have high blood pressure, so you're taking another medicine called Coreg.
+- You have a cancer in your colon that was removed. You're taking a medicine called Lipitor to help with your cholesterol.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal to help with this. The doctors want you to increase the dose to 200 mg twice a day, but you'll need to talk to your doctor about this first.
+- You have diabetes and need to take insulin. You're taking 150 mg in the morning and 100 mg at night. You'll need to use an insulin pump to give you the right amount of insulin at the right times. The insulin pump will be set to different rates at different times of the day:
+  - From midnight to 6 a.m., it will give you 3 units of insulin per hour.
+  - From 6 a.m. to 8 a.m., it will give you 0.8 units per hour.
+  - From 8 a.m. to 6 p.m., it will give you 0.2 units per hour.
+- You have anemia, which means your blood isn't as healthy as it should be. You're taking iron drops to help with this.
+- You have a problem with your stomach that makes it hard to digest food. You're taking Nexium to help with this.
+- You have a problem with your colon that was removed. You're taking antibiotics to help with this. You'll be taking Levaquin for 3 days and Bactrim DS for 3 days. The Bactrim is used to fight a type of bacteria called MRSA, which was found at your J-tube site.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal. Your doctor will help you increase the dose to 200 mg twice a day, but you'll need to talk to them about this first.
+
+Important details from your care team's note: 750 mg (dosage); 12.5 mg (dosage); daily (frequency); 40 mg (dosage); 10 mg (dosage); 0.3 mg (dosage); 6.25 mg (dosage); 0.175 mg (dosage); 325 mg (dosage); 400 mg (dosage); 50 mcg (dosage); 500 mg (dosage); 200 units (dosage); 800mg (dosage); 160 mg (dosage).",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,patient_summary,DOSAGE,12.5 mg,"A was sensitive to Bactrim.  Throughout her hospital course, the patient continued to receive Coreg 12.5 mg daily and Lasix 40 mg twice a day for her congestive heart failure, which remains stable.  She also",12.5 mg,"Hello there! I'm here to tell you about what's going on with you and the medicines you need to take. You're feeling a bit weak and tired, and you've been having some seizures. You also had low blood sugar and anemia. The doctors treated you for all these problems.
+
+Here's what's happening now:
+- You have a problem in your heart that makes it hard to pump blood. You're taking a medicine called Lasix to help with this. You also have high blood pressure, so you're taking another medicine called Coreg.
+- You have a cancer in your colon that was removed. You're taking a medicine called Lipitor to help with your cholesterol.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal to help with this. The doctors want you to increase the dose to 200 mg twice a day, but you'll need to talk to your doctor about this first.
+- You have diabetes and need to take insulin. You're taking 150 mg in the morning and 100 mg at night. You'll need to use an insulin pump to give you the right amount of insulin at the right times. The insulin pump will be set to different rates at different times of the day:
+  - From midnight to 6 a.m., it will give you 3 units of insulin per hour.
+  - From 6 a.m. to 8 a.m., it will give you 0.8 units per hour.
+  - From 8 a.m. to 6 p.m., it will give you 0.2 units per hour.
+- You have anemia, which means your blood isn't as healthy as it should be. You're taking iron drops to help with this.
+- You have a problem with your stomach that makes it hard to digest food. You're taking Nexium to help with this.
+- You have a problem with your colon that was removed. You're taking antibiotics to help with this. You'll be taking Levaquin for 3 days and Bactrim DS for 3 days. The Bactrim is used to fight a type of bacteria called MRSA, which was found at your J-tube site.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal. Your doctor will help you increase the dose to 200 mg twice a day, but you'll need to talk to them about this first.
+
+Important details from your care team's note: 750 mg (dosage); 12.5 mg (dosage); daily (frequency); 40 mg (dosage); 10 mg (dosage); 0.3 mg (dosage); 6.25 mg (dosage); 0.175 mg (dosage); 325 mg (dosage); 400 mg (dosage); 50 mcg (dosage); 500 mg (dosage); 200 units (dosage); 800mg (dosage); 160 mg (dosage).",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,patient_summary,DOSAGE,40 mg,"im.  Throughout her hospital course, the patient continued to receive Coreg 12.5 mg daily and Lasix 40 mg twice a day for her congestive heart failure, which remains stable.  She also received Lipitor for",40 mg,"Hello there! I'm here to tell you about what's going on with you and the medicines you need to take. You're feeling a bit weak and tired, and you've been having some seizures. You also had low blood sugar and anemia. The doctors treated you for all these problems.
+
+Here's what's happening now:
+- You have a problem in your heart that makes it hard to pump blood. You're taking a medicine called Lasix to help with this. You also have high blood pressure, so you're taking another medicine called Coreg.
+- You have a cancer in your colon that was removed. You're taking a medicine called Lipitor to help with your cholesterol.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal to help with this. The doctors want you to increase the dose to 200 mg twice a day, but you'll need to talk to your doctor about this first.
+- You have diabetes and need to take insulin. You're taking 150 mg in the morning and 100 mg at night. You'll need to use an insulin pump to give you the right amount of insulin at the right times. The insulin pump will be set to different rates at different times of the day:
+  - From midnight to 6 a.m., it will give you 3 units of insulin per hour.
+  - From 6 a.m. to 8 a.m., it will give you 0.8 units per hour.
+  - From 8 a.m. to 6 p.m., it will give you 0.2 units per hour.
+- You have anemia, which means your blood isn't as healthy as it should be. You're taking iron drops to help with this.
+- You have a problem with your stomach that makes it hard to digest food. You're taking Nexium to help with this.
+- You have a problem with your colon that was removed. You're taking antibiotics to help with this. You'll be taking Levaquin for 3 days and Bactrim DS for 3 days. The Bactrim is used to fight a type of bacteria called MRSA, which was found at your J-tube site.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal. Your doctor will help you increase the dose to 200 mg twice a day, but you'll need to talk to them about this first.
+
+Important details from your care team's note: 750 mg (dosage); 12.5 mg (dosage); daily (frequency); 40 mg (dosage); 10 mg (dosage); 0.3 mg (dosage); 6.25 mg (dosage); 0.175 mg (dosage); 325 mg (dosage); 400 mg (dosage); 50 mcg (dosage); 500 mg (dosage); 200 units (dosage); 800mg (dosage); 160 mg (dosage).",
+mtsamples_Accidental_Celesta_Ingestion_-_ER_Visit,patient_summary,DOSAGE,40 mg,out 45 minutes prior admission to the emergency room ingested about two to three tablets of Celesta 40 mg per tablets.  Mom called to the poison control center and the recommendation was to take the patien,40 mg,"Hello there, little one. I'm here to tell you what happened to you and what you need to do now.
+
+You accidentally ate some medicine called Celesta. Your mom called the special phone number for poison helpers, and they said you should come to the hospital. You were okay during the ride, and your mom left you and your little brother in the room. When she came back, she saw you holding the Celesta and some of it on the floor. You told her the pills didn't taste good, so we think you ate about two and a half of them.
+
+The Celesta is a medicine that can make you feel sick if you eat too much. Each tablet has 40 mg of the medicine. You ate about two and a half of them, which is more than the usual amount. Your mom and the doctors want to make sure you are okay. You will be at home now with your mom, and you need to come back to see your doctor in the morning.
+
+You don't need to take any special medicine right now. Your mom will give you some water if you're thirsty. You might feel a little sleepy, but that's normal after coming to the hospital. If you feel sick or have any other symptoms like rashes, vomiting, or diarrhea, you should tell your mom right away.
+
+Your mom will take you to the doctor in the morning. They will check you and make sure you are okay. If you have any questions or feel worried, you can always ask your mom or the doctors. They are here to help you.",
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,patient_summary,DOSAGE,0.175 mg," patch 0.3 mg per hour one patch daily.,4.  Phenergan syrup 6.25 mg p.o. q.4h. p.r.n.,5.  Synthroid 0.175 mg p.o. daily.,6.  Zyrtec 10 mg p.o. daily.,7.  Lamictal 100 mg p.o. daily.,8.  Lamictal 150 mg p.o. a",0.175 mg,"Hello there! I'm here to tell you about what's going on with you and the medicines you need to take. You're feeling a bit weak and tired, and you've been having some seizures. You also had low blood sugar and anemia. The doctors treated you for all these problems.
+
+Here's what's happening now:
+- You have a problem in your heart that makes it hard to pump blood. You're taking a medicine called Lasix to help with this. You also have high blood pressure, so you're taking another medicine called Coreg.
+- You have a cancer in your colon that was removed. You're taking a medicine called Lipitor to help with your cholesterol.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal to help with this. The doctors want you to increase the dose to 200 mg twice a day, but you'll need to talk to your doctor about this first.
+- You have diabetes and need to take insulin. You're taking 150 mg in the morning and 100 mg at night. You'll need to use an insulin pump to give you the right amount of insulin at the right times. The insulin pump will be set to different rates at different times of the day:
+  - From midnight to 6 a.m., it will give you 3 units of insulin per hour.
+  - From 6 a.m. to 8 a.m., it will give you 0.8 units per hour.
+  - From 8 a.m. to 6 p.m., it will give you 0.2 units per hour.
+- You have anemia, which means your blood isn't as healthy as it should be. You're taking iron drops to help with this.
+- You have a problem with your stomach that makes it hard to digest food. You're taking Nexium to help with this.
+- You have a problem with your colon that was removed. You're taking antibiotics to help with this. You'll be taking Levaquin for 3 days and Bactrim DS for 3 days. The Bactrim is used to fight a type of bacteria called MRSA, which was found at your J-tube site.
+- You have a problem with your heart that causes you to have seizures. You're taking Lamictal. Your doctor will help you increase the dose to 200 mg twice a day, but you'll need to talk to them about this first.
+
+Important details from your care team's note: 750 mg (dosage); 12.5 mg (dosage); daily (frequency); 40 mg (dosage); 10 mg (dosage); 0.3 mg (dosage); 6.25 mg (dosage); 0.175 mg (dosage); 325 mg (dosage); 400 mg (dosage); 50 mcg (dosage); 500 mg (dosage); 200 units (dosage); 800mg (dosage); 160 mg (dosage).",
+mtsamples_Q-Fever_Endocarditis,patient_summary,DOSAGE,6.5 mcg,s undetectable.  Of note is that doxycycline level obtained while in the hospital on 10/21/2007 was 6.5 mcg/mL.  Q-fever serology obtained on 10/05/2007 was positive for phase I antibodies in 1/2/6 and phase,6.5 mcg,"Hello there! I'm here to talk about your health. You're currently taking some medicines to help you feel better. Here's what you need to know:
+
+You are taking two main medicines:
+- Doxycycline: This is a medicine you take twice a day. You're taking 150 mg each time. Your mom told me you're doing a good job with this.
+- Hydroxychloroquine: This is a medicine you take three times a day. You're taking 200 mg each time. Your mom also said you're doing well with this.
+
+You are also taking these medicines:
+- Digoxin: You take this once a day. You're taking 0.25 mg each time.
+- Aspirin: You take this once a day.
+- Warfarin: You take this once a day.
+- Furosemide: You take this once a day.
+
+Your mom told me you have some loose stools sometimes, but you're managing it okay. You had some surgery to fix a valve problem, and you're doing well at home. Your doctor will check your levels of these medicines again in a few weeks. They will also check your blood and do some tests to make sure everything is okay. Your most recent doxycycline level was 6.5 mcg/mL, which is higher than what they usually want to see.
+
+If you have any problems or if you feel sick, you should tell your mom or the doctor right away. Remember to take your medicines as directed. Your mom will help you with this. Keep us updated, and we'll see you in four weeks.",
+mtsamples_Gen_Med_Progress_Note_-_4,patient_summary,DOSAGE,4 mg, other meds remain as per the dictation of 07/30/2004 with the exception of her Klonopin dose being 4 mg in a.m. and 6 mg at h.s. instead of what the psychiatrist had recommended which should be 6 mg and,4 mg,"Hello there, it looks like you're feeling a bit unwell. You've been having headaches and dizzy spells, and you've noticed some new rashes on your legs. You also have some bruises that you haven't had before. Your blood sugar was a bit high after lunch, at 155. You're taking some medicines for your rash and bug bites, and you're using a special medicine for your lips. You're also taking Klonopin, a medicine for your anxiety, but you need to take more of it. Your doctor wants you to take 6 mg in the morning and 8 mg in the evening, instead of what the psychiatrist recommended. You also have some chest pains, but not at the moment. You're feeling a bit nauseous, but you haven't been throwing up or having diarrhea. Your doctor wants you to check your blood again in a week. They think your dizziness might be from your anxiety, and they want you to take more Klonopin. You're also taking tramadol, which you need to take 6 mg and 8 mg. If you feel dizzy or have any chest pains, you should call your doctor right away.
+
+Important details from your care team's note: 4 mg (dosage).",
+mtsamples_Well-Child_Check_-_5,patient_summary,DURATION,2-week,"mperature:  97.2 degrees.,General:  Well-developed, well-nourished, cooperative, alert, interactive 2-week-old white female in no acute distress.,HEENT:  Atraumatic, normocephalic.  Anterior fontanel is sof",2-week,"Hello there! I'm here to help you understand what's going on and what you need to do. You had a well-child visit today with your mom. She noticed you've been spitting up a bit more than usual. You're still feeding well every two to three hours, and you've had some curdled spit-up a few times. It hasn't been projectile or non-bilious, and you're passing your bowel movements and urinating normally. You're growing well and meeting all your developmental milestones.
+
+Your mom has a healthy pregnancy and gave you a hepatitis B shot before you were born. She has no known medical problems, but there is a history of heart disease, diabetes, and thyroid problems in her family. Your dad has asthma, and your grandmother is here at the visit. There are also histories of breast, colon, and ovarian cancer in your family.
+
+Your mom has tried Mylicon drops on occasion, but she wants to make sure this is normal. You don't have any rash or fever right now. Your mom asked about what to do if you have any problems. She should call the office or the on-call doctor if you have a fever, feeding problems, or breathing problems. Otherwise, she should plan to come back for another check-up in two weeks. You're doing well now, and you'll be growing and developing normally. Your mom got you a book about growing up and a handout with important information. Remember to call if you have any concerns. You should come back for another check-up in one month. You're doing great!",
+mtsamples_Hyperthyroidism_Following_Pregnancy,patient_summary,FREQUENCY,PRN,"s alcohol and drug use.,MEDICATIONS:,  Citalopram 10mg once daily for depression; low dose tramadol PRN pain.,PHYSICAL EXAMINATION: , Temperature 98.4; Pulse 123; Respiratory Rate 16; Blood Pressure 143/",PRN,"Hello there! I'm here to help you understand what's happening with your health. You've been having chest pain that feels like it's coming from your left arm. You also had some heartbeats that were faster than normal. Your doctor found out that you have a condition called hyperthyroidism, which means your thyroid gland is making too much thyroid hormone. This can cause a lot of symptoms like feeling nervous, shaky, and having trouble sleeping.
+
+Your doctor gave you some medicine called Citalopram to help with the depression you've been feeling. You take it once a day, every day. They also gave you another medicine called tramadol to help with any pain you might be feeling. This medicine can be used when you need it, so you don't take it every day.
+
+For your heart, your doctor gave you a medicine called Propranolol. They started you on 40 milligrams a day, and after a few days, they increased it to 60 milligrams twice a day. This medicine helps to slow down your heart rate and make your heart feel better.
+
+Your thyroid problem is being treated with a special medicine called radioactive iodine. This medicine is given in a small amount, and you need to avoid being close to your baby for a week after the treatment. You also need to stop breastfeeding for a while.
+
+Your doctor also told you to take a medicine called citalopram, which is the same medicine you were taking before, but now you take it once a day. The dose is 10 milligrams.
+
+You need to keep taking all these medicines as your doctor tells you. If you have any more chest pain or if you feel dizzy or confused, you should call your doctor right away. They will check your heart and thyroid to make sure everything is okay.
+
+Remember, it's important to follow all the instructions your doctor gives you. If you have any questions, don't hesitate to ask. You're doing great!
+
+Important details from your care team's note: PRN (frequency).",
+mtsamples_Consult_-_Knee_Pain,patient_summary,FREQUENCY,daily,"s have some abdominal discomfort with the anti-inflammatories, was started on Nexium 20 mg one p.o. daily.  She will follow up in our office in four weeks.  If she has not gotten any relief with formal phy",daily,"Hello there! I'm here to help you understand what's happening with your knee. You've been having pain in your left knee for about five days. It's a bit better, but you still feel a pinching pain when you put weight on it. You can't bend your knee as much as you'd like, and you have trouble with your knee being in a bent position. You're using Tylenol No. 3 and ibuprofen to help with the pain, but it's not helping much.
+
+You have some swelling in your knee, and it hurts when you touch the inside part of your knee. You also have some swelling on the inside of your knee. You're using ice and heat to help with the pain, but it's still bothering you.
+
+You're also trying to lose weight, and you're following a diet called Medifast. You're using a special ACE bandage to help your knee. Your doctor has given you refills on Tylenol No. 3 and ibuprofen. You're also taking a medicine called Nexium to help with any stomach discomfort you might have from the ibuprofen.
+
+You're going to try to lose weight, and your doctor thinks that will help your knee. You're also going to start physical therapy and do some exercises at home. Your doctor will check on you in four weeks. If you still have pain after that, you might need another knee check-up.
+
+Remember, it's important to follow your doctor's advice and take your medicines as they tell you. If you have any more pain or if you have any other problems, you should let your doctor know right away. You're also taking a medication called PENICILLIN, which is 20 mg a day, taken once a day.",
+mtsamples_Gen_Med_Progress_Note_-_4,patient_summary,MEDICATION,tramadol,"t had recommended which should be 6 mg and 8 mg.,ALLERGIES: , Sulfa, erythromycin, Macrodantin, and tramadol.,OBJECTIVE:,General:  She is a well-developed, well-nourished, obese female in no acute distress.,V",tramadol,"Hello there, it looks like you're feeling a bit unwell. You've been having headaches and dizzy spells, and you've noticed some new rashes on your legs. You also have some bruises that you haven't had before. Your blood sugar was a bit high after lunch, at 155. You're taking some medicines for your rash and bug bites, and you're using a special medicine for your lips. You're also taking Klonopin, a medicine for your anxiety, but you need to take more of it. Your doctor wants you to take 6 mg in the morning and 8 mg in the evening, instead of what the psychiatrist recommended. You also have some chest pains, but not at the moment. You're feeling a bit nauseous, but you haven't been throwing up or having diarrhea. Your doctor wants you to check your blood again in a week. They think your dizziness might be from your anxiety, and they want you to take more Klonopin. You're also taking tramadol, which you need to take 6 mg and 8 mg. If you feel dizzy or have any chest pains, you should call your doctor right away.
+
+Important details from your care team's note: 4 mg (dosage).",
+mtsamples_Consult_-_Knee_Pain,patient_summary,MEDICATION,PENICILLIN,"eat.  She is using Tylenol No. 3 p.r.n. and ibuprofen OTC p.r.n. with minimal relief.,ALLERGIES,1.  PENICILLIN.,2.  KEFLEX.,3.  BACTRIM.,4.  SULFA.,5.  ACE BANDAGES.,MEDICATIONS,1.  Toprol.,2.  Xanax.,3.  Advai",PENICILLIN,"Hello there! I'm here to help you understand what's happening with your knee. You've been having pain in your left knee for about five days. It's a bit better, but you still feel a pinching pain when you put weight on it. You can't bend your knee as much as you'd like, and you have trouble with your knee being in a bent position. You're using Tylenol No. 3 and ibuprofen to help with the pain, but it's not helping much.
+
+You have some swelling in your knee, and it hurts when you touch the inside part of your knee. You also have some swelling on the inside of your knee. You're using ice and heat to help with the pain, but it's still bothering you.
+
+You're also trying to lose weight, and you're following a diet called Medifast. You're using a special ACE bandage to help your knee. Your doctor has given you refills on Tylenol No. 3 and ibuprofen. You're also taking a medicine called Nexium to help with any stomach discomfort you might have from the ibuprofen.
+
+You're going to try to lose weight, and your doctor thinks that will help your knee. You're also going to start physical therapy and do some exercises at home. Your doctor will check on you in four weeks. If you still have pain after that, you might need another knee check-up.
+
+Remember, it's important to follow your doctor's advice and take your medicines as they tell you. If you have any more pain or if you have any other problems, you should let your doctor know right away. You're also taking a medication called PENICILLIN, which is 20 mg a day, taken once a day.",
