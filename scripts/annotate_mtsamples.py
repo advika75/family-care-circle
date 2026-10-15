@@ -34,9 +34,10 @@ MANIFEST_NAME = "annotation_manifest.json"
 class AnnotationStore:
     """Read and write the existing manifest and span-based annotation files."""
 
-    def __init__(self, gold_dir: str | Path, notes_dir: str | Path) -> None:
+    def __init__(self, gold_dir: str | Path, notes_dir: str | Path, blind: bool = False) -> None:
         self.gold_dir = resolve_path(gold_dir)
         self.notes_dir = resolve_path(notes_dir)
+        self.blind = blind
         self.manifest_path = self.gold_dir / MANIFEST_NAME
         self._lock = threading.Lock()
         self.extractor = EntityExtractor({"use_hf_model": False})
@@ -80,7 +81,8 @@ class AnnotationStore:
                 "annotator": annotation.get("annotator", ""),
                 "entity_count": len(annotation.get("entities", [])),
             })
-        return {"seed": manifest.get("seed"), "count": len(notes), "notes": notes}
+        return {"seed": manifest.get("seed"), "count": len(notes), "notes": notes,
+                "blind_mode": self.blind}
 
     def note(self, note_id: str) -> dict[str, Any]:
         entry = self._entry(note_id)
@@ -92,7 +94,7 @@ class AnnotationStore:
             "source_file": entry["source_file"],
             "text": text,
             "annotation": annotation,
-            "suggestions": self.extractor.extract(text),
+            "suggestions": [] if self.blind else self.extractor.extract(text),
         }
 
     @staticmethod
@@ -107,7 +109,15 @@ class AnnotationStore:
             if (not isinstance(start, int) or not isinstance(end, int) or not isinstance(value, str)
                     or start < 0 or end <= start or end > len(text) or text[start:end] != value):
                 raise ValueError("Entity offsets/text do not match the selected note")
-            checked.append({"text": value, "label": entity["label"], "start": start, "end": end})
+            item = {"text": value, "label": entity["label"], "start": start, "end": end}
+            if "annotation_source" in entity:
+                source = entity["annotation_source"]
+                if source not in {"accepted_suggestion", "edited_suggestion", "manual"}:
+                    raise ValueError("annotation_source must be accepted_suggestion, edited_suggestion, or manual")
+                item["annotation_source"] = source
+            if "suggestion_reference" in entity:
+                item["suggestion_reference"] = entity["suggestion_reference"]
+            checked.append(item)
         checked.sort(key=lambda item: (item["start"], item["end"], item["label"]))
         for previous, current in zip(checked, checked[1:]):
             if current["start"] < previous["end"]:
@@ -122,6 +132,23 @@ class AnnotationStore:
         note_path, annotation_path = self._paths(entry)
         text = note_path.read_text(encoding="utf-8")
         entities = self._validate_entities(text, payload.get("entities"))
+        suggestions = self.extractor.extract(text)
+        suggestion_keys = {(e["text"], e["label"], e["start"], e["end"]) for e in suggestions}
+        for entity in entities:
+            source = entity.get("annotation_source")
+            exact = (entity["text"], entity["label"], entity["start"], entity["end"])
+            if source == "accepted_suggestion" and (self.blind or exact not in suggestion_keys):
+                raise ValueError("accepted_suggestion must exactly match a visible rule-based suggestion")
+            if source == "edited_suggestion":
+                reference = entity.get("suggestion_reference")
+                if self.blind or not isinstance(reference, dict):
+                    raise ValueError("edited_suggestion requires a visible suggestion reference")
+                ref = (reference.get("text"), reference.get("label"),
+                       reference.get("start"), reference.get("end"))
+                if ref not in suggestion_keys or exact == ref:
+                    raise ValueError("edited_suggestion must differ from a visible suggestion")
+            if source != "edited_suggestion":
+                entity.pop("suggestion_reference", None)
         annotator = payload.get("annotator", "")
         if not isinstance(annotator, str):
             raise ValueError("annotator must be a string")
@@ -159,8 +186,8 @@ label { display:block; font-size:13px; color:var(--muted); margin:7px 0 3px; } i
 </style></head><body>
 <header><h1>Family Care Circle</h1><p>MTSamples Gold Annotation · <span id="progress">Loading…</span></p></header>
 <main><aside><h2>Notes</h2><div class="muted">Select a note to annotate.</div><div id="note-list"></div></aside>
-<section><div class="toolbar"><button id="prev">← Previous</button><button id="next">Next →</button><span class="muted" id="current"></span></div><div class="toolbar"><button data-label="MEDICATION">Medication</button><button data-label="DOSAGE">Dosage</button><button data-label="FREQUENCY">Frequency</button><button data-label="DURATION">Duration</button><button data-label="CONDITION">Condition</button><button data-label="SYMPTOM">Symptom</button><button class="primary" id="add-selection">Add selected span</button></div><p class="muted">Select text, choose a label, then add it to the draft. Suggestions are not gold labels until you explicitly add and save them.</p><div id="text"></div></section>
-<aside><h2>Draft annotations</h2><label for="annotator">Annotator</label><input id="annotator" placeholder="Your name"><div id="draft"></div><button class="primary" id="save">Save annotation</button><div id="message"></div><h3>Rule-based suggestions</h3><div class="muted">Review each suggestion before adding it.</div><div id="suggestions"></div></aside></main>
+<section><div class="toolbar"><button id="prev">← Previous</button><button id="next">Next →</button><span class="muted" id="current"></span></div><div class="toolbar"><button data-label="MEDICATION">Medication</button><button data-label="DOSAGE">Dosage</button><button data-label="FREQUENCY">Frequency</button><button data-label="DURATION">Duration</button><button data-label="CONDITION">Condition</button><button data-label="SYMPTOM">Symptom</button><button class="primary" id="add-selection">Add selected span</button></div><p class="muted">Select text, choose a label, then add it to the draft. Gold entities are reviewed spans.</p><div id="text"></div></section>
+<aside id="suggestion-panel"><h2>Draft annotations</h2><label for="annotator">Annotator</label><input id="annotator" placeholder="Your name"><div id="draft"></div><button class="primary" id="save">Save annotation</button><div id="message"></div><div id="suggestion-controls"><h3>Rule-based suggestions</h3><div class="muted">Review each suggestion before adding it.</div><div id="suggestions"></div></div></aside></main>
 <script>
 let state, currentIndex=0, currentNote=null, draft=[], selectedLabel=null;
 const $=id=>document.getElementById(id);
@@ -168,17 +195,18 @@ function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;',
 function api(url, opts){return fetch(url,opts).then(r=>r.ok?r.json():r.json().then(x=>Promise.reject(new Error(x.error||'Request failed'))));}
 function renderList(){ $('note-list').innerHTML=state.notes.map((n,i)=>`<button class="note-row ${i===currentIndex?'current':''}" data-i="${i}">${esc(n.source_file)}<small>${n.status} · ${n.entity_count} entities</small></button>`).join(''); document.querySelectorAll('.note-row').forEach(b=>b.onclick=()=>loadNote(Number(b.dataset.i))); }
 function renderText(){let a=[...draft].sort((x,y)=>x.start-y.start), out='', pos=0; for(const e of a){if(e.start<pos)return; out+=esc(currentNote.text.slice(pos,e.start))+`<span class="entity entity-${e.label}" title="${e.label}">${esc(e.text)}</span>`;pos=e.end;} out+=esc(currentNote.text.slice(pos));$('text').innerHTML=out;}
-function renderDraft(){ $('draft').innerHTML=draft.length?draft.map((e,i)=>`<div class="item"><strong>${e.label}</strong><br>${esc(e.text)} <code>[${e.start}, ${e.end})</code><br><button data-remove="${i}">Remove</button></div>`).join(''):'<p class="muted">No draft entities.</p>'; document.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{draft.splice(Number(b.dataset.remove),1);render();}); }
-function renderSuggestions(){ $('suggestions').innerHTML=currentNote.suggestions.length?currentNote.suggestions.map((e,i)=>`<div class="item suggestion"><strong>${e.label}</strong><br>${esc(e.text)} <code>[${e.start}, ${e.end})</code><br><button data-suggest="${i}">Add suggestion to draft</button></div>`).join(''):'<p class="muted">No rule-based suggestions.</p>'; document.querySelectorAll('[data-suggest]').forEach(b=>b.onclick=()=>{const e=currentNote.suggestions[Number(b.dataset.suggest)]; if(!draft.some(x=>x.start===e.start&&x.end===e.end&&x.label===e.label))draft.push({...e});render();}); }
-function render(){renderList();renderText();renderDraft();renderSuggestions(); $('current').textContent=`${currentIndex+1} / ${state.count} · ${currentNote.source_file}`; $('progress').textContent=`Annotated: ${state.notes.filter(n=>n.status==='annotated').length} / ${state.count} · Current: ${currentIndex+1} / ${state.count}`;}
+function renderDraft(){ $('draft').innerHTML=draft.length?draft.map((e,i)=>`<div class="item"><strong>${e.label}</strong><br>${esc(e.text)} <code>[${e.start}, ${e.end})</code><br><small>${esc(e.annotation_source||'provenance unknown')}</small><br><button data-remove="${i}">Remove</button></div>`).join(''):'<p class="muted">No draft entities.</p>'; document.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{draft.splice(Number(b.dataset.remove),1);render();}); }
+function renderSuggestions(){ $('suggestions').innerHTML=currentNote.suggestions.length?currentNote.suggestions.map((e,i)=>`<div class="item suggestion"><strong>${e.label}</strong><br>${esc(e.text)} <code>[${e.start}, ${e.end})</code><br><button data-suggest="${i}">Accept suggestion</button><button data-edit-suggest="${i}">Edit suggestion span</button></div>`).join(''):'<p class="muted">No rule-based suggestions.</p>'; document.querySelectorAll('[data-suggest]').forEach(b=>b.onclick=()=>{const e=currentNote.suggestions[Number(b.dataset.suggest)]; if(!draft.some(x=>x.start===e.start&&x.end===e.end&&x.label===e.label))draft.push({...e,annotation_source:'accepted_suggestion'});render();}); document.querySelectorAll('[data-edit-suggest]').forEach(b=>b.onclick=()=>{const e=currentNote.suggestions[Number(b.dataset.editSuggest)]; selectOffsets(e.start,e.end); selectedLabel=e.label; window.pendingSuggestion=e;}); }
+function render(){renderList();renderText();renderDraft();renderSuggestions();$('suggestion-panel').classList.toggle('blind-mode',state.blind_mode);$('suggestion-controls').hidden=state.blind_mode; $('current').textContent=`${currentIndex+1} / ${state.count} · ${currentNote.source_file}`; $('progress').textContent=`Annotated: ${state.notes.filter(n=>n.status==='annotated').length} / ${state.count} · Current: ${currentIndex+1} / ${state.count}`;}
 function loadNote(i){currentIndex=i;api('/api/note?id='+encodeURIComponent(state.notes[i].id)).then(n=>{currentNote=n;draft=n.annotation.entities.map(e=>({...e}));$('annotator').value=n.annotation.annotator||'';render();}).catch(showError);}
 function showError(e){$('message').innerHTML=`<p class="error">${esc(e.message||e)}</p>`;}
 function offsets(range,root){let w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),n,start=null,end=null,pos=0,node;while(node=w.nextNode()){if(node===range.startContainer)start=pos+range.startOffset;if(node===range.endContainer)end=pos+range.endOffset;pos+=node.nodeValue.length;}return {start,end};}
-$('add-selection').onclick=()=>{if(!selectedLabel){showError(new Error('Choose an entity label first.'));return;}let s=window.getSelection();if(!s.rangeCount||s.isCollapsed){showError(new Error('Select text in the note first.'));return;}let r=s.getRangeAt(0),o=offsets(r,$('text')),text=currentNote.text.slice(o.start,o.end);if(!text.trim()){showError(new Error('Selected text is empty.'));return;}draft.push({text,label:selectedLabel,start:o.start,end:o.end});selectedLabel=null;render();};
+function selectOffsets(start,end){let w=document.createTreeWalker($('text'),NodeFilter.SHOW_TEXT),node,pos=0,a=null,b=null,ao=0,bo=0;while(node=w.nextNode()){let next=pos+node.nodeValue.length;if(a===null&&start<=next){a=node;ao=start-pos;}if(end<=next){b=node;bo=end-pos;break;}pos=next;}if(a&&b){let r=document.createRange();r.setStart(a,ao);r.setEnd(b,bo);let s=window.getSelection();s.removeAllRanges();s.addRange(r);}}
+$('add-selection').onclick=()=>{if(!selectedLabel){showError(new Error('Choose an entity label first.'));return;}let s=window.getSelection();if(!s.rangeCount||s.isCollapsed){showError(new Error('Select text in the note first.'));return;}let r=s.getRangeAt(0),o=offsets(r,$('text')),text=currentNote.text.slice(o.start,o.end);if(!text.trim()){showError(new Error('Selected text is empty.'));return;}let entity={text,label:selectedLabel,start:o.start,end:o.end,annotation_source:'manual'};if(window.pendingSuggestion){const ref=window.pendingSuggestion;entity.annotation_source=(ref.text===text&&ref.label===selectedLabel&&ref.start===o.start&&ref.end===o.end)?'accepted_suggestion':'edited_suggestion';if(entity.annotation_source==='edited_suggestion')entity.suggestion_reference={text:ref.text,label:ref.label,start:ref.start,end:ref.end};window.pendingSuggestion=null;}draft.push(entity);selectedLabel=null;render();};
 document.querySelectorAll('[data-label]').forEach(b=>b.onclick=()=>{selectedLabel=b.dataset.label;document.querySelectorAll('[data-label]').forEach(x=>x.style.outline='');b.style.outline='2px solid #2558a8';});
 $('save').onclick=()=>api('/api/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:currentNote.id,annotator:$('annotator').value,entities:draft})}).then(()=>api('/api/state')).then(s=>{state=s;render();$('message').innerHTML='<p>Saved locally.</p>';}).catch(showError);
 $('prev').onclick=()=>loadNote(Math.max(0,currentIndex-1));$('next').onclick=()=>loadNote(Math.min(state.count-1,currentIndex+1));
-api('/api/state').then(s=>{state=s;renderList();loadNote(0);}).catch(showError);
+api('/api/state').then(s=>{state=s;document.body.classList.toggle('blind-mode',s.blind_mode);renderList();loadNote(0);}).catch(showError);
 </script></body></html>'''
 
 
@@ -236,9 +264,10 @@ def main() -> int:
     parser.add_argument("--notes-dir", default="data/public/mtsamples/notes")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--blind", action="store_true", help="Hide rule-based suggestions while annotating")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-    store = AnnotationStore(args.gold_dir, args.notes_dir)
+    store = AnnotationStore(args.gold_dir, args.notes_dir, blind=args.blind)
     Handler.store = store
     server = ThreadingHTTPServer((args.host, args.port), Handler)
     LOGGER.info("Open http://%s:%d/", args.host, args.port)

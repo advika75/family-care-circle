@@ -36,6 +36,34 @@ def test_exact_span_label_match(monkeypatch, tmp_path):
     assert set(metrics.label) >= {"MEDICATION", "SYMPTOM", "MICRO"}
 
 
+def test_summary_reports_accepted_suggestion_share_and_unknown_provenance(tmp_path):
+    gold, notes, note_id = setup_data(tmp_path, None, entities=[
+        {"text": "aspirin", "label": "MEDICATION", "start": 0, "end": 7,
+         "annotation_source": "accepted_suggestion"},
+        {"text": "pain", "label": "SYMPTOM", "start": 8, "end": 12},
+    ])
+    summary, _, _ = evaluate_mtsamples(gold, notes)
+    assert summary["accepted_suggestion_count"] == 1
+    assert summary["gold_entities_with_known_provenance"] == 1
+    assert summary["gold_entities_with_unknown_provenance"] == 1
+    assert summary["accepted_suggestion_share"] == 1.0
+
+
+def test_zero_complete_notes_has_unavailable_provenance_share(tmp_path):
+    gold, notes, _ = setup_data(tmp_path, None, status="pending")
+    summary, _, _ = evaluate_mtsamples(gold, notes)
+    assert summary["accepted_suggestion_share"] is None
+
+
+def test_write_results_refuses_existing_results_directory(tmp_path):
+    gold, notes, _ = setup_data(tmp_path, None)
+    summary, metrics, errors = evaluate_mtsamples(gold, notes)
+    out = tmp_path / "results"
+    write_results(summary, metrics, errors, out)
+    with pytest.raises(FileExistsError, match="Refusing to write"):
+        write_results(summary, metrics, errors, out)
+
+
 @pytest.mark.parametrize("pred", [
     {"text": "aspirin", "label": "SYMPTOM", "start": 0, "end": 7},
     {"text": "spirin ", "label": "MEDICATION", "start": 1, "end": 8},

@@ -87,10 +87,19 @@ def evaluate_mtsamples(gold_dir: str | Path, notes_dir: str | Path) -> tuple[dic
         metrics["MICRO"] = {"precision": None, "recall": None, "f1": None, "tp": 0, "fp": 0, "fn": 0}
     gold_count = sum(len(gold) for _, _, gold in docs)
     predicted_count = sum(len(pred) for _, pred, _ in docs)
+    known_provenance = [entity for _, _, gold in docs for entity in gold
+                        if entity.get("annotation_source") in {"accepted_suggestion", "edited_suggestion", "manual"}]
+    accepted_suggestions = sum(entity.get("annotation_source") == "accepted_suggestion"
+                               for entity in known_provenance)
     summary = {
         "dataset": "MTSamples", "matching": "exact (start, end, label)",
         "ner": "rule-based (extract_rule_based)", "evaluated_note_count": len(docs),
         "skipped_note_count": skipped, "gold_entity_count": gold_count,
+        "gold_entities_with_known_provenance": len(known_provenance),
+        "gold_entities_with_unknown_provenance": gold_count - len(known_provenance),
+        "accepted_suggestion_count": accepted_suggestions,
+        "accepted_suggestion_share": (accepted_suggestions / len(known_provenance)
+                                      if known_provenance else None),
         "predicted_entity_count": predicted_count, "metrics": metrics,
         "evaluated_note_ids": [note_id for note_id, _, _ in docs],
         "evaluation_timestamp_utc": datetime.now(timezone.utc).isoformat(),
@@ -103,8 +112,10 @@ def evaluate_mtsamples(gold_dir: str | Path, notes_dir: str | Path) -> tuple[dic
 
 def write_results(summary: dict[str, Any], metrics: pd.DataFrame, errors: pd.DataFrame,
                   results_dir: str | Path) -> None:
-    """Write aggregate JSON, per-label CSV and privacy-conscious error CSV."""
+    """Write aggregate JSON and CSVs to a new directory without replacing prior results."""
     output = Path(results_dir)
+    if output.exists():
+        raise FileExistsError(f"Refusing to write results into existing directory: {output}")
     output.mkdir(parents=True, exist_ok=True)
     (output / "mtsamples_ner_summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     metrics.to_csv(output / "mtsamples_ner_metrics.csv", index=False)

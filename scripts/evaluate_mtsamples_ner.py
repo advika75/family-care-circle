@@ -31,6 +31,12 @@ def main() -> int:
     else:
         micro = summary["metrics"]["MICRO"]
         print(f"Exact-span micro P/R/F1: {micro['precision']:.3f} / {micro['recall']:.3f} / {micro['f1']:.3f}")
+        share = summary["accepted_suggestion_share"]
+        if share is None:
+            print("Accepted-suggestion share: unavailable (no gold entities have known provenance).")
+        else:
+            print(f"Gold from accepted suggestions: {share:.1%} "
+                  f"({summary['accepted_suggestion_count']}/{summary['gold_entities_with_known_provenance']} known-provenance entities)")
     print(f"Results written to {Path(args.results_dir)}")
     return 0
 

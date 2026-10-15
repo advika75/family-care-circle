@@ -329,3 +329,7 @@ Download the Medical Transcriptions CSV from [Kaggle's MTSamples dataset](https:
 Place the Qwen GGUF at the `gguf_path` configured in `config.yaml` (the default is `models/qwen2.5-3b-instruct-q4_k_m.gguf`; the alternate 1.5B model is also under `models/`). These GGUF files are not tracked. The checked-in run metadata does not record a GGUF SHA256; to record the exact local file hash, run `shasum -a 256 models/<model-file>.gguf` and retain the output with the run metadata.
 
 Set `dataset: mtsamples` in `config.yaml` to run the configured pipeline and evaluation commands on that subset.
+
+shasum -a 256 models/qwen2.5-3b-instruct-q4_k_m.gguf
+
+Annotate without rule-based suggestions visible with `python scripts/annotate_mtsamples.py --blind`. Save gold annotations using the existing span JSON schema; each newly labeled entity records `annotation_source` as `accepted_suggestion`, `edited_suggestion`, or `manual` when applicable. Evaluate completed annotations into a new results directory, for example `python scripts/evaluate_mtsamples_ner.py --results-dir results/mtsamples_ner_blind_run_2026-10-15`.
