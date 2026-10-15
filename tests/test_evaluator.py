@@ -12,6 +12,7 @@ import pytest
 from src.evaluator import (
     child_rule_checks,
     entity_retention,
+    evaluate_ner_against_gold,
     evaluate_record,
     match_entities,
     medication_mentions,
@@ -78,6 +79,26 @@ def test_match_entities_is_one_to_one():
     gold = [_ent("DOSAGE", 0, 10)]
     pred = [_ent("DOSAGE", 0, 5), _ent("DOSAGE", 5, 10)]
     assert len(match_entities(pred, gold, "relaxed")) == 1
+
+
+def test_mtsamples_ner_scores_only_complete_manifest_entries(tmp_path):
+    import json
+
+    gold_dir, notes_dir = tmp_path / "gold", tmp_path / "notes"
+    gold_dir.mkdir()
+    notes_dir.mkdir()
+    (notes_dir / "done.txt").write_text("aspirin", encoding="utf-8")
+    (gold_dir / "done.json").write_text(json.dumps({"id": "done", "entities": [
+        {"text": "aspirin", "label": "MEDICATION", "start": 0, "end": 7}
+    ]}), encoding="utf-8")
+    (gold_dir / "annotation_manifest.json").write_text(json.dumps({"annotations": [
+        {"id": "done", "source_file": "done.txt", "status": "complete"},
+        {"id": "pending", "source_file": "missing.txt", "status": "pending"},
+        {"id": "draft", "source_file": "missing.txt", "status": "in_progress"},
+    ]}), encoding="utf-8")
+    scores = evaluate_ner_against_gold(gold_dir, notes_dir, extract_entities)
+    assert set(scores["n_docs"]) == {1}
+    assert scores.loc[(scores["mode"] == "exact") & (scores["label"] == "MEDICATION"), "tp"].iloc[0] == 1
 
 
 def test_evaluate_record_and_summary(sample_note, mock_config):
