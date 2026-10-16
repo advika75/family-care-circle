@@ -110,20 +110,31 @@ def fingerprint(config: dict[str, Any]) -> dict[str, Any]:
 
 # --------------------------------------------------------------------------- paths & resume
 
-def ablation_dirs(name: str, mock: bool = False, seed: int | None = None) -> tuple[Path, Path]:
+def ablation_dirs(name: str, mock: bool = False, seed: int | None = None,
+                  dataset: str = "synthetic") -> tuple[Path, Path]:
     """(outputs_dir, results_dir) for an ablation run. Mock runs never share folders with real runs.
 
     Without a seed: data/outputs_<name>/ and results/ablations/<name>/ (single-seed layout).
     With a seed: data/outputs_<name>_seed<k>/ and results/ablations/<name>/seed<k>/.
     """
     prefix = "outputs_mock_" if mock else "outputs_"
-    outputs = resolve_path(f"data/{prefix}{name}" + (f"_seed{seed}" if seed is not None else ""))
-    results = ablations_root(mock) / name
+    suffix = f"_seed{seed}" if seed is not None else ""
+    if dataset == "mtsamples":
+        run_name = "no_injection" if name == "no_ner_injection" else name
+        outputs = resolve_path(f"data/public/mtsamples/{prefix}{run_name}{suffix}")
+        results = resolve_path(f"results/mtsamples/{run_name}")
+    elif dataset == "synthetic":
+        outputs = resolve_path(f"data/{prefix}{name}{suffix}")
+        results = ablations_root(mock) / name
+    else:
+        raise ValueError(f"Unsupported ablation dataset: {dataset}")
     return outputs, (results / f"seed{seed}" if seed is not None else results)
 
 
-def ablations_root(mock: bool = False) -> Path:
+def ablations_root(mock: bool = False, dataset: str = "synthetic") -> Path:
     """Folder that holds per-ablation results plus the cross-ablation summary."""
+    if dataset == "mtsamples":
+        return resolve_path("results/mtsamples/ablation_summary")
     return resolve_path("results/ablations_mock" if mock else "results/ablations")
 
 
@@ -290,7 +301,7 @@ def metrics_row(m: pd.DataFrame) -> dict[str, float]:
 
 
 def summarize_ablations(
-    names: list[str], mock: bool = False, seeds: list[int] | None = None
+    names: list[str], mock: bool = False, seeds: list[int] | None = None, dataset: str = "synthetic"
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Summaries across ablations: (one row per ablation, one row per ablation and seed).
 
@@ -302,7 +313,7 @@ def summarize_ablations(
     for name in names:
         runs = []
         for seed in seed_list:
-            _, results_dir = ablation_dirs(name, mock, seed)
+            _, results_dir = ablation_dirs(name, mock, seed, dataset)
             info_path, metrics_path = results_dir / RUN_INFO_FILE, results_dir / "metrics.csv"
             info = json.loads(info_path.read_text(encoding="utf-8")) if info_path.exists() else {}
             run = {"ablation": name, "seed": seed, "status": info.get("status", "missing"),

@@ -130,6 +130,13 @@ def test_seed_dirs_and_config():
     assert cfg["generation"]["seed"] == 1
 
 
+def test_mtsamples_ablation_uses_isolated_dataset_paths():
+    out, res = ablation_dirs("no_ner_injection", dataset="mtsamples")
+    assert str(out).endswith("data/public/mtsamples/outputs_no_injection")
+    assert str(res).endswith("results/mtsamples/no_injection")
+    assert str(ablations_root(dataset="mtsamples")).endswith("results/mtsamples/ablation_summary")
+
+
 def test_multi_seed_summary(seeded_runs):
     summary, by_seed = summarize_ablations(seeded_runs, mock=True, seeds=[0, 1])
     assert len(summary) == 2 and len(by_seed) == 4

@@ -45,6 +45,7 @@ from src.ablations import (  # noqa: E402
     run_ablation,
     summarize_ablations,
 )
+from src.datasets import dataset_config, select_note_files  # noqa: E402
 from src.utils import list_files, load_config, setup_logging  # noqa: E402
 
 WARN_ABOVE_SEC = 3600
@@ -54,6 +55,8 @@ def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--config", default="config.yaml")
+    parser.add_argument("--dataset", choices=["synthetic", "mtsamples"], default=None,
+                        help="Use a configured dataset; MTSamples writes to separate dataset-specific paths")
     parser.add_argument("--input", default=None, help="Notes file/folder (default: paths.raw_dir)")
     parser.add_argument("--backend", default=None, choices=["transformers", "llama_cpp", "mock"],
                         help="Backend for all ablations (default: `backend` in the config)")
@@ -78,7 +81,19 @@ def main() -> int:
     if args.backend == "mock":  # --backend mock and --mock are equivalent
         args.mock = True
     sys.stdout.reconfigure(line_buffering=True)  # keep the plan table in order with log lines
-    base = load_config(args.config)
+    base = load_config(args.config, {"dataset": args.dataset})
+    dataset = base.get("dataset", "synthetic")
+    log = setup_logging(base.get("logging", {}).get("level", "INFO"))
+    if dataset == "mtsamples" and args.force:
+        log.error("--force is disabled for MTSamples to protect existing outputs.")
+        return 2
+    if dataset == "mtsamples" and (args.mock or args.backend not in (None, "llama_cpp")):
+        log.error("MTSamples ablations require the local llama_cpp backend.")
+        return 2
+    if dataset == "mtsamples" and args.seeds not in (None, [42]):
+        log.error("MTSamples ablations require seed 42.")
+        return 2
+    paths = dataset_config(base)
     log = setup_logging(base.get("logging", {}).get("level", "INFO"))
     for noisy in ("httpx", "absl", "src.postprocess"):
         logging.getLogger(noisy).setLevel(logging.WARNING)
@@ -95,7 +110,21 @@ def main() -> int:
             log.error("Unknown ablation(s): %s. Defined: %s", ", ".join(unknown), ", ".join(names))
             return 1
         names = wanted
-    notes = list_files(args.input or base.get("paths", {}).get("raw_dir", "data/raw"))[: args.limit]
+    input_path = args.input or paths.get("raw_dir", "data/raw")
+    if dataset == "mtsamples":
+        requested = paths.get("max_notes")
+        if args.limit is not None:
+            requested = min(args.limit, requested) if requested is not None else args.limit
+        notes = select_note_files(input_path, requested, paths.get("seed", base.get("generation", {}).get("seed", 42)))
+    else:
+        notes = list_files(input_path)[: args.limit]
+    if dataset == "mtsamples" and not notes:
+        log.error("No MTSamples note files found in %s.", input_path)
+        return 1
+    root = ablations_root(args.mock, dataset)
+    if dataset == "mtsamples" and root.exists():
+        log.error("Refusing to write MTSamples ablation summary into existing directory %s.", root)
+        return 2
 
     # Plan everything first, so config errors and conflicts surface before any model is loaded.
     plans, conflicts, total_est = [], [], 0.0
@@ -111,8 +140,17 @@ def main() -> int:
             except KeyError as exc:
                 log.error("Ablation '%s': %s", name, exc.args[0])
                 return 1
+            if dataset == "mtsamples" and (
+                    config.get("backend") != "llama_cpp"
+                    or config.get("generation", {}).get("seed") != 42
+                    or config.get("gguf_path") != "models/qwen2.5-3b-instruct-q4_k_m.gguf"):
+                log.error("MTSamples inference requires llama_cpp, seed 42, and the configured Qwen2.5-3B Q4_K_M GGUF.")
+                return 2
             label = name if seed is None else f"{name} [seed {seed}]"
-            outputs_dir, results_dir = ablation_dirs(name, args.mock, seed)
+            outputs_dir, results_dir = ablation_dirs(name, args.mock, seed, dataset)
+            if dataset == "mtsamples" and results_dir.exists() and any(results_dir.iterdir()):
+                log.error("Refusing to overwrite MTSamples results in %s.", results_dir)
+                return 2
             state = fingerprint_state(outputs_dir, fingerprint(config))
             if state == "mismatch" and not args.force:
                 conflicts.append((label, outputs_dir))
@@ -148,11 +186,17 @@ def main() -> int:
         info = run_ablation(name, config, ablations[name] or {}, notes, outputs_dir, results_dir, cache, args.force)
         log.info("=== %s %s in %s (generated %d, skipped %d)%s ===", label, info["status"], _fmt(info["runtime_sec"]),
                  info["notes_generated"], info["notes_skipped"], f": {info['error']}" if info["error"] else "")
+        if dataset == "mtsamples" and (info["status"] != "ok" or
+                                         info["notes_generated"] + info["notes_skipped"] != len(notes)):
+            cache.release()
+            log.error("Stopping MTSamples ablations because the run did not complete every note.")
+            return 1
     cache.release()
 
-    root = ablations_root(args.mock)
+    if dataset == "mtsamples":
+        root.mkdir(parents=True, exist_ok=False)
     # Every defined ablation (including ones run earlier), for the seeds of this invocation.
-    summary, by_seed = summarize_ablations(list(ablations), args.mock, args.seeds)
+    summary, by_seed = summarize_ablations(list(ablations), args.mock, args.seeds, dataset)
     summary = summary[summary["status"] != "missing"]  # keep failed/partial runs, drop never-run ablations
     by_seed = by_seed[by_seed["status"] != "missing"]
     summary.to_csv(root / "summary.csv", index=False)
