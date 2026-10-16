@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import pytest
+from src.ablations import ablations_root
 
 import src.ablations as ab
 from src.ablations import (
