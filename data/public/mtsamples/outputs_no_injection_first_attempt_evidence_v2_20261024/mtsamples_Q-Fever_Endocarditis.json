@@ -1,0 +1,364 @@
+{
+  "id": "mtsamples_Q-Fever_Endocarditis",
+  "patient_summary": "Hello there! I'm here to talk about your health. You're 16 years old and have been seeing the doctors for a while now because you have a condition called Q-fever endocarditis. This means there's an infection in your heart valves. You're taking some medicines to help you feel better:\n\n- Doxycycline: You take this medicine twice a day. It's a special antibiotic that helps fight the infection. You're taking 150 mg each time.\n- Hydroxychloroquine: You take this medicine three times a day. It's another medicine that helps with your heart condition. You're taking 200 mg each time.\n\nYou also have other medicines:\n- Digoxin: This helps your heart beat properly.\n- Aspirin: It helps prevent blood clots.\n- Warfarin: This is another blood thinner.\n- Furosemide: It helps your body get rid of extra fluid.\n\nYour mom told me that you've been having a few loose stools, but you can handle it. It hasn't gotten worse. You had some surgery a few months ago to fix your heart valve. You did really well with that.\n\nHere's what the doctors want you to do next:\n1. Keep taking your medicines as they told you. They want to check how well they're working.\n2. They want to do some more tests to see if the infection is getting better.\n3. They want to do some blood tests to check your overall health.\n4. They want to see you again in four weeks to make sure you're doing well.\n5. They also want to check the dosage of your doxycycline. Your recent test showed it was 6.5 mcg/mL.\n\nIf you have any problems or if you feel worse, you should call the doctors or come back to the clinic right away. Remember, it's important to follow the doctors' advice and take your medicines as they tell you. You're doing great!",
+  "caregiver_checklist": [
+    "Check doxycycline and hydroxychloroquine levels.",
+    "Monitor for loose stools and report any increase.",
+    "Watch for new or worsening symptoms.",
+    "Call if fever or new heart murmur occurs.",
+    "Schedule comprehensive metabolic panel and CBC.",
+    "Schedule return visit in 4 weeks.",
+    "Call if any warning signs appear.",
+    "Report any new or worsening symptoms to care team.",
+    "Ensure doxycycline is at 150 mg, taken twice daily.",
+    "Ensure hydroxychloroquine is at 200 mg, taken three times daily.",
+    "Monitor digoxin levels and report any changes.",
+    "Monitor aspirin levels and report any changes.",
+    "Monitor warfarin levels and report any changes.",
+    "Monitor furosemide levels and report any changes.",
+    "Ensure doxycycline level is 6.5 mcg/mL."
+  ],
+  "child_explanation": "You had a little tummy ache, but you're doing well now. The doctors are taking good care of you. They gave you a special medicine to help your heart. You also have a tiny helper in your tummy to fight the sickness. Your tummy hurts a few times a day, but you're handling it okay. The doctors did a big surgery to fix your heart, and you're doing great at home. They want to check on you in a few weeks.",
+  "entities": [
+    {
+      "text": "doxycycline",
+      "label": "MEDICATION",
+      "start": 108,
+      "end": 119
+    },
+    {
+      "text": "150 mg",
+      "label": "DOSAGE",
+      "start": 120,
+      "end": 126
+    },
+    {
+      "text": "twice daily",
+      "label": "FREQUENCY",
+      "start": 136,
+      "end": 147
+    },
+    {
+      "text": "200 mg",
+      "label": "DOSAGE",
+      "start": 178,
+      "end": 184
+    },
+    {
+      "text": "three times a day",
+      "label": "FREQUENCY",
+      "start": 194,
+      "end": 211
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 218,
+      "end": 223
+    },
+    {
+      "text": "digoxin",
+      "label": "MEDICATION",
+      "start": 257,
+      "end": 264
+    },
+    {
+      "text": "aspirin",
+      "label": "MEDICATION",
+      "start": 266,
+      "end": 273
+    },
+    {
+      "text": "warfarin",
+      "label": "MEDICATION",
+      "start": 275,
+      "end": 283
+    },
+    {
+      "text": "furosemide",
+      "label": "MEDICATION",
+      "start": 289,
+      "end": 299
+    },
+    {
+      "text": "obesity",
+      "label": "CONDITION",
+      "start": 1377,
+      "end": 1384
+    },
+    {
+      "text": "Doxycycline",
+      "label": "MEDICATION",
+      "start": 1597,
+      "end": 1608
+    },
+    {
+      "text": "doxycycline",
+      "label": "MEDICATION",
+      "start": 1757,
+      "end": 1768
+    },
+    {
+      "text": "6.5 mcg",
+      "label": "DOSAGE",
+      "start": 1824,
+      "end": 1831
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 1839,
+      "end": 1844
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 2098,
+      "end": 2103
+    },
+    {
+      "text": "doxycycline",
+      "label": "MEDICATION",
+      "start": 2139,
+      "end": 2150
+    },
+    {
+      "text": "doxycycline",
+      "label": "MEDICATION",
+      "start": 2403,
+      "end": 2414
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 2436,
+      "end": 2441
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "doxycycline",
+      "dosages": [
+        "150 mg",
+        "200 mg"
+      ],
+      "frequencies": [
+        "twice daily",
+        "three times a day"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "digoxin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "aspirin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "warfarin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "furosemide",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "doxycycline",
+      "dosages": [
+        "6.5 mcg"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "HISTORY OF PRESENT ILLNESS: , This is a follow-up visit on this 16-year-old male who is currently receiving doxycycline 150 mg by mouth twice daily as well as hydroxychloroquine 200 mg by mouth three times a day for Q-fever endocarditis.  He is also taking digoxin, aspirin, warfarin, and furosemide.  Mother reports that he does have problems with 2-3 loose stools per day since September, but tolerates this relatively well.  This has not increased in frequency recently.,Mark recently underwent surgery at Children's Hospital and had on 10/15/2007, replacement of pulmonary homograft valve, resection of a pulmonary artery pseudoaneurysm, and insertion of Gore-Tex membrane pericardial substitute.  He tolerated this procedure well.  He has been doing well at home since that time.,PHYSICAL EXAMINATION:,VITAL SIGNS:  Temperature is 98.5, pulse 84, respirations 19, blood pressure 101/57, weight 77.7 kg, and height 159.9 cm.,GENERAL APPEARANCE:  Well-developed, well-nourished, slightly obese, slightly dysmorphic male in no obvious distress.,HEENT:  Remarkable for the badly degenerated left lower molar.  Funduscopic exam is unremarkable.,NECK:  Supple without adenopathy.,CHEST:  Clear including the sternal wound.,CARDIOVASCULAR:  A 3/6 systolic murmur heard best over the upper left sternal border.,ABDOMEN:  Soft.  He does have an enlarged spleen, however, given his obesity, I cannot accurately measure its size.,GU:  Deferred.,EXTREMITIES:  Examination of extremities reveals no embolic phenomenon.,SKIN:  Free of lesions.,NEUROLOGIC:  Grossly within normal limits.,LABORATORY DATA: , Doxycycline level obtained on 10/05/2007 as an outpatient was less than 0.5.  Hydroxychloroquine level obtained at that time was undetectable.  Of note is that doxycycline level obtained while in the hospital on 10/21/2007 was 6.5 mcg/mL.  Q-fever serology obtained on 10/05/2007 was positive for phase I antibodies in 1/2/6 and phase II antibodies at 1/128, which is an improvement over previous elevated titers.  Studies on the pulmonary valve tissue removed at surgery are pending.,IMPRESSION: , Q-fever endocarditis.,PLAN:  ,1.  Continue doxycycline and hydroxychloroquine.  I carefully questioned mother about compliance and concomitant use of dairy products while taking these medications.  She assures me that he is compliant with his medications.  We will however repeat his hydroxychloroquine and doxycycline levels.,2.  Repeat Q-fever serology.,3.  Comprehensive metabolic panel and CBC.,4.  Return to clinic in 4 weeks.,5.  Clotting times are being followed by Dr. X.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "6.5 mcg"
+      ],
+      "caregiver_checklist": [
+        "150 mg",
+        "twice daily",
+        "200 mg",
+        "three times a day",
+        "digoxin",
+        "aspirin",
+        "warfarin",
+        "furosemide",
+        "6.5 mcg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to talk about your health. You're 16 years old and have been seeing the doctors for a while now because you have a condition called Q-fever endocarditis. This means there's an infection in your heart valves. You're taking some medicines to help you feel better:\n\n- Doxycycline: You take this medicine twice a day. It's a special antibiotic that helps fight the infection. You're taking 150 mg each time.\n- Hydroxychloroquine: You take this medicine three times a day. It's another medicine that helps with your heart condition. You're taking 200 mg each time.\n\nYou also have other medicines:\n- Digoxin: This helps your heart beat properly.\n- Aspirin: It helps prevent blood clots.\n- Warfarin: This is another blood thinner.\n- Furosemide: It helps your body get rid of extra fluid.\n\nYour mom told me that you've been having a few loose stools, but you can handle it. It hasn't gotten worse. You had some surgery a few months ago to fix your heart valve. You did really well with that.\n\nHere's what the doctors want you to do next:\n1. Keep taking your medicines as they told you. They want to check how well they're working.\n2. They want to do some more tests to see if the infection is getting better.\n3. They want to do some blood tests to check your overall health.\n4. They want to see you again in four weeks to make sure you're doing well.\n\nIf you have any problems or if you feel worse, you should call the doctors or come back to the clinic right away. Remember, it's important to follow the doctors' advice and take your medicines as they tell you. You're doing great!",
+      "caregiver_checklist": "- Check doxycycline and hydroxychloroquine levels.\n- Monitor for loose stools and report any increase.\n- Watch for new or worsening symptoms.\n- Call if fever or new heart murmur occurs.\n- Schedule comprehensive metabolic panel and CBC.\n- Schedule return visit in 4 weeks.\n- Call if any warning signs appear.\n- Report any new or worsening symptoms to care team.",
+      "child_explanation": "You had a little tummy ache, but you're doing well now. The doctors are taking good care of you. They gave you a special medicine to help your heart. You also have a tiny helper in your tummy to fight the sickness. Your tummy hurts a few times a day, but you're handling it okay. The doctors did a big surgery to fix your heart, and you're doing great at home. They want to check on you in a few weeks."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Q-Fever_Endocarditis",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Q-Fever_Endocarditis.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Q-Fever_Endocarditis.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Q-Fever_Endocarditis",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Q-Fever_Endocarditis.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Q-Fever_Endocarditis.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Q-Fever_Endocarditis",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Q-Fever_Endocarditis.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Q-Fever_Endocarditis.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 51.498,
+      "caregiver_checklist": 32.459,
+      "child_explanation": 10.839,
+      "total": 94.809
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:50:08+00:00"
+  }
+}

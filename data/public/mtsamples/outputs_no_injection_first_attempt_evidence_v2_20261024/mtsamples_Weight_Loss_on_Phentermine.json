@@ -1,0 +1,204 @@
+{
+  "id": "mtsamples_Weight_Loss_on_Phentermine",
+  "patient_summary": "Hi there! I'm here to talk about your weight loss treatment. It seems like you've been on a medicine called phentermine for a while now. You've lost some weight, but you've also gained a pound recently. We talked about this and decided that if you don't lose more weight in the next month, we might need to stop taking the medicine. \n\nRight now, you're doing well. Your blood pressure is okay, and you don't have any other problems. You're feeling good and not having any trouble breathing or feeling pain. \n\nThe plan is to keep you on the medicine for now. If you lose a few pounds, we'll keep you on it until you get close to your goal weight of 135 pounds. Then we'll try to keep you at that weight for one or two months before stopping the medicine. \n\nYou're okay with this plan. If you have any more questions or feel uncomfortable, please let us know. We're here to help you.",
+  "caregiver_checklist": [
+    "Check her weight at home and record it.",
+    "Watch for any new symptoms like shortness of breath, chest pain, or palpitations.",
+    "Call the healthcare provider if she experiences any new symptoms.",
+    "Schedule a follow-up appointment in one month.",
+    "Monitor her weight weekly and record it.",
+    "Watch for any changes in her mood or energy levels.",
+    "Call the healthcare provider if she gains more than a pound.",
+    "Schedule a follow-up appointment if she loses a couple of pounds.",
+    "Watch for any changes in her appetite or energy levels.",
+    "Call the healthcare provider if she experiences any side effects from the medication.",
+    "Schedule a follow-up appointment if she reaches her goal weight of 135 pounds."
+  ],
+  "child_explanation": "You've been doing well, you know. But now you've gained another pound. You and the grown-ups talked about this, and you're both feeling frustrated. But don't worry, you're still healthy. You're like a team of tiny helpers trying to help you lose weight. If you don't lose weight soon, the grown-ups might help you stop the helpers. But if you do lose a little, they'll keep the helpers for a bit longer. You're in good hands, you'll see.",
+  "entities": [
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 721,
+      "end": 740
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 742,
+      "end": 752
+    },
+    {
+      "text": "palpitations",
+      "label": "SYMPTOM",
+      "start": 756,
+      "end": 768
+    }
+  ],
+  "regimens": [],
+  "source_text": "SUBJECTIVE:,  She is here for a followup on her weight loss on phentermine.  She has gained another pound since she was here last.  We talked at length about the continued plateau she has had with her weight.  She gained a pound the month before and really has not been able to get her weight any farther down than she had when her lowest level was 136.  She is frustrated with this as well.  We agree that if she continues to plateau she really should not stay on phentermine.  We would not want her to take it to maintain her weight but only to help her get her weight down, and she may have really lost any benefit from it, and she agrees.,REVIEW OF SYSTEMS:,  Otherwise negative.  She has no specific complaints.  No shortness of breath, chest pain or palpitations.,PHYSICAL EXAM:,Vital signs:  Her blood pressure is fine.  Her diastolic is a little bit high, but otherwise okay.,General:  She appears in good spirits.  No apparent distress.,HEENT:  Negative.,Neck:  Supple without bruits.,Chest:  Clear.,Cardiac exam:  Regular without extra sounds.,ASSESSMENT:,  Weight loss on phentermine, really has plateaued.,PLAN:,  If she does not lose weight in the next month we will probably consider having her go off the phentermine.  If she does lose a couple of pounds, then we will keep her on it until she gets closer to her goal of 135 and then try to keep her there for one or two months and then stop.  She agrees with this plan.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hi there! I'm here to talk about your weight loss treatment. It seems like you've been on a medicine called phentermine for a while now. You've lost some weight, but you've also gained a pound recently. We talked about this and decided that if you don't lose more weight in the next month, we might need to stop taking the medicine. \n\nRight now, you're doing well. Your blood pressure is okay, and you don't have any other problems. You're feeling good and not having any trouble breathing or feeling pain. \n\nThe plan is to keep you on the medicine for now. If you lose a few pounds, we'll keep you on it until you get close to your goal weight of 135 pounds. Then we'll try to keep you at that weight for one or two months before stopping the medicine. \n\nYou're okay with this plan. If you have any more questions or feel uncomfortable, please let us know. We're here to help you.",
+      "caregiver_checklist": "- Check her weight at home and record it.\n- Watch for any new symptoms like shortness of breath, chest pain, or palpitations.\n- Call the healthcare provider if she experiences any new symptoms.\n- Schedule a follow-up appointment in one month.\n- Monitor her weight weekly and record it.\n- Watch for any changes in her mood or energy levels.\n- Call the healthcare provider if she gains more than a pound.\n- Schedule a follow-up appointment if she loses a couple of pounds.\n- Watch for any changes in her appetite or energy levels.\n- Call the healthcare provider if she experiences any side effects from the medication.\n- Schedule a follow-up appointment if she reaches her goal weight of 135 pounds.",
+      "child_explanation": "You've been doing well, you know. But now you've gained another pound. You and the grown-ups talked about this, and you're both feeling frustrated. But don't worry, you're still healthy. You're like a team of tiny helpers trying to help you lose weight. If you don't lose weight soon, the grown-ups might help you stop the helpers. But if you do lose a little, they'll keep the helpers for a bit longer. You're in good hands, you'll see."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Weight_Loss_on_Phentermine",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Weight_Loss_on_Phentermine.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Weight_Loss_on_Phentermine.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Weight_Loss_on_Phentermine",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Weight_Loss_on_Phentermine.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Weight_Loss_on_Phentermine.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Weight_Loss_on_Phentermine",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Weight_Loss_on_Phentermine.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Weight_Loss_on_Phentermine.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 15.052,
+      "caregiver_checklist": 11.416,
+      "child_explanation": 9.253,
+      "total": 35.726
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T14:16:53+00:00"
+  }
+}

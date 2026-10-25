@@ -1,0 +1,233 @@
+{
+  "id": "mtsamples_Tonsillectomy_Adenoidectomy_-_4",
+  "patient_summary": "Hello there! I'm here to explain what's happening with you after your operation. You had a tonsil and adenoid removal, as well as some work on your nose. Here's what you need to know:\n\n1. **Medicines**: You will be taking two medicines after you leave the hospital. You will take amoxicillin three times a day for 10 days. You will also use Ponaris nose drops, which you will use twice a day. Your doctor will give you more information about these medicines.\n\n2. **What to Expect**: You might feel a bit sore and have some bleeding from your nose. This is normal. You will use the nose drops to help stop any bleeding. Your nose might feel stuffy, and you might have a little bit of a cough or sore throat. These are also normal.\n\n3. **When to Call**: If you have any of these symptoms, or if you have any questions, you should call your doctor or nurse. It's important to let them know how you're feeling. You might need to come back to the hospital if you have any bleeding or if you're not feeling well.\n\n4. **Follow-Up**: You will have a follow-up appointment in three to four weeks. Your doctor will check to make sure everything is healing well. If you're doing well, you can go home. If you have any problems, you should call your doctor right away.\n\nRemember, it's okay to feel a bit uncomfortable after the operation. Your body is working hard to heal. If you have any questions or concerns, don't hesitate to ask. Your doctor and nurses are here to help you.",
+  "caregiver_checklist": [
+    "Give the patient amoxicillin as prescribed.",
+    "Check for signs of infection such as fever, redness, or increased pain.",
+    "Watch for signs of bleeding, such as bright red blood in the nasal discharge or on the pillow.",
+    "Call the healthcare provider if the patient develops signs of infection or bleeding.",
+    "Schedule a follow-up appointment in three to four weeks.",
+    "Check the patient’s temperature and note any fever.",
+    "Watch for signs of nasal congestion or discharge.",
+    "Call if the patient experiences persistent or worsening symptoms.",
+    "Schedule a return visit if the patient is doing well and stable."
+  ],
+  "child_explanation": "You had a big operation to take out your tonsils and some extra bits in your nose. The doctors and grown-ups took care of you. They used a special spray to help your nose. The doctors took out your tonsils and cleaned your nose. They also shaved some extra bits in your nose. You might have a little bit of soreness, but you'll be okay. You'll get some medicine to help you feel better. The doctors will check on you in a few weeks.",
+  "entities": [
+    {
+      "text": "Bleeding",
+      "label": "SYMPTOM",
+      "start": 1016,
+      "end": 1024
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1547,
+      "end": 1555
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1713,
+      "end": 1721
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1886,
+      "end": 1894
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1925,
+      "end": 1933
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1962,
+      "end": 1970
+    },
+    {
+      "text": "amoxicillin",
+      "label": "MEDICATION",
+      "start": 2175,
+      "end": 2186
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "amoxicillin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "PREOPERATIVE DIAGNOSES,1.  Recurrent tonsillitis.,2.  Deeply cryptic hypertrophic tonsils with numerous tonsillolith.,3.  Residual adenoid hypertrophy and recurrent epistaxis.,POSTOPERATIVE DIAGNOSES,1.  Recurrent tonsillitis.,2.  Deeply cryptic hypertrophic tonsils with numerous tonsillolith.,3.  Residual adenoid hypertrophy and recurrent epistaxis.,FINAL DIAGNOSES,1.  Recurrent tonsillitis.,2.  Deeply cryptic hypertrophic tonsils with numerous tonsillolith.,3.  Residual adenoid hypertrophy and recurrent epistaxis.,OPERATION PERFORMED,1.  Tonsillectomy and adenoidectomy.,2.  Left superficial nasal cauterization.,DESCRIPTION OF OPERATION:,  The patient was brought to the operating room.  Endotracheal intubation carried out by Dr. X. The McIvor mouth gag was inserted and gently suspended.  Afrin was instilled in both sides of the nose and allowed to take effect for a period of time.  The hypertrophic tonsils were then removed by the suction and snare.  Deeply cryptic changes as expected were evident.  Bleeding was minimal and controlled with packing followed by electrocautery followed by extensive additional irrigation.  An inspection of the nasopharynx confirmed that the adenoids were in fact hypertrophic rubbery cryptic and obstructive.  They were shaved back, flushed with prevertebral fascia with curette.  Hemostasis established with packing followed by electrocautery.  In light of his history of recurring nosebleeds, both sides of the nose were carefully inspected.  A nasal endoscope was used to identify the plexus of bleeding, which was predominantly on the left mid portion of the septum that was controlled with broad superficial cauterization using a suction cautery device.  The bleeding was admittedly a bit of a annoyance.  An additional control was established by infiltrating slowly with a 1% Xylocaine with epinephrine around the perimeter of the bleeding site and then cauterizing the bleeding site itself.  No additional bleeding was then evident.  The oropharynx was reinspected, clots removed, the patient was extubated, taken to the recovery room in stable condition.  Discharge will be anticipated later in the day on Lortab plus amoxicillin plus Ponaris nose drops.  Office recheck anticipated if stable and doing well in three to four weeks.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to explain what's happening with you after your operation. You had a tonsil and adenoid removal, as well as some work on your nose. Here's what you need to know:\n\n1. **Medicines**: You will be taking two medicines after you leave the hospital. You will take amoxicillin three times a day for 10 days. You will also use Ponaris nose drops, which you will use twice a day. Your doctor will give you more information about these medicines.\n\n2. **What to Expect**: You might feel a bit sore and have some bleeding from your nose. This is normal. You will use the nose drops to help stop any bleeding. Your nose might feel stuffy, and you might have a little bit of a cough or sore throat. These are also normal.\n\n3. **When to Call**: If you have any of these symptoms, or if you have any questions, you should call your doctor or nurse. It's important to let them know how you're feeling. You might need to come back to the hospital if you have any bleeding or if you're not feeling well.\n\n4. **Follow-Up**: You will have a follow-up appointment in three to four weeks. Your doctor will check to make sure everything is healing well. If you're doing well, you can go home. If you have any problems, you should call your doctor right away.\n\nRemember, it's okay to feel a bit uncomfortable after the operation. Your body is working hard to heal. If you have any questions or concerns, don't hesitate to ask. Your doctor and nurses are here to help you.",
+      "caregiver_checklist": "- Give the patient amoxicillin as prescribed.\n- Check for signs of infection such as fever, redness, or increased pain.\n- Watch for signs of bleeding, such as bright red blood in the nasal discharge or on the pillow.\n- Call the healthcare provider if the patient develops signs of infection or bleeding.\n- Schedule a follow-up appointment in three to four weeks.\n- Check the patient’s temperature and note any fever.\n- Watch for signs of nasal congestion or discharge.\n- Call if the patient experiences persistent or worsening symptoms.\n- Schedule a return visit if the patient is doing well and stable.",
+      "child_explanation": "You had a big operation to take out your tonsils and some extra bits in your nose. The doctors and grown-ups took care of you. They used a special spray to help your nose. The doctors took out your tonsils and cleaned your nose. They also shaved some extra bits in your nose. You might have a little bit of soreness, but you'll be okay. You'll get some medicine to help you feel better. The doctors will check on you in a few weeks."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Tonsillectomy_Adenoidectomy_-_4",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tonsillectomy_Adenoidectomy_-_4.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Tonsillectomy_Adenoidectomy_-_4.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Tonsillectomy_Adenoidectomy_-_4",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tonsillectomy_Adenoidectomy_-_4.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Tonsillectomy_Adenoidectomy_-_4.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Tonsillectomy_Adenoidectomy_-_4",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tonsillectomy_Adenoidectomy_-_4.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Tonsillectomy_Adenoidectomy_-_4.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 22.012,
+      "caregiver_checklist": 9.798,
+      "child_explanation": 9.303,
+      "total": 41.124
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:47:34+00:00"
+  }
+}

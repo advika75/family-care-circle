@@ -1,0 +1,244 @@
+{
+  "id": "mtsamples_Psych_Consult_-_Assaultive_Behavior",
+  "patient_summary": "Hello there, you're in the hospital right now because you had some scary behavior at the emergency room. You were very sleepy and not very cooperative, which made it hard for us to talk to you. But you told us that you were feeling very painful, and you were taking some medicines to help with that pain. Your wife told us that you were given Percocet, Soma, hydroxyzine, and Valium when you were discharged from the hospital. You used up all of these medicines by the morning of January 23rd, and you think that's why you were acting the way you did at the hospital.\n\nWe're going to keep the hydroxyzine medicine for now because you're doing much better and we think it's helping you feel better. We'll use something called the CIWA protocol to monitor you for a few days. This is a special way to check if you're withdrawing from the medicines you took. We don't think you're withdrawing, so we expect to stop this soon before you go home. \n\nWe also want to learn more about your history of bipolar disorder. Your wife told us that you haven't had any mental health treatment since you got married three years ago. We'll ask the doctors who take care of your back to help us figure out how to manage your pain better. We'll also ask the doctors who take care of your overall health to help you with your back pain.\n\nYou're going to be here for about three days. We'll keep you safe and make sure you're feeling better. If you have any questions or if you're feeling scared or confused, please let us know. We're here to help you.",
+  "caregiver_checklist": [
+    "Check patient's vital signs every hour.",
+    "Watch for signs of withdrawal or worsening pain.",
+    "Call if the patient shows signs of distress or agitation.",
+    "Schedule a follow-up appointment with the internal medicine service.",
+    "Call if the patient's mood or behavior changes significantly.",
+    "Monitor for signs of delirium or hallucinations.",
+    "Schedule a psychiatric evaluation to review the patient's history.",
+    "Call if the patient's pain increases or becomes unmanageable.",
+    "Schedule a review of the patient's pain management plan.",
+    "Watch for signs of alcohol or drug intoxication.",
+    "Check the patient for hydroxyzine side effects such as dizziness or drowsiness."
+  ],
+  "child_explanation": "You had a tummy ache and back pain yesterday. The medicine made you sleepy and a bit confused. You got in trouble at the hospital because you were mean to people. Now you're feeling better, you're calm, and you're sleeping. The doctors and grown-ups are taking good care of you. They're going to check your back again soon. You'll be okay, and you'll be back to playing with your family soon.",
+  "entities": [
+    {
+      "text": "back pain",
+      "label": "SYMPTOM",
+      "start": 932,
+      "end": 941
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1076,
+      "end": 1080
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1340,
+      "end": 1344
+    },
+    {
+      "text": "hydroxyzine",
+      "label": "MEDICATION",
+      "start": 1750,
+      "end": 1761
+    },
+    {
+      "text": "hydroxyzine",
+      "label": "MEDICATION",
+      "start": 5476,
+      "end": 5487
+    },
+    {
+      "text": "hydroxyzine",
+      "label": "MEDICATION",
+      "start": 5944,
+      "end": 5955
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 6035,
+      "end": 6039
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 7040,
+      "end": 7044
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "hydroxyzine",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "IDENTIFYING DATA:  ,The patient is a 40-year-old white male.  He is married, on medical leave from his job as a tree cutter, and lives with his wife and five children.,CHIEF COMPLAINT AND REACTION TO HOSPITALIZATION:  ,The patient is admitted on a 72-hour involuntary treatment for dangerousness to others after repeated assaultive behaviors at Hospital Emergency Room, the morning prior to admission.,HISTORY OF PRESENT ILLNESS:  ,The patient was very sleepy this morning, only minimally cooperative with interview.  Additional information taken from the emergency room records that accompanied him from Hospital yesterday as well as from his wife, who I contacted by telephone.  The patient was apparently at his stable baseline when discharged from the Hospital on 01/21/10, status post back surgery following a work-related injury.  The patient returned to Emergency Room on the evening prior to admission complaining of severe back pain.  His ER course is notable for yelling, spitting, and striking multiple staff members.  The patient was originally to be admitted for pain control, but when he threatened to leave, he was referred to MHPs, who subsequently detained him for 72 hours for dangerousness to others.  On interview, the patient reports only hazy memories of these incidences and states this behavior was secondary to his pain and his medications.  He was contrite about the violence.  When his wife was contacted by telephone, she agreed with this assessment and reports that he has a history of domestic violence usually in the setting of alcohol and illicit substance intoxication, but denies any events in the last 3 years.,His wife reports that after discharge from the hospital, on 01/21/10, he was prescribed Percocet, Soma, hydroxyzine, and Valium.  He essentially exhausted his approximately 10 days' supply of these agents on the morning of 01/23/10, and as above believes that this was responsible for his presentation yesterday.  She reports that she has been in contact with him since his arrival in our facility and reports that he is \"back to normal.\" She denies feeling that he currently represents a threat to her or her five children.  She was unaware of his mental health history, but denies that he has received care for any condition since they were married three years ago.,PAST PSYCHIATRIC HISTORY: , The patient has a history of Involuntary Treatment Act of 72 hours in our facility in 2004 or 2005 for assaultive behaviors; however, these records are not currently available for review.  The patient denies any outpatient mental health treatment before or since this hospitalization.  He describes his mental health diagnosis of bipolar affective disorder; however, he denies a history of dramatic mood swings in the absence of illicit substances or alcohol intoxication.,PAST MEDICAL HISTORY:,  Notable for status post back surgery, discharged from Hospital on 01/21/10.,MEDICATIONS:,  From discharge from Hospital on 01/21/10, include Percocet, Valium, Soma, and Vistaril, doses and frequency are not currently known.  His wife reports that he was discharged with approximately 10 days' supply of these agents.,SOCIAL AND DEVELOPMENTAL HISTORY:  ,The patient is employed as a tree cutter, currently on medical leave for the last 2 months following a back injury.  He lives with his wife and children.  He has a history of domestic violence, but not recently.  Other details of occupational, educational history not currently known.,SUBSTANCE AND ALCOHOL HISTORY:,  Records indicate a previous history of methamphetamine and alcohol abuse/dependence.  The wife states that he has not consumed either since 12/07.  Of note, urine tox screen at Hospital was positive for marijuana.,LEGAL HISTORY:  ,The patient has been charged with domestic violence in the past, but his wife denies any repeat instances since in the last 3 years.  It is not known whether the patient is currently on probation.,GENETIC PSYCHIATRIC HISTORY: , Unknown.,MENTAL STATUS EXAMINATION:,Attitude:  The patient is only minimally cooperative with interview secondary to being sleepy, and after repeated attempts to ask questions, he rolled over and went to bed.,Appearance: He is unkempt and there are multiple visible tattoos on his biceps.,Psychomotor:  There is no obvious psychomotor agitation or retardation.  There are no obvious extrapyramidal symptoms of tardive dyskinesia.,Affect:  His affect is notably restricted probably due to the fact that he is sleepy.,Mood:  Describes his mood as \"okay.\",Speech:  Speech is normal rate, volume, and tone.,Thought Processes:  His thought processes appear to be linear.,Thought Content:  His thought content is notable for his expressions of contrition about violence at Hospital last night.  He denies suicidal or homicidal ideation.,Cognitive Assessment:  Cognitively, he is alert and oriented to person, place, and date but not situation.  Attributes this to not really remembering the events at Hospital that resulted in this hospitalization.,Judgment and Insight:  His insight and judgment are both appear to be improving.,Assets:  Include his supportive wife and the fact he has been able to remain alcohol and methamphetamine sobriety for the last 3 years.,Limitations:  Include his back injury and possible need for improvement of health treatment engagement.,FORMULATION:  ,This is a 40-year-old white male, who was admitted for an acute agitation in the setting of misuse of prescribed opiates, Soma, hydroxyzine, and Valium.  He appears much improved from his condition at Hospital last night and I suspect that his behavior is most likely attributed to delirium and this since resolved.  He reports historical diagnosis of bipolar affective disorder, however, the details of this diagnosis are not currently available for review.,DIAGNOSES:,AXIS I:  Delirium, resolved (recent mental status changes likely secondary to misuse of prescribed opiates, Soma, Valium, and hydroxyzine.)  Rule out bipolar affective disorder.,AXIS II:  Deferred.,AXIS III:  Chronic pain status post back surgery.,AXIS IV:  Appears to be moderate.  He is currently on medical leave from his job.,AXIS V:  Global Assessment of Functioning is currently 50 (his GAF was 20 approximately 24 hours ago).,ESTIMATED LENGTH OF STAY:,  Three days.,PLAN:,  I will hold psychiatric medications for now given the patient's fairly rapid improvement as he cleared from the condition, I suspect is likely due to misuse of prescribed medications.  The patient will be placed on CIWA protocol given that one of the medications he overused was Valium.  Of note, he does not currently appear to be withdrawing and I anticipate that his CIWA will be discontinued prior to discharge.  I would like to increase the database regarding the details of his historical diagnosis of bipolar affective disorder before pursuing referrals for outpatient mental health care.  The internal medicine service will evaluate for treatment for any underlying medical problems specifically to provide recommendations regarding pain management.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "hydroxyzine"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're in the hospital right now because you had some scary behavior at the emergency room. You were very sleepy and not very cooperative, which made it hard for us to talk to you. But you told us that you were feeling very painful, and you were taking some medicines to help with that pain. Your wife told us that you were given Percocet, Soma, hydroxyzine, and Valium when you were discharged from the hospital. You used up all of these medicines by the morning of January 23rd, and you think that's why you were acting the way you did at the hospital.\n\nWe're going to keep the hydroxyzine medicine for now because you're doing much better and we think it's helping you feel better. We'll use something called the CIWA protocol to monitor you for a few days. This is a special way to check if you're withdrawing from the medicines you took. We don't think you're withdrawing, so we expect to stop this soon before you go home. \n\nWe also want to learn more about your history of bipolar disorder. Your wife told us that you haven't had any mental health treatment since you got married three years ago. We'll ask the doctors who take care of your back to help us figure out how to manage your pain better. We'll also ask the doctors who take care of your overall health to help you with your back pain.\n\nYou're going to be here for about three days. We'll keep you safe and make sure you're feeling better. If you have any questions or if you're feeling scared or confused, please let us know. We're here to help you.",
+      "caregiver_checklist": "- Check patient's vital signs every hour.\n- Watch for signs of withdrawal or worsening pain.\n- Call if the patient shows signs of distress or agitation.\n- Schedule a follow-up appointment with the internal medicine service.\n- Call if the patient's mood or behavior changes significantly.\n- Monitor for signs of delirium or hallucinations.\n- Schedule a psychiatric evaluation to review the patient's history.\n- Call if the patient's pain increases or becomes unmanageable.\n- Schedule a review of the patient's pain management plan.\n- Watch for signs of alcohol or drug intoxication.",
+      "child_explanation": "You had a tummy ache and back pain yesterday. The medicine made you sleepy and a bit confused. You got in trouble at the hospital because you were mean to people. Now you're feeling better, you're calm, and you're sleeping. The doctors and grown-ups are taking good care of you. They're going to check your back again soon. You'll be okay, and you'll be back to playing with your family soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Psych_Consult_-_Assaultive_Behavior",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Psych_Consult_-_Assaultive_Behavior.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Psych_Consult_-_Assaultive_Behavior.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Psych_Consult_-_Assaultive_Behavior",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Psych_Consult_-_Assaultive_Behavior.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Psych_Consult_-_Assaultive_Behavior.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Psych_Consult_-_Assaultive_Behavior",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Psych_Consult_-_Assaultive_Behavior.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Psych_Consult_-_Assaultive_Behavior.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 41.63,
+      "caregiver_checklist": 32.578,
+      "child_explanation": 19.803,
+      "total": 94.039
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:27:53+00:00"
+  }
+}

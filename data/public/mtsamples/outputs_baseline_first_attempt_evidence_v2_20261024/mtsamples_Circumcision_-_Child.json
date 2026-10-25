@@ -1,0 +1,190 @@
+{
+  "id": "mtsamples_Circumcision_-_Child",
+  "patient_summary": "Hello there, you had a circumcision today. It's a procedure to remove the foreskin from your penis. The doctors explained everything and you were placed on a special board to keep you still. They cleaned your penis and scrotum with a special liquid, then covered it with sterile drapes.\n\nThey used a special medicine called lidocaine to numb your penis. Then they made a small cut and carefully took off the foreskin. They used a special clamp for 5 minutes to keep the area still. After that, they removed the clamp and everything looked good.\n\nYou did a great job! The doctors gave you instructions on how to take care of you after the procedure. If you have any bleeding or if it looks red or swollen, you should tell a doctor right away. Otherwise, you can go home and rest.",
+  "caregiver_checklist": [
+    "Give the child a dorsal penile block using 2 injections of 0.3 cc each, 1% plain lidocaine.",
+    "Check for any signs of bleeding after the procedure.",
+    "Watch for any signs of infection, such as redness, swelling, or discharge.",
+    "Call the care team if the child develops any signs of infection.",
+    "Schedule a follow-up appointment in 1 week to check the healing progress.",
+    "Check for any signs of discomfort or pain in the child.",
+    "Watch for any signs of infection, such as redness, swelling, or discharge.",
+    "Call the care team if the child develops any signs of infection.",
+    "Schedule a follow-up appointment in 1 week to check the healing progress."
+  ],
+  "child_explanation": "You had a little cut on your penis.\nThe doctors used medicine to numb it.\nThey cleaned your area carefully.\nThen they made a small cut.\nThey took off your extra skin.\nIt's okay, you're healing now.\nThe grown-ups are taking good care of you.",
+  "entities": [
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 728,
+      "end": 736
+    }
+  ],
+  "regimens": [],
+  "source_text": "PROCEDURE: , Circumcision.,Signed informed consent was obtained and the procedure explained.,The child was placed in a Circumstraint board and restrained in the usual fashion.  The area of the penis and scrotum were prepared with povidone iodine solution.  The area was draped with sterile drapes, and the remainder of the procedure was done with sterile procedure.  A dorsal penile block was done using 2 injections of 0.3 cc each, 1% plain lidocaine.  A dorsal slit was made, and the prepuce was dissected away from the glans penis.  A ** Gomco clamp was properly placed for 5 minutes.  During this time, the foreskin was sharply excised using a #10 blade.  With removal of the clamp, there was a good cosmetic outcome and no bleeding.  The child appeared to tolerate the procedure well.  Care instructions were given to the parents.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you had a circumcision today. It's a procedure to remove the foreskin from your penis. The doctors explained everything and you were placed on a special board to keep you still. They cleaned your penis and scrotum with a special liquid, then covered it with sterile drapes.\n\nThey used a special medicine called lidocaine to numb your penis. Then they made a small cut and carefully took off the foreskin. They used a special clamp for 5 minutes to keep the area still. After that, they removed the clamp and everything looked good.\n\nYou did a great job! The doctors gave you instructions on how to take care of you after the procedure. If you have any bleeding or if it looks red or swollen, you should tell a doctor right away. Otherwise, you can go home and rest.",
+      "caregiver_checklist": "- Give the child a dorsal penile block using 2 injections of 0.3 cc each, 1% plain lidocaine.\n- Check for any signs of bleeding after the procedure.\n- Watch for any signs of infection, such as redness, swelling, or discharge.\n- Call the care team if the child develops any signs of infection.\n- Schedule a follow-up appointment in 1 week to check the healing progress.\n- Check for any signs of discomfort or pain in the child.\n- Watch for any signs of infection, such as redness, swelling, or discharge.\n- Call the care team if the child develops any signs of infection.\n- Schedule a follow-up appointment in 1 week to check the healing progress.",
+      "child_explanation": "You had a little cut on your penis.\nThe doctors used medicine to numb it.\nThey cleaned your area carefully.\nThen they made a small cut.\nThey took off your extra skin.\nIt's okay, you're healing now.\nThe grown-ups are taking good care of you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Circumcision_-_Child",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Circumcision_-_Child.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Circumcision_-_Child.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Circumcision_-_Child",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Circumcision_-_Child.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Circumcision_-_Child.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Circumcision_-_Child",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Circumcision_-_Child.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Circumcision_-_Child.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 10.253,
+      "caregiver_checklist": 9.154,
+      "child_explanation": 4.677,
+      "total": 24.086
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T10:38:13+00:00"
+  }
+}

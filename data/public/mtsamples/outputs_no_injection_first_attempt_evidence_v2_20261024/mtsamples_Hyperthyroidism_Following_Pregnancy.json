@@ -1,0 +1,444 @@
+{
+  "id": "mtsamples_Hyperthyroidism_Following_Pregnancy",
+  "patient_summary": "Hello there! I'm here to help you understand what's happening with you and what you need to do next. Let me explain it in simple terms.\n\nYou had some chest pain that started four months ago. You were also feeling shaky, hot, and agitated. Your doctor found out you had a condition called hyperthyroidism, which means your thyroid gland was making too much thyroid hormone. This can cause heart problems and other symptoms.\n\nYour doctor gave you some medicine called isosorbide mononitrate in the emergency room. Later, they gave you another medicine called IV steroids. They also gave you a medicine called propranolol to help with your heart problems. You were also given a medicine called tramadol to help with your pain. You were told to take tramadol as needed (PRN) for pain.\n\nNow, your thyroid is too active, so you had a special treatment called radioactive iodine (I-131). This treatment helps to reduce the activity of your thyroid. You will need to avoid your baby for a week after the treatment and stop breastfeeding.\n\nYour doctor will give you a medicine called propranolol to help with your heart symptoms. You will need to take this medicine twice a day, starting with 40mg daily and increasing to 60mg twice daily. You will also need to go to the endocrine clinic in six weeks to check your thyroid levels again. You will need to have thyroid tests every 6-12 months after that.\n\nYour doctor also recommended that you use two forms of birth control for a year after the treatment. You will be given an oral contraceptive pill to take once a day.\n\nYour doctor also recommended that you see an eye doctor to check on your eyes. You will need to use a special eye medicine and follow up in six weeks.\n\nLastly, your doctor will continue to help you with your depression. You will take your depression medicine, Citalopram, 10mg once a day.\n\nIf you have any more chest pain or any other symptoms, you should call your doctor right away. Remember to follow all the instructions your doctor gives you. You're doing great!",
+  "caregiver_checklist": [
+    "Give the patient Citalopram 10mg once daily and monitor for side effects.",
+    "Check the patient’s blood pressure and pulse daily.",
+    "Watch for signs of hypothyroidism such as fatigue, weight gain, and cold intolerance.",
+    "Call if the patient experiences new or worsening chest pain.",
+    "Schedule a follow-up appointment with the Endocrinologist in six weeks.",
+    "Call if the patient develops symptoms of hypothyroidism.",
+    "Schedule a follow-up appointment with the Ophthalmologist in six weeks.",
+    "Call if the patient experiences any ocular symptoms.",
+    "Schedule a follow-up appointment with the Cardiologist in six weeks.",
+    "Call if the patient experiences any cardiac symptoms.",
+    "Schedule thyroid function tests at 6-12 month intervals.",
+    "Give the patient tramadol PRN for pain and monitor for side effects.",
+    "Schedule a follow-up appointment with the Cardiologist in six weeks after propranolol dosage adjustment.",
+    "Give the patient propranolol 40mg daily and schedule a follow-up appointment in six weeks.",
+    "Schedule a follow-up appointment with the Cardiologist in six weeks after propranolol dosage adjustment.",
+    "Give the patient propranolol 60mg twice daily and schedule a follow-up appointment in six weeks."
+  ],
+  "child_explanation": "You had a lot of tiny helpers in your body that were making you feel funny. These helpers made your heart race and made you feel jittery. Now, the grown-ups and doctors are taking care of you. They gave you a special medicine to help your heart slow down. You also got a tiny helper to help your thyroid. It's like when you have a team of helpers to keep you healthy. You'll need to be extra careful for a while, but you'll be okay.",
+  "entities": [
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 88,
+      "end": 98
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 216,
+      "end": 226
+    },
+    {
+      "text": "palpitations",
+      "label": "SYMPTOM",
+      "start": 285,
+      "end": 297
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 343,
+      "end": 349
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 351,
+      "end": 359
+    },
+    {
+      "text": "diarrhea",
+      "label": "SYMPTOM",
+      "start": 766,
+      "end": 774
+    },
+    {
+      "text": "Diabetes",
+      "label": "CONDITION",
+      "start": 885,
+      "end": 893
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 895,
+      "end": 907
+    },
+    {
+      "text": "Citalopram",
+      "label": "MEDICATION",
+      "start": 1099,
+      "end": 1109
+    },
+    {
+      "text": "10mg",
+      "label": "DOSAGE",
+      "start": 1110,
+      "end": 1114
+    },
+    {
+      "text": "once daily",
+      "label": "FREQUENCY",
+      "start": 1115,
+      "end": 1125
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 1130,
+      "end": 1140
+    },
+    {
+      "text": "tramadol",
+      "label": "MEDICATION",
+      "start": 1151,
+      "end": 1159
+    },
+    {
+      "text": "PRN",
+      "label": "FREQUENCY",
+      "start": 1160,
+      "end": 1163
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1164,
+      "end": 1168
+    },
+    {
+      "text": "propranolol",
+      "label": "MEDICATION",
+      "start": 1659,
+      "end": 1670
+    },
+    {
+      "text": "40mg",
+      "label": "DOSAGE",
+      "start": 1674,
+      "end": 1678
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 1679,
+      "end": 1684
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 1775,
+      "end": 1785
+    },
+    {
+      "text": "Propranolol",
+      "label": "MEDICATION",
+      "start": 1819,
+      "end": 1830
+    },
+    {
+      "text": "40mg",
+      "label": "DOSAGE",
+      "start": 1850,
+      "end": 1854
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 1855,
+      "end": 1860
+    },
+    {
+      "text": "60mg",
+      "label": "DOSAGE",
+      "start": 1864,
+      "end": 1868
+    },
+    {
+      "text": "twice daily",
+      "label": "FREQUENCY",
+      "start": 1869,
+      "end": 1880
+    },
+    {
+      "text": "propranolol",
+      "label": "MEDICATION",
+      "start": 2549,
+      "end": 2560
+    },
+    {
+      "text": "60mg",
+      "label": "DOSAGE",
+      "start": 2561,
+      "end": 2565
+    },
+    {
+      "text": "twice daily",
+      "label": "FREQUENCY",
+      "start": 2578,
+      "end": 2589
+    },
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 2653,
+      "end": 2667
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 3016,
+      "end": 3021
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 3117,
+      "end": 3122
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 3205,
+      "end": 3215
+    },
+    {
+      "text": "citalopram",
+      "label": "MEDICATION",
+      "start": 3247,
+      "end": 3257
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 3258,
+      "end": 3263
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Citalopram",
+      "dosages": [
+        "10mg"
+      ],
+      "frequencies": [
+        "once daily"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "tramadol",
+      "dosages": [],
+      "frequencies": [
+        "PRN"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "Propranolol",
+      "dosages": [
+        "40mg",
+        "60mg"
+      ],
+      "frequencies": [
+        "daily",
+        "twice daily"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "citalopram",
+      "dosages": [
+        "10 mg"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "HISTORY: , Patient is a 21-year-old white woman who presented with a chief complaint of chest pain.  She had been previously diagnosed with hyperthyroidism.  Upon admission, she had complaints of constant left sided chest pain that radiated to her left arm.  She had been experiencing palpitations and tachycardia.  She had no diaphoresis, no nausea, vomiting, or dyspnea.,She had a significant TSH of 0.004 and a free T4 of 19.3.  Normal ranges for TSH and free T4 are 0.5-4.7 µIU/mL and 0.8-1.8 ng/dL, respectively.  Her symptoms started four months into her pregnancy as tremors, hot flashes, agitation, and emotional inconsistency.  She gained 16 pounds during her pregnancy and has lost 80 pounds afterwards.  She complained of sweating, but has experienced no diarrhea and no change in appetite.  She was given isosorbide mononitrate and IV steroids in the ER.,FAMILY HISTORY:,  Diabetes, Hypertension, Father had a Coronary Artery Bypass Graph (CABG) at age 34.,SOCIAL HISTORY:,  She had a baby five months ago.  She smokes a half pack a day.  She denies alcohol and drug use.,MEDICATIONS:,  Citalopram 10mg once daily for depression; low dose tramadol PRN pain.,PHYSICAL EXAMINATION: , Temperature 98.4; Pulse 123; Respiratory Rate 16; Blood Pressure 143/74.,HEENT:  She has exophthalmos and could not close her lids completely.,Cardiovascular:  tachycardia.,Neurologic:  She had mild hyperreflexiveness.,LAB:,  All labs within normal limits with the exception of Sodium 133, Creatinine 0.2, TSH 0.004, Free T4 19.3 EKG showed sinus tachycardia with a rate of 122.  Urine pregnancy test was negative.,HOSPITAL COURSE: , After admission, she was given propranolol at 40mg daily and continued on telemetry.  On the 2nd day of treatment, the patient still complained of chest pain.  EKG again showed tachycardia.  Propranolol was increased from 40mg daily to 60mg twice daily., A I-123 thyroid uptake scan demonstrated an increased thyroid uptake of 90% at 4 hours and 94% at 24 hours.  The normal range for 4-hour uptake is 5-15% and 15-25% for 24-hour uptake.  Endocrine consult recommended radioactive I-131 for treatment of Graves disease.,Two days later she received 15.5mCi of I-131.  She was to return home after the iodine treatment.  She was instructed to avoid contact with her baby for the next week and to cease breast feeding.,ASSESSMENT / PLAN:,1. Treatment of hyperthyroidism.  Patient underwent radioactive iodine 131 ablation therapy.,2. Management of cardiac symptoms stemming from hyperthyroidism.  Patient was discharged on propranolol 60mg, one tablet twice daily.,3. Monitor patient for complications of I-131 therapy such as hypothyroidism.  She should return to Endocrine Clinic in six weeks to have thyroid function tests performed.  Long-term follow-up includes thyroid function tests at 6-12 month intervals.,4. Prevention of pregnancy for one year post I-131 therapy.  Patient was instructed to use 2 forms of birth control and was discharged an oral contraceptive, taken one tablet daily.,5. Monitor ocular health.  Patient was given methylcellulose ophthalmic, one drop in each eye daily.  She should follow up in 6 weeks with the Ophthalmology clinic.,6. Management of depression.  Patient will be continued on citalopram 10 mg.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "10mg",
+        "tramadol",
+        "PRN",
+        "40mg",
+        "60mg"
+      ],
+      "caregiver_checklist": [
+        "tramadol",
+        "PRN",
+        "propranolol",
+        "40mg",
+        "60mg",
+        "twice daily"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you understand what's happening with you and what you need to do next. Let me explain it in simple terms.\n\nYou had some chest pain that started four months ago. You were also feeling shaky, hot, and agitated. Your doctor found out you had a condition called hyperthyroidism, which means your thyroid gland was making too much thyroid hormone. This can cause heart problems and other symptoms.\n\nYour doctor gave you some medicine called isosorbide mononitrate in the emergency room. Later, they gave you another medicine called IV steroids. They also gave you a medicine called propranolol to help with your heart problems. You were also given a special eye medicine to help with your eyes.\n\nNow, your thyroid is too active, so you had a special treatment called radioactive iodine (I-131). This treatment helps to reduce the activity of your thyroid. You will need to avoid your baby for a week after the treatment and stop breastfeeding.\n\nYour doctor will give you a medicine called propranolol to help with your heart symptoms. You will need to take this medicine twice a day. You will also need to go to the endocrine clinic in six weeks to check your thyroid levels again. You will need to have thyroid tests every 6-12 months after that.\n\nYour doctor also told you to use two forms of birth control for a year after the treatment. You will be given an oral contraceptive pill to take every day.\n\nYour doctor also recommended that you see an eye doctor to check on your eyes. You will need to use a special eye medicine and follow up in six weeks.\n\nLastly, your doctor will continue to help you with your depression. You will take your depression medicine, Citalopram, once a day.\n\nIf you have any more chest pain or any other symptoms, you should call your doctor right away. Remember to follow all the instructions your doctor gives you. You're doing great!",
+      "caregiver_checklist": "- Give the patient Citalopram 10mg once daily and monitor for side effects.\n- Check the patient’s blood pressure and pulse daily.\n- Watch for signs of hypothyroidism such as fatigue, weight gain, and cold intolerance.\n- Call if the patient experiences new or worsening chest pain.\n- Schedule a follow-up appointment with the Endocrinologist in six weeks.\n- Call if the patient develops symptoms of hypothyroidism.\n- Schedule a follow-up appointment with the Ophthalmologist in six weeks.\n- Call if the patient experiences any ocular symptoms.\n- Schedule a follow-up appointment with the Cardiologist in six weeks.\n- Call if the patient experiences any cardiac symptoms.\n- Schedule thyroid function tests at 6-12 month intervals.",
+      "child_explanation": "You had a lot of tiny helpers in your body that were making you feel funny. These helpers made your heart race and made you feel jittery. Now, the grown-ups and doctors are taking care of you. They gave you a special medicine to help your heart slow down. You also got a tiny helper to help your thyroid. It's like when you have a team of helpers to keep you healthy. You'll need to be extra careful for a while, but you'll be okay."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Hyperthyroidism_Following_Pregnancy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hyperthyroidism_Following_Pregnancy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Hyperthyroidism_Following_Pregnancy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Hyperthyroidism_Following_Pregnancy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hyperthyroidism_Following_Pregnancy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Hyperthyroidism_Following_Pregnancy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Hyperthyroidism_Following_Pregnancy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hyperthyroidism_Following_Pregnancy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Hyperthyroidism_Following_Pregnancy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 94.911,
+      "caregiver_checklist": 36.875,
+      "child_explanation": 13.586,
+      "total": 145.39
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:57:40+00:00"
+  }
+}

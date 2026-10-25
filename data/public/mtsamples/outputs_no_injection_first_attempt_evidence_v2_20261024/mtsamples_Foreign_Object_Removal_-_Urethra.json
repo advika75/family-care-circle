@@ -1,0 +1,244 @@
+{
+  "id": "mtsamples_Foreign_Object_Removal_-_Urethra",
+  "patient_summary": "Hello there! I'll explain what happened to you and what you need to do next in simple terms.\n\nYou had a procedure called a cystoscopy. This is when a doctor looked inside your bladder and urethra (the tube that carries urine out of your body) to see if there were any foreign objects. They also placed some tiny seeds in your prostate to help treat your cancer.\n\nThe doctors gave you a medicine called Levaquin before the surgery. This medicine is Levaquin, and it comes in a 500 mg dose. They gave you 500 mg of Levaquin by IV (through a vein) right before the surgery.\n\nYou had a prostate size of about 15 g in the OR (operating room) and about 22 g two months ago. The doctors put 38 tiny seeds in your prostate, and they were placed using a special ultrasound machine to make sure they were in the right place. They placed 30 seeds in the periphery (outer part) and 8 seeds in the inside.\n\nAfter the procedure, they found a seed in your urethra, which is the tube that carries urine. They had to use a special tool to pull it out. It was a bit tricky because the seed was stuck to some spacers.\n\nYou will need to take some medicines after the surgery. The doctors will tell you what these are and how often you need to take them. You should also follow up with your doctor to make sure you're healing well.\n\nIf you have any pain, bleeding, or any other problems, you should call your doctor right away. They want to make sure you're okay and that everything is healing properly.\n\nRemember, it's important to follow all the instructions from your doctors and to keep all your appointments. You're doing great, and you're in good hands.",
+  "caregiver_checklist": [
+    "Give Levaquin 500 mg IV as per the clinical note.",
+    "Check for signs of infection such as fever, redness, or increased pain.",
+    "Watch for any bleeding or drainage from the catheter site.",
+    "Call if there is any difficulty urinating or if you notice blood in the urine.",
+    "Schedule a follow-up appointment with the radiation oncologist.",
+    "Monitor for side effects of Zoladex such as fatigue or mood changes.",
+    "Watch for any new or worsening symptoms of prostate cancer.",
+    "Call if you notice any new symptoms or if you have concerns.",
+    "Schedule a cystoscopy in 3-6 months to monitor the prostate area.",
+    "Check for any changes in urinary function or pain.",
+    "Call if you notice any changes in your or your loved one's condition.",
+    "Note that the prostate size was measured at 15 g in the OR and 22 g about two months ago."
+  ],
+  "child_explanation": "You had a little check-up. The doctors found some tiny things that needed to go. They took them out using a special tool. Then they put tiny seeds in to help. The grown-ups and doctors are taking care of you. You'll be okay. You're brave for going through this.",
+  "entities": [
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 257,
+      "end": 263
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 831,
+      "end": 839
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 852,
+      "end": 856
+    },
+    {
+      "text": "dysuria",
+      "label": "SYMPTOM",
+      "start": 927,
+      "end": 934
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 944,
+      "end": 948
+    },
+    {
+      "text": "15 g",
+      "label": "DOSAGE",
+      "start": 1272,
+      "end": 1276
+    },
+    {
+      "text": "22 g",
+      "label": "DOSAGE",
+      "start": 1297,
+      "end": 1301
+    },
+    {
+      "text": "15 g",
+      "label": "DOSAGE",
+      "start": 1643,
+      "end": 1647
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Prostate cancer.,POSTOPERATIVE DIAGNOSIS: , Prostate cancer.,OPERATION: , Cystoscopy and removal of foreign objects from the urethra.,BRACHYTHERAPY:,  Iodine 125.,ANESTHESIA: , General endotracheal.  The patient was given Levaquin 500 mg IV preoperatively.,Total seeds were 59.  Activity of 0.439, 30 seeds in the periphery with 10 needles and total of 8 seeds at the anterior of the fold, 4 needles.  Please note that the total needles placed on the top were actually 38 seeds and 22 seeds were returned back.,BRIEF HISTORY: , This is a 72-year-old male who presented to us with elevated PSA and prostate biopsy with Gleason 6 cancer on the right apex.  Options such as watchful waiting, brachytherapy, radical prostatectomy, cryotherapy, and external beam radiation were discussed.  Risk of anesthesia, bleeding, infection, pain, MI, DVT, PE, incontinence, erectile dysfunction, urethral stricture, dysuria, burning pain, hematuria, future procedures, and failure of the procedure were all discussed.  The patient understood all the risks, benefits, and options and wanted to proceed with the procedure.  The patient wanted to wait until he came back from his summer vacations, so a one dose of Zoladex was given.  Prostate size measured about 15 g in the OR and about 22 g about two months ago.  Consent was obtained.,DETAILS OF THE OPERATION:  ,The patient was brought to the OR and anesthesia was applied.  The patient was placed in dorsal lithotomy position.  The patient had a Foley catheter placed sterilely.  The scrotum was taped up using Ioban.  Transrectal ultrasound was done.  The prostate was measured 15 g.  Multiple images were taken.  A volume study was done.  This was given to the physicist, Dr. X was present who is radiation oncologist who helped with implanting of the seeds.  Total of 38 seeds were placed in the patient with 10 peripheral needles and then 4 internal needles.  Total of 30 seeds were placed in the periphery and total of 8 seeds were placed in the inside.  They were done directly under transrectal ultrasound vision.  The seeds were placed directly under ultrasound guidance.  There was a nice distribution of the seeds.  A couple of more seeds were placed on the right side due to the location of the prostate cancer.  Subsequently at the end of the procedure, fluoroscopy was done.  Couple of images were obtained.  Cystoscopy was done at the end of the procedure where a seed was visualized right in the urethra, which was grasped and pulled out using grasper, which was difficult to get the seed off of the spacers, which was actually pulled out.  There were no further seeds visualized in the bladder.  The bladder appeared normal.  At the end of the procedure, a Foley catheter was kept in place of 18 French and the patient was brought to recovery in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "500 mg",
+        "15 g",
+        "22 g"
+      ],
+      "caregiver_checklist": [
+        "15 g",
+        "22 g"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened to you and what you need to do next in simple terms.\n\nYou had a procedure called a cystoscopy. This is when a doctor looked inside your bladder and urethra (the tube that carries urine out of your body) to see if there were any foreign objects. They also placed some tiny seeds in your prostate to help treat your cancer.\n\nThe doctors gave you a medicine called Levaquin before the surgery. This is to help prevent any infection. They put 38 tiny seeds in your prostate, and they were placed using a special ultrasound machine to make sure they were in the right place.\n\nAfter the procedure, they found a seed in your urethra, which is the tube that carries urine. They had to use a special tool to pull it out. It was a bit tricky because the seed was stuck to some spacers.\n\nYou will need to take some medicines after the surgery. The doctors will tell you what these are and how often you need to take them. You should also follow up with your doctor to make sure you're healing well.\n\nIf you have any pain, bleeding, or any other problems, you should call your doctor right away. They want to make sure you're okay and that everything is healing properly.\n\nRemember, it's important to follow all the instructions from your doctors and to keep all your appointments. You're doing great, and you're in good hands.",
+      "caregiver_checklist": "- Give Levaquin 500 mg IV as per the clinical note.\n- Check for signs of infection such as fever, redness, or increased pain.\n- Watch for any bleeding or drainage from the catheter site.\n- Call if there is any difficulty urinating or if you notice blood in the urine.\n- Schedule a follow-up appointment with the radiation oncologist.\n- Monitor for side effects of Zoladex such as fatigue or mood changes.\n- Watch for any new or worsening symptoms of prostate cancer.\n- Call if you notice any new symptoms or if you have concerns.\n- Schedule a cystoscopy in 3-6 months to monitor the prostate area.\n- Check for any changes in urinary function or pain.\n- Call if you notice any changes in your or your loved one's condition.",
+      "child_explanation": "You had a little check-up. The doctors found some tiny things that needed to go. They took them out using a special tool. Then they put tiny seeds in to help. The grown-ups and doctors are taking care of you. You'll be okay. You're brave for going through this."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Foreign_Object_Removal_-_Urethra",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Foreign_Object_Removal_-_Urethra",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Foreign_Object_Removal_-_Urethra",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 46.05,
+      "caregiver_checklist": 26.698,
+      "child_explanation": 9.456,
+      "total": 82.23
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:47:38+00:00"
+  }
+}

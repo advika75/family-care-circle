@@ -1,0 +1,211 @@
+{
+  "id": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal",
+  "patient_summary": "Hello there! I'm here to help you with your physical therapy plan after your brain surgery. Let's talk about what you need to do and when to get help.\n\n### What's Happening\nYou had a brain tumor removed, and you had some weakness on the left side. You also had some swelling and a blood clot in your left leg. You've been in physical therapy since November and have been doing well. Now, you're working on getting stronger and better at walking.\n\n### What Medicines to Take\nYou're taking these medicines:\n- Coumadin (a blood thinner)\n- Keppra (to help with seizures)\n- Decadron (to reduce swelling)\n- Glucophage (to help with blood sugar)\n\n### How to Take Care of Yourself\n- You'll be in physical therapy three times a week for the first 4 weeks. Then, you'll go twice a week for the next 4 weeks.\n- You'll do exercises to help you move better and walk without feeling weak.\n- You'll practice balancing to help you walk safely.\n- You'll walk for 6 minutes, and we'll check how you do.\n\n### When to Get Help\n- If you feel pain, tell your therapist. They can help you with pain management.\n- If you have any problems with your leg or arm, let them know. They can help you with that too.\n- If you feel tired and have trouble walking, let them know. They can help you rest and get stronger.\n\n### Goals\n- In the first 4 weeks, you'll do 30 repetitions of exercises and improve your balance to 50 out of 56 points.\n- In the next 4 weeks, you'll walk 1000 feet in 6 minutes with help, and then try to walk 1500 feet without help.\n- You'll practice stepping over objects safely and walk around your home without losing balance.\n\nYou're doing great! Your therapist and your husband, Al, are working together to help you get better. If you have any questions or concerns, just ask. Your therapist is here to help you.",
+  "caregiver_checklist": [
+    "Check Coumadin dosage and schedule with Al, as Coumadin is a blood thinner.",
+    "Watch for signs of bleeding or bruising, report to healthcare provider immediately.",
+    "Call if the patient experiences new or worsening weakness or balance issues.",
+    "Schedule a Berg balance test in 4 weeks to monitor balance improvement.",
+    "Check for signs of DVT recurrence, report any swelling or pain to healthcare provider.",
+    "Watch for signs of infection at the surgical site, report any redness or discharge.",
+    "Call if the patient experiences new or worsening pain or weakness.",
+    "Schedule a 6-minute walk test in 4 weeks to monitor walking improvement.",
+    "Check for signs of fatigue, encourage rest and report if symptoms persist.",
+    "Watch for signs of cognitive changes, report any confusion or memory issues.",
+    "Call if the patient experiences new or worsening balance or walking issues.",
+    "Schedule a follow-up appointment in 4 weeks to reassess progress and adjust treatment plan."
+  ],
+  "child_explanation": "You had a big bump in your head removed. Now you're getting help to move your legs better. Grown-ups and doctors are taking care of you. You're doing well, but you still need some extra help. Your legs are a bit weak, so you need to practice. It's like learning a new game. You'll get better with practice. Your arms and legs are getting stronger. You'll be able to walk better soon. Keep trying, you're doing great!",
+  "entities": [
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 488,
+      "end": 496
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 934,
+      "end": 938
+    },
+    {
+      "text": "fatigue",
+      "label": "SYMPTOM",
+      "start": 1742,
+      "end": 1749
+    },
+    {
+      "text": "4 weeks",
+      "label": "DURATION",
+      "start": 2194,
+      "end": 2201
+    }
+  ],
+  "regimens": [],
+  "source_text": "DIAGNOSIS:,  Status post brain tumor removal.,HISTORY:,  The patient is a 64-year-old female referred to physical therapy following complications related to brain tumor removal.  The patient reports that on 10/24/08 she had a brain tumor removed and had left-sided weakness.  The patient was being seen in physical therapy from 11/05/08 to 11/14/08 then she began having complications.  The patient reports that she was admitted to Hospital on 12/05/08.  At that time, they found massive swelling on the brain and a second surgery was performed.  The patient then remained in acute rehab until she was discharged to home on 01/05/09.  The patient's husband, Al, is also present and he reports that during rehabilitation the patient did have a DVT in the left calf that has since been resolved.,PAST MEDICAL HISTORY: , Unremarkable.,MEDICATIONS:  ,Coumadin, Keppra, Decadron, and Glucophage.,SUBJECTIVE: , The patient reports that the pain is not an issue at this time.  The patient states that her primary concern is her left-sided weakness as related to her balance and her walking and her left arm weakness.,PATIENT GOAL:  ,To increase strength in her left leg for better balance and walking.,OBJECTIVE:,RANGE OF MOTION:  Bilateral lower extremities are within normal limits.,STRENGTH:  Bilateral lower extremities are grossly 5/5 with one repetition, except left hip reflexion 4+/5.,BALANCE:  The patient's balance was assessed with a Berg balance test.  The patient has got 46/56 points, which places her at moderate risk for falls.,GAIT:  The patient ambulates with contact guard assist.  The patient ambulates with a reciprocal gait pattern with good bilateral foot clearance.  However, the patient has been reports that with increased fatigue, left footdrop tends to occur.  A 6-minute walk test will be performed at the next visit due to time constraints.,ASSESSMENT: , The patient is a 64-year-old female referred to Physical Therapy status post brain surgery.  Examination indicates deficits in strength, balance, and ambulation.  The patient will benefit from skilled physical therapy to address these impairments.,TREATMENT PLAN: , The patient will be seen three times per week for 4 weeks and then reduce it to two times per week for 4 additional weeks.  Interventions include:,1.  Therapeutic exercise.,2.  Balance training.,3.  Gait training.,4.  Functional mobility training.,SHORT TERM GOAL TO BE COMPLETED IN 4 WEEKS:,1.  The patient is to tolerate 30 repetitions of all lower extremity exercises.,2.  The patient is to improve balance with a score of 50/56 points.,3.  The patient is to ambulate 1000 feet in a 6-minute walk test with standby assist.,LONG TERM GOAL TO BE ACHIEVED IN 8 WEEKS:,1.  The patient is to ambulate independently within her home and standby to general supervision within the community.,2.  Berg balance test to be 52/56.,3.  The patient is to ambulate a 6-minute walk test for 1500 feet independently including safe negotiation of corners and busy areas.,4.  The patient is to demonstrate safely stepping over and around objects without loss of balance.,Prognosis for the above-stated goals is good.  The above treatment plan has been discussed with the patient and her husband.  They are in agreement.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you with your physical therapy plan after your brain surgery. Let's talk about what you need to do and when to get help.\n\n### What's Happening\nYou had a brain tumor removed, and you had some weakness on the left side. You also had some swelling and a blood clot in your left leg. You've been in physical therapy since November and have been doing well. Now, you're working on getting stronger and better at walking.\n\n### What Medicines to Take\nYou're taking these medicines:\n- Coumadin (a blood thinner)\n- Keppra (to help with seizures)\n- Decadron (to reduce swelling)\n- Glucophage (to help with blood sugar)\n\n### How to Take Care of Yourself\n- You'll be in physical therapy three times a week for the first 4 weeks. Then, you'll go twice a week for the next 4 weeks.\n- You'll do exercises to help you move better and walk without feeling weak.\n- You'll practice balancing to help you walk safely.\n- You'll walk for 6 minutes, and we'll check how you do.\n\n### When to Get Help\n- If you feel pain, tell your therapist. They can help you with pain management.\n- If you have any problems with your leg or arm, let them know. They can help you with that too.\n- If you feel tired and have trouble walking, let them know. They can help you rest and get stronger.\n\n### Goals\n- In the first 4 weeks, you'll do 30 repetitions of exercises and improve your balance to 50 out of 56 points.\n- In the next 4 weeks, you'll walk 1000 feet in 6 minutes with help, and then try to walk 1500 feet without help.\n- You'll practice stepping over objects safely and walk around your home without losing balance.\n\nYou're doing great! Your therapist and your husband, Al, are working together to help you get better. If you have any questions or concerns, just ask. Your therapist is here to help you.",
+      "caregiver_checklist": "- Check Coumadin dosage and schedule with Al, as Coumadin is a blood thinner.\n- Watch for signs of bleeding or bruising, report to healthcare provider immediately.\n- Call if the patient experiences new or worsening weakness or balance issues.\n- Schedule a Berg balance test in 4 weeks to monitor balance improvement.\n- Check for signs of DVT recurrence, report any swelling or pain to healthcare provider.\n- Watch for signs of infection at the surgical site, report any redness or discharge.\n- Call if the patient experiences new or worsening pain or weakness.\n- Schedule a 6-minute walk test in 4 weeks to monitor walking improvement.\n- Check for signs of fatigue, encourage rest and report if symptoms persist.\n- Watch for signs of cognitive changes, report any confusion or memory issues.\n- Call if the patient experiences new or worsening balance or walking issues.\n- Schedule a follow-up appointment in 4 weeks to reassess progress and adjust treatment plan.",
+      "child_explanation": "You had a big bump in your head removed. Now you're getting help to move your legs better. Grown-ups and doctors are taking care of you. You're doing well, but you still need some extra help. Your legs are a bit weak, so you need to practice. It's like learning a new game. You'll get better with practice. Your arms and legs are getting stronger. You'll be able to walk better soon. Keep trying, you're doing great!"
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 41.77,
+      "caregiver_checklist": 24.38,
+      "child_explanation": 15.201,
+      "total": 81.373
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:23:20+00:00"
+  }
+}

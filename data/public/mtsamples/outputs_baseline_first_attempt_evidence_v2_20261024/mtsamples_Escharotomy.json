@@ -1,0 +1,200 @@
+{
+  "id": "mtsamples_Escharotomy",
+  "patient_summary": "We could not create a summary. Please ask your care team to go over your visit notes with you.",
+  "caregiver_checklist": [
+    "Check the patient's right upper extremity for any signs of bleeding or excessive swelling.",
+    "Watch for any changes in the patient's radial pulse or skin color.",
+    "Call the healthcare team if the patient's radial pulse becomes weak or if the skin color changes.",
+    "Schedule a follow-up appointment with the surgeon to monitor the wound healing.",
+    "Check the wound twice daily for any signs of infection or excessive exudate.",
+    "Watch for signs of compartment syndrome, such as severe pain, numbness, or changes in skin color.",
+    "Call the healthcare team if the patient experiences severe pain or if the skin color changes.",
+    "Schedule a dressing change and wound assessment with the healthcare team.",
+    "Check the wound for signs of infection, such as increased redness, warmth, or pus.",
+    "Watch for signs of dehydration, such as dry mucous membranes or sunken eyes.",
+    "Call the healthcare team if the patient shows signs of dehydration or if the wound shows signs of infection."
+  ],
+  "child_explanation": "You had a big burn on your arms and neck. Grown-ups and doctors are taking care of you. They made tiny cuts to let your arms breathe better. It's like when you have a tight bandage and need to open it up. The cuts help your arms get more blood and feel better. You'll be okay, you're in good hands.",
+  "entities": [
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1855,
+      "end": 1863
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 2104,
+      "end": 2112
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES:,  32% total body surface area burn to the bilateral upper extremities and neck and anterior thorax with impending compartment syndrome of the right upper extremity.,POSTOPERATIVE DIAGNOSES: , 32% total body surface area burn to the bilateral upper extremities and neck and anterior thorax with impending compartment syndrome of the right upper extremity.,PROCEDURES  PERFORMED:,1.  Lateral escharotomy of right upper arm burn eschar.,2.  Medial escharotomy of left upper extremity burns and eschar.,ANESTHESIA:,  Propofol and Versed.,INDICATIONS FOR PROCEDURE: , The patient is a 72-year-old gentleman who was involved in a propane explosion where he sustained significant burns to his bilateral upper extremities, neck, and thorax.  The patient was transferred from outside facility and was found to have significant burns with impending compartment syndrome of the right upper extremity.  The patient had a _____ between his left and right upper extremity and very tight compartment of his right upper extremity.  It is felt the patient would need an escharotomy of his right upper extremity to maintain perfusion to his right arm and hand.,DESCRIPTION OF PROCEDURE:,  After appropriate time out was performed indicating the correct procedure, correct patient, and all parties involved, the patient's right upper extremity was placed in anatomical position.  An electrocautery device was readied and used to incise making make an incision on the lateral aspect of the patient's right upper extremity.  Starting just below the right humeral head, an incision was made through the burn eschar down to underlying subcutaneous tissue.  The incision was carried from the right humeral head down to just below the antecubital fossa on the right upper extremity.  All dermal bridging was taken down and was opened without any excessive bleeding.  Next, a medial incision was made starting at the axilla down to just below the medial epicondyle of the right upper extremity.  Again, the incision was carried through the entire of the eschar down to underlying subcutaneous tissue.  All bleeding was made hemostatic with electrocautery and all dermal abrasions were taken down.  At the completion of the procedure, the patient had improved right distal radial pulse and his compartment was much softer.  Silvadene cream was placed within the escharotomy incision and wrapped in Kerlix.  The patient tolerated the procedure well, and there were no adverse events during or after the procedure.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're feeling pretty tired and sore after the surgery. The doctors and nurses are here to help you feel better. You're going to take some special medicines to help you feel better and sleep. Here's what you need to know:\n\n1. **Medicines to Take:**\n   - You'll be taking a liquid medicine called Dexamethasone. It helps with swelling and pain. You'll take this medicine three times a day, before meals, for 5 days.\n   - You'll also be taking another liquid called Acetaminophen. It helps with pain and fever. You'll take this medicine three times a day, after meals, for 5 days.\n   - Your doctor might also give you a shot of something called Lidocaine. This will help with any pain you feel. You'll get this shot once a day for 5 days.\n\n2. **When to Get Help:**\n   - If you have any bleeding from the incisions, tell the nurses right away. They will check it and make sure it stops.\n   - If you have any trouble breathing or if you feel very dizzy, call the nurses right away.\n   - If you have any of these symptoms, you should also call the nurses: fever higher than 100.4°F, redness or swelling around the incisions, or if you have a bad headache.\n\n3. **What Happened During the Surgery:**\n   - The doctors made small cuts in your skin to open up the burn areas. They did this on both sides of your arm and in your neck. They also made a cut in your arm to help the blood flow better.\n   - The doctors used a special tool to make the cuts. They took off the burned skin and opened up the wounds to help the skin heal better.\n   - After the cuts, they put a special cream called Silvadene on the wounds and wrapped them up with a bandage.\n\nRemember, you're in good hands. The doctors and nurses are here to help you feel better. If you have any questions or feel worried, let them know.",
+      "caregiver_checklist": "- Check the patient's right upper extremity for any signs of bleeding or excessive swelling.\n- Watch for any changes in the patient's radial pulse or skin color.\n- Call the healthcare team if the patient's radial pulse becomes weak or if the skin color changes.\n- Schedule a follow-up appointment with the surgeon to monitor the wound healing.\n- Check the wound twice daily for any signs of infection or excessive exudate.\n- Watch for signs of compartment syndrome, such as severe pain, numbness, or changes in skin color.\n- Call the healthcare team if the patient experiences severe pain or if the skin color changes.\n- Schedule a dressing change and wound assessment with the healthcare team.\n- Check the wound for signs of infection, such as increased redness, warmth, or pus.\n- Watch for signs of dehydration, such as dry mucous membranes or sunken eyes.\n- Call the healthcare team if the patient shows signs of dehydration or if the wound shows signs of infection.",
+      "child_explanation": "You had a big burn on your arms and neck. Grown-ups and doctors are taking care of you. They made tiny cuts to let your arms breathe better. It's like when you have a tight bandage and need to open it up. The cuts help your arms get more blood and feel better. You'll be okay, you're in good hands."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Escharotomy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Escharotomy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Escharotomy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Escharotomy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Escharotomy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Escharotomy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Escharotomy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Escharotomy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Escharotomy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": true,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 73.493,
+      "caregiver_checklist": 15.512,
+      "child_explanation": 8.55,
+      "total": 97.563
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T10:48:05+00:00"
+  }
+}

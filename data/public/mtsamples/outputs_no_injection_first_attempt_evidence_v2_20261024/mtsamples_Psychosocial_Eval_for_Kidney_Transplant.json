@@ -1,0 +1,199 @@
+{
+  "id": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant",
+  "patient_summary": "Hi there! I understand you're feeling a bit overwhelmed with all the information you've been given. Let me explain what's happening and what you need to do next.\n\nYou've been diagnosed with kidney problems. Your kidneys are not working as well as they should, and this has caused your blood to have too much waste in it. Your doctor has given you some medicines to help, but you've had trouble keeping up with the schedule. You're also thinking about having a kidney transplant, which is a big decision.\n\nHere's what you need to do:\n- Take your medicines every day as your doctor told you. If you can't keep up with the schedule, talk to your doctor about how you can make it easier.\n- Keep a close eye on your diet and what you eat. Your doctor will tell you more about this.\n- If you're feeling tired, try to get some rest. Your energy is good, but it's important to take care of yourself.\n- If you're feeling frustrated or confused, it's okay to ask your doctors for more information. They want you to understand everything.\n\nYou've been working full time and taking care of your family. It's important to keep doing that. If you're feeling stressed, you can try watching movies with your children. They're in good health, and spending time with them can help you feel better.\n\nIf you ever feel very sick or if your symptoms get worse, you should call your doctor right away. They can help you feel better.\n\nRemember, you're not alone. Your brother is close to you, and you have a supportive family. Keep talking to your doctors and asking questions. You're doing the best you can, and they're here to help you.",
+  "caregiver_checklist": [
+    "Check her blood work for creatinine levels and other relevant tests daily.",
+    "Watch for signs of fatigue, swelling, or shortness of breath daily.",
+    "Call Dr. B if she feels her current medications are not managing her symptoms daily.",
+    "Schedule a parathyroid scan with Dr. Xyz if her creatinine levels continue to rise daily.",
+    "Call Dr. Xyz if her creatinine levels reach 7.8 or higher daily.",
+    "Schedule a transplant evaluation with a transplant center if her creatinine levels remain at 7.4 daily.",
+    "Watch for signs of kidney failure such as nausea, vomiting, or changes in urine output daily.",
+    "Call Dr. Xyz if she experiences any of these signs daily.",
+    "Schedule a follow-up appointment with Dr. Xyz in 3 months daily.",
+    "Call Dr. Xyz if her energy levels decrease or she feels more fatigued daily.",
+    "Schedule a dialysis referral if her creatinine levels reach 8 or higher daily.",
+    "Call Dr. Xyz if she feels overwhelmed or helpless about her diagnosis and treatment daily."
+  ],
+  "child_explanation": "You had some problems with your kidneys a few years ago. Your doctors tried to help, but you were too busy. Now you're taking some medicine to feel better. You're still working and taking good care of yourself. Your doctors want to help you understand what's wrong, but it's hard. You're thinking about getting a new kidney, like changing a tire on a car. You're trying your best, and your family is here to support you.",
+  "entities": [
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 1869,
+      "end": 1874
+    }
+  ],
+  "regimens": [],
+  "source_text": "HISTORY OF PRESENT ILLNESS:,  In 2002, the patient had a blood test during her routine screening, which revealed anemia and an elevated creatinine.  Two weeks later she saw a nephrologist at ABCDE were she worked at that time.  An ultrasound revealed that she had Parenchymal disease in which tissue around the kidney is diseased.  No particular treatment was advised.  She was laid off 6 months later.  In 2004, she began working at The ABCD Hospital and began seeing Dr. A.  She was put on Procrit, but could not keep the stringent appointment scheduled for the injection because of her work.  She began seeing Dr. B and was put on Procrit and Renagel.  She was advised to go on dialysis, but she felt she did not have enough information to such a drastic step.  She saw an endocrinologist for some thyroid problem and her blood work showed that her creatinine was now at 7.  She was referred to Dr. Xyz who found after a parathyroid scan that she may have an adenoma.  Her creatinine is now 7.4.,TREATMENT AND IMPACT OF DISEASE:,  She is on several medications.  She is not on a renal diet yet.  Her energy is good and she is still working full time.,TRANSPLANT FIRST MENTIONED AS TREATMENT OPTION: , She has wanted to transplant ever since dialysis was first mentioned.,EMOTIONAL REACTION TO DIAGNOSIS AND TREATMENT COURSE:,  She is frustrated by the lack of information about what exactly has caused her renal failure and has had a real feeling of helplessness in her efforts to pursue this understanding.,OTHER SIGNIFICANT MEDICAL HISTORY/SURGERIES:,  She had a Bartholin cyst removed in 2002.,PSYCHIATRIC HISTORY:,  None.,COPING STRATEGIES:,  She used to exercise vigorously, but has stopped at this time.  She enjoys watching movies with her children.,COMPLIANCE:,  She feels she watches her diet and medication regimen very closely.  She said she communicates daily with Dr. Xyz,PAST AND PRESENT SMOKING:,  She began smoking 2 cigarettes a day when she was 22, but stopped after a year.,PAST AND PRESENT ALCOHOL USE:,  None.,PAST AND PRESENT DRUG USE:,  None.,LEGAL ISSUES:,  None.,TATTOOS:,  None.,MARITAL STATUS:  LENGTH OF THE TIME MARRIED:,  She has been married for 25 years.,AGE AND HEALTH OF SPOUSE:,  Xyz is 62 and in good health.,CHILDREN:,  Four, all are in good health.,FATHER:,  Father died in 2001, at the age of 62 of cardiac cancer.,MOTHER:,  Dolorous Massey is 63 and in good health.,SIBLINGS:,  Ben Doherty died in 1984 at the age of 26 in an automobile accident; Steven Doherty is 46 and is in good health.,PREVIOUS MARRIAGES AND DURATION OF EACH:,  None.,PERSONS LIVING IN HOUSEHOLD:,  Six.,RELATIONSHIP WITH FAMILY MEMBERS/IDENTIFIED PRIMARY SUPPORT SYSTEM:,  She is close to her brother.,HIGHEST LEVEL OF EDUCATION:,  She has 2 years of college at ABCD College.  She is a licensed LVN.,MILITARY SERVICE:,  None.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "daily"
+      ],
+      "caregiver_checklist": [
+        "daily"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hi there! I understand you're feeling a bit overwhelmed with all the information you've been given. Let me explain what's happening and what you need to do next.\n\nYou've been diagnosed with kidney problems. Your kidneys are not working as well as they should, and this has caused your blood to have too much waste in it. Your doctor has given you some medicines to help, but you've had trouble keeping up with the schedule. You're also thinking about having a kidney transplant, which is a big decision.\n\nHere's what you need to do:\n- Take your medicines as your doctor told you. If you can't keep up with the schedule, talk to your doctor about how you can make it easier.\n- Keep a close eye on your diet and what you eat. Your doctor will tell you more about this.\n- If you're feeling tired, try to get some rest. Your energy is good, but it's important to take care of yourself.\n- If you're feeling frustrated or confused, it's okay to ask your doctors for more information. They want you to understand everything.\n\nYou've been working full time and taking care of your family. It's important to keep doing that. If you're feeling stressed, you can try watching movies with your children. They're in good health, and spending time with them can help you feel better.\n\nIf you ever feel very sick or if your symptoms get worse, you should call your doctor right away. They can help you feel better.\n\nRemember, you're not alone. Your brother is close to you, and you have a supportive family. Keep talking to your doctors and asking questions. You're doing the best you can, and they're here to help you.",
+      "caregiver_checklist": "- Check her blood work for creatinine levels and other relevant tests.\n- Watch for signs of fatigue, swelling, or shortness of breath.\n- Call Dr. B if she feels her current medications are not managing her symptoms.\n- Schedule a parathyroid scan with Dr. Xyz if her creatinine levels continue to rise.\n- Call Dr. Xyz if her creatinine levels reach 7.8 or higher.\n- Schedule a transplant evaluation with a transplant center if her creatinine levels remain at 7.4.\n- Watch for signs of kidney failure such as nausea, vomiting, or changes in urine output.\n- Call Dr. Xyz if she experiences any of these signs.\n- Schedule a follow-up appointment with Dr. Xyz in 3 months.\n- Call Dr. Xyz if her energy levels decrease or she feels more fatigued.\n- Schedule a dialysis referral if her creatinine levels reach 8 or higher.\n- Call Dr. Xyz if she feels overwhelmed or helpless about her diagnosis and treatment.",
+      "child_explanation": "You had some problems with your kidneys a few years ago. Your doctors tried to help, but you were too busy. Now you're taking some medicine to feel better. You're still working and taking good care of yourself. Your doctors want to help you understand what's wrong, but it's hard. You're thinking about getting a new kidney, like changing a tire on a car. You're trying your best, and your family is here to support you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 52.472,
+      "caregiver_checklist": 32.672,
+      "child_explanation": 13.611,
+      "total": 98.779
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:48:33+00:00"
+  }
+}

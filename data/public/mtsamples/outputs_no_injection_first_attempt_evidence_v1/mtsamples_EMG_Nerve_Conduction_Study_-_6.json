@@ -1,0 +1,204 @@
+{
+  "id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+  "patient_summary": "Hello you, \n\nI understand you're feeling some pain in your back and leg. It sounds like you've been having this pain for about four months now. The pain is mostly on your right side and it feels worse when you move around. You also feel a bit weak in your right leg sometimes, especially when the pain is really bad.\n\nThe doctors did some tests to understand what's going on. They found that there's a problem with a part of your back called the L5-S1, which is causing some pain in your leg. This is called a radiculopathy, which means there's a problem with the nerve in your back.\n\nThe doctors gave you some tests to check how your legs are working. They found that your legs are working well, but there's some weakness in your right leg. They also found some extra activity in some of your muscles, which means they might not be working as well as they should.\n\nThe doctors told you that you have an acute right S1 radiculopathy. This means there's a problem with the nerve in your back that's causing your leg pain. They also checked your nerves and found no problems with your legs or feet.\n\nThe doctors will talk to you again soon to plan the best treatment for you. In the meantime, you should take the medicines they give you and rest when you feel the pain is really bad. If you feel your leg weakness gets worse, or if you have any other new symptoms like trouble going to the bathroom, you should call the doctors right away. \n\nTake care, you. I hope you feel better soon.",
+  "caregiver_checklist": [
+    "Check the patient’s pain level and note any changes.",
+    "Watch for signs of weakness or instability in the right leg.",
+    "Schedule a follow-up appointment with Dr. X in the next 2 weeks.",
+    "Call if the pain worsens or if new symptoms appear.",
+    "Monitor for any bowel or bladder changes.",
+    "Check the patient’s reflexes and note any changes.",
+    "Call if reflexes become absent or diminished.",
+    "Watch for any sensory changes in the right leg.",
+    "Call if sensory changes are noted.",
+    "Schedule a repeat MRI in 6 months if symptoms persist.",
+    "Call if symptoms do not improve or if new symptoms develop."
+  ],
+  "child_explanation": "You have a small ache in your back, like a sore spot. You're feeling it more when you move around. It's not in your leg, but it makes you feel a bit weak sometimes. Your doctors are taking good care of you. They're checking your back and legs to find out what's wrong. The grown-ups are using special tests to see how your nerves are working. It's okay to feel worried, but you're in good hands. They'll talk more about it soon.",
+  "entities": [
+    {
+      "text": "back pain",
+      "label": "SYMPTOM",
+      "start": 264,
+      "end": 273
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 279,
+      "end": 283
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 460,
+      "end": 464
+    }
+  ],
+  "regimens": [],
+  "source_text": "HISTORY:,  The patient is a 46-year-old right-handed gentleman with a past medical history of a left L5-S1 lumbar microdiskectomy in 1998 with complete resolution of left leg symptoms, who now presents with a four-month history of gradual onset of right-sided low back pain with pain radiating down into his buttock and posterior aspect of his right leg into the ankle.  Symptoms are worsened by any activity and relieved by rest.  He also feels that when the pain is very severe, he has some subtle right leg weakness.  No left leg symptoms.  No bowel or bladder changes.,On brief examination, full strength in both lower extremities.  No sensory abnormalities.  Deep tendon reflexes are 2+ and symmetric at the patellas and absent at both ankles.  Positive straight leg raising on the right.,MRI of the lumbosacral spine was personally reviewed and reveals a right paracentral disc at L5-S1 encroaching upon the right exiting S1 nerve root.,NERVE CONDUCTION STUDIES:,  Motor and sensory distal latencies, evoked response amplitudes, and conduction velocities are normal in the lower extremities.  The right common peroneal F-wave is minimally prolonged.  The right tibial H reflex is absent.,NEEDLE EMG:,  Needle EMG was performed on the right leg, left gastrocnemius medialis muscle, and right lumbosacral paraspinal muscles using a disposable concentric needle.  It revealed spontaneous activity in the right gastrocnemius medialis, gluteus maximus, and lower lumbosacral paraspinal muscles.  There was evidence of chronic denervation in right gastrocnemius medialis and gluteus maximus muscles.,IMPRESSION: , This electrical study is abnormal.  It reveals an acute right S1 radiculopathy.  There is no evidence for peripheral neuropathy or left or right L5 radiculopathy.,Results were discussed with the patient and he is scheduled to follow up with Dr. X in the near future.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello you, \n\nI understand you're feeling some pain in your back and leg. It sounds like you've been having this pain for about four months now. The pain is mostly on your right side and it feels worse when you move around. You also feel a bit weak in your right leg sometimes, especially when the pain is really bad.\n\nThe doctors did some tests to understand what's going on. They found that there's a problem with a part of your back called the L5-S1, which is causing some pain in your leg. This is called a radiculopathy, which means there's a problem with the nerve in your back.\n\nThe doctors gave you some tests to check how your legs are working. They found that your legs are working well, but there's some weakness in your right leg. They also found some extra activity in some of your muscles, which means they might not be working as well as they should.\n\nThe doctors told you that you have an acute right S1 radiculopathy. This means there's a problem with the nerve in your back that's causing your leg pain. They also checked your nerves and found no problems with your legs or feet.\n\nThe doctors will talk to you again soon to plan the best treatment for you. In the meantime, you should take the medicines they give you and rest when you feel the pain is really bad. If you feel your leg weakness gets worse, or if you have any other new symptoms like trouble going to the bathroom, you should call the doctors right away. \n\nTake care, you. I hope you feel better soon.",
+      "caregiver_checklist": "- Check the patient’s pain level and note any changes.\n- Watch for signs of weakness or instability in the right leg.\n- Schedule a follow-up appointment with Dr. X in the next 2 weeks.\n- Call if the pain worsens or if new symptoms appear.\n- Monitor for any bowel or bladder changes.\n- Check the patient’s reflexes and note any changes.\n- Call if reflexes become absent or diminished.\n- Watch for any sensory changes in the right leg.\n- Call if sensory changes are noted.\n- Schedule a repeat MRI in 6 months if symptoms persist.\n- Call if symptoms do not improve or if new symptoms develop.",
+      "child_explanation": "You have a small ache in your back, like a sore spot. You're feeling it more when you move around. It's not in your leg, but it makes you feel a bit weak sometimes. Your doctors are taking good care of you. They're checking your back and legs to find out what's wrong. The grown-ups are using special tests to see how your nerves are working. It's okay to feel worried, but you're in good hands. They'll talk more about it soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 27.587,
+      "caregiver_checklist": 13.251,
+      "child_explanation": 13.307,
+      "total": 54.204
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T16:31:29+00:00"
+  }
+}

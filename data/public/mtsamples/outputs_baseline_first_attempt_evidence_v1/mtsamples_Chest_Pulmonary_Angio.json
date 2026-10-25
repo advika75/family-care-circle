@@ -1,0 +1,196 @@
+{
+  "id": "mtsamples_Chest_Pulmonary_Angio",
+  "patient_summary": "Hello there! I'll explain what happened in the CT scan and what medicines you might need. Then I'll tell you when to call if you're not feeling well.\n\nFirst, the CT scan looked at your lungs and checked for any blockages. They used a special dye called Isovue-300 to take clear pictures. They found no blockages in your main or main right or left pulmonary arteries. But they did see some areas where the blood flow was limited, especially on the right side. They also saw a large mass on the right side of your chest, which is about as big as a dinner plate. This mass is very large and has not changed much since the last time they looked at you. \n\nThe doctors also saw a smaller mass just above the big one. They also saw a lot of fluid in your lungs, especially on the left side. This fluid is making it hard for you to breathe. They also saw many areas of your lungs that are filled with fluid and not working properly. \n\nThey also saw a small area in your liver that they're not sure about. They think it might be from cancer, but they need more tests to be sure. If they need more tests, they'll do an ultrasound. \n\nThe doctors also saw some changes in your ribs and your right clavicle (the bone in your shoulder). They think this might be from an old injury. \n\nFor now, they want you to take a medicine called Isovue-300. They'll give you 100 mL of it. You'll need to take this medicine once a day for a few days. \n\nIf you have any of these symptoms, you should call your doctor right away:\n- You have trouble breathing\n- You have a fever\n- You feel very tired\n- You have a cough that won't go away\n- You have pain in your chest or shoulder\n\nRemember, this is just a summary. Your doctor will explain everything in more detail. If you have any questions, please ask them.",
+  "caregiver_checklist": [
+    "Check for signs of fever or increased shortness of breath.",
+    "Monitor for new or worsening chest pain.",
+    "Watch for changes in the size or appearance of the chest wall mass.",
+    "Schedule follow-up CT scan in 3 months.",
+    "Call if there are new or worsening symptoms.",
+    "Check for any new or worsening pleural effusions.",
+    "Watch for any new or worsening lung consolidations.",
+    "Call if there is a change in the size or appearance of the liver lesion.",
+    "Schedule ultrasound of the right hepatic lobe if needed.",
+    "Call if there are any new or worsening signs of metastatic disease.",
+    "Check for any new or worsening signs of trauma to the right clavicle.",
+    "Other dosage: 100 mL"
+  ],
+  "child_explanation": "You had a CT scan done. It checked your lungs and chest. Doctors saw no clumps blocking your airways. But they found a big lump on your right side. It's like a giant balloon. Your lungs got a bit sick and filled with fluid. Doctors are taking good care of you. They'll look at your lungs more closely. You're in good hands.",
+  "entities": [
+    {
+      "text": "100 mL",
+      "label": "DOSAGE",
+      "start": 151,
+      "end": 157
+    }
+  ],
+  "regimens": [],
+  "source_text": "EXAM: , CTA chest pulmonary angio.,REASON FOR EXAM: , Evaluate for pulmonary embolism.,TECHNIQUE: , Postcontrast CT chest pulmonary embolism protocol, 100 mL of Isovue-300 contrast is utilized.,FINDINGS: , There are no filling defects in the main or main right or left pulmonary arteries.  No central embolism.  The proximal subsegmental pulmonary arteries are free of embolus, but the distal subsegmental and segmental arteries especially on the right are limited by extensive pulmonary parenchymal, findings would be discussed in more detail below.  There is no evidence of a central embolism.,As seen on the prior examination, there is a very large heterogeneous right chest wall mass, which measures at least 10 x 12 cm based on axial image #35.  Just superior to the mass is a second heterogeneous focus of neoplasm measuring about 5 x 3.3 cm.  Given the short interval time course from the prior exam, dated 01/23/09, this finding has not significantly changed.  However, there is considerable change in the appearance of the lung fields.  There are now bilateral pleural effusions, small on the right and moderate on the left with associated atelectasis.  There are also extensive right lung consolidations, all new or increased significantly from the prior examination.  Again identified is a somewhat spiculated region of increased density at the right lung apex, which may indicate fibrosis or scarring, but the possibility of primary or metastatic disease cannot be excluded.  There is no pneumothorax in the interval.,On the mediastinal windows, there is presumed subcarinal adenopathy, with one lymph node measuring roughly 12 mm suggestive of metastatic disease here.  There is aortic root and arch and descending thoracic aortic calcification.  There are scattered regions of soft plaque intermixed with this.  The heart is not enlarged.  The left axilla is intact in regards to adenopathy.  The inferior thyroid appears unremarkable.,Limited assessment of the upper abdomen discloses a region of lower density within the right hepatic lobe, this finding is indeterminate, and if there is need for additional imaging in regards to hepatic metastatic disease, follow up ultrasound.  Spleen, adrenal glands, and upper kidneys appear unremarkable.  Visualized portions of the pancreas are unremarkable.,There is extensive rib destruction in the region of the chest wall mass.  There are changes suggesting prior trauma to the right clavicle.,IMPRESSION:,1.  Again demonstrated is a large right chest wall mass.,2.  No central embolus, distal subsegmental and segmental pulmonary artery branches are in part obscured by the pulmonary parenchymal findings, are not well assessed.,3.  New bilateral pleural effusions and extensive increasing consolidations and infiltrates in the right lung.,4.  See above regarding other findings.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "100 mL"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened in the CT scan and what medicines you might need. Then I'll tell you when to call if you're not feeling well.\n\nFirst, the CT scan looked at your lungs and checked for any blockages. They used a special dye called Isovue-300 to take clear pictures. They found no blockages in your main or main right or left pulmonary arteries. But they did see some areas where the blood flow was limited, especially on the right side. They also saw a large mass on the right side of your chest, which is about as big as a dinner plate. This mass is very large and has not changed much since the last time they looked at you. \n\nThe doctors also saw a smaller mass just above the big one. They also saw a lot of fluid in your lungs, especially on the left side. This fluid is making it hard for you to breathe. They also saw many areas of your lungs that are filled with fluid and not working properly. \n\nThey also saw a small area in your liver that they're not sure about. They think it might be from cancer, but they need more tests to be sure. If they need more tests, they'll do an ultrasound. \n\nThe doctors also saw some changes in your ribs and your right clavicle (the bone in your shoulder). They think this might be from an old injury. \n\nFor now, they want you to take a medicine called Isovue-300. They'll give you 100 mL of it. You'll need to take this medicine once a day for a few days. \n\nIf you have any of these symptoms, you should call your doctor right away:\n- You have trouble breathing\n- You have a fever\n- You feel very tired\n- You have a cough that won't go away\n- You have pain in your chest or shoulder\n\nRemember, this is just a summary. Your doctor will explain everything in more detail. If you have any questions, please ask them.",
+      "caregiver_checklist": "- Check for signs of fever or increased shortness of breath.\n- Monitor for new or worsening chest pain.\n- Watch for changes in the size or appearance of the chest wall mass.\n- Schedule follow-up CT scan in 3 months.\n- Call if there are new or worsening symptoms.\n- Check for any new or worsening pleural effusions.\n- Watch for any new or worsening lung consolidations.\n- Call if there is a change in the size or appearance of the liver lesion.\n- Schedule ultrasound of the right hepatic lobe if needed.\n- Call if there are any new or worsening signs of metastatic disease.\n- Check for any new or worsening signs of trauma to the right clavicle.",
+      "child_explanation": "You had a CT scan done. It checked your lungs and chest. Doctors saw no clumps blocking your airways. But they found a big lump on your right side. It's like a giant balloon. Your lungs got a bit sick and filled with fluid. Doctors are taking good care of you. They'll look at your lungs more closely. You're in good hands."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Chest_Pulmonary_Angio",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Chest_Pulmonary_Angio.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Chest_Pulmonary_Angio.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Chest_Pulmonary_Angio",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Chest_Pulmonary_Angio.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Chest_Pulmonary_Angio.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Chest_Pulmonary_Angio",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Chest_Pulmonary_Angio.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Chest_Pulmonary_Angio.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 28.096,
+      "caregiver_checklist": 21.796,
+      "child_explanation": 8.498,
+      "total": 58.448
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T14:12:20+00:00"
+  }
+}

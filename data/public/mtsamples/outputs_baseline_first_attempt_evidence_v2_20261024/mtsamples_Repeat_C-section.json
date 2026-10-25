@@ -1,0 +1,213 @@
+{
+  "id": "mtsamples_Repeat_C-section",
+  "patient_summary": "Hello there! I'm here to explain what happened to you and what you need to do next. You had a cesarean section and a procedure to make sure you can't have more babies. This is called a tubal ligation. Here's what you need to know:\n\n1. **Health Problems**: You have high blood pressure, which is a condition that makes your heart work harder. You also have a history of having had babies before, which can sometimes cause problems.\n\n2. **Symptoms**: You had some bleeding during the surgery. The doctors said you lost about 800 mL of blood. That's a lot of blood, but the doctors did a good job and you didn't have any problems with bleeding.\n\n3. **Medicines**: You don't need any medicines right now. The doctors will check on you in the recovery room to make sure you're okay.\n\n4. **What to Do**: The doctors will take you to the recovery room after the surgery. They will check your blood pressure and make sure you're feeling okay. You'll stay there until you're fully awake and your doctor says it's safe for you to go home.\n\n5. **When to Get Help**: If you have any pain, trouble breathing, or feel dizzy, you should tell the nurses right away. They will help you and make sure you're safe.\n\n6. **Next Steps**: After you're home, you'll need to rest and take it easy for a few days. You might feel tired or have some pain, but that's normal. If you have any questions or feel worried, you can always talk to your doctor or nurse.\n\nTake care of yourself and get plenty of rest. You'll be okay!",
+  "caregiver_checklist": [
+    "Give the patient a blood pressure monitor and check their blood pressure every hour for the first 24 hours.",
+    "Check for signs of bleeding such as blood in the urine or stool, or a drop in blood pressure.",
+    "Watch for signs of infection like fever, redness, or increased pain at the incision site.",
+    "Call the doctor if the patient develops severe abdominal pain, fever over 101°F, or if the incision site becomes red, swollen, or warm.",
+    "Schedule a follow-up appointment with the surgeon in 2 weeks to check the healing of the incisions and the fallopian tubes.",
+    "Call the doctor if the patient experiences heavy bleeding, severe pain, or if the baby shows signs of distress.",
+    "Schedule a postpartum check-up with the obstetrician to monitor the patient's recovery and overall health.",
+    "Check the patient's blood pressure and urine output daily for the first week after the procedure.",
+    "Watch for signs of infection like fever, redness, or increased pain at the incision site.",
+    "Call the doctor if the patient experiences heavy bleeding, severe pain, or if the baby shows signs of distress.",
+    "Schedule a follow-up appointment to monitor the fallopian tubes and overall recovery, including checking for 800 mL of blood loss."
+  ],
+  "child_explanation": "You had a big baby growing in your tummy. The doctors and grown-ups took care of you. They made a small cut to open you up. Then they took out the baby boy. They also closed you up and put a special bandage on your tummy. The doctors are keeping a close eye on you. You're safe now.",
+  "entities": [
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 160,
+      "end": 172
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 413,
+      "end": 425
+    },
+    {
+      "text": "800 mL",
+      "label": "DOSAGE",
+      "start": 628,
+      "end": 634
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1224,
+      "end": 1232
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES:,1.  Intrauterine pregnancy at 39 weeks.,2.  History of previous cesarean section x2.  The patient desires a repeat section.,3.  Chronic hypertension.,4.  Undesired future fertility.  The patient desires permanent sterilization.,POSTOPERATIVE DIAGNOSES:,1.  Intrauterine pregnancy at 39 weeks.,2.  History of previous cesarean section x2.  The patient desires a repeat section.,3.  Chronic hypertension.,4.  Undesired future fertility.  The patient desires permanent sterilization.,PROCEDURE PERFORMED:  ,Repeat cesarean section and bilateral tubal ligation.,ANESTHESIA: , Spinal.,ESTIMATED BLOOD LOSS:,  800 mL.,COMPLICATIONS:  ,None.,FINDINGS: , Male infant in cephalic presentation with anteflexed head, Apgars were 2 at 1 minute and 9 at 5 minutes, 9 at 10 minutes, and weight 7 pounds 8 ounces.  Normal uterus, tubes, and ovaries were noted.,INDICATIONS:  ,The patient is a 31-year-old gravida 5, para 4 female, who presented to repeat cesarean section at term.  The patient has a history of 2 previous cesarean sections and she desires a repeat cesarean section, additionally she desires permanent fertilization.  The procedure was described to the patient in detail including possible risks of bleeding, infection, injury to surrounding organs, and the possible need for further surgery and informed consent was obtained.,PROCEDURE NOTE: , The patient was taken to the operating room where spinal anesthesia was administered without difficulty.  The patient was prepped and draped in the usual sterile fashion in the dorsal supine position with a leftward tilt.  A Pfannenstiel skin incision was made with the scalpel and carried through to the underlying layer of fascia using the Bovie.  The fascia was incised in the midline and extended laterally using Mayo scissors.  Kocher clamps were used to elevate the superior aspect of the fascial incision, which was elevated, and the underlying rectus muscles were dissected off bluntly and using Mayo scissors.  Attention was then turned to the inferior aspect of the fascial incision, which in similar fashion was grasped with Kocher clamps, elevated, and the underlying rectus muscles were dissected off bluntly and using the Bovie.  The rectus muscles were dissected in the midline.,The peritoneum was identified and entered using Metzenbaum scissors; this incision was extended superiorly and inferiorly with good visualization of the bladder.  The bladder blade was inserted.  The vesicouterine peritoneum was identified and entered sharply using Metzenbaum scissors.  This incision was extended laterally and the bladder flap was created digitally.  The bladder blade was reinserted.  The lower uterine segment was incised in a transverse fashion using the scalpel and extended using bandage scissors as well as manual traction.,Clear fluid was noted.  The infant was subsequently delivered using a Kelly vacuum due to anteflexed head and difficulty in delivering the infant's head without the Kelly.  The nose and mouth were bulb suctioned.  The cord was clamped and cut.  The infant was subsequently handed to the awaiting nursery nurse.  The placenta was delivered spontaneously intact with a three-vessel cord noted.  The uterus was exteriorized and cleared of all clots and debris.  The uterine incision was repaired in 2 layers using 0 chromic sutures.  Hemostasis was visualized.  Attention was turned to the right fallopian tube, which was grasped with Babcock clamp using a modified Pomeroy method, a 2 cm of segment of tube ligated x2, transected and specimen was sent to pathology.  Attention was then turned to the left fallopian tube, which was grasped with Babcock clamp again using a modified Pomeroy method, a 2 cm segment of tube was ligated x2 and transected.  Hemostasis was visualized bilaterally.  The uterus was returned to the abdomen, both fallopian tubes were visualized and were noted to be hemostatic.  The uterine incision was reexamined and it was noted to be hemostatic.  The pelvis was copiously irrigated.  The rectus muscles were reapproximated in the midline using 3-0 Vicryl.  The fascia was closed with 0 Vicryl suture, the subcutaneous layer was closed with 3-0 plain gut, and the skin was closed with staples.  Sponge, lap, and instrument counts were correct x2.  The patient was stable at the completion of the procedure and was subsequently transferred to the recovery room in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "800 mL"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to explain what happened to you and what you need to do next. You had a cesarean section and a procedure to make sure you can't have more babies. This is called a tubal ligation. Here's what you need to know:\n\n1. **Health Problems**: You have high blood pressure, which is a condition that makes your heart work harder. You also have a history of having had babies before, which can sometimes cause problems.\n\n2. **Symptoms**: You had some bleeding during the surgery. The doctors said you lost about 800 mL of blood. That's a lot of blood, but the doctors did a good job and you didn't have any problems with bleeding.\n\n3. **Medicines**: You don't need any medicines right now. The doctors will check on you in the recovery room to make sure you're okay.\n\n4. **What to Do**: The doctors will take you to the recovery room after the surgery. They will check your blood pressure and make sure you're feeling okay. You'll stay there until you're fully awake and your doctor says it's safe for you to go home.\n\n5. **When to Get Help**: If you have any pain, trouble breathing, or feel dizzy, you should tell the nurses right away. They will help you and make sure you're safe.\n\n6. **Next Steps**: After you're home, you'll need to rest and take it easy for a few days. You might feel tired or have some pain, but that's normal. If you have any questions or feel worried, you can always talk to your doctor or nurse.\n\nTake care of yourself and get plenty of rest. You'll be okay!",
+      "caregiver_checklist": "- Give the patient a blood pressure monitor and check their blood pressure every hour for the first 24 hours.\n- Check for signs of bleeding such as blood in the urine or stool, or a drop in blood pressure.\n- Watch for signs of infection like fever, redness, or increased pain at the incision site.\n- Call the doctor if the patient develops severe abdominal pain, fever over 101°F, or if the incision site becomes red, swollen, or warm.\n- Schedule a follow-up appointment with the surgeon in 2 weeks to check the healing of the incisions and the fallopian tubes.\n- Call the doctor if the patient experiences heavy bleeding, severe pain, or if the baby shows signs of distress.\n- Schedule a postpartum check-up with the obstetrician to monitor the patient's recovery and overall health.\n- Check the patient's blood pressure and urine output daily for the first week after the procedure.\n- Watch for signs of infection like fever, redness, or increased pain at the incision site.\n- Call the doctor if the patient experiences heavy bleeding, severe pain, or if the baby shows signs of distress.",
+      "child_explanation": "You had a big baby growing in your tummy. The doctors and grown-ups took care of you. They made a small cut to open you up. Then they took out the baby boy. They also closed you up and put a special bandage on your tummy. The doctors are keeping a close eye on you. You're safe now."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Repeat_C-section",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Repeat_C-section.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Repeat_C-section.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Repeat_C-section",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Repeat_C-section.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Repeat_C-section.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Repeat_C-section",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Repeat_C-section.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Repeat_C-section.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 24.862,
+      "caregiver_checklist": 33.486,
+      "child_explanation": 10.131,
+      "total": 68.488
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T11:53:07+00:00"
+  }
+}

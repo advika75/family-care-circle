@@ -1,0 +1,199 @@
+{
+  "id": "mtsamples_Five_views_of_the_right_knee",
+  "patient_summary": "Hello there, you've had a knee surgery and are still experiencing some pain. The doctor did an X-ray of your right knee to make sure everything is okay. The X-ray showed that there are no broken bones or dislocated joints. There are also some lines on the bones that show your growth has slowed down a bit. There's also a small bump on your kneecap that might be a little higher than normal. \n\nThe doctor didn't find any medicines you need to take right now. You should follow the instructions your nurse gives you for any bandages or ice packs. If you have any pain, you can take the pain medicine your doctor prescribed. If you have any swelling, you can also use the ice packs. \n\nIf you have any of these symptoms, you should call your doctor or nurse:\n- If you have any more pain than you were told to expect\n- If you have any swelling or redness\n- If you have any fever\n- If you have any trouble moving your leg\n\nRemember to follow your doctor's instructions and keep all your appointments. If you have any questions, you can always ask your nurse or doctor.",
+  "caregiver_checklist": [
+    "Check the patient's leg for any signs of swelling or deformity.",
+    "Watch for increased pain or difficulty moving the leg.",
+    "Monitor for any new or worsening symptoms.",
+    "Call the healthcare provider if there is a change in the patient's condition.",
+    "Schedule a follow-up appointment in 6 weeks for further evaluation.",
+    "Check the patient's leg for any signs of redness or warmth.",
+    "Watch for any signs of infection, such as fever or increased swelling.",
+    "Call the healthcare provider if there are signs of infection.",
+    "Schedule a bone scan if growth arrest lines are concerning.",
+    "Check the patient's leg for any signs of decreased range of motion.",
+    "Watch for any signs of nerve compression or numbness.",
+    "Call the healthcare provider if there are signs of nerve compression."
+  ],
+  "child_explanation": "You had an X-ray of your knee. The doctors looked carefully. There's no broken bone. But they see some lines on your leg. It's like your leg is growing a little slower. There's also a high kneecap. The grown-ups are watching you closely. You're safe, you're loved.",
+  "entities": [
+    {
+      "text": "Pain",
+      "label": "SYMPTOM",
+      "start": 49,
+      "end": 53
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 125,
+      "end": 129
+    }
+  ],
+  "regimens": [],
+  "source_text": "EXAM: , Five views of the right knee.,HISTORY: , Pain.  The patient is status-post surgery, he could not straighten his leg, pain in the back of the knee.,TECHNIQUE:,  Five views of the right knee were evaluated.  There are no priors for comparison.,FINDINGS: , Five views of the right knee were evaluated and they reveal there is no evidence of any displaced fractures, dislocations, or subluxations.  There are multiple areas of growth arrest lines seen in the distal aspect of the femur and proximal aspect of the tibia.  There is also appearance of a high-riding patella suggestive of patella alta.,IMPRESSION:,1.  No evidence of any displaced fractures, dislocations, or subluxations.,2.  Growth arrest lines seen in the distal femur and proximal tibia.,3.  Questionable appearance of a slightly high-riding patella, possibly suggesting patella alta.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you've had a knee surgery and are still experiencing some pain. The doctor did an X-ray of your right knee to make sure everything is okay. The X-ray showed that there are no broken bones or dislocated joints. There are also some lines on the bones that show your growth has slowed down a bit. There's also a small bump on your kneecap that might be a little higher than normal. \n\nThe doctor didn't find any medicines you need to take right now. You should follow the instructions your nurse gives you for any bandages or ice packs. If you have any pain, you can take the pain medicine your doctor prescribed. If you have any swelling, you can also use the ice packs. \n\nIf you have any of these symptoms, you should call your doctor or nurse:\n- If you have any more pain than you were told to expect\n- If you have any swelling or redness\n- If you have any fever\n- If you have any trouble moving your leg\n\nRemember to follow your doctor's instructions and keep all your appointments. If you have any questions, you can always ask your nurse or doctor.",
+      "caregiver_checklist": "- Check the patient's leg for any signs of swelling or deformity.\n- Watch for increased pain or difficulty moving the leg.\n- Monitor for any new or worsening symptoms.\n- Call the healthcare provider if there is a change in the patient's condition.\n- Schedule a follow-up appointment in 6 weeks for further evaluation.\n- Check the patient's leg for any signs of redness or warmth.\n- Watch for any signs of infection, such as fever or increased swelling.\n- Call the healthcare provider if there are signs of infection.\n- Schedule a bone scan if growth arrest lines are concerning.\n- Check the patient's leg for any signs of decreased range of motion.\n- Watch for any signs of nerve compression or numbness.\n- Call the healthcare provider if there are signs of nerve compression.",
+      "child_explanation": "You had an X-ray of your knee. The doctors looked carefully. There's no broken bone. But they see some lines on your leg. It's like your leg is growing a little slower. There's also a high kneecap. The grown-ups are watching you closely. You're safe, you're loved."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Five_views_of_the_right_knee",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Five_views_of_the_right_knee.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Five_views_of_the_right_knee.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Five_views_of_the_right_knee",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Five_views_of_the_right_knee.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Five_views_of_the_right_knee.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Five_views_of_the_right_knee",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Five_views_of_the_right_knee.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Five_views_of_the_right_knee.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 14.5,
+      "caregiver_checklist": 10.537,
+      "child_explanation": 5.923,
+      "total": 30.967
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:46:16+00:00"
+  }
+}

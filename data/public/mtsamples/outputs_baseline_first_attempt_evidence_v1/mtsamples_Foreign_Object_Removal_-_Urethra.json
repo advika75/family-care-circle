@@ -1,0 +1,248 @@
+{
+  "id": "mtsamples_Foreign_Object_Removal_-_Urethra",
+  "patient_summary": "Hello there! I'm here to explain what happened to you and what you need to do next. You had a procedure called a cystoscopy, which means a doctor looked inside your bladder and urethra. They also put some special seeds in your body to treat your cancer. Here's what you need to know:\n\n1. You were given a medicine called Levaquin before the operation. It's a strong antibiotic to help prevent infection. You took 500 mg of it.\n\n2. The operation went well. You had a prostate size of about 15 g in the OR and about 22 g about two months ago. They put 38 seeds in your body. 10 of them were in the outer part, and 4 were in the inner part. They also put a few more seeds in the right side because that's where your cancer was.\n\n3. The seeds were put in using a special machine called a transrectal ultrasound. This helped them see where they were putting the seeds.\n\n4. After the seeds were put in, they did a test called cystoscopy. This is when they looked inside your urethra to make sure everything was okay. They found a seed in your urethra and pulled it out using a special tool. There were no further seeds visualized in the bladder. The bladder appeared normal.\n\n5. You will have a Foley catheter in for a few days. This is a tube that helps keep your bladder open and lets you urinate easily.\n\n6. You might feel some pain or bleeding. This is normal after the operation. You can take some pain medicine if you need it. If you have any bleeding, you should tell your doctor.\n\n7. You might feel some burning or pain when you urinate. This is also normal. If you have any of these symptoms, you should call your doctor.\n\n8. You should get help right away if you have any of these symptoms:\n   - Severe pain\n   - Heavy bleeding\n   - Fever\n   - Chills\n   - Trouble urinating\n\nRemember, you can always ask your doctor or nurse any questions you have. They are there to help you. You're doing great!",
+  "caregiver_checklist": [
+    "Give Levaquin 500 mg IV 12 hours before the scheduled surgery.",
+    "Check Foley catheter for proper placement and patency.",
+    "Watch for signs of infection such as fever, redness, or increased pain.",
+    "Call if there is any bleeding or pain that is not controlled by the current dose.",
+    "Schedule follow-up appointment with the radiation oncologist within 2 weeks of the procedure.",
+    "Watch for signs of urinary retention or dysuria.",
+    "Call if there are any signs of infection or bleeding.",
+    "Schedule a cystoscopy 1 month after the procedure to check for any complications.",
+    "Monitor for signs of incontinence or erectile dysfunction.",
+    "Call if there are any new symptoms or if the current symptoms worsen.",
+    "Schedule a prostate size measurement 2 months after the procedure.",
+    "Confirm with the care team: 15 g (dosage)",
+    "Confirm with the care team: 22 g (dosage)"
+  ],
+  "child_explanation": "You had a little check-up to make sure everything is okay. You had a tiny team of helpers put in you to help with the cancer. The doctors and grown-ups took good care of you. You're feeling better now. You'll need to wait a few days to get your next visit.",
+  "entities": [
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 257,
+      "end": 263
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 831,
+      "end": 839
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 852,
+      "end": 856
+    },
+    {
+      "text": "dysuria",
+      "label": "SYMPTOM",
+      "start": 927,
+      "end": 934
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 944,
+      "end": 948
+    },
+    {
+      "text": "15 g",
+      "label": "DOSAGE",
+      "start": 1272,
+      "end": 1276
+    },
+    {
+      "text": "22 g",
+      "label": "DOSAGE",
+      "start": 1297,
+      "end": 1301
+    },
+    {
+      "text": "15 g",
+      "label": "DOSAGE",
+      "start": 1643,
+      "end": 1647
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Prostate cancer.,POSTOPERATIVE DIAGNOSIS: , Prostate cancer.,OPERATION: , Cystoscopy and removal of foreign objects from the urethra.,BRACHYTHERAPY:,  Iodine 125.,ANESTHESIA: , General endotracheal.  The patient was given Levaquin 500 mg IV preoperatively.,Total seeds were 59.  Activity of 0.439, 30 seeds in the periphery with 10 needles and total of 8 seeds at the anterior of the fold, 4 needles.  Please note that the total needles placed on the top were actually 38 seeds and 22 seeds were returned back.,BRIEF HISTORY: , This is a 72-year-old male who presented to us with elevated PSA and prostate biopsy with Gleason 6 cancer on the right apex.  Options such as watchful waiting, brachytherapy, radical prostatectomy, cryotherapy, and external beam radiation were discussed.  Risk of anesthesia, bleeding, infection, pain, MI, DVT, PE, incontinence, erectile dysfunction, urethral stricture, dysuria, burning pain, hematuria, future procedures, and failure of the procedure were all discussed.  The patient understood all the risks, benefits, and options and wanted to proceed with the procedure.  The patient wanted to wait until he came back from his summer vacations, so a one dose of Zoladex was given.  Prostate size measured about 15 g in the OR and about 22 g about two months ago.  Consent was obtained.,DETAILS OF THE OPERATION:  ,The patient was brought to the OR and anesthesia was applied.  The patient was placed in dorsal lithotomy position.  The patient had a Foley catheter placed sterilely.  The scrotum was taped up using Ioban.  Transrectal ultrasound was done.  The prostate was measured 15 g.  Multiple images were taken.  A volume study was done.  This was given to the physicist, Dr. X was present who is radiation oncologist who helped with implanting of the seeds.  Total of 38 seeds were placed in the patient with 10 peripheral needles and then 4 internal needles.  Total of 30 seeds were placed in the periphery and total of 8 seeds were placed in the inside.  They were done directly under transrectal ultrasound vision.  The seeds were placed directly under ultrasound guidance.  There was a nice distribution of the seeds.  A couple of more seeds were placed on the right side due to the location of the prostate cancer.  Subsequently at the end of the procedure, fluoroscopy was done.  Couple of images were obtained.  Cystoscopy was done at the end of the procedure where a seed was visualized right in the urethra, which was grasped and pulled out using grasper, which was difficult to get the seed off of the spacers, which was actually pulled out.  There were no further seeds visualized in the bladder.  The bladder appeared normal.  At the end of the procedure, a Foley catheter was kept in place of 18 French and the patient was brought to recovery in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "15 g",
+        "22 g"
+      ],
+      "caregiver_checklist": [
+        "15 g",
+        "22 g"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to explain what happened to you and what you need to do next. You had a procedure called a cystoscopy, which means a doctor looked inside your bladder and urethra. They also put some special seeds in your body to treat your cancer. Here's what you need to know:\n\n1. You were given a medicine called Levaquin before the operation. It's a strong antibiotic to help prevent infection. You took 500 mg of it.\n\n2. The operation went well. They put 38 seeds in your body. 10 of them were in the outer part, and 4 were in the inner part. They also put a few more seeds in the right side because that's where your cancer was.\n\n3. The seeds were put in using a special machine called a transrectal ultrasound. This helped them see where they were putting the seeds.\n\n4. After the seeds were put in, they did a test called cystoscopy. This is when they looked inside your urethra to make sure everything was okay. They found a seed in your urethra and pulled it out using a special tool.\n\n5. You will have a Foley catheter in for a few days. This is a tube that helps keep your bladder open and lets you urinate easily.\n\n6. You might feel some pain or bleeding. This is normal after the operation. You can take some pain medicine if you need it. If you have any bleeding, you should tell your doctor.\n\n7. You might feel some burning or pain when you urinate. This is also normal. If you have any of these symptoms, you should call your doctor.\n\n8. You should get help right away if you have any of these symptoms:\n   - Severe pain\n   - Heavy bleeding\n   - Fever\n   - Chills\n   - Trouble urinating\n\nRemember, you can always ask your doctor or nurse any questions you have. They are there to help you. You're doing great!",
+      "caregiver_checklist": "- Give Levaquin 500 mg IV 12 hours before the scheduled surgery.\n- Check Foley catheter for proper placement and patency.\n- Watch for signs of infection such as fever, redness, or increased pain.\n- Call if there is any bleeding or pain that is not controlled by the current dose.\n- Schedule follow-up appointment with the radiation oncologist within 2 weeks of the procedure.\n- Watch for signs of urinary retention or dysuria.\n- Call if there are any signs of infection or bleeding.\n- Schedule a cystoscopy 1 month after the procedure to check for any complications.\n- Monitor for signs of incontinence or erectile dysfunction.\n- Call if there are any new symptoms or if the current symptoms worsen.\n- Schedule a prostate size measurement 2 months after the procedure.",
+      "child_explanation": "You had a little check-up to make sure everything is okay. You had a tiny team of helpers put in you to help with the cancer. The doctors and grown-ups took good care of you. You're feeling better now. You'll need to wait a few days to get your next visit."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Foreign_Object_Removal_-_Urethra",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Foreign_Object_Removal_-_Urethra",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Foreign_Object_Removal_-_Urethra",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Foreign_Object_Removal_-_Urethra.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "15 g",
+        "22 g"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 57.703,
+      "caregiver_checklist": 34.737,
+      "child_explanation": 8.905,
+      "total": 101.37
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T14:30:57+00:00"
+  }
+}

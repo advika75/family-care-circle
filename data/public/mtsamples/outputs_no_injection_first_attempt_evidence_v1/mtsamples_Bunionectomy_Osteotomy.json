@@ -1,0 +1,211 @@
+{
+  "id": "mtsamples_Bunionectomy_Osteotomy",
+  "patient_summary": "Hello there! I'll explain what's happening and what you need to do next. You had a surgery on your right foot to fix a painful bunion. The doctor did a lot of work to straighten your toe and fix the bone. Here's what you need to do:\n\n1. **Medicines to take:**\n   - You will take Vicodin ES (a pain medicine) every 4 to 6 hours as needed for pain. You can take it up to 2 times a day.\n   - You will also take Naprosyn (a medicine to help with swelling) twice a day, each time with 500 mg.\n   - You will also take dexamethasone phosphate (a steroid to reduce swelling and inflammation) one time in the joint.\n\n2. **When to get help:**\n   - Call your doctor if you have any problems or if you feel worse. You were given emergency contact numbers to call.\n   - You will be walking with crutches for a few days. You should only put some weight on your foot.\n   - You will need to follow up with your doctor, Dr. X, to make sure everything is healing well.\n\n3. **What to expect:**\n   - You might feel some pain and swelling after the surgery. This is normal. The pain medicine will help.\n   - You might need to rest and elevate your foot to help with swelling.\n   - You will need to keep the bandages and dressing clean and dry. Don't soak your foot in water until your doctor says it's okay.\n\nRemember, you're in good hands. Your doctor and the nurses will help you through this. If you have any questions or concerns, just ask. You're doing great!",
+  "caregiver_checklist": [
+    "Ask the care team to review the treatment plan and medicines with you."
+  ],
+  "child_explanation": "You had a special doctor look at your foot. They found it was a bit swollen and a bit bent. The doctor is going to help your foot feel better. They will use some medicine to make you sleep a little. Then they will make a tiny cut in your foot. They will take out some parts that are hurting and fix your foot so it can move better. You will need to be careful with your foot for a few days. The grown-ups and doctors are taking good care of you.",
+  "entities": [
+    {
+      "text": "dexamethasone",
+      "label": "MEDICATION",
+      "start": 5166,
+      "end": 5179
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 5907,
+      "end": 5911
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 5942,
+      "end": 5948
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "dexamethasone",
+      "dosages": [
+        "500 mg"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "PREOPERATIVE DIAGNOSES:,1.  Hallux valgus, right foot.,2.  Hallux interphalangeus, right foot.,POSTOPERATIVE DIAGNOSES:,1.  Hallux valgus, right foot.,2.  Hallux interphalangeus, right foot.,PROCEDURES PERFORMED:,1.  Bunionectomy with distal first metatarsal osteotomy and internal screw fixation, right foot.,2.  Akin bunionectomy, right toe with internal wire fixation.,ANESTHESIA: , TIVA/local.,HISTORY:  ,This 51-year-old female presents to ABCD preoperative holding area after keeping herself NPO since mid night for a surgery on her painful bunion through her right foot.  The patient has a history of gradual onset of a painful bunion over the past several years.  She has tried conservative methods such as wide shoes, accommodative padding on an outpatient basis with Dr. X all of which have provided inadequate relief.  At this time, she desires attempted surgical correction.  The risks versus benefits of the procedure have been discussed with the patient in detail by Dr. X and the consent is available on the chart for review.,PROCEDURE IN DETAIL: , After IV was established by the Department of Anesthesia, the patient was taken to the operating room via cart and placed on the operative table in supine position and a safety strap was placed across her waist for her protection.  Copious amounts of Webril were applied about the right ankle and a pneumatic ankle tourniquet was placed over the Webril.,After adequate IV sedation was administered by the Department of Anesthesia, a total of 15 cc of 1:1 mixture of 0.5% Marcaine plain and 1% Lidocaine plain was injected into the foot in a standard Mayo block fashion.  The foot was elevated off the table.  Esmarch bandages were used to exsanguinate the right foot.  The pneumatic ankle tourniquet was elevated to 250 mmHg.  The foot was lowered in the operative field and the sterile stockinet was reflected.  A sterile Betadine was wiped away with a wet and dry sponge and one toothpick was used to test anesthesia, which was found to be adequate.  Attention was directed to the first metatarsophalangeal joint, which was found to be contracted, laterally deviated, and had decreased range of motion.  A #10 blade was used to make a 4 cm dorsolinear incision.  A #15 blade was used to deepen the incision through the subcutaneous layer.  All superficial subcutaneous vessels were ligated with electrocautery.  Next, a linear capsular incision was made down the bone with a #15 blade.  The capsule was elevated medially and laterally off the metatarsal head and the metatarsal head was delivered into the wound.  A hypertrophic medial eminence was resected with a sagittal saw taking care not to strike the head.  The medial plantar aspect of the metatarsal head had some erosive changes and eburnation.  Next, a 0.45 inch Kirschner wire was placed with some access guide slightly plantar flexing the metatarsal taking care not to shorten it.  A sagittal saw was used to make a long-arm Austin osteotomy in the usual fashion.  Standard lateral release was also performed as well as a lateral capsulotomy freeing the fibular sesamoid complex.,The capital head was shifted laterally and impacted on the residual metatarsal head.  Nice correction was achieved and excellent bone to bone contact was achieved.  The bone stock was slightly decreased, but adequate.  Next, a 0.45 inch Kirschner wire was used to temporarily fixate the metatarsal capital fragment.  A 2.7 x 18 mm Synthes cortical screw was thrown using standard AO technique.  Excellent rigid fixation was achieved.  A second 2.0 x 80 mm Synthes fully threaded cortical screw was also thrown using standard AO technique at the proximal aspect of the metatarsal head.  Again, an excellent rigid fixation was obtained and the screws were tight.  The temporary fixation was removed.  A medial overhanging bone was resected with a sagittal saw.  The foot was loaded and the hallux was found to have an interphalangeus deformity present.,A sagittal saw was used to make a proximal cut in approximately 1 cm dorsal to the base of the proximal phalanx, leaving a lateral intact cortical hinge.  A distal cut parallel with the nail base was performed and a standard proximal Akin osteotomy was done.,After the wedge bone was removed, the saw blade was reinserted and used to tether the osteotomy with counter-pressure used to close down the osteotomy.  A #15 drill blade was used to drill two converging holes on the medial aspect of the bone.  A #28 gauge monofilament wire was inserted loop to loop and pulled through the bone.  The monofilament wire was twisted down and tapped into the distal drill hole.  The foot was loaded again and the toe had an excellent cosmetic straight appearance and the range of motion of the first metatarsophalangeal joint was then improved.  Next, reciprocating rasps were used to smooth all bony surfaces.  Copious amounts of sterile saline was used to flush the joint.  Next, a #3-0 Vicryl was used to reapproximate the capsular periosteal tissue layer.  Next, #4-0 Vicryl was used to close the subcutaneous layer.  #5-0 Vicryl was used to the close the subcuticular layer in a running fashion.  Next, 1 cc of dexamethasone phosphate was then instilled in the joint.  The Steri-Strips were applied followed by standard postoperative dressing consisting of Owen silk, 4 x 4s, Kling, Kerlix, and Coban.  The pneumatic ankle tourniquet was released and immediate hyperemic flush was noted to the digits.  The patient tolerated the above anesthesia and procedure without complications.  She was transported via cart to the Postanesthesia Care Unit with vital signs stable and vascular status intact to the right foot.  She is to be partial weightbearing with crutches.  She is to follow with Dr. X.  She was given emergency contact numbers and instructions to call if problems arise.  She was given prescription for Vicodin ES #25 one p.o. q.4-6h. p.r.n. pain and Naprosyn one p.o. b.i.d.  500 mg.  She was discharged in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "dexamethasone"
+      ],
+      "caregiver_checklist": [
+        "dexamethasone",
+        "500 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what's happening and what you need to do next. You had a surgery on your right foot to fix a painful bunion. The doctor did a lot of work to straighten your toe and fix the bone. Here's what you need to do:\n\n1. **Medicines to take:**\n   - You will take Vicodin ES (a pain medicine) every 4 to 6 hours as needed for pain. You can take it up to 2 times a day.\n   - You will also take Naprosyn (a medicine to help with swelling) twice a day, each time with 500 mg.\n\n2. **When to get help:**\n   - Call your doctor if you have any problems or if you feel worse. You were given emergency contact numbers to call.\n   - You will be walking with crutches for a few days. You should only put some weight on your foot.\n   - You will need to follow up with your doctor, Dr. X, to make sure everything is healing well.\n\n3. **What to expect:**\n   - You might feel some pain and swelling after the surgery. This is normal. The pain medicine will help.\n   - You might need to rest and elevate your foot to help with swelling.\n   - You will need to keep the bandages and dressing clean and dry. Don't soak your foot in water until your doctor says it's okay.\n\nRemember, you're in good hands. Your doctor and the nurses will help you through this. If you have any questions or concerns, just ask. You're doing great!",
+      "caregiver_checklist": "- Give the patient 25 Vicodin ES tablets as prescribed, one tablet every 4-6 hours as needed for pain.\n- Check the patient’s pain levels every 4 hours and record them.\n- Watch for signs of infection such as increased redness, swelling, warmth, or pus.\n- Call the doctor if the patient experiences severe pain, numbness, or weakness.\n- Schedule a follow-up appointment with Dr. X in 2 weeks.\n- Watch for signs of complications like persistent pain, swelling, or deformity.\n- Call the doctor if the patient notices any unusual symptoms.\n- Schedule a physical therapy appointment to start the patient’s rehabilitation.",
+      "child_explanation": "You had a special doctor look at your foot. They found it was a bit swollen and a bit bent. The doctor is going to help your foot feel better. They will use some medicine to make you sleep a little. Then they will make a tiny cut in your foot. They will take out some parts that are hurting and fix your foot so it can move better. You will need to be careful with your foot for a few days. The grown-ups and doctors are taking good care of you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Bunionectomy_Osteotomy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Bunionectomy_Osteotomy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Bunionectomy_Osteotomy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Bunionectomy_Osteotomy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Bunionectomy_Osteotomy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Bunionectomy_Osteotomy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Bunionectomy_Osteotomy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Bunionectomy_Osteotomy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Bunionectomy_Osteotomy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 59.791,
+      "caregiver_checklist": 42.859,
+      "child_explanation": 17.035,
+      "total": 119.704
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T16:12:06+00:00"
+  }
+}

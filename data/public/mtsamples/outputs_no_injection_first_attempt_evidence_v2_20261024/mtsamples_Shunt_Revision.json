@@ -1,0 +1,196 @@
+{
+  "id": "mtsamples_Shunt_Revision",
+  "patient_summary": "Hello there! I'll explain what happened and what you need to do next. It's okay to feel a bit tired or sore after the operation. Here's what you need to know:\n\n1. **What Happened**: You had a special operation to fix a problem with your brain. A doctor used a tiny tube to help your brain fluids move better. They also put in new tubes and a special valve to help keep everything working smoothly.\n\n2. **Medicines**: You will need to take some medicines to help you feel better. The doctor will give you a list of the medicines and how often you need to take them. Make sure to take them exactly as instructed. If you forget, just take it as soon as you remember.\n\n3. **When to Get Help**: If you have any of these symptoms, you should call your doctor or go to the hospital right away:\n   - Severe headache\n   - Nausea or vomiting\n   - Confusion or trouble thinking\n   - Weakness or trouble moving\n   - Seizures\n\n4. **What to Do**: Follow your doctor's instructions carefully. Take your medicines as directed. Rest when you feel tired. If you have any questions, don't hesitate to ask your doctor or nurse. They are there to help you.\n\nRemember, you are not alone. Your family and friends are here to support you. You will be okay, and you will be back to your normal self soon.",
+  "caregiver_checklist": [
+    "Check the patient's vital signs every 4 hours, including temperature, heart rate, respiratory rate, and blood pressure.",
+    "Watch for signs of infection such as redness, swelling, or fever. Call the healthcare team if any of these signs appear.",
+    "Schedule a follow-up appointment in 2 weeks for a postoperative check-up.",
+    "Call the healthcare team if the patient experiences severe headaches, nausea, or vomiting.",
+    "Monitor for signs of neurological changes such as weakness, confusion, or seizures. Call the healthcare team if any of these signs occur.",
+    "Schedule a repeat MRI in 3 months to assess the healing of the ventricles.",
+    "Watch for signs of shunt malfunction such as headache, vomiting, or fever. Call the healthcare team if any of these signs appear.",
+    "Schedule a visit to the neurology clinic in 6 months for a comprehensive review of the patient's condition."
+  ],
+  "child_explanation": "You had a special operation today. You were very still, and the grown-ups gave you medicine to help you sleep. They shaved your head and made small cuts to see inside. They took out old parts and put in new ones. Tiny helpers will now move the water in your brain. You're in good hands, and you'll feel better soon.",
+  "entities": [
+    {
+      "text": "Headaches",
+      "label": "SYMPTOM",
+      "start": 125,
+      "end": 134
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 1257,
+      "end": 1267
+    }
+  ],
+  "regimens": [],
+  "source_text": "TITLE OF OPERATION:,  Bilateral endoscopic proximal shunt revision and a distal shunt revision.,INDICATIONS FOR OPERATION:,  Headaches, full subtemporal site.,PREOPERATIVE DIAGNOSIS: , Slit ventricle syndrome.,POSTOPERATIVE DIAGNOSIS: , Slit ventricle syndrome.,FINDINGS:,  Coaptation of ventricles against proximal end of ventricular catheter.,ANESTHESIA: , General endotracheal tube anesthesia.,DEVICES: , A Codman Hakim programmable valve with Portnoy ventricular catheter, a 0/20 proGAV valve with a shunt assist of 20 cm dual right-angled connector, and a flushing reservoir.,BRIEF NARRATIVE OF OPERATIVE PROCEDURE:,  After satisfactory general endotracheal tube anesthesia was administered, the patient was positioned on the operating table in the prone position with the head held on a soft foam padding.  The occipital area was shaven bilaterally and then the areas of the prior scalp incisions were infiltrated with 0.25% Marcaine with 1:200,000 epinephrine after routine prepping and draping.  Both U-shaped scalp incisions were opened exposing both the left and the right ventricular catheters as well as the old low pressure reservoir, which might have been leading to the coaptation of the ventricles.  The patient also had a right subtemporal depression, which was full preoperatively.  The entire old apparatus was dissected out.  We then cut both the ventricular catheters and secured them with sutures so that __________ could be inserted.  They were both inspected.  No definite debris were seen.  After removing the ventricular catheters, the old tracts were inspected and we could see where there was coaptation of the ventricles against the ventricular catheter.  On the right side, we elected to insert the Portnoy ventricular catheter and on the left a new Bactiseal catheter was inserted underneath the corpus callosum in a different location.  The old valve was dissected out and the proGAV valve with a 2-0 shunt assist was inserted and secured with a 2-0 Ethibond suture.  The proGAV valve was then connected to a Bactiseal distal tubing, which was looped in a cephalad way and then curved towards the left burr hole site and then the Portnoy catheter on the right was secured with a right-angled sleeve and then interposed between it and the left burr hole site with a flushing reservoir.  All connections secured with 2-0 Ethibond suture and a small piece of Bactiseal tubing between the flushing reservoir and the connector, which secured the left Bactiseal tubing to the two other Bactiseal tubings one being the distal Bactiseal tubing going towards the proGAV valve, which was set to an opening pressure of 8 and the other one being the Bactiseal tubing, which was going towards the flushing reservoir.,All the wounds were irrigated out with bacitracin and then closed in a routine manner using Vicryl for the deep layers and Monocryl for the skin, followed by Mastisol and Steri-Strips.  The patient tolerated the procedure well without complications.  CSF was not sent off.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened and what you need to do next. It's okay to feel a bit tired or sore after the operation. Here's what you need to know:\n\n1. **What Happened**: You had a special operation to fix a problem with your brain. A doctor used a tiny tube to help your brain fluids move better. They also put in new tubes and a special valve to help keep everything working smoothly.\n\n2. **Medicines**: You will need to take some medicines to help you feel better. The doctor will give you a list of the medicines and how often you need to take them. Make sure to take them exactly as instructed. If you forget, just take it as soon as you remember.\n\n3. **When to Get Help**: If you have any of these symptoms, you should call your doctor or go to the hospital right away:\n   - Severe headache\n   - Nausea or vomiting\n   - Confusion or trouble thinking\n   - Weakness or trouble moving\n   - Seizures\n\n4. **What to Do**: Follow your doctor's instructions carefully. Take your medicines as directed. Rest when you feel tired. If you have any questions, don't hesitate to ask your doctor or nurse. They are there to help you.\n\nRemember, you are not alone. Your family and friends are here to support you. You will be okay, and you will be back to your normal self soon.",
+      "caregiver_checklist": "- Give the patient a dose of 20 mg of acetaminophen every 6 hours for pain, as needed.\n- Check the patient's vital signs every 4 hours, including temperature, heart rate, respiratory rate, and blood pressure.\n- Watch for signs of infection such as redness, swelling, or fever. Call the healthcare team if any of these signs appear.\n- Schedule a follow-up appointment in 2 weeks for a postoperative check-up.\n- Call the healthcare team if the patient experiences severe headaches, nausea, or vomiting.\n- Monitor for signs of neurological changes such as weakness, confusion, or seizures. Call the healthcare team if any of these signs occur.\n- Schedule a repeat MRI in 3 months to assess the healing of the ventricles.\n- Watch for signs of shunt malfunction such as headache, vomiting, or fever. Call the healthcare team if any of these signs appear.\n- Schedule a visit to the neurology clinic in 6 months for a comprehensive review of the patient's condition.",
+      "child_explanation": "You had a special operation today. You were very still, and the grown-ups gave you medicine to help you sleep. They shaved your head and made small cuts to see inside. They took out old parts and put in new ones. Tiny helpers will now move the water in your brain. You're in good hands, and you'll feel better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Shunt_Revision",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Shunt_Revision.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Shunt_Revision.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Shunt_Revision",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Shunt_Revision.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Shunt_Revision.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Shunt_Revision",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Shunt_Revision.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Shunt_Revision.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 23.585,
+      "caregiver_checklist": 29.098,
+      "child_explanation": 9.437,
+      "total": 62.128
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:56:40+00:00"
+  }
+}

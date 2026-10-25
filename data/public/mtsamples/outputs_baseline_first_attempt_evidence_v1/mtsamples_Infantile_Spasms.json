@@ -1,0 +1,280 @@
+{
+  "id": "mtsamples_Infantile_Spasms",
+  "patient_summary": "Hello there! I'm here to help you understand what's happening with you and what you need to do. Let me explain it in a simple way.\n\nYou're a 10-day-old baby girl. You've been having jerky movements in your arms and legs for about 1 minute each time. These movements started when you were born and have happened 6 times since then. Your mommy doesn't see you do anything special during these movements, like arching your back or rolling your eyes.\n\nYou've been eating well and are breast-feeding. You're getting about 15 to 20 minutes of breast milk every 2 to 3 hours. You're also having 8 wet diapers and 6 to 7 dirty-yellow bowel movements each day.\n\nYour mommy noticed that you have some upper airway congestion, but you haven't had any vomiting or diarrhea. She also doesn't see any relationship between the movements and your feeds. You haven't had any rashes or other signs of illness.\n\nYour mommy had you checked at the hospital after you were born. You were a little smaller than average at 8 pounds 11 ounces, and you were born vaginally without any complications. She didn't have any diabetes or high blood pressure during her pregnancy. She didn't smoke or drink alcohol during her pregnancy, but she did have a history of genital warts that were removed 20 years ago.\n\nYour mommy and the doctors noticed that your temperature was a little low at 97.5 degrees Fahrenheit. You were jaundiced after birth and received special lights to help. You stayed in the hospital for about 3 and a half days.\n\nYour mommy and the family are all sick with colds, coughs, and runny noses right now. She doesn't have any recent travel history or smoke exposures.\n\nYour mommy doesn't have any known allergies or take any medicines. You don't have any past surgeries.\n\nYour mommy doesn't have any sexually transmitted diseases, but she does have a history of genital warts that were removed a long time ago.\n\nYou haven't been given any medicines yet, but your doctors will decide what to give you based on your symptoms and how you're doing.\n\nIf you have any of these symptoms:\n- Fever\n- Congestion\n- Vomiting\n- Diarrhea\n- Rashes\n- Cough\n- Runny nose\n- Any other new symptoms\n\nYou should tell your mommy or the doctors right away. They will check you and decide what to",
+  "caregiver_checklist": [
+    "Check the patient's temperature and record it.",
+    "Watch for any changes in the frequency or duration of the jerking movements.",
+    "Monitor for any signs of increased fussiness or irritability.",
+    "Call the healthcare provider if the jerking movements increase or become more frequent.",
+    "Schedule a follow-up appointment in 10 days.",
+    "Check the patient's diaper output and hydration status every 2 to 3 hours.",
+    "Watch for any signs of dehydration or worsening congestion.",
+    "Call if the patient shows signs of apnea or cyanosis.",
+    "Schedule a blood test for jaundice if it persists.",
+    "Call if the patient shows signs of infection or fever.",
+    "Schedule a hearing test if the patient has not had one yet.",
+    "Watch for any signs of respiratory distress or difficulty feeding."
+  ],
+  "child_explanation": "You had some jerky movements in your arms and legs. It's like your body is playing a game, but you can't control it. Your doctors and grown-ups are taking care of you. They think it might be a little extra tiredness, but they want to check to make sure everything is okay. You're still eating well and sleeping through it. Your body is just being a bit funny right now.",
+  "entities": [
+    {
+      "text": "10-day",
+      "label": "DURATION",
+      "start": 87,
+      "end": 93
+    },
+    {
+      "text": "every 2 to 3 hours",
+      "label": "FREQUENCY",
+      "start": 692,
+      "end": 710
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 827,
+      "end": 832
+    },
+    {
+      "text": "congestion",
+      "label": "SYMPTOM",
+      "start": 949,
+      "end": 959
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 998,
+      "end": 1006
+    },
+    {
+      "text": "diarrhea",
+      "label": "SYMPTOM",
+      "start": 1010,
+      "end": 1018
+    },
+    {
+      "text": "rashes",
+      "label": "SYMPTOM",
+      "start": 1167,
+      "end": 1173
+    },
+    {
+      "text": "diabetes",
+      "label": "CONDITION",
+      "start": 1576,
+      "end": 1584
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 1588,
+      "end": 1600
+    },
+    {
+      "text": "urinary tract infections",
+      "label": "CONDITION",
+      "start": 1825,
+      "end": 1849
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 1873,
+      "end": 1878
+    },
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 2716,
+      "end": 2721
+    },
+    {
+      "text": "runny nose",
+      "label": "SYMPTOM",
+      "start": 2723,
+      "end": 2733
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 3137,
+      "end": 3149
+    },
+    {
+      "text": "diabetes",
+      "label": "CONDITION",
+      "start": 3154,
+      "end": 3162
+    }
+  ],
+  "regimens": [],
+  "source_text": "CHIEF COMPLAINT:,  Arm and leg jerking.,HISTORY OF PRESENT ILLNESS:  ,The patient is a 10-day-old Caucasian female here for approximately 1 minute bilateral arm and leg jerks, which started at day of life 1 and have occurred 6 total times since then.  Mom denies any apnea, perioral cyanosis, or color changes.  These movements are without any back arching.  They mainly occur during sleep, so mom is unaware of any eye rolling.  Mom is able to wake the patient up during this periods and stop the patient's extremity movements.,Otherwise, this patient has been active, breast-feeding well, although she falls asleep at the breast.  She is currently taking in 15 to 20 minutes of breast milk every 2 to 3 hours.  She is having increased diapers up to 8 wet and 6 to 7 dirty-yellow stools per day.,REVIEW OF SYSTEMS:,  Negative fever, negative fussiness, tracks with her eyes, some sneezing and hiccups.  This patient has developed some upper airway congestion in the past day.  She has not had any vomiting or diarrhea.  Per mom, she does not spit up, and mom is also unable to notice any relationship between these movements and feeds.  This patient has not had any rashes.  Mom was notified by the nurses at birth that her temperature may be low of approximately 97.5 degrees Fahrenheit.  Otherwise, the above history of present illness and other review of systems negative.,BIRTH/PAST MEDICAL HISTORY: , The patient was an 8 pound 11 ounce baby, ex-41-weeker born via vaginal delivery without vacuum assist or forceps.  There were no complications during pregnancy such as diabetes or hypertension.  Prenatal care started at approximately 3 weeks, and mom maintained all visits.  She also denies any smoking, alcohol, or drug use during the pregnancy.  Mom was GBS status positive, but denies any other infections such as urinary tract infections.  She did not have any fever during labor and received inadequate intrapartum antibiotics prophylaxis.  After delivery, this patient did not receive antibiotics secondary to \"borderline labs.\"  She was jaundiced after birth and received photo treatments.  Her discharge bilirubin level was approximately 11.  Mom and child stayed in the hospital for approximately 3-1/2 days.,Mom denies any history of sexually transmitted disease in her or dad.  She specifically denies any blistering, herpetic genital lesions.  She does have a history though of human papillomavirus warts (vaginal), removed 20 years ago.,PAST SURGICAL HISTORY:,  Negative.,ALLERGIES: , No known drug allergies.,MEDICATIONS: , None.,SOCIAL HISTORY: , At home live mom, dad, and 18-, 16-, 14-, 12-year-old brothers, and a 3-year-old sister.  All the residents at home are sick currently with cold, cough, runny nose, except for mom.  At home also live 2 dogs and 2 outside cats.  Mom denies any recent travel history, especially during the recent holidays and no smoke exposures.,FAMILY HISTORY:,  Dad is with a stepdaughter with seizures starting at 14 years old, on medications currently.  The patient's 16-year-old brother has incessant nonsustained ventricular tachycardia.  The maternal grandmother is notable for hypertension and diabetes.  There are no other children in the family who see a specialist or no child death less than 1 year of age.,PHYSICAL EXAMINATION:\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "every 2 to 3 hours"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you understand what's happening with you and what you need to do. Let me explain it in a simple way.\n\nYou're a 10-day-old baby girl. You've been having jerky movements in your arms and legs for about 1 minute each time. These movements started when you were born and have happened 6 times since then. Your mommy doesn't see you do anything special during these movements, like arching your back or rolling your eyes.\n\nYou've been eating well and are breast-feeding. You're getting about 15 to 20 minutes of breast milk every 2 to 3 hours. You're also having 8 wet diapers and 6 to 7 dirty-yellow bowel movements each day.\n\nYour mommy noticed that you have some upper airway congestion, but you haven't had any vomiting or diarrhea. She also doesn't see any relationship between the movements and your feeds. You haven't had any rashes or other signs of illness.\n\nYour mommy had you checked at the hospital after you were born. You were a little smaller than average at 8 pounds 11 ounces, and you were born vaginally without any complications. She didn't have any diabetes or high blood pressure during her pregnancy. She didn't smoke or drink alcohol during her pregnancy, but she did have a history of genital warts that were removed 20 years ago.\n\nYour mommy and the doctors noticed that your temperature was a little low at 97.5 degrees Fahrenheit. You were jaundiced after birth and received special lights to help. You stayed in the hospital for about 3 and a half days.\n\nYour mommy and the family are all sick with colds, coughs, and runny noses right now. She doesn't have any recent travel history or smoke exposures.\n\nYour mommy doesn't have any known allergies or take any medicines. You don't have any past surgeries.\n\nYour mommy doesn't have any sexually transmitted diseases, but she does have a history of genital warts that were removed a long time ago.\n\nYou haven't been given any medicines yet, but your doctors will decide what to give you based on your symptoms and how you're doing.\n\nIf you have any of these symptoms:\n- Fever\n- Congestion\n- Vomiting\n- Diarrhea\n- Rashes\n- Cough\n- Runny nose\n- Any other new symptoms\n\nYou should tell your mommy or the doctors right away. They will check you and decide what to",
+      "caregiver_checklist": "- Check the patient's temperature and record it.\n- Watch for any changes in the frequency or duration of the jerking movements.\n- Monitor for any signs of increased fussiness or irritability.\n- Call the healthcare provider if the jerking movements increase or become more frequent.\n- Schedule a follow-up appointment in 10 days.\n- Check the patient's diaper output and hydration status.\n- Watch for any signs of dehydration or worsening congestion.\n- Call if the patient shows signs of apnea or cyanosis.\n- Schedule a blood test for jaundice if it persists.\n- Call if the patient shows signs of infection or fever.\n- Schedule a hearing test if the patient has not had one yet.\n- Watch for any signs of respiratory distress or difficulty feeding.",
+      "child_explanation": "You had some jerky movements in your arms and legs. It's like your body is playing a game, but you can't control it. Your doctors and grown-ups are taking care of you. They think it might be a little extra tiredness, but they want to check to make sure everything is okay. You're still eating well and sleeping through it. Your body is just being a bit funny right now."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Infantile_Spasms",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Infantile_Spasms.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Infantile_Spasms.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Infantile_Spasms",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Infantile_Spasms.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Infantile_Spasms.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Infantile_Spasms",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Infantile_Spasms.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Infantile_Spasms.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": true,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        true
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 37.334,
+      "caregiver_checklist": 22.907,
+      "child_explanation": 10.774,
+      "total": 71.044
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T14:46:49+00:00"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "id": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair",
+  "patient_summary": "Hello there! I'll explain what's happening and what you need to do next. You had a surgery to fix some problems with your eyes and eyebrows. The doctors found that your eyelids were too long and your eyebrows were too low, which was causing you to have trouble seeing in certain areas. This made you feel uncomfortable and made your vision blurry.\n\nThe doctors fixed this by doing a special eye surgery. They took out some extra skin and tissue from your eyelids and eyebrows. They also made the skin on your eyelids a bit tighter so your eyes can move better.\n\nHere's what you need to do:\n- Take the medicines your doctor gave you. They will help your eyes heal.\n- Keep your head up and don't bend over too much for a few days.\n- Don't rub or touch your eyes for a while. Your doctor will tell you when you can start touching them again.\n- Keep the ice packs on your eyelids for a few days. Your doctor will show you how to do this.\n- Your doctor will give you instructions on when to come back for a check-up. If you have any pain or swelling, or if your vision gets worse, you should call your doctor right away.\n\nHere are the specific dosages you need to follow:\n- Take 4 mL of the Lidocaine with epinephrine mixture to each upper lid. This is 3 to 4 mL total.\n- Take 6 mL of the Marcaine mixture to the brow region. This is 5 to 6 mL total.\n\nRemember, you're doing great! Your doctors and nurses are here to help you. If you have any questions or feel worried, don't hesitate to ask.",
+  "caregiver_checklist": [
+    "Check the patient's vital signs at home.",
+    "Watch for signs of infection such as redness, swelling, or increased pain.",
+    "Call the doctor if there is any sign of infection.",
+    "Schedule a follow-up appointment within 1 week.",
+    "Monitor for any changes in vision or visual field loss.",
+    "Check for any bruising or swelling on the eyelids.",
+    "Call the doctor if there is any bruising or swelling that increases.",
+    "Schedule a follow-up appointment within 1 month.",
+    "Watch for any numbness or changes in sensation around the eyes.",
+    "Call the doctor if there are any changes in sensation or numbness.",
+    "Schedule a follow-up appointment within 3 months.",
+    "Monitor for any changes in the appearance of the eyelids or brow.",
+    "Call the doctor if there are any changes in the appearance or function of the eyelids or brow.",
+    "Schedule a follow-up appointment within 6 months.",
+    "Ensure the patient takes the prescribed 4 mL of 2% Lidocaine with epinephrine and 0.5% Marcaine mixture to each upper lid.",
+    "Ensure the patient takes the prescribed 6 mL of local anesthetic to the brow region along the entire length.",
+    "Monitor for any changes in the appearance or function of the eyelids or brow.",
+    "Call the doctor if there are any changes in the appearance or function of the eyelids or brow."
+  ],
+  "child_explanation": "You had a little surgery today, sweetie. The doctors and grown-ups are taking care of you. They fixed your eyelids and eyebrows to help you see better. Tiny helpers went to work inside your eyes to make things better. You'll feel a bit sleepy after, but you'll be okay. Your eyes will be a bit sore for a few days, but you'll be fine. Your family and doctors will check on you often. You're in good hands, you'll see!",
+  "entities": [
+    {
+      "text": "4 mL",
+      "label": "DOSAGE",
+      "start": 1353,
+      "end": 1357
+    },
+    {
+      "text": "6 mL",
+      "label": "DOSAGE",
+      "start": 1442,
+      "end": 1446
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DX:, Dermatochalasis, mechanical ptosis, brow ptosis.,POSTOPERATIVE DX:, Same,PROCEDURE:,: Upper lid blepharoplasty and direct brow lift,ANESTHESIA:, Local with sedation,INDICATIONS FOR SURGERY: , In the preoperative evaluation the patient was found to have visually significant and symptomatic dermatochalasis and brow ptosis causing mechanical ptosis and visual field obstruction.  Visual field testing showed *% superior hemifield loss on the right, and *% superior hemifield loss on the left.  These field losses resolved with upper eyelid taping which simulates the expected surgical correction.  Photodocumentation also showed the upper eyelids resting on the upper eyelashes, as well as a decrease in the effective superior marginal reflex distance.  The risks, benefits, limitations, alternatives, and expected improvement in symptoms and visual field loss were discussed in preoperative evaluation.,DESCRIPTION OF PROCEDURE:, On the day of surgery, the surgical site and procedure were verified by the physician with the patient.  An informed consent was signed and witnessed.  EMLA cream was applied to the eyelids and eyebrow region for 10 minutes to provide skin anesthesia.  Two drops of topical proparacaine eye drops were placed on the ocular surface.  The skin was cleaned with alcohol prep pads.  The patient received 3 to 4 mL of 2% Lidocaine with epinephrine and 0.5% Marcaine mixture to each upper lid.  5 to 6 mL of local were also given to the brow region along the entire length.  Pressure was applied over each site for 5 minutes.  The patient was then prepped and draped in the normal sterile fashion for oculoplastic surgery.,The desired amount of redundant brow tissue to be excised was carefully marked with a surgical marking pen on each side.  The contour of the outline was created to provide a greater temporal lift.  Care was taken to preserve a natural contour to the brow shape consistent with the patient’s desired features.  Using a #15 blade, the initial incision was placed just inside the superior most row of brow hairs, in parallel with the follicle growth orientation.  The incision extended in a nasal to temporal fashion with the nasal portion incision being carried down to muscle and becoming progressively shallower toward the tail of the incision line.  The dimensions of the redundant tissue measured * horizontally and * vertically.  The redundant tissue was removed sharply with Westcott scissors.  Hemostasis was maintained with hand held cautery and/or electrocautery.  The closure was carried out in multiple layers.  The deepest muscular/subcutaneous tissue was closed with 4-0 transparent nylon in a horizontal mattress fashion.  The intermediate layer was closed with 5-0 Vicryl similarly.  The skin was closed with 6-0 nylon in a running lock fashion.  Iced saline gauze pads were placed over the incision sites.  This completed the brow repair portion of the case.,Using a surgical marking pen, a vertical line was drawn from the superior punctum to the eyebrow.  An angled line was drawn from the ala of the nares to the lateral canthus edge and extending to the tail of the brow.  These lines served as the relative boundary for the horizontal length of the blepharoplasty incision.  The desired amount of redundant tissue to be excised was carefully pinched together with 0.5 forceps.  This tissue was outlined with a surgical marking pen.  Care was taken to avoid excessive skin removal near the brow region.  A surgical ruler was used to ensure symmetry.  The skin and superficial orbicularis were incised with a #15 blade on the first upper lid.  This layer was removed with Westcott scissors.,Hemostasis was achieved with high-temp hand held pen cautery.  The remaining orbicularis and septum were grasped superiorly and inferiorly on each side of the incision and tented upward.  The high temp cautery pen was then used to incise these layers in a horizontal fashion until preapeuronotic fat was identified.  * amount of central preaponeurotic fat was removed with cautery.  * amount of nasal fat pad was removed in the same fashion.  Care was taken to not disturb the levator aponeurosis.  A symmetric amount of fat was removed from each side.  Iced gauze saline was placed over the site and the entire procedure repeated on the fellow eyelid.  Skin hooks were placed on either side of the incision and the skin was closed in a continuous running fashion with 6-0 nylon.  Erythromycin ophthalmic ointment was placed over the incision site and on the ocular surface.  Saline gauze and cold packs were placed over the upper lids.  The patient was taken from the surgical suite in good condition.,DISCHARGE:,  In the recovery area the results of surgery were discussed with the patient and their family.  Specific instructions to resume all p.o. oral medications including anticoagulants/antiplatelets were given.  Written instructions and restrictions after eyelid surgery were reviewed with the patient and family member.  Instructions on antibiotic ointment use were reviewed.  The incision sites were checked prior to release.  The patient was released to home with a driver after vital signs were deemed stable.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "4 mL",
+        "6 mL"
+      ],
+      "caregiver_checklist": [
+        "4 mL",
+        "6 mL"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what's happening and what you need to do next. You had a surgery to fix some problems with your eyes and eyebrows. The doctors found that your eyelids were too long and your eyebrows were too low, which was causing you to have trouble seeing in certain areas. This made you feel uncomfortable and made your vision blurry.\n\nThe doctors fixed this by doing a special eye surgery. They took out some extra skin and tissue from your eyelids and eyebrows. They also made the skin on your eyelids a bit tighter so your eyes can move better.\n\nHere's what you need to do:\n- Take the medicines your doctor gave you. They will help your eyes heal.\n- Keep your head up and don't bend over too much for a few days.\n- Don't rub or touch your eyes for a while. Your doctor will tell you when you can start touching them again.\n- Keep the ice packs on your eyelids for a few days. Your doctor will show you how to do this.\n- Your doctor will give you instructions on when to come back for a check-up. If you have any pain or swelling, or if your vision gets worse, you should call your doctor right away.\n\nRemember, you're doing great! Your doctors and nurses are here to help you. If you have any questions or feel worried, don't hesitate to ask.",
+      "caregiver_checklist": "- Check the patient's vital signs at home.\n- Watch for signs of infection such as redness, swelling, or increased pain.\n- Call the doctor if there is any sign of infection.\n- Schedule a follow-up appointment within 1 week.\n- Monitor for any changes in vision or visual field loss.\n- Check for any bruising or swelling on the eyelids.\n- Call the doctor if there is any bruising or swelling that increases.\n- Schedule a follow-up appointment within 1 month.\n- Watch for any numbness or changes in sensation around the eyes.\n- Call the doctor if there are any changes in sensation or numbness.\n- Schedule a follow-up appointment within 3 months.\n- Monitor for any changes in the appearance of the eyelids or brow.\n- Call the doctor if there are any changes in the appearance or function of the eyelids or brow.\n- Schedule a follow-up appointment within 6 months.",
+      "child_explanation": "You had a little surgery today, sweetie. The doctors and grown-ups are taking care of you. They fixed your eyelids and eyebrows to help you see better. Tiny helpers went to work inside your eyes to make things better. You'll feel a bit sleepy after, but you'll be okay. Your eyes will be a bit sore for a few days, but you'll be fine. Your family and doctors will check on you often. You're in good hands, you'll see!"
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Blepharoplasty_-_Direct_Brow_Repair.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 45.652,
+      "caregiver_checklist": 36.133,
+      "child_explanation": 12.989,
+      "total": 94.782
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:21:43+00:00"
+  }
+}

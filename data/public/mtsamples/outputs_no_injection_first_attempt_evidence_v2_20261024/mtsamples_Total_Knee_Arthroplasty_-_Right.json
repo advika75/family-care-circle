@@ -1,0 +1,188 @@
+{
+  "id": "mtsamples_Total_Knee_Arthroplasty_-_Right",
+  "patient_summary": "Hello there! I'll explain what happened in the note in a way that's easier to understand. Here's the summary:\n\nYou had a knee operation. The doctors did a total knee replacement. This means they took out your old knee and put in a new one. \n\nBefore the operation, you got some medicine called Ancef. This helps keep you from getting infections. They also put an epidural and used anesthesia to make you sleep during the surgery.\n\nThe doctors made a cut in your leg and took out some bone spurs. They also removed some parts of your knee that were causing pain. They put in new parts to help your knee move better.\n\nAfter the operation, they put the new knee in place and made sure it was stable. They also put some cement to help the new knee stay in place.\n\nYou'll need to take some medicines after the operation. The doctors will tell you which ones and how often. You might feel a bit sore and have some swelling. It's important to follow their instructions.\n\nIf you have any of these symptoms, or if you're in a lot of pain, you should call the doctor or nurse. They might need to see you right away.\n\nRemember, it's normal to feel a bit uncomfortable after surgery. But if you have any concerns, don't hesitate to ask. Your doctors and nurses are here to help you.",
+  "caregiver_checklist": [
+    "Give 1 gm of Ancef preoperatively.",
+    "Check the patient's vital signs every hour.",
+    "Watch for signs of infection such as fever, redness, or increased pain.",
+    "Call the surgeon if the patient develops signs of infection.",
+    "Schedule follow-up appointment in 2 weeks.",
+    "Monitor for signs of deep vein thrombosis (DVT), such as swelling, pain, or changes in skin color.",
+    "Watch for signs of knee instability or pain.",
+    "Call the surgeon if knee instability or pain persists.",
+    "Schedule physical therapy sessions starting 2 weeks post-op.",
+    "Check for signs of nerve damage, such as numbness or weakness.",
+    "Call the surgeon if there are signs of nerve damage.",
+    "Schedule a knee X-ray in 6 weeks to assess healing.",
+    "Watch for signs of knee stiffness or swelling.",
+    "Call the surgeon if there are signs of knee stiffness or swelling."
+  ],
+  "child_explanation": "You had a little operation today, like when you get a band-aid. The doctors and grown-ups took care of you. They cleaned your leg very carefully. Then they made a small cut and took out some parts. They put in new parts to help your knee feel better. You'll be all right soon, and you can play again.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS (ES):, Osteoarthritis, right knee.,POSTOPERATIVE DIAGNOSIS (ES):, Osteoarthritis, right knee.,PROCEDURE:, Right total knee arthroplasty.,DESCRIPTION OF THE OPERATION:, The patient was brought to the Operating Room and after the successful placement of an epidural, as well as general anesthesia, administration 1 gm of Ancef preoperatively, the patient's right thigh, knee and leg were scrubbed, prepped and draped in the usual sterile fashion. The leg was exsanguinated by gravity and pneumatic tourniquet was inflated to 300 mmHg.,A straight anterior incision was carried down through the skin and subcutaneous tissue. Unilateral flaps were developed and a median retinacular parapatellar incision was made. The extensor mechanism was partially divided and the patella was everted. Some of the femoral bone spurs were resected using an osteotome and a rongeur. Ascending drill hole was made in the distal femur and the distal femoral cut, anterior and posterior and chamfer cuts were accomplished for a 67.5 femoral component.,At this point the ACL was resected. Some of the fat pad and synovium were resected, as well as both medial and lateral menisci. A posterior cruciate retractor was utilized, the tibia brought forward and a centering drill hole made in the tibia. The intramedullary guide was used for cutting the tibia. It was set at 8 mm. An additional 2 mm was resected because of a moderate defect medially.,A trial reduction was done with a 71 tibial baseplate. This was pinned and drilled and then trial reduction done with a 10-mm insert.,This gave good stability and a full range of motion.,The patella was measured with the calibers and 9 mm of bone was resected with an oscillating saw. A 34-mm component was drilled for.,A further trial reduction was done and two liters of pulse lavage were used to clean the bony surfaces. A packet of cement was hand mixed, pressurized with a spatula into the proximal tibia. Multiple drill holes were made on the medial side of the tibia where the bone was somewhat sclerotic. The tibia baseplate was secured and the patella was inserted, held with a clamp. The extraneous cement was removed. At this point the tibial baseplate was locked into place and the femoral component also seated solidly.,The knee was extended, held in this position for another 5-6 minutes until the cement was cured. Further extraneous cement was removed. The pneumatic tourniquet was released, hemostasis was obtained with electrocoagulation.,Retinaculum, quadriceps and extensor were repaired with multiple figure-of-eight #1 Vicryl sutures, the subcutaneous tissue with 2-0 and the skin with skin staples. A sterile, bulky compression dressing was placed. The patient was stable on operative release.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened in the note in a way that's easier to understand. Here's the summary:\n\nYou had a knee operation. The doctors did a total knee replacement. This means they took out your old knee and put in a new one. \n\nBefore the operation, you got some medicine called Ancef. This helps keep you from getting infections. They also put an epidural and used anesthesia to make you sleep during the surgery.\n\nThe doctors made a cut in your leg and took out some bone spurs. They also removed some parts of your knee that were causing pain. They put in new parts to help your knee move better.\n\nAfter the operation, they put the new knee in place and made sure it was stable. They also put some cement to help the new knee stay in place.\n\nYou'll need to take some medicines after the operation. The doctors will tell you which ones and how often. You might feel a bit sore and have some swelling. It's important to follow their instructions.\n\nIf you have any of these symptoms, or if you're in a lot of pain, you should call the doctor or nurse. They might need to see you right away.\n\nRemember, it's normal to feel a bit uncomfortable after surgery. But if you have any concerns, don't hesitate to ask. Your doctors and nurses are here to help you.",
+      "caregiver_checklist": "- Give 1 gm of Ancef preoperatively.\n- Check the patient's vital signs every hour.\n- Watch for signs of infection such as fever, redness, or increased pain.\n- Call the surgeon if the patient develops signs of infection.\n- Schedule follow-up appointment in 2 weeks.\n- Monitor for signs of deep vein thrombosis (DVT), such as swelling, pain, or changes in skin color.\n- Watch for signs of knee instability or pain.\n- Call the surgeon if knee instability or pain persists.\n- Schedule physical therapy sessions starting 2 weeks post-op.\n- Check for signs of nerve damage, such as numbness or weakness.\n- Call the surgeon if there are signs of nerve damage.\n- Schedule a knee X-ray in 6 weeks to assess healing.\n- Watch for signs of knee stiffness or swelling.\n- Call the surgeon if there are signs of knee stiffness or swelling.",
+      "child_explanation": "You had a little operation today, like when you get a band-aid. The doctors and grown-ups took care of you. They cleaned your leg very carefully. Then they made a small cut and took out some parts. They put in new parts to help your knee feel better. You'll be all right soon, and you can play again."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Total_Knee_Arthroplasty_-_Right",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Total_Knee_Arthroplasty_-_Right.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Total_Knee_Arthroplasty_-_Right.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Total_Knee_Arthroplasty_-_Right",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Total_Knee_Arthroplasty_-_Right.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Total_Knee_Arthroplasty_-_Right.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Total_Knee_Arthroplasty_-_Right",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Total_Knee_Arthroplasty_-_Right.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Total_Knee_Arthroplasty_-_Right.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 21.118,
+      "caregiver_checklist": 17.658,
+      "child_explanation": 8.93,
+      "total": 47.716
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T14:07:55+00:00"
+  }
+}

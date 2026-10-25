@@ -1,0 +1,229 @@
+{
+  "id": "mtsamples_Blood_In_Toilet",
+  "patient_summary": "Hello there, you've been feeling a bit unwell and noticed some blood in the toilet. The doctors and nurses at XYZ Nursing Home were worried about you and brought you to the hospital by ambulance. They found some blood, but no urine or stool, and you didn't have any other symptoms like pain or problems with your bowels or bladder.\n\nThe doctors did some tests to check you out, but they couldn't find any clots. You don't have any history of taking blood-thinning medicine, and you have some other health problems like asthma and anemia. You're a bit forgetful, which makes it hard for the doctors to know exactly what happened.\n\nThe doctors checked you over and found you to be in good health. They did a CT scan of your tummy and pelvis, and your blood tests were normal. They also did a guaiac test on the blood you had in the toilet, which showed there was some blood.\n\nThe doctors decided you don't need to stay in the hospital, but they want to keep an eye on you. They're going to send you back to XYZ Nursing Home and ask the nursing staff to check you every day for the next three days. They'll also do a urinalysis at the nursing home to see if there's still blood.\n\nIf you start to feel any pain or have any more blood in the toilet, you should tell the nursing staff right away. They'll call the doctors if they see anything that worries them.\n\nRemember, you're in good hands and the doctors and nurses are here to help you. If you have any questions, just ask!",
+  "caregiver_checklist": [
+    "Check for any clots in the toilet after the patient uses the restroom.",
+    "Watch for any blood in the patient's stool or urine.",
+    "Call Dr. X if there is any blood in the patient's stool or urine.",
+    "Schedule a follow-up appointment with Dr. X in 3 days.",
+    "Call Dr. X if there is any recurrence of blood or worsening of symptoms.",
+    "Schedule a urinalysis at XYZ for blood.",
+    "Monitor the patient's vital signs daily.",
+    "Watch for signs of dehydration or fatigue.",
+    "Call Dr. X if the patient shows signs of dehydration or fatigue.",
+    "Schedule a CBC test at XYZ for blood.",
+    "Watch for signs of infection or fever.",
+    "Call Dr. X if the patient shows signs of infection or fever."
+  ],
+  "child_explanation": "You had some blood in the toilet, but no other problems. The grown-ups and doctors are taking care of you. They did a check-up and found nothing serious. You're okay, just need to be watched a bit. They'll check your blood again soon. Everything will be fine, you're in good hands.",
+  "entities": [
+    {
+      "text": "abdominal pain",
+      "label": "SYMPTOM",
+      "start": 508,
+      "end": 522
+    },
+    {
+      "text": "back pain",
+      "label": "SYMPTOM",
+      "start": 526,
+      "end": 535
+    },
+    {
+      "text": "asthma",
+      "label": "CONDITION",
+      "start": 815,
+      "end": 821
+    },
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 848,
+      "end": 862
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2700,
+      "end": 2705
+    },
+    {
+      "text": "3 days",
+      "label": "DURATION",
+      "start": 2719,
+      "end": 2725
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 2927,
+      "end": 2935
+    }
+  ],
+  "regimens": [],
+  "source_text": "CHIEF COMPLAINT:  ,Blood in toilet.,HISTORY: , Ms. ABC is a 77-year-old female who is brought down by way of ambulance from XYZ Nursing Home after nursing staff had noted there to be blood in the toilet after she had been sitting on the toilet.  They did not note any urine or stool in the toilet and the patient had no acute complaints.  The patient is unfortunately a poor historian in that she has dementia and does not recall any of the events.  The patient herself has absolutely no complaints, such as abdominal pain or back pain, urinary and GI complaints.  There is no other history provided by the nursing staff from XYZ.  There apparently were no clots noted within there.  She does not have a history of being on anticoagulants.,PAST MEDICAL HISTORY: , Actually quite limited, includes that of dementia, asthma, anemia which is chronic, hypothyroidism, schizophrenia, positive PPD in the past.,PAST SURGICAL HISTORY:  ,Unknown.,SOCIAL HISTORY: , No tobacco or alcohol.,MEDICATIONS: , Listed in the medical records.,ALLERGIES:,  No known drug allergies.,PHYSICAL EXAMINATION: , VITAL SIGNS:  Stable.,GENERAL:  This is a well-nourished, well-developed female who is alert, oriented in all spheres, pleasant, cooperative, resting comfortably, appearing otherwise healthy and well in no acute distress.,HEENT:  Visually normal.  Pupils are reactive.  TMs, canals, nasal mucosa, and oropharynx are intact.,NECK:  No lymphadenopathy or JVD.,HEART:  Regular rate and rhythm.  S1, S2.  No murmurs, gallops, or rubs.,LUNGS:  Clear to auscultation.  No wheeze, rales, or rhonchi.,ABDOMEN:  Benign, flat, soft, nontender, and nondistended.  Bowel sounds active.  No organomegaly or mass noted.,GU/RECTAL:  External rectum was normal.  No obvious blood internally.  There is no stool noted within the vault.  There is no gross amount of blood noted within the vault.  Guaiac was done and was trace positive.  Visual examination anteriorly during the rectal examination noted no blood within the vaginal region.,EXTREMITIES:  No significant abnormalities.,WORKUP: , CT abdomen and pelvis was negative.  CBC was entirely within normal limits without any signs of anemia with an H and H of 14 and 42%.  CMP also within normal limits.  PTT, PT, and INR were normal.  Attempts at getting the patient to give A urine were unsuccessful and the patient was very noncompliant, would not allow us to do any kind of Foley catheterization.,ER COURSE:,  Uneventful.  I have discussed the patient in full with Dr. X who agrees that she does not require any further workup or evaluation as an inpatient.  We have decided to send the patient back to XYZ with observation by the staff there.  She will have a CBC done daily for the next 3 days with results to Dr. X.  They are to call him if there is any recurrences of blood or worsening of symptoms and they are to do a urinalysis at XYZ for blood.,ASSESSMENT: , Questionable gastrointestinal bleeding at this time, stable without any obvious signs otherwise of significant bleed.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you've been feeling a bit unwell and noticed some blood in the toilet. The doctors and nurses at XYZ Nursing Home were worried about you and brought you to the hospital by ambulance. They found some blood, but no urine or stool, and you didn't have any other symptoms like pain or problems with your bowels or bladder.\n\nThe doctors did some tests to check you out, but they couldn't find any clots. You don't have any history of taking blood-thinning medicine, and you have some other health problems like asthma and anemia. You're a bit forgetful, which makes it hard for the doctors to know exactly what happened.\n\nThe doctors checked you over and found you to be in good health. They did a CT scan of your tummy and pelvis, and your blood tests were normal. They also did a guaiac test on the blood you had in the toilet, which showed there was some blood.\n\nThe doctors decided you don't need to stay in the hospital, but they want to keep an eye on you. They're going to send you back to XYZ Nursing Home and ask the nursing staff to check you every day for the next three days. They'll also do a urinalysis at the nursing home to see if there's still blood.\n\nIf you start to feel any pain or have any more blood in the toilet, you should tell the nursing staff right away. They'll call the doctors if they see anything that worries them.\n\nRemember, you're in good hands and the doctors and nurses are here to help you. If you have any questions, just ask!",
+      "caregiver_checklist": "- Check for any clots in the toilet after the patient uses the restroom.\n- Watch for any blood in the patient's stool or urine.\n- Call Dr. X if there is any blood in the patient's stool or urine.\n- Schedule a follow-up appointment with Dr. X in 3 days.\n- Call Dr. X if there is any recurrence of blood or worsening of symptoms.\n- Schedule a urinalysis at XYZ for blood.\n- Monitor the patient's vital signs daily.\n- Watch for signs of dehydration or fatigue.\n- Call Dr. X if the patient shows signs of dehydration or fatigue.\n- Schedule a CBC test at XYZ for blood.\n- Watch for signs of infection or fever.\n- Call Dr. X if the patient shows signs of infection or fever.",
+      "child_explanation": "You had some blood in the toilet, but no other problems. The grown-ups and doctors are taking care of you. They did a check-up and found nothing serious. You're okay, just need to be watched a bit. They'll check your blood again soon. Everything will be fine, you're in good hands."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Blood_In_Toilet",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Blood_In_Toilet.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Blood_In_Toilet.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Blood_In_Toilet",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Blood_In_Toilet.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Blood_In_Toilet.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Blood_In_Toilet",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Blood_In_Toilet.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Blood_In_Toilet.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 23.678,
+      "caregiver_checklist": 13.673,
+      "child_explanation": 8.714,
+      "total": 46.076
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:22:29+00:00"
+  }
+}

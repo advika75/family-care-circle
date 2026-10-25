@@ -1,0 +1,258 @@
+{
+  "id": "mtsamples_MRI_T-Spine",
+  "patient_summary": "Hello there, it looks like you had a very scary day. You were feeling weak in your legs and had some trouble breathing. You went to the hospital because you were very dizzy and sweaty. The doctors found out that you had a very high number in your blood, which is why you were taking a medicine called Coumadin. They gave you another medicine called Digoxin to help your heart. You were also taking a medicine called Prazosin to help with your blood pressure.\n\nThe doctors found out that you had a big problem with your heart. They gave you a special medicine called Digoxin, which is a tiny bit different. They gave you 0.25mg of Digoxin each day. They also gave you a bigger dose of Digoxin, 2mg, once a day. You were also taking Prazosin, which is 2mg each day.\n\nYou were given a special medicine called vitamin K to help your blood. You were also given another medicine called Coumadin, which you take every day. You were also given Digoxin, which you take 15mg once a day. You were also given Prazosin, which you take 2mg each day.\n\nYou need to take all of these medicines as the doctors told you. If you feel dizzy or weak, or if you have trouble breathing, you should call the hospital right away. If you have any other questions, you can always ask your doctors or nurses. They are here to help you.",
+  "caregiver_checklist": [
+    "Check Digoxin 0.25mg qd in the morning.",
+    "Monitor Digoxin levels as ordered.",
+    "Watch for signs of digoxin toxicity: nausea, vomiting, yellow vision, or irregular heartbeats.",
+    "Call if Digoxin levels are high or low, or if symptoms of toxicity appear.",
+    "Schedule follow-up Digoxin levels in 1-2 weeks.",
+    "Give Coumadin 2mg qd as prescribed.",
+    "Monitor INR levels as ordered.",
+    "Watch for signs of bleeding or bruising.",
+    "Call if INR levels are high or low, or if symptoms of bleeding appear.",
+    "Schedule follow-up INR levels in 1-2 weeks.",
+    "Watch for warning signs of aortic dissection recurrence: chest pain, shortness of breath, or fainting.",
+    "Call if any warning signs appear.",
+    "Schedule follow-up with the Neurology team.",
+    "Confirm with the care team: 15mg (dosage)"
+  ],
+  "child_explanation": "You had a tummy ache and felt weak. Your doctors and grown-ups are taking care of you. They think you might have had a big problem with your blood. They gave you medicine to help. Now they want to check your spine. You're safe in the hospital. You'll get better soon, you know.",
+  "entities": [
+    {
+      "text": "15mg",
+      "label": "DOSAGE",
+      "start": 718,
+      "end": 722
+    },
+    {
+      "text": "2mg",
+      "label": "DOSAGE",
+      "start": 948,
+      "end": 951
+    },
+    {
+      "text": "qd",
+      "label": "FREQUENCY",
+      "start": 952,
+      "end": 954
+    },
+    {
+      "text": "Digoxin",
+      "label": "MEDICATION",
+      "start": 956,
+      "end": 963
+    },
+    {
+      "text": "0.25mg",
+      "label": "DOSAGE",
+      "start": 964,
+      "end": 970
+    },
+    {
+      "text": "qd",
+      "label": "FREQUENCY",
+      "start": 971,
+      "end": 973
+    },
+    {
+      "text": "2mg",
+      "label": "DOSAGE",
+      "start": 984,
+      "end": 987
+    },
+    {
+      "text": "qd",
+      "label": "FREQUENCY",
+      "start": 988,
+      "end": 990
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Digoxin",
+      "dosages": [
+        "0.25mg",
+        "2mg"
+      ],
+      "frequencies": [
+        "qd"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "CC:, BLE weakness.,HX:, This 82y/o RHM was referred to the Neurology service by the Neurosurgery service for evaluation of acute onset paraplegia. He was in his usual state of health until 5:30PM on 4/6/95, when he developed sudden \"pressure-like\" epigastric discomfort associated with bilateral lower extremity weakness, SOB, lightheadedness and diaphoresis. He knelt down to the floor and \"went to sleep.\" The Emergency Medical Service was alert and arrived within minutes, at which time he was easily aroused though unable to move or feel his lower extremities. No associated upper extremity or bulbar dysfunction was noted. He was taken to a local hospital where an INR was found to be 9.1. He was given vitamin K 15mg, and transferred to UIHC to rule out spinal epidural hemorrhage. An MRI scan of the T-spine was obtained and the preliminary reading was \"normal.\" The Neurology service was then asked to evaluate the patient.,MEDS:, Coumadin 2mg qd, Digoxin 0.25mg qd, Prazosin 2mg qd.,PMH:, 1)HTN. 2)A-Fib on coumadin. 3)Peripheral vascular disease:s/p left Femoral-popliteal bypass (8/94) and graft thrombosis-thrombolisis (9/94). 4)Adenocarcinoma of the prostate: s/p TURP (1992).,FHX: ,unremarkable.,SHX:, Farmer, Married, no Tobacco/ETOH/illicit drug use.,EXAM:, BP165/60 HR86 RR18 34.2C SAO2 98% on room air.,MS: A&O to person, place, time. In no acute distress. Lucid.,CN: unremarkable.,MOTOR: 5/5 strength in BUE. Flaccid paraplegia in BLE,Sensory: T6 sensory level to LT/PP, bilaterally. Decreased vibratory sense in BLE in a stocking distribution, distally.,Coord: Intact FNF and RAM in BUE. Unable to do HKS.,Station: no pronator drift.,Gait: not done.,Reflexes: 2/2 BUE, Absent in BLE, plantar responses were flexor, bilaterally.,Rectal: decreased rectal tone.,GEN EXAM: No carotid bruitts. Lungs: bibasilar crackles. CV: Irregular rate and rhythm with soft diastolic murmur at the left sternal border. Abdomen: flat, soft, non-tender without bruitt or pulsatile mass. Distal pulses were strong in all extremities.,COURSE:, Hgb 12.6, Hct 40%, WBC 11.7, Plt 154k, INR 7.6, PTT 50, CK 41, the GS was normal. EKG showed A-Fib at 75BPM with competing junctional pacemaker, essentially unchanged from 9/12/94.,It was suspected that the patient sustained an anterior-cervico-thoracic spinal cord infarction with resultant paraplegia and T6 sensory level. A CXR was done in the ER prior to admission. This revealed cardiomegaly and a widened mediastinum. He returned from the x-ray suite and suddenly became unresponsive and went into cardiopulmonary arrest. Resuscitative measures failed. Pericardiocentesis was unremarkable. Autopsy revealed a massive aortic dissection extending from the aortic root to the origin of the iliac arteries with extensive pericardial hematoma. The dissection was seen in retrospect on the MRI T-spine.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "15mg"
+      ],
+      "caregiver_checklist": [
+        "15mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, it looks like you had a very scary day. You were feeling weak in your legs and had some trouble breathing. You went to the hospital because you were very dizzy and sweaty. The doctors found out that you had a very high number in your blood, which is why you were taking a medicine called Coumadin. They gave you another medicine called Digoxin to help your heart. You were also taking a medicine called Prazosin to help with your blood pressure.\n\nThe doctors found out that you had a big problem with your heart. They gave you a special medicine called Digoxin, which is a tiny bit different. They gave you 0.25mg of Digoxin each day. They also gave you a bigger dose of Digoxin, 2mg, once a day. You were also taking Prazosin, which is 2mg each day.\n\nYou were given a special medicine called vitamin K to help your blood. You were also given another medicine called Coumadin, which you take every day. You were also given Digoxin, which you take once a day.\n\nYou were also given Digoxin, which is a tiny bit different. You take this 0.25mg once a day. You also take 2mg of Digoxin once a day. You were also given Prazosin, which you take 2mg each day.\n\nYou need to take all of these medicines as the doctors told you. If you feel dizzy or weak, or if you have trouble breathing, you should call the hospital right away. If you have any other questions, you can always ask your doctors or nurses. They are here to help you.",
+      "caregiver_checklist": "- Check Digoxin 0.25mg qd in the morning.\n- Monitor Digoxin levels as ordered.\n- Watch for signs of digoxin toxicity: nausea, vomiting, yellow vision, or irregular heartbeats.\n- Call if Digoxin levels are high or low, or if symptoms of toxicity appear.\n- Schedule follow-up Digoxin levels in 1-2 weeks.\n- Give Coumadin 2mg qd as prescribed.\n- Monitor INR levels as ordered.\n- Watch for signs of bleeding or bruising.\n- Call if INR levels are high or low, or if symptoms of bleeding appear.\n- Schedule follow-up INR levels in 1-2 weeks.\n- Watch for warning signs of aortic dissection recurrence: chest pain, shortness of breath, or fainting.\n- Call if any warning signs appear.\n- Schedule follow-up with the Neurology team.",
+      "child_explanation": "You had a tummy ache and felt weak. Your doctors and grown-ups are taking care of you. They think you might have had a big problem with your blood. They gave you medicine to help. Now they want to check your spine. You're safe in the hospital. You'll get better soon, you know."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_MRI_T-Spine",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MRI_T-Spine.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_MRI_T-Spine.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_MRI_T-Spine",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MRI_T-Spine.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_MRI_T-Spine.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_MRI_T-Spine",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MRI_T-Spine.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_MRI_T-Spine.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "15mg"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 45.184,
+      "caregiver_checklist": 40.929,
+      "child_explanation": 8.883,
+      "total": 95.003
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T11:28:26+00:00"
+  }
+}

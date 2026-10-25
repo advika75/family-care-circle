@@ -1,0 +1,342 @@
+{
+  "id": "mtsamples_Non-Hodgkin_lymphoma_Followup",
+  "patient_summary": "Hello there! I'm here to help you understand what's going on with your health. You have a type of cancer called follicular non-Hodgkin's lymphoma. This means your body's lymph nodes are growing bigger than normal. You've been through a lot of treatments for this cancer, including chemotherapy and radiation. You're doing really well and feel good overall.\n\nRight now, you're taking some medicines to help your body. You take Avelox 400 mg every day when you need it, which is a strong antibiotic. You also take Cefuroxime 200 mg every day, and doxycycline 100 mg every day. You also take Coumadin 5 mg on Monday and 2.5 mg on all other days. You take dicyclomine 10 mg every day to help with your stomach. You also take Coreg 6.25 mg twice a day, Vasotec 2.5 mg twice a day, and Zantac 150 mg every day to help with your heart. You take Claritin D every day to help with your allergies. You also take Centrum every day, calcium every day, omega-3 twice a day, Metamucil every day, and Lasix 40 mg three times a day.\n\nIf you have any problems or if you feel sick, you should call your doctor right away. That includes if you have a fever, chills, or night sweats. You should also call if you have any new or worsening lymph nodes, or if you have any changes in your bowel or bladder habits.\n\nYour family just lost a loved one, and that can be very hard. Please take care of yourself and let your doctor know if you're feeling sad or upset. They can help you with any emotional support you need.",
+  "caregiver_checklist": [
+    "Give Avelox 400 mg by mouth as needed (p.r.n.)",
+    "Check cefuroxime 200 mg by mouth every day and doxycycline 100 mg by mouth every day",
+    "Watch for signs of infection such as fever, chills, or night sweats",
+    "Call if you notice any new or worsening symptoms",
+    "Schedule a PET scan in 6 months to monitor for any recurrence",
+    "Watch for signs of lymphadenopathy, fever, or night sweats",
+    "Call if you notice any new or worsening symptoms",
+    "Schedule a follow-up appointment in 6 months",
+    "Call if you notice any changes in bowel or bladder habits",
+    "Watch for signs of chronic lymphedema in the lower extremities",
+    "Call if you notice any new or worsening symptoms",
+    "Schedule Coumadin 5 mg on Monday and 2.5 mg on all other days (40 mg total)",
+    "Watch for signs of bleeding or bruising",
+    "Call if you notice any new or worsening symptoms",
+    "Schedule dicyclomine 10 mg by mouth every day",
+    "Watch for signs of constipation",
+    "Call if you notice any new or worsening symptoms",
+    "Schedule Coreg 6.25 mg by mouth twice a day",
+    "Watch for signs of dizziness or palpitations",
+    "Call if you notice any new or worsening symptoms",
+    "Schedule Vasotec 2.5 mg by mouth twice a day",
+    "Watch for signs of dizziness or palpitations",
+    "Call if you notice any new or worsening symptoms",
+    "Schedule Zantac 150 mg by mouth every day",
+    "Watch for signs of stomach pain or ulcers",
+    "Call if you notice any new or worsening symptoms",
+    "Schedule Claritin D by mouth every day",
+    "Watch for signs of allergic reactions",
+    "Call if you notice any new or worsening symptoms",
+    "Schedule Centrum by"
+  ],
+  "child_explanation": "You had a sickness in your neck, like a tiny bump. The grown-ups and doctors are taking care of you. They gave you medicine to help. You're feeling better now, you just need to rest a bit. The doctors will check you soon to make sure you're all better.",
+  "entities": [
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 958,
+      "end": 963
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 965,
+      "end": 971
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 1014,
+      "end": 1020
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 1024,
+      "end": 1032
+    },
+    {
+      "text": "400 mg",
+      "label": "DOSAGE",
+      "start": 1103,
+      "end": 1109
+    },
+    {
+      "text": "200 mg",
+      "label": "DOSAGE",
+      "start": 1134,
+      "end": 1140
+    },
+    {
+      "text": "doxycycline",
+      "label": "MEDICATION",
+      "start": 1173,
+      "end": 1184
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 1185,
+      "end": 1191
+    },
+    {
+      "text": "5 mg",
+      "label": "DOSAGE",
+      "start": 1207,
+      "end": 1211
+    },
+    {
+      "text": "2.5 mg",
+      "label": "DOSAGE",
+      "start": 1226,
+      "end": 1232
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 1264,
+      "end": 1269
+    },
+    {
+      "text": "6.25 mg",
+      "label": "DOSAGE",
+      "start": 1282,
+      "end": 1289
+    },
+    {
+      "text": "2.5 mg",
+      "label": "DOSAGE",
+      "start": 1306,
+      "end": 1312
+    },
+    {
+      "text": "150 mg",
+      "label": "DOSAGE",
+      "start": 1328,
+      "end": 1334
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 1428,
+      "end": 1433
+    },
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 1820,
+      "end": 1833
+    },
+    {
+      "text": "cellulitis",
+      "label": "CONDITION",
+      "start": 2001,
+      "end": 2011
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "doxycycline",
+      "dosages": [
+        "100 mg",
+        "5 mg",
+        "2.5 mg",
+        "10 mg",
+        "6.25 mg",
+        "150 mg",
+        "40 mg"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "CHIEF COMPLAINT:,  Follicular non-Hodgkin's lymphoma.,HISTORY OF PRESENT ILLNESS: , This is an extremely pleasant 69 year-old gentleman, who I follow for his follicular lymphoma.  His history is that in February of 1988 he had a biopsy of a left posterior auricular lymph node and pathology showed follicular non-Hodgkin's lymphoma.  From 03/29/88 to 08/02/88, he received six cycles of CHOP chemotherapy.  In 1990, his CT scan showed retroperitoneal lymphadenopathy.  Therefore from 04/02/90 to 08/20/90, he received seven cycles of CVP.  In 1999, he was treated with m-BACOD.  He also received radiation to his pelvis.  On 03/21/01, he had a right cervical lymph node biopsy, which again showed follicular lymphoma.  His most recent PET scan dated 12/31/08 showed resolution of previously described hypermetabolic lymph nodes in the right lower neck.,Overall, he is doing well.  He has a good energy level, his ECOG performance status is 0.  He denies any fever, chills or night sweats.  No lymphadenopathy.  No nausea or vomiting.  No change in bowel or bladder habits.,CURRENT MEDICATIONS: , Avelox 400 mg q.d. p.r.n., cefuroxime 200 mg q.d. to be altered monthly with doxycycline 100 mg q.d., Coumadin 5 mg on Monday and 2.5 mg on all other days, dicyclomine 10 mg q.d., Coreg 6.25 mg b.i.d., Vasotec 2.5 mg b.i.d., Zantac 150 mg q.d., Claritin D q.d., Centrum q.d., calcium q.d., omega-3 b.i.d., Metamucil q.d., and Lasix 40 mg t.i.d.,ALLERGIES: , No known drug allergies.,REVIEW OF SYSTEMS:  ,As per the HPI, otherwise negative.,PAST MEDICAL HISTORY:,1.  He has chronic lymphedema of the bilateral lower extremities secondary to his pelvic radiation.,2.  He had bilateral ureteral obstruction and is status post a stent placement.  The obstruction was secondary to his pelvic radiation.,3.  History of congestive heart failure.,4.  History of schwannoma resection.  It was resected from T12 to L1 in 1991.,5.  He has chronic obstruction of his inferior vena cava.,6.  Recurrent lower extremity cellulitis.,SOCIAL HISTORY:  ,He has no tobacco use.  No alcohol use.  He is married.  He is a retired Methodist minister.,FAMILY HISTORY: , His mother just died two days ago.  There is no history of solid tumors or hematologic malignancies in his family.,PHYSICAL EXAM:,VIT:\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "400 mg",
+        "200 mg",
+        "100 mg",
+        "5 mg",
+        "2.5 mg",
+        "10 mg",
+        "6.25 mg",
+        "150 mg",
+        "40 mg"
+      ],
+      "caregiver_checklist": [
+        "5 mg",
+        "2.5 mg",
+        "10 mg",
+        "6.25 mg",
+        "150 mg",
+        "40 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you understand what's going on with your health. You have a type of cancer called follicular non-Hodgkin's lymphoma. This means your body's lymph nodes are growing bigger than normal. You've been through a lot of treatments for this cancer, including chemotherapy and radiation. You're doing really well and feel good overall.\n\nRight now, you're taking some medicines to help your body. You take Avelox when you need it, which is a strong antibiotic. You also take Cefuroxime and doxycycline, which are other antibiotics. You also take Coumadin, which helps your blood not to clot. You also take other medicines to help with your heart, stomach, and bowels.\n\nYou should take these medicines as directed. If you need to take Avelox, you should take it every day. If you need to take Cefuroxime, you should take it every day too. If you need to take Coumadin, you should take it on Monday and every other day.\n\nIf you have any problems or if you feel sick, you should call your doctor right away. That includes if you have a fever, chills, or night sweats. You should also call if you have any new or worsening lymph nodes, or if you have any changes in your bowel or bladder habits.\n\nYour family just lost a loved one, and that can be very hard. Please take care of yourself and let your doctor know if you're feeling sad or upset. They can help you with any emotional support you need.",
+      "caregiver_checklist": "- Give Avelox 400 mg by mouth as needed (p.r.n.)\n- Check cefuroxime 200 mg by mouth every day and doxycycline 100 mg by mouth every day\n- Watch for signs of infection such as fever, chills, or night sweats\n- Call if you notice any new or worsening symptoms\n- Schedule a PET scan in 6 months to monitor for any recurrence\n- Watch for signs of lymphadenopathy, fever, or night sweats\n- Call if you notice any new or worsening symptoms\n- Schedule a follow-up appointment in 6 months\n- Call if you notice any changes in bowel or bladder habits\n- Watch for signs of chronic lymphedema in the lower extremities\n- Call if you notice any new or worsening symptoms",
+      "child_explanation": "You had a sickness in your neck, like a tiny bump. The grown-ups and doctors are taking care of you. They gave you medicine to help. You're feeling better now, you just need to rest a bit. The doctors will check you soon to make sure you're all better."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Non-Hodgkin_lymphoma_Followup",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Non-Hodgkin_lymphoma_Followup.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Non-Hodgkin_lymphoma_Followup.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Non-Hodgkin_lymphoma_Followup",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Non-Hodgkin_lymphoma_Followup.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Non-Hodgkin_lymphoma_Followup.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Non-Hodgkin_lymphoma_Followup",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Non-Hodgkin_lymphoma_Followup.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Non-Hodgkin_lymphoma_Followup.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        true,
+        true
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 54.016,
+      "caregiver_checklist": 65.206,
+      "child_explanation": 8.106,
+      "total": 127.338
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:37:38+00:00"
+  }
+}

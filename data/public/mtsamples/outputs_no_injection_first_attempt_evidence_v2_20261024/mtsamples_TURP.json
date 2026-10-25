@@ -1,0 +1,192 @@
+{
+  "id": "mtsamples_TURP",
+  "patient_summary": "Hello there, it looks like you had a small surgery to help with your bladder problems. You had a condition called benign prostatic hyperplasia, which made it hard for you to urinate and caused some stones in your bladder. The doctors decided to remove part of your prostate to make it easier for you to urinate.\n\nYou had a general anesthesia, which means you were asleep during the surgery. Before the surgery, you were given antibiotics to help prevent any infections. The doctors used a special tool to look inside your bladder and remove the prostate tissue. They removed the prostate from the back of your bladder.\n\nYou didn't have any complications during the surgery, which is good news. After the surgery, you were given a small tube called a Foley catheter to help you urinate. You were able to handle the surgery well.\n\nYou will need to take some medicines after the surgery. Your doctor will tell you which ones and how often you need to take them. You should take them exactly as instructed. If you have any problems or if you feel worse, you should call your doctor or go to the emergency room right away.\n\nYou should also follow any instructions given by your nurse or doctor. They will help you understand how to take care of yourself after the surgery. You should also drink plenty of fluids to help flush out your bladder.",
+  "caregiver_checklist": [
+    "Give the patient a prophylactic antibiotic in the preoperative holding area.",
+    "Check the Foley catheter for proper placement and patency.",
+    "Watch for signs of infection, such as fever or increased white blood cell count.",
+    "Monitor for signs of bleeding, such as blood in the urine or increased bruising.",
+    "Watch for signs of incontinence, such as leaking or frequent urination.",
+    "Schedule a follow-up appointment to discuss the results and next steps.",
+    "Call if the patient develops signs of impotence or urethral strictures.",
+    "Check for any complications like infection, bleeding, or incontinence.",
+    "Watch for signs of impotence or urethral strictures.",
+    "Call if impotence or urethral strictures persist or worsen.",
+    "Schedule a follow-up appointment to discuss the results and next steps."
+  ],
+  "child_explanation": "You had a doctor's help today.\nThe doctor took care of your tummy.\nThey fixed a big bump in your bladder.\nIt made you feel better, not worse.\nThe grown-ups and doctors are watching you.\nYou're safe, and you'll feel much better soon.",
+  "entities": [
+    {
+      "text": "Bleeding",
+      "label": "SYMPTOM",
+      "start": 591,
+      "end": 599
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS:,  Benign prostatic hyperplasia.,POSTOPERATIVE DIAGNOSIS:,  Benign prostatic hyperplasia.,OPERATION PERFORMED: , Transurethral electrosurgical resection of the prostate.,ANESTHESIA: , General.,COMPLICATIONS:,  None.,INDICATIONS FOR THE SURGERY:,  This is a 77-year-old man with severe benign prostatic hyperplasia.  He has had problem with urinary retention and bladder stones in the past.  He will need to have transurethral resection of prostate to alleviate the above-mentioned problems.  Potential complications include, but are not limited to:,1.  Infection.,2.  Bleeding.,3.  Incontinence.,4.  Impotence.,5.  Formation of urethral strictures.,PROCEDURE IN DETAIL: , The patient was identified, after which he was taken into the operating room.  General LMA anesthesia was then administered.  The patient was given prophylactic antibiotic in the preoperative holding area.  The patient was then positioned, prepped and draped.  Cystoscopy was then performed by using a #26-French continuous flow resectoscopic sheath and a visual obturator.  The prostatic urethra appeared to be moderately hypertrophied due to the lateral lobes and a large median lobe.  The anterior urethra was normal without strictures or lesions.  The bladder was severely trabeculated with multiple bladder diverticula.  There is a very bladder diverticula located in the right posterior bladder wall just proximal to the trigone.  Using the ***** resection apparatus and a right angle resection loop, the prostate was resected initially at the area of the median lobe.  Once the median lobe has completely resected, the left lateral lobe and then the right lateral lobes were taken down.  Once an adequate channel had been achieved, the prostatic specimen was retrieved from the bladder by using an Ellik evacuator.  A 3-mm bar electrode was then introduced into the prostate to achieve perfect hemostasis.  The sheath was then removed under direct vision and a #24-French Foley catheter was then inserted atraumatically with pinkish irrigation fluid obtained.  The patient tolerated the operation well.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, it looks like you had a small surgery to help with your bladder problems. You had a condition called benign prostatic hyperplasia, which made it hard for you to urinate and caused some stones in your bladder. The doctors decided to remove part of your prostate to make it easier for you to urinate.\n\nYou had a general anesthesia, which means you were asleep during the surgery. Before the surgery, you were given antibiotics to help prevent any infections. The doctors used a special tool to look inside your bladder and remove the prostate tissue. They removed the prostate from the back of your bladder.\n\nYou didn't have any complications during the surgery, which is good news. After the surgery, you were given a small tube called a Foley catheter to help you urinate. You were able to handle the surgery well.\n\nYou will need to take some medicines after the surgery. Your doctor will tell you which ones and how often you need to take them. You should take them exactly as instructed. If you have any problems or if you feel worse, you should call your doctor or go to the emergency room right away.\n\nYou should also follow any instructions given by your nurse or doctor. They will help you understand how to take care of yourself after the surgery. You should also drink plenty of fluids to help flush out your bladder.",
+      "caregiver_checklist": "- Give the patient a prophylactic antibiotic in the preoperative holding area.\n- Check the Foley catheter for proper placement and patency.\n- Watch for signs of infection, such as fever or increased white blood cell count.\n- Monitor for signs of bleeding, such as blood in the urine or increased bruising.\n- Watch for signs of incontinence, such as leaking or frequent urination.\n- Schedule a follow-up appointment to discuss the results and next steps.\n- Call if the patient develops signs of impotence or urethral strictures.\n- Check for any complications like infection, bleeding, or incontinence.\n- Watch for signs of impotence or urethral strictures.\n- Call if impotence or urethral strictures persist or worsen.\n- Schedule a follow-up appointment to discuss the results and next steps.",
+      "child_explanation": "You had a doctor's help today.\nThe doctor took care of your tummy.\nThey fixed a big bump in your bladder.\nIt made you feel better, not worse.\nThe grown-ups and doctors are watching you.\nYou're safe, and you'll feel much better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_TURP",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_TURP.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_TURP.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_TURP",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_TURP.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_TURP.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_TURP",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_TURP.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_TURP.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 24.576,
+      "caregiver_checklist": 13.454,
+      "child_explanation": 7.22,
+      "total": 45.256
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T14:02:28+00:00"
+  }
+}

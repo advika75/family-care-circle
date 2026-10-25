@@ -1,0 +1,215 @@
+{
+  "id": "mtsamples_I_D_-_ORIF_Wound",
+  "patient_summary": "Hello there! I'll explain what happened and what you need to do next in simple terms.\n\nYou had a surgery to clean out a wound that was infected. The doctor cleaned the wound, removed any foreign objects, and put a special bandage on it. This was done to help the wound heal better.\n\nYou'll need to take some special medicine for a few days. The doctor gave you antibiotics before the surgery to help prevent any infection. You'll need to take these antibiotics for 5 days. Make sure to take them exactly as the nurse tells you.\n\nThe nurse will change the special bandage on Sunday. You'll also need to wear a special boot for your leg for a few days. You'll need to keep the boot on all the time, even when you're sleeping.\n\nAfter that, the plastic surgeon will do another surgery to help the wound heal better. You'll need to follow all the instructions from the doctor and nurse very carefully.\n\nIf you have any pain, swelling, or if the wound looks red or looks like it's getting bigger, you should call the doctor right away. It's important to get help if you're not feeling well or if you have any problems.\n\nRemember to follow all the instructions and keep the wound clean and dry. You can ask the nurse or doctor if you have any questions. They're there to help you.",
+  "caregiver_checklist": [
+    "Give the patient a dose of antibiotics as per the preoperative antibiotic regimen.",
+    "Check the wound for signs of infection, redness, swelling, or increased drainage.",
+    "Watch for signs of bleeding or excessive bruising.",
+    "Call the healthcare team if the patient develops fever or chills.",
+    "Schedule a follow-up appointment with the surgeon in 2 weeks.",
+    "Call the healthcare team if the patient experiences pain or stiffness.",
+    "Monitor the wound for signs of healing or worsening.",
+    "Watch for signs of infection such as fever, redness, or increased drainage.",
+    "Call the healthcare team if the patient has any concerns or questions.",
+    "Schedule a flap surgery as per the plan from Plastic Surgery."
+  ],
+  "child_explanation": "You had a little boo-boo that wasn't feeling well. The grown-ups and doctors are taking care of it. They cleaned it up and put a special bandage on. You'll need to rest a bit and maybe use a walker. The doctors will change your bandage on Sunday. Then, the plastic doctor will help you. You're in good hands!",
+  "entities": [
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 607,
+      "end": 615
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 935,
+      "end": 943
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1008,
+      "end": 1012
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1815,
+      "end": 1823
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 1898,
+      "end": 1906
+    }
+  ],
+  "regimens": [],
+  "source_text": "TITLE OF OPERATION:,1.  Irrigation and debridement of postoperative wound infection (CPT code 10180).,2.  Removal of foreign body, deep (CPT code 28192).,3.  Placement of vacuum-assisted closure device, less than 50 centimeter squared (CPT code 97605).,PREOP DIAGNOSIS: , Postoperative wound infection, complicated (ICD-9 code 998.59).,POSTOP DIAGNOSIS: , Postoperative wound infection, complicated (ICD-9 code 998.59).,PROCEDURE DETAIL:  ,The patient is a 59-year-old gentleman who is status post open reduction and internal fixation of bilateral calcanei.  He was admitted for a left wound breakdown with drainage.  He underwent an irrigation and debridement with VAC placement 72 hours prior to this operative visit.  It was decided to bring him back for a repeat irrigation and debridement and VAC change prior to Plastics doing a local flap.  The risks of surgery were discussed in detail including, but not limited to infection, bleeding, injuries to nerves and vital structures, need for reoperation, pain or stiffness, arthritis, fracture, the risk of anesthesia.  The patient understood these risks and wished to proceed.  The patient was admitted, and the operative site was marked.,The patient was brought to the operating room and given general anesthetic.  He was placed in the right lateral decubitus, and all bony prominences were well padded.  An axillary roll was placed.  A well-padded thigh tourniquet was placed on the left leg.  The patient then received antibiotics on the floor prior to coming down to the operating room which satisfied the preoperative requirement.  Left leg was then prepped and draped in usual sterile fashion.  The previous five antibiotic spacer beads were removed without difficulty.  The wound was then rongeured and curetted, and all bone was cleaned down to healthy bleeding bone.  The wound actually looked quite good with evidence of purulence or drainage.  Skin edges appeared to be viable.  Hardware all looked to be intact.  At this point, the wound was irrigated with 9 liters of bibiotic solution.  A VAC sponge was then placed over the wound, and the patient's leg was placed into a posterior splint.  The patient was awakened and then taken to recovery in good condition.,Dr. X was present for the timeouts and for all critical portions of the procedure.  He was immediately available for any questions during the case.,PLAN:,1.  A CAM walker boots.,2.  A VAC change on Sunday by the nurse.,3.  A flap per Plastic Surgery.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened and what you need to do next in simple terms.\n\nYou had a surgery to clean out a wound that was infected. The doctor cleaned the wound, removed any foreign objects, and put a special bandage on it. This was done to help the wound heal better.\n\nYou'll need to take some special medicine for a few days. The doctor gave you antibiotics before the surgery to help prevent any infection. You'll need to take these antibiotics for 5 days. Make sure to take them exactly as the nurse tells you.\n\nThe nurse will change the special bandage on Sunday. You'll also need to wear a special boot for your leg for a few days. You'll need to keep the boot on all the time, even when you're sleeping.\n\nAfter that, the plastic surgeon will do another surgery to help the wound heal better. You'll need to follow all the instructions from the doctor and nurse very carefully.\n\nIf you have any pain, swelling, or if the wound looks red or looks like it's getting bigger, you should call the doctor right away. It's important to get help if you're not feeling well or if you have any problems.\n\nRemember to follow all the instructions and keep the wound clean and dry. You can ask the nurse or doctor if you have any questions. They're there to help you.",
+      "caregiver_checklist": "- Give the patient a dose of antibiotics as per the preoperative antibiotic regimen.\n- Check the wound for signs of infection, redness, swelling, or increased drainage.\n- Watch for signs of bleeding or excessive bruising.\n- Call the healthcare team if the patient develops fever or chills.\n- Schedule a follow-up appointment with the surgeon in 2 weeks.\n- Call the healthcare team if the patient experiences pain or stiffness.\n- Monitor the wound for signs of healing or worsening.\n- Watch for signs of infection such as fever, redness, or increased drainage.\n- Call the healthcare team if the patient has any concerns or questions.\n- Schedule a flap surgery as per the plan from Plastic Surgery.",
+      "child_explanation": "You had a little boo-boo that wasn't feeling well. The grown-ups and doctors are taking care of it. They cleaned it up and put a special bandage on. You'll need to rest a bit and maybe use a walker. The doctors will change your bandage on Sunday. Then, the plastic doctor will help you. You're in good hands!"
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_I_D_-_ORIF_Wound",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_I_D_-_ORIF_Wound.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_I_D_-_ORIF_Wound.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_I_D_-_ORIF_Wound",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_I_D_-_ORIF_Wound.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_I_D_-_ORIF_Wound.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_I_D_-_ORIF_Wound",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_I_D_-_ORIF_Wound.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_I_D_-_ORIF_Wound.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 18.366,
+      "caregiver_checklist": 11.006,
+      "child_explanation": 7.809,
+      "total": 37.187
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:01:49+00:00"
+  }
+}

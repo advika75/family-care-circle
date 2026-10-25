@@ -1,0 +1,368 @@
+{
+  "id": "mtsamples_Weight_Gain_and_Edema",
+  "patient_summary": "Hello there! I'm here to help you understand what's happening and what you need to do next. Let me explain it in simple words.\n\nYou've been feeling a bit tired and have gained a lot of weight, especially in your legs. You've also noticed that your belly is getting bigger. You've been on some medicines for a long time, including a medicine to help your blood pressure. You've also been taking a thyroid medicine called Synthroid.\n\nHere's what you need to do:\n- You will keep taking your Synthroid medicine, which is a thyroid medicine. You'll take it once a day, with 300 micrograms (mcg) of the medicine.\n- You will continue taking your other medicines for blood pressure, which are albuterol, Asacol, and Prilosec. Your amlodipine and lisinopril are on hold for now.\n- You'll keep taking your levothyroxine, which is a thyroid medicine, unless your doctor tells you otherwise.\n- You'll also keep taking your albuterol, Asacol, and Prilosec unless your doctor tells you to stop.\n\nIf you have any of these symptoms, you should call your doctor right away:\n- Chest pain or palpitations (feeling like your heart is skipping beats)\n- Loose stools that you haven't had before\n- Abdominal pain\n- Increasing girth and swelling in your legs\n\nYour doctor will check your thyroid levels in six weeks to make sure you're not becoming too hyperthyroid. If you want to lose weight, you can ask your doctor to check your thyroid levels again in six weeks.\n\nRemember, you're not alone. Your doctor is here to help you. If you have any more questions or concerns, please talk to your doctor.",
+  "caregiver_checklist": [
+    "Check her weight and note any changes.",
+    "Monitor for any new symptoms like chest pain or palpitations.",
+    "Watch for signs of hyperthyroidism such as increased heart rate or anxiety.",
+    "Call if she experiences severe abdominal pain or new chest pain.",
+    "Schedule a follow-up in 6 weeks to check her thyroid function.",
+    "Check her blood pressure and heart rate regularly.",
+    "Watch for any new or worsening edema in her legs.",
+    "Call if she develops new or worsening fatigue or sweats.",
+    "Schedule a physical examination in 6 weeks to assess her overall health.",
+    "Check her thyroid function test results in 6 weeks.",
+    "Call if she experiences significant weight loss or gain.",
+    "Schedule a consultation with her primary care provider if symptoms persist.",
+    "Ensure she continues taking lisinopril 10 mg daily as prescribed.",
+    "Ensure she continues taking albuterol as needed for her asthma.",
+    "Ensure she continues taking levothyroxine 300 mcg daily as prescribed.",
+    "Ensure she continues taking Asacol 800 mg twice daily as prescribed.",
+    "Ensure she continues taking Prilosec 20 mg twice daily as prescribed.",
+    "Ensure she continues taking amlodipine 10 mg daily as prescribed."
+  ],
+  "child_explanation": "You have been feeling tired and gaining weight. You've put on about a few pounds in a few days. You're also feeling a bit bloated and your legs are getting bigger. The grown-ups and doctors are taking good care of you. You're like a balloon that's getting bigger. They're checking you out to make sure you're okay. They're not going to give you any more medicine right now. They'll check again in a few weeks to see how you're doing.",
+  "entities": [
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 91,
+      "end": 105
+    },
+    {
+      "text": "COPD",
+      "label": "CONDITION",
+      "start": 298,
+      "end": 302
+    },
+    {
+      "text": "lisinopril",
+      "label": "MEDICATION",
+      "start": 464,
+      "end": 474
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 489,
+      "end": 501
+    },
+    {
+      "text": "levothyroxine",
+      "label": "MEDICATION",
+      "start": 753,
+      "end": 766
+    },
+    {
+      "text": "300 mcg",
+      "label": "DOSAGE",
+      "start": 767,
+      "end": 774
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 775,
+      "end": 780
+    },
+    {
+      "text": "albuterol",
+      "label": "MEDICATION",
+      "start": 782,
+      "end": 791
+    },
+    {
+      "text": "amlodipine",
+      "label": "MEDICATION",
+      "start": 820,
+      "end": 830
+    },
+    {
+      "text": "lisinopril",
+      "label": "MEDICATION",
+      "start": 835,
+      "end": 845
+    },
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 983,
+      "end": 997
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 1038,
+      "end": 1050
+    },
+    {
+      "text": "COPD",
+      "label": "CONDITION",
+      "start": 1066,
+      "end": 1070
+    },
+    {
+      "text": "fatigue",
+      "label": "SYMPTOM",
+      "start": 1378,
+      "end": 1385
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 1433,
+      "end": 1443
+    },
+    {
+      "text": "palpitations",
+      "label": "SYMPTOM",
+      "start": 1447,
+      "end": 1459
+    },
+    {
+      "text": "abdominal pain",
+      "label": "SYMPTOM",
+      "start": 1504,
+      "end": 1518
+    },
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 1570,
+      "end": 1578
+    },
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 2199,
+      "end": 2213
+    },
+    {
+      "text": "Hypothyroidism",
+      "label": "CONDITION",
+      "start": 2216,
+      "end": 2230
+    },
+    {
+      "text": "levothyroxine",
+      "label": "MEDICATION",
+      "start": 2463,
+      "end": 2476
+    },
+    {
+      "text": "300 mcg",
+      "label": "DOSAGE",
+      "start": 2498,
+      "end": 2505
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2506,
+      "end": 2511
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "lisinopril",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "levothyroxine",
+      "dosages": [
+        "300 mcg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "albuterol",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "amlodipine",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "HISTORY OF PRESENT ILLNESS:,  This is a 55-year-old female with a history of I-131-induced hypothyroidism years ago who presents with increased weight and edema over the last few weeks with a 25-pound weight gain.  She also has a history of fibromyalgia, inflammatory bowel disease, Crohn disease, COPD, and disc disease as well as thyroid disorder.  She has noticed increasing abdominal girth as well as increasing edema in her legs.  She has been on Norvasc and lisinopril for years for hypertension.  She has occasional sweats with no significant change in her bowel status.  She takes her thyroid hormone apart from her Synthroid.  She had been on generic for the last few months and has had difficulty with this in the past.,MEDICATIONS: , Include levothyroxine 300 mcg daily, albuterol, Asacol, and Prilosec.  Her amlodipine and lisinopril are on hold.,ALLERGIES:,  Include IV DYE, SULFA, NSAIDS, COMPAZINE, and DEMEROL.,PAST MEDICAL HISTORY:,  As above includes I-131-induced hypothyroidism, inflammatory bowel disease with Crohn, hypertension, fibromyalgia, COPD, and disc disease.,PAST SURGICAL HISTORY: , Includes a hysterectomy and a cholecystectomy.,SOCIAL HISTORY: , She does not smoke or drink alcohol.,FAMILY HISTORY: , Positive for thyroid disease but the sister has Graves disease, as well a sister with Hashimoto thyroiditis.,REVIEW OF SYSTEMS: , Positive for fatigue, sweats, and weight gain of 20 pounds.  Denies chest pain or palpitations.  She has some loosening stools, but denies abdominal pain.  Complains of increasing girth and increasing leg swelling.,PHYSICAL EXAMINATION:,GENERAL:  She is an obese female.,VITAL SIGNS:  Blood pressure 140/70 and heart rate 84.  She is afebrile.,HEENT:  She has no periorbital edema.  Extraocular movements were intact.  There was moist oral mucosa.,NECK:  Supple.  Her thyroid gland is atrophic and nontender.,CHEST:  Good air entry.,CARDIOVASCULAR:  Regular rate and rhythm.,ABDOMEN:  Benign.,EXTREMITIES:  Showed 1+ edema.,NEUROLOGIC:  She was awake and alert.,LABORATORY DATA:,  TSH 0.28, free T4 1.34, total T4 12.4 and glucose 105.,IMPRESSION/PLAN:,  This is a 55-year-old female with weight gain and edema, as well as history of hypothyroidism.  Hypothyroidism is secondary to radioactive iodine for Graves disease many years ago.  She is clinically and biochemically euthyroid.  Her TSH is mildly suppressed, but her free T4 is normal and with her weight gain I will not decrease her dose of levothyroxine.  I will continue on 300 mcg daily of Synthroid.  If she wanted to lose significant weight, I shall repeat thyroid function test in six weeks' time to ensure that she is not hyperthyroid.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "lisinopril",
+        "levothyroxine",
+        "300 mcg",
+        "daily",
+        "albuterol",
+        "amlodipine"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you understand what's happening and what you need to do next. Let me explain it in simple words.\n\nYou've been feeling a bit tired and have gained a lot of weight, especially in your legs. You've also noticed that your belly is getting bigger. You've been on some medicines for a long time, including a medicine to help your blood pressure. You've also been taking a thyroid medicine called Synthroid.\n\nHere's what you need to do:\n- You will keep taking your Synthroid medicine, which is a thyroid medicine. You'll take it once a day, with 300 micrograms (mcg) of the medicine.\n- You will continue taking your other medicines for blood pressure, which are albuterol, Asacol, and Prilosec. Your amlodipine and lisinopril are on hold for now.\n- You'll keep taking your levothyroxine, which is a thyroid medicine, unless your doctor tells you otherwise.\n- You'll also keep taking your albuterol, Asacol, and Prilosec unless your doctor tells you to stop.\n\nIf you have any of these symptoms, you should call your doctor right away:\n- Chest pain or palpitations (feeling like your heart is skipping beats)\n- Loose stools that you haven't had before\n- Abdominal pain\n- Increasing girth and swelling in your legs\n\nYour doctor will check your thyroid levels in six weeks to make sure you're not becoming too hyperthyroid. If you want to lose weight, you can ask your doctor to check your thyroid levels again in six weeks.\n\nRemember, you're not alone. Your doctor is here to help you. If you have any more questions or concerns, please talk to your doctor.",
+      "caregiver_checklist": "- Check her weight and note any changes.\n- Monitor for any new symptoms like chest pain or palpitations.\n- Watch for signs of hyperthyroidism such as increased heart rate or anxiety.\n- Call if she experiences severe abdominal pain or new chest pain.\n- Schedule a follow-up in 6 weeks to check her thyroid function.\n- Check her blood pressure and heart rate regularly.\n- Watch for any new or worsening edema in her legs.\n- Call if she develops new or worsening fatigue or sweats.\n- Schedule a physical examination in 6 weeks to assess her overall health.\n- Check her thyroid function test results in 6 weeks.\n- Call if she experiences significant weight loss or gain.\n- Schedule a consultation with her primary care provider if symptoms persist.",
+      "child_explanation": "You have been feeling tired and gaining weight. You've put on about a few pounds in a few days. You're also feeling a bit bloated and your legs are getting bigger. The grown-ups and doctors are taking good care of you. You're like a balloon that's getting bigger. They're checking you out to make sure you're okay. They're not going to give you any more medicine right now. They'll check again in a few weeks to see how you're doing."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Weight_Gain_and_Edema",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Weight_Gain_and_Edema.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Weight_Gain_and_Edema.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Weight_Gain_and_Edema",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Weight_Gain_and_Edema.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Weight_Gain_and_Edema.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Weight_Gain_and_Edema",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Weight_Gain_and_Edema.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Weight_Gain_and_Edema.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 29.791,
+      "caregiver_checklist": 35.686,
+      "child_explanation": 11.936,
+      "total": 77.426
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T14:16:17+00:00"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "id": "mtsamples_Gastric_Bypass_-_Preop_Eval",
+  "patient_summary": "Hello there! I'm here to help you understand what's happening with you and your family. You've been through a lot to get to this point. Your doctor has done a thorough check-up and cleared you from all the important things like your mind, your eating habits, and your heart. You also did really well on a special diet called Medifast, which helped you get ready for the surgery.\n\nNow, you're in good shape and the doctor thinks you're ready for the surgery in about two weeks. The surgery is called a gastric bypass, and it's a big change for you. Your doctor explained all the possible things that could happen during and after the surgery. Some of these are very serious, but most of the time, everything goes well.\n\nYou'll keep eating Medifast until the day of the surgery. After that, you'll follow your usual diet. Your doctor will give you some medicine to help you feel better during the surgery. You'll need to stay close to the hospital for a few days after the surgery, and your family will be there with you.\n\nIf you have any questions or if you feel sick or have any problems, you should tell your doctor or nurse right away. They're there to help you. You're doing great, and you'll be okay.",
+  "caregiver_checklist": [
+    "Review the patient's weight and diet progress.",
+    "Schedule a follow-up appointment in two weeks.",
+    "Monitor for any signs of infection, such as fever or redness.",
+    "Watch for signs of dehydration, like dry mouth or fatigue.",
+    "Check the patient's blood pressure and pulse regularly.",
+    "Call the healthcare provider if the patient experiences severe pain.",
+    "Schedule a post-surgery appointment for one month after surgery.",
+    "Watch for signs of nausea or vomiting, which may indicate a complication.",
+    "Call the healthcare provider if the patient has difficulty breathing.",
+    "Schedule a follow-up appointment six months after surgery."
+  ],
+  "child_explanation": "You're feeling well, you're ready for a big change.\nThe doctors are taking good care of you.\nYou're losing weight, getting stronger.\nYou'll have a special operation soon.\nThe grown-ups will help you through it.\nYou're in good hands, you'll be okay.",
+  "entities": [
+    {
+      "text": "obesity",
+      "label": "CONDITION",
+      "start": 525,
+      "end": 532
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 854,
+      "end": 862
+    }
+  ],
+  "regimens": [],
+  "source_text": "REASON FOR VISIT:,  Preop evaluation regarding gastric bypass surgery.,The patient has gone through the evaluation process and has been cleared from psychological, nutritional, and cardiac standpoint, also had great success on the preop Medifast diet.,PHYSICAL EXAMINATION: , The patient is alert and oriented x3.  Temperature of 97.9, pulse of 76, blood pressure of 114/74, weight of 247.4 pounds.  Abdomen:  Soft, nontender, and nondistended.,ASSESSMENT AND PLAN:,  The patient is currently in stable condition with morbid obesity, scheduled for gastric bypass surgery in less than two weeks.  Risks and benefits of the procedure were reiterated with the patient and significant other and mother, which included but not limited to death, pulmonary embolism, anastomotic leak, reoperation, prolonged hospitalization, stricture, small bowel obstruction, bleeding, and infection.  Questions regarding hospital course and recovery were addressed.  We will continue on the Medifast diet until the time of surgery and cleared for surgery.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you understand what's happening with you and your family. You've been through a lot to get to this point. Your doctor has done a thorough check-up and cleared you from all the important things like your mind, your eating habits, and your heart. You also did really well on a special diet called Medifast, which helped you get ready for the surgery.\n\nNow, you're in good shape and the doctor thinks you're ready for the surgery in about two weeks. The surgery is called a gastric bypass, and it's a big change for you. Your doctor explained all the possible things that could happen during and after the surgery. Some of these are very serious, but most of the time, everything goes well.\n\nYou'll keep eating Medifast until the day of the surgery. After that, you'll follow your usual diet. Your doctor will give you some medicine to help you feel better during the surgery. You'll need to stay close to the hospital for a few days after the surgery, and your family will be there with you.\n\nIf you have any questions or if you feel sick or have any problems, you should tell your doctor or nurse right away. They're there to help you. You're doing great, and you'll be okay.",
+      "caregiver_checklist": "- Review the patient's weight and diet progress.\n- Schedule a follow-up appointment in two weeks.\n- Monitor for any signs of infection, such as fever or redness.\n- Watch for signs of dehydration, like dry mouth or fatigue.\n- Check the patient's blood pressure and pulse regularly.\n- Call the healthcare provider if the patient experiences severe pain.\n- Schedule a post-surgery appointment for one month after surgery.\n- Watch for signs of nausea or vomiting, which may indicate a complication.\n- Call the healthcare provider if the patient has difficulty breathing.\n- Schedule a follow-up appointment six months after surgery.",
+      "child_explanation": "You're feeling well, you're ready for a big change.\nThe doctors are taking good care of you.\nYou're losing weight, getting stronger.\nYou'll have a special operation soon.\nThe grown-ups will help you through it.\nYou're in good hands, you'll be okay."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Gastric_Bypass_-_Preop_Eval",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Gastric_Bypass_-_Preop_Eval.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Gastric_Bypass_-_Preop_Eval.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Gastric_Bypass_-_Preop_Eval",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Gastric_Bypass_-_Preop_Eval.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Gastric_Bypass_-_Preop_Eval.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Gastric_Bypass_-_Preop_Eval",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Gastric_Bypass_-_Preop_Eval.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Gastric_Bypass_-_Preop_Eval.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 16.532,
+      "caregiver_checklist": 8.184,
+      "child_explanation": 5.556,
+      "total": 30.279
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:49:42+00:00"
+  }
+}

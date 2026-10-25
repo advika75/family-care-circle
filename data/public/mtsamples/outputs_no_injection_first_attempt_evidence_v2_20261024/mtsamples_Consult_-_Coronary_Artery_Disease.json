@@ -1,0 +1,349 @@
+{
+  "id": "mtsamples_Consult_-_Coronary_Artery_Disease",
+  "patient_summary": "Hello there, you're a 70-year-old man who was recently admitted to the hospital. The main reason for your visit is that you have coronary artery disease and you had a bypass surgery before. You've been feeling tired and fatigued, but you haven't had any chest pain or trouble breathing.\n\nHere's what's going on:\n- You have a history of high blood pressure, diabetes, and high cholesterol. Your family also has a history of coronary artery disease.\n- You're taking some medicines to help with your health:\n  - Metformin to help with your diabetes\n  - Prilosec to help with your heartburn\n  - Flomax to help with your urinary problems\n  - Metoprolol to help with your heart\n  - Crestor to help with your cholesterol\n  - Claritin to help with your allergies\n- You're also on antibiotics for a urinary tract infection.\n- You've had some knee, back, and prostate surgeries in the past.\n\nYou don't have any chest pain or shortness of breath, but you do have some tiredness and fatigue. Your doctor will check your heart and lungs to make sure you're okay. You're also on antibiotics for a urinary tract infection, and you need to finish the full course of antibiotics as prescribed.\n\nIf you have any of these symptoms, you should call your doctor:\n- Fever or chills\n- Shortness of breath\n- Chest pain\n- Nausea or vomiting\n- Pain in your abdomen\n- Urinary problems\n\nRemember to take your medicines as prescribed, and if you have any questions, you can always ask your doctor or nurse. You're doing well, and you'll be feeling better soon.",
+  "caregiver_checklist": [
+    "Check patient's temperature and record it.",
+    "Give Metoprolol as prescribed, twice a day.",
+    "Watch for signs of chest pain or shortness of breath.",
+    "Call the doctor if fever persists or worsens.",
+    "Schedule a follow-up EKG in 6 months.",
+    "Check blood pressure and record it.",
+    "Watch for fatigue and tiredness.",
+    "Call the doctor if fatigue or tiredness increases.",
+    "Schedule a prostate check-up in 6 months.",
+    "Check for signs of urinary tract infection.",
+    "Watch for signs of infection (fever, chills, cough).",
+    "Call the doctor if any new symptoms appear.",
+    "Schedule a cardiac risk factor review in 6 months.",
+    "Monitor Metformin dosage and side effects, as prescribed."
+  ],
+  "child_explanation": "You had a little fever, and the doctors are taking care of you. You're feeling tired and a bit weak. But don't worry, you have a team of tiny helpers in your body. They're helping you get better. The doctors gave you medicine to help your heart and another to help your tummy. They're also watching you closely. You're in good hands, and you'll feel better soon.",
+  "entities": [
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 184,
+      "end": 189
+    },
+    {
+      "text": "urinary tract infection",
+      "label": "CONDITION",
+      "start": 337,
+      "end": 360
+    },
+    {
+      "text": "fatigue",
+      "label": "SYMPTOM",
+      "start": 471,
+      "end": 478
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 510,
+      "end": 520
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 524,
+      "end": 543
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 637,
+      "end": 649
+    },
+    {
+      "text": "diabetes mellitus",
+      "label": "CONDITION",
+      "start": 662,
+      "end": 679
+    },
+    {
+      "text": "Metformin",
+      "label": "MEDICATION",
+      "start": 977,
+      "end": 986
+    },
+    {
+      "text": "Metoprolol",
+      "label": "MEDICATION",
+      "start": 1034,
+      "end": 1044
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 1347,
+      "end": 1359
+    },
+    {
+      "text": "hyperlipidemia",
+      "label": "CONDITION",
+      "start": 1361,
+      "end": 1375
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 1440,
+      "end": 1459
+    },
+    {
+      "text": "fatigue",
+      "label": "SYMPTOM",
+      "start": 1461,
+      "end": 1468
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 1535,
+      "end": 1540
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 1553,
+      "end": 1559
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 1578,
+      "end": 1583
+    },
+    {
+      "text": "Shortness of breath",
+      "label": "SYMPTOM",
+      "start": 1681,
+      "end": 1700
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 1706,
+      "end": 1715
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 1726,
+      "end": 1731
+    },
+    {
+      "text": "Nausea",
+      "label": "SYMPTOM",
+      "start": 1752,
+      "end": 1758
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 1763,
+      "end": 1771
+    },
+    {
+      "text": "urgency",
+      "label": "SYMPTOM",
+      "start": 1824,
+      "end": 1831
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 1967,
+      "end": 1974
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 1978,
+      "end": 1988
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Metformin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Metoprolol",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "REASON FOR CONSULTATION:,  Coronary artery disease (CAD), prior bypass surgery.,HISTORY OF PRESENT ILLNESS: , The patient is a 70-year-old gentleman who was admitted for management of fever.  The patient has history of elevated PSA and BPH.  He had a prior prostate biopsy and he recently had some procedure done, subsequently developed urinary tract infection, and presently on antibiotic.  From cardiac standpoint, the patient denies any significant symptom except for fatigue and tiredness.  No symptoms of chest pain or shortness of breath.,His history from cardiac standpoint as mentioned below.,CORONARY RISK FACTORS: , History of hypertension, history of diabetes mellitus, nonsmoker.  Cholesterol elevated.  History of established coronary artery disease in the family and family history positive.,FAMILY HISTORY: , Positive for coronary artery disease.,SURGICAL HISTORY: , Coronary artery bypass surgery and a prior angioplasty and prostate biopsies.,MEDICATIONS:,1.  Metformin.,2.  Prilosec.,3.  Folic acid.,4.  Flomax.,5.  Metoprolol.,6.  Crestor.,7.  Claritin.,ALLERGIES:,  DEMEROL, SULFA.,PERSONAL HISTORY: , He is married, nonsmoker, does not consume alcohol, and no history of recreational drug use.,PAST MEDICAL HISTORY:,  Significant for multiple knee surgeries, back surgery, and coronary artery bypass surgery with angioplasty, hypertension, hyperlipidemia, elevated PSA level, BPH with questionable cancer.  Symptoms of shortness of breath, fatigue, and tiredness.,REVIEW OF SYSTEMS:,CONSTITUTIONAL:  No history of fever, rigors, or chills except for recent fever and rigors.,HEENT:  No history of cataract or glaucoma.,CARDIOVASCULAR:  As above.,RESPIRATORY:  Shortness of breath.  No pneumonia or valley fever.,GASTROINTESTINAL:  Nausea and vomiting.  No hematemesis or melena.,UROLOGICAL:  Frequency, urgency.,MUSCULOSKELETAL:  No muscle weakness.,SKIN:  None significant.,NEUROLOGICAL:  No TIA or CVA.  No seizure disorder.,PSYCHOLOGICAL:  No anxiety or depression.,ENDOCRINE:  As above.,HEMATOLOGICAL:  None significant.,PHYSICAL EXAMINATION:,VITAL SIGNS:  Pulse of 75, blood pressure 130/68, afebrile, and respiratory rate 16 per minute.,HEENT:  Atraumatic, normocephalic.,NECK:  Veins flat.  No significant carotid bruits.,LUNGS:  Air entry bilaterally fair.,HEART:  PMI displaced.  S1 and S2 regular.,ABDOMEN:  Soft, nontender.  Bowel sounds present.,EXTREMITIES:  No edema.  Pulses are palpable.  No clubbing or cyanosis.,CNS:  Benign.,EKG:\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "Metformin"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're a 70-year-old man who was recently admitted to the hospital. The main reason for your visit is that you have coronary artery disease and you had a bypass surgery before. You've been feeling tired and fatigued, but you haven't had any chest pain or trouble breathing.\n\nHere's what's going on:\n- You have a history of high blood pressure, diabetes, and high cholesterol. Your family also has a history of coronary artery disease.\n- You're taking some medicines to help with your health:\n  - Metformin to help with your diabetes\n  - Prilosec to help with your heartburn\n  - Flomax to help with your urinary problems\n  - Metoprolol to help with your heart\n  - Crestor to help with your cholesterol\n  - Claritin to help with your allergies\n- You're also on antibiotics for a urinary tract infection.\n- You've had some knee, back, and prostate surgeries in the past.\n\nYou don't have any chest pain or shortness of breath, but you do have some tiredness and fatigue. Your doctor will check your heart and lungs to make sure you're okay. You're also on antibiotics for a urinary tract infection, and you need to finish the full course of antibiotics as prescribed.\n\nIf you have any of these symptoms, you should call your doctor:\n- Fever or chills\n- Shortness of breath\n- Chest pain\n- Nausea or vomiting\n- Pain in your abdomen\n- Urinary problems\n\nRemember to take your medicines as prescribed, and if you have any questions, you can always ask your doctor or nurse. You're doing well, and you'll be feeling better soon.",
+      "caregiver_checklist": "- Check patient's temperature and record it.\n- Give Metoprolol as prescribed, twice a day.\n- Watch for signs of chest pain or shortness of breath.\n- Call the doctor if fever persists or worsens.\n- Schedule a follow-up EKG in 6 months.\n- Check blood pressure and record it.\n- Watch for fatigue and tiredness.\n- Call the doctor if fatigue or tiredness increases.\n- Schedule a prostate check-up in 6 months.\n- Check for signs of urinary tract infection.\n- Watch for signs of infection (fever, chills, cough).\n- Call the doctor if any new symptoms appear.\n- Schedule a cardiac risk factor review in 6 months.",
+      "child_explanation": "You had a little fever, and the doctors are taking care of you. You're feeling tired and a bit weak. But don't worry, you have a team of tiny helpers in your body. They're helping you get better. The doctors gave you medicine to help your heart and another to help your tummy. They're also watching you closely. You're in good hands, and you'll feel better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Consult_-_Coronary_Artery_Disease",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Consult_-_Coronary_Artery_Disease.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Consult_-_Coronary_Artery_Disease.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Consult_-_Coronary_Artery_Disease",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Consult_-_Coronary_Artery_Disease.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Consult_-_Coronary_Artery_Disease.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Consult_-_Coronary_Artery_Disease",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Consult_-_Coronary_Artery_Disease.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Consult_-_Coronary_Artery_Disease.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 19.13,
+      "caregiver_checklist": 17.034,
+      "child_explanation": 7.508,
+      "total": 43.68
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:33:31+00:00"
+  }
+}

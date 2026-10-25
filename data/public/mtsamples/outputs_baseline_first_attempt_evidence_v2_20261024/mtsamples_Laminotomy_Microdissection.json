@@ -1,0 +1,215 @@
+{
+  "id": "mtsamples_Laminotomy_Microdissection",
+  "patient_summary": "Hello there, you've had a tough time with some health issues. Your doctor had to do some surgery to help you. Here's what happened:\n\n1. Your doctor put a special tube in your back yesterday. It was to help with some pressure in your head. But when they tried to take it out, the tube broke. They had to remove the broken part, which was deep inside your back.\n\n2. Your doctor had to make a small cut in your back to get to the broken tube. They used a special tool to find the tube and then took it out. They also tried to put a new tube in, but they couldn't do it right away. They will try again later.\n\n3. The doctor gave you some medicine called Cipro. It's a special antibiotic to help keep you healthy. They gave you 400 mg of it.\n\n4. You might still have some headaches and a bit of pressure in your head. Your doctor will keep an eye on you and give you more medicine if needed.\n\n5. If you have any pain or bleeding, or if you feel dizzy or confused, you should tell your doctor right away. They can help you feel better.\n\n6. You'll need to rest and take it easy for a few days. Your doctor will tell you when you can start doing normal activities again.\n\nRemember, if you have any questions or feel worried, always talk to your doctor or nurse. They're here to help you feel better.",
+  "caregiver_checklist": [
+    "Check the patient's vital signs every hour.",
+    "Watch for signs of increased intracranial pressure: worsening headaches, vomiting, drowsiness, or visual changes.",
+    "Call the surgeon if the patient's condition worsens.",
+    "Schedule a follow-up appointment in 2 weeks for postoperative care.",
+    "Check for signs of infection: redness, swelling, or discharge from the incision site.",
+    "Call the doctor if the patient develops fever or chills.",
+    "Schedule a CT scan or MRI if the headaches persist or worsen.",
+    "Watch for signs of bleeding: bright red blood in the urine or stool.",
+    "Call the doctor if the patient experiences any bleeding.",
+    "Schedule a lumbar puncture if not done yet, to confirm the catheter is out.",
+    "Check for signs of catheter-related complications: fever, redness, or drainage from the incision site.",
+    "Call the doctor if the patient has any signs of catheter-related complications.",
+    "Other dosage: 400 mg"
+  ],
+  "child_explanation": "You had a small tube in your back that got broken. The doctors found it and took it out. They also fixed some swelling in your head that was making you have headaches. The grown-ups and doctors are taking care of you. You're doing great, and you'll feel better soon.",
+  "entities": [
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 135,
+      "end": 147
+    },
+    {
+      "text": "headaches",
+      "label": "SYMPTOM",
+      "start": 672,
+      "end": 681
+    },
+    {
+      "text": "400 mg",
+      "label": "DOSAGE",
+      "start": 1319,
+      "end": 1325
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 2262,
+      "end": 2270
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES:  ,1.  Fractured and retained lumbar subarachnoid spinal catheter.,2.  Pseudotumor cerebri (benign intracranial hypertension).,PROCEDURES:  ,1.  L1 laminotomy.,2.  Microdissection.,3.  Retrieval of foreign body (retained lumbar spinal catheter).,4.  Attempted insertion of new external lumbar drain.,5.  Fluoroscopy.,ANESTHESIA: , General.,HISTORY:  ,The patient had a lumbar subarachnoid drain placed yesterday.  All went well with the surgery.  The catheter stopped draining and on pulling back the catheter, it fractured and CT scan showed that the remaining fragment is deep to the lamina.  The patient continues to have right eye blindness and headaches, presumably from the pseudotumor cerebri.,DESCRIPTION OF PROCEDURE:  ,After induction of general anesthesia, the patient was placed prone on the operating room table resting on chest rolls.  Her face was resting in a pink foam headrest.  Extreme care was taken positioning her because she weighs 92 kg.  There was a lot of extra padding for her limbs and her limbs were positioned comfortably.  The arms were not hyperextended.  Great care was taken with positioning of the head and making sure there was no pressure on her eyes especially since she already has visual disturbance.  A Foley catheter was in place.  She received IV Cipro 400 mg because she is allergic to most antibiotics.,Fluoroscopy was used to locate the lower end of the fractured catheter and the skin was marked.  It was also marked where we would try to insert the new catheter at the L4 or L3 interspinous space.,The patient was then prepped and draped in a sterile manner.,A 7-cm incision was made over the L1 lamina.  The incision was carried down through the fascia all the way down to the spinous processes.  A self-retaining McCullough retractor was placed.  The laminae were quite deep.  The microscope was brought in and using the Midas Rex drill with the AM-8 bit and removing some of the spinous process of L1-L2 with double-action rongeurs, the laminotomy was then done using the drill and great care was taken and using a 2-mm rongeur, the last layer of lamina was removed exposing the epidural fat and dura.  The opening in the bone was 1.5 x 1.5 cm.,Occasionally, bipolar cautery was used for bleeding of epidural veins, but this cautery was kept to a minimum.,Under high magnification, the dura was opened with an 11 blade and microscissors.  At first, there was a linear incision vertically to the left of midline, and I then needed to make a horizontal incision more towards the right.  The upper aspect of the cauda equina was visualized and perhaps the lower end of the conus.  Microdissection under high magnification did not expose the catheter.  The fluoroscope was brought in 2 more times including getting a lateral view and the fluoroscope appeared to show that the catheter should be in this location.,I persisted with intensive microdissection and finally we could see the catheter deep to the nerves and I was able to pull it out with the microforceps.,The wound was irrigated with bacitracin irrigation.,At this point, I then attempted lumbar puncture by making a small incision with an 11 blade in the L4 interspinous space and then later in the L3 interspinous space and attempted to puncture the dural sac with the Tuohy needle.  Dr. Y also tried.  Despite using the fluoroscope and our best attempts, we were not able to convincingly puncture the lumbar subarachnoid space and so the attempted placement of the new lumbar catheter had to be abandoned.  It will be done at a later date.,I felt it was unsafe to place a new catheter at this existing laminotomy site because it was very high up near the conus.  The potential for complications involving her spinal cord was greater and we have already had a complication of the catheter now and I just did not think it was safe to put in this location.,Under high magnification, the dura was closed with #6-0 PDS interrupted sutures.,After the dura was closed, a piece of Gelfoam was placed over the dura.  The paraspinous muscles were closed with 0 Vicryl interrupted sutures.  The subcutaneous fascia was also closed with 0 Vicryl interrupted suture.  The subcutaneous layer was closed with #2-0 Vicryl interrupted suture and the skin with #4-0 Vicryl Rapide.  The 4-0 Vicryl Rapide sutures were also used at the lumbar puncture sites to close the skin.,The patient was then turned carefully on to her bed after sterile dressings were applied and then taken to the recovery room.  The patient tolerated procedure well.  No complications.  Sponge and needle counts correct.  Blood loss minimal, none replaced.  This procedure took 5 hours.  This case was also extremely difficult due to patient's size and the difficulty of locating the catheter deep to the cauda equina.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "400 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you've had a tough time with some health issues. Your doctor had to do some surgery to help you. Here's what happened:\n\n1. Your doctor put a special tube in your back yesterday. It was to help with some pressure in your head. But when they tried to take it out, the tube broke. They had to remove the broken part, which was deep inside your back.\n\n2. Your doctor had to make a small cut in your back to get to the broken tube. They used a special tool to find the tube and then took it out. They also tried to put a new tube in, but they couldn't do it right away. They will try again later.\n\n3. The doctor gave you some medicine called Cipro. It's a special antibiotic to help keep you healthy. They gave you 400 mg of it.\n\n4. You might still have some headaches and a bit of pressure in your head. Your doctor will keep an eye on you and give you more medicine if needed.\n\n5. If you have any pain or bleeding, or if you feel dizzy or confused, you should tell your doctor right away. They can help you feel better.\n\n6. You'll need to rest and take it easy for a few days. Your doctor will tell you when you can start doing normal activities again.\n\nRemember, if you have any questions or feel worried, always talk to your doctor or nurse. They're here to help you feel better.",
+      "caregiver_checklist": "- Check the patient's vital signs every hour.\n- Watch for signs of increased intracranial pressure: worsening headaches, vomiting, drowsiness, or visual changes.\n- Call the surgeon if the patient's condition worsens.\n- Schedule a follow-up appointment in 2 weeks for postoperative care.\n- Check for signs of infection: redness, swelling, or discharge from the incision site.\n- Call the doctor if the patient develops fever or chills.\n- Schedule a CT scan or MRI if the headaches persist or worsen.\n- Watch for signs of bleeding: bright red blood in the urine or stool.\n- Call the doctor if the patient experiences any bleeding.\n- Schedule a lumbar puncture if not done yet, to confirm the catheter is out.\n- Check for signs of catheter-related complications: fever, redness, or drainage from the incision site.\n- Call the doctor if the patient has any signs of catheter-related complications.",
+      "child_explanation": "You had a small tube in your back that got broken. The doctors found it and took it out. They also fixed some swelling in your head that was making you have headaches. The grown-ups and doctors are taking care of you. You're doing great, and you'll feel better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Laminotomy_Microdissection",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Laminotomy_Microdissection.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Laminotomy_Microdissection.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Laminotomy_Microdissection",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Laminotomy_Microdissection.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Laminotomy_Microdissection.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Laminotomy_Microdissection",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Laminotomy_Microdissection.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Laminotomy_Microdissection.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 25.992,
+      "caregiver_checklist": 33.114,
+      "child_explanation": 11.209,
+      "total": 70.331
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T11:18:38+00:00"
+  }
+}

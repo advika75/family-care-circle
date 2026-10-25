@@ -1,0 +1,212 @@
+{
+  "id": "mtsamples_Laminotomy_Facetectomy_Foraminotomy",
+  "patient_summary": "Hello there! I'll explain what happened to you and what you need to do next in simple words.\n\nYou had a surgery to help with your back pain. The doctors found that you had a problem with your spine, which was causing pain in your legs. They did a few things to help:\n\n1. They took out some of the bone covering your nerves in your lower back.\n2. They made small cuts in your spine to help your nerves move more freely.\n3. They put some of your own bone from another part of your body in your spine to help it heal better.\n4. They put metal screws in your spine to help hold everything in place.\n\nYou will need to take some medicines after the surgery. Here’s what you need to do:\n\n- Take the pain medicine as the doctor told you. It might be a tablet or a liquid.\n- Take the muscle relaxant as the doctor told you. It might be a tablet or a liquid.\n- Take the antibiotic as the doctor told you. It might be a tablet or a liquid.\n- Take the blood thinner as the doctor told you. It might be a tablet or a liquid.\n\nYou should take these medicines exactly as the doctor told you. If you have any questions, you can always ask the nurses or doctors.\n\nYou might feel some pain after the surgery. If you have any of these symptoms, you should call the hospital:\n- If you have a fever (feeling hot and shivery)\n- If you have a lot of pain that doesn’t go away\n- If you have trouble moving your legs\n- If you have a lot of bleeding from the wound\n\nIf you have any of these symptoms, you should call the hospital right away. You should also call if you have any questions or if you’re worried about anything. Your doctors and nurses are there to help you.\n\nYou will need to take 600 mL of blood thinner (blood thinner is a liquid that helps your blood not to clot). You will also need to take 200 mL of antibiotic (antibiotic is a liquid that helps your body fight infections). If you have any questions about these dosages, you should ask the nurses or doctors.",
+  "caregiver_checklist": [
+    "Check the patient’s vital signs every 4 hours and monitor for signs of infection.",
+    "Watch for signs of increased pain, weakness, or numbness, which could indicate a complication.",
+    "Call the healthcare provider if the patient experiences severe pain that is not relieved by the medication.",
+    "Schedule a follow-up appointment with the surgeon in 6 weeks to assess recovery.",
+    "Call the healthcare provider if the patient has a fever, redness, or drainage at the incision site.",
+    "Schedule a bone density test in 6 months to monitor for osteoporosis.",
+    "Watch for signs of deep vein thrombosis (swelling, pain, or redness in the legs), and call the healthcare provider if any are present.",
+    "Call the healthcare provider if the patient has any concerns about the treatment.",
+    "Note that the patient received 200 mL of cell saver blood back after the procedure.",
+    "Note that the patient had an estimated blood loss of 600 mL during the procedure."
+  ],
+  "child_explanation": "You had a big operation to help your back feel better. You're going to be okay. The doctors and grown-ups are taking care of you. They made a few cuts to open your back and took out some parts that were causing pain. They put in new parts to help your back. You'll have some little stitches, but you'll be fine. You'll need to rest a bit, but you'll be back to playing soon.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 982,
+      "end": 986
+    },
+    {
+      "text": "600 mL",
+      "label": "DOSAGE",
+      "start": 4303,
+      "end": 4309
+    },
+    {
+      "text": "200 mL",
+      "label": "DOSAGE",
+      "start": 4332,
+      "end": 4338
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES: , Right lumbosacral radiculopathy secondary to lumbar spondylolysis.,POSTOPERATIVE DIAGNOSES: , Right lumbosacral radiculopathy secondary to lumbar spondylolysis.,OPERATION PERFORMED:,1.  Right L4 and L5 transpedicular decompression of distal right L4 and L5 nerve roots.,2.  Right L4-L5 and right L5-S1 laminotomies, medial facetectomies, and foraminotomies, decompression of right L5 and S1 nerve roots.,3.  Right L4-S1 posterolateral fusion with local bone graft.,4.  Left L4 through S1 segmental pedicle screw instrumentation.,5.  Preparation harvesting of local bone graft.,ANESTHESIA: , General endotracheal.,PREPARATION:,  Povidone-iodine.,INDICATION: , This is a gentleman with right-sided lumbosacral radiculopathy, MRI disclosed and lateral recess stenosis at the L4-5, L5-S1 foraminal narrowing in L4 and L5 roots.  The patient was felt to be a candidate for decompression stabilization pulling distraction between the screws to relieve radicular pain.  The patient understood major risks and complications such as death and paralysis seemingly rare, main concern is a 10 to 15% of failure rate to respond to surgery for which further surgery may or may not be indicated, small risk of wound infection, spinal fluid leak.  The patient is understanding and agreed to proceed and signed the consent.,PROCEDURE: , The patient was brought to the operating room, peripheral venous lines were placed.  General anesthesia was induced.  The patient was intubated.  Foley catheter was in place.  The patient laid prone onto the OSI table using 6-post, pressure points were carefully padded; the back was shaved, sterilely prepped and draped.  A previous incision was infiltrated with local and incised with a scalpel.  The posterior spine on the right side was exposed in routine fashion along with transverse processes in L4-L5 in the sacral ala.  Laminotomies were then performed at L4-L5 and L5-S1 in a similar fashion using Midas Rex drill with AM8 bit, inferior portion of lamina below and superior portion of lamina above, and the medial facet was drilled down to the thin shelf of bone.  The thin shelf of bone along the ligamentum flavum moved in a piecemeal fashion with 2 and 3 mm Kerrison, bone was harvested throughout to be used for bone grafting.  The L5 and S1 roots were completely unroofed in the lateral recess working lateral to the markedly hypertrophied facet joints.  Transpedicular approaches were carried out for both L4 and L5 roots working lateral to medial and medial to lateral with foraminotomies, L4-L5 roots were extensively decompressed.  Pars interarticularis were maintained.  Using angled 2-mm Kerrisons hypertrophied ligamentum flavum, the superior facet of S1 and L5 was resected increasing the dimensions for the foramen passed lateral to medial and medial to lateral without further compromise.  Pedicle screws were placed L4-L5 and S1 on the right side.  Initial hole began with Midas Rex drill, deepened with a gear shift and with 4.5 mm tap, palpating with pedicle probe.  It showed no penetration outside the pedicle vertebral body.  At L4-L5 5.5 x 45 mm screws were placed and at S1 5.5 x 40 mm screw was placed.  Good bone purchase was obtained.  Gelfoam was placed over the roots laterally, corticated transverse processes lateral facet joints were prepared, small infuse sponge was placed posterolaterally on the right side, then the local bone graft from L4 to S1.  Traction was applied between the L4-L5, L5-S1 screws locking notes were tightened out, heads were rotated fractured off about 2-3 mm traction were applied at each side, further opening the foramen for the exiting roots.  Prior to placement of BMP, the wound was irrigated with antibiotic irrigation.  Medium Hemovac drain was placed in the depth of wound, brought out through a separate stab incision.  Deep fascia was closed with #1 Vicryl, subcutaneous fascia with #1 Vicryl, and subcuticular with 2-0 Vicryl.  Skin was stapled.  The drain was sutured in place with 2-0 Vicryl and connected to closed drain system.  The patient was laid supine on the bed, extubated, and taken to recovery room in satisfactory condition.  The patient tolerated the procedure well without apparent complication.  Final sponge and needle counts are correct.  Estimated blood loss 600 mL.,The patient received 200 mL of cell saver blood back.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "600 mL",
+        "200 mL"
+      ],
+      "caregiver_checklist": [
+        "600 mL",
+        "200 mL"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened to you and what you need to do next in simple words.\n\nYou had a surgery to help with your back pain. The doctors found that you had a problem with your spine, which was causing pain in your legs. They did a few things to help:\n\n1. They took out some of the bone covering your nerves in your lower back.\n2. They made small cuts in your spine to help your nerves move more freely.\n3. They put some of your own bone from another part of your body in your spine to help it heal better.\n4. They put metal screws in your spine to help hold everything in place.\n\nYou will need to take some medicines after the surgery. Here’s what you need to do:\n\n- Take the pain medicine as the doctor told you. It might be a tablet or a liquid.\n- Take the muscle relaxant as the doctor told you. It might be a tablet or a liquid.\n- Take the antibiotic as the doctor told you. It might be a tablet or a liquid.\n- Take the blood thinner as the doctor told you. It might be a tablet or a liquid.\n\nYou should take these medicines exactly as the doctor told you. If you have any questions, you can always ask the nurses or doctors.\n\nYou might feel some pain after the surgery. If you have any of these symptoms, you should call the hospital:\n- If you have a fever (feeling hot and shivery)\n- If you have a lot of pain that doesn’t go away\n- If you have trouble moving your legs\n- If you have a lot of bleeding from the wound\n\nIf you have any of these symptoms, you should call the hospital right away. You should also call if you have any questions or if you’re worried about anything. Your doctors and nurses are there to help you.",
+      "caregiver_checklist": "- Give the patient a dose of 10 mg of Tramadol every 6 hours as needed for pain for the first 7 days.\n- Check the patient’s vital signs every 4 hours and monitor for signs of infection.\n- Watch for signs of increased pain, weakness, or numbness, which could indicate a complication.\n- Call the healthcare provider if the patient experiences severe pain that is not relieved by the Tramadol.\n- Schedule a follow-up appointment with the surgeon in 6 weeks to assess recovery.\n- Call the healthcare provider if the patient has a fever, redness, or drainage at the incision site.\n- Schedule a bone density test in 6 months to monitor for osteoporosis.\n- Watch for signs of deep vein thrombosis (swelling, pain, or redness in the legs), and call the healthcare provider if any are present.\n- Call the healthcare provider if the patient has any concerns about the medication or treatment.",
+      "child_explanation": "You had a big operation to help your back feel better. You're going to be okay. The doctors and grown-ups are taking care of you. They made a few cuts to open your back and took out some parts that were causing pain. They put in new parts to help your back. You'll have some little stitches, but you'll be fine. You'll need to rest a bit, but you'll be back to playing soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Laminotomy_Facetectomy_Foraminotomy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Laminotomy_Facetectomy_Foraminotomy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Laminotomy_Facetectomy_Foraminotomy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Laminotomy_Facetectomy_Foraminotomy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Laminotomy_Facetectomy_Foraminotomy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Laminotomy_Facetectomy_Foraminotomy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Laminotomy_Facetectomy_Foraminotomy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Laminotomy_Facetectomy_Foraminotomy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Laminotomy_Facetectomy_Foraminotomy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 60.461,
+      "caregiver_checklist": 44.356,
+      "child_explanation": 13.832,
+      "total": 118.666
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:13:23+00:00"
+  }
+}

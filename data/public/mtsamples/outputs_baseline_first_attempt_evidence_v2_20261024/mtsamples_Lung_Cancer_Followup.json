@@ -1,0 +1,299 @@
+{
+  "id": "mtsamples_Lung_Cancer_Followup",
+  "patient_summary": "Hello you,\n\nI understand you're feeling quite uncomfortable. You have a serious illness called small cell lung cancer, and you're currently taking some medicines to help you feel better. You're taking Levothyroxine, which helps your thyroid work properly. You take it 88 mcg each day. You also take Soriatane, a medicine to help with skin problems, and it's 25 mg each day. You're also using Timoptic, which is used for eye problems, and it's a 0.5% solution that you use twice a day. You're also taking Vicodin, a medicine to help with pain, and you take it one to two tablets every six hours as needed.\n\nYou've been having back pain, and you had a CT scan to check your chest. You're here today because your daughters brought you to the clinic. You're taking pain medicine as needed, but you also received a platelet transfusion the other day. You told your doctor you had a mild fever, but you don't have any chills, night sweats, chest pain, or shortness of breath. Everything else in your body is okay.\n\nYou should call if you have any of these symptoms:\n- More back pain\n- Fever gets higher\n- You have chills or night sweats\n- You have chest pain or trouble breathing\n\nYou're doing well, and you're taking good care of yourself. Keep taking your medicines and let your doctor know if you have any new symptoms. Your Vicodin is 5/500 mg, which means you take one to two tablets every six hours as needed.",
+  "caregiver_checklist": [
+    "Check Levothyroxine levels as per the doctor's recommendation.",
+    "Watch for signs of hypothyroidism such as fatigue, weight gain, or constipation.",
+    "Call if fever persists or if new symptoms like chills or night sweats appear.",
+    "Schedule a follow-up CT scan if back pain persists or worsens.",
+    "Monitor for signs of infection like fever, chills, or night sweats.",
+    "Watch for signs of thyroid dysfunction like fatigue or weight changes.",
+    "Call if back pain becomes severe or if new symptoms like chest pain or shortness of breath appear.",
+    "Schedule a review of systems to check for any new or worsening symptoms.",
+    "Call if the patient experiences any new or worsening symptoms.",
+    "Ensure Levothyroxine is taken daily, 88 mcg once a day, and 5/500 mg as needed for pain.",
+    "Confirm with the care team: 25 mg (dosage)"
+  ],
+  "child_explanation": "You have a lot of tiny helpers in your body helping you feel better.\nThe doctors and grown-ups are taking care of you.\nYou had some medicine to help your cancer, but now you have a sore back.\nYou had a special picture taken of your chest, and the doctors saw something.\nYou're feeling a bit warm, but the doctors will help you feel better soon.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 128,
+      "end": 132
+    },
+    {
+      "text": "back pain",
+      "label": "SYMPTOM",
+      "start": 414,
+      "end": 423
+    },
+    {
+      "text": "Levothyroxine",
+      "label": "MEDICATION",
+      "start": 570,
+      "end": 583
+    },
+    {
+      "text": "88 mcg",
+      "label": "DOSAGE",
+      "start": 584,
+      "end": 590
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 591,
+      "end": 596
+    },
+    {
+      "text": "25 mg",
+      "label": "DOSAGE",
+      "start": 608,
+      "end": 613
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 614,
+      "end": 619
+    },
+    {
+      "text": "5/500 mg",
+      "label": "DOSAGE",
+      "start": 660,
+      "end": 668
+    },
+    {
+      "text": "back pain",
+      "label": "SYMPTOM",
+      "start": 794,
+      "end": 803
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 832,
+      "end": 836
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 910,
+      "end": 915
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 933,
+      "end": 939
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 955,
+      "end": 965
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 970,
+      "end": 989
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Levothyroxine",
+      "dosages": [
+        "88 mcg",
+        "25 mg",
+        "5/500 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "CHIEF COMPLAINT:,1.  Extensive stage small cell lung cancer.,2.  Chemotherapy with carboplatin and etoposide.,3.  Left scapular pain status post CT scan of the thorax.,HISTORY OF PRESENT ILLNESS: , The patient is a 67-year-old female with extensive stage small cell lung cancer.  She is currently receiving treatment with carboplatin and etoposide.  She completed her fifth cycle on 08/12/10.  She has had ongoing back pain and was sent for a CT scan of the thorax.  She comes into clinic today accompanied by her daughters to review the results.,CURRENT MEDICATIONS: , Levothyroxine 88 mcg daily, Soriatane 25 mg daily, Timoptic 0.5% solution b.i.d., Vicodin 5/500 mg one to two tablets q.6 hours p.r.n.,ALLERGIES: , No known drug allergies.,REVIEW OF SYSTEMS:  ,The patient continues to have back pain some time she also take two pain pill.  She received platelet transfusion the other day and reported mild fever.  She denies any chills, night sweats, chest pain, or shortness of breath.  The rest of her review of systems is negative.,PHYSICAL EXAM:,VITALS:\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "88 mcg",
+        "daily",
+        "25 mg",
+        "5/500 mg"
+      ],
+      "caregiver_checklist": [
+        "88 mcg",
+        "daily",
+        "25 mg",
+        "5/500 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello you, \n\nI understand you're feeling quite uncomfortable. You have a serious illness called small cell lung cancer, and you're currently taking some medicines to help you feel better. You're taking Levothyroxine, which helps your thyroid work properly. You also take Soriatane, a medicine to help with skin problems, and Timoptic, which is used for eye problems. You're also taking Vicodin, a medicine to help with pain. \n\nYou've been having back pain, and you had a CT scan to check your chest. You're here today because your daughters brought you to the clinic. You're taking pain medicine as needed, but you also received a platelet transfusion the other day. You told your doctor you had a mild fever, but you don't have any chills, night sweats, chest pain, or shortness of breath. Everything else in your body is okay.\n\nYou should call if you have any of these symptoms:\n- More back pain\n- Fever gets higher\n- You have chills or night sweats\n- You have chest pain or trouble breathing\n\nYou're doing well, and you're taking good care of yourself. Keep taking your medicines and let your doctor know if you have any new symptoms.",
+      "caregiver_checklist": "- Check Levothyroxine levels as per the doctor's recommendation.\n- Watch for signs of hypothyroidism such as fatigue, weight gain, or constipation.\n- Call if fever persists or if new symptoms like chills or night sweats appear.\n- Schedule a follow-up CT scan if back pain persists or worsens.\n- Monitor for signs of infection like fever, chills, or night sweats.\n- Watch for signs of thyroid dysfunction like fatigue or weight changes.\n- Call if back pain becomes severe or if new symptoms like chest pain or shortness of breath appear.\n- Schedule a review of systems to check for any new or worsening symptoms.\n- Call if the patient experiences any new or worsening symptoms.",
+      "child_explanation": "You have a lot of tiny helpers in your body helping you feel better.\nThe doctors and grown-ups are taking care of you.\nYou had some medicine to help your cancer, but now you have a sore back.\nYou had a special picture taken of your chest, and the doctors saw something.\nYou're feeling a bit warm, but the doctors will help you feel better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Lung_Cancer_Followup",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Lung_Cancer_Followup.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Lung_Cancer_Followup.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Lung_Cancer_Followup",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Lung_Cancer_Followup.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Lung_Cancer_Followup.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Lung_Cancer_Followup",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Lung_Cancer_Followup.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Lung_Cancer_Followup.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "25 mg"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 57.916,
+      "caregiver_checklist": 34.574,
+      "child_explanation": 7.127,
+      "total": 99.624
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T11:24:53+00:00"
+  }
+}

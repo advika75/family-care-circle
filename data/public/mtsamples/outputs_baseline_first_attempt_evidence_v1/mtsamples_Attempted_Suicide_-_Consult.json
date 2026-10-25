@@ -1,0 +1,269 @@
+{
+  "id": "mtsamples_Attempted_Suicide_-_Consult",
+  "patient_summary": "Hello there, you're feeling a bit worried and scared right now. The doctors at ABCD Hospital have decided to keep you in the hospital for a few days to make sure you're safe. They think you might be having trouble with your mood and might be having some panic attacks. You have been prescribed some medicines to help you feel better. Here's what you need to take:\n\n1. Klonopin: You will take 1 mg of this medicine three times a day. This medicine helps with anxiety and panic attacks.\n2. Extended-release lithium: You will take 450 mg of this medicine twice a day. This medicine helps with your mood swings.\n3. Depakote: You will take 1000 mg of this medicine twice a day. This medicine also helps with mood swings.\n4. Seroquel: You will take 1000 mg of this medicine every day. This medicine helps with anxiety and depression.\n\nYou have an appointment with your doctor in four days. Your doctor will help you understand these medicines and how to take them. You need to take these medicines exactly as your doctor tells you. If you have any questions, you can always ask your doctors or nurses.\n\nThe doctors also want you to be safe. They want you to let them know if you start feeling very unsafe or if you have any thoughts about hurting yourself or others. They will help you feel better and keep you safe.\n\nYour mom and stepdad have been told about your discharge and the plan for follow-up care. They will help you too. Remember, you are not alone, and there are people who care about you and want to help you get better.",
+  "caregiver_checklist": [
+    "Check that the patient has all medications from the hospital bag.",
+    "Monitor for signs of agitation or psychomotor hyperactivity.",
+    "Watch for any new or worsening depressive symptoms.",
+    "Call Dr. X for a follow-up appointment in four days.",
+    "Schedule a follow-up appointment with the patient's outpatient psychiatrist.",
+    "Watch for signs of suicidal or self-harming thoughts or behaviors.",
+    "Call emergency services if the patient appears acutely unsafe.",
+    "Call the patient's girlfriend to inform her of the discharge and follow-up plan.",
+    "Check the patient's Klonopin dosage is 1 mg t.i.d. p.r.n.",
+    "Check the patient's Depakote dosage is 1000 mg b.i.d.",
+    "Check the patient's lithium dosage is 450 mg b.i.d."
+  ],
+  "child_explanation": "You had a big accident and a scary moment. You're feeling worried and scared. The doctors and grown-ups are taking care of you. You need some medicine to help you feel better. It's like having a team of tiny helpers. You'll see your doctor in a few days. The doctors will make sure you're okay. You're safe now, but you need to be careful. If you feel scared, tell the staff. They will help you.",
+  "entities": [
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 1009,
+      "end": 1019
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 1025,
+      "end": 1032
+    },
+    {
+      "text": "migraine",
+      "label": "CONDITION",
+      "start": 1324,
+      "end": 1332
+    },
+    {
+      "text": "headaches",
+      "label": "SYMPTOM",
+      "start": 1333,
+      "end": 1342
+    },
+    {
+      "text": "1 mg",
+      "label": "DOSAGE",
+      "start": 1702,
+      "end": 1706
+    },
+    {
+      "text": "450 mg",
+      "label": "DOSAGE",
+      "start": 1750,
+      "end": 1756
+    },
+    {
+      "text": "1000 mg",
+      "label": "DOSAGE",
+      "start": 1777,
+      "end": 1784
+    },
+    {
+      "text": "1000 mg",
+      "label": "DOSAGE",
+      "start": 1805,
+      "end": 1812
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 2539,
+      "end": 2546
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 2793,
+      "end": 2803
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 2809,
+      "end": 2816
+    },
+    {
+      "text": "migraine",
+      "label": "CONDITION",
+      "start": 3009,
+      "end": 3017
+    },
+    {
+      "text": "headaches",
+      "label": "SYMPTOM",
+      "start": 3018,
+      "end": 3027
+    }
+  ],
+  "regimens": [],
+  "source_text": "IDENTIFYING DATA: , The patient is a 21-year-old Caucasian male, who attempted suicide by trying to jump from a moving car, which was being driven by his mother.  Additionally, he totaled his own car earlier in the day, both of which occurrences occurred approximately 72 hours before arriving at ABCD Hospital.  He says he had a \"panic attack leading to the car wreck\" and denies that any of his behavior was suicidal in nature responding, \"I was just trying to scare my mother.\",CHIEF COMPLAINT: , The patient does say, \"I screwed up my whole life and wrecked my car.\" The patient claims he is med compliant, although his mother, and stepfather saying he is off his meds.  He had a two-day stay at XYZ Hospital for medical clearance after his car accident, and no injuries were found other than a sore back, which was negative by x-ray and CT scan.,PRESENT ILLNESS:  ,The patient is on a 72-your involuntary hold for danger to self and grave disability.  He has a history of bipolar disorder with mania and depression with anxiety and panic attacks.  Today, he went to involuntary court hearing and was released by the court.  He is now being discharged from second floor ABCD Psychiatric Hospital.,PAST PSYCHIATRIC HISTORY:,  Listed extensively in his admission note and will not be repeated.,MEDICAL HISTORY: , Includes migraine headaches and a history of concussion.  He describes \"allergy\" to Haldol medication.,OUTPATIENT CARE: , The patient sees a private psychiatrist, Dr. X.  Followup with Dr. X is arranged in four days' time and the patient is discharged with four days of medication.  This information is known to Dr. X.,DISCHARGE MEDICATIONS:,The patient is discharged with:,1.  Klonopin 1 mg t.i.d. p.r.n.,2.  Extended-release lithium 450 mg b.i.d.,3.  Depakote 1000 mg b.i.d.,4.  Seroquel 1000 mg per day.,SOCIAL HISTORY:  ,The patient lives with his girlfriend on an on-and-off basis and is unclear if they will be immediately moving back in together.,SUBSTANCE ABUSE: , The patient was actively tox screen positive for benzodiazepines, cocaine, and marijuana.  The patient had an inpatient stay in 2008 at ABC Lodge for drug abuse treatment.,MENTAL STATUS EXAM:,  Notable for lack of primary psychotic symptoms, some agitation, and psychomotor hyperactivity, uncooperative behavior regarding his need for ongoing acute psychiatric treatment and stabilization.  There is an underlying hostile oppositional message in his communications.,FORMULATION: , The patient is a 21-year-old male with a history of bipolar disorder, anxiety, polysubstance abuse, and in addition ADHD.  His recent behavior is may be at least in part associated with active polysubstance abuse and also appears to be a result of noncompliance with meds.,DIAGNOSES:,AXIS I:,1.  Bipolar disorder.,2.  Major depression with anxiety and panic attacks.,3.  Polysubstance abuse, benzodiazepines, and others street meds.,4.  ADHD.,AXIS II: , Deferred at present, but consider personality disorder traits.,AXIS III:,  History of migraine headaches and past history of concussion.,AXIS IV: , Stressors are moderate.,AXIS V: , GAF is 40.,PLAN: , The patient is released from the hospital secondary to court evaluation, which did not extend his involuntary stay.  He has an appointment in four days with his outpatient psychiatrist, Dr. X.  He has four days' worth of medications and agrees to no self-harm or harm of others.  Additionally, he agrees to let staff know or authorities know if he becomes acutely unsafe.  His mother and stepfather have been informed of the patient's discharge and the followup plan.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "1 mg",
+        "450 mg",
+        "1000 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're feeling a bit worried and scared right now. The doctors at ABCD Hospital have decided to keep you in the hospital for a few days to make sure you're safe. They think you might be having trouble with your mood and might be having some panic attacks. You have been prescribed some medicines to help you feel better. Here's what you need to take:\n\n1. Klonopin: You will take 1 mg of this medicine three times a day. This medicine helps with anxiety and panic attacks.\n2. Extended-release lithium: You will take 450 mg of this medicine twice a day. This medicine helps with your mood swings.\n3. Depakote: You will take 1000 mg of this medicine twice a day. This medicine also helps with mood swings.\n4. Seroquel: You will take 1000 mg of this medicine every day. This medicine helps with anxiety and depression.\n\nYou have an appointment with your doctor in four days. Your doctor will help you understand these medicines and how to take them. You need to take these medicines exactly as your doctor tells you. If you have any questions, you can always ask your doctors or nurses.\n\nThe doctors also want you to be safe. They want you to let them know if you start feeling very unsafe or if you have any thoughts about hurting yourself or others. They will help you feel better and keep you safe.\n\nYour mom and stepdad have been told about your discharge and the plan for follow-up care. They will help you too. Remember, you are not alone, and there are people who care about you and want to help you get better.",
+      "caregiver_checklist": "- Check that the patient has all medications from the hospital bag.\n- Monitor for signs of agitation or psychomotor hyperactivity.\n- Watch for any new or worsening depressive symptoms.\n- Call Dr. X for a follow-up appointment in four days.\n- Schedule a follow-up appointment with the patient's outpatient psychiatrist.\n- Watch for signs of suicidal or self-harming thoughts or behaviors.\n- Call emergency services if the patient appears acutely unsafe.\n- Call the patient's girlfriend to inform her of the discharge and follow-up plan.\n- Check the patient's benzodiazepine levels if available.\n- Call the patient's girlfriend to inform her of the discharge and follow-up plan.",
+      "child_explanation": "You had a big accident and a scary moment. You're feeling worried and scared. The doctors and grown-ups are taking care of you. You need some medicine to help you feel better. It's like having a team of tiny helpers. You'll see your doctor in a few days. The doctors will make sure you're okay. You're safe now, but you need to be careful. If you feel scared, tell the staff. They will help you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Attempted_Suicide_-_Consult",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Attempted_Suicide_-_Consult.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Attempted_Suicide_-_Consult.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Attempted_Suicide_-_Consult",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Attempted_Suicide_-_Consult.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Attempted_Suicide_-_Consult.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Attempted_Suicide_-_Consult",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Attempted_Suicide_-_Consult.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Attempted_Suicide_-_Consult.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 22.688,
+      "caregiver_checklist": 21.121,
+      "child_explanation": 9.934,
+      "total": 53.767
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T14:01:57+00:00"
+  }
+}

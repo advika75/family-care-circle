@@ -1,0 +1,290 @@
+{
+  "id": "mtsamples_Consult_-_Knee_Pain",
+  "patient_summary": "Hello there, it looks like you're feeling some pain in your left knee. You've had a Synvisc injection about five days ago, and you're still experiencing some discomfort. The pain is especially bad when you put weight on your knee, and you can't bend it very much. You've been using Tylenol No. 3 and Advil, but the pain still feels quite strong, like a 10 out of 10.\n\nYour doctor thinks you might need to lose some weight. They've encouraged you to try a diet called Medifast, but you're not sure if you should have a gastric bypass surgery. Your doctor thinks losing weight will help your knee feel better.\n\nYou're also having some trouble with your knee joint. Your doctor found some swelling and pain when they pressed on your knee. You can't bend your knee very much, and you have some clicking when you move it. Your doctor will help you start a physical therapy program and give you some exercises to do at home. They also gave you some pain medicine to take when you need it.\n\nYour doctor wants you to follow up in four weeks. If you still feel bad after that, they'll talk to Dr. X about whether you might need another knee surgery. You seem to understand what's going on, and you agree with the plan.\n\nYou're also taking ibuprofen, which is a medicine that helps with pain and swelling. You should take it every day as directed. Your doctor also gave you Nexium 20 mg to take once a day to help with any stomach discomfort you might have from the ibuprofen. You're also taking Penicillin, which is a medicine to help fight infections.\n\nIf you have any more pain or if you feel like you can't breathe or if you have any other problems, you should tell your doctor right away. They're here to help you feel better.",
+  "caregiver_checklist": [
+    "Check the patient’s vital signs and report any changes.",
+    "Give Tylenol No. 3 and Advil as needed for pain, following the prescribed schedule.",
+    "Watch for signs of infection, such as increased redness, warmth, or pus.",
+    "Call the doctor if the pain increases or if there’s any new symptom.",
+    "Schedule a follow-up appointment in four weeks.",
+    "Check the patient’s weight and progress on the Medifast diet.",
+    "Watch for signs of dehydration, such as dry mouth, dark urine.",
+    "Call the doctor if the patient experiences severe pain or swelling.",
+    "Schedule a physical therapy appointment if the patient hasn’t improved.",
+    "Call the doctor if the patient has any concerns about her weight loss or diet.",
+    "Take ibuprofen as needed for pain, following the prescribed dosage of 20 mg, taken daily.",
+    "Watch for signs of penicillin allergy, such as rash, itching, or swelling."
+  ],
+  "child_explanation": "You had a knee hurt, and it's still a bit sore. Some grown-ups gave you medicine to help, but it's not all better yet. You're doing good by using ice and heat. Your doctors are taking care of you. They want you to eat healthier food and maybe try a special diet. You're doing great!",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 29,
+      "end": 33
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 147,
+      "end": 151
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 309,
+      "end": 313
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 441,
+      "end": 445
+    },
+    {
+      "text": "ibuprofen",
+      "label": "MEDICATION",
+      "start": 543,
+      "end": 552
+    },
+    {
+      "text": "PENICILLIN",
+      "label": "MEDICATION",
+      "start": 599,
+      "end": 609
+    },
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 1541,
+      "end": 1549
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1596,
+      "end": 1600
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1684,
+      "end": 1688
+    },
+    {
+      "text": "Obesity",
+      "label": "CONDITION",
+      "start": 2185,
+      "end": 2192
+    },
+    {
+      "text": "20 mg",
+      "label": "DOSAGE",
+      "start": 2910,
+      "end": 2915
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2925,
+      "end": 2930
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "ibuprofen",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "PENICILLIN",
+      "dosages": [
+        "20 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "CHIEF COMPLAINT:,  Left knee pain.,SUBJECTIVE: , This is a 36-year-old white female who presents to the office today with a complaint of left knee pain.  She is approximately five days after a third Synvisc injection.  She states that the knee is 35% to 40 % better, but continues to have a constant pinching pain when she full weight bears, cannot handle having her knee in flexion, has decreased range of motion with extension.  Rates her pain in her knee as a 10/10.  She does alternate ice and heat.  She is using Tylenol No. 3 p.r.n. and ibuprofen OTC p.r.n. with minimal relief.,ALLERGIES,1.  PENICILLIN.,2.  KEFLEX.,3.  BACTRIM.,4.  SULFA.,5.  ACE BANDAGES.,MEDICATIONS,1.  Toprol.,2.  Xanax.,3.  Advair.,4.  Ventolin.,5.  Tylenol No.  3.,6.  Advil.,REVIEW OF SYSTEMS:,  Will be starting the Medifast diet, has discussed this with her PCP, who encouraged her to have gastric bypass, but the patient would like to try this Medifast diet first.  Other than this, denies any further problems with her eyes, ears, nose, throat, heart, lungs, GI, GU, musculoskeletal, nervous system, except what is noted above and below.,PHYSICAL EXAMINATION,VITAL SIGNS:  Pulse 72, blood pressure 130/88, respirations 16, height 5 feet 6.5 inches.,GENERAL:  This is a 36-year-old white female who is A&O x3, in no apparent distress with a pleasant affect.  She is well developed, well nourished, appears her stated age.,EXTREMITIES:  Orthopedic evaluation of the left knee reveals there to be well-healed portholes.  She does have some medial joint line swelling.  Negative ballottement.  She has significant pain to palpation of the medial joint line, none of the lateral joint line.  She has no pain to palpation on the popliteal fossa.  Range of motion is approximately -5 degrees to 95 degrees of flexion.  It should be noted that she has extreme hyperextension on the right with 95+ degrees of flexion on the right.  She has a click with McMurray.  Negative anterior-posterior drawer.  No varus or valgus instability noted.  Positive patellar grind test.  Calf is soft and nontender.  Gait is stable and antalgic on the left.,ASSESSMENT,1.  Osteochondral defect, torn meniscus, left knee.,2.  Obesity.,PLAN: , I have encouraged the patient to work on weight reduction, as this will only benefit her knee.  I did discuss treatment options at length with the patient, but I think the best plan for her would be to work on weight reduction.  She questions whether she needs a total knee; I don't believe she needs total knee replacement.  She may, however, at some point need an arthroscopy.  I have encouraged her to start formal physical therapy and a home exercise program.  Will use ice or heat p.r.n.  I have given her refills on Tylenol No.  3, Flector patch, and Relafen not to be taken with any other anti-inflammatory.  She does have some abdominal discomfort with the anti-inflammatories, was started on Nexium 20 mg one p.o. daily.  She will follow up in our office in four weeks.  If she has not gotten any relief with formal physical therapy and the above-noted treatments, we will discuss with Dr. X whether she would benefit from another knee arthroscopy.  The patient shows a good understanding of this treatment plan and agrees.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "ibuprofen",
+        "PENICILLIN",
+        "20 mg",
+        "daily"
+      ],
+      "caregiver_checklist": [
+        "ibuprofen",
+        "PENICILLIN",
+        "20 mg",
+        "daily"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, it looks like you're feeling some pain in your left knee. You've had a Synvisc injection about five days ago, and you're still experiencing some discomfort. The pain is especially bad when you put weight on your knee, and you can't bend it very much. You've been using Tylenol No. 3 and Advil, but the pain still feels quite strong, like a 10 out of 10.\n\nYour doctor thinks you might need to lose some weight. They've encouraged you to try a diet called Medifast, but you're not sure if you should have a gastric bypass surgery. Your doctor thinks losing weight will help your knee feel better.\n\nYou're also having some trouble with your knee joint. Your doctor found some swelling and pain when they pressed on your knee. You can't bend your knee very much, and you have some clicking when you move it. Your doctor will help you start a physical therapy program and give you some exercises to do at home. They also gave you some pain medicine to take when you need it.\n\nYour doctor wants you to follow up in four weeks. If you still feel bad after that, they'll talk to Dr. X about whether you might need another knee surgery. You seem to understand what's going on, and you agree with the plan.\n\nIf you have any more pain or if you feel like you can't breathe or if you have any other problems, you should tell your doctor right away. They're here to help you feel better.",
+      "caregiver_checklist": "- Check the patient’s vital signs and report any changes.\n- Give Tylenol No. 3 and Advil as needed for pain, following the prescribed schedule.\n- Watch for signs of infection, such as increased redness, warmth, or pus.\n- Call the doctor if the pain increases or if there’s any new symptom.\n- Schedule a follow-up appointment in four weeks.\n- Check the patient’s weight and progress on the Medifast diet.\n- Watch for signs of dehydration, such as dry mouth, dark urine.\n- Call the doctor if the patient experiences severe pain or swelling.\n- Schedule a physical therapy appointment if the patient hasn’t improved.\n- Call the doctor if the patient has any concerns about her weight loss or diet.",
+      "child_explanation": "You had a knee hurt, and it's still a bit sore. Some grown-ups gave you medicine to help, but it's not all better yet. You're doing good by using ice and heat. Your doctors are taking care of you. They want you to eat healthier food and maybe try a special diet. You're doing great!"
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Consult_-_Knee_Pain",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Consult_-_Knee_Pain.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Consult_-_Knee_Pain.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Consult_-_Knee_Pain",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Consult_-_Knee_Pain.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Consult_-_Knee_Pain.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Consult_-_Knee_Pain",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Consult_-_Knee_Pain.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Consult_-_Knee_Pain.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 103.423,
+      "caregiver_checklist": 45.164,
+      "child_explanation": 11.357,
+      "total": 159.999
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T16:27:18+00:00"
+  }
+}

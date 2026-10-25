@@ -1,0 +1,196 @@
+{
+  "id": "mtsamples_Escharotomy",
+  "patient_summary": "Hello there, little one. I want to tell you about what happened to you. You had a big accident where you got burned badly on your arms, neck, and chest. The doctors and nurses are very worried because your arm was getting too tight, which can be dangerous. They had to make a small cut to help your arm and hand get enough blood and stay healthy.\n\nThe doctors did two surgeries to help you. First, they made a cut on the outside of your right arm. Then, they made another cut on the inside of your left arm. They carefully opened the burn skin to let your arm breathe better and to keep your arm and hand healthy.\n\nAfter the surgeries, you were able to move your hand and arm better. The doctors put some special cream on the cuts and wrapped them up. You did a good job staying still during the surgeries, and you didn't have any problems afterward.\n\nNow, you need to take some medicine to help your arm heal. You'll take a liquid medicine three times a day, and you'll need to do this for a few weeks. If you have any pain or if you feel sick, you should tell the nurses right away. They can help you feel better.\n\nRemember, you're in good hands. The doctors and nurses are here to take care of you. You'll be okay, and you'll get better soon.",
+  "caregiver_checklist": [
+    "Check the patient's vital signs every hour.",
+    "Watch for signs of infection such as increased redness, warmth, or pus.",
+    "Monitor the wound for signs of bleeding or excessive drainage.",
+    "Call the healthcare team if the patient develops signs of infection.",
+    "Schedule a follow-up appointment to check the wound healing progress.",
+    "Check the wound twice daily for signs of infection or worsening.",
+    "Watch for signs of compartment syndrome such as severe pain, swelling, or numbness.",
+    "Call the healthcare team if the patient experiences severe pain or swelling.",
+    "Schedule a follow-up appointment to assess the wound healing and adjust treatment as needed."
+  ],
+  "child_explanation": "You had a big burn on your arm and hand. Grown-ups and doctors are taking care of you. They made tiny cuts to let your arm breathe better. It's like when you have a tight bandage and need to open it up. Now your arm feels better and the bandage is all clean. You're doing great!",
+  "entities": [
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1855,
+      "end": 1863
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 2104,
+      "end": 2112
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES:,  32% total body surface area burn to the bilateral upper extremities and neck and anterior thorax with impending compartment syndrome of the right upper extremity.,POSTOPERATIVE DIAGNOSES: , 32% total body surface area burn to the bilateral upper extremities and neck and anterior thorax with impending compartment syndrome of the right upper extremity.,PROCEDURES  PERFORMED:,1.  Lateral escharotomy of right upper arm burn eschar.,2.  Medial escharotomy of left upper extremity burns and eschar.,ANESTHESIA:,  Propofol and Versed.,INDICATIONS FOR PROCEDURE: , The patient is a 72-year-old gentleman who was involved in a propane explosion where he sustained significant burns to his bilateral upper extremities, neck, and thorax.  The patient was transferred from outside facility and was found to have significant burns with impending compartment syndrome of the right upper extremity.  The patient had a _____ between his left and right upper extremity and very tight compartment of his right upper extremity.  It is felt the patient would need an escharotomy of his right upper extremity to maintain perfusion to his right arm and hand.,DESCRIPTION OF PROCEDURE:,  After appropriate time out was performed indicating the correct procedure, correct patient, and all parties involved, the patient's right upper extremity was placed in anatomical position.  An electrocautery device was readied and used to incise making make an incision on the lateral aspect of the patient's right upper extremity.  Starting just below the right humeral head, an incision was made through the burn eschar down to underlying subcutaneous tissue.  The incision was carried from the right humeral head down to just below the antecubital fossa on the right upper extremity.  All dermal bridging was taken down and was opened without any excessive bleeding.  Next, a medial incision was made starting at the axilla down to just below the medial epicondyle of the right upper extremity.  Again, the incision was carried through the entire of the eschar down to underlying subcutaneous tissue.  All bleeding was made hemostatic with electrocautery and all dermal abrasions were taken down.  At the completion of the procedure, the patient had improved right distal radial pulse and his compartment was much softer.  Silvadene cream was placed within the escharotomy incision and wrapped in Kerlix.  The patient tolerated the procedure well, and there were no adverse events during or after the procedure.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, little one. I want to tell you about what happened to you. You had a big accident where you got burned badly on your arms, neck, and chest. The doctors and nurses are very worried because your arm was getting too tight, which can be dangerous. They had to make a small cut to help your arm and hand get enough blood and stay healthy.\n\nThe doctors did two surgeries to help you. First, they made a cut on the outside of your right arm. Then, they made another cut on the inside of your left arm. They carefully opened the burn skin to let your arm breathe better and to keep your arm and hand healthy.\n\nAfter the surgeries, you were able to move your hand and arm better. The doctors put some special cream on the cuts and wrapped them up. You did a good job staying still during the surgeries, and you didn't have any problems afterward.\n\nNow, you need to take some medicine to help your arm heal. You'll take a liquid medicine three times a day, and you'll need to do this for a few weeks. If you have any pain or if you feel sick, you should tell the nurses right away. They can help you feel better.\n\nRemember, you're in good hands. The doctors and nurses are here to take care of you. You'll be okay, and you'll get better soon.",
+      "caregiver_checklist": "- Check the patient's vital signs every hour.\n- Watch for signs of infection such as increased redness, warmth, or pus.\n- Monitor the wound for signs of bleeding or excessive drainage.\n- Call the healthcare team if the patient develops signs of infection.\n- Schedule a follow-up appointment to check the wound healing progress.\n- Check the wound twice daily for signs of infection or worsening.\n- Watch for signs of compartment syndrome such as severe pain, swelling, or numbness.\n- Call the healthcare team if the patient experiences severe pain or swelling.\n- Schedule a follow-up appointment to assess the wound healing and adjust treatment as needed.",
+      "child_explanation": "You had a big burn on your arm and hand. Grown-ups and doctors are taking care of you. They made tiny cuts to let your arm breathe better. It's like when you have a tight bandage and need to open it up. Now your arm feels better and the bandage is all clean. You're doing great!"
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Escharotomy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Escharotomy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Escharotomy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Escharotomy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Escharotomy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Escharotomy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Escharotomy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Escharotomy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Escharotomy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 23.614,
+      "caregiver_checklist": 13.891,
+      "child_explanation": 9.306,
+      "total": 46.819
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T16:34:05+00:00"
+  }
+}

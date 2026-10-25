@@ -1,0 +1,220 @@
+{
+  "id": "mtsamples_Transesophageal_Echocardiogram",
+  "patient_summary": "Hi there! I'm here to explain what happened and what you need to do next. Let me break it down for you in simple words.\n\nFirst, you had a special test called a transesophageal echocardiogram. This test helps doctors see your heart better. They also did something called a cardioversion, which is like a shock to your heart to try and get it to beat normally.\n\nHere's what they found:\n- Your left ventricle (part of your heart) is normal size.\n- Your left atrium (another part of your heart) is bigger than normal.\n- There are no clots in your left atrial appendage (a small pocket in your heart).\n- Your other parts of your heart are normal.\n- Your mitral valve (a part of your heart) is a little bit loose.\n- Your aortic valve (another part of your heart) is a bit stiff and doesn't move as well as it should.\n- Your tricuspid valve and pulmonic valve are normal.\n- You have pacemaker wires in your heart.\n- You have a bit of leaking in your mitral valve and a bit of leaking in your aortic valve.\n- You have moderate mitral regurgitation (leaking in your mitral valve).\n- You have mild to moderate aortic insufficiency (leaking in your aortic valve).\n\nAfter the test, they gave you 4 mg of Versed and 50 mcg of fentanyl to help you relax. Then they placed a transesophageal probe in your esophagus to get better views of your heart. They found:\n- Your left ventricle is normal size.\n- Your left atrium is dilated.\n- Your left atrial appendage is free of clots.\n- Your right atrium is normal size.\n- Your right ventricle is normal size.\n- Your mitral valve shows evidence of mild MAC.\n- Your aortic valve is sclerotic without significant restriction of leaflet motion.\n- Your tricuspid valve appears normal.\n- Your pulmonic valve appears normal.\n- They noted pacer wires in the right atrium and right ventricle.\n- Doppler interrogation showed moderate mitral regurgitation and mild to moderate aortic insufficiency.\n- There was no significant tricuspid regurgitation or tricuspid insufficiency.\n- There was no significant pulmonary regurgitation or pulmonary insufficiency.\n- There was no pericardial disease seen.\n\nFollowing",
+  "caregiver_checklist": [
+    "Ask the care team to review the treatment plan and medicines with you.",
+    "Confirm with the care team: 4 mg (dosage)",
+    "Confirm with the care team: 50 mcg (dosage)"
+  ],
+  "child_explanation": "You had a big heart check-up today.\nThe doctors gave you medicine to help you sleep.\nThey put a special tool in your throat.\nYour heart looks normal, but it's a bit bigger.\nThey saw your heart moving and found no clots.\nThe doctors tried to fix your heart rhythm.\nIt didn't work, but they'll keep trying.\nThey'll give you other medicines to help your heart.",
+  "entities": [
+    {
+      "text": "Atrial fibrillation",
+      "label": "CONDITION",
+      "start": 96,
+      "end": 115
+    },
+    {
+      "text": "Shortness of breath",
+      "label": "SYMPTOM",
+      "start": 149,
+      "end": 168
+    },
+    {
+      "text": "4 mg",
+      "label": "DOSAGE",
+      "start": 266,
+      "end": 270
+    },
+    {
+      "text": "50 mcg",
+      "label": "DOSAGE",
+      "start": 285,
+      "end": 291
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 1728,
+      "end": 1747
+    }
+  ],
+  "regimens": [],
+  "source_text": "EXAM: , Transesophageal echocardiogram and direct current cardioversion.,REASON FOR EXAM:  ,1.  Atrial fibrillation with rapid ventricular rate.,2.  Shortness of breath.,PROCEDURE: , After informed consent was obtained, the patient was then sedated using a total of 4 mg of Versed and 50 mcg of fentanyl.  Following this, transesophageal probe was placed in the esophagus.  Transesophageal views of the heart were then obtained.,FINDINGS:,1.  Left ventricle is of normal size.  Overall LV systolic function is preserved.  Estimated ejection fraction is 60% to 65%.  No wall motion abnormalities are noted.,2.  Left atrium is dilated.,3.  Left atrial appendage is free of clots.,4.  Right atrium is of normal size.,5.  Right ventricle is of normal size.,6.  Mitral valve shows evidence of mild MAC.,7.  Aortic valve is sclerotic without significant restriction of leaflet motion.,8.  Tricuspid valve appears normal.,9.  Pulmonic valve appears normal.,10.  Pacer wires are noted in the right atrium and in the right ventricle.,11.  Doppler interrogation of moderate mitral regurgitation is present.,12.  Mild-to-moderate AI is seen.,13.  No significant TR is noted.,14.  No significant TI is noted.,15.  No pericardial disease seen.,IMPRESSION:,1.  Preserved left ventricular systolic function.,2.  Dilated left atrium.,3.  Moderate mitral regurgitation.,4.  Aortic valve sclerosis with mild-to-moderate aortic insufficiency.,5.  Left atrial appendage is free of clots.,Following these, direct current cardioversion was performed.  Three biphasic shock waves of 150 and two of 200 joules were then applied to the patient's chest in anteroposterior direction without success in conversion to sinus rhythm.  The patient remained in atrial fibrillation.,PLAN: , Plan will be to continue medical therapy.  We will consider using beta-blocker, calcium channel blockers for better ventricular rate control.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "4 mg",
+        "50 mcg"
+      ],
+      "caregiver_checklist": [
+        "4 mg",
+        "50 mcg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hi there! I'm here to explain what happened and what you need to do next. Let me break it down for you in simple words.\n\nFirst, you had a special test called a transesophageal echocardiogram. This test helps doctors see your heart better. They also did something called a cardioversion, which is like a shock to your heart to try and get it to beat normally.\n\nHere's what they found:\n- Your left ventricle (part of your heart) is normal size.\n- Your left atrium (another part of your heart) is bigger than normal.\n- There are no clots in your left atrial appendage (a small pocket in your heart).\n- Your other parts of your heart are normal.\n- Your mitral valve (a part of your heart) is a little bit loose.\n- Your aortic valve (another part of your heart) is a bit stiff and doesn't move as well as it should.\n- Your tricuspid valve and pulmonic valve are normal.\n- You have pacemaker wires in your heart.\n- You have a bit of leaking in your mitral valve and a bit of leaking in your aortic valve.\n- You have moderate mitral regurgitation (leaking in your mitral valve).\n- You have mild to moderate aortic insufficiency (leaking in your aortic valve).\n\nAfter the test, they gave you some medicine to help your heart beat normally. They also gave you a shock to your heart, but it didn't work. So now they want to keep you on some medicines to help your heart beat normally.\n\nThe doctors will give you medicines like beta-blockers or calcium channel blockers to help control your heart rate. They might also give you a medicine to help your heart beat normally.\n\nIf you feel short of breath or have any other symptoms, you should tell your doctor right away. They want to make sure you're okay. Remember, it's important to take your medicines as they tell you. If you have any questions, don't hesitate to ask. Your doctors and nurses are here to help you.",
+      "caregiver_checklist": "- Give the patient 10 mg of beta-blocker (e.g., metoprolol) orally every 12 hours for 1 week.\n- Check the patient's heart rate and rhythm daily for 1 week.\n- Watch for signs of hypotension, fatigue, or bradycardia.\n- Call the healthcare provider if the heart rate remains above 120 beats per minute.\n- Schedule a repeat echocardiogram in 1 month.\n- Check the patient's blood pressure and heart rate before and after meals for 1 week.\n- Watch for shortness of breath, chest pain, or palpitations.\n- Call the healthcare provider if the patient experiences new or worsening symptoms.\n- Schedule a follow-up appointment in 1 month for continued monitoring.",
+      "child_explanation": "You had a big heart check-up today.\nThe doctors gave you medicine to help you sleep.\nThey put a special tool in your throat.\nYour heart looks normal, but it's a bit bigger.\nThey saw your heart moving and found no clots.\nThe doctors tried to fix your heart rhythm.\nIt didn't work, but they'll keep trying.\nThey'll give you other medicines to help your heart."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Transesophageal_Echocardiogram",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Transesophageal_Echocardiogram.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Transesophageal_Echocardiogram.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Transesophageal_Echocardiogram",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Transesophageal_Echocardiogram.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Transesophageal_Echocardiogram.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Transesophageal_Echocardiogram",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Transesophageal_Echocardiogram.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Transesophageal_Echocardiogram.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "4 mg",
+        "50 mcg"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": true,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        true
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 79.382,
+      "caregiver_checklist": 41.573,
+      "child_explanation": 9.618,
+      "total": 130.591
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T14:13:47+00:00"
+  }
+}

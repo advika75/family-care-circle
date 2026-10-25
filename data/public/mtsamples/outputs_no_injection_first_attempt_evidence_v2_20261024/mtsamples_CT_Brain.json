@@ -1,0 +1,259 @@
+{
+  "id": "mtsamples_CT_Brain",
+  "patient_summary": "Hello there, it looks like you've been through a very tough time. Let me explain what's happening and what you need to do.\n\nYou've been sick for a while, and now you have some problems with your brain. The doctors found a big area in your brain that got damaged. This damaged part of your brain is on the left side, and it's causing you to have weakness on that side of your body. You also have trouble speaking clearly.\n\nThe doctors gave you some special medicines to help fight the infection. You need to take these medicines as they told you. You need to take Nafcillin 2 grams every 4 hours, Rifampin 600 mg every 12 hours, and Gentamicin 130 mg every 12 hours. It's important to take these medicines exactly as they told you.\n\nYou also had some trouble with your heart. The doctors fixed your heart problem, but you still have some weakness on the left side of your body. You need to follow the instructions from the doctors about your medicines and how to take care of yourself.\n\nIf you have any of these symptoms, you need to tell the doctors right away:\n- If you have trouble speaking or understanding what people are saying.\n- If you have trouble moving your left side.\n- If you have any new or worsening weakness or speech problems.\n- If you have any new or worsening headaches.\n- If you have any new or worsening confusion.\n\nIf you have any questions or if you're not feeling better, you should talk to the doctors or nurses. They are there to help you. You're doing a great job, and you're strong. Keep taking your medicines and follow the doctors' instructions. You're in good hands.",
+  "caregiver_checklist": [
+    "Give the patient a dose of Nafcillin 2gm IV every 4 hours.",
+    "Check the patient's vital signs every 4 hours.",
+    "Watch for signs of infection such as fever, chills, or increased white blood cell count.",
+    "Call the healthcare provider if the patient's weakness or speech worsens.",
+    "Schedule a follow-up appointment with the neurologist in 6 weeks.",
+    "Monitor for signs of stroke recurrence such as new weakness, speech difficulties, or vision changes.",
+    "Watch for signs of pneumonia such as fever, cough, or shortness of breath.",
+    "Call the healthcare provider if the patient develops new neurological symptoms.",
+    "Schedule a dose of Gentamicin 130mg IV every 12 hours.",
+    "Watch for signs of Gentamicin toxicity such as hearing loss or kidney problems.",
+    "Schedule a dose of Rifampin 600mg every 12 hours.",
+    "Watch for signs of Rifampin side effects such as rash or liver problems."
+  ],
+  "child_explanation": "You had a tummy ache and fever for a few days. The doctors found a tiny hole in your heart. They gave you medicine to help. Now you have a weak side, but you're getting better. The doctors fixed your heart and put in a new valve. You're still learning to walk, but you're doing great. You're in good hands, and you're safe.",
+  "entities": [
+    {
+      "text": "fevers",
+      "label": "SYMPTOM",
+      "start": 113,
+      "end": 119
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 121,
+      "end": 127
+    },
+    {
+      "text": "urinary frequency",
+      "label": "SYMPTOM",
+      "start": 152,
+      "end": 169
+    },
+    {
+      "text": "q4hrs",
+      "label": "FREQUENCY",
+      "start": 839,
+      "end": 844
+    },
+    {
+      "text": "600mg",
+      "label": "DOSAGE",
+      "start": 855,
+      "end": 860
+    },
+    {
+      "text": "q12hrs",
+      "label": "FREQUENCY",
+      "start": 861,
+      "end": 867
+    },
+    {
+      "text": "130mg",
+      "label": "DOSAGE",
+      "start": 880,
+      "end": 885
+    },
+    {
+      "text": "q12hrs",
+      "label": "FREQUENCY",
+      "start": 886,
+      "end": 892
+    },
+    {
+      "text": "stroke",
+      "label": "CONDITION",
+      "start": 2022,
+      "end": 2028
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 2390,
+      "end": 2399
+    },
+    {
+      "text": "stroke",
+      "label": "CONDITION",
+      "start": 2596,
+      "end": 2602
+    }
+  ],
+  "regimens": [],
+  "source_text": "CC:, Left-sided weakness.,HX:, This 28y/o RHM was admitted to a local hospital on 6/30/95 for a 7 day history of fevers, chills, diaphoresis, anorexia, urinary frequency, myalgias and generalized weakness. He denied foreign travel, IV drug abuse, homosexuality, recent dental work, or open wound. Blood and urine cultures were positive for Staphylococcus Aureus, oxacillin sensitive. He was place on appropriate antibiotic therapy according to sensitivity.. A 7/3/95 transthoracic echocardiogram revealed normal left ventricular function and a damaged mitral valve with regurgitation. Later that day he developed left-sided weakness and severe dysarthria and aphasia. HCT, on 7/3/95 revealed mild attenuated signal in the right hemisphere. On 7/4/95 he developed first degree AV block, and was transferred to UIHC.,MEDS: ,Nafcillin 2gm IV q4hrs, Rifampin 600mg q12hrs, Gentamicin 130mg q12hrs.,PMH:, 1) Heart murmur dx age 5 years.,FHX:, Unremarkable.,SHX:, Employed cook. Denied ETOH/Tobacco/illicit drug use.,EXAM:, BP 123/54, HR 117, RR 16, 37.0C,MS: Somnolent and arousable only by shaking and repetitive verbal commands. He could follow simple commands only. He nodded appropriately to questioning most of the time. Dysarthric speech with sparse verbal output.,CN: Pupils 3/3 decreasing to 2/2 on exposure to light. Conjugate gaze preference toward the right. Right hemianopia by visual threat testing. Optic discs flat and no retinal hemorrhages or Roth spots were seen. Left lower facial weakness. Tongue deviated to the left. Weak gag response, bilaterally. Weak left corneal response.,MOTOR: Dense left flaccid hemiplegia.,SENSORY: Less responsive to PP on left.,COORD: Unable to test.,Station and Gait: Not tested.,Reflexes: 2/3 throughout (more brisk on the left side). Left ankle clonus and a Left Babinski sign were present.,GEN EXAM: Holosystolic murmur heard throughout the precordium. Janeway lesions were present in the feet and hands. No Osler's nodes were seen.,COURSE:, 7/6/95, HCT showed a large RMCA stroke with mass shift. His neurologic exam worsened and he was intubated, hyperventilated, and given IV Mannitol. He then underwent emergent left craniectomy and duraplasty. He tolerated the procedure well and his brain was allowed to swell. He then underwent mitral valve replacement on 7/11/95 with a St. Judes valve. His post-operative recovery was complicated by pneumonia, pericardial effusion and dysphagia. He required temporary PEG placement for feeding. The 7/27/95, 8/6/95 and 10/18/96 HCT scans show the chronologic neuroradiologic documentation of a large RMCA stroke. His 10/18/96 Neurosurgery Clinic visit noted that he can ambulate without assistance with the use of a leg brace to prevent left foot drop. His proximal LLE strength was rated at a 4. His LUE was plegic. He had a seizure 6 days prior to his 10/18/96 evaluation. This began as a Jacksonian march of shaking in the LUE; then involved the LLE. There was no LOC or tongue-biting. He did have urinary incontinence. He was placed on DPH. His speech was dysarthric but fluent. He appeared bright, alert and oriented in all spheres.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "600mg",
+        "q12hrs",
+        "130mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, it looks like you've been through a very tough time. Let me explain what's happening and what you need to do.\n\nYou've been sick for a while, and now you have some problems with your brain. The doctors found a big area in your brain that got damaged. This damaged part of your brain is on the left side, and it's causing you to have weakness on that side of your body. You also have trouble speaking clearly.\n\nThe doctors gave you some special medicines to help fight the infection. You need to take these medicines as they told you. You need to take Nafcillin 2 grams every 4 hours, Rifampin 600 mg every 12 hours, and Gentamicin 130 mg every 12 hours. It's important to take these medicines exactly as they told you.\n\nYou also had some trouble with your heart. The doctors fixed your heart problem, but you still have some weakness on the left side of your body. You need to follow the instructions from the doctors about your medicines and how to take care of yourself.\n\nIf you have any of these symptoms, you need to tell the doctors right away:\n- If you have trouble speaking or understanding what people are saying.\n- If you have trouble moving your left side.\n- If you have any new or worsening weakness or speech problems.\n- If you have any new or worsening headaches.\n- If you have any new or worsening confusion.\n\nIf you have any questions or if you're not feeling better, you should talk to the doctors or nurses. They are there to help you. You're doing a great job, and you're strong. Keep taking your medicines and follow the doctors' instructions. You're in good hands.",
+      "caregiver_checklist": "- Give the patient a dose of Nafcillin 2gm IV every 4 hours.\n- Check the patient's vital signs every 4 hours.\n- Watch for signs of infection such as fever, chills, or increased white blood cell count.\n- Call the healthcare provider if the patient's weakness or speech worsens.\n- Schedule a follow-up appointment with the neurologist in 6 weeks.\n- Monitor for signs of stroke recurrence such as new weakness, speech difficulties, or vision changes.\n- Watch for signs of pneumonia such as fever, cough, or shortness of breath.\n- Call the healthcare provider if the patient develops new neurological symptoms.\n- Schedule a cardiac follow-up appointment in 6 weeks.\n- Watch for signs of mitral valve complications such as heart murmur or shortness of breath.\n- Call the healthcare provider if the patient experiences new or worsening symptoms.",
+      "child_explanation": "You had a tummy ache and fever for a few days. The doctors found a tiny hole in your heart. They gave you medicine to help. Now you have a weak side, but you're getting better. The doctors fixed your heart and put in a new valve. You're still learning to walk, but you're doing great. You're in good hands, and you're safe."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_CT_Brain",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_CT_Brain.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_CT_Brain.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_CT_Brain",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_CT_Brain.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_CT_Brain.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_CT_Brain",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_CT_Brain.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_CT_Brain.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 22.357,
+      "caregiver_checklist": 34.233,
+      "child_explanation": 8.587,
+      "total": 65.191
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:26:19+00:00"
+  }
+}

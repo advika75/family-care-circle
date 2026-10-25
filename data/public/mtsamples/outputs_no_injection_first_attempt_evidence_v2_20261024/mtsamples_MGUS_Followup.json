@@ -1,0 +1,277 @@
+{
+  "id": "mtsamples_MGUS_Followup",
+  "patient_summary": "Hello you,\n\nI hope you're feeling better. I've been keeping an eye on you for your MGUS (multiple myeloma). You've been doing well overall, but recently you've had some changes. You've started going to the gym twice a week and have lost about 10 pounds. You're still feeling good and have a good energy level. Your ECOG performance status is 0, which means you're doing pretty well.\n\nYou're taking some medicines right now:\n- A multivitamin every day\n- Aspirin every day\n- Lupron every three months\n- Flomax 0.4 mg every day\n- Warfarin 2.5 mg every day\n\nYou don't have any known allergies. You don't have any fever, chills, or night sweats. You don't have any lymph nodes that are swollen. You don't have any nausea or vomiting. You don't have any changes in your bowel or bladder habits.\n\nIf you start feeling any of these symptoms again, or if you have any other concerns, please let me know right away. I'm here to help you.",
+  "caregiver_checklist": [
+    "Give the patient aspirin one tablet daily.",
+    "Check the patient's platelet count every 3 months.",
+    "Watch for signs of bleeding.",
+    "Call if the patient develops severe bruising or bleeding.",
+    "Schedule a follow-up bone marrow biopsy in 6 months.",
+    "Check the patient's atrial fibrillation status monthly.",
+    "Watch for palpitations or shortness of breath.",
+    "Call if the patient experiences new or worsening symptoms.",
+    "Schedule a prostate cancer follow-up in 6 months.",
+    "Check the patient's weight weekly.",
+    "Watch for signs of fatigue or weakness.",
+    "Call if the patient experiences new or worsening symptoms.",
+    "Schedule a Warfarin dose review in 3 months.",
+    "Check the Warfarin INR level every 3 months.",
+    "Watch for signs of bleeding or bruising.",
+    "Call if the patient experiences new or worsening symptoms.",
+    "Confirm with the care team: 0.4 mg (dosage)",
+    "Confirm with the care team: 2.5 mg (dosage)"
+  ],
+  "child_explanation": "You're feeling a bit tired, but you're doing well overall. Grown-ups and doctors are taking care of you. You've started going to the gym and lost some weight. You're still strong and energetic. You're like a superhero, with a team of tiny helpers keeping you strong. If you ever feel sick, just tell the grown-ups. They'll help you feel better.",
+  "entities": [
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 696,
+      "end": 715
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 884,
+      "end": 889
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 891,
+      "end": 897
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 941,
+      "end": 947
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 951,
+      "end": 959
+    },
+    {
+      "text": "aspirin",
+      "label": "MEDICATION",
+      "start": 1042,
+      "end": 1049
+    },
+    {
+      "text": "0.4 mg",
+      "label": "DOSAGE",
+      "start": 1099,
+      "end": 1105
+    },
+    {
+      "text": "Warfarin",
+      "label": "MEDICATION",
+      "start": 1116,
+      "end": 1124
+    },
+    {
+      "text": "2.5 mg",
+      "label": "DOSAGE",
+      "start": 1125,
+      "end": 1131
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "aspirin",
+      "dosages": [
+        "0.4 mg"
+      ],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Warfarin",
+      "dosages": [
+        "2.5 mg"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "CHIEF COMPLAINT: , MGUS.,HISTORY OF PRESENT ILLNESS:,  This is an extremely pleasant 86-year-old gentleman, who I follow for his MGUS.  I initially saw him for thrombocytopenia when his ANC was 1300.  A bone marrow biopsy was obtained.  Interestingly enough, at the time of his bone marrow biopsy, his hemoglobin was 13.0 and his white blood cell count was 6.5 with a platelet count of 484,000.  His bone marrow biopsy showed a normal cellular bone marrow; however, there were 10% plasma cells and we proceeded with the workup for a plasma cell dyscrasia.  All his tests came back as consistent with an MGUS.,Overall, he is doing well.  Since I last saw him, he tells me that he has had onset of atrial fibrillation.  He has now started going to the gym two times per week, and has lost over 10 pounds.  He has a good energy level and his ECOG performance status is 0.  He denies any fever, chills, or night sweats.  No lymphadenopathy.  No nausea or vomiting.  No change in bowel or bladder habits.,CURRENT MEDICATIONS: , Multivitamin q.d., aspirin one tablet q.d., Lupron q. three months, Flomax  0.4 mg q.d., and Warfarin 2.5 mg q.d.,ALLERGIES:  ,No known drug allergies.,REVIEW OF SYSTEMS: , As per the HPI, otherwise negative.,PAST MEDICAL HISTORY:,1.  He is status post left inguinal hernia repair.,2.  Prostate cancer diagnosed in December 2004, which was a Gleason 3+4.  He is now receiving Lupron.,SOCIAL HISTORY: , He has a very remote history of tobacco use.  He has one to two alcoholic drinks per day.  He is married.,FAMILY HISTORY: , His brother had prostate cancer.,PHYSICAL EXAM:,VIT:\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "0.4 mg",
+        "2.5 mg"
+      ],
+      "caregiver_checklist": [
+        "0.4 mg",
+        "Warfarin",
+        "2.5 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello you, \n\nI hope you're feeling better. I've been keeping an eye on you for your MGUS (multiple myeloma). You've been doing well overall, but recently you've had some changes. You've started going to the gym twice a week and have lost about 10 pounds. You're still feeling good and have a good energy level. Your ECOG performance status is 0, which means you're doing pretty well.\n\nYou're taking some medicines right now:\n- A multivitamin every day\n- Aspirin every day\n- Lupron every three months\n- Flomax every day\n- Warfarin every day\n\nYou don't have any known allergies. You don't have any fever, chills, or night sweats. You don't have any lymph nodes that are swollen. You don't have any nausea or vomiting. You don't have any changes in your bowel or bladder habits.\n\nIf you start feeling any of these symptoms again, or if you have any other concerns, please let me know right away. I'm here to help you.",
+      "caregiver_checklist": "- Give the patient aspirin one tablet daily.\n- Check the patient's platelet count every 3 months.\n- Watch for signs of bleeding.\n- Call if the patient develops severe bruising or bleeding.\n- Schedule a follow-up bone marrow biopsy in 6 months.\n- Check the patient's atrial fibrillation status monthly.\n- Watch for palpitations or shortness of breath.\n- Call if the patient experiences new or worsening symptoms.\n- Schedule a prostate cancer follow-up in 6 months.\n- Check the patient's weight weekly.\n- Watch for signs of fatigue or weakness.\n- Call if the patient experiences new or worsening symptoms.",
+      "child_explanation": "You're feeling a bit tired, but you're doing well overall. Grown-ups and doctors are taking care of you. You've started going to the gym and lost some weight. You're still strong and energetic. You're like a superhero, with a team of tiny helpers keeping you strong. If you ever feel sick, just tell the grown-ups. They'll help you feel better."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_MGUS_Followup",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MGUS_Followup.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_MGUS_Followup.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_MGUS_Followup",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MGUS_Followup.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_MGUS_Followup.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_MGUS_Followup",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MGUS_Followup.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_MGUS_Followup.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "0.4 mg",
+        "2.5 mg"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 29.725,
+      "caregiver_checklist": 32.616,
+      "child_explanation": 7.895,
+      "total": 70.247
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:20:30+00:00"
+  }
+}

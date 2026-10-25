@@ -1,0 +1,251 @@
+{
+  "id": "mtsamples_CT_Brain",
+  "patient_summary": "Hello there, you've been having some health problems that we need to talk about. You had a stroke, which means your brain got a bit damaged. This made you have weakness on one side of your body. You also had pneumonia, which is an infection in your lungs. Here's what we're doing to help you:\n\n1. You're taking some medicines:\n   - Nafcillin 2 grams every 4 hours (q4hrs)\n   - Rifampin 600 milligrams every 12 hours (q12hrs)\n   - Gentamicin 130 milligrams every 12 hours (q12hrs)\n\n2. You're also getting some extra help from your doctor. They gave you a special medicine called DPH to help with your seizures. Seizures are when you have a sudden change in how your body works.\n\n3. You're staying in the hospital for now to get better. Your doctors are checking your brain and lungs regularly to make sure you're getting better.\n\n4. If you feel worse or have any new symptoms, you should tell your doctors right away. That way, they can make sure you get the help you need.\n\n5. You're doing well, but you still need to take your medicines and follow the doctor's instructions. You'll be able to go home soon, but you'll need to take extra care of yourself for a while.\n\nRemember, if you have any questions or if you're not feeling well, you can always ask your doctors or nurses. They're here to help you get better.",
+  "caregiver_checklist": [
+    "Check BP, HR, RR, temperature every 4 hours.",
+    "Give Nafcillin 2gm IV q4hrs.",
+    "Give Rifampin 600mg q12hrs.",
+    "Give Gentamicin 130mg q12hrs.",
+    "Watch for signs of infection like fever, chills, or cough.",
+    "Call if there are signs of stroke worsening or new neurological deficits.",
+    "Schedule follow-up neurology appointment every 6 months.",
+    "Watch for signs of pneumonia like fever, cough, or shortness of breath.",
+    "Call if there are signs of stroke or new neurological deficits.",
+    "Schedule follow-up with primary care provider every 3 months."
+  ],
+  "child_explanation": "You had a big problem with your brain. Doctors found a hole in your brain and cleaned it out. They also fixed your heart valve. Now you're getting better. You're still sleepy sometimes, but you're doing well. Grown-ups are taking care of you. You're strong and smart, just like before.",
+  "entities": [
+    {
+      "text": "fevers",
+      "label": "SYMPTOM",
+      "start": 113,
+      "end": 119
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 121,
+      "end": 127
+    },
+    {
+      "text": "urinary frequency",
+      "label": "SYMPTOM",
+      "start": 152,
+      "end": 169
+    },
+    {
+      "text": "q4hrs",
+      "label": "FREQUENCY",
+      "start": 839,
+      "end": 844
+    },
+    {
+      "text": "600mg",
+      "label": "DOSAGE",
+      "start": 855,
+      "end": 860
+    },
+    {
+      "text": "q12hrs",
+      "label": "FREQUENCY",
+      "start": 861,
+      "end": 867
+    },
+    {
+      "text": "130mg",
+      "label": "DOSAGE",
+      "start": 880,
+      "end": 885
+    },
+    {
+      "text": "q12hrs",
+      "label": "FREQUENCY",
+      "start": 886,
+      "end": 892
+    },
+    {
+      "text": "stroke",
+      "label": "CONDITION",
+      "start": 2022,
+      "end": 2028
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 2390,
+      "end": 2399
+    },
+    {
+      "text": "stroke",
+      "label": "CONDITION",
+      "start": 2596,
+      "end": 2602
+    }
+  ],
+  "regimens": [],
+  "source_text": "CC:, Left-sided weakness.,HX:, This 28y/o RHM was admitted to a local hospital on 6/30/95 for a 7 day history of fevers, chills, diaphoresis, anorexia, urinary frequency, myalgias and generalized weakness. He denied foreign travel, IV drug abuse, homosexuality, recent dental work, or open wound. Blood and urine cultures were positive for Staphylococcus Aureus, oxacillin sensitive. He was place on appropriate antibiotic therapy according to sensitivity.. A 7/3/95 transthoracic echocardiogram revealed normal left ventricular function and a damaged mitral valve with regurgitation. Later that day he developed left-sided weakness and severe dysarthria and aphasia. HCT, on 7/3/95 revealed mild attenuated signal in the right hemisphere. On 7/4/95 he developed first degree AV block, and was transferred to UIHC.,MEDS: ,Nafcillin 2gm IV q4hrs, Rifampin 600mg q12hrs, Gentamicin 130mg q12hrs.,PMH:, 1) Heart murmur dx age 5 years.,FHX:, Unremarkable.,SHX:, Employed cook. Denied ETOH/Tobacco/illicit drug use.,EXAM:, BP 123/54, HR 117, RR 16, 37.0C,MS: Somnolent and arousable only by shaking and repetitive verbal commands. He could follow simple commands only. He nodded appropriately to questioning most of the time. Dysarthric speech with sparse verbal output.,CN: Pupils 3/3 decreasing to 2/2 on exposure to light. Conjugate gaze preference toward the right. Right hemianopia by visual threat testing. Optic discs flat and no retinal hemorrhages or Roth spots were seen. Left lower facial weakness. Tongue deviated to the left. Weak gag response, bilaterally. Weak left corneal response.,MOTOR: Dense left flaccid hemiplegia.,SENSORY: Less responsive to PP on left.,COORD: Unable to test.,Station and Gait: Not tested.,Reflexes: 2/3 throughout (more brisk on the left side). Left ankle clonus and a Left Babinski sign were present.,GEN EXAM: Holosystolic murmur heard throughout the precordium. Janeway lesions were present in the feet and hands. No Osler's nodes were seen.,COURSE:, 7/6/95, HCT showed a large RMCA stroke with mass shift. His neurologic exam worsened and he was intubated, hyperventilated, and given IV Mannitol. He then underwent emergent left craniectomy and duraplasty. He tolerated the procedure well and his brain was allowed to swell. He then underwent mitral valve replacement on 7/11/95 with a St. Judes valve. His post-operative recovery was complicated by pneumonia, pericardial effusion and dysphagia. He required temporary PEG placement for feeding. The 7/27/95, 8/6/95 and 10/18/96 HCT scans show the chronologic neuroradiologic documentation of a large RMCA stroke. His 10/18/96 Neurosurgery Clinic visit noted that he can ambulate without assistance with the use of a leg brace to prevent left foot drop. His proximal LLE strength was rated at a 4. His LUE was plegic. He had a seizure 6 days prior to his 10/18/96 evaluation. This began as a Jacksonian march of shaking in the LUE; then involved the LLE. There was no LOC or tongue-biting. He did have urinary incontinence. He was placed on DPH. His speech was dysarthric but fluent. He appeared bright, alert and oriented in all spheres.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you've been having some health problems that we need to talk about. You had a stroke, which means your brain got a bit damaged. This made you have weakness on one side of your body. You also had pneumonia, which is an infection in your lungs. Here's what we're doing to help you:\n\n1. You're taking some medicines:\n   - Nafcillin 2 grams every 4 hours (q4hrs)\n   - Rifampin 600 milligrams every 12 hours (q12hrs)\n   - Gentamicin 130 milligrams every 12 hours (q12hrs)\n\n2. You're also getting some extra help from your doctor. They gave you a special medicine called DPH to help with your seizures. Seizures are when you have a sudden change in how your body works.\n\n3. You're staying in the hospital for now to get better. Your doctors are checking your brain and lungs regularly to make sure you're getting better.\n\n4. If you feel worse or have any new symptoms, you should tell your doctors right away. That way, they can make sure you get the help you need.\n\n5. You're doing well, but you still need to take your medicines and follow the doctor's instructions. You'll be able to go home soon, but you'll need to take extra care of yourself for a while.\n\nRemember, if you have any questions or if you're not feeling well, you can always ask your doctors or nurses. They're here to help you get better.",
+      "caregiver_checklist": "- Check BP, HR, RR, temperature every 4 hours.\n- Give Nafcillin 2gm IV q4hrs.\n- Give Rifampin 600mg q12hrs.\n- Give Gentamicin 130mg q12hrs.\n- Watch for signs of infection like fever, chills, or cough.\n- Call if there are signs of stroke worsening or new neurological deficits.\n- Schedule follow-up neurology appointment every 6 months.\n- Watch for signs of pneumonia like fever, cough, or shortness of breath.\n- Call if there are signs of stroke or new neurological deficits.\n- Schedule follow-up with primary care provider every 3 months.",
+      "child_explanation": "You had a big problem with your brain. Doctors found a hole in your brain and cleaned it out. They also fixed your heart valve. Now you're getting better. You're still sleepy sometimes, but you're doing well. Grown-ups are taking care of you. You're strong and smart, just like before."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_CT_Brain",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_CT_Brain.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_CT_Brain.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_CT_Brain",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_CT_Brain.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_CT_Brain.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_CT_Brain",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_CT_Brain.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_CT_Brain.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 25.124,
+      "caregiver_checklist": 12.618,
+      "child_explanation": 9.325,
+      "total": 47.091
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T14:07:14+00:00"
+  }
+}

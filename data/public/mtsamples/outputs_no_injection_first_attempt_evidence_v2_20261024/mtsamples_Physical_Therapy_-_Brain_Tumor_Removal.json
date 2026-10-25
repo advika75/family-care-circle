@@ -1,0 +1,211 @@
+{
+  "id": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal",
+  "patient_summary": "Hello there, you're in a warm and caring place. You had a brain tumor removed a few months ago, and you've been having some weakness on your left side. You're here to work on your strength and balance, so you can walk better and feel more confident.\n\nYou're taking some medicines: Coumadin (a blood thinner), Keppra (to help with seizures), Decadron (to reduce swelling), and Glucophage (to help with blood sugar). You're doing well with these medicines, and your husband, Al, is here with you.\n\nRight now, you're doing physical therapy three times a week for four weeks, and then two times a week for another four weeks. During these visits, you'll do exercises to strengthen your legs, practice balancing, and learn how to walk better. Your therapist will also help you with your walking, so you can move around safely.\n\nYour goal is to walk a bit further each time, and you'll practice walking in different places. Your therapist will help you with this. Your husband, Al, is here to support you and help you understand what's happening.\n\nIf you have any pain or if you feel dizzy, you should tell your therapist right away. They can help you with any problems you have. You'll also do a test to see how well you can walk in six minutes. This will help your therapist know how to help you better.\n\nYour therapist thinks you'll do great! They've explained everything to you and your husband. If you have any questions, you can always ask them. They're here to help you.",
+  "caregiver_checklist": [
+    "Check the patient's Coumadin dose and schedule, and watch for signs of bleeding.",
+    "Check the patient's Keppra dose and schedule, and watch for side effects.",
+    "Watch for signs of swelling or weakness in the left leg.",
+    "Call the healthcare provider if the patient experiences new weakness or pain.",
+    "Schedule a 6-minute walk test at the next physical therapy session.",
+    "Call the healthcare provider if the patient's balance score does not improve.",
+    "Watch for signs of DVT recurrence in the left leg.",
+    "Call the healthcare provider if the patient has difficulty ambulating or standing.",
+    "Schedule a follow-up physical therapy session in 4 weeks.",
+    "Call the healthcare provider if the patient's balance score does not reach 50/56.",
+    "Schedule a follow-up physical therapy session in 8 weeks.",
+    "Call the healthcare provider if the patient's ambulation or balance goals are not met."
+  ],
+  "child_explanation": "You had a big boo-boo in your head, like a giant splat. The doctors took care of it and gave you medicine to help. Now you're in physical therapy, like when you play doctor at the doctor's office. The grown-ups and doctors are helping you get stronger and walk better. It's like they're giving you tiny helpers to walk and play. You're doing great, and you'll keep getting better.",
+  "entities": [
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 488,
+      "end": 496
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 934,
+      "end": 938
+    },
+    {
+      "text": "fatigue",
+      "label": "SYMPTOM",
+      "start": 1742,
+      "end": 1749
+    },
+    {
+      "text": "4 weeks",
+      "label": "DURATION",
+      "start": 2194,
+      "end": 2201
+    }
+  ],
+  "regimens": [],
+  "source_text": "DIAGNOSIS:,  Status post brain tumor removal.,HISTORY:,  The patient is a 64-year-old female referred to physical therapy following complications related to brain tumor removal.  The patient reports that on 10/24/08 she had a brain tumor removed and had left-sided weakness.  The patient was being seen in physical therapy from 11/05/08 to 11/14/08 then she began having complications.  The patient reports that she was admitted to Hospital on 12/05/08.  At that time, they found massive swelling on the brain and a second surgery was performed.  The patient then remained in acute rehab until she was discharged to home on 01/05/09.  The patient's husband, Al, is also present and he reports that during rehabilitation the patient did have a DVT in the left calf that has since been resolved.,PAST MEDICAL HISTORY: , Unremarkable.,MEDICATIONS:  ,Coumadin, Keppra, Decadron, and Glucophage.,SUBJECTIVE: , The patient reports that the pain is not an issue at this time.  The patient states that her primary concern is her left-sided weakness as related to her balance and her walking and her left arm weakness.,PATIENT GOAL:  ,To increase strength in her left leg for better balance and walking.,OBJECTIVE:,RANGE OF MOTION:  Bilateral lower extremities are within normal limits.,STRENGTH:  Bilateral lower extremities are grossly 5/5 with one repetition, except left hip reflexion 4+/5.,BALANCE:  The patient's balance was assessed with a Berg balance test.  The patient has got 46/56 points, which places her at moderate risk for falls.,GAIT:  The patient ambulates with contact guard assist.  The patient ambulates with a reciprocal gait pattern with good bilateral foot clearance.  However, the patient has been reports that with increased fatigue, left footdrop tends to occur.  A 6-minute walk test will be performed at the next visit due to time constraints.,ASSESSMENT: , The patient is a 64-year-old female referred to Physical Therapy status post brain surgery.  Examination indicates deficits in strength, balance, and ambulation.  The patient will benefit from skilled physical therapy to address these impairments.,TREATMENT PLAN: , The patient will be seen three times per week for 4 weeks and then reduce it to two times per week for 4 additional weeks.  Interventions include:,1.  Therapeutic exercise.,2.  Balance training.,3.  Gait training.,4.  Functional mobility training.,SHORT TERM GOAL TO BE COMPLETED IN 4 WEEKS:,1.  The patient is to tolerate 30 repetitions of all lower extremity exercises.,2.  The patient is to improve balance with a score of 50/56 points.,3.  The patient is to ambulate 1000 feet in a 6-minute walk test with standby assist.,LONG TERM GOAL TO BE ACHIEVED IN 8 WEEKS:,1.  The patient is to ambulate independently within her home and standby to general supervision within the community.,2.  Berg balance test to be 52/56.,3.  The patient is to ambulate a 6-minute walk test for 1500 feet independently including safe negotiation of corners and busy areas.,4.  The patient is to demonstrate safely stepping over and around objects without loss of balance.,Prognosis for the above-stated goals is good.  The above treatment plan has been discussed with the patient and her husband.  They are in agreement.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're in a warm and caring place. You had a brain tumor removed a few months ago, and you've been having some weakness on your left side. You're here to work on your strength and balance, so you can walk better and feel more confident.\n\nYou're taking some medicines: Coumadin (a blood thinner), Keppra (to help with seizures), Decadron (to reduce swelling), and Glucophage (to help with blood sugar). You're doing well with these medicines, and your husband, Al, is here with you.\n\nRight now, you're doing physical therapy three times a week for four weeks, and then two times a week for another four weeks. During these visits, you'll do exercises to strengthen your legs, practice balancing, and learn how to walk better. Your therapist will also help you with your walking, so you can move around safely.\n\nYour goal is to walk a bit further each time, and you'll practice walking in different places. Your therapist will help you with this. Your husband, Al, is here to support you and help you understand what's happening.\n\nIf you have any pain or if you feel dizzy, you should tell your therapist right away. They can help you with any problems you have. You'll also do a test to see how well you can walk in six minutes. This will help your therapist know how to help you better.\n\nYour therapist thinks you'll do great! They've explained everything to you and your husband. If you have any questions, you can always ask them. They're here to help you.",
+      "caregiver_checklist": "- Check the patient's Coumadin dose and schedule, and watch for signs of bleeding.\n- Check the patient's Keppra dose and schedule, and watch for side effects.\n- Watch for signs of swelling or weakness in the left leg.\n- Call the healthcare provider if the patient experiences new weakness or pain.\n- Schedule a 6-minute walk test at the next physical therapy session.\n- Call the healthcare provider if the patient's balance score does not improve.\n- Watch for signs of DVT recurrence in the left leg.\n- Call the healthcare provider if the patient has difficulty ambulating or standing.\n- Schedule a follow-up physical therapy session in 4 weeks.\n- Call the healthcare provider if the patient's balance score does not reach 50/56.\n- Schedule a follow-up physical therapy session in 8 weeks.\n- Call the healthcare provider if the patient's ambulation or balance goals are not met.",
+      "child_explanation": "You had a big boo-boo in your head, like a giant splat. The doctors took care of it and gave you medicine to help. Now you're in physical therapy, like when you play doctor at the doctor's office. The grown-ups and doctors are helping you get stronger and walk better. It's like they're giving you tiny helpers to walk and play. You're doing great, and you'll keep getting better."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Physical_Therapy_-_Brain_Tumor_Removal.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 27.431,
+      "caregiver_checklist": 16.122,
+      "child_explanation": 14.723,
+      "total": 58.297
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:40:16+00:00"
+  }
+}

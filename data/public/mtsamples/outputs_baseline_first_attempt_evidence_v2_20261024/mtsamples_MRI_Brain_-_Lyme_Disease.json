@@ -1,0 +1,185 @@
+{
+  "id": "mtsamples_MRI_Brain_-_Lyme_Disease",
+  "patient_summary": "Hi there! I wanted to talk to you about some findings from your recent medical tests. You have a large lump in a part of your brain called the sella turcica. This lump is about the size of a large grape, measuring about 16 x 18 x 18 millimeters.\n\nThe doctors are concerned because this lump is pushing on the parts of your brain that control important functions like your vision and balance. They will need to do more tests to understand what this lump is and how it might affect you.\n\nFor now, you don't need to take any special medicines. The doctors will keep a close eye on you and may want to do more tests in the future. If you notice any new or worsening symptoms like headaches, vision changes, or balance problems, you should tell your doctor right away. They will be able to help you understand what to do next.\n\nRemember, you are not alone. Your doctors and nurses are here to help you. If you have any questions or concerns, don't hesitate to ask.",
+  "caregiver_checklist": [
+    "Check the patient's blood glucose levels every morning.",
+    "Schedule a follow-up MRI in 3 months.",
+    "Watch for signs of increased intracranial pressure such as headache, vomiting, or visual changes.",
+    "Call the healthcare provider if the patient experiences any of the above symptoms.",
+    "Check the patient's blood pressure and pulse regularly.",
+    "Monitor for any changes in cognitive function or behavior.",
+    "Call the healthcare provider if the patient shows signs of confusion or memory loss.",
+    "Schedule a CT scan of the brain to confirm the diagnosis.",
+    "Watch for signs of infection such as fever or redness at the injection site.",
+    "Call the healthcare provider if the patient shows signs of infection.",
+    "Schedule a consultation with a neurosurgeon for further evaluation and treatment options."
+  ],
+  "child_explanation": "You have a big bump in your head. Doctors are watching you closely. They're checking you a few days. You're in good hands. The bump is like a team of tiny helpers. They're helping you. You'll be okay.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "FINDINGS:,There is a large intrasellar mass lesion producing diffuse expansion of the sella turcica. This mass lesions measures approximately 16 x 18 x 18mm (craniocaudal x AP x mediolateral) in size.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hi there! I wanted to talk to you about some findings from your recent medical tests. You have a large lump in a part of your brain called the sella turcica. This lump is about the size of a large grape, measuring about 16 x 18 x 18 millimeters.\n\nThe doctors are concerned because this lump is pushing on the parts of your brain that control important functions like your vision and balance. They will need to do more tests to understand what this lump is and how it might affect you.\n\nFor now, you don't need to take any special medicines. The doctors will keep a close eye on you and may want to do more tests in the future. If you notice any new or worsening symptoms like headaches, vision changes, or balance problems, you should tell your doctor right away. They will be able to help you understand what to do next.\n\nRemember, you are not alone. Your doctors and nurses are here to help you. If you have any questions or concerns, don't hesitate to ask.",
+      "caregiver_checklist": "- Check the patient's blood glucose levels every morning.\n- Schedule a follow-up MRI in 3 months.\n- Watch for signs of increased intracranial pressure such as headache, vomiting, or visual changes.\n- Call the healthcare provider if the patient experiences any of the above symptoms.\n- Check the patient's blood pressure and pulse regularly.\n- Monitor for any changes in cognitive function or behavior.\n- Call the healthcare provider if the patient shows signs of confusion or memory loss.\n- Schedule a CT scan of the brain to confirm the diagnosis.\n- Watch for signs of infection such as fever or redness at the injection site.\n- Call the healthcare provider if the patient shows signs of infection.\n- Schedule a consultation with a neurosurgeon for further evaluation and treatment options.",
+      "child_explanation": "You have a big bump in your head. Doctors are watching you closely. They're checking you a few days. You're in good hands. The bump is like a team of tiny helpers. They're helping you. You'll be okay."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_MRI_Brain_-_Lyme_Disease",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MRI_Brain_-_Lyme_Disease.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_MRI_Brain_-_Lyme_Disease.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_MRI_Brain_-_Lyme_Disease",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MRI_Brain_-_Lyme_Disease.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_MRI_Brain_-_Lyme_Disease.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_MRI_Brain_-_Lyme_Disease",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MRI_Brain_-_Lyme_Disease.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_MRI_Brain_-_Lyme_Disease.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 12.808,
+      "caregiver_checklist": 9.493,
+      "child_explanation": 3.982,
+      "total": 26.285
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T11:26:21+00:00"
+  }
+}

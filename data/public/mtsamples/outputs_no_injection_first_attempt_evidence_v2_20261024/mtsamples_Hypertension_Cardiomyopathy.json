@@ -1,0 +1,294 @@
+{
+  "id": "mtsamples_Hypertension_Cardiomyopathy",
+  "patient_summary": "Hello there, it looks like you're feeling pretty tired and short of breath, even when you're just resting. You've been having this problem for a while, and you've been in the hospital before for it. You're also dealing with some other health issues, like having a heart that's not working as well as it should, and having some problems with your liver.\n\nYour doctor has given you some new medicines to help you feel better. They want you to take a few different pills every day. Here's what you need to do:\n\n- Take 40 mg of Lasix twice a day. This is a special medicine to help with fluid in your body.\n- Take 100 mg of hydralazine twice a day. This helps with your blood pressure.\n- Keep taking Toprol and lisinopril. These help your heart.\n- Take Aldactone 25 mg every day. This helps with your liver.\n- Take 75 mg of hydralazine three times a day. This also helps with your blood pressure.\n- Don't use any more cocaine. It's not good for your heart or liver.\n\nYour doctor also wants you to check your blood pressure and weight at home. If you feel better, that's great! But if you feel worse or have any new symptoms like chest pain, dizziness, or fainting, you should call your doctor right away.\n\nYour doctor also wants you to find a primary care provider soon. They can help you with all your health needs. They will see you in one month, and you'll have some blood tests done then.\n\nRemember, it's important to take all your medicines as your doctor told you. If you have any questions, you can always ask your doctor or nurse. They're here to help you feel better.",
+  "caregiver_checklist": [
+    "Ask the care team to review the treatment plan and medicines with you."
+  ],
+  "child_explanation": "You had a tummy ache and trouble breathing. You're feeling better now. But you need to take some new medicines. Your doctors and grown-ups are taking care of you. You're like a plant that needs special care. You need to drink your medicine and follow the doctor's advice. You'll see your doctors in a few weeks. They'll check your blood and make sure you're healthy.",
+  "entities": [
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 105,
+      "end": 118
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 193,
+      "end": 205
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 424,
+      "end": 443
+    },
+    {
+      "text": "syncope",
+      "label": "SYMPTOM",
+      "start": 596,
+      "end": 603
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 660,
+      "end": 664
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 685,
+      "end": 691
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 700,
+      "end": 708
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 749,
+      "end": 753
+    },
+    {
+      "text": "syncope",
+      "label": "SYMPTOM",
+      "start": 771,
+      "end": 778
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 1946,
+      "end": 1958
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 2186,
+      "end": 2191
+    },
+    {
+      "text": "75 mg",
+      "label": "DOSAGE",
+      "start": 2251,
+      "end": 2256
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 2267,
+      "end": 2273
+    },
+    {
+      "text": "lisinopril",
+      "label": "MEDICATION",
+      "start": 2327,
+      "end": 2337
+    },
+    {
+      "text": "25 mg",
+      "label": "DOSAGE",
+      "start": 2368,
+      "end": 2373
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2379,
+      "end": 2384
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "lisinopril",
+      "dosages": [
+        "25 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "PROBLEMS LIST:,1.  Nonischemic cardiomyopathy.,2.  Branch vessel coronary artery disease.,3.  Congestive heart failure, NYHA Class III.,4.  History of nonsustained ventricular tachycardia.,5.  Hypertension.,6.  Hepatitis C.,INTERVAL HISTORY: , The patient was recently hospitalized for CHF exacerbation and was discharged with increased medications.  However, he did not fill his prescriptions and came back with persistent shortness of breath on exertion and on rest.  He has history of orthopnea and PND.  He has gained a few pounds of weight but denied to have any palpitation, presyncope, or syncope.,REVIEW OF SYSTEMS: , Positive for right upper quadrant pain.  He has occasional nausea, but no vomiting.  His appetite has decreased.  No joint pain, TIA, seizure or syncope.  Other review of systems is unremarkable.,I reviewed his past medical history, past surgical history, and family history.,SOCIAL HISTORY: , He has quit smoking, but unfortunately was positive for cocaine during last hospital stay in 01/08.,ALLERGIES: , He has no known drug allergies.,MEDICATIONS:,  I reviewed his medication list in the chart.  He states he is compliant, but he was not taking the revised dose of medications as per discharge orders and prescription.,PHYSICAL EXAMINATION:,VITAL SIGNS:  Pulse 91 per minute and regular, blood pressure 151/102 in the right arm and 152/104 in the left arm, weight 172 pounds, which is about 6 pounds more than last visit in 11/07.  HEENT:  Atraumatic and normocephalic.  No pallor, icterus or cyanosis.  NECK:  Supple.  Jugular venous distention 5 cm above the clavicle present.  No thyromegaly.  LUNGS:  Clear to auscultation.  No rales or rhonchi.  Pulse ox was 98% on room air.  CVS:  S1 and S2 present.  S3 and S4 present.  ABDOMEN:  Soft and nontender.  Liver is palpable 5 cm below the right subcostal margin.  EXTREMITIES:  No clubbing or cyanosis.  A 1+ edema present.,ASSESSMENT AND PLAN:,  The patient has hypertension, nonischemic cardiomyopathy, and branch vessel coronary artery disease.  Clinically, he is in NYHA Class III.  He has some volume overload and was not unfortunately taking Lasix as prescribed.  I have advised him to take Lasix 40 mg p.o. b.i.d.  I also increased the dose of hydralazine from 75 mg t.i.d. to 100 mg t.i.d.  I advised him to continue to take Toprol and lisinopril.  I have also added Aldactone 25 mg p.o. daily for survival advantage.  I reinforced the idea of not using cocaine.  He states that it was a mistake, may be somebody mixed in his drink, but he has not intentionally taken any cocaine.  I encouraged him to find a primary care provider.  He will come for a BMP check in one week.  I asked him to check his blood pressure and weight.  I discussed medication changes and gave him an updated list.  I have asked him to see a gastroenterologist for hepatitis C.  At this point, his Medicaid is pending.  He has no insurance and finds hard to find a primary care provider.  I will see him in one month.  He will have his fasting lipid profile, AST, and ALT checked in one week.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "75 mg"
+      ],
+      "caregiver_checklist": [
+        "40 mg",
+        "75 mg",
+        "100 mg",
+        "lisinopril",
+        "25 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, it looks like you're feeling pretty tired and short of breath, even when you're just resting. You've been having this problem for a while, and you've been in the hospital before for it. You're also dealing with some other health issues, like having a heart that's not working as well as it should, and having some problems with your liver.\n\nYour doctor has given you some new medicines to help you feel better. They want you to take a few different pills every day. Here's what you need to do:\n\n- Take 40 mg of Lasix twice a day. This is a special medicine to help with fluid in your body.\n- Take 100 mg of hydralazine twice a day. This helps with your blood pressure.\n- Keep taking Toprol and lisinopril. These help your heart.\n- Take Aldactone 25 mg every day. This helps with your liver.\n- Don't use any more cocaine. It's not good for your heart or liver.\n\nYour doctor also wants you to check your blood pressure and weight at home. If you feel better, that's great! But if you feel worse or have any new symptoms like chest pain, dizziness, or fainting, you should call your doctor right away.\n\nYour doctor also wants you to find a primary care provider soon. They can help you with all your health needs. They will see you in one month, and you'll have some blood tests done then.\n\nRemember, it's important to take all your medicines as your doctor told you. If you have any questions, you can always ask your doctor or nurse. They're here to help you feel better.",
+      "caregiver_checklist": "- Check the patient's blood pressure and weight daily.\n- Watch for signs of fluid retention such as swelling or increased weight.\n- Call the healthcare provider if shortness of breath worsens or new symptoms appear.\n- Schedule a follow-up appointment in one month.\n- Call if there are any signs of heart failure exacerbation.\n- Monitor for signs of dehydration, such as dry mouth or dark urine.\n- Schedule a visit with a gastroenterologist for hepatitis C.\n- Call if there are any signs of worsening heart failure or new symptoms.\n- Schedule a BMP check in one week.\n- Call if there are any signs of liver function changes or worsening hepatitis C.",
+      "child_explanation": "You had a tummy ache and trouble breathing. You're feeling better now. But you need to take some new medicines. Your doctors and grown-ups are taking care of you. You're like a plant that needs special care. You need to drink your medicine and follow the doctor's advice. You'll see your doctors in a few weeks. They'll check your blood and make sure you're healthy."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Hypertension_Cardiomyopathy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hypertension_Cardiomyopathy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Hypertension_Cardiomyopathy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Hypertension_Cardiomyopathy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hypertension_Cardiomyopathy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Hypertension_Cardiomyopathy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Hypertension_Cardiomyopathy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hypertension_Cardiomyopathy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Hypertension_Cardiomyopathy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 50.847,
+      "caregiver_checklist": 43.904,
+      "child_explanation": 10.589,
+      "total": 105.359
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:55:14+00:00"
+  }
+}

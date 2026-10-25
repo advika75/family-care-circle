@@ -1,0 +1,232 @@
+{
+  "id": "mtsamples_Neuroma_Excision",
+  "patient_summary": "Hello there! I'm here to tell you about what happened during your operation and what you need to do next. It's a bit of a long story, but I'll try to explain it in simple terms.\n\nYou had a small problem in your foot called Morton's neuroma. It was in the third space of your left foot. The doctors decided to remove it to help you feel better. They did this by making a small cut in your foot and taking out the problem area.\n\nHere's what you need to do:\n\n1. Take the medicines they gave you. You'll have a special cream called Marcaine and Xylocaine. You'll also have a little bit of a steroid called dexamethasone. The amount of dexamethasone you'll have is 4 mg in a 4 mg/mL solution. You'll need to take 0.5 mL of it. These medicines will help you feel less pain after the operation.\n\n2. You'll need to take these medicines three times a day for a few days. Make sure you don't miss any doses.\n\n3. You might have a bandage on your foot. It's important to keep it clean and dry. If it gets wet, you can change the bandage yourself.\n\n4. You'll need to come back to see me in about 4 days. At that time, I'll check on your foot and change the bandage if needed.\n\nIf you have any pain or if you notice any redness, swelling, or if you have any other problems, you should call me right away. It's important to let me know if you have any concerns.\n\nI know this might sound scary, but you're in good hands. You'll be okay!",
+  "caregiver_checklist": [
+    "Give the patient a pain medication as prescribed.",
+    "Check the patient’s vital signs and neurovascular status every 4 hours.",
+    "Watch for signs of infection such as increased redness, swelling, or discharge.",
+    "Call if the patient develops signs of infection.",
+    "Schedule a follow-up appointment in 4 days for dressing change.",
+    "Call if the patient experiences persistent pain or numbness.",
+    "Watch for signs of nerve damage such as persistent pain or changes in sensation.",
+    "Call if the patient experiences persistent pain or changes in sensation.",
+    "Monitor for signs of wound dehiscence or bleeding.",
+    "Call if the patient experiences signs of wound dehiscence or bleeding.",
+    "Watch for signs of dexamethasone (4 mg) side effects such as increased thirst, urination, or hunger.",
+    "Call if the patient experiences signs of dexamethasone side effects.",
+    "Schedule a follow-up appointment after 0.5 mL dexamethasone phosphate (4 mg/mL) injection.",
+    "Call if the patient experiences signs of dexamethasone side effects."
+  ],
+  "child_explanation": "You had a small boo-boo on your foot. The doctors and grown-ups took you to the special room. They gave you medicine to help you sleep. They cleaned your foot and made a tiny cut. They took out the hurt part and sent it to check. Your foot is healing nicely. You'll come back in a few days for a bandage. You're in good hands.",
+  "entities": [
+    {
+      "text": "0.5 mL",
+      "label": "DOSAGE",
+      "start": 472,
+      "end": 478
+    },
+    {
+      "text": "dexamethasone",
+      "label": "MEDICATION",
+      "start": 479,
+      "end": 492
+    },
+    {
+      "text": "4 mg",
+      "label": "DOSAGE",
+      "start": 504,
+      "end": 508
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 2217,
+      "end": 2221
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "dexamethasone",
+      "dosages": [
+        "4 mg"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Morton's neuroma, third interspace, left foot.,POSTOPERATIVE DIAGNOSIS:,  Morton's neuroma, third interspace, left foot.,OPERATION PERFORMED: , Excision of neuroma, third interspace, left foot.,ANESTHESIA: , General (local was confirmed by surgeon).,HEMOSTASIS: , Ankle pneumatic tourniquet 225 mmHg.,TOURNIQUET TIME: , 18 minutes.  Electrocautery was necessary.,INJECTABLES: , 50:50 mixture of 0.5% Marcaine and 1% Xylocaine, both plain.  Also, 0.5 mL dexamethasone phosphate (4 mg/mL).,INDICATIONS: , Please see dictated H&P for specifics.,PROCEDURE:  ,After proper identification was made, the patient was brought to the operating room and placed on the table in supine position.  The patient was then placed under general anesthesia.  A local block was then injected into the third ray of the left foot.  The left foot was then prepped with chlorhexidine gluconate and then draped in the usual sterile technique.  The left foot was then exsanguinated with an Esmarch bandage and elevated and an ankle pneumatic tourniquet was then inflated.  Attention was then directed to the third interspace where a longitudinal incision was placed just proximal to the webspace.  The incision was deepened via sharp and blunt dissection with care taken to protect all vital structures.  Identification of the neuroma was made following plantar flexion of the digits.  It was grasped with a hemostat and it was dissected in toto and removed.  It was then sent to pathology.  The area was then flushed with copious amounts of sterile saline.  Closure was with 4-0 Vicryl in the subcutaneous tissue and then running subcuticular 4-0 nylon suture in the skin.  Steri-Strips were then placed over that area.  A sterile compressive dressing consisting of saline-soaked gauze, ABD, Kling, Coban was placed over the foot.  The tourniquet was then released.  Good flow was noted to return to all digits.  The patient did tolerate the procedure well.  He left the operating room with all vital signs stable and neurovascular status intact.  The patient went to the recovery.  The patient previously had been given both oral and written preoperative as well as postoperative instructions and a prescription for pain.  The patient will follow up with me in approximately 4 days for dressing change.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "0.5 mL",
+        "4 mg"
+      ],
+      "caregiver_checklist": [
+        "0.5 mL",
+        "dexamethasone",
+        "4 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to tell you about what happened during your operation and what you need to do next. It's a bit of a long story, but I'll try to explain it in simple terms.\n\nYou had a small problem in your foot called Morton's neuroma. It was in the third space of your left foot. The doctors decided to remove it to help you feel better. They did this by making a small cut in your foot and taking out the problem area.\n\nHere's what you need to do:\n\n1. Take the medicines they gave you. You'll have a special cream called Marcaine and Xylocaine. You'll also have a little bit of a steroid called dexamethasone. These medicines will help you feel less pain after the operation.\n\n2. You'll need to take these medicines three times a day for a few days. Make sure you don't miss any doses.\n\n3. You might have a bandage on your foot. It's important to keep it clean and dry. If it gets wet, you can change the bandage yourself.\n\n4. You'll need to come back to see me in about 4 days. At that time, I'll check on your foot and change the bandage if needed.\n\nIf you have any pain or if you notice any redness, swelling, or if you have any other problems, you should call me right away. It's important to let me know if you have any concerns.\n\nI know this might sound scary, but you're in good hands. You'll be okay!",
+      "caregiver_checklist": "- Give the patient a pain medication as prescribed.\n- Check the patient’s vital signs and neurovascular status every 4 hours.\n- Watch for signs of infection such as increased redness, swelling, or discharge.\n- Call if the patient develops signs of infection.\n- Schedule a follow-up appointment in 4 days for dressing change.\n- Call if the patient experiences persistent pain or numbness.\n- Watch for signs of nerve damage such as persistent pain or changes in sensation.\n- Call if the patient experiences persistent pain or changes in sensation.\n- Monitor for signs of wound dehiscence or bleeding.\n- Call if the patient experiences signs of wound dehiscence or bleeding.",
+      "child_explanation": "You had a small boo-boo on your foot. The doctors and grown-ups took you to the special room. They gave you medicine to help you sleep. They cleaned your foot and made a tiny cut. They took out the hurt part and sent it to check. Your foot is healing nicely. You'll come back in a few days for a bandage. You're in good hands."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Neuroma_Excision",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Neuroma_Excision.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Neuroma_Excision.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Neuroma_Excision",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Neuroma_Excision.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Neuroma_Excision.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Neuroma_Excision",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Neuroma_Excision.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Neuroma_Excision.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 45.598,
+      "caregiver_checklist": 36.221,
+      "child_explanation": 8.676,
+      "total": 90.509
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:35:31+00:00"
+  }
+}

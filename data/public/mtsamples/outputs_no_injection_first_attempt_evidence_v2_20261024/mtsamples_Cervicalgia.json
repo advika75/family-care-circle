@@ -1,0 +1,320 @@
+{
+  "id": "mtsamples_Cervicalgia",
+  "patient_summary": "Hello there, it looks like you're feeling quite unwell. Let's go over what's happening and what you need to do next. \n\nYou have some health problems in your family, including cancer and other health issues. You don't have any medicines right now, but you need to take some. Here's what you need to do:\n\n1. Take these medicines: You need to take a blood pressure medicine. It's called a blood pressure pill. You'll take it once a day, every morning. You'll take it with a glass of water.\n\n2. You also need to take a pain medicine. It's called a pain pill. You'll take it every 6 hours, as needed for pain. It's important to take it when you feel pain, not just when you're in pain.\n\n3. You need to see a doctor soon. You'll go to see Dr. L. He'll look at your spine and see if the plate is causing you pain. If it is, he'll help you take it out.\n\n4. You need to get an MRI. It's a special picture that doctors use to see inside your body. You'll need to get this done soon.\n\n5. You should call us if you have any more questions or if you feel worse. We'll see you next week for your next check-up.\n\nI'm a bit worried about your arm pain. I want you to get the MRI as soon as possible. We'll discuss the results together. Remember, if you have any pain or if you feel worse, please call us right away. We're here to help you.\n\nAlso, you need to avoid taking aspirin. It's a medicine that can cause stomach problems. If you have any questions about your medicines, please ask.",
+  "caregiver_checklist": [
+    "Check BP and pulse at home daily.",
+    "Watch for new or worsening headaches.",
+    "Call if you notice any new vision changes.",
+    "Schedule an MRI of the cervical spine.",
+    "Watch for difficulty swallowing or shortness of breath.",
+    "Call if you have chest pain or swelling in feet.",
+    "Schedule a follow-up appointment with Dr. L.",
+    "Watch for any new or worsening tremors in arms.",
+    "Call if you have any new or worsening symptoms.",
+    "Schedule a physical therapy appointment for shoulder strengthening.",
+    "Call if you have any questions or concerns.",
+    "Check for any new or worsening Aspirin allergy symptoms."
+  ],
+  "child_explanation": "You had a big family with lots of health problems. Your mom and dad didn't feel well and died. You have brothers and sisters with different illnesses. Grown-ups and doctors are taking care of you. You have some aches and pains, but they're not too bad. The doctors want to check your neck and take out a plate to help you eat and drink better. They will see you soon to make sure you're okay. Your arms feel sore, so they want to look at a special picture to see what's going on.",
+  "entities": [
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 353,
+      "end": 365
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 420,
+      "end": 430
+    },
+    {
+      "text": "Aspirin",
+      "label": "MEDICATION",
+      "start": 565,
+      "end": 572
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 664,
+      "end": 676
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 678,
+      "end": 688
+    },
+    {
+      "text": "Headaches",
+      "label": "SYMPTOM",
+      "start": 947,
+      "end": 956
+    },
+    {
+      "text": "dizziness",
+      "label": "SYMPTOM",
+      "start": 974,
+      "end": 983
+    },
+    {
+      "text": "sore throat",
+      "label": "SYMPTOM",
+      "start": 989,
+      "end": 1000
+    },
+    {
+      "text": "Difficulty swallowing",
+      "label": "SYMPTOM",
+      "start": 1008,
+      "end": 1029
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1081,
+      "end": 1085
+    },
+    {
+      "text": "Shortness of breath",
+      "label": "SYMPTOM",
+      "start": 1155,
+      "end": 1174
+    },
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 1179,
+      "end": 1184
+    },
+    {
+      "text": "Chest pain",
+      "label": "SYMPTOM",
+      "start": 1197,
+      "end": 1207
+    },
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 1212,
+      "end": 1220
+    },
+    {
+      "text": "Anxiety",
+      "label": "SYMPTOM",
+      "start": 1259,
+      "end": 1266
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 1271,
+      "end": 1281
+    },
+    {
+      "text": "rashes",
+      "label": "SYMPTOM",
+      "start": 2530,
+      "end": 2536
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 2874,
+      "end": 2878
+    },
+    {
+      "text": "difficulty swallowing",
+      "label": "SYMPTOM",
+      "start": 3940,
+      "end": 3961
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 4688,
+      "end": 4692
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Aspirin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "FAMILY HISTORY: , Her father died at the age of 80 from prostate cancer.  Her mother died at the age of 67.  She did abuse alcohol.  She had a brother died at the age of 70 from bone and throat cancer.  She has two sons, ages 37 and 38 years old who are healthy.  She has two daughters, ages 60 and 58 years old, both with cancer.  She describes cancer hypertension, nervous condition, kidney disease, lung disease, and depression in her family.,SOCIAL HISTORY: , She is married and has support at home.  Denies tobacco, alcohol, and illicit drug use.,ALLERGIES: , Aspirin.,MEDICATIONS:  ,The patient does not list any current medications.,PAST MEDICAL HISTORY: , Hypertension, depression, and osteoporosis.,PAST SURGICAL HISTORY: , She has had over her over her lifetime four back surgeries and in 2005 she had anterior cervical discectomy and fusion of C3 through C7 by Dr. L.  She is G10, P7, no cesarean sections.,REVIEW OF SYSTEMS: , HEENT:  Headaches, vision changes, dizziness, and sore throat.  GI:  Difficulty swallowing.  Musculoskeletal:  She is right-handed with joint pain, stiffness, decreased range of motion, and arthritis.  Respiratory:  Shortness of breath and cough.  Cardiac:  Chest pain and swelling in her feet and ankle.  Psychiatric:  Anxiety and depression.  Urinary:  Negative and noncontributory.  Hem-Onc:  Negative and noncontributory.  Vascular:  Negative and noncontributory.  Genital:  Negative and noncontributory.,PHYSICAL EXAMINATION:,  On physical exam, she is 5 feet tall and currently weighs 110 pounds; weight one year ago was 145 pounds.  BP 138/78, pulse is 64.  General:  A well-developed, well-nourished female, in no acute distress.  HEENT exam, head is atraumatic and normocephalic.  Eyes, sclerae are anicteric.  Teeth, she does have some poor dentition.  She does say that she needs some of her teeth pulled on her lower mouth.  Cranial nerves II, III, IV, and VI, vision is intact and visual fields are full to confrontation.  EOMs are full bilaterally.  Pupils are equal, round, and reactive to light.  Cranial nerves V and VII, normal facial sensation and symmetrical facial movements.  Cranial nerve VIII, hearing is intact, although decreased bilaterally right worse than left.  Cranial nerves IX, X, and XII, tongue protrudes midline and palate elevates symmetrically.  Cranial nerve XI, strong and symmetrical shoulder shrugs against resistance.  Cardiac, regular rate and rhythm.  Chest and lungs are clear bilaterally.  Skin is warm and dry.  Normal turgor and texture.  No rashes or lesions are noted.  General musculoskeletal exam reveals no gross deformity, fasciculations, and atrophy.  Peripheral vascular, no cyanosis, clubbing, or edema.  She does have some tremoring of her bilateral upper arms as she said.  Strength testing reveals difficulty when testing due to the fact that the patient does have a lot of pain, but she seems to be pretty equal in the bilateral upper extremities with no obvious weakness noted.  She is about 4+/5 in the deltoids, biceps, triceps, wrist flexors, wrist extensors, dorsal interossei, and grip strength.,It is much more painful for her on the left.  Deep tendon reflexes are 2+ bilaterally only at biceps, triceps, and brachioradialis, knees, and ankles.  No ankle clonus is elicited.  Hoffmann's is negative bilaterally.  Sensation is intact.  She ambulates with slow short steps.  No spastic gait is noted.  She has appropriate station and gait with no assisted devices, although she states that she is supposed to be using a cane.  She does not bring one in with her today.,FINDINGS: , Patient brings in cervical spine x-rays and she has had an MRI taken but does not bring that in with her today.  She will obtain that and x rays, which showed at cervical plate C3, C4, C5, C6, and C7 anteriorly with some lifting with the most lifted area at the C3 level.  No fractures are noted.,ASSESSMENT: , Cervicalgia, cervical radiculopathy, and difficulty swallowing status post cervical fusion C3 through C7 with lifting of the plate.,PLAN:,  We went ahead and obtained an EKG in the office today, which demonstrated normal sinus rhythm.  She went ahead and obtained her x-rays and will pick her MRI and return to the office for surgical consultation with Dr. L first available.  She would like the plate removed, so that she can eat and drink better, so that she can proceed with her shoulder surgery.  All questions and concerns were addressed with her.  Warning signs and symptoms were gone over with her.  If she should have any further questions, concerns, or complications, she will contact our office immediately; otherwise, we will see her as scheduled.  I am quite worried about the pain that she is having in her arms, so I would like to see the MRI as well.  Case was reviewed and discussed with Dr. L.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "Aspirin"
+      ],
+      "caregiver_checklist": [
+        "Aspirin"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, it looks like you're feeling quite unwell. Let's go over what's happening and what you need to do next. \n\nYou have some health problems in your family, including cancer and other health issues. You don't have any medicines right now, but you need to take some. Here's what you need to do:\n\n1. Take these medicines: You need to take a blood pressure medicine. It's called a blood pressure pill. You'll take it once a day, every morning. You'll take it with a glass of water. \n\n2. You also need to take a pain medicine. It's called a pain pill. You'll take it every 6 hours, as needed for pain. It's important to take it when you feel pain, not just when you're in pain. \n\n3. You need to see a doctor soon. You'll go to see Dr. L. He'll look at your spine and see if the plate is causing you pain. If it is, he'll help you take it out.\n\n4. You need to get an MRI. It's a special picture that doctors use to see inside your body. You'll need to get this done soon.\n\n5. You should call us if you have any more questions or if you feel worse. We'll see you next week for your next check-up.\n\nI'm a bit worried about your arm pain. I want you to get the MRI as soon as possible. We'll discuss the results together. Remember, if you have any pain or if you feel worse, please call us right away. We're here to help you.",
+      "caregiver_checklist": "- Check BP and pulse at home daily.\n- Watch for new or worsening headaches.\n- Call if you notice any new vision changes.\n- Schedule an MRI of the cervical spine.\n- Watch for difficulty swallowing or shortness of breath.\n- Call if you have chest pain or swelling in feet.\n- Schedule a follow-up appointment with Dr. L.\n- Watch for any new or worsening tremors in arms.\n- Call if you have any new or worsening symptoms.\n- Schedule a physical therapy appointment for shoulder strengthening.\n- Call if you have any questions or concerns.",
+      "child_explanation": "You had a big family with lots of health problems. Your mom and dad didn't feel well and died. You have brothers and sisters with different illnesses. Grown-ups and doctors are taking care of you. You have some aches and pains, but they're not too bad. The doctors want to check your neck and take out a plate to help you eat and drink better. They will see you soon to make sure you're okay. Your arms feel sore, so they want to look at a special picture to see what's going on."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Cervicalgia",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Cervicalgia.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Cervicalgia.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Cervicalgia",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Cervicalgia.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Cervicalgia.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Cervicalgia",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Cervicalgia.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Cervicalgia.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 45.431,
+      "caregiver_checklist": 21.515,
+      "child_explanation": 12.204,
+      "total": 79.165
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:29:56+00:00"
+  }
+}

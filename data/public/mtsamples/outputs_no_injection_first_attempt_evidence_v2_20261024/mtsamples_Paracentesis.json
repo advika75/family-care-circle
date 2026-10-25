@@ -1,0 +1,201 @@
+{
+  "id": "mtsamples_Paracentesis",
+  "patient_summary": "Hello there, you've been feeling unwell and had a large mass in your tummy. Your doctor did a procedure called a paracentesis, which means they took out some clear fluid from your tummy. They did this because the fluid was making you uncomfortable. They took out 700 mL of clear fluid using a syringe. They connected the syringe to a bag and told you how to keep a log of how much fluid comes out. They also gave you an appointment to come back to the office next Monday. \n\nYou need to take some medicines as prescribed by your doctor. You should take them exactly as they tell you. If you have any questions or if you feel worse, you should call your doctor or go to the emergency room. Remember to keep a log of how much fluid comes out and how you feel. You're doing well, and you'll be okay.",
+  "caregiver_checklist": [
+    "Check the patient's vital signs and fluid intake and output daily.",
+    "Watch for signs of infection such as fever, redness, or increased pain.",
+    "Call if the patient develops fever over 100.4°F (38°C).",
+    "Schedule a follow-up appointment with the surgeon in three days.",
+    "Check the pigtail catheter for any signs of blockage or leakage.",
+    "Watch for signs of fluid accumulation or mass growth.",
+    "Call if the mass size increases by more than 20%.",
+    "Schedule a repeat CAT scan in three weeks.",
+    "Check the patient's log for proper use of the drainage equipment.",
+    "Call if the patient experiences severe pain or difficulty breathing.",
+    "Note the 700 mL (dosage) of fluid withdrawn during the procedure."
+  ],
+  "child_explanation": "You had a big bump in your tummy. You're okay, you're in good hands. The doctors are taking care of you. They took out some yucky fluid to help you feel better. It's like when you have a big water balloon and you squeeze it out. Now they want to check again in a few days. Your team will help you with everything.",
+  "entities": [
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 1251,
+      "end": 1259
+    },
+    {
+      "text": "700 mL",
+      "label": "DOSAGE",
+      "start": 1321,
+      "end": 1327
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Abdominal mass.,POSTOPERATIVE DIAGNOSIS: , Abdominal mass.,PROCEDURE:,  Paracentesis.,DESCRIPTION OF PROCEDURE:  ,This 64-year-old female has stage II endometrial carcinoma, which had been resected before and treated with chemotherapy and radiation.  At the present time, the patient is under radiation treatment.  Two weeks ago or so, she developed a large abdominal mass, which was cystic in nature and the radiologist inserted a pigtail catheter in the emergency room.  We proceeded to admit the patient and drained a significant amount of clear fluid in the subsequent days.  The cytology of the fluid was negative and the culture was also negative.  Eventually, the patient was sent home with the pigtail shut off and the patient a week later underwent a repeat CAT scan of the abdomen and pelvis.,The CAT scan showed accumulation of the fluid and the mass almost achieving 80% of the previous size.  Therefore, I called the patient home and she came to the emergency department where the service was provided.  At that time, I proceeded to work on the pigtail catheter after obtaining an informed consent and preparing and draping the area in the usual fashion.  Unfortunately, the catheter was open.  I did not have a drainage system at that time.  So, I withdrew directly with a syringe 700 mL of clear fluid.  The system was connected to the draining bag, and the patient was instructed to keep a log and how to use equipment.  She was given an appointment to see me in the office next Monday, which is three days from now.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "700 mL"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you've been feeling unwell and had a large mass in your tummy. Your doctor did a procedure called a paracentesis, which means they took out some clear fluid from your tummy. They did this because the fluid was making you uncomfortable. They took out 700 mL of clear fluid using a syringe. They connected the syringe to a bag and told you how to keep a log of how much fluid comes out. They also gave you an appointment to come back to the office next Monday. \n\nYou need to take some medicines as prescribed by your doctor. You should take them exactly as they tell you. If you have any questions or if you feel worse, you should call your doctor or go to the emergency room. Remember to keep a log of how much fluid comes out and how you feel. You're doing well, and you'll be okay.",
+      "caregiver_checklist": "- Check the patient's vital signs and fluid intake and output daily.\n- Watch for signs of infection such as fever, redness, or increased pain.\n- Call if the patient develops fever over 100.4°F (38°C).\n- Schedule a follow-up appointment with the surgeon in three days.\n- Check the pigtail catheter for any signs of blockage or leakage.\n- Watch for signs of fluid accumulation or mass growth.\n- Call if the mass size increases by more than 20%.\n- Schedule a repeat CAT scan in three weeks.\n- Check the patient's log for proper use of the drainage equipment.\n- Call if the patient experiences severe pain or difficulty breathing.",
+      "child_explanation": "You had a big bump in your tummy. You're okay, you're in good hands. The doctors are taking care of you. They took out some yucky fluid to help you feel better. It's like when you have a big water balloon and you squeeze it out. Now they want to check again in a few days. Your team will help you with everything."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Paracentesis",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Paracentesis.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Paracentesis.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Paracentesis",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Paracentesis.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Paracentesis.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Paracentesis",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Paracentesis.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Paracentesis.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 12.329,
+      "caregiver_checklist": 19.978,
+      "child_explanation": 7.391,
+      "total": 39.703
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:38:18+00:00"
+  }
+}

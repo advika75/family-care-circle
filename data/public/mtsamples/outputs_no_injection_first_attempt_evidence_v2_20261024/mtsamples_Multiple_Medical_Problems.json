@@ -1,0 +1,456 @@
+{
+  "id": "mtsamples_Multiple_Medical_Problems",
+  "patient_summary": "Hello there! I'm here to help you understand what's going on and what you need to do. Let's break it down into simple steps.\n\n### What's Happening\nYou've been feeling a bit confused sometimes, like you're not sure what season it is. You also have trouble walking, and you've fallen a couple of times. You've been losing a little bit of weight, and you feel tired and not as motivated as you used to be. You've been taking some medicines, and you want to try a special drink called Ensure to help you eat better.\n\n### What Medicines to Take\nYou're already taking many medicines, and you need to keep taking them. Here's a quick list of what you need to do:\n- You have a special vitamin called B12 that you get in your arm once a year. It's 1000 mg.\n- You take a medicine called Digitek every other day, alternating between 250 mg and 125 mcg.\n- You take aspirin every day to help your heart. It's 81 mg.\n- You take a medicine called Toprol XL every day to help your heart. It's 25 mg.\n- You take vitamin B6 every day. It's 100 mg.\n- You take a medicine called Prevacid every day to help your stomach. It's 30 mg.\n- You take a special calcium and vitamin D pill three times a day. Each pill is 500 mg.\n- You take a medicine called Aricept every day to help your brain. It's 5 mg.\n- You take Tylenol every 4 hours when you need it. It's 650 mg.\n- You take furosemide every day when you need it. It's 20 mg.\n- You take a special medicine called Nitro when you need it. It's sublingual.\n- You take alprazolam when you need it. It's 0.25 mg.\n- Your doctor has also ordered you to take Digitek every other day, but now it's 10 mg. You need to take it when you need it.\n\n### When to Get Help\nIf you have any of these symptoms, you should call your doctor or go to the hospital right away:\n- You have trouble breathing.\n- You have chest pain.\n- You have a severe headache.\n- You have a fever that doesn't go\n\nImportant details from your care team's note: digoxin (medication).",
+  "caregiver_checklist": [
+    "Give the patient Ensure as directed and monitor for any side effects.",
+    "Check the patient’s vital signs daily, especially her blood pressure.",
+    "Watch for signs of confusion or disorientation, such as inattentiveness or difficulty following instructions.",
+    "Call the healthcare provider if the patient shows signs of dehydration or worsening confusion.",
+    "Schedule a follow-up appointment in two months to reassess her condition.",
+    "Call the healthcare provider if the patient has a fall or difficulty walking.",
+    "Monitor the patient’s weight weekly and report any significant changes.",
+    "Watch for signs of constipation or incontinence, and report to the healthcare provider.",
+    "Call the healthcare provider if the patient experiences new or worsening symptoms of fatigue or listlessness.",
+    "Schedule a bone density test to monitor for osteoporosis.",
+    "Call the healthcare provider if the patient’s blood pressure is consistently high or if she experiences chest pain.",
+    "Take the B12 shot every other day, alternating with 1000 mg IM monthly.",
+    "Take Digitek every other day, alternating with 125 mcg p.o. every other day.",
+    "Take aspirin 81 mg daily.",
+    "Take Theragran-M daily.",
+    "Take Toprol XL 25 mg daily.",
+    "Take vitamin B6 100 mg daily.",
+    "Take Prevacid 30 mg daily.",
+    "Take Oyster Shell calcium with D 500 mg three times a day.",
+    "Take Aricept 10 mg daily.",
+    "Take Tylenol 650 mg every 4 hours as needed.",
+    "Take furosemide 20 mg as needed.",
+    "Take sublingual Nitro as needed.",
+    "Take alprazolam 0.25 mg as needed.",
+    "Confirm with the care team: 5 mg (dosage)",
+    "Confirm with the care team: digoxin (medication)"
+  ],
+  "child_explanation": "You had a busy day, you know. The doctors and nurses are taking good care of you. You're feeling a bit tired and a bit sad. You're also having trouble walking, but you're strong. You're eating a little less, but you're still getting enough to stay healthy. You're going to try some special food to help you feel better. The grown-ups are giving you lots of medicine to help you. They're checking you often to make sure you're okay. You're in good hands, you're safe.",
+  "entities": [
+    {
+      "text": "diarrhea",
+      "label": "SYMPTOM",
+      "start": 424,
+      "end": 432
+    },
+    {
+      "text": "1000 mg",
+      "label": "DOSAGE",
+      "start": 593,
+      "end": 600
+    },
+    {
+      "text": "every other day",
+      "label": "FREQUENCY",
+      "start": 630,
+      "end": 645
+    },
+    {
+      "text": "125 mcg",
+      "label": "DOSAGE",
+      "start": 663,
+      "end": 670
+    },
+    {
+      "text": "every other day",
+      "label": "FREQUENCY",
+      "start": 676,
+      "end": 691
+    },
+    {
+      "text": "aspirin",
+      "label": "MEDICATION",
+      "start": 693,
+      "end": 700
+    },
+    {
+      "text": "81 mg",
+      "label": "DOSAGE",
+      "start": 701,
+      "end": 706
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 707,
+      "end": 712
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 726,
+      "end": 731
+    },
+    {
+      "text": "25 mg",
+      "label": "DOSAGE",
+      "start": 743,
+      "end": 748
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 749,
+      "end": 754
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 767,
+      "end": 773
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 774,
+      "end": 779
+    },
+    {
+      "text": "30 mg",
+      "label": "DOSAGE",
+      "start": 790,
+      "end": 795
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 796,
+      "end": 801
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 831,
+      "end": 837
+    },
+    {
+      "text": "5 mg",
+      "label": "DOSAGE",
+      "start": 854,
+      "end": 858
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 859,
+      "end": 864
+    },
+    {
+      "text": "650 mg",
+      "label": "DOSAGE",
+      "start": 874,
+      "end": 880
+    },
+    {
+      "text": "furosemide",
+      "label": "MEDICATION",
+      "start": 895,
+      "end": 905
+    },
+    {
+      "text": "20 mg",
+      "label": "DOSAGE",
+      "start": 906,
+      "end": 911
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 912,
+      "end": 917
+    },
+    {
+      "text": "0.25 mg",
+      "label": "DOSAGE",
+      "start": 970,
+      "end": 977
+    },
+    {
+      "text": "Fatigue",
+      "label": "SYMPTOM",
+      "start": 1828,
+      "end": 1835
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 1879,
+      "end": 1891
+    },
+    {
+      "text": "digoxin",
+      "label": "MEDICATION",
+      "start": 1918,
+      "end": 1925
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 1960,
+      "end": 1965
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 1966,
+      "end": 1971
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 2012,
+      "end": 2031
+    },
+    {
+      "text": "digoxin",
+      "label": "MEDICATION",
+      "start": 2061,
+      "end": 2068
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "aspirin",
+      "dosages": [
+        "81 mg",
+        "25 mg",
+        "100 mg",
+        "30 mg",
+        "500 mg",
+        "5 mg",
+        "650 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "furosemide",
+      "dosages": [
+        "20 mg",
+        "0.25 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "digoxin",
+      "dosages": [
+        "10 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "SUBJECTIVE:,  The patient was seen today by me at Nursing Home for her multiple medical problems.  The nurses report that she has been confused at times, having incontinent stool in the sink one time but generally she does not do that poorly.  She does have trouble walking which she attributes to weak legs.  She fell a couple of months ago.  Her eating has been fair.  She has been losing weight a little bit.  She denies diarrhea.  She does complain of feeling listless and unambitious and would like to try some Ensure.,CURRENT MEDICATIONS:,  Her meds are fairly extensive and include B12 1000 mg IM monthly, Digitek 250 p.o. every other day alternating with 125 mcg p.o. every other day, aspirin 81 mg daily, Theragran-M daily, Toprol XL 25 mg daily, vitamin B6 100 mg daily, Prevacid 30 mg daily, Oyster Shell calcium with D 500 mg t.i.d., Aricept 5 mg daily, Tylenol 650 mg q.4h. p.r.n., furosemide 20 mg daily p.r.n., and sublingual Nitro p.r.n., and alprazolam 0.25 mg p.r.n.,ALLERGIES:,  Sulfa and trimethoprim.,OBJECTIVE:,General:  She is a well-developed, well-nourished, elderly female in no acute distress.,Vital Signs:  Her age is 90.  Temperature is 98.5 degrees.  Blood pressure:  100/54.  Pulse:  60.  Respirations:  18.  Weight was 132.6 about a week ago, which is down one pound from couple of months ago.,HEENT:  Head was normocephalic.,Neck:  Supple.,Lungs:  Clear.,Heart:  Regular rate and rhythm.,Abdomen:  Soft, nontender without hepatosplenomegaly or mass.,Extremities:  No calf tenderness or significant ankle edema x 2 in the lower extremities is noted.,Mental Status Exam:  She was uncertain what season we are in.  She thought we were almost in winter.  She did know that today of the week was Friday.  She seemed to recognize me.,ASSESSMENT:,1.  Alzheimer’s dementia.,2.  Gradual weight loss.,3.  Fatigue.,4.  B12 deficiency.,5.  Osteoporosis.,6.  Hypertension.,PLAN:,  I ordered yearly digoxin levels.  Increased her Aricept to 10 mg daily.  She apparently does have intermittent atrial fibrillation as a reason for being on the digoxin.  We will plan to recheck her in a couple of months.  Ordered health supplement to be offered after each meal due to her weight loss.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "1000 mg",
+        "81 mg",
+        "25 mg",
+        "100 mg",
+        "30 mg",
+        "500 mg",
+        "5 mg",
+        "650 mg",
+        "20 mg",
+        "0.25 mg"
+      ],
+      "caregiver_checklist": [
+        "1000 mg",
+        "every other day",
+        "125 mcg",
+        "aspirin",
+        "81 mg",
+        "25 mg",
+        "100 mg",
+        "30 mg",
+        "500 mg",
+        "5 mg",
+        "650 mg",
+        "furosemide",
+        "20 mg",
+        "0.25 mg",
+        "digoxin",
+        "10 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you understand what's going on and what you need to do. Let's break it down into simple steps.\n\n### What's Happening\nYou've been feeling a bit confused sometimes, like you're not sure what season it is. You also have trouble walking, and you've fallen a couple of times. You've been losing a little bit of weight, and you feel tired and not as motivated as you used to be. You've been taking some medicines, and you want to try a special drink called Ensure to help you eat better.\n\n### What Medicines to Take\nYou're already taking many medicines, and you need to keep taking them. Here's a quick list of what you need to do:\n- You have a special vitamin called B12 that you get in your arm once a year.\n- You take a medicine called Digitek every other day, alternating between 250 mg and 125 mcg.\n- You take aspirin every day to help your heart.\n- You take a medicine called Toprol XL every day to help your heart.\n- You take vitamin B6 every day.\n- You take a medicine called Prevacid every day to help your stomach.\n- You take a special calcium and vitamin D pill three times a day.\n- You take a medicine called Aricept every day to help your brain.\n- You take Tylenol every 4 hours when you need it.\n- You take furosemide every day when you need it.\n- You take a special medicine called Nitro when you need it.\n- You take alprazolam when you need it.\n\n### When to Get Help\nIf you have any of these symptoms, you should call your doctor or go to the hospital right away:\n- You have trouble breathing.\n- You have chest pain.\n- You have a severe headache.\n- You have a fever that doesn't go away.\n- You have trouble walking or moving.\n- You have a lot of trouble eating or drinking.\n\n### What to Do Next\nYour doctor ordered a yearly check of a medicine called digoxin. They also increased your Aricept to 10 mg every day. They want to check on you in a few months to see how you're doing. They also want you to try having a special drink called Ensure after every meal because you've been losing a little bit of weight.\n\nRemember, you're not alone. Your doctors and nurses are here to help you. If you",
+      "caregiver_checklist": "- Give the patient Ensure as directed and monitor for any side effects.\n- Check the patient’s vital signs daily, especially her blood pressure.\n- Watch for signs of confusion or disorientation, such as inattentiveness or difficulty following instructions.\n- Call the healthcare provider if the patient shows signs of dehydration or worsening confusion.\n- Schedule a follow-up appointment in two months to reassess her condition.\n- Call the healthcare provider if the patient has a fall or difficulty walking.\n- Monitor the patient’s weight weekly and report any significant changes.\n- Watch for signs of constipation or incontinence, and report to the healthcare provider.\n- Call the healthcare provider if the patient experiences new or worsening symptoms of fatigue or listlessness.\n- Schedule a bone density test to monitor for osteoporosis.\n- Call the healthcare provider if the patient’s blood pressure is consistently high or if she experiences chest pain.",
+      "child_explanation": "You had a busy day, you know. The doctors and nurses are taking good care of you. You're feeling a bit tired and a bit sad. You're also having trouble walking, but you're strong. You're eating a little less, but you're still getting enough to stay healthy. You're going to try some special food to help you feel better. The grown-ups are giving you lots of medicine to help you. They're checking you often to make sure you're okay. You're in good hands, you're safe."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Multiple_Medical_Problems",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Multiple_Medical_Problems.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Multiple_Medical_Problems.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Multiple_Medical_Problems",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Multiple_Medical_Problems.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Multiple_Medical_Problems.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Multiple_Medical_Problems",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Multiple_Medical_Problems.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Multiple_Medical_Problems.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [
+        "digoxin"
+      ],
+      "caregiver_checklist": [
+        "5 mg",
+        "digoxin"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": true,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": true,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        true,
+        true,
+        true
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 107.241,
+      "caregiver_checklist": 60.973,
+      "child_explanation": 11.036,
+      "total": 179.257
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:26:36+00:00"
+  }
+}

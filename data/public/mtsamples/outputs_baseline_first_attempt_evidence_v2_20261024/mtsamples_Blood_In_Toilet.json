@@ -1,0 +1,229 @@
+{
+  "id": "mtsamples_Blood_In_Toilet",
+  "patient_summary": "Hello there, you've been feeling a bit unwell and noticed blood in the toilet. The doctors and nurses at XYZ Nursing Home took you to the hospital because they were worried. They did some tests, but nothing showed any major problems. You don't have any other symptoms like abdominal pain or back pain. The doctors think you might have had a small amount of bleeding in your gut, but they're not sure. They want to keep an eye on you for now.\n\nYou'll need to come back to the hospital every day for 3 days for a blood test. The nurses at XYZ will do this for you. If you notice any more blood in the toilet or if you feel worse, you should tell them right away. They'll also do a urine test at XYZ to check for blood.\n\nYou don't need any special medicines right now. The doctors think you're stable, but they want to make sure you're okay. If you have any questions or are worried, you can always ask the nurses or doctors at the hospital.",
+  "caregiver_checklist": [
+    "Check for blood in the toilet daily.",
+    "Schedule a CBC test daily for the next 3 days.",
+    "Watch for any new symptoms such as abdominal pain or back pain.",
+    "Call Dr. X if there is any recurrence of blood or worsening symptoms.",
+    "Call Dr. X if the urine test at XYZ shows blood.",
+    "Schedule a follow-up appointment with Dr. X in 3 months.",
+    "Watch for signs of dehydration such as dry mouth or decreased urination.",
+    "Call 911 if there is severe bleeding or if the patient becomes unconscious.",
+    "Schedule a colonoscopy in 6 months to rule out any gastrointestinal issues."
+  ],
+  "child_explanation": "You had a little accident in the toilet. The grown-ups and doctors are taking care of you. There was some blood, but no pain. The doctors did a check and found nothing serious. They think it might be from your tummy. You'll have a check-up at home. The doctors will watch you closely. You're safe now, you're just a bit uncomfortable.",
+  "entities": [
+    {
+      "text": "abdominal pain",
+      "label": "SYMPTOM",
+      "start": 508,
+      "end": 522
+    },
+    {
+      "text": "back pain",
+      "label": "SYMPTOM",
+      "start": 526,
+      "end": 535
+    },
+    {
+      "text": "asthma",
+      "label": "CONDITION",
+      "start": 815,
+      "end": 821
+    },
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 848,
+      "end": 862
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2700,
+      "end": 2705
+    },
+    {
+      "text": "3 days",
+      "label": "DURATION",
+      "start": 2719,
+      "end": 2725
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 2927,
+      "end": 2935
+    }
+  ],
+  "regimens": [],
+  "source_text": "CHIEF COMPLAINT:  ,Blood in toilet.,HISTORY: , Ms. ABC is a 77-year-old female who is brought down by way of ambulance from XYZ Nursing Home after nursing staff had noted there to be blood in the toilet after she had been sitting on the toilet.  They did not note any urine or stool in the toilet and the patient had no acute complaints.  The patient is unfortunately a poor historian in that she has dementia and does not recall any of the events.  The patient herself has absolutely no complaints, such as abdominal pain or back pain, urinary and GI complaints.  There is no other history provided by the nursing staff from XYZ.  There apparently were no clots noted within there.  She does not have a history of being on anticoagulants.,PAST MEDICAL HISTORY: , Actually quite limited, includes that of dementia, asthma, anemia which is chronic, hypothyroidism, schizophrenia, positive PPD in the past.,PAST SURGICAL HISTORY:  ,Unknown.,SOCIAL HISTORY: , No tobacco or alcohol.,MEDICATIONS: , Listed in the medical records.,ALLERGIES:,  No known drug allergies.,PHYSICAL EXAMINATION: , VITAL SIGNS:  Stable.,GENERAL:  This is a well-nourished, well-developed female who is alert, oriented in all spheres, pleasant, cooperative, resting comfortably, appearing otherwise healthy and well in no acute distress.,HEENT:  Visually normal.  Pupils are reactive.  TMs, canals, nasal mucosa, and oropharynx are intact.,NECK:  No lymphadenopathy or JVD.,HEART:  Regular rate and rhythm.  S1, S2.  No murmurs, gallops, or rubs.,LUNGS:  Clear to auscultation.  No wheeze, rales, or rhonchi.,ABDOMEN:  Benign, flat, soft, nontender, and nondistended.  Bowel sounds active.  No organomegaly or mass noted.,GU/RECTAL:  External rectum was normal.  No obvious blood internally.  There is no stool noted within the vault.  There is no gross amount of blood noted within the vault.  Guaiac was done and was trace positive.  Visual examination anteriorly during the rectal examination noted no blood within the vaginal region.,EXTREMITIES:  No significant abnormalities.,WORKUP: , CT abdomen and pelvis was negative.  CBC was entirely within normal limits without any signs of anemia with an H and H of 14 and 42%.  CMP also within normal limits.  PTT, PT, and INR were normal.  Attempts at getting the patient to give A urine were unsuccessful and the patient was very noncompliant, would not allow us to do any kind of Foley catheterization.,ER COURSE:,  Uneventful.  I have discussed the patient in full with Dr. X who agrees that she does not require any further workup or evaluation as an inpatient.  We have decided to send the patient back to XYZ with observation by the staff there.  She will have a CBC done daily for the next 3 days with results to Dr. X.  They are to call him if there is any recurrences of blood or worsening of symptoms and they are to do a urinalysis at XYZ for blood.,ASSESSMENT: , Questionable gastrointestinal bleeding at this time, stable without any obvious signs otherwise of significant bleed.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "daily"
+      ],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you've been feeling a bit unwell and noticed blood in the toilet. The doctors and nurses at XYZ Nursing Home took you to the hospital because they were worried. They did some tests, but nothing showed any major problems. You don't have any other symptoms like abdominal pain or back pain. The doctors think you might have had a small amount of bleeding in your gut, but they're not sure. They want to keep an eye on you for now.\n\nYou'll need to come back to the hospital in 3 days for a blood test. The nurses at XYZ will do this for you. If you notice any more blood in the toilet or if you feel worse, you should tell them right away. They'll also do a urine test at XYZ to check for blood.\n\nYou don't need any special medicines right now. The doctors think you're stable, but they want to make sure you're okay. If you have any questions or are worried, you can always ask the nurses or doctors at the hospital. They're here to help you.",
+      "caregiver_checklist": "- Check for blood in the toilet daily.\n- Schedule a CBC test daily for the next 3 days.\n- Watch for any new symptoms such as abdominal pain or back pain.\n- Call Dr. X if there is any recurrence of blood or worsening symptoms.\n- Call Dr. X if the urine test at XYZ shows blood.\n- Schedule a follow-up appointment with Dr. X in 3 months.\n- Watch for signs of dehydration such as dry mouth or decreased urination.\n- Call 911 if there is severe bleeding or if the patient becomes unconscious.\n- Schedule a colonoscopy in 6 months to rule out any gastrointestinal issues.",
+      "child_explanation": "You had a little accident in the toilet. The grown-ups and doctors are taking care of you. There was some blood, but no pain. The doctors did a check and found nothing serious. They think it might be from your tummy. You'll have a check-up at home. The doctors will watch you closely. You're safe now, you're just a bit uncomfortable."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Blood_In_Toilet",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Blood_In_Toilet.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Blood_In_Toilet.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Blood_In_Toilet",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Blood_In_Toilet.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Blood_In_Toilet.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Blood_In_Toilet",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Blood_In_Toilet.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Blood_In_Toilet.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 30.403,
+      "caregiver_checklist": 13.307,
+      "child_explanation": 9.442,
+      "total": 53.165
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T10:30:20+00:00"
+  }
+}

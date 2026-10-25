@@ -1,0 +1,204 @@
+{
+  "id": "mtsamples_Low-Transverse_C-Section",
+  "patient_summary": "Hello there! I'm here to tell you about what happened during your recent hospital stay. You had a cesarean section, which means your baby was born through your tummy. The doctors and nurses worked hard to make sure you and your baby were safe.\n\nYou had some bleeding during the surgery, which is why you had to give 1000 mL of blood. The doctors and nurses gave you some medicine to help you sleep during the surgery. You didn't have any problems during the surgery, and your baby was healthy.\n\nAfter the surgery, you were taken to the recovery room to rest. You were stable and doing well. You will need to take some medicines to help you recover. The doctors will tell you how to take these medicines and when to take them.\n\nIf you have any pain or if you feel sick, you should tell the nurses right away. They can give you more medicine if you need it. If you have any questions or are worried about anything, you can always ask the nurses or doctors.\n\nYou will need to rest for a few days after the surgery. You can eat and drink when you feel like it. The nurses will help you with any questions you have about how to take care of yourself.\n\nRemember, if you have any problems or if you're not feeling well, you should call the nurses or your doctor right away. They are there to help you.",
+  "caregiver_checklist": [
+    "Check for signs of bleeding",
+    "Watch for increased blood pressure",
+    "Call if blood pressure rises above 180/100 mmHg",
+    "Schedule follow-up appointment in 2 weeks",
+    "Call if any signs of infection (redness, fever, pain)",
+    "Watch for signs of complications like uterine rupture",
+    "Schedule postpartum check-up in 6 weeks",
+    "Call if baby shows signs of distress (breathing problems, grunting)",
+    "Schedule 1-year check-up for baby",
+    "Call if any unusual symptoms in baby or mother",
+    "Other dosage: 1000 mL"
+  ],
+  "child_explanation": "You had a tiny baby growing in your tummy. Your grown-ups and doctors worked hard to help you. They used a special cut called a cesarean section. You didn't feel any pain. You're safe now. You're getting lots of care. You're doing great!",
+  "entities": [
+    {
+      "text": "1000 mL",
+      "label": "DOSAGE",
+      "start": 282,
+      "end": 289
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 988,
+      "end": 996
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES:,1.  Intrauterine pregnancy at term.,2.  Arrest of dilation. ,POSTOPERATIVE DIAGNOSES:,1.  Intrauterine pregnancy at term.,2.  Arrest of dilation.,PROCEDURE PERFORMED:,  Primary low-transverse cesarean section.,ANESTHESIA: , Epidural.,ESTIMATED BLOOD LOSS: , 1000 mL.,COMPLICATIONS: , None.,FINDINGS:  ,Female infant in cephalic presentation, OP position, weight 9 pounds 8 ounces.  Apgars were 9 at 1 minute and 9 at 5 minutes.  Normal uterus, tubes, and ovaries were noted.,INDICATIONS:  ,The patient is a 20-year-old gravida 1, para 0 female, who presented to labor and delivery in early active labor at 40 and 6/7 weeks gestation.  The patient progressed to 8 cm, at which time, Pitocin was started.  She subsequently progressed to 9 cm, but despite adequate contractions, arrested dilation at 9 cm.  A decision was made to proceed with a primary low transverse cesarean section.,The procedure was described to the patient in detail including possible risks of bleeding, infection, injury to surrounding organs, and possible need for further surgery.  Informed consent was obtained prior to proceeding with the procedure.,PROCEDURE NOTE:  ,The patient was taken to the operating room where epidural anesthesia was found to be adequate.  The patient was prepped and draped in the usual sterile fashion in the dorsal supine position with a left-ward tilt.  A Pfannenstiel skin incision was made with the scalpel and carried through to the underlying layer of fascia using the Bovie.  The fascia was incised in the midline and extended laterally using Mayo scissors.  Kocher clamps were used to elevate the superior aspect of the fascial incision, which was elevated, and the underlying rectus muscles were dissected off bluntly and using Mayo scissors.  Attention was then turned to the inferior aspect of the fascial incision, which in similar fashion was grasped with Kocher clamps, elevated, and the underlying rectus muscles were dissected off bluntly and using Mayo scissors.  The rectus muscles were dissected in the midline.,The peritoneum was bluntly dissected, entered, and extended superiorly and inferiorly with good visualization of the bladder.  The bladder blade was inserted.  The vesicouterine peritoneum was identified with pickups and entered sharply using Metzenbaum scissors.  This incision was extended laterally and the bladder flap was created digitally.  The bladder blade was reinserted.  The lower uterine segment was incised in a transverse fashion using the scalpel and extended using manual traction.  Clear fluid was noted.  The infant was subsequently delivered atraumatically.  The nose and mouth were bulb suctioned.  The cord was clamped and cut.  The infant was subsequently handed to the awaiting nursery nurse.  Next, cord blood was obtained per the patient's request for cord blood donation, which took several minutes to perform.  Subsequent to the collection of this blood, the placenta was removed spontaneously intact with a 3-vessel cord noted.  The uterus was exteriorized and cleared of all clots and debris.  The uterine incision was repaired in 2 layers using 0 chromic suture.  Hemostasis was visualized.  The uterus was returned to the abdomen.,The pelvis was copiously irrigated.  The uterine incision was reexamined and was noted to be hemostatic.  The rectus muscles were reapproximated in the midline using 3-0 Vicryl.  The fascia was closed with 0 Vicryl, the subcutaneous layer was closed with 3-0 plain gut, and the skin was closed with staples.  Sponge, lap, and instrument counts were correct x2.  The patient was stable at the completion of the procedure and was subsequently transferred to the recovery room in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "1000 mL"
+      ],
+      "caregiver_checklist": [
+        "1000 mL"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to tell you about what happened during your recent hospital stay. You had a cesarean section, which means your baby was born through your tummy. The doctors and nurses worked hard to make sure you and your baby were safe.\n\nYou had some bleeding during the surgery, which is why you had to give a lot of blood. The doctors and nurses gave you some medicine to help you sleep during the surgery. You didn't have any problems during the surgery, and your baby was healthy.\n\nAfter the surgery, you were taken to the recovery room to rest. You were stable and doing well. You will need to take some medicines to help you recover. The doctors will tell you how to take these medicines and when to take them.\n\nIf you have any pain or if you feel sick, you should tell the nurses right away. They can give you more medicine if you need it. If you have any questions or are worried about anything, you can always ask the nurses or doctors.\n\nYou will need to rest for a few days after the surgery. You can eat and drink when you feel like it. The nurses will help you with any questions you have about how to take care of yourself.\n\nRemember, if you have any problems or if you're not feeling well, you should call the nurses or your doctor right away. They are there to help you.",
+      "caregiver_checklist": "- Check for signs of bleeding\n- Watch for increased blood pressure\n- Call if blood pressure rises above 180/100 mmHg\n- Schedule follow-up appointment in 2 weeks\n- Call if any signs of infection (redness, fever, pain)\n- Watch for signs of complications like uterine rupture\n- Schedule postpartum check-up in 6 weeks\n- Call if baby shows signs of distress (breathing problems, grunting)\n- Schedule 1-year check-up for baby\n- Call if any unusual symptoms in baby or mother",
+      "child_explanation": "You had a tiny baby growing in your tummy. Your grown-ups and doctors worked hard to help you. They used a special cut called a cesarean section. You didn't feel any pain. You're safe now. You're getting lots of care. You're doing great!"
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Low-Transverse_C-Section",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Low-Transverse_C-Section.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Low-Transverse_C-Section.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Low-Transverse_C-Section",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Low-Transverse_C-Section.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Low-Transverse_C-Section.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Low-Transverse_C-Section",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Low-Transverse_C-Section.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Low-Transverse_C-Section.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 43.711,
+      "caregiver_checklist": 22.285,
+      "child_explanation": 10.249,
+      "total": 76.268
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T14:55:50+00:00"
+  }
+}

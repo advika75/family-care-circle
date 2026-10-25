@@ -1,0 +1,275 @@
+{
+  "id": "mtsamples_Lumbar_Puncture_-_1",
+  "patient_summary": "Hello there! I'm here to explain what happened to you and what you need to do next. You had a little girl in the hospital because she was very sick. She was 2 years and 2 months old, and she had very low red blood cells, which means she was very anemic. Her body was also having problems with something called hemolysis, which means her red blood cells were breaking down faster than they should. She was given some blood to help her, but her body was still having problems.\n\nThe doctors also found that you had a urinary tract infection. This means there was something in your bladder that wasn't supposed to be there. The doctors gave you some antibiotics to help, but they also did a test to make sure the antibiotics were working. They also did a lumbar puncture, which is a special test to check if you might have meningitis. This is a serious infection that can affect your brain and spinal cord.\n\nYou were given some medicines during the procedure:\n- Versed 1 mg intravenously to help you relax\n- Fentanyl 20 mcg intravenously to help you sleep\n\nYou were placed in a special position and the doctors carefully did the test. They took some fluid from your back to check. The fluid was clear, which is good. They will send the fluid to the lab to check for more details.\n\nYou were given amoxicillin, which is a medicine that fights infections. You were given it 3 times, each time 1 mg, and each time 20 mcg. The fluid you gave was 3 mL. You were also given EMLA cream before the test, which helped numb your back. This is why you didn't feel anything during the test.\n\nYou will be in the hospital for a while, and the doctors will keep an eye on you. They will give you more medicine if you need it. If you have any more vomiting or if you have any other problems, you should tell the nurses right away.\n\nYou will be okay, and you will be back in your room soon. You just need to rest and let the doctors take care of you. You are 2 years and 2 months old, and you have been in the hospital for 2 months.",
+  "caregiver_checklist": [
+    "Check that the child is in the left lateral decubitus position.",
+    "Monitor the child's vital signs including respiratory rate, heart rate, and oxygen saturation.",
+    "Watch for signs of sedation side effects such as respiratory depression.",
+    "Call the care team if the child's oxygen saturation drops below 92%.",
+    "Schedule a follow-up appointment in 2 months for a routine check-up.",
+    "Call the care team if the child experiences severe vomiting or bleeding.",
+    "Check the child's temperature and watch for signs of infection.",
+    "Schedule a lumbar puncture follow-up in 2 months to monitor for meningitis.",
+    "Watch for signs of infection such as fever, increased white blood cell count, or leukocytes in the cerebrospinal fluid.",
+    "Call the care team if the child's white blood cell count continues to rise.",
+    "Schedule a blood test for amoxicillin in 2 months to ensure it is cleared from the system.",
+    "Schedule a blood test for cefotaxime in 2 months to ensure it is cleared from the system.",
+    "Schedule a blood test for Versed in 2 months to ensure it is cleared from the system.",
+    "Schedule a blood test for fentanyl in 2 months to ensure it is cleared from the system.",
+    "Schedule a blood test for amoxicillin (1 mg) in 2 months to ensure it is cleared from the system.",
+    "Schedule a blood test for fentanyl (20 mcg) in 2 months to ensure it is cleared from the system.",
+    "Schedule a blood test for cefotaxime (3 mL) in 2 months to ensure it is cleared from the system."
+  ],
+  "child_explanation": "You had a tummy ache and were feeling sick. You got a tiny bit of medicine for your tummy. But now you have a fever and your white blood count is very high. The doctors want to check your spine to make sure you're okay. They gave you medicine to help you sleep. They did a special test to see if you have a problem in your spine. The test went well, and they got some clear fluid. Now they will send it to the lab to check. The doctors are taking good care of you.",
+  "entities": [
+    {
+      "text": "2-month",
+      "label": "DURATION",
+      "start": 92,
+      "end": 99
+    },
+    {
+      "text": "urinary tract infection",
+      "label": "CONDITION",
+      "start": 401,
+      "end": 424
+    },
+    {
+      "text": "amoxicillin",
+      "label": "MEDICATION",
+      "start": 695,
+      "end": 706
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 1251,
+      "end": 1259
+    },
+    {
+      "text": "UTI",
+      "label": "CONDITION",
+      "start": 1414,
+      "end": 1417
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1615,
+      "end": 1623
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 1648,
+      "end": 1658
+    },
+    {
+      "text": "1 mg",
+      "label": "DOSAGE",
+      "start": 1930,
+      "end": 1934
+    },
+    {
+      "text": "20 mcg",
+      "label": "DOSAGE",
+      "start": 2099,
+      "end": 2105
+    },
+    {
+      "text": "3 mL",
+      "label": "DOSAGE",
+      "start": 2674,
+      "end": 2678
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "amoxicillin",
+      "dosages": [
+        "1 mg",
+        "20 mcg",
+        "3 mL"
+      ],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "PROCEDURE: , Lumbar puncture with moderate sedation.,INDICATION: , The patient is a 2-year, 2-month-old little girl who presented to the hospital with severe anemia, hemoglobin 5.8, elevated total bilirubin consistent with hemolysis and weak positive direct Coombs test.  She was transfused with packed red blood cells.  Her hemolysis seemed to slow down.  She also on presentation had indications of urinary tract infection with urinalysis significant for 2+ leukocytes, positive nitrites, 3+ protein, 3+ blood, 25 to 100 white cells, 10 to 25 bacteria, 10 to 25 epithelial cells on clean catch specimen.  Culture subsequently grew out no organisms; however, the child had been pretreated with amoxicillin about x3 doses prior to presentation to the hospital.  She had a blood culture, which was also negative.  She was empirically started on presentation with the cefotaxime intravenously.  Her white count on presentation was significantly elevated at 20,800, subsequently increased to 24.7 and then decreased to 16.6 while on antibiotics.  After antibiotics were discontinued, she increased over the next 2 days to an elevated white count of 31,000 with significant bandemia, metamyelocytes and myelocytes present.  She also had three episodes of vomiting and thus she is being taken to the procedure room today for a lumbar puncture to rule out meningitis that may being inadvertently treated in treating her UTI.,I discussed with The patient's parents prior to the procedure the lumbar puncture and moderate sedation procedures.  The risks, benefits, alternatives, complications including, but not limited to bleeding, infection, respiratory depression.  Questions were answered to their satisfaction.  They would like to proceed.,PROCEDURE IN DETAIL: , After \"time out\" procedure was obtained, the child was given appropriate monitoring equipment including appropriate vital signs were obtained.  She was then given Versed 1 mg intravenously by myself.  She subsequently became sleepy, the respiratory monitors, end-tidal, cardiopulmonary and pulse oximetry were applied.  She was then given 20 mcg of fentanyl intravenously by myself.  She was placed in the left lateral decubitus position.  Dr. X cleansed the patient's back in a normal sterile fashion with Betadine solution.  She inserted a 22-gauge x 1.5-inch spinal needle in the patient's L3-L4 interspace that was carefully identified under my direct supervision.  Clear fluid was not obtained initially, needle was withdrawn intact.  The patient was slightly repositioned by the nurse and Dr. X reinserted the needle in the L3-L4 interspace position, the needle was able to obtain clear fluid, approximately 3 mL was obtained.  The stylette was replaced and the needle was withdrawn intact and bandage was applied.  Betadine solution was cleansed from the patient's back.,During the procedure, there were no untoward complications, the end-tidal CO2, pulse oximetry, and other vitals remained stable.  Of note, EMLA cream had also been applied prior procedure, this was removed prior to cleansing of the back.,Fluid will be sent for a routine cell count, Gram stain culture, protein, and glucose.,DISPOSITION: , The child returned to room on the medical floor in satisfactory condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "2-month",
+        "amoxicillin",
+        "3 mL"
+      ],
+      "caregiver_checklist": [
+        "1 mg",
+        "20 mcg",
+        "3 mL"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to explain what happened to you and what you need to do next. You had a little girl in the hospital because she was very sick. She had very low red blood cells, which means she was very anemic. Her body was also having problems with something called hemolysis, which means her red blood cells were breaking down faster than they should. She was given some blood to help her, but her body was still having problems.\n\nThe doctors also found that you had a urinary tract infection. This means there was something in your bladder that wasn't supposed to be there. The doctors gave you some antibiotics to help, but they also did a test to make sure the antibiotics were working. They also did a lumbar puncture, which is a special test to check if you might have meningitis. This is a serious infection that can affect your brain and spinal cord.\n\nYou were given some medicines during the procedure:\n- Versed 1 mg intravenously to help you relax\n- Fentanyl 20 mcg intravenously to help you sleep\n\nYou were placed in a special position and the doctors carefully did the test. They took some fluid from your back to check. The fluid was clear, which is good. They will send the fluid to the lab to check for more details.\n\nAfter the test, you were given some more medicines to help you sleep. You were also given EMLA cream before the test, which helped numb your back. This is why you didn't feel anything during the test.\n\nYou will be in the hospital for a while, and the doctors will keep an eye on you. They will give you more medicine if you need it. If you have any more vomiting or if you have any other problems, you should tell the nurses right away.\n\nYou will be okay, and you will be back in your room soon. You just need to rest and let the doctors take care of you.",
+      "caregiver_checklist": "- Check that the child is in the left lateral decubitus position.\n- Monitor the child's vital signs including respiratory rate, heart rate, and oxygen saturation.\n- Watch for signs of sedation side effects such as respiratory depression.\n- Call the care team if the child's oxygen saturation drops below 92%.\n- Schedule a follow-up appointment in 2 months for a routine check-up.\n- Call the care team if the child experiences severe vomiting or bleeding.\n- Check the child's temperature and watch for signs of infection.\n- Schedule a lumbar puncture follow-up in 2 months to monitor for meningitis.\n- Watch for signs of infection such as fever, increased white blood cell count, or leukocytes in the cerebrospinal fluid.\n- Call the care team if the child's white blood cell count continues to rise.\n- Schedule a blood test for amoxicillin in 2 months to ensure it is cleared from the system.",
+      "child_explanation": "You had a tummy ache and were feeling sick. You got a tiny bit of medicine for your tummy. But now you have a fever and your white blood count is very high. The doctors want to check your spine to make sure you're okay. They gave you medicine to help you sleep. They did a special test to see if you have a problem in your spine. The test went well, and they got some clear fluid. Now they will send it to the lab to check. The doctors are taking good care of you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Lumbar_Puncture_-_1",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Lumbar_Puncture_-_1.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Lumbar_Puncture_-_1.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Lumbar_Puncture_-_1",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Lumbar_Puncture_-_1.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Lumbar_Puncture_-_1.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Lumbar_Puncture_-_1",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Lumbar_Puncture_-_1.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Lumbar_Puncture_-_1.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 86.549,
+      "caregiver_checklist": 53.566,
+      "child_explanation": 11.535,
+      "total": 151.659
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T11:23:14+00:00"
+  }
+}

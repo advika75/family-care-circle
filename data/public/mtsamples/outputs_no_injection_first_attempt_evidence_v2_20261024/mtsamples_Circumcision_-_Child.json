@@ -1,0 +1,190 @@
+{
+  "id": "mtsamples_Circumcision_-_Child",
+  "patient_summary": "Hello there! I'm here to tell you about what happened to your baby boy today. The doctors and nurses did a circumcision, which means they removed the skin covering the head of the penis. This is a common procedure for boys.\n\nYou and your baby were very calm during the procedure. The doctors used a special medicine called lidocaine to numb the area. They also used a special tool called a Gomco clamp to help with the circumcision. \n\nAfter the circumcision, your baby boy did really well. There was no bleeding and he looked happy. The doctors gave you instructions on how to take care of your baby after the procedure. \n\nYou should call the doctors if you see any of these things:\n- Your baby has a fever\n- Your baby has a lot of bleeding\n- Your baby has a lot of redness or swelling\n- Your baby seems very uncomfortable\n\nRemember, circumcision is a normal procedure and most boys recover well. If you have any more questions, please ask the doctors or nurses. They are here to help you.",
+  "caregiver_checklist": [
+    "Give the child care instructions for the circumcision.",
+    "Check the child for signs of discomfort or bleeding.",
+    "Watch for signs of infection, such as redness, swelling, or discharge.",
+    "Call the healthcare provider if the child has fever or if there is any bleeding.",
+    "Schedule a follow-up appointment to ensure proper healing.",
+    "Check the healing progress of the circumcision site.",
+    "Watch for signs of infection, such as redness, swelling, or discharge.",
+    "Call the healthcare provider if there are any signs of infection.",
+    "Schedule a follow-up appointment to ensure proper healing."
+  ],
+  "child_explanation": "You're getting ready for a quick nap.\nThe doctors are carefully helping you.\nThey use a special tool to make you feel calm.\nYour skin is cleaned to keep it clean.\nThen they cover you with clean cloths.\nThey give you a tiny sleep to help.\nA special band is used to hold your skin tight.\nThey gently take off your extra skin.\nIt looks good after they finish.\nYou'll feel a little sleepy, but you'll be okay.",
+  "entities": [
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 728,
+      "end": 736
+    }
+  ],
+  "regimens": [],
+  "source_text": "PROCEDURE: , Circumcision.,Signed informed consent was obtained and the procedure explained.,The child was placed in a Circumstraint board and restrained in the usual fashion.  The area of the penis and scrotum were prepared with povidone iodine solution.  The area was draped with sterile drapes, and the remainder of the procedure was done with sterile procedure.  A dorsal penile block was done using 2 injections of 0.3 cc each, 1% plain lidocaine.  A dorsal slit was made, and the prepuce was dissected away from the glans penis.  A ** Gomco clamp was properly placed for 5 minutes.  During this time, the foreskin was sharply excised using a #10 blade.  With removal of the clamp, there was a good cosmetic outcome and no bleeding.  The child appeared to tolerate the procedure well.  Care instructions were given to the parents.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to tell you about what happened to your baby boy today. The doctors and nurses did a circumcision, which means they removed the skin covering the head of the penis. This is a common procedure for boys.\n\nYou and your baby were very calm during the procedure. The doctors used a special medicine called lidocaine to numb the area. They also used a special tool called a Gomco clamp to help with the circumcision. \n\nAfter the circumcision, your baby boy did really well. There was no bleeding and he looked happy. The doctors gave you instructions on how to take care of your baby after the procedure. \n\nYou should call the doctors if you see any of these things:\n- Your baby has a fever\n- Your baby has a lot of bleeding\n- Your baby has a lot of redness or swelling\n- Your baby seems very uncomfortable\n\nRemember, circumcision is a normal procedure and most boys recover well. If you have any more questions, please ask the doctors or nurses. They are here to help you.",
+      "caregiver_checklist": "- Give the child care instructions for the circumcision.\n- Check the child for signs of discomfort or bleeding.\n- Watch for signs of infection, such as redness, swelling, or discharge.\n- Call the healthcare provider if the child has fever or if there is any bleeding.\n- Schedule a follow-up appointment to ensure proper healing.\n- Check the healing progress of the circumcision site.\n- Watch for signs of infection, such as redness, swelling, or discharge.\n- Call the healthcare provider if there are any signs of infection.\n- Schedule a follow-up appointment to ensure proper healing.",
+      "child_explanation": "You're getting ready for a quick nap.\nThe doctors are carefully helping you.\nThey use a special tool to make you feel calm.\nYour skin is cleaned to keep it clean.\nThen they cover you with clean cloths.\nThey give you a tiny sleep to help.\nA special band is used to hold your skin tight.\nThey gently take off your extra skin.\nIt looks good after they finish.\nYou'll feel a little sleepy, but you'll be okay."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Circumcision_-_Child",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Circumcision_-_Child.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Circumcision_-_Child.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Circumcision_-_Child",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Circumcision_-_Child.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Circumcision_-_Child.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Circumcision_-_Child",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Circumcision_-_Child.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Circumcision_-_Child.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 10.404,
+      "caregiver_checklist": 6.419,
+      "child_explanation": 5.424,
+      "total": 22.252
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:31:24+00:00"
+  }
+}

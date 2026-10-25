@@ -1,0 +1,186 @@
+{
+  "id": "mtsamples_Radioactive_Plaque_-_Insertion",
+  "patient_summary": "Hello there! I'm here to explain what's happening with your eye after the procedure. You had a small problem in your right eye, and the doctors did a special operation to fix it. Here's what you need to know:\n\n1. **Medicines**: You will be given a numbing medicine in your eye to help you feel comfortable during the procedure. After the operation, you might need to use some eye drops to keep your eye clean and prevent infection. Your doctor will tell you how often to use these drops.\n\n2. **What to do**: You will need to rest your eye for a few days. Your doctor will give you an eye patch to wear. You might also need to use an eye patch for a while after you leave the hospital. Your doctor will tell you when you can take off the eye patch.\n\n3. **When to get help**: If you have any of these symptoms, you should call your doctor or go to the hospital right away:\n   - Severe pain in your eye\n   - Redness that gets worse\n   - A lot of discharge from your eye\n   - Vision changes, like seeing spots or blurry vision\n\n4. **Next steps**: Your doctor will check your eye again in a few days to make sure everything is healing well. They will also tell you when you can go back to work or school.\n\nRemember, you are not alone. Your doctors and nurses are here to help you. If you have any questions, please ask them.",
+  "caregiver_checklist": [
+    "Give the patient a 5 cc retrobulbar injection of 2% Xylocaine.",
+    "Check the patient's vital signs every 15 minutes for the first hour.",
+    "Watch for signs of increased intraocular pressure.",
+    "Call the care team if the patient develops redness, pain, or decreased vision.",
+    "Schedule a follow-up appointment in 1 week.",
+    "Check the patient's eye pressure at home and report any changes.",
+    "Watch for signs of infection such as increased redness, swelling, or discharge.",
+    "Call the care team if the patient develops any signs of infection.",
+    "Schedule a return visit to the eye doctor in 6 weeks.",
+    "Check the patient's vision at home and report any changes.",
+    "Watch for signs of macular edema recurrence or worsening.",
+    "Call the care team if the patient experiences any vision changes."
+  ],
+  "child_explanation": "You had a little eye check-up today.\nThe doctors used a special team of tiny helpers.\nThey made a small cut to see inside your eye.\nThen they put a special medicine in your eye.\nIt will help your eye see better, you'll feel fine.\nYour doctors are taking good care of you.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS:,  Macular edema, right eye.,POSTOPERATIVE DIAGNOSIS:  ,Macular edema, right eye.,TITLE OF OPERATION: , Insertion of radioactive plaque, right eye with lateral canthotomy.,OPERATIVE PROCEDURE IN DETAIL:  ,The patient was prepped and draped in the usual manner for a local eye procedure.  Initially, a 5 cc retrobulbar injection of 2% Xylocaine was done.  Then, a lid speculum was inserted and the conjunctiva was incised 4 mm posterior to the limbus.  A 2-0 silk traction suture was placed around the insertion of the lateral rectus muscle and, with gentle traction, the temporal one-half of the globe was exposed.  The plaque was positioned on the scleral surface immediately behind the macula and secured with two sutures of 5-0 Dacron.  The placement was confirmed with indirect ophthalmoscopy.  Next, the eye was irrigated with Neosporin and the conjunctiva was closed with 6-0 plain catgut.  The intraocular pressure was found to be within normal limits.  An eye patch was applied and the patient was sent to the Recovery Room in good condition.  A lateral canthotomy had been done.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to explain what's happening with your eye after the procedure. You had a small problem in your right eye, and the doctors did a special operation to fix it. Here's what you need to know:\n\n1. **Medicines**: You will be given a numbing medicine in your eye to help you feel comfortable during the procedure. After the operation, you might need to use some eye drops to keep your eye clean and prevent infection. Your doctor will tell you how often to use these drops.\n\n2. **What to do**: You will need to rest your eye for a few days. Your doctor will give you an eye patch to wear. You might also need to use an eye patch for a while after you leave the hospital. Your doctor will tell you when you can take off the eye patch.\n\n3. **When to get help**: If you have any of these symptoms, you should call your doctor or go to the hospital right away:\n   - Severe pain in your eye\n   - Redness that gets worse\n   - A lot of discharge from your eye\n   - Vision changes, like seeing spots or blurry vision\n\n4. **Next steps**: Your doctor will check your eye again in a few days to make sure everything is healing well. They will also tell you when you can go back to work or school.\n\nRemember, you are not alone. Your doctors and nurses are here to help you. If you have any questions, please ask them.",
+      "caregiver_checklist": "- Give the patient a 5 cc retrobulbar injection of 2% Xylocaine.\n- Check the patient's vital signs every 15 minutes for the first hour.\n- Watch for signs of increased intraocular pressure.\n- Call the care team if the patient develops redness, pain, or decreased vision.\n- Schedule a follow-up appointment in 1 week.\n- Check the patient's eye pressure at home and report any changes.\n- Watch for signs of infection such as increased redness, swelling, or discharge.\n- Call the care team if the patient develops any signs of infection.\n- Schedule a return visit to the eye doctor in 6 weeks.\n- Check the patient's vision at home and report any changes.\n- Watch for signs of macular edema recurrence or worsening.\n- Call the care team if the patient experiences any vision changes.",
+      "child_explanation": "You had a little eye check-up today.\nThe doctors used a special team of tiny helpers.\nThey made a small cut to see inside your eye.\nThen they put a special medicine in your eye.\nIt will help your eye see better, you'll feel fine.\nYour doctors are taking good care of you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Radioactive_Plaque_-_Insertion",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Radioactive_Plaque_-_Insertion.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Radioactive_Plaque_-_Insertion.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Radioactive_Plaque_-_Insertion",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Radioactive_Plaque_-_Insertion.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Radioactive_Plaque_-_Insertion.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Radioactive_Plaque_-_Insertion",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Radioactive_Plaque_-_Insertion.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Radioactive_Plaque_-_Insertion.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 22.821,
+      "caregiver_checklist": 12.468,
+      "child_explanation": 6.834,
+      "total": 42.134
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:51:43+00:00"
+  }
+}

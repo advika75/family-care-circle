@@ -1,0 +1,193 @@
+{
+  "id": "mtsamples_Epididymectomy",
+  "patient_summary": "Hello there! I'll explain what happened in a way that's easy to understand. You had a small operation to remove some parts of your testicle and the epididymis, which is a tube that carries sperm. Here's what you need to know:\n\n1. You were put on your back for the surgery. The doctor cleaned and covered you to keep you safe during the operation.\n2. The doctor made a small cut in your scrotum (the bag under your penis) and opened it up. They then took out your epididymis, which is a small tube that carries sperm.\n3. The doctor carefully separated the epididymis from your testicle and removed it. They also closed the cut in your scrotum.\n4. The doctor used special tools to make sure there was no bleeding. They also made sure the blood supply to your testicle was okay.\n5. The doctor gave you some medicine to help your skin heal better and to keep the area dry.\n6. You were sent to the recovery room where they made sure you were okay and sent you home.\n\nYou might feel some discomfort or pain after the operation. If you have any of these symptoms or if you feel worse, you should call your doctor or go to the hospital. They can help you feel better.",
+  "caregiver_checklist": [
+    "Check the patient's vital signs in the recovery room.",
+    "Watch for signs of bleeding or swelling.",
+    "Call if the patient develops severe pain or swelling.",
+    "Schedule a follow-up appointment in 2 weeks.",
+    "Check for any drainage or infection signs.",
+    "Call if there is any change in the patient's condition.",
+    "Monitor for any changes in testicle size or function.",
+    "Watch for signs of infection such as fever or redness.",
+    "Call if the patient has fever or redness.",
+    "Schedule a semen analysis in 6 weeks.",
+    "Check for any signs of discomfort or pain.",
+    "Call if the patient has persistent pain or discomfort."
+  ],
+  "child_explanation": "You had a little surgery today, you know. The doctors made a small cut to take out a part of your testicle. They found some clear fluid, like when you have a yucky tummy ache. They carefully took out the epididymis, which is like a tiny helper for your testicle. The doctors used tiny helpers to stop any bleeding. You're doing great, and the doctors and grown-ups are taking really good care of you.",
+  "entities": [
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 841,
+      "end": 849
+    }
+  ],
+  "regimens": [],
+  "source_text": "EPIDIDYMECTOMY,OPERATIVE NOTE:  ,The patient was placed in the supine position and prepped and draped in the usual manner.  A transverse scrotal incision was made and carried down to the tunica vaginalis, which was opened.  A small amount of clear fluid was expressed.  The tunica vaginalis was opened and the testicle was brought out through this incision.  The epididymis was separated off the surface of the testicle using a scalpel.  With blunt and sharp dissection, the epididymis was dissected off the testicle.  Bovie was used for hemostasis.  The vessels going to the testicle were preserved without any obvious injury, and a nice viable testicle was present after the epididymis was removed from this.  The blood supply to the epididymis was cauterized using a Bovie and the vas was divided with cautery also.  There was no obvious bleeding.  The cord was infiltrated with 0.25% Marcaine, as was the dartos tissue in the scrotum.  The testicle was replaced in the scrotum.  Skin was closed in two layers using 3-0 chromic catgut for the dartos and a subcuticular closure with the same material.  A dry sterile dressing and compression were applied, and he was sent to the recovery room in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened in a way that's easy to understand. You had a small operation to remove some parts of your testicle and the epididymis, which is a tube that carries sperm. Here's what you need to know:\n\n1. You were put on your back for the surgery. The doctor cleaned and covered you to keep you safe during the operation.\n2. The doctor made a small cut in your scrotum (the bag under your penis) and opened it up. They then took out your epididymis, which is a small tube that carries sperm.\n3. The doctor carefully separated the epididymis from your testicle and removed it. They also closed the cut in your scrotum.\n4. The doctor used special tools to make sure there was no bleeding. They also made sure the blood supply to your testicle was okay.\n5. The doctor gave you some medicine to help your skin heal better and to keep the area dry.\n6. You were sent to the recovery room where they made sure you were okay and sent you home.\n\nYou might feel some discomfort or pain after the operation. If you have any of these symptoms or if you feel worse, you should call your doctor or go to the hospital. They can help you feel better.",
+      "caregiver_checklist": "- Check the patient's vital signs in the recovery room.\n- Watch for signs of bleeding or swelling.\n- Call if the patient develops severe pain or swelling.\n- Schedule a follow-up appointment in 2 weeks.\n- Check for any drainage or infection signs.\n- Call if there is any change in the patient's condition.\n- Monitor for any changes in testicle size or function.\n- Watch for signs of infection such as fever or redness.\n- Call if the patient has fever or redness.\n- Schedule a semen analysis in 6 weeks.\n- Check for any signs of discomfort or pain.\n- Call if the patient has persistent pain or discomfort.",
+      "child_explanation": "You had a little surgery today, you know. The doctors made a small cut to take out a part of your testicle. They found some clear fluid, like when you have a yucky tummy ache. They carefully took out the epididymis, which is like a tiny helper for your testicle. The doctors used tiny helpers to stop any bleeding. You're doing great, and the doctors and grown-ups are taking really good care of you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Epididymectomy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Epididymectomy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Epididymectomy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Epididymectomy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Epididymectomy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Epididymectomy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Epididymectomy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Epididymectomy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Epididymectomy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 23.521,
+      "caregiver_checklist": 11.763,
+      "child_explanation": 8.864,
+      "total": 44.169
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T16:33:18+00:00"
+  }
+}

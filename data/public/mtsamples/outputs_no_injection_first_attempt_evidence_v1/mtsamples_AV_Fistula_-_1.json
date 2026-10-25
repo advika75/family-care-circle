@@ -1,0 +1,185 @@
+{
+  "id": "mtsamples_AV_Fistula_-_1",
+  "patient_summary": "Hello there! I'll explain what happened to you in a simple way.\n\nYou had a procedure done to create a new blood vessel. It's like making a tiny tube to connect your arm's blood vessels. This helps you get more blood to your heart.\n\nYou had a special test called a venogram before the procedure. This test showed that the blood vessel was working well.\n\nDuring the procedure, they cleaned your arm and put a small tube called an IV in your arm. Then they used a special dye to see the blood vessels. They found the cephalic vein, which is a blood vessel in your arm, and the brachial artery, which is a blood vessel in your upper arm.\n\nThey made a small cut and opened up the cephalic vein and the brachial artery. They connected the two blood vessels with a tiny tube. This is called an arteriovenous fistula. It's like making a bridge between the two blood vessels.\n\nAfter they connected the vessels, they made sure there was no bleeding. They closed up the small cut and put a bandage on it. You were taken to a special room where you would wake up after the procedure. You were doing well there.\n\nYou will need to take some medicines after the procedure. The doctor will tell you which ones and how often to take them. You should call the doctor if you have any problems or if you feel sick. Your doctor will also tell you when to come back for a check-up.",
+  "caregiver_checklist": [
+    "Give the patient their usual dose of antibiotics.",
+    "Check the patient’s vital signs every hour for the first 6 hours.",
+    "Watch for signs of infection such as fever, redness, or swelling.",
+    "Call the healthcare provider if the patient develops signs of infection.",
+    "Schedule a follow-up appointment in 1 week.",
+    "Monitor the patient’s arm for any signs of pain or swelling.",
+    "Watch for signs of bleeding or bruising at the wound site.",
+    "Call the healthcare provider if the patient experiences severe pain or bleeding.",
+    "Schedule a fistula function test in 2 weeks.",
+    "Watch for signs of dialysis-related complications such as nausea or vomiting.",
+    "Call the healthcare provider if the patient experiences signs of dialysis-related complications."
+  ],
+  "child_explanation": "You had a little check-up today.\nThe doctors and grown-ups took you to the special room.\nThey cleaned and dressed your arm carefully.\nThen they put a tiny camera in your arm.\nThey saw your vein and made a new path.\nThey used your arm to make a new connection.\nIt helps you get more blood to your heart.\nYou're safe now, and you'll feel better soon.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS,End-stage renal disease.,POSTOPERATIVE DIAGNOSIS,End-stage renal disease.,PROCEDURE,Venogram of the left arm and creation of left brachiocephalic arteriovenous fistula.,ANESTHESIA,General.,DESCRIPTION OF PROCEDURE,The patient was taken to the operating room where after induction of general anesthetic, the patient's arm was prepped and draped in a sterile fashion.  The IV catheter was inserted into the vein on the lower surface of the left forearm.  Venogram was performed, which demonstrated adequate appearance of the cephalic vein above the elbow.,Through a transverse incision, the cephalic vein and brachial artery were both exposed at the antecubital fossa.  The cephalic vein was divided, and the proximal end was anastomosed to the artery in an end-to-side fashion with a running 6-0 Prolene suture.,The clamps were removed establishing flow through the fistula.  Hemostasis was obtained.  The wound was closed in layers with PDS sutures.  Sterile dressing was applied.  The patient was taken to recovery room in stable condition.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened to you in a simple way.\n\nYou had a procedure done to create a new blood vessel. It's like making a tiny tube to connect your arm's blood vessels. This helps you get more blood to your heart.\n\nYou had a special test called a venogram before the procedure. This test showed that the blood vessel was working well.\n\nDuring the procedure, they cleaned your arm and put a small tube called an IV in your arm. Then they used a special dye to see the blood vessels. They found the cephalic vein, which is a blood vessel in your arm, and the brachial artery, which is a blood vessel in your upper arm.\n\nThey made a small cut and opened up the cephalic vein and the brachial artery. They connected the two blood vessels with a tiny tube. This is called an arteriovenous fistula. It's like making a bridge between the two blood vessels.\n\nAfter they connected the vessels, they made sure there was no bleeding. They closed up the small cut and put a bandage on it. You were taken to a special room where you would wake up after the procedure. You were doing well there.\n\nYou will need to take some medicines after the procedure. The doctor will tell you which ones and how often to take them. You should call the doctor if you have any problems or if you feel sick. Your doctor will also tell you when to come back for a check-up.",
+      "caregiver_checklist": "- Give the patient their usual dose of antibiotics.\n- Check the patient’s vital signs every hour for the first 6 hours.\n- Watch for signs of infection such as fever, redness, or swelling.\n- Call the healthcare provider if the patient develops signs of infection.\n- Schedule a follow-up appointment in 1 week.\n- Monitor the patient’s arm for any signs of pain or swelling.\n- Watch for signs of bleeding or bruising at the wound site.\n- Call the healthcare provider if the patient experiences severe pain or bleeding.\n- Schedule a fistula function test in 2 weeks.\n- Watch for signs of dialysis-related complications such as nausea or vomiting.\n- Call the healthcare provider if the patient experiences signs of dialysis-related complications.",
+      "child_explanation": "You had a little check-up today.\nThe doctors and grown-ups took you to the special room.\nThey cleaned and dressed your arm carefully.\nThen they put a tiny camera in your arm.\nThey saw your vein and made a new path.\nThey used your arm to make a new connection.\nIt helps you get more blood to your heart.\nYou're safe now, and you'll feel better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_AV_Fistula_-_1",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_AV_Fistula_-_1.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_AV_Fistula_-_1.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_AV_Fistula_-_1",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_AV_Fistula_-_1.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_AV_Fistula_-_1.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_AV_Fistula_-_1",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_AV_Fistula_-_1.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_AV_Fistula_-_1.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 19.529,
+      "caregiver_checklist": 10.962,
+      "child_explanation": 7.184,
+      "total": 37.696
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:58:14+00:00"
+  }
+}

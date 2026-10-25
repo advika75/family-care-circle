@@ -1,0 +1,247 @@
+{
+  "id": "mtsamples_Prostate_Adenocarcinoma_-_H_P",
+  "patient_summary": "Hello there, I'm here to talk about what's happening with you. You're a 62-year-old man who has prostate cancer. The doctors found a small bump on your prostate during a check-up. They did some tests to make sure it wasn't something more serious, and it wasn't. But you're allergic to penicillin, so you can't take that medicine.\n\nYou're taking some medicines right now:\n- Lisinopril to help your heart\n- Aspirin to help your heart\n- Prilosec to help your stomach\n\nYou also drink six beers a day, which is not good for your health. The doctors will talk to you about this and how to change your habits.\n\nYou'll be in the hospital for a few days. The doctors will remove your prostate and some nearby lymph nodes. They'll explain all the risks and benefits of this surgery. You understand what will happen, and you want to go ahead with the surgery.\n\nThe doctors also talked to you about bleeding and how to handle it. They'll give you medicine to help your blood clot if you need a transfusion. You're allergic to penicillin, so they'll use other medicines instead. They'll explain the risks and benefits of this too.\n\nYou'll be okay, and you'll be back to your normal self soon. If you have any questions or feel sick, you can always ask the doctors or nurses. They're here to help you.",
+  "caregiver_checklist": [
+    "Review the patient's medications and dosing schedule.",
+    "Check the patient's blood pressure and heart rate regularly.",
+    "Watch for signs of infection, such as fever or redness.",
+    "Call if the patient experiences severe pain or bleeding.",
+    "Schedule a follow-up appointment within 2 weeks of discharge.",
+    "Monitor for urinary symptoms and report any changes.",
+    "Watch for signs of erectile dysfunction and discuss with the doctor.",
+    "Call if the patient has a fever or signs of infection.",
+    "Schedule a prostate-specific antigen (PSA) test 6 months after surgery.",
+    "Call if the patient has persistent urinary symptoms or pain.",
+    "Schedule a bone density test 6 months after surgery.",
+    "Check the patient's blood pressure and heart rate regularly for Lisinopril.",
+    "Check the patient's blood pressure and heart rate regularly for Aspirin.",
+    "Call if the patient has a reaction to Penicillin."
+  ],
+  "child_explanation": "You have a big tumor in your prostate, like a sore spot. You're going to have a special doctor do a surgery to take it out. The doctors and grown-ups are taking really good care of you. You might feel a little sleepy after the surgery, but you'll be okay. You're strong and can handle this, you and your doctors. You're in good hands.",
+  "entities": [
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 780,
+      "end": 788
+    },
+    {
+      "text": "Lisinopril",
+      "label": "MEDICATION",
+      "start": 978,
+      "end": 988
+    },
+    {
+      "text": "Aspirin",
+      "label": "MEDICATION",
+      "start": 990,
+      "end": 997
+    },
+    {
+      "text": "Penicillin",
+      "label": "MEDICATION",
+      "start": 1033,
+      "end": 1043
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1982,
+      "end": 1990
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Lisinopril",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Aspirin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Penicillin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "HISTORY OF PRESENT ILLNESS: , The patient is a 62-year old male with a Gleason score 8 adenocarcinoma of the prostate involving the left and right lobes.  He has a PSA of 3.1, with a prostate gland size of 41 grams.  This was initially found on rectal examination with a nodule on the right side of the prostate, showing enlargement relative to the left.  He has undergone evaluation with a bone scan that showed a right parietal lesion uptake and was seen by Dr. XXX and ultimately underwent an open biopsy that was not malignant.  Prior to this, he has also had a ProstaScint scan that was negative for any metastatic disease.  Again, he is being admitted to undergo a radical prostatectomy, the risks, benefits, and alternatives of which have been discussed, including that of bleeding, and a blood transfusion.,PAST MEDICAL HISTORY: , Coronary stenting.  History of high blood pressure, as well.  He has erectile dysfunction and has been treated with Viagra.,MEDICATIONS: , Lisinopril, Aspirin, Zocor, and Prilosec.,ALLERGIES:,  Penicillin.,SOCIAL HISTORY:,  He is not a smoker.  He does drink six beers a day.,REVIEW OF SYSTEMS: , Remarkable for his high blood pressure and drug allergies, but otherwise unremarkable, except for some obstructive urinary symptoms, with an AUA score of 19.,PHYSICAL EXAMINATION:,HEENT:  Examination unremarkable.,Breasts:  Examination deferred.,Chest:  Clear to auscultation.,Cardiac:  Regular rate and rhythm.,Abdomen:  Soft and nontender.  He has no hernias.,Genitourinary:  There is a normal-appearing phallus, prominence of the right side of prostate.,Extremities:  Examination unremarkable.,Neurologic:  Examination nonfocal.,IMPRESSION:,1.  Adenocarcinoma of the prostate.,2.  Erectile dysfunction.,PLAN:  ,The patient will undergo a bilateral pelvic lymphadenectomy and radical retropubic prostatectomy.  The risks, benefits, and alternatives of this have been discussed.  He understands and asks that I proceed ahead.  We also discussed bleeding and blood transfusions, and the risks, benefits and alternatives thereof.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "Penicillin"
+      ],
+      "caregiver_checklist": [
+        "Lisinopril",
+        "Aspirin",
+        "Penicillin"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, I'm here to talk about what's happening with you. You're a 62-year-old man who has prostate cancer. The doctors found a small bump on your prostate during a check-up. They did some tests to make sure it wasn't something more serious, and it wasn't. But they want to remove your prostate to make sure it's all gone. This is called a radical prostatectomy.\n\nYou're taking some medicines right now:\n- Lisinopril to help your heart\n- Aspirin to help your heart\n- Zocor to help your cholesterol\n- Prilosec to help your stomach\n\nYou also drink six beers a day, which is not good for your health. The doctors will talk to you about this and how to change your habits.\n\nYou'll be in the hospital for a few days. The doctors will remove your prostate and some nearby lymph nodes. They'll explain all the risks and benefits of this surgery. You understand what will happen, and you want to go ahead with the surgery.\n\nThe doctors also talked to you about bleeding and how to handle it. They'll give you medicine to help your blood clot if you need a transfusion. They'll explain the risks and benefits of this too.\n\nYou'll be okay, and you'll be back to your normal self soon. If you have any questions or feel sick, you can always ask the doctors or nurses. They're here to help you.",
+      "caregiver_checklist": "- Review the patient's medications and dosing schedule.\n- Check the patient's blood pressure and heart rate regularly.\n- Watch for signs of infection, such as fever or redness.\n- Call if the patient experiences severe pain or bleeding.\n- Schedule a follow-up appointment within 2 weeks of discharge.\n- Monitor for urinary symptoms and report any changes.\n- Watch for signs of erectile dysfunction and discuss with the doctor.\n- Call if the patient has a fever or signs of infection.\n- Schedule a prostate-specific antigen (PSA) test 6 months after surgery.\n- Call if the patient has persistent urinary symptoms or pain.\n- Schedule a bone density test 6 months after surgery.",
+      "child_explanation": "You have a big tumor in your prostate, like a sore spot. You're going to have a special doctor do a surgery to take it out. The doctors and grown-ups are taking really good care of you. You might feel a little sleepy after the surgery, but you'll be okay. You're strong and can handle this, you and your doctors. You're in good hands."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Prostate_Adenocarcinoma_-_H_P",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Prostate_Adenocarcinoma_-_H_P.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Prostate_Adenocarcinoma_-_H_P.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Prostate_Adenocarcinoma_-_H_P",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Prostate_Adenocarcinoma_-_H_P.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Prostate_Adenocarcinoma_-_H_P.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Prostate_Adenocarcinoma_-_H_P",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Prostate_Adenocarcinoma_-_H_P.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Prostate_Adenocarcinoma_-_H_P.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 64.745,
+      "caregiver_checklist": 25.978,
+      "child_explanation": 11.272,
+      "total": 102.008
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:41:58+00:00"
+  }
+}

@@ -1,0 +1,689 @@
+{
+  "id": "mtsamples_Knee_Surgery_-_Discharge_Summary",
+  "patient_summary": "Hello there! I understand you're feeling a bit uncomfortable and having trouble doing your daily activities. Let me explain what's happening and what you need to do next.\n\n### What's Happening:\nYou had a surgery on your right knee a few years ago to fix a problem with your joints. Since then, you've been working on getting better and doing your usual activities. But lately, you've been having some pain in your knee, especially when you're in a certain position. You also haven't had a bowel movement in a few days, which is why you're here now.\n\n### What Medicines You Need to Take:\n- **Celebrex**: This is a pain medicine. You'll take 200 mg every day for one month.\n- **Colace**: This helps with constipation. You'll take 100 mg twice a day for one month.\n- **Protonix**: This is for heartburn. You'll take 40 mg twice a day for one month.\n- **Synthroid**: This helps with your thyroid. You'll take 137 mcg every day for one month.\n- **Diprosone cream**: This is for any itchy rashes. You'll use it 0.05% cream twice a day on your right arm and right abdomen for one month.\n- **Oxycodone SR**: This is a pain medicine. You'll take 20 mg every 12 hours for five days, then 10 mg every 12 hours for another five days.\n- **Oxycodone SR**: This is another pain medicine. You'll take 20 mg every 12 hours for five days, then 10 mg every 12 hours for another five days.\n- **Percocet**: This is for pain when you need it. You'll take 5/325 mg one to two tablets every 6 hours when you need it.\n- **Trazodone**: This helps with sleep. You'll take 50 mg at bedtime for two weeks.\n- **Ativan**: This helps with anxiety. You'll take 0.25 mg twice a day for two weeks.\n- **Toprol-XL**: This helps with your heart. You'll take 50 mg every day for 30 days.\n- **Coumadin**: This is a blood thinner. You'll start with 7 mg daily and your dose will be adjusted based on\n\nImportant details from your care team's note: 2 units (dosage).",
+  "caregiver_checklist": [
+    "Check the right knee incision twice daily for signs of infection or redness.",
+    "Watch for signs of constipation and report if the patient has not had a bowel movement in 3 days.",
+    "Call the doctor if the patient experiences severe pain that does not improve with oxycodone.",
+    "Schedule a follow-up appointment with Dr. A on 9/21/2007.",
+    "Call the doctor if the patient develops any new rashes or if existing rashes worsen.",
+    "Monitor for any signs of anxiety or insomnia and report if the patient is having difficulty sleeping.",
+    "Check the patient's blood pressure and pulse regularly and report any significant changes.",
+    "Watch for signs of DVT, such as swelling, pain, or redness in the legs, and report immediately.",
+    "Call the doctor if the patient experiences any new or worsening symptoms, such as shortness of breath or chest pain.",
+    "Schedule a follow-up appointment with Dr. B on a regular basis as recommended by the primary care physician.",
+    "Confirm with the care team: 2 units (dosage)",
+    "Confirm with the care team: trazodone (medication)",
+    "Confirm with the care team: 20 mg (dosage)",
+    "Confirm with the care team: 40 mg (dosage)",
+    "Confirm with the care team: 200 mg (dosage)",
+    "Confirm with the care team: one month (duration)",
+    "Confirm with the care team: 100 mg (dosage)",
+    "Confirm with the care team: 137 mcg (dosage)",
+    "Confirm with the care team: five days (duration)",
+    "Confirm with the care team: 10 mg (dosage)",
+    "Confirm with the care team: 5/325 mg (dosage)",
+    "Confirm with the care team: 50 mg (dosage)",
+    "Confirm with the care team: at bedtime (frequency)",
+    "Confirm with the care team: two weeks (duration)",
+    "Confirm with the care team: 0.25 mg (dosage)",
+    "Confirm with the care team: 7 mg (dosage)",
+    "Confirm with the care team: 30 days (duration)"
+  ],
+  "child_explanation": "You had a big surgery on your knee, like when you get a boo-boo and need to rest. Now your knee is still feeling a bit sore, especially when you move it in a certain way. But you're doing well overall, like when you play and have fun. The grown-ups and doctors are taking good care of you. They gave you some special medicine to help your knee feel better and to help you sleep. You'll need to take some creams and pills, but you're doing great. Your knee will feel better soon, and you'll be able to play and move around again.",
+  "entities": [
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 48,
+      "end": 53
+    },
+    {
+      "text": "2 units",
+      "label": "DOSAGE",
+      "start": 342,
+      "end": 349
+    },
+    {
+      "text": "dysuria",
+      "label": "SYMPTOM",
+      "start": 854,
+      "end": 861
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 958,
+      "end": 962
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 1150,
+      "end": 1162
+    },
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 1164,
+      "end": 1178
+    },
+    {
+      "text": "GERD",
+      "label": "CONDITION",
+      "start": 1208,
+      "end": 1212
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 1214,
+      "end": 1221
+    },
+    {
+      "text": "migraine",
+      "label": "CONDITION",
+      "start": 1295,
+      "end": 1303
+    },
+    {
+      "text": "headaches",
+      "label": "SYMPTOM",
+      "start": 1304,
+      "end": 1313
+    },
+    {
+      "text": "trazodone",
+      "label": "MEDICATION",
+      "start": 1442,
+      "end": 1451
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1694,
+      "end": 1698
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 2970,
+      "end": 2974
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 3076,
+      "end": 3080
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 3205,
+      "end": 3212
+    },
+    {
+      "text": "rashes",
+      "label": "SYMPTOM",
+      "start": 3279,
+      "end": 3285
+    },
+    {
+      "text": "rash",
+      "label": "SYMPTOM",
+      "start": 3381,
+      "end": 3385
+    },
+    {
+      "text": "rash",
+      "label": "SYMPTOM",
+      "start": 3643,
+      "end": 3647
+    },
+    {
+      "text": "insomnia",
+      "label": "SYMPTOM",
+      "start": 3777,
+      "end": 3785
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 3804,
+      "end": 3808
+    },
+    {
+      "text": "oxycodone",
+      "label": "MEDICATION",
+      "start": 3845,
+      "end": 3854
+    },
+    {
+      "text": "20 mg",
+      "label": "DOSAGE",
+      "start": 3858,
+      "end": 3863
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 3888,
+      "end": 3892
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 3952,
+      "end": 3956
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 4007,
+      "end": 4012
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 4019,
+      "end": 4024
+    },
+    {
+      "text": "Anxiety",
+      "label": "SYMPTOM",
+      "start": 5039,
+      "end": 5046
+    },
+    {
+      "text": "Insomnia",
+      "label": "SYMPTOM",
+      "start": 5061,
+      "end": 5069
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 5083,
+      "end": 5087
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 5092,
+      "end": 5099
+    },
+    {
+      "text": "constipation",
+      "label": "SYMPTOM",
+      "start": 5135,
+      "end": 5147
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 5224,
+      "end": 5236
+    },
+    {
+      "text": "Hypothyroidism",
+      "label": "CONDITION",
+      "start": 5242,
+      "end": 5256
+    },
+    {
+      "text": "migraine",
+      "label": "CONDITION",
+      "start": 5363,
+      "end": 5371
+    },
+    {
+      "text": "headaches",
+      "label": "SYMPTOM",
+      "start": 5372,
+      "end": 5381
+    },
+    {
+      "text": "200 mg",
+      "label": "DOSAGE",
+      "start": 5524,
+      "end": 5530
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 5531,
+      "end": 5536
+    },
+    {
+      "text": "one month",
+      "label": "DURATION",
+      "start": 5542,
+      "end": 5551
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 5560,
+      "end": 5566
+    },
+    {
+      "text": "one month",
+      "label": "DURATION",
+      "start": 5578,
+      "end": 5587
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 5598,
+      "end": 5603
+    },
+    {
+      "text": "one month",
+      "label": "DURATION",
+      "start": 5615,
+      "end": 5624
+    },
+    {
+      "text": "137 mcg",
+      "label": "DOSAGE",
+      "start": 5636,
+      "end": 5643
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 5644,
+      "end": 5649
+    },
+    {
+      "text": "oxycodone",
+      "label": "MEDICATION",
+      "start": 5722,
+      "end": 5731
+    },
+    {
+      "text": "20 mg",
+      "label": "DOSAGE",
+      "start": 5735,
+      "end": 5740
+    },
+    {
+      "text": "five days",
+      "label": "DURATION",
+      "start": 5757,
+      "end": 5766
+    },
+    {
+      "text": "oxycodone",
+      "label": "MEDICATION",
+      "start": 5785,
+      "end": 5794
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 5798,
+      "end": 5803
+    },
+    {
+      "text": "five days",
+      "label": "DURATION",
+      "start": 5820,
+      "end": 5829
+    },
+    {
+      "text": "5/325 mg",
+      "label": "DOSAGE",
+      "start": 5840,
+      "end": 5848
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 5909,
+      "end": 5913
+    },
+    {
+      "text": "trazodone",
+      "label": "MEDICATION",
+      "start": 5915,
+      "end": 5924
+    },
+    {
+      "text": "50 mg",
+      "label": "DOSAGE",
+      "start": 5925,
+      "end": 5930
+    },
+    {
+      "text": "at bedtime",
+      "label": "FREQUENCY",
+      "start": 5936,
+      "end": 5946
+    },
+    {
+      "text": "two weeks",
+      "label": "DURATION",
+      "start": 5958,
+      "end": 5967
+    },
+    {
+      "text": "0.25 mg",
+      "label": "DOSAGE",
+      "start": 5976,
+      "end": 5983
+    },
+    {
+      "text": "two weeks",
+      "label": "DURATION",
+      "start": 5995,
+      "end": 6004
+    },
+    {
+      "text": "50 mg",
+      "label": "DOSAGE",
+      "start": 6020,
+      "end": 6025
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 6026,
+      "end": 6031
+    },
+    {
+      "text": "7 mg",
+      "label": "DOSAGE",
+      "start": 6290,
+      "end": 6294
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 6295,
+      "end": 6300
+    },
+    {
+      "text": "30 days",
+      "label": "DURATION",
+      "start": 6335,
+      "end": 6342
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "oxycodone",
+      "dosages": [
+        "20 mg",
+        "40 mg",
+        "200 mg",
+        "100 mg",
+        "137 mcg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": [
+        "one month"
+      ]
+    },
+    {
+      "medication": "oxycodone",
+      "dosages": [
+        "20 mg"
+      ],
+      "frequencies": [],
+      "durations": [
+        "five days"
+      ]
+    },
+    {
+      "medication": "oxycodone",
+      "dosages": [
+        "10 mg",
+        "5/325 mg"
+      ],
+      "frequencies": [],
+      "durations": [
+        "five days"
+      ]
+    },
+    {
+      "medication": "trazodone",
+      "dosages": [
+        "50 mg",
+        "0.25 mg",
+        "7 mg"
+      ],
+      "frequencies": [
+        "at bedtime",
+        "daily"
+      ],
+      "durations": [
+        "two weeks",
+        "30 days"
+      ]
+    }
+  ],
+  "source_text": "CHIEF COMPLAINT:,  Decreased ability to perform daily living activities secondary to right knee surgery.,HISTORY OF PRESENT ILLNESS: , The patient is a 61-year-old white female status post right total knee replacement secondary to degenerative joint disease performed by Dr. A at ABCD Hospital on 08/21/2007.  The patient was transfused with 2 units of autologous blood postoperatively.  She received DVT prophylaxis with a combination of Coumadin, Lovenox, SCD boots, and TED stockings.  The remainder of her postoperative course was uneventful.  She was discharged on 08/24/2007 from ABCD Hospital and admitted to the transitional care unit at XYZ Services for evaluation and rehabilitation.  The patient reports that her last bowel movement was on 08/24/2007 just prior to her discharge from ABCD Hospital.  She denies any urological symptoms such as dysuria, incomplete bladder emptying or other voiding difficulties.  She reports having some right knee pain, which is most intense at a \"certain position.\"  The patient is unable to elaborate on which \"certain position\" causes her the most discomfort.,ALLERGIES:,  NKDA.,PAST MEDICAL HISTORY: , Hypertension, hypothyroidism, degenerative joint disease, GERD, anxiety disorder, Morton neuroma of her feet bilaterally, and distant history of migraine headaches some 30 years ago.,MEDICATIONS:,  On transfer, Celebrex, Coumadin, Colace, Synthroid, Lovenox, Percocet, Toprol XL, niacin, and trazodone.,PHYSICAL EXAMINATION:,VITAL SIGNS:  Temperature 96.5, blood pressure 127/72, pulse 70, respiratory rate 20, 95% O2 saturation on room air.,GENERAL:  No acute distress at the time of the exam except as mentioned above complains of right knee pain at \"certain position.\",HEENT:  Normocephalic.  Sclerae nonicteric.  EOMI.  Dentition in good repair.  Tongue is in midline with no evidence of thrush.,NECK:  No thyroid enlargement.  Trachea is midline.,LUNGS:  Clear to auscultation.,HEART:  Regular rate and rhythm.  Normal S1 and S2.,ABDOMEN:  Soft, nontender, and nondistended.  No organomegaly.,EXTREMITIES:  The right knee incision is intact.  Steri-Strips are in place.  There is some diffuse right knee edema and some limited ecchymosis as well.  No calf tenderness bilaterally.  Pedal pulses are palpable bilaterally.,MENTAL STATUS:  The patient appears slightly anxious during the interview and exam, but she was alert and oriented.,HOSPITAL COURSE: , As mentioned above, the patient was admitted on 08/24/2007 to the Transitional Care Unit at XYZ Services for evaluation and rehabilitation.  She was seen in consultation by Physical Therapy and Occupational Therapy and had begun her rehabilitation till recovery.  The patient had been properly instructed regarding using the CPM machine and she had been instructed as well to limit each CPM session to two hours.  Very early in her hospitalization, the patient enthusiastically used the CPM much longer than two hours and consequently had increased right knee pain.  She remarked that she had a better degree of flexibility, but she did report an increased need for pain management.  Additionally, she required Ativan and at one point scheduled the doses of Ativan to treat her known history of anxiety disorder.  On the fourth hospital day, she was noted to have some rashes about the right upper extremity and right side of her abdomen.  The patient reported that this rash was itchy.  She reports that she had been doing quite a bit of gardening just prior to surgery and this was most likely contact dermatitis, most likely due to her gardening activities preoperatively.  She was treated with betamethasone cream applied to the rash b.i.d.  The patient's therapy had progressed and she continued to make a good progress.  At one point, the patient reported some insomnia due to right knee pain.  She was switched from Percocet to oxycodone SR 20 mg b.i.d. and she had good pain control with this using the Percocet only for breakthrough pain.  The DVT prophylaxis was maintained with Lovenox 40 mg subcu daily until the INR was greater than 1.7 and it was discontinued on 08/30/2007 when the INR was 1.92 within therapeutic range.  The Coumadin was adjusted accordingly according to the INRs during her hospital course.  Early in the hospital course, the patient had reported right calf tenderness and a venous Doppler study obtained on 08/27/2007 showed no DVT bilaterally.  Initial laboratory data includes a UA on 08/28/2007, which was negative.  Additionally, CBC showed a white count of 6.3, hemoglobin was 12.1, hematocrit was 35.3, and platelets were 278,000.  Chemistries were within normal limits.  Creatinine was 0.8, BUN was 8, anion gap was slightly decreased at 5, fasting glucose was 102.  The remainder of chemistries was unremarkable.  The patient continued to make great progress with her therapies so much so that we are anticipating her discharge on Monday, 09/03/2007.,DISCHARGE DIAGNOSES:,1.  Status post right total knee replacement secondary to degenerative joint disease performed on 08/21/2007.,2.  Anxiety disorder.,3.  Insomnia secondary to pain and anxiety postoperatively.,4.  Postoperative constipation.,5.  Contact dermatitis secondary to preoperative gardening activities.,6.  Hypertension.,7.  Hypothyroidism.,8.  Gastroesophageal reflux disease.,9.  Morton neuroma of the feet bilaterally.,10.  Distant history of migraine headaches.,INSTRUCTIONS GIVEN TO THE PATIENT AT THE TIME OF DISCHARGE: , The patient is advised to continue taking the following medications:  Celebrex 200 mg daily, for one month, Colace 100 mg b.i.d. for one month, Protonix 40 mg b.i.d. for one month, Synthroid 137 mcg daily, Diprosone cream 0.05% cream b.i.d. to the right arm and right abdomen, oxycodone SR 20 mg p.o. q.12h. for five days, then decrease to oxycodone SR 10 mg p.o. q.12h. for five days, Percocet 5/325 mg one to two tablets q.6h. to be used p.r.n. for breakthrough pain, trazodone 50 mg p.o. at bedtime p.r.n. for two weeks, Ativan 0.25 mg b.i.d. for two weeks, and Toprol-XL 50 mg daily.  The patient will also take Coumadin and the dose will be adjusted according to the INRs, which will be obtained every Monday and Thursday with results being sent to Dr. A and his fax number is 831-5926.  At the present time, the patient is taking Coumadin 7 mg daily.  She will remain on Coumadin for 30 days.  An INR is to be obtained on 09/03/2007 and should the Coumadin dose be changed, an addendum will be dictated to accompany this discharge summary.  Finally, the patient has a followup appointment with Dr. A on 09/21/2007 at noon at his office.  The patient is encouraged to follow up with her primary care physician, Dr. B.  As mentioned above, the patient will be discharged on 09/03/2007 in stable and improved condition since she is status post right total knee replacement and has made good progress with her therapies and rehabilitation.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "2 units",
+        "20 mg",
+        "40 mg",
+        "200 mg",
+        "one month",
+        "100 mg",
+        "137 mcg",
+        "10 mg",
+        "5/325 mg",
+        "50 mg",
+        "0.25 mg",
+        "7 mg"
+      ],
+      "caregiver_checklist": [
+        "2 units",
+        "trazodone",
+        "20 mg",
+        "40 mg",
+        "200 mg",
+        "one month",
+        "100 mg",
+        "137 mcg",
+        "five days",
+        "10 mg",
+        "5/325 mg",
+        "50 mg",
+        "at bedtime",
+        "two weeks",
+        "0.25 mg",
+        "7 mg",
+        "30 days"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I understand you're feeling a bit uncomfortable and having trouble doing your daily activities. Let me explain what's happening and what you need to do next.\n\n### What's Happening:\nYou had a surgery on your right knee a few years ago to fix a problem with your joints. Since then, you've been working on getting better and doing your usual activities. But lately, you've been having some pain in your knee, especially when you're in a certain position. You also haven't had a bowel movement in a few days, which is why you're here now.\n\n### What Medicines You Need to Take:\n- **Celebrex**: This is a medicine to help with pain. You'll take it every day for a month.\n- **Colace**: This helps with constipation. You'll take it twice a day for a month.\n- **Protonix**: This is for heartburn. You'll take it twice a day for a month.\n- **Synthroid**: This helps with your thyroid. You'll take it every day for a month.\n- **Diprosone cream**: This is for any itchy rashes. You'll use it twice a day on your right arm and right abdomen for a month.\n- **Oxycodone SR**: This is a pain medicine. You'll take it every 12 hours for five days, then every 12 hours for another five days.\n- **Oxycodone SR**: This is another pain medicine. You'll take it every 12 hours for five days, then every 12 hours for another five days.\n- **Percocet**: This is for pain when you need it. You'll take it every 6 hours when you need it.\n- **Trazodone**: This helps with sleep. You'll take it at bedtime for two weeks.\n- **Ativan**: This helps with anxiety. You'll take it twice a day for two weeks.\n- **Toprol-XL**: This helps with your heart. You'll take it every day for 30 days.\n\n### When to Get Help:\n- If you have any new or worse pain in your knee, especially when you're in a certain position.\n- If you have any new rashes or if the rashes get itchy.\n- If you have any trouble with your bowels, like not having a bowel movement for a few days.\n- If you have any new or worse pain, especially at night.\n- If",
+      "caregiver_checklist": "- Check the right knee incision twice daily for signs of infection or redness.\n- Watch for signs of constipation and report if the patient has not had a bowel movement in 3 days.\n- Call the doctor if the patient experiences severe pain that does not improve with oxycodone.\n- Schedule a follow-up appointment with Dr. A on 9/21/2007.\n- Call the doctor if the patient develops any new rashes or if existing rashes worsen.\n- Monitor for any signs of anxiety or insomnia and report if the patient is having difficulty sleeping.\n- Check the patient's blood pressure and pulse regularly and report any significant changes.\n- Watch for signs of DVT, such as swelling, pain, or redness in the legs, and report immediately.\n- Call the doctor if the patient experiences any new or worsening symptoms, such as shortness of breath or chest pain.\n- Schedule a follow-up appointment with Dr. B on a regular basis as recommended by the primary care physician.",
+      "child_explanation": "You had a big surgery on your knee, like when you get a boo-boo and need to rest. Now your knee is still feeling a bit sore, especially when you move it in a certain way. But you're doing well overall, like when you play and have fun. The grown-ups and doctors are taking good care of you. They gave you some special medicine to help your knee feel better and to help you sleep. You'll need to take some creams and pills, but you're doing great. Your knee will feel better soon, and you'll be able to play and move around again."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Knee_Surgery_-_Discharge_Summary",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Knee_Surgery_-_Discharge_Summary.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Knee_Surgery_-_Discharge_Summary.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Knee_Surgery_-_Discharge_Summary",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Knee_Surgery_-_Discharge_Summary.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Knee_Surgery_-_Discharge_Summary.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Knee_Surgery_-_Discharge_Summary",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Knee_Surgery_-_Discharge_Summary.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Knee_Surgery_-_Discharge_Summary.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [
+        "2 units"
+      ],
+      "caregiver_checklist": [
+        "2 units",
+        "trazodone",
+        "20 mg",
+        "40 mg",
+        "200 mg",
+        "one month",
+        "100 mg",
+        "137 mcg",
+        "five days",
+        "10 mg",
+        "5/325 mg",
+        "50 mg",
+        "at bedtime",
+        "two weeks",
+        "0.25 mg",
+        "7 mg",
+        "30 days"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": true,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": true,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        true,
+        true,
+        true
+      ],
+      "caregiver_checklist": [
+        false,
+        true,
+        true
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 112.615,
+      "caregiver_checklist": 86.827,
+      "child_explanation": 21.207,
+      "total": 220.677
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:09:44+00:00"
+  }
+}

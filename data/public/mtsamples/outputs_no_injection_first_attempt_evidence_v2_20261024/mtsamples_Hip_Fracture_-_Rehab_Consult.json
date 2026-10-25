@@ -1,0 +1,404 @@
+{
+  "id": "mtsamples_Hip_Fracture_-_Rehab_Consult",
+  "patient_summary": "Hello there! I'm here to help you understand what's going on and what you need to do next. You had a fall at home and got hurt. The doctors found out you had a broken hip on the left side. You're having trouble moving around and that's making you feel sad and uncomfortable.\n\nThe doctors gave you some medicines to help you feel better. Here's what you need to take:\n- Heparin: This is a liquid you need to take every day.\n- Albuterol inhaler: You use this to help your breathing.\n- Combivent: This is another medicine to help your breathing.\n- Aldactone: You take this to help your kidneys.\n- Doxepin: You take this to help with your anxiety and depression.\n- Xanax: You take this to help with your anxiety.\n- Aspirin: You take this every day.\n- Amiodarone: You take this to help your heart.\n- Tegretol: You take this to help with your seizures.\n- Synthroid: You take this to help your thyroid.\n- Colace: You take this to help your bowels.\n- Penicillin: You need to take this if you have any infections.\n\nYou also need to do some special exercises with a physical therapist and an occupational therapist. They help you move around and do daily activities. You'll be able to do more as you get better.\n\nIf you have any of these symptoms, you need to call your doctor right away:\n- You have trouble breathing.\n- You have chest pain.\n- You have a fever or chills.\n- You have headaches or nausea.\n- You have shortness of breath.\n\nYou're doing well and you're making good progress. You're getting stronger and can do more activities. Your wife is there to help you with daily tasks. You're doing great!\n\nIf you have any questions or need help, just ask your doctors or nurses. They're here to help you.",
+  "caregiver_checklist": [
+    "Check the patient's vital signs every 4 hours.",
+    "Watch for signs of infection such as fever or redness around the wound.",
+    "Call the doctor if the patient develops shortness of breath or chest pain.",
+    "Schedule a follow-up appointment in 2 weeks to assess progress.",
+    "Give the patient the dose your care team prescribed of albuterol inhaler four times a day as needed.",
+    "Watch for signs of dehydration such as dry mouth or decreased urination.",
+    "Call the doctor if the patient experiences persistent nausea or vomiting.",
+    "Schedule a cardiac follow-up in 1 week to monitor for heart issues.",
+    "Check the patient's blood pressure and pulse regularly.",
+    "Watch for signs of constipation such as difficulty passing stools.",
+    "Call the doctor if the patient has persistent difficulty swallowing.",
+    "Schedule a physical therapy session as recommended by the care team.",
+    "Check the patient's penicillin allergy status and watch for signs of an allergic reaction.",
+    "Monitor the patient for aspirin side effects such as stomach pain or bleeding.",
+    "Monitor for amiodarone side effects like thyroid issues or eye problems.",
+    "Take the patient's Aspirin dose daily as prescribed.",
+    "Take the patient's Amiodarone dose daily as prescribed."
+  ],
+  "child_explanation": "You had a fall and hurt your hip. Doctors checked you and found you needed a special operation. You're still healing, but you're getting better. Grown-ups and doctors are taking care of you. You're like a plant growing, slowly getting stronger. You're doing well, you're just resting a bit more. Keep trusting the doctors, you'll be okay.",
+  "entities": [
+    {
+      "text": "Pain",
+      "label": "SYMPTOM",
+      "start": 356,
+      "end": 360
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 510,
+      "end": 519
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 521,
+      "end": 533
+    },
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 585,
+      "end": 598
+    },
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 600,
+      "end": 614
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 616,
+      "end": 626
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 628,
+      "end": 635
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 938,
+      "end": 947
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 953,
+      "end": 965
+    },
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 1311,
+      "end": 1324
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 1427,
+      "end": 1446
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 1529,
+      "end": 1539
+    },
+    {
+      "text": "penicillin",
+      "label": "MEDICATION",
+      "start": 1639,
+      "end": 1649
+    },
+    {
+      "text": "Albuterol",
+      "label": "MEDICATION",
+      "start": 1703,
+      "end": 1712
+    },
+    {
+      "text": "Aspirin",
+      "label": "MEDICATION",
+      "start": 1780,
+      "end": 1787
+    },
+    {
+      "text": "Amiodarone",
+      "label": "MEDICATION",
+      "start": 1793,
+      "end": 1803
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2041,
+      "end": 2046
+    },
+    {
+      "text": "headache",
+      "label": "SYMPTOM",
+      "start": 2113,
+      "end": 2121
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 2123,
+      "end": 2129
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 2134,
+      "end": 2142
+    },
+    {
+      "text": "fevers",
+      "label": "SYMPTOM",
+      "start": 2144,
+      "end": 2150
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 2152,
+      "end": 2158
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 2162,
+      "end": 2181
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 2185,
+      "end": 2195
+    },
+    {
+      "text": "anxiety",
+      "label": "SYMPTOM",
+      "start": 2734,
+      "end": 2741
+    },
+    {
+      "text": "depression",
+      "label": "CONDITION",
+      "start": 2743,
+      "end": 2753
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 2807,
+      "end": 2819
+    },
+    {
+      "text": "Hypothyroidism",
+      "label": "CONDITION",
+      "start": 2825,
+      "end": 2839
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 3004,
+      "end": 3013
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "penicillin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Albuterol",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Aspirin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "Amiodarone",
+      "dosages": [],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "ADMISSION DIAGNOSIS: , Left hip fracture.,CHIEF COMPLAINT: , Diminished function, secondary to the above.,HISTORY: , This pleasant 70-year-old gentleman had a ground-level fall at home on 05/05/03 and was brought into ABCD Medical Center, evaluated by Dr. X and brought in for orthopedic stay.  He had left hip fracture identified on x-rays at that time.  Pain and inability to ambulate brought him in.  He was evaluated and then underwent medical consultation as well, where they found a history of resolving pneumonia, hypertension, chronic obstructive pulmonary disease, congestive heart failure, hypothyroidism, depression, anxiety, seizure and chronic renal failure, as well as anemia.  His medical issues are under good control.  The patient underwent left femoral neck fixation with hemiarthroplasty on that left side on 05/06/03.  The patient has had some medical issues including respiratory insufficiency, perioperative anemia, pneumonia, and hypertension.  Cardiology has followed closely, and the patient has responded well to medical treatment, as well as physical therapy and occupational therapy.  He is gradually tolerating more activities with less difficulties, made good progress and tolerated more consistent and more prolonged interventions.,PAST MEDICAL HISTORY: , Positive for congestive heart failure, chronic renal insufficiency, azotemia, hyperglycemia, coronary artery disease, history of paroxysmal atrial fibrillation.  Remote history of subdural hematoma precluding the use of Coumadin.  History of depression, panic attacks on Doxepin.  Perioperative anemia.  Swallowing difficulties.,ALLERGIES:,  Zyloprim, penicillin, Vioxx, NSAIDs.,CURRENT MEDICATIONS,1.  Heparin.,2.  Albuterol inhaler.,3.  Combivent.,4.  Aldactone.,5.  Doxepin.,6.  Xanax.,7.  Aspirin.,8.  Amiodarone.,9.  Tegretol.,10.  Synthroid.,11.  Colace.,SOCIAL HISTORY: , Lives in a 1-story home with 1 step down; wife is there.  Speech and language pathology following with current swallowing dysfunction.  He is minimum assist for activities of daily living, bed mobility.,REVIEW OF SYSTEMS:,  Currently negative for headache, nausea and vomiting, fevers, chills or shortness of breath or chest pain.,PHYSICAL EXAMINATION,HEENT:  Oropharynx clear.,CV:  Regular rate and rhythm without murmurs, rubs or gallops.,LUNGS:  Clear to auscultation bilaterally.,ABDOMEN:  Nontender, nondistended.  Bowel sounds positive.,EXTREMITIES:  Without clubbing, cyanosis, or edema.,NEUROLOGIC:  There are no focal motor or sensory losses to the lower extremities.  Bulk and tone normal in the lower extremities.  Wound site has healed well with staples out.,IMPRESSION ,1.  Status post left hip fracture and hemiarthroplasty.,2.  History of panic attack, anxiety, depression.,3.  Myocardial infarction with stent placement.,4.  Hypertension.,5.  Hypothyroidism.,6.  Subdural hematoma.,7.  Seizures.,8.  History of chronic obstructive pulmonary disease.  Recent respiratory insufficiency.,9.  Renal insufficiency.,10.  Recent pneumonia.,11.  O2 requiring.,12.  Perioperative anemia.,PLAN: , Rehab transfer as soon as medically cleared.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "penicillin"
+      ],
+      "caregiver_checklist": [
+        "penicillin",
+        "Aspirin",
+        "Amiodarone",
+        "daily"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you understand what's going on and what you need to do next. You had a fall at home and got hurt. The doctors found out you had a broken hip on the left side. You're having trouble moving around and that's making you feel sad and uncomfortable.\n\nThe doctors gave you some medicines to help you feel better. Here's what you need to take:\n- Heparin: This is a liquid you need to take every day.\n- Albuterol inhaler: You use this to help your breathing.\n- Combivent: This is another medicine to help your breathing.\n- Aldactone: You take this to help your kidneys.\n- Doxepin: You take this to help with your anxiety and depression.\n- Xanax: You take this to help with your anxiety.\n- Aspirin: You take this every day.\n- Amiodarone: You take this to help your heart.\n- Tegretol: You take this to help with your seizures.\n- Synthroid: You take this to help your thyroid.\n- Colace: You take this to help your bowels.\n\nYou also need to do some special exercises with a physical therapist and an occupational therapist. They help you move around and do daily activities. You'll be able to do more as you get better.\n\nIf you have any of these symptoms, you need to call your doctor right away:\n- You have trouble breathing.\n- You have chest pain.\n- You have a fever or chills.\n- You have headaches or nausea.\n- You have shortness of breath.\n\nYou're doing well and you're making good progress. You're getting stronger and can do more activities. Your wife is there to help you with daily tasks. You're doing great!\n\nIf you have any questions or need help, just ask your doctors or nurses. They're here to help you.",
+      "caregiver_checklist": "- Check the patient's vital signs every 4 hours.\n- Watch for signs of infection such as fever or redness around the wound.\n- Call the doctor if the patient develops shortness of breath or chest pain.\n- Schedule a follow-up appointment in 2 weeks to assess progress.\n- Give the patient 500 mg of albuterol inhaler four times a day as needed.\n- Watch for signs of dehydration such as dry mouth or decreased urination.\n- Call the doctor if the patient experiences persistent nausea or vomiting.\n- Schedule a cardiac follow-up in 1 week to monitor for heart issues.\n- Check the patient's blood pressure and pulse regularly.\n- Watch for signs of constipation such as difficulty passing stools.\n- Call the doctor if the patient has persistent difficulty swallowing.\n- Schedule a physical therapy session as recommended by the care team.",
+      "child_explanation": "You had a fall and hurt your hip. Doctors checked you and found you needed a special operation. You're still healing, but you're getting better. Grown-ups and doctors are taking care of you. You're like a plant growing, slowly getting stronger. You're doing well, you're just resting a bit more. Keep trusting the doctors, you'll be okay."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Hip_Fracture_-_Rehab_Consult",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hip_Fracture_-_Rehab_Consult.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Hip_Fracture_-_Rehab_Consult.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Hip_Fracture_-_Rehab_Consult",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hip_Fracture_-_Rehab_Consult.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Hip_Fracture_-_Rehab_Consult.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Hip_Fracture_-_Rehab_Consult",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hip_Fracture_-_Rehab_Consult.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Hip_Fracture_-_Rehab_Consult.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "500 mg"
+      ],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 52.175,
+      "caregiver_checklist": 31.813,
+      "child_explanation": 10.313,
+      "total": 94.322
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:53:29+00:00"
+  }
+}

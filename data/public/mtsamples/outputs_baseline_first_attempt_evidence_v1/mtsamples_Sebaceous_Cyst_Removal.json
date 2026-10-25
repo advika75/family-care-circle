@@ -1,0 +1,186 @@
+{
+  "id": "mtsamples_Sebaceous_Cyst_Removal",
+  "patient_summary": "Hello there! I'm here to tell you about what happened to you and what you need to do next. You had a small bump in your neck that got infected. The doctors decided to take it out in the operating room. They gave you medicine to help you relax and then cleaned your neck. They found a lot of pus and dead skin in the bump. They carefully removed all of it and cleaned the area. They also put some special gauze in the area to help it heal. After the surgery, you were sent to the same day surgery area to rest and recover. You did a great job! \n\nNow, you need to take some medicine to help your body heal. You will take one pill twice a day for 5 days. You might feel a little sleepy or have a sore throat. If you have any of these, or if you have a fever, you should call the doctor's office. If you have any other questions or concerns, you can always ask the nurses or doctors. They are here to help you. You did well, and you will be okay!",
+  "caregiver_checklist": [
+    "Give the patient a warm, moist compress to the incision site for the first 24 hours.",
+    "Check the incision site for signs of redness, swelling, or increased pain.",
+    "Watch for signs of fever, chills, or worsening pain.",
+    "Call the healthcare provider if the patient develops a fever above 100.4°F (38°C).",
+    "Schedule a follow-up appointment with the surgeon in 2 weeks.",
+    "Check the incision site for signs of infection such as increased redness, warmth, or pus.",
+    "Watch for signs of infection such as fever, chills, or worsening pain.",
+    "Call the healthcare provider if the patient develops signs of infection.",
+    "Schedule a wound cleaning and dressing change in 7 days.",
+    "Check the incision site for signs of healing, such as the formation of granulation tissue.",
+    "Watch for signs of healing, such as the formation of granulation tissue.",
+    "Call the healthcare provider if the patient does not show signs of healing."
+  ],
+  "child_explanation": "You had a tiny bump on your neck. It got sick and needed some help. The doctors and grown-ups carefully cleaned it. They found a lot of yucky stuff inside. They took it out and cleaned it well. Now it's getting a special bandage. You'll be okay, and the doctors will watch you closely.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS:,  Infected sebaceous cyst, right neck.,POSTOPERATIVE DIAGNOSIS:,  Infected sebaceous cyst, right neck.,PROCEDURE: , The patient was electively taken to the operating room after obtaining an informed consent.  With a combination of intravenous sedation and local infiltration anesthesia, a time-out process was followed and then the patient was prepped and draped in the usual fashion.  The elliptical incision was performed around the draining tract.  Immediately we fell in to an abscess cavity with a lot of pus and necrotic tissue.  All the necrotic tissue was excised together with an ellipse of skin.  Hemostasis was achieved with a cautery.  The cavity was irrigated with normal saline.  At the end of procedure, there was a good size around cavity that was packed with iodoform gauze.  One skin suture was grazed for approximation.,A bulky dressing was applied.,The patient tolerated the procedure well.  Estimated blood loss was negligible and the patient was sent to Same Day Surgery for recovery.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to tell you about what happened to you and what you need to do next. You had a small bump in your neck that got infected. The doctors decided to take it out in the operating room. They gave you medicine to help you relax and then cleaned your neck. They found a lot of pus and dead skin in the bump. They carefully removed all of it and cleaned the area. They also put some special gauze in the area to help it heal. After the surgery, you were sent to the same day surgery area to rest and recover. You did a great job! \n\nNow, you need to take some medicine to help your body heal. You will take one pill twice a day for 5 days. You might feel a little sleepy or have a sore throat. If you have any of these, or if you have a fever, you should call the doctor's office. If you have any other questions or concerns, you can always ask the nurses or doctors. They are here to help you. You did well, and you will be okay!",
+      "caregiver_checklist": "- Give the patient a warm, moist compress to the incision site for the first 24 hours.\n- Check the incision site for signs of redness, swelling, or increased pain.\n- Watch for signs of fever, chills, or worsening pain.\n- Call the healthcare provider if the patient develops a fever above 100.4°F (38°C).\n- Schedule a follow-up appointment with the surgeon in 2 weeks.\n- Check the incision site for signs of infection such as increased redness, warmth, or pus.\n- Watch for signs of infection such as fever, chills, or worsening pain.\n- Call the healthcare provider if the patient develops signs of infection.\n- Schedule a wound cleaning and dressing change in 7 days.\n- Check the incision site for signs of healing, such as the formation of granulation tissue.\n- Watch for signs of healing, such as the formation of granulation tissue.\n- Call the healthcare provider if the patient does not show signs of healing.",
+      "child_explanation": "You had a tiny bump on your neck. It got sick and needed some help. The doctors and grown-ups carefully cleaned it. They found a lot of yucky stuff inside. They took it out and cleaned it well. Now it's getting a special bandage. You'll be okay, and the doctors will watch you closely."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Sebaceous_Cyst_Removal",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Sebaceous_Cyst_Removal.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Sebaceous_Cyst_Removal.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Sebaceous_Cyst_Removal",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Sebaceous_Cyst_Removal.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Sebaceous_Cyst_Removal.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Sebaceous_Cyst_Removal",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Sebaceous_Cyst_Removal.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Sebaceous_Cyst_Removal.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 16.214,
+      "caregiver_checklist": 15.471,
+      "child_explanation": 6.502,
+      "total": 38.196
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:37:19+00:00"
+  }
+}

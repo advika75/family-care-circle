@@ -1,0 +1,208 @@
+{
+  "id": "mtsamples_Gangrene_Surgery",
+  "patient_summary": "Hello there! I understand you're feeling a bit worried about your foot surgery today. Let me explain what's happening in simple terms.\n\nYou have a problem with your toe that needed to be fixed. You have diabetes, which can make it harder for your body to heal. Your toe had an infection that didn't get better with other treatments, so you had surgery to clean it out and fix it.\n\nYou'll be taking some special medicines to help fight the infection. The doctor gave you a shot of a numbing medicine to help you feel better during the surgery. After the surgery, you'll need to take a special pain medicine every 4 hours as needed. You'll also need to take antibiotics to help fight the infection, and you'll need to keep taking your regular diabetes medicines too.\n\nYou'll need to rest your foot for a few days and keep it elevated, which means you'll put your foot up on pillows. You'll also need to use ice on your knee for about 20 minutes at a time, as needed. You'll be given a special bandage to help keep your foot clean and protected. You'll need to keep the bandage on for a few days.\n\nThe doctor will check your foot again next week. If you start to feel any pain, swelling, or redness, or if you have any fever, you should call the doctor right away. If you have any other questions or if you're worried about anything, you can always ask the nurses or doctors.\n\nRemember to take good care of your foot and follow the instructions. You'll be okay!",
+  "caregiver_checklist": [
+    "Give the patient a 0.5% Marcaine block around the second toe.",
+    "Check the patient’s vital signs every hour in the Postanesthesia Care Unit.",
+    "Watch for signs of infection such as increased redness, swelling, or fever.",
+    "Call the care team if the patient develops signs of infection.",
+    "Schedule a follow-up appointment with Podiatry on Monday morning.",
+    "Call the care team if the patient experiences moderate to severe pain.",
+    "Check the patient’s foot elevation and ice application every hour.",
+    "Call the care team if the patient’s foot shows signs of bleeding.",
+    "Schedule a dressing change and evaluation at the Podiatry Clinic."
+  ],
+  "child_explanation": "You have a boo-boo on your toe. Doctors are taking care of you. They're like a team of tiny helpers. You'll feel some pain, but they'll make it better. They gave you medicine to help you sleep. They cleaned your toe very carefully. They made a cut to clean it. Now they're putting it back together. They'll give you medicine for pain. You need to rest your foot. Keep it up high and use ice. You'll see the doctors next week. If you feel sick, tell them right away.",
+  "entities": [
+    {
+      "text": "diabetes",
+      "label": "CONDITION",
+      "start": 216,
+      "end": 224
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 3701,
+      "end": 3709
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 3925,
+      "end": 3933
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 4425,
+      "end": 4429
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Gangrene osteomyelitis, right second toe.,POSTOPERATIVE DIAGNOSIS: , Gangrene osteomyelitis, right second toe.,OPERATIVE REPORT:  ,The patient is a 58-year-old female with poorly controlled diabetes with severe lower extremity lymphedema.  The patient has history of previous right foot infection requiring first ray resection.  The patient has ulcerations of right second toe dorsally at the proximal interphalangeal joint, which has failed to respond to conservative treatment.  The patient now has exposed bone and osteomyelitis in the second toe.  The patient has been on IV antibiotics as an outpatient and has failed to respond to these and presents today for surgical intervention.,After an IV was started by the Department of Anesthesia, the patient was taken back to the operating room and placed on the operative table in the supine position.  A restraint belt was placed around the patient's waist using copious amounts of Webril and an ankle pneumatic tourniquet was placed around the patient's right ankle and the patient was made comfortable by the Department of Anesthesia.  After adequate amounts of sedation had been given to the patient, we administered a block of 10 cc of 0.5% Marcaine plain in proximal digital block around the second digit.  The foot and ankle were then prepped in the normal sterile orthopedic manner.  The foot was elevated and an Esmarch bandage applied to exsanguinate the foot.  The tourniquet was then inflated to 250 mmHg and the foot was brought back onto the table.  Using Band-Aid scissors, the stockinet was cut and reflected and using a wet and dry sponge, the foot was wiped, cleaned, and the second toe identified.,Using a skin scrape, a racket type incision was planned around the second toe to allow also remodelling of previous operative site.  Using a fresh #10 blade, skin incision was made circumferentially in the racket-shaped manner around the second digit.  Then, using a fresh #15 blade, the incision was deepened and was taken down to the level of the second metatarsophalangeal joint.  Care was taken to identify bleeders and cautery was used as necessary for hemostasis.  After cleaning up all the soft tissue attachments, the second digit was disarticulated down to the level of the metatarsophalangeal joint.  The head of the second metatarsal was inspected and was noted to have good glistening white cartilage with no areas of erosion evident by visual examination.  Attention was then directed to closure of the wound.  All remaining tissue was noted to be healthy and granular in appearance with no necrotic tissue evident.  Areas of subcutaneous tissue were then removed through a sharp dissection in order to allow better approximation of the skin edges.  Due to long-standing lower extremity lymphedema and postoperative changes on previous surgery, I thought that we were unable to close the incision in entirety.  Therefore, after copious amounts of irrigation using sterile saline, it was determined to use modified dental rolls using #4-0 gauze to remove tension from the skin.  Deep vertical mattress sutures were used in order to reapproximate more closely, the skin edges and bring the plantar flap of skin up to the dorsal skin.  This was obtained using #2-0 nylon suture.  Following this, the remaining exposed tissue from the wound was covered using moist to dry saline soaked 4 x 4 gauze.  The wound was then dressed using 4 x 4 gauze fluffed with abdominal pads, then using Kling and Kerlix and an ACE bandage to provide compression.  The tourniquet was deflated at 42 minutes' time and hemostasis was noted to be achieved.  The ACE bandage was extended up to just below the knee and no bleeding striking to the bandages was appreciated.  The patient tolerated the procedure well and was escorted to the Postanesthesia Care Unit with vital signs stable and vascular status intact, as was evidenced by capillary bleeding, which was present during the procedure.  Sedation was given postoperative introductions, which include to remain nonweightbearing to her right foot.  The patient was instructed to keep the foot elevated and to apply ice behind her knee as necessary, no more than 20 minutes each hour.  The patient was instructed to continue her regular medications.  The patient was to continue IV antibiotic course and was given prescription for Vicoprofen to be taken q.4h. p.r.n. for moderate to severe pain #30.  The patient will followup with Podiatry on Monday morning at 8:30 in the Podiatry Clinic for dressing change and evaluation of her foot at that time.,The patient was instructed as to signs and symptoms of infection, was instructed to return to the Emergency Department immediately if these should present.  The second digit was sent to Pathology for gross and micro.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I understand you're feeling a bit worried about your foot surgery today. Let me explain what's happening in simple terms.\n\nYou have a problem with your toe that needed to be fixed. You have diabetes, which can make it harder for your body to heal. Your toe had an infection that didn't get better with other treatments, so you had surgery to clean it out and fix it.\n\nYou'll be taking some special medicines to help fight the infection. The doctor gave you a shot of a numbing medicine to help you feel better during the surgery. After the surgery, you'll need to take a special pain medicine every 4 hours as needed. You'll also need to take antibiotics to help fight the infection, and you'll need to keep taking your regular diabetes medicines too.\n\nYou'll need to rest your foot for a few days and keep it elevated, which means you'll put your foot up on pillows. You'll also need to use ice on your knee for about 20 minutes at a time, as needed. You'll be given a special bandage to help keep your foot clean and protected. You'll need to keep the bandage on for a few days.\n\nThe doctor will check your foot again next week. If you start to feel any pain, swelling, or redness, or if you have any fever, you should call the doctor right away. If you have any other questions or if you're worried about anything, you can always ask the nurses or doctors.\n\nRemember to take good care of your foot and follow the instructions. You'll be okay!",
+      "caregiver_checklist": "- Give the patient a 0.5% Marcaine block around the second toe.\n- Check the patient’s vital signs every hour in the Postanesthesia Care Unit.\n- Watch for signs of infection such as increased redness, swelling, or fever.\n- Call the care team if the patient develops signs of infection.\n- Schedule a follow-up appointment with Podiatry on Monday morning.\n- Call the care team if the patient experiences moderate to severe pain.\n- Check the patient’s foot elevation and ice application every hour.\n- Call the care team if the patient’s foot shows signs of bleeding.\n- Schedule a dressing change and evaluation at the Podiatry Clinic.",
+      "child_explanation": "You have a boo-boo on your toe. Doctors are taking care of you. They're like a team of tiny helpers. You'll feel some pain, but they'll make it better. They gave you medicine to help you sleep. They cleaned your toe very carefully. They made a cut to clean it. Now they're putting it back together. They'll give you medicine for pain. You need to rest your foot. Keep it up high and use ice. You'll see the doctors next week. If you feel sick, tell them right away."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Gangrene_Surgery",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Gangrene_Surgery.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Gangrene_Surgery.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Gangrene_Surgery",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Gangrene_Surgery.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Gangrene_Surgery.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Gangrene_Surgery",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Gangrene_Surgery.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Gangrene_Surgery.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 42.65,
+      "caregiver_checklist": 18.885,
+      "child_explanation": 15.254,
+      "total": 76.871
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T14:32:55+00:00"
+  }
+}

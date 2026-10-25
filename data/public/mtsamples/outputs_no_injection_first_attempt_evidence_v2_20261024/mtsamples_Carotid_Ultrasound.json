@@ -1,0 +1,190 @@
+{
+  "id": "mtsamples_Carotid_Ultrasound",
+  "patient_summary": "Hello there! I understand you had a test done on your neck arteries, and the doctors want to explain the results to you. Let me break it down for you in simple terms.\n\nYou had a special test called a carotid ultrasound. This test uses sound waves to look at the arteries in your neck. The doctors looked at both your right and left neck arteries.\n\nOn your right side, the arteries looked normal. There was a little bit of thickening on the inside, but nothing serious. The right side also had some hard plaque, but it wasn't too much. The doctors checked the blood flow and found it was okay.\n\nOn your left side, the arteries also had some thickening. There was hard plaque that was about 50% as big as the artery. This is a bit concerning. The doctors think you might have a blockage in the left side of your neck arteries, but they need to check further to be sure. They will do a CT scan to get a better look.\n\nFor now, you don't need to take any special medicines. The doctors will watch you closely and might recommend some tests in the future to make sure everything is okay.\n\nIf you have any pain, dizziness, or trouble seeing, you should tell your doctor right away. They can help you feel better.\n\nRemember, it's important to follow up with your doctor for any concerns. They are here to help you.",
+  "caregiver_checklist": [
+    "Give the patient a copy of the ultrasound report.",
+    "Check the patient's blood pressure and pulse regularly.",
+    "Watch for signs of stroke or TIA such as sudden numbness or weakness, confusion, trouble speaking, or vision problems.",
+    "Call 911 if the patient has a sudden severe headache or vision changes.",
+    "Schedule a CT angiography (CTA) for the left internal carotid artery.",
+    "Monitor the patient for any new or worsening symptoms.",
+    "Watch for signs of stroke or TIA such as sudden numbness or weakness, confusion, trouble speaking, or vision problems.",
+    "Call the healthcare provider if the patient has any concerning symptoms.",
+    "Schedule a follow-up appointment with the healthcare provider."
+  ],
+  "child_explanation": "You had a special check-up today. The doctors used a machine to look at your neck. They saw some spots that are a bit hard, but don't need to worry. It's like when you have a splinter - it's there, but it's not a big problem. The doctors are taking good care of you. They will check again with a special picture to make sure everything is okay. You're in good hands.",
+  "entities": [
+    {
+      "text": "Headache",
+      "label": "SYMPTOM",
+      "start": 57,
+      "end": 65
+    }
+  ],
+  "regimens": [],
+  "source_text": "EXAM:,  Bilateral carotid ultrasound.,REASON FOR EXAM: , Headache.,TECHNIQUE:  ,Color grayscale and Doppler analysis is employed.,FINDINGS:,  On the grayscale images, the right common carotid artery demonstrates patency with mild intimal thickening only.  At the level of the carotid bifurcation, there is heterogeneous hard plaque present, but without grayscale evidence of greater than 50% stenosis.  Right common carotid waveform is normal with a peak systolic velocity of 0.474 m/second and an end-diastolic velocity of 0.131 m/second.  The right ECA is patent as well with the velocity measurement 0.910 m/second.,The right internal carotid artery at the bifurcation demonstrates plaque formation, but no evidence of greater than 50% stenosis.  Proximal peak systolic velocity in the internal carotid artery is 0.463 m/second with proximal end-diastolic velocity of 0.170.  The mid internal carotid peak systolic velocity is 0.564 m/second, and mid ICA end-diastolic velocity is 0.199 m/second.  Right ICA distal PSV 0.580 m/second, right ICA distal EDV 0.204 m/second.  Vertebral flow is antegrade on the right at 0.469 m/second.,On the left, the common carotid artery demonstrates intimal thickening, but is otherwise patent.  At the level of the bifurcation, however, there is more pronounced plaque formation with approximately 50% stenosis by the grayscale analysis.  See the velocity measurements below:,Left carotid ECA measurement 0.938 m/second.  Left common carotid PSV 0.686 m/second, and left common carotid end-diastolic velocity 0.137 m/second.,Left internal carotid artery again demonstrates prominent focus of hard plaque with up to at least 50% stenosis.  This should be further assessed with CTA for more precise measurement.  The left proximal ICA/PSV 0.955 m/second, left proximal ICA/EDV 0.287 m/second.  There is spectral broadening in the proximal aspect of the carotid waveform.  The left carotid ICA mid PSV 0.895, left carotid ICA mid EDV 0.278 with also spectral broadening present.,The left distal ICA/PSV 0.561, left distal ICA/EDV 0.206, again the spectral broadening present.  Vertebral flow is antegrade at 0.468 m/second.,IMPRESSION: , The study demonstrates bilateral hard plaque at the bifurcation, left greater than right.  There is at least 50% stenosis of the left internal carotid artery at its bifurcation and a followup CTA is recommended for further assessment.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I understand you had a test done on your neck arteries, and the doctors want to explain the results to you. Let me break it down for you in simple terms.\n\nYou had a special test called a carotid ultrasound. This test uses sound waves to look at the arteries in your neck. The doctors looked at both your right and left neck arteries.\n\nOn your right side, the arteries looked normal. There was a little bit of thickening on the inside, but nothing serious. The right side also had some hard plaque, but it wasn't too much. The doctors checked the blood flow and found it was okay.\n\nOn your left side, the arteries also had some thickening. There was hard plaque that was about 50% as big as the artery. This is a bit concerning. The doctors think you might have a blockage in the left side of your neck arteries, but they need to check further to be sure. They will do a CT scan to get a better look.\n\nFor now, you don't need to take any special medicines. The doctors will watch you closely and might recommend some tests in the future to make sure everything is okay.\n\nIf you have any pain, dizziness, or trouble seeing, you should tell your doctor right away. They can help you feel better.\n\nRemember, it's important to follow up with your doctor for any concerns. They are here to help you.",
+      "caregiver_checklist": "- Give the patient a copy of the ultrasound report.\n- Check the patient's blood pressure and pulse regularly.\n- Watch for signs of stroke or TIA such as sudden numbness or weakness, confusion, trouble speaking, or vision problems.\n- Call 911 if the patient has a sudden severe headache or vision changes.\n- Schedule a CT angiography (CTA) for the left internal carotid artery.\n- Monitor the patient for any new or worsening symptoms.\n- Watch for signs of stroke or TIA such as sudden numbness or weakness, confusion, trouble speaking, or vision problems.\n- Call the healthcare provider if the patient has any concerning symptoms.\n- Schedule a follow-up appointment with the healthcare provider.",
+      "child_explanation": "You had a special check-up today. The doctors used a machine to look at your neck. They saw some spots that are a bit hard, but don't need to worry. It's like when you have a splinter - it's there, but it's not a big problem. The doctors are taking good care of you. They will check again with a special picture to make sure everything is okay. You're in good hands."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Carotid_Ultrasound",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Carotid_Ultrasound.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Carotid_Ultrasound.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Carotid_Ultrasound",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Carotid_Ultrasound.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Carotid_Ultrasound.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Carotid_Ultrasound",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Carotid_Ultrasound.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Carotid_Ultrasound.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 17.203,
+      "caregiver_checklist": 10.537,
+      "child_explanation": 8.146,
+      "total": 35.899
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:27:38+00:00"
+  }
+}

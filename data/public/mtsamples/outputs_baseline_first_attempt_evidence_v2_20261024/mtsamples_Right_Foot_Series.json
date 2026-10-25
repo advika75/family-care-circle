@@ -1,0 +1,195 @@
+{
+  "id": "mtsamples_Right_Foot_Series",
+  "patient_summary": "Hello there! I'm here to explain what happened with your foot and what you need to do next. You had an X-ray taken of your right foot because you were feeling some pain and there was swelling in that area. The X-ray showed that there might be some broken bones in your foot, but it's not completely clear yet. The bones in the middle of your foot and the back of your heel look a little bit different than they should, and it's possible that you have small breaks that aren't completely broken.\n\nYou'll need to take some special medicine to help your foot feel better. The doctor will call the emergency room to tell them about your foot. You'll need to take these medicines three times a day for a few days. You should also keep your foot resting and not putting much weight on it. If you have any pain or swelling that gets worse, or if you have any other new symptoms, you should call the doctor or go to the emergency room right away. They will check your foot again in a few days to see how you're doing.",
+  "caregiver_checklist": [
+    "Check for swelling and pain in the right foot, especially over the calcaneus.",
+    "Watch for any signs of increased swelling or pain that worsens.",
+    "Schedule a follow-up appointment in 2 weeks for imaging.",
+    "Call the emergency room if there is significant pain or swelling.",
+    "Check the right foot for any deformities or misalignment.",
+    "Watch for any changes in skin color or temperature.",
+    "Call the healthcare provider if there are any concerns about the foot's appearance or function.",
+    "Schedule a phone call with the healthcare provider to discuss the findings and next steps."
+  ],
+  "child_explanation": "You had an x-ray of your foot. A few tiny cracks might be there. Doctors think it's not a big deal. But we need to check again. Your parents and doctors are taking good care of you. You'll feel better soon.",
+  "entities": [
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 478,
+      "end": 486
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 715,
+      "end": 719
+    }
+  ],
+  "regimens": [],
+  "source_text": "EXAM: , Right foot series.,REASON FOR EXAM:  ,Injury.,FINDINGS: , Three images of the right foot were obtained.  On the AP image only, there is a subtle lucency seen in the proximal right fourth metatarsal and a mild increased sclerosis in the proximal fifth metatarsal.  Also on a single image, there is a lucency seen in the lateral aspect of the calcaneus that is seen on the oblique image only.  Fractures in these bones cannot be completely excluded.  There is soft tissue swelling seen overlying the calcaneus within this region.,IMPRESSION: , Cannot exclude nondisplaced fractures in the lateral aspect of the calcaneus or at the base of the fourth and fifth metatarsals.  Recommend correlation with site of pain in addition to conservative management and followup imaging.  A phone call will be placed to the emergency room regarding these findings.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to explain what happened with your foot and what you need to do next. You had an X-ray taken of your right foot because you were feeling some pain and there was swelling in that area. The X-ray showed that there might be some broken bones in your foot, but it's not completely clear yet. The bones in the middle of your foot and the back of your heel look a little bit different than they should, and it's possible that you have small breaks that aren't completely broken.\n\nYou'll need to take some special medicine to help your foot feel better. The doctor will call the emergency room to tell them about your foot. You'll need to take these medicines three times a day for a few days. You should also keep your foot resting and not putting much weight on it. If you have any pain or swelling that gets worse, or if you have any other new symptoms, you should call the doctor or go to the emergency room right away. They will check your foot again in a few days to see how you're doing.",
+      "caregiver_checklist": "- Check for swelling and pain in the right foot, especially over the calcaneus.\n- Watch for any signs of increased swelling or pain that worsens.\n- Schedule a follow-up appointment in 2 weeks for imaging.\n- Call the emergency room if there is significant pain or swelling.\n- Check the right foot for any deformities or misalignment.\n- Watch for any changes in skin color or temperature.\n- Call the healthcare provider if there are any concerns about the foot's appearance or function.\n- Schedule a phone call with the healthcare provider to discuss the findings and next steps.",
+      "child_explanation": "You had an x-ray of your foot. A few tiny cracks might be there. Doctors think it's not a big deal. But we need to check again. Your parents and doctors are taking good care of you. You'll feel better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Right_Foot_Series",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Right_Foot_Series.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Right_Foot_Series.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Right_Foot_Series",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Right_Foot_Series.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Right_Foot_Series.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Right_Foot_Series",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Right_Foot_Series.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Right_Foot_Series.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 12.201,
+      "caregiver_checklist": 7.193,
+      "child_explanation": 4.293,
+      "total": 23.689
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T11:53:30+00:00"
+  }
+}

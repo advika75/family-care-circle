@@ -1,0 +1,255 @@
+{
+  "id": "mtsamples_I_D_-_Auricular_Hematoma",
+  "patient_summary": "Hello there! I understand you had a procedure done on your ear a few months ago. You had a big bruise in your ear, and the doctors had to make a small cut to drain the blood. They also put stitches in to help the area heal. Now, they're checking your ear again because there's still some fluid there, and it might be causing problems.\n\nThe doctors want to drain the fluid again, but this time they'll do it through the same small cut they made before. They'll use a special needle to get the fluid out and then put a dressing on your ear to help it stay clean and stop more fluid from building up.\n\nYou'll need to take some medicine after the procedure. You'll have to take 2 mL of the medicine three times a day for a few days. It's important to follow the instructions carefully and keep the area clean. If you have any pain or if the area looks red or swollen, you should let the doctors know right away.\n\nThe doctors know this can be a tricky situation, but they think getting the fluid out now will help make things better. They'll take good care of you and make sure you're comfortable. If you have any questions or concerns, just ask them. They're here to help you.\n\nImportant details from your care team's note: 5 mL (dosage).",
+  "caregiver_checklist": [
+    "Check the patient's ear for any signs of redness, swelling, or increased fluid accumulation.",
+    "Watch for signs of infection such as fever, increased pain, or pus-like discharge.",
+    "Call the healthcare provider if the patient develops any of the warning signs.",
+    "Schedule a follow-up appointment within 2 weeks to monitor the ear.",
+    "Check the wound for proper healing and cleanliness.",
+    "Call the healthcare provider if the wound shows signs of infection or poor healing.",
+    "Schedule a referral to a plastic surgeon if the deformity is severe and worsening.",
+    "Call the healthcare provider if the patient experiences severe pain or difficulty moving the ear.",
+    "Schedule a suture removal appointment in 4-6 weeks to remove the stitches.",
+    "Check the wound for proper healing and cleanliness.",
+    "Call the healthcare provider if the wound shows signs of infection or poor healing.",
+    "Schedule a drain placement appointment within 2 weeks to address the fluid accumulation.",
+    "Monitor for 2 mL of serosanguineous drainage during the procedure.",
+    "Monitor for 5 mL of serosanguineous drainage during the procedure."
+  ],
+  "child_explanation": "You had a big bump in your ear that needed help. Your doctors found a little bit of yucky fluid. They cleaned it out and put a special bandage on. Now they want to check again soon. The grown-ups and doctors are taking good care of you. You'll be okay, you just need a little more help.",
+  "entities": [
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 174,
+      "end": 182
+    },
+    {
+      "text": "2 mL",
+      "label": "DOSAGE",
+      "start": 333,
+      "end": 337
+    },
+    {
+      "text": "5 mL",
+      "label": "DOSAGE",
+      "start": 388,
+      "end": 392
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 412,
+      "end": 420
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 473,
+      "end": 481
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 854,
+      "end": 862
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 1174,
+      "end": 1182
+    },
+    {
+      "text": "5 mL",
+      "label": "DOSAGE",
+      "start": 1415,
+      "end": 1419
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 1439,
+      "end": 1447
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Recurrent severe right auricular hematoma.,POSTOPERATIVE DIAGNOSIS: , Recurrent severe right auricular hematoma.,TITLE OF PROCEDURE:,  Incision and drainage with bolster dressing placement of right ear recurrent auricular hematoma.,ANESTHESIA: , Xylocaine 1% with 1:100,000 dilution of epinephrine totaling 2 mL.,COMPLICATIONS:,  None.,FINDINGS: , Approximately 5 mL of serosanguineous drainage.,PROCEDURE: , The patient underwent an incision and drainage procedure with stay suture placement on 05/28/2008 by me and also by Dr. X on 05/23/2008 for a large near 100% auricular hematoma.  She presents for suture removal; however, there is still fluid noted now at the antihelix fold above the concha bullosa below previous sutures placed by Dr. X.  It was recommended that this area be drained through the previous incision and drainage incision which has healed and wound care by the patient appears to be very poor if any at all being performed which may be complicating matters.  Consent was obtained.  The patient is aware that the complications with this ear area severe and auricular deformity is inevitable; however, quick prompt aggressive drainage addressing fluid collections offers a best chance for improvement from an already very difficult situation.,The area was prepped in the usual manner, localized and the previous incision was reopened with a curved hemostat and about 5 mL of serosanguineous drainage was noted.  A through-and-through Keith needle bolster dressing was applied with cottonoid pledget on both sides of the ear to help compression.  She tolerated this procedure very well.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "2 mL",
+        "5 mL"
+      ],
+      "caregiver_checklist": [
+        "2 mL",
+        "5 mL"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I understand you had a procedure done on your ear a few months ago. You had a big bruise in your ear, and the doctors had to make a small cut to drain the blood. They also put stitches in to help the area heal. Now, they're checking your ear again because there's still some fluid there, and it might be causing problems.\n\nThe doctors want to drain the fluid again, but this time they'll do it through the same small cut they made before. They'll use a special needle to get the fluid out and then put a dressing on your ear to help it stay clean and stop more fluid from building up.\n\nYou'll need to take some medicine after the procedure. You'll have to take it three times a day for a few days. It's important to follow the instructions carefully and keep the area clean. If you have any pain or if the area looks red or swollen, you should let the doctors know right away.\n\nThe doctors know this can be a tricky situation, but they think getting the fluid out now will help make things better. They'll take good care of you and make sure you're comfortable. If you have any questions or concerns, just ask them. They're here to help you.",
+      "caregiver_checklist": "- Check the patient's ear for any signs of redness, swelling, or increased fluid accumulation.\n- Watch for signs of infection such as fever, increased pain, or pus-like discharge.\n- Call the healthcare provider if the patient develops any of the warning signs.\n- Schedule a follow-up appointment within 2 weeks to monitor the ear.\n- Check the wound for proper healing and cleanliness.\n- Call the healthcare provider if the wound shows signs of infection or poor healing.\n- Schedule a referral to a plastic surgeon if the deformity is severe and worsening.\n- Call the healthcare provider if the patient experiences severe pain or difficulty moving the ear.\n- Schedule a suture removal appointment in 4-6 weeks to remove the stitches.\n- Check the wound for proper healing and cleanliness.\n- Call the healthcare provider if the wound shows signs of infection or poor healing.",
+      "child_explanation": "You had a big bump in your ear that needed help. Your doctors found a little bit of yucky fluid. They cleaned it out and put a special bandage on. Now they want to check again soon. The grown-ups and doctors are taking good care of you. You'll be okay, you just need a little more help."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_I_D_-_Auricular_Hematoma",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_I_D_-_Auricular_Hematoma.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_I_D_-_Auricular_Hematoma.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_I_D_-_Auricular_Hematoma",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_I_D_-_Auricular_Hematoma.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_I_D_-_Auricular_Hematoma.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_I_D_-_Auricular_Hematoma",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_I_D_-_Auricular_Hematoma.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_I_D_-_Auricular_Hematoma.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [
+        "5 mL"
+      ],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": true,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 45.904,
+      "caregiver_checklist": 34.068,
+      "child_explanation": 6.218,
+      "total": 86.196
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:01:12+00:00"
+  }
+}

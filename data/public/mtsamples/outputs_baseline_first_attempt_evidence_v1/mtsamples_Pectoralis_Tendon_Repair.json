@@ -1,0 +1,196 @@
+{
+  "id": "mtsamples_Pectoralis_Tendon_Repair",
+  "patient_summary": "Hello there! I'll explain what's happening and what you need to do next. You had a surgery to fix a torn tendon in your shoulder. The tendon was torn when you were doing heavy exercises. The doctors found this out through an MRI scan. They decided to fix it because you wanted to keep doing your job and lifting heavy things.\n\nYou will need to take some medicines after the surgery. Your doctor will give you a list of these medicines and how often to take them. Here's what you need to do:\n\n- Take the pain medicine as directed. It will help you feel better.\n- Take the antibiotic medicine as directed. This helps prevent any infection.\n- Take the medicine to help you sleep if you're having trouble sleeping.\n\nYou should take these medicines every day until your doctor tells you to stop. You might feel some pain or swelling after the surgery. This is normal and will go away as you heal.\n\nYou should call the doctor if you have any of these things:\n- Your pain is worse than what you're taking.\n- You have a fever.\n- You have redness or swelling that's getting bigger.\n- You have any signs of infection like a bad smell from the wound.\n\nYou'll need to rest your shoulder for a while. Your doctor will give you a special shoulder brace to wear. You'll be able to move your arm a little bit, but you won't be able to lift heavy things for a few weeks. Your doctor will tell you when you can start doing gentle exercises. \n\nRemember, you're in good hands. Your doctors and nurses are here to help you get better. If you have any questions or concerns, don't hesitate to ask.",
+  "caregiver_checklist": [
+    "Check for signs of infection such as redness, swelling, or warmth around the incision site.",
+    "Watch for signs of excessive bleeding or drainage from the incision.",
+    "Call if there is any increase in pain or if the pain is not tolerable.",
+    "Schedule a follow-up appointment in 10 days to assess healing progress.",
+    "Call if there are any signs of deep vein thrombosis such as swelling, pain, or redness in the legs.",
+    "Check for any signs of shoulder stiffness or weakness.",
+    "Call if there are any signs of shoulder instability or if the shoulder feels unstable.",
+    "Schedule a physical therapy appointment in 4-6 weeks to start gentle exercises.",
+    "Call if there are any signs of shoulder pain or if the pain is not improving."
+  ],
+  "child_explanation": "You had a big muscle in your shoulder get torn. But don't worry, the doctors are taking care of it. They carefully fixed your shoulder. You'll feel better soon. You're like a superhero, healing with the help of your medicine team. The grown-ups are doing a great job. You'll be all better in a few days.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 501,
+      "end": 505
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1229,
+      "end": 1233
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS: , Right pectoralis major tendon rupture.,POSTOPERATIVE DIAGNOSIS: , Right pectoralis major tendon rupture.,OPERATION PERFORMED: , Open repair of right pectoralis major tendon.,ANESTHESIA:,  General with an interscalene block.,COMPLICATIONS:,  None.,Needle and sponge counts were done and correct.,INDICATION FOR OPERATION:  ,The patient is a 26-year-old right hand dominant male who works in sales, who was performing heavy bench press exercises when he felt a tearing burning pain severe in his right shoulder.  The patient presented with mild bruising over the proximal arm of the right side with x-ray showing no fracture.  Over concerns for pectoralis tendon tear, he was sent for MRI evaluation where a complete rupture of a portion of the pectoralis major tendon was noted.  Due to the patient's young age and active lifestyle surgical treatment was recommended in order to obtain best result.  The risks and benefits of the procedure were discussed in detail with the patient including, but not limited to scarring, infection, damage to blood vessels and nerves, re-rupture, need further surgery, loss of range of motion, inability to return to heavy activity such as weight lifting, complex usual pain syndrome, and deep vein thrombosis as well as anesthetic risks.  Understanding all risks and benefits, the patient desires to proceed with surgery as planned.,FINDINGS:,1.  Following deltopectoral approach to the right shoulder, the pectoralis major tendon was encountered.  The clavicular head was noted to be intact.  There was noted to be complete rupture of the sternal head of the pectoralis major tendon with an oblique-type tear having some remaining cuff on the humerus and some tendon attached to the retracted portion.,2.  Following freeing of adhesions using tracks and sutures, the pectoralis major tendon was able to reapproximated to its insertion site on the humerus just lateral to the biceps.,3.  A soft tissue repair was performed with #5 FiberWire suture and a single suture anchor of 5 x 5 bioabsorbable anchor was placed in order to decrease tension at the repair site.  Following repair of soft tissue and using the bone anchor, there was noted to be good apposition of the tendon with edges and a solid repair.,OPERATIVE REPORT IN DETAIL: , The patient was identified in the preop holding area.  His right shoulder was identified, marked his appropriate surgical site after verification with the patient.  He was then taken to the operating room where he was transferred to the operative table in supine position and placed under general anesthesia by anesthesiology team.  He then received prophylactic antibiotics.  A time-out was then undertaken verifying the correct patient, extremity, surgery performed, administration of antibiotics, and the availability of equipment.  At this point, the patient was placed to a modified beech chair position with care taken to ensure all appropriate pressure points were padded and there was no pressure over the eyes.  The right upper extremity was then prepped and draped in the usual sterile fashion.  Preoperative markings were still visible at this point.  A deltopectoral incision was made utilizing the inferior portion.  Dissection was carried down.  The deltoid was retracted laterally.  The clavicular head of the pectoralis major was noted to be intact with the absence of the sternal insertion.  There was a small cuff of tissue left on the proximal humerus associated with the clavicular head.  Gentle probing medially revealed the end of the sternal retracted portion, traction sutures of #5 Ethibond were used in this to allow for retraction and freeing from light adhesion.  This allowed reapproximation of the retracted tendon to the tendon stump.  At this point, a repair using #5 FiberWire was then performed of the pectoralis major tendon back to stump on the proximal humerus noting good apposition of the tendon edges and no gapping of the repair site.  At this point, a single metal suture anchor was attempted to be implanted just lateral to the insertion of the pectoralis in order to remove tension off the repair site; however, the inserted device attached to the metal anchor broke during insertion due to significant hardness of the bone.  For this reason, the starting hole was tapped and a 5x5 bioabsorbable anchor was placed, doubly loaded.  The sutures were then weaved through the lateral aspect of the torn tendon and a modified Krackow type performed and sutured thereby relieving tension off the soft tissue repair.  At this point, there was noted to be excellent apposition of the soft tissue ends and a solid repair to gentle manipulation.  Aggressive external rotation was not performed.  The wound was then copiously irrigated.  The cephalic vein was not injured during the case.  The skin was then closed using a 2-0 Vicryl followed by a 3-0 subcuticular Prolene suture with Steri-Strips.  Sterile dressing was then placed.  Anesthesia was then performed, interscalene block.  The patient was then awakened from anesthesia and transported to postanesthesia care in stable condition in a shoulder immobilizer with the arm adducted and internally rotated.,Plan for this patient, the patient will remain in the shoulder immobilizer until followup visit in approximately 10 days.  We will then start a gentle Codman type exercises and having limited motion until the 4-6 week point based on the patient's progression.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what's happening and what you need to do next. You had a surgery to fix a torn tendon in your shoulder. The tendon was torn when you were doing heavy exercises. The doctors found this out through an MRI scan. They decided to fix it because you wanted to keep doing your job and lifting heavy things.\n\nYou will need to take some medicines after the surgery. Your doctor will give you a list of these medicines and how often to take them. Here's what you need to do:\n\n- Take the pain medicine as directed. It will help you feel better.\n- Take the antibiotic medicine as directed. This helps prevent any infection.\n- Take the medicine to help you sleep if you're having trouble sleeping.\n\nYou should take these medicines every day until your doctor tells you to stop. You might feel some pain or swelling after the surgery. This is normal and will go away as you heal.\n\nYou should call the doctor if you have any of these things:\n- Your pain is worse than what you're taking.\n- You have a fever.\n- You have redness or swelling that's getting bigger.\n- You have any signs of infection like a bad smell from the wound.\n\nYou'll need to rest your shoulder for a while. Your doctor will give you a special shoulder brace to wear. You'll be able to move your arm a little bit, but you won't be able to lift heavy things for a few weeks. Your doctor will tell you when you can start doing gentle exercises. \n\nRemember, you're in good hands. Your doctors and nurses are here to help you get better. If you have any questions or concerns, don't hesitate to ask.",
+      "caregiver_checklist": "- Check for signs of infection such as redness, swelling, or warmth around the incision site.\n- Watch for signs of excessive bleeding or drainage from the incision.\n- Call if there is any increase in pain or if the pain is not tolerable.\n- Schedule a follow-up appointment in 10 days to assess healing progress.\n- Call if there are any signs of deep vein thrombosis such as swelling, pain, or redness in the legs.\n- Check for any signs of shoulder stiffness or weakness.\n- Call if there are any signs of shoulder instability or if the shoulder feels unstable.\n- Schedule a physical therapy appointment in 4-6 weeks to start gentle exercises.\n- Call if there are any signs of shoulder pain or if the pain is not improving.",
+      "child_explanation": "You had a big muscle in your shoulder get torn. But don't worry, the doctors are taking care of it. They carefully fixed your shoulder. You'll feel better soon. You're like a superhero, healing with the help of your medicine team. The grown-ups are doing a great job. You'll be all better in a few days."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Pectoralis_Tendon_Repair",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Pectoralis_Tendon_Repair.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Pectoralis_Tendon_Repair.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Pectoralis_Tendon_Repair",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Pectoralis_Tendon_Repair.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Pectoralis_Tendon_Repair.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Pectoralis_Tendon_Repair",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Pectoralis_Tendon_Repair.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Pectoralis_Tendon_Repair.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 35.268,
+      "caregiver_checklist": 23.183,
+      "child_explanation": 15.886,
+      "total": 74.37
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:21:59+00:00"
+  }
+}

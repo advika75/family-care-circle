@@ -1,0 +1,279 @@
+{
+  "id": "mtsamples_Leaking_Nephrostomy_Tube",
+  "patient_summary": "Hello there, it looks like you're having some trouble with the tube that was put in your back to help drain your urine. The tube has started leaking urine around the site where it's placed. You don't have any pain, fever, or other problems. You feel like your usual self and have no other issues.\n\nYou have a few medicines that were reviewed by the nurses. You don't have any allergies. You don't smoke. You have a history of prostate cancer that has spread to other parts of your body, which caused problems with your ureters. The ureters are the tubes that carry urine from your kidneys to your bladder. The cancer made them narrow and blocked, which caused your kidneys to not work properly for a while.\n\nThe doctors placed two nephrostomy tubes to help drain your urine. One is on your left side and the other is on your right side. The right side tube has started leaking urine. The doctors will come to change it out and check it tomorrow at 10 a.m. They want you to come back to the hospital for this.\n\nYou should call the hospital if you start to have any new problems or concerns. If you have any questions, you can always ask your doctors or nurses. They are here to help you.",
+  "caregiver_checklist": [
+    "Check the right nephrostomy tube for any signs of infection or leakage.",
+    "Watch for any new symptoms like pain, fever, chills, nausea, vomiting, flank pain, abdominal pain, chest pain, shortness of breath, swelling, rashes, or bleeding.",
+    "Call the hospital at 10 a.m. tomorrow for the scheduled nephrostomy tube replacement.",
+    "Schedule a follow-up appointment with the urologist if symptoms persist or worsen.",
+    "Call the healthcare team if you notice any signs of infection, such as redness, warmth, or increased drainage.",
+    "Call if the patient develops new symptoms or if the current symptoms worsen.",
+    "Check the dressing and collection bag for any signs of leakage or infection.",
+    "Monitor the patient for signs of dehydration, as urine leakage can lead to fluid loss."
+  ],
+  "child_explanation": "You have a small tube in your back to help drain your pee. A few days ago, you started leaking urine around the tube. It's like when a tiny balloon pops. The doctors and grown-ups are taking care of you. They want to change the tube tomorrow. You'll need to come back to the hospital. The doctors will check everything and make sure you're all better. You're in good hands.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 266,
+      "end": 270
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 286,
+      "end": 291
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 656,
+      "end": 661
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 665,
+      "end": 671
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 677,
+      "end": 683
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 687,
+      "end": 695
+    },
+    {
+      "text": "flank pain",
+      "label": "SYMPTOM",
+      "start": 701,
+      "end": 711
+    },
+    {
+      "text": "abdominal pain",
+      "label": "SYMPTOM",
+      "start": 716,
+      "end": 730
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 735,
+      "end": 745
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 750,
+      "end": 769
+    },
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 774,
+      "end": 782
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 935,
+      "end": 947
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 1712,
+      "end": 1731
+    },
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 2352,
+      "end": 2360
+    },
+    {
+      "text": "rashes",
+      "label": "SYMPTOM",
+      "start": 2478,
+      "end": 2484
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 2729,
+      "end": 2737
+    }
+  ],
+  "regimens": [],
+  "source_text": "CHIEF COMPLAINT:  ,Leaking nephrostomy tube.,HISTORY OF PRESENT ILLNESS: , This 61-year-old male was referred in today secondary to having urine leaked around the ostomy site for his right sided nephrostomy tube.  The leaking began this a.m.  The patient denies any pain, does not have fever and has no other problems or complaints.  The patient had bilateral nephrostomy tubes placed one month ago secondary to his prostate cancer metastasizing and causing bilateral ureteral obstructions that were severe enough to cause acute renal failure.  The patient states he feels like his usual self and has no other problems or concerns.  The patient denies any fever or chills.  No nausea or vomiting.  No flank pain, no abdominal pain, no chest pain, no shortness of breath, no swelling to the legs.,REVIEW OF SYSTEMS: , Review of systems otherwise negative and noncontributory.,PAST MEDICAL HISTORY: , Metastatic prostate cancer, anemia, hypertension.,MEDICATIONS: , Medication reconciliation sheet has been reviewed on the nurses' note.,ALLERGIES: , NO KNOWN DRUG ALLERGIES.,SOCIAL HISTORY: , The patient is a nonsmoker.,PHYSICAL EXAMINATION:  ,VITAL SIGNS:  Temperature 97.7 oral, blood pressure 150/85, pulse is 91, respirations 16, oxygen saturation 97% on room air and interpreted as normal.  CONSTITUTIONAL:  The patient is well nourished, well developed, appears to be healthy, calm, comfortable, no acute distress, looks well.  HEENT:  Eyes are normal with clear sclerae and cornea.  NECK:  Supple, full range of motion.  CARDIOVASCULAR:  Heart has regular rate and rhythm without murmur, rub or gallop.  Peripheral pulses are +2.  No dependent edema.  RESPIRATIONS:  Clear to auscultation bilaterally.  No shortness of breath.  No wheezes, rales or rhonchi.  Good air movement bilaterally.  GASTROINTESTINAL:  Abdomen is soft, nontender, nondistended.  No rebound or guarding.  Normal benign abdominal exam.  MUSCULOSKELETAL:  The patient has nontender back and flank.  No abnormalities noted to the back other than the bilateral nephrostomy tubes.  The nephrostomy tube left has no abnormalities, no sign of infection.  No leaking of urine, nontender, nephrostomy tube on the right has a damp dressing, which has a small amount of urine soaked into it.  There is no obvious active leak from the ostomy site.  No sign of infection.  No erythema, swelling or tenderness.  The collection bag is full of clear urine.  The patient has no abnormalities on his legs.  SKIN:  No rashes or lesions.  No sign of infection.  NEUROLOGIC:  Motor and sensory are intact to the extremities.  The patient has normal ambulation, normal speech.  PSYCHIATRIC:  Alert and oriented x4.  Normal mood and affect.  HEMATOLOGIC AND LYMPHATIC:  No bleeding or bruising.,EMERGENCY DEPARTMENT COURSE:,  Reviewed the patient's admission record from one month ago when he was admitted for the placement of the nephrostomy tubes, both Dr. X and Dr. Y have been consulted and both had recommended nephrostomy tubes, there was not the name mentioned as to who placed the nephrostomy tubes.  There was no consultation dictated for this and no name was mentioned in the discharge summary, paged Dr. X as this was the only name that the patient could remember that might have been involved with the placement of the nephrostomy tubes.  Dr. A responded to the page and recommended __________ off a BMP and discussing it with Dr. B, the radiologist as he recalled that this was the physician who placed the nephrostomy tubes, paged Dr. X and received a call back from Dr. X.  Dr. X stated that he would have somebody get in touch with us about scheduling a time for which they will change out the nephrostomy tube to a larger and check a nephrogram at that time that came down and stated that they would do it at 10 a.m. tomorrow.  This was discussed with the patient and instructions to return to the hospital at 10 a.m. to have this tube changed out by Dr. X was explained and understood.,DIAGNOSES:,1.  WEAK NEPHROSTOMY SITE FOR THE RIGHT NEPHROSTOMY TUBE.,2.  PROSTATE CANCER, METASTATIC.,3.  URETERAL OBSTRUCTION.,The patient on discharge is stable and dispositioned to home.,PLAN: , We will have the patient return to the hospital tomorrow at 10 a.m. for the replacement of his right nephrostomy tube by Dr. X.  The patient was asked to return in the emergency room sooner if he should develop any new problems or concerns.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, it looks like you're having some trouble with the tube that was put in your back to help drain your urine. The tube has started leaking urine around the site where it's placed. You don't have any pain, fever, or other problems. You feel like your usual self and have no other issues.\n\nYou have a few medicines that were reviewed by the nurses. You don't have any allergies. You don't smoke. You have a history of prostate cancer that has spread to other parts of your body, which caused problems with your ureters. The ureters are the tubes that carry urine from your kidneys to your bladder. The cancer made them narrow and blocked, which caused your kidneys to not work properly for a while.\n\nThe doctors placed two nephrostomy tubes to help drain your urine. One is on your left side and the other is on your right side. The right side tube has started leaking urine. The doctors will come to change it out and check it tomorrow at 10 a.m. They want you to come back to the hospital for this.\n\nYou should call the hospital if you start to have any new problems or concerns. If you have any questions, you can always ask your doctors or nurses. They are here to help you.",
+      "caregiver_checklist": "- Check the right nephrostomy tube for any signs of infection or leakage.\n- Watch for any new symptoms like pain, fever, chills, nausea, vomiting, flank pain, abdominal pain, chest pain, shortness of breath, swelling, rashes, or bleeding.\n- Call the hospital at 10 a.m. tomorrow for the scheduled nephrostomy tube replacement.\n- Schedule a follow-up appointment with the urologist if symptoms persist or worsen.\n- Call the healthcare team if you notice any signs of infection, such as redness, warmth, or increased drainage.\n- Call if the patient develops new symptoms or if the current symptoms worsen.\n- Check the dressing and collection bag for any signs of leakage or infection.\n- Monitor the patient for signs of dehydration, as urine leakage can lead to fluid loss.",
+      "child_explanation": "You have a small tube in your back to help drain your pee. A few days ago, you started leaking urine around the tube. It's like when a tiny balloon pops. The doctors and grown-ups are taking care of you. They want to change the tube tomorrow. You'll need to come back to the hospital. The doctors will check everything and make sure you're all better. You're in good hands."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Leaking_Nephrostomy_Tube",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Leaking_Nephrostomy_Tube.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Leaking_Nephrostomy_Tube.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Leaking_Nephrostomy_Tube",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Leaking_Nephrostomy_Tube.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Leaking_Nephrostomy_Tube.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Leaking_Nephrostomy_Tube",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Leaking_Nephrostomy_Tube.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Leaking_Nephrostomy_Tube.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 23.461,
+      "caregiver_checklist": 17.766,
+      "child_explanation": 12.492,
+      "total": 53.731
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T11:19:31+00:00"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "id": "mtsamples_Tilt_Table_Test_-_1",
+  "patient_summary": "You're feeling dizzy and sometimes feel like you might pass out. The doctor did some tests to understand why you feel this way. They put you on your back for a while and then made you stand up on a special table. While you were standing, your heart rate went up to 127, which is a bit higher than normal. Your blood pressure was still in the normal range, but you felt dizzy and a bit hot.\n\nThe doctor gave you a special medicine called nitroglycerin to help you feel better. You felt dizzy after taking it, but you didn't pass out. The test was stopped because you felt okay.\n\nThe doctor thinks you might have a condition called vasovagal syncope, which causes your heart rate to increase and your blood pressure to drop. This can make you feel dizzy and sometimes like you might pass out.\n\nThe doctor wants you to come back in a week for a follow-up visit. If you still feel dizzy or like you might pass out again, the doctor will prescribe a medicine called Toprol-XL. You'll take this medicine every day for now. The medicine they will prescribe is Toprol-XL, and you'll take it 12.5 mg every day. The nitroglycerin medicine they gave you was 0.4 mg.\n\nRemember, if you feel dizzy or like you might pass out again, you should tell the doctor right away. They can help you feel better.",
+  "caregiver_checklist": [
+    "Give Toprol-XL 12.5 mg to the patient.",
+    "Check the patient's blood pressure and heart rate daily.",
+    "Watch for symptoms of dizziness, nausea, or hot flashes.",
+    "Call the healthcare provider if symptoms worsen or persist.",
+    "Schedule a follow-up appointment in one week.",
+    "Check for signs of syncope or fainting.",
+    "Watch for new symptoms of syncope or fainting.",
+    "Call the healthcare provider if new symptoms appear.",
+    "Schedule a refill for Toprol-XL if needed.",
+    "Confirm with the care team: 0.4 mg (dosage)"
+  ],
+  "child_explanation": "You had a tilt test today, sweetie.\nThe grown-ups talked about your tummy feeling funny.\nYou lay down and then stood up, like a fun game.\nYour heart beat faster, but you didn't fall down.\nYou felt a bit dizzy and hot, but you were okay.\nNow the doctors will check you next week.\nThey might give you a special medicine to help.",
+  "entities": [
+    {
+      "text": "syncope",
+      "label": "SYMPTOM",
+      "start": 80,
+      "end": 87
+    },
+    {
+      "text": "dizziness",
+      "label": "SYMPTOM",
+      "start": 125,
+      "end": 134
+    },
+    {
+      "text": "0.4 mg",
+      "label": "DOSAGE",
+      "start": 543,
+      "end": 549
+    },
+    {
+      "text": "syncope",
+      "label": "SYMPTOM",
+      "start": 826,
+      "end": 833
+    },
+    {
+      "text": "12.5 mg",
+      "label": "DOSAGE",
+      "start": 1009,
+      "end": 1016
+    },
+    {
+      "text": "every day",
+      "label": "FREQUENCY",
+      "start": 1017,
+      "end": 1026
+    }
+  ],
+  "regimens": [],
+  "source_text": "INDICATIONS: , The patient is a 22-year-old female with past medical history of syncope.  The patient is also complaining of dizziness.  She was referred here by Dr. X for tilt table.,TECHNIQUE: , Risks and benefits explained to the patient.  Consent obtained.  She was lying down on her back for 20 minutes and her blood pressure was 111/75 and heart rate 89.  She was standing up on the tilt tablet for 20 minutes and her heart rate went up to 127 and blood pressure was still in 120/80.  Then, the patient received sublingual nitroglycerin 0.4 mg.  The patient felt dizzy at that time and heart rate was in the 120 and blood pressure was 110/50.  The patient felt nauseous and felt hot at that time.  She did not pass out.,COMPLICATIONS:,  None.,Tilt table was then terminated.,SUMMARY:,  Positive tilt table for vasovagal syncope with significant increase of heart rate with minimal decrease of blood pressure.,RECOMMENDATIONS: , I recommend followup in the office in one week and she will need Toprol-XL 12.5 mg every day if symptoms persist.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "0.4 mg",
+        "12.5 mg"
+      ],
+      "caregiver_checklist": [
+        "0.4 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "You're feeling dizzy and sometimes feel like you might pass out. The doctor did some tests to understand why you feel this way. They put you on your back for a while and then made you stand up on a special table. While you were standing, your heart rate went up to 127, which is a bit higher than normal. Your blood pressure was still in the normal range, but you felt dizzy and a bit hot.\n\nThe doctor gave you a special medicine called nitroglycerin to help you feel better. You felt dizzy after taking it, but you didn't pass out. The test was stopped because you felt okay.\n\nThe doctor thinks you might have a condition called vasovagal syncope, which causes your heart rate to increase and your blood pressure to drop. This can make you feel dizzy and sometimes like you might pass out.\n\nThe doctor wants you to come back in a week for a follow-up visit. If you still feel dizzy or like you might pass out, the doctor will prescribe a medicine called Toprol-XL. You'll take this medicine every day for now.\n\nRemember, if you feel dizzy or like you might pass out again, you should tell the doctor right away. They can help you feel better.",
+      "caregiver_checklist": "- Give Toprol-XL 12.5 mg to the patient.\n- Check the patient's blood pressure and heart rate daily.\n- Watch for symptoms of dizziness, nausea, or hot flashes.\n- Call the healthcare provider if symptoms worsen or persist.\n- Schedule a follow-up appointment in one week.\n- Check for signs of syncope or fainting.\n- Watch for new symptoms of syncope or fainting.\n- Call the healthcare provider if new symptoms appear.\n- Schedule a refill for Toprol-XL if needed.",
+      "child_explanation": "You had a tilt test today, sweetie.\nThe grown-ups talked about your tummy feeling funny.\nYou lay down and then stood up, like a fun game.\nYour heart beat faster, but you didn't fall down.\nYou felt a bit dizzy and hot, but you were okay.\nNow the doctors will check you next week.\nThey might give you a special medicine to help."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Tilt_Table_Test_-_1",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tilt_Table_Test_-_1.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Tilt_Table_Test_-_1.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Tilt_Table_Test_-_1",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tilt_Table_Test_-_1.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Tilt_Table_Test_-_1.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Tilt_Table_Test_-_1",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tilt_Table_Test_-_1.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Tilt_Table_Test_-_1.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "0.4 mg"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 57.75,
+      "caregiver_checklist": 24.599,
+      "child_explanation": 7.297,
+      "total": 89.659
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T14:04:55+00:00"
+  }
+}

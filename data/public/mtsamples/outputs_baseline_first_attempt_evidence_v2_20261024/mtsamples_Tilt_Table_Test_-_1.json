@@ -1,0 +1,225 @@
+{
+  "id": "mtsamples_Tilt_Table_Test_-_1",
+  "patient_summary": "Hi there! I'm here to explain what happened and what you need to do next. You had some problems with feeling dizzy and passing out. The doctor wanted to check if you were having a condition called vasovagal syncope, which is when your heart rate and blood pressure drop suddenly. \n\nThe doctor did a special test called a tilt table. You were lying down for 20 minutes, and then you stood up. Your heart rate went up to 127, which is very fast. Your blood pressure was still in the normal range. \n\nYou also took a special medicine called nitroglycerin. It came in a 0.4 mg dose, and you took it once. It made you feel dizzy, nauseous, and hot. But you didn't pass out, which is good. \n\nThe doctor thinks you might have this condition, so they want you to come back in a week for a follow-up visit. They also want you to take a medicine called Toprol-XL. It comes in a 12.5 mg dose, and you need to take it once a day. \n\nIf you start feeling dizzy or pass out again, you should call the doctor or come to the hospital right away. Remember, it's important to follow the doctor's advice and take the medicine as they tell you.",
+  "caregiver_checklist": [
+    "Check the patient's blood pressure and heart rate every morning and evening.",
+    "Give the patient sublingual nitroglycerin 0.4 mg if she feels dizzy or nauseous.",
+    "Schedule a follow-up appointment in one week.",
+    "Watch for signs of syncope or dizziness.",
+    "Call the doctor if the patient experiences syncope or dizziness.",
+    "Monitor for nausea and hot flashes.",
+    "Call the doctor if symptoms persist or worsen.",
+    "Schedule a refill for Toprol-XL 12.5 mg every day if the patient's symptoms do not improve."
+  ],
+  "child_explanation": "You had a little test today. You lay down and then stood up. The doctors wanted to see how your body works. You felt dizzy and hot, but you didn't faint. The doctors are taking good care of you. They will check you in a week. If you still feel wobbly, you might need a special medicine.",
+  "entities": [
+    {
+      "text": "syncope",
+      "label": "SYMPTOM",
+      "start": 80,
+      "end": 87
+    },
+    {
+      "text": "dizziness",
+      "label": "SYMPTOM",
+      "start": 125,
+      "end": 134
+    },
+    {
+      "text": "0.4 mg",
+      "label": "DOSAGE",
+      "start": 543,
+      "end": 549
+    },
+    {
+      "text": "syncope",
+      "label": "SYMPTOM",
+      "start": 826,
+      "end": 833
+    },
+    {
+      "text": "12.5 mg",
+      "label": "DOSAGE",
+      "start": 1009,
+      "end": 1016
+    },
+    {
+      "text": "every day",
+      "label": "FREQUENCY",
+      "start": 1017,
+      "end": 1026
+    }
+  ],
+  "regimens": [],
+  "source_text": "INDICATIONS: , The patient is a 22-year-old female with past medical history of syncope.  The patient is also complaining of dizziness.  She was referred here by Dr. X for tilt table.,TECHNIQUE: , Risks and benefits explained to the patient.  Consent obtained.  She was lying down on her back for 20 minutes and her blood pressure was 111/75 and heart rate 89.  She was standing up on the tilt tablet for 20 minutes and her heart rate went up to 127 and blood pressure was still in 120/80.  Then, the patient received sublingual nitroglycerin 0.4 mg.  The patient felt dizzy at that time and heart rate was in the 120 and blood pressure was 110/50.  The patient felt nauseous and felt hot at that time.  She did not pass out.,COMPLICATIONS:,  None.,Tilt table was then terminated.,SUMMARY:,  Positive tilt table for vasovagal syncope with significant increase of heart rate with minimal decrease of blood pressure.,RECOMMENDATIONS: , I recommend followup in the office in one week and she will need Toprol-XL 12.5 mg every day if symptoms persist.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "0.4 mg"
+      ],
+      "caregiver_checklist": [
+        "every day"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hi there! I'm here to explain what happened and what you need to do next. You had some problems with feeling dizzy and passing out. The doctor wanted to check if you were having a condition called vasovagal syncope, which is when your heart rate and blood pressure drop suddenly. \n\nThe doctor did a special test called a tilt table. You were lying down for 20 minutes, and then you stood up. Your heart rate went up to 127, which is very fast. Your blood pressure was still in the normal range. \n\nYou also took a special medicine called nitroglycerin. It made you feel dizzy, nauseous, and hot. But you didn't pass out, which is good. \n\nThe doctor thinks you might have this condition, so they want you to come back in a week for a follow-up visit. They also want you to take a medicine called Toprol-XL. It comes in a 12.5 mg dose, and you need to take it once a day. \n\nIf you start feeling dizzy or pass out again, you should call the doctor or come to the hospital right away. Remember, it's important to follow the doctor's advice and take the medicine as they tell you.",
+      "caregiver_checklist": "- Check the patient's blood pressure and heart rate every morning and evening.\n- Give the patient sublingual nitroglycerin 0.4 mg if she feels dizzy or nauseous.\n- Schedule a follow-up appointment in one week.\n- Watch for signs of syncope or dizziness.\n- Call the doctor if the patient experiences syncope or dizziness.\n- Monitor for nausea and hot flashes.\n- Call the doctor if symptoms persist or worsen.\n- Schedule a refill for Toprol-XL 12.5 mg if the patient's symptoms do not improve.",
+      "child_explanation": "You had a little test today. You lay down and then stood up. The doctors wanted to see how your body works. You felt dizzy and hot, but you didn't faint. The doctors are taking good care of you. They will check you in a week. If you still feel wobbly, you might need a special medicine."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Tilt_Table_Test_-_1",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tilt_Table_Test_-_1.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Tilt_Table_Test_-_1.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Tilt_Table_Test_-_1",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tilt_Table_Test_-_1.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Tilt_Table_Test_-_1.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Tilt_Table_Test_-_1",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tilt_Table_Test_-_1.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Tilt_Table_Test_-_1.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 29.898,
+      "caregiver_checklist": 15.08,
+      "child_explanation": 6.155,
+      "total": 51.143
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:01:57+00:00"
+  }
+}

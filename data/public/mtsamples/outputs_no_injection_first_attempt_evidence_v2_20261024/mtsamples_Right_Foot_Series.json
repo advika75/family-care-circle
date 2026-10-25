@@ -1,0 +1,195 @@
+{
+  "id": "mtsamples_Right_Foot_Series",
+  "patient_summary": "Hello there, you've had an X-ray done on your right foot. The X-ray showed some small changes in your bones. There might be tiny cracks in your fourth and fifth metatarsal bones, which are the bones in your toes. There's also a small crack in the calcaneus, which is the bone at the back of your foot. These cracks might not be very serious, but we need to be careful and make sure they're not causing you pain.\n\nYou'll need to take some medicine to help with any swelling or pain. We'll give you instructions on how to take the medicine later. For now, just follow the instructions you get.\n\nIf you have any pain, redness, or swelling that gets worse, or if you have any concerns, you should call the emergency room. They can help you if you need it.\n\nWe'll also need to do some more X-rays to make sure everything is okay. Your doctor will call the emergency room to let them know about the X-rays. They'll want to check if the X-rays show any fractures or if you're in pain at the site of the X-rays.\n\nRemember, it's important to follow the instructions and keep coming back for more X-rays if needed. Your doctor and nurses are here to help you.",
+  "caregiver_checklist": [
+    "Check the right foot for swelling and pain.",
+    "Watch for signs of increased swelling or pain.",
+    "Call the emergency room if swelling increases or pain worsens.",
+    "Schedule follow-up imaging in 2 weeks.",
+    "Check the right foot for any new or worsening symptoms.",
+    "Watch for any new fractures or deformities.",
+    "Call the healthcare provider if there are any new symptoms.",
+    "Schedule a phone call with the emergency room to discuss findings."
+  ],
+  "child_explanation": "You had an X-ray of your right foot. A few days ago, you got hurt. The doctors saw some tiny holes in your bones. It might be a small break, but they're not sure yet. You'll need to rest and use a splint. Your grown-ups will check on you soon. You're in good hands.",
+  "entities": [
+    {
+      "text": "swelling",
+      "label": "SYMPTOM",
+      "start": 478,
+      "end": 486
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 715,
+      "end": 719
+    }
+  ],
+  "regimens": [],
+  "source_text": "EXAM: , Right foot series.,REASON FOR EXAM:  ,Injury.,FINDINGS: , Three images of the right foot were obtained.  On the AP image only, there is a subtle lucency seen in the proximal right fourth metatarsal and a mild increased sclerosis in the proximal fifth metatarsal.  Also on a single image, there is a lucency seen in the lateral aspect of the calcaneus that is seen on the oblique image only.  Fractures in these bones cannot be completely excluded.  There is soft tissue swelling seen overlying the calcaneus within this region.,IMPRESSION: , Cannot exclude nondisplaced fractures in the lateral aspect of the calcaneus or at the base of the fourth and fifth metatarsals.  Recommend correlation with site of pain in addition to conservative management and followup imaging.  A phone call will be placed to the emergency room regarding these findings.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you've had an X-ray done on your right foot. The X-ray showed some small changes in your bones. There might be tiny cracks in your fourth and fifth metatarsal bones, which are the bones in your toes. There's also a small crack in the calcaneus, which is the bone at the back of your foot. These cracks might not be very serious, but we need to be careful and make sure they're not causing you pain.\n\nYou'll need to take some medicine to help with any swelling or pain. We'll give you instructions on how to take the medicine later. For now, just follow the instructions you get.\n\nIf you have any pain, redness, or swelling that gets worse, or if you have any concerns, you should call the emergency room. They can help you if you need it.\n\nWe'll also need to do some more X-rays to make sure everything is okay. Your doctor will call the emergency room to let them know about the X-rays. They'll want to check if the X-rays show any fractures or if you're in pain at the site of the X-rays.\n\nRemember, it's important to follow the instructions and keep coming back for more X-rays if needed. Your doctor and nurses are here to help you.",
+      "caregiver_checklist": "- Check the right foot for swelling and pain.\n- Watch for signs of increased swelling or pain.\n- Call the emergency room if swelling increases or pain worsens.\n- Schedule follow-up imaging in 2 weeks.\n- Check the right foot for any new or worsening symptoms.\n- Watch for any new fractures or deformities.\n- Call the healthcare provider if there are any new symptoms.\n- Schedule a phone call with the emergency room to discuss findings.",
+      "child_explanation": "You had an X-ray of your right foot. A few days ago, you got hurt. The doctors saw some tiny holes in your bones. It might be a small break, but they're not sure yet. You'll need to rest and use a splint. Your grown-ups will check on you soon. You're in good hands."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Right_Foot_Series",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Right_Foot_Series.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Right_Foot_Series.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Right_Foot_Series",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Right_Foot_Series.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Right_Foot_Series.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Right_Foot_Series",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Right_Foot_Series.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Right_Foot_Series.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 16.669,
+      "caregiver_checklist": 7.091,
+      "child_explanation": 6.482,
+      "total": 30.25
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:53:56+00:00"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "mtsamples_Shone_complex",
+  "patient_summary": "Hello there, you're a 13-year-old boy who has had some heart problems since you were a baby. You have a pacemaker in your heart to help it beat properly. Last night, you woke up feeling like you were having a dream, and you thought your defibrillator was going off. Your dad took you to the hospital because you were feeling worried and scared. \n\nWhen you got to the hospital, the doctors checked you out. They found that your heart was beating very slowly, and your defibrillator wasn't working properly. The doctors had to fix your defibrillator and make sure it was working again. \n\nYou were in a lot of pain, and the doctors had to turn off your defibrillator to make you feel better. They also put you on a monitor to keep an eye on your heart. \n\nThe doctors found out that your heart was still beating slowly, and they're going to keep you in the ICU to make sure you're okay. They want to make sure your heart is working properly and that you don't have any more pain.\n\nYou were in the hospital for about an hour, and you were brought to the ICU. The doctors there checked you again and made sure you were stable. You were given some medicine to help you feel better, and you were given a chest x-ray to make sure everything was okay.\n\nYou'll need to stay in the ICU for a little while to make sure your heart is working properly. The doctors will keep you there until they're sure you're feeling better. If you have any more pain or if you're not feeling well, you should tell the doctors right away.",
+  "caregiver_checklist": [
+    "Check the patient’s vital signs every 15 minutes.",
+    "Monitor for signs of hypotension or syncope.",
+    "Watch for any changes in heart rate or rhythm.",
+    "Call the Cardiology service if the patient’s heart rate drops below 40.",
+    "Schedule a follow-up appointment with the Cardiology team in 2 weeks.",
+    "Call the patient’s primary care provider if symptoms worsen.",
+    "Watch for signs of dehydration, such as dry mucous membranes.",
+    "Call the patient’s primary care provider if the patient’s pain persists.",
+    "Schedule a chest x-ray in 24 hours to check for any new abnormalities.",
+    "Call the patient’s primary care provider if the patient’s symptoms return."
+  ],
+  "child_explanation": "You had a dream last night, you know? In your dream, you felt thunder and it woke you up. You thought your heart was going off, but it wasn't real. Your heart was just a little slow, like when you're tired. The grown-ups and doctors are taking care of you. They put you in a special car and brought you to the hospital. The doctors checked your heart and found some scar tissue. They fixed it and now your heart is working better. You're safe now, and you'll be in the hospital for a little while.",
+  "entities": [
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 893,
+      "end": 898
+    },
+    {
+      "text": "runny nose",
+      "label": "SYMPTOM",
+      "start": 906,
+      "end": 916
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 918,
+      "end": 923
+    },
+    {
+      "text": "rashes",
+      "label": "SYMPTOM",
+      "start": 1790,
+      "end": 1796
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 3093,
+      "end": 3097
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 3786,
+      "end": 3796
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 3853,
+      "end": 3857
+    }
+  ],
+  "regimens": [],
+  "source_text": "HISTORY AND PHYSICAL:  ,The patient is a 13-year-old, who has a history of Shone complex and has a complete heart block.  He is on the pacemaker.  He had a coarctation of the aorta and that was repaired when he was an infant.  He was followed in our Cardiology Clinic here and has been doing well.  However last night, he was sleeping, and he states he felt as if he has having a dream, and there was thunder in this dream, which woke him up.  He then felt that his defibrillator was going off and this has continued and feels like his heart rate is not normal.  Thus, his dad put him in the car and transported him here.  He has been evaluated here.  He had some scar tissue at one point when the internal pacemaker was not working properly and had to have that replaced.  It was 2 a.m. when he woke, and again, he was brought here by private vehicle.  He was well prior to going to bed.  No cough, cold, runny nose, fever.  No trauma has been noted.,PAST MEDICAL HISTORY:,  Shone complex, pacemaker dependent.,MEDICATIONS: , He is on no medications at this time.,ALLERGIES:,  He has no allergies.,IMMUNIZATIONS:,  Up to date.,SOCIAL HISTORY: , He lives with his parents.,FAMILY HISTORY: , Negative.,REVIEW OF SYSTEM: , Twelve asked, all negative, except as noted above.,PHYSICAL EXAMINATION:,GENERAL:  This is an awake, alert male, who appears to be in mild distress.,HEENT:  Pupils are equal, round, and reactive to light.  Extraocular movements are intact.  His TMs are clear.  His nares are clear.  The mucous membranes are pink and moist.  Throat is clear.,NECK:  Supple without lymphadenopathy or masses.  Trachea is midline.,LUNGS:  Clear.,HEART:  Shows bradycardia at 53.  He has good distal pulses.,ABDOMEN:  Soft, nontender.  Positive bowel sounds.  No guarding, no rebound.  No rashes are seen.,HOSPITAL COURSE:,  Initial blood pressure is 164/90.  He was moved in room 1.  He was placed on nasal cannula.  Pulse ox was 100%, which is normal.  We placed him on a monitor.  We did an EKG; it has not appear to be capturing his pacemaker at this time.  Shortly after the patient's arrival, the Medtronic technician came and worked out his pacemaker.  Medtronic representative informed me that the lead that he has in place has been recalled because it has been prone to microfractures, oversensing, and automatic defibrillation.  As noted, he was transferred to room 1, placed on a monitor, pulse ox.  An IV was placed.  A standard blood work was sent.  A chest x-ray was done showing normal heart size, lead appeared to be in placed.  There was no evidence of pulmonary edema.  His pacemaker did not appear to be capturing.  We placed him on transthoracic leads.  However, it is difficult to get good placement with these because of the area where his pacemaker was placed.  The Medtronic technician initially turned off his defibrillation mode and turned down his sensor.  However, we could not get our transthoracic pacer to capture his heart.  When the Medtronic representative turned off the pacemaker, the heart rate seemed to drop into the 40s.  The patient appeared to be in pain.  We placed it back on a rate of 60 at that time.  He has remained in sinus bradycardia, but no evidence of ectopic beats.  No widening of his QRS complex.  I spoke with Cardiology.  Cardiology service has come in, has evaluated him at bedside with me.  Again, we turned up the transthoracic pacer, but it is again not seem to be picking up, and his heart rate is still going with the Medtronic's internal pacemaker.  So with the ICU physician on call, Dr. X, he has agreed with taking this young man to the ICU.,An hour after presentation here, the ICU was ready for bed.  I accompanied the patient up to the ICU.  He remained awake and alert.  Initially, he was complaining of a lot of chest pain.  Once the defibrillator was turned off, he had no more pain.  He was transported to the Pediatrics PICU and delivered in stable condition.,LABORATORY DATA: , CBC was normal.  Chem-20 was normal as well.,IMPRESSION:  ,Complete heart block with pacemaker malfunction.,PLAN:  ,He is admitted to the ICU.,TIME SEEN: , Critical care time outside billable procedures was 45 minutes with this patient.  I should note that a 12-lead EKG was done here showing sinus bradycardia, normal intervals otherwise.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're a 13-year-old boy who has had some heart problems since you were a baby. You have a pacemaker in your heart to help it beat properly. Last night, you woke up feeling like you were having a dream, and you thought your defibrillator was going off. Your dad took you to the hospital because you were feeling worried and scared. \n\nWhen you got to the hospital, the doctors checked you out. They found that your heart was beating very slowly, and your defibrillator wasn't working properly. The doctors had to fix your defibrillator and make sure it was working again. \n\nYou were in a lot of pain, and the doctors had to turn off your defibrillator to make you feel better. They also put you on a monitor to keep an eye on your heart. \n\nThe doctors found out that your heart was still beating slowly, and they're going to keep you in the ICU to make sure you're okay. They want to make sure your heart is working properly and that you don't have any more pain.\n\nYou were in the hospital for about an hour, and you were brought to the ICU. The doctors there checked you again and made sure you were stable. You were given some medicine to help you feel better, and you were given a chest x-ray to make sure everything was okay.\n\nYou'll need to stay in the ICU for a little while to make sure your heart is working properly. The doctors will keep you there until they're sure you're feeling better. If you have any more pain or if you're not feeling well, you should tell the doctors right away.",
+      "caregiver_checklist": "- Check the patient’s vital signs every 15 minutes.\n- Monitor for signs of hypotension or syncope.\n- Watch for any changes in heart rate or rhythm.\n- Call the Cardiology service if the patient’s heart rate drops below 40.\n- Schedule a follow-up appointment with the Cardiology team in 2 weeks.\n- Call the patient’s primary care provider if symptoms worsen.\n- Watch for signs of dehydration, such as dry mucous membranes.\n- Call the patient’s primary care provider if the patient’s pain persists.\n- Schedule a chest x-ray in 24 hours to check for any new abnormalities.\n- Call the patient’s primary care provider if the patient’s symptoms return.",
+      "child_explanation": "You had a dream last night, you know? In your dream, you felt thunder and it woke you up. You thought your heart was going off, but it wasn't real. Your heart was just a little slow, like when you're tired. The grown-ups and doctors are taking care of you. They put you in a special car and brought you to the hospital. The doctors checked your heart and found some scar tissue. They fixed it and now your heart is working better. You're safe now, and you'll be in the hospital for a little while."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Shone_complex",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Shone_complex.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Shone_complex.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Shone_complex",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Shone_complex.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Shone_complex.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Shone_complex",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Shone_complex.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Shone_complex.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 31.223,
+      "caregiver_checklist": 18.205,
+      "child_explanation": 15.784,
+      "total": 65.226
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:38:24+00:00"
+  }
+}

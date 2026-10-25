@@ -1,0 +1,304 @@
+{
+  "id": "mtsamples_Hypertension_Cardiomyopathy",
+  "patient_summary": "Hello there! I'm here to help you understand what's happening with your health. You have some health problems that need to be taken care of. Here's what we know:\n\n1. You have heart failure, which means your heart isn't working as well as it should. You also have high blood pressure, which can make your heart work harder.\n\n2. You've been having trouble breathing, even when you're just resting. You also had some pain in your upper right side of your body. You've also been feeling sick to your stomach and have lost some weight.\n\n3. You need to take some new medicines to help your heart and blood pressure. Here's what you need to do:\n\n- Take lisinopril 25 mg every day. This is a medicine that helps your heart work better.\n- Take lisinopril 40 mg twice a day. This is a higher dose to help you more.\n- Take hydralazine 75 mg three times a day. This is a medicine to help lower your blood pressure.\n- Take hydralazine 100 mg three times a day. This is a higher dose to help you even more.\n- Take Aldactone 25 mg every day. This is a medicine to help your kidneys work better.\n\n4. You need to check your blood pressure and weight every week. If you have any trouble breathing or feel faint, you should call your doctor right away.\n\n5. You need to find a primary care doctor to help you. If you can't find one, you can ask your doctor for help.\n\n6. You need to see a gastroenterologist soon to help with your hepatitis C. Your Medicaid is still being processed, so you might need to look for a primary care doctor who can help you.\n\n7. You will come back in one month for some more tests. Your doctor will give you a list of all the medicines you need to take.\n\nRemember, it's important to take all your medicines as your doctor prescribed. If you have any questions or if you're not feeling better, you should talk to your doctor.",
+  "caregiver_checklist": [
+    "Check the patient's blood pressure and weight as advised.",
+    "Schedule a follow-up appointment in one month.",
+    "Call the patient's primary care provider to find out how to get insurance.",
+    "Watch for signs of worsening heart failure such as shortness of breath, swelling, or increased fatigue.",
+    "Call the doctor if the patient experiences palpitations, chest pain, or any new symptoms.",
+    "Give the patient the updated medication list and remind them to take their medications as prescribed.",
+    "Schedule a visit to see a gastroenterologist for hepatitis C.",
+    "Watch for signs of dehydration, such as dry mouth, decreased urination, or dizziness when standing.",
+    "Call the doctor if the patient experiences persistent nausea or vomiting.",
+    "Monitor for signs of volume overload, such as increased swelling or rapid weight gain.",
+    "Take lisinopril 25 mg daily.",
+    "Take lisinopril 40 mg daily.",
+    "Take lisinopril 75 mg three times a day.",
+    "Take lisinopril 100 mg three times a day."
+  ],
+  "child_explanation": "You have some problems with your heart.\nYour heart is not working as well as it should.\nThe doctors are taking care of you.\nYou need to take your medicine now.\nYou might feel better soon.\nLet's find a doctor to help you.",
+  "entities": [
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 105,
+      "end": 118
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 193,
+      "end": 205
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 424,
+      "end": 443
+    },
+    {
+      "text": "syncope",
+      "label": "SYMPTOM",
+      "start": 596,
+      "end": 603
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 660,
+      "end": 664
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 685,
+      "end": 691
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 700,
+      "end": 708
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 749,
+      "end": 753
+    },
+    {
+      "text": "syncope",
+      "label": "SYMPTOM",
+      "start": 771,
+      "end": 778
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 1946,
+      "end": 1958
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 2186,
+      "end": 2191
+    },
+    {
+      "text": "75 mg",
+      "label": "DOSAGE",
+      "start": 2251,
+      "end": 2256
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 2267,
+      "end": 2273
+    },
+    {
+      "text": "lisinopril",
+      "label": "MEDICATION",
+      "start": 2327,
+      "end": 2337
+    },
+    {
+      "text": "25 mg",
+      "label": "DOSAGE",
+      "start": 2368,
+      "end": 2373
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2379,
+      "end": 2384
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "lisinopril",
+      "dosages": [
+        "25 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "PROBLEMS LIST:,1.  Nonischemic cardiomyopathy.,2.  Branch vessel coronary artery disease.,3.  Congestive heart failure, NYHA Class III.,4.  History of nonsustained ventricular tachycardia.,5.  Hypertension.,6.  Hepatitis C.,INTERVAL HISTORY: , The patient was recently hospitalized for CHF exacerbation and was discharged with increased medications.  However, he did not fill his prescriptions and came back with persistent shortness of breath on exertion and on rest.  He has history of orthopnea and PND.  He has gained a few pounds of weight but denied to have any palpitation, presyncope, or syncope.,REVIEW OF SYSTEMS: , Positive for right upper quadrant pain.  He has occasional nausea, but no vomiting.  His appetite has decreased.  No joint pain, TIA, seizure or syncope.  Other review of systems is unremarkable.,I reviewed his past medical history, past surgical history, and family history.,SOCIAL HISTORY: , He has quit smoking, but unfortunately was positive for cocaine during last hospital stay in 01/08.,ALLERGIES: , He has no known drug allergies.,MEDICATIONS:,  I reviewed his medication list in the chart.  He states he is compliant, but he was not taking the revised dose of medications as per discharge orders and prescription.,PHYSICAL EXAMINATION:,VITAL SIGNS:  Pulse 91 per minute and regular, blood pressure 151/102 in the right arm and 152/104 in the left arm, weight 172 pounds, which is about 6 pounds more than last visit in 11/07.  HEENT:  Atraumatic and normocephalic.  No pallor, icterus or cyanosis.  NECK:  Supple.  Jugular venous distention 5 cm above the clavicle present.  No thyromegaly.  LUNGS:  Clear to auscultation.  No rales or rhonchi.  Pulse ox was 98% on room air.  CVS:  S1 and S2 present.  S3 and S4 present.  ABDOMEN:  Soft and nontender.  Liver is palpable 5 cm below the right subcostal margin.  EXTREMITIES:  No clubbing or cyanosis.  A 1+ edema present.,ASSESSMENT AND PLAN:,  The patient has hypertension, nonischemic cardiomyopathy, and branch vessel coronary artery disease.  Clinically, he is in NYHA Class III.  He has some volume overload and was not unfortunately taking Lasix as prescribed.  I have advised him to take Lasix 40 mg p.o. b.i.d.  I also increased the dose of hydralazine from 75 mg t.i.d. to 100 mg t.i.d.  I advised him to continue to take Toprol and lisinopril.  I have also added Aldactone 25 mg p.o. daily for survival advantage.  I reinforced the idea of not using cocaine.  He states that it was a mistake, may be somebody mixed in his drink, but he has not intentionally taken any cocaine.  I encouraged him to find a primary care provider.  He will come for a BMP check in one week.  I asked him to check his blood pressure and weight.  I discussed medication changes and gave him an updated list.  I have asked him to see a gastroenterologist for hepatitis C.  At this point, his Medicaid is pending.  He has no insurance and finds hard to find a primary care provider.  I will see him in one month.  He will have his fasting lipid profile, AST, and ALT checked in one week.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "40 mg",
+        "75 mg",
+        "100 mg",
+        "lisinopril",
+        "25 mg",
+        "daily"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you understand what's happening with your health. You have some health problems that need to be taken care of. Here's what we know:\n\n1. You have heart failure, which means your heart isn't working as well as it should. You also have high blood pressure, which can make your heart work harder.\n\n2. You've been having trouble breathing, even when you're just resting. You also had some pain in your upper right side of your body. You've also been feeling sick to your stomach and have lost some weight.\n\n3. You need to take some new medicines to help your heart and blood pressure. Here's what you need to do:\n\n- Take lisinopril 25 mg every day. This is a medicine that helps your heart work better.\n- Take lisinopril 40 mg twice a day. This is a higher dose to help you more.\n- Take hydralazine 75 mg three times a day. This is a medicine to help lower your blood pressure.\n- Take hydralazine 100 mg three times a day. This is a higher dose to help you even more.\n- Take Aldactone 25 mg every day. This is a medicine to help your kidneys work better.\n\n4. You need to check your blood pressure and weight every week. If you have any trouble breathing or feel faint, you should call your doctor right away.\n\n5. You need to find a primary care doctor to help you. If you can't find one, you can ask your doctor for help.\n\n6. You need to see a gastroenterologist soon to help with your hepatitis C. Your Medicaid is still being processed, so you might need to look for a primary care doctor who can help you.\n\n7. You will come back in one month for some more tests. Your doctor will give you a list of all the medicines you need to take.\n\nRemember, it's important to take all your medicines as your doctor prescribed. If you have any questions or if you're not feeling better, you should talk to your doctor.",
+      "caregiver_checklist": "- Check the patient's blood pressure and weight as advised.\n- Schedule a follow-up appointment in one month.\n- Call the patient's primary care provider to find out how to get insurance.\n- Watch for signs of worsening heart failure such as shortness of breath, swelling, or increased fatigue.\n- Call the doctor if the patient experiences palpitations, chest pain, or any new symptoms.\n- Give the patient the updated medication list and remind them to take their medications as prescribed.\n- Schedule a visit to see a gastroenterologist for hepatitis C.\n- Watch for signs of dehydration, such as dry mouth, decreased urination, or dizziness when standing.\n- Call the doctor if the patient experiences persistent nausea or vomiting.\n- Monitor for signs of volume overload, such as increased swelling or rapid weight gain.",
+      "child_explanation": "You have some problems with your heart.\nYour heart is not working as well as it should.\nThe doctors are taking care of you.\nYou need to take your medicine now.\nYou might feel better soon.\nLet's find a doctor to help you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Hypertension_Cardiomyopathy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hypertension_Cardiomyopathy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Hypertension_Cardiomyopathy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Hypertension_Cardiomyopathy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hypertension_Cardiomyopathy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Hypertension_Cardiomyopathy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Hypertension_Cardiomyopathy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hypertension_Cardiomyopathy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Hypertension_Cardiomyopathy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 29.281,
+      "caregiver_checklist": 27.948,
+      "child_explanation": 8.388,
+      "total": 65.642
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T14:37:45+00:00"
+  }
+}

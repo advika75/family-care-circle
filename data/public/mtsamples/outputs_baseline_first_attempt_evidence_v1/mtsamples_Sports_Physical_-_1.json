@@ -1,0 +1,215 @@
+{
+  "id": "mtsamples_Sports_Physical_-_1",
+  "patient_summary": "Hello there! I'm here to tell you about your recent sports physical. Everything checked out well, and you're doing great! Here’s what you need to know about your medicines:\n\n1. **Albuterol**: You use this medicine when you feel your breathing gets a bit tight. You use it as needed, which means when you need it. It comes in a special inhaler that you use when you feel a bit short of breath.\n\n2. **Advair**: This is a special medicine you take twice a day. You take it with your breakfast and lunch. It helps keep your airways open and makes it easier to breathe.\n\n3. **Flonase**: This is another medicine you take twice a day. You take it in the morning and evening. It helps keep your nose from getting stuffy.\n\n4. **Allegra**: This is a medicine you take once a day. You take it in the morning. It helps keep your allergies from making you sneeze or itchy. You take 120 mg each time.\n\nIf you ever feel short of breath, have a runny nose, or feel itchy, you can use your albuterol. If you have any questions or feel worried, don’t hesitate to ask your mom or the doctor. They’re here to help you. Remember to keep taking your other medicines as directed. You’re doing great!",
+  "caregiver_checklist": [
+    "Check Advair inhaler twice daily as prescribed.",
+    "Monitor for wheezing or difficulty breathing.",
+    "Watch for any new rashes or changes in albuterol use (120 mg).",
+    "Call if albuterol use increases or symptoms worsen (120 mg).",
+    "Schedule a follow-up sports physical in 6 months.",
+    "Call if hearing problems persist or new symptoms appear.",
+    "Schedule a dentist appointment for regular check-ups.",
+    "Check for any new rashes or changes in albuterol use (120 mg).",
+    "Call if symptoms of asthma flare-ups occur (120 mg)."
+  ],
+  "child_explanation": "You had a check-up today. You eat lots of yummy foods. The doctors and grown-ups are taking good care of you. You don't have a rash. You're doing well in school and playing sports. You're growing nicely. The doctors checked your ears, eyes, and teeth. They said everything looks good. You'll need to get a hearing check soon. Your mom needs to find a doctor in Texas. Remember to use sunscreen and wear your seatbelt. No need to worry, you're healthy!",
+  "entities": [
+    {
+      "text": "120 mg",
+      "label": "DOSAGE",
+      "start": 980,
+      "end": 986
+    },
+    {
+      "text": "albuterol",
+      "label": "MEDICATION",
+      "start": 1000,
+      "end": 1009
+    },
+    {
+      "text": "rash",
+      "label": "SYMPTOM",
+      "start": 2363,
+      "end": 2367
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "albuterol",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "HISTORY: , This child is seen for a sports physical.,NUTRITIONAL HISTORY:,  She takes meats, vegetables, and fruits.  Eats well.  Has may be 1 to 2 cups a day of milk.  Her calcium intake could be better.  She does not drink that much pop but she likes koolaid.  Her stools are normal.  Brushes her teeth.  Sees a dentist.,DEVELOPMENTAL HISTORY: , She did well in school last year.  Hearing and vision, no problems.  She wears corrective lenses.  She will be in 8th grade and involved in volleyball, basketball, and she will be moving to Texas.  She did go to Burton this last year.  She also plays clarinet, and will be involved also in cheerleading.  She likes to swim in the summer time.  Her menarche was January 2004.  It occurs every 7 weeks.  No particular problems at this time.,OTHER ACTIVITIES:  ,TV time about 2 to 3 hours a day.  She does not use drugs, alcohol, or smoke, and denies sexual activity.,MEDICATIONS:,  Advair 250/50 b.i.d., Flonase b.i.d., Allegra q.d.  120 mg, Xopenex and albuterol p.r.n.,ALLERGIES:,  No known drug allergies.,OBJECTIVE:,Vital Signs:  Blood pressure:  98/60.  Temperature:  96.6 tympanic.  Weight:  107 pounds, which places her at approximately the 60th percentile for weight and the height is about 80th percentile at 64-1/2 inches.  Her body mass index is 18.1, which is 40th percentile.  Pulse:  68.,HEENT:  Normocephalic.  Fundi benign.  Pupils are equal and reactive to light and accommodation.  Conjunctivae were non-injected.  Her pupils were equal, and reactive to light and accommodation.  No strabismus.  She wears glasses.  Her vision was 20/20 in both eyes.  TMs are bilaterally clear.  Nonerythematous.  Hearing in the ears, she was able to pass 40 decibel to 30 decibel.  With the right ear, she has some problems, but the left ear she passed.  Throat was clear.  Nonerythematous.  Good dentition.,Neck:  Supple.  Thyroid normal sized.  No increased lymphadenopathy in the submandibular nodes and no axillary nodes.,Respiratory:  Clear.  No wheezes and no crackles.  No tachypnea and no retractions.,Cardiovascular:  Regular rate and rhythm.  S1 and S2 normal.  No murmur.,Abdomen:  Soft.  No organomegaly and no masses.  No hepatosplenomegaly.,GU:  Normal female genitalia.  Tanner stage III in breast and pubic hair development and she was given a breast exam.  Negative for any masses.,Skin:  Without rash.,Extremities:  Deep tendon reflexes 2+/4+ bilaterally and equal.,Neurological:  Romberg negative.,Back:  No scoliosis.,She had good circumduction at the shoulder joints and duck walk is normal.,ASSESSMENT:,  Sports physical with normal growth and development.,PLAN:,  If problems continue, she will need to have her hearing rechecked.  Hopefully in the school, there will be a screening mat.  She received her first hepatitis A vaccine and she needs to have a booster in 6 to 12 months.  We reviewed her immunizations for tetanus and her last acellular DPT was 11/25/1996.  When she goes to Texas, Mom has an appointment already to see an allergist but she needs to find a primary care physician and we will ask for record release.  We talked about her menarche.  Recommended the exam of the breast regularly.  Talked about other anticipatory guidance including sunscreen, use of seat belts, and drugs, alcohol, and smoking, and sexual activity and avoidance at her age and to continue on her present medications.  She also has had problems with her ankles in the past.  She had no limitation here, but we gave her some ankle strengthening exercise handouts while she was in the office.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "120 mg"
+      ],
+      "caregiver_checklist": [
+        "120 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to tell you about your recent sports physical. Everything checked out well, and you're doing great! Here’s what you need to know about your medicines:\n\n1. **Albuterol**: You use this medicine when you feel your breathing gets a bit tight. You use it as needed, which means when you need it. It comes in a special inhaler that you use when you feel a bit short of breath.\n\n2. **Advair**: This is a special medicine you take twice a day. You take it with your breakfast and lunch. It helps keep your airways open and makes it easier to breathe.\n\n3. **Flonase**: This is another medicine you take twice a day. You take it in the morning and evening. It helps keep your nose from getting stuffy.\n\n4. **Allegra**: This is a medicine you take once a day. You take it in the morning. It helps keep your allergies from making you sneeze or itchy.\n\nIf you ever feel short of breath, have a runny nose, or feel itchy, you can use your albuterol. If you have any questions or feel worried, don’t hesitate to ask your mom or the doctor. They’re here to help you. Remember to keep taking your other medicines as directed. You’re doing great!",
+      "caregiver_checklist": "- Check Advair inhaler twice daily as prescribed.\n- Monitor for wheezing or difficulty breathing.\n- Watch for any new rashes or changes in albuterol use.\n- Call if albuterol use increases or symptoms worsen.\n- Schedule a follow-up sports physical in 6 months.\n- Call if hearing problems persist or new symptoms appear.\n- Schedule a dentist appointment for regular check-ups.\n- Check for any new rashes or changes in albuterol use.\n- Call if symptoms of asthma flare-ups occur.",
+      "child_explanation": "You had a check-up today. You eat lots of yummy foods. The doctors and grown-ups are taking good care of you. You don't have a rash. You're doing well in school and playing sports. You're growing nicely. The doctors checked your ears, eyes, and teeth. They said everything looks good. You'll need to get a hearing check soon. Your mom needs to find a doctor in Texas. Remember to use sunscreen and wear your seatbelt. No need to worry, you're healthy!"
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Sports_Physical_-_1",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Sports_Physical_-_1.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Sports_Physical_-_1.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Sports_Physical_-_1",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Sports_Physical_-_1.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Sports_Physical_-_1.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Sports_Physical_-_1",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Sports_Physical_-_1.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Sports_Physical_-_1.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 47.428,
+      "caregiver_checklist": 25.208,
+      "child_explanation": 13.625,
+      "total": 86.318
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:42:52+00:00"
+  }
+}

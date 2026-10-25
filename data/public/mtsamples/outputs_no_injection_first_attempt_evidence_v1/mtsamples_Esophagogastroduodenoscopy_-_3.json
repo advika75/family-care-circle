@@ -1,0 +1,223 @@
+{
+  "id": "mtsamples_Esophagogastroduodenoscopy_-_3",
+  "patient_summary": "Hello there! I'm here to explain what happened during your visit and the medicines you'll need to take. Here's what you need to know:\n\nFirst, you had a special test called an endoscopy. This test helps doctors look inside your throat, stomach, and intestines. They also took small pieces of tissue to check for any problems. This is called a biopsy.\n\nYou had a special medicine to help you sleep and not feel anything during the test. The doctors used a long, flexible tube with a tiny camera on the end. They carefully moved it through your throat and down into your stomach and intestines.\n\nThe doctors found a small, round growth in your rectum. They carefully removed it using a special tool. They also took some small pieces of tissue to check if you have any other problems.\n\nYou didn't have any problems during the test, but you did lose about 5 mL of blood. The doctors took care of that too.\n\nNow, you'll need to take some medicines after you wake up. The doctors will tell you exactly what to take and how often. They'll also tell you when you need to come back for more tests.\n\nIf you have any pain or if you feel sick, you should call the doctors right away. They want to make sure you're okay.\n\nRemember, you're in good hands. The doctors and nurses are here to help you. If you have any questions, please ask them.",
+  "caregiver_checklist": [
+    "Give the patient a liquid diet starting 24 hours after the procedure.",
+    "Check for signs of bleeding or abdominal pain within 24 hours.",
+    "Watch for signs of infection such as fever or increased pain.",
+    "Call if the patient develops severe abdominal pain, bleeding, or signs of infection.",
+    "Schedule a follow-up appointment with the gastroenterologist next week.",
+    "Call if the patient experiences severe abdominal pain, bleeding, or signs of infection.",
+    "Monitor for signs of dehydration, such as dry mouth or decreased urination.",
+    "Watch for signs of bowel obstruction, such as severe abdominal pain or vomiting.",
+    "Call if the patient experiences severe abdominal pain, vomiting, or signs of bowel obstruction.",
+    "Schedule a colonoscopy in 6 months for routine screening.",
+    "Call if the patient experiences severe abdominal pain, bleeding, or signs of bowel obstruction.",
+    "Note that the estimated blood loss was 5 mL."
+  ],
+  "child_explanation": "You had a check-up to help find out what's making you feel yucky. Grown-ups and doctors carefully looked inside your tummy and bottom. They found no big problems, but they saw a tiny growth. They took it out. Now you'll get more help next week. The doctors are taking good care of you.",
+  "entities": [
+    {
+      "text": "abdominal pain",
+      "label": "SYMPTOM",
+      "start": 121,
+      "end": 135
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 147,
+      "end": 155
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 405,
+      "end": 413
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 2399,
+      "end": 2407
+    },
+    {
+      "text": "5 mL",
+      "label": "DOSAGE",
+      "start": 2680,
+      "end": 2684
+    }
+  ],
+  "regimens": [],
+  "source_text": "PROCEDURES:,  Esophagogastroduodenoscopy and colonoscopy with biopsy and polypectomy.,REASON FOR PROCEDURE: , Child with abdominal pain and rectal bleeding.  Rule out inflammatory bowel disease, allergic enterocolitis, rectal polyps, and rectal vascular malformations.,CONSENT:,  History and physical examination was performed.  The procedure, indications, alternatives available, and complications, i.e. bleeding, perforation, infection, adverse medication reaction, the possible need for blood transfusion, and surgery should a complication occur were discussed with the parents who understood and indicated this.  Opportunity for questions was provided and informed consent was obtained.,MEDICATION:  ,General anesthesia.,INSTRUMENT: , Olympus GIF-160.,COMPLICATIONS:,  None.,FINDINGS: , With the patient in the supine position and intubated, the endoscope was inserted without difficulty into the hypopharynx.  The esophageal mucosa and vascular pattern appeared normal.  The lower esophageal sphincter was located at 25 cm from the central incisors.  It appeared normal.  A Z-line was identified within the lower esophageal sphincter.  The endoscope was advanced into the stomach, which distended with excess air.  Rugal folds flattened completely.  Gastric mucosa appeared normal throughout.  No hiatal hernia was noted.  Pyloric valve appeared normal.  The endoscope was advanced into the first, second, and third portions of duodenum, which had normal mucosa, coloration, and fold pattern.  Biopsies were obtained x2 in the second portion of duodenum, antrum, and distal esophagus at 22 cm from the central incisors for histology.  Additional 2 biopsies were obtained for CLO testing in the antrum.  Excess air was evacuated from the stomach.  The scope was removed from the patient who tolerated that part of procedure well.  The patient was turned and the scope was advanced with some difficulty to the terminal ileum.  The terminal ileum mucosa and the colonic mucosa throughout was normal except at approximately 10 cm where a 1 x 1 cm pedunculated juvenile-appearing polyp was noted.  Biopsies were obtained x2 in the terminal ileum, cecum, ascending colon, transverse colon, descending colon, sigmoid, and rectum.  Then, the polyp was snared right at the base of the polyp on the stalk and 20 watts of pure coag was applied in 2-second bursts x3.  The polyp was severed.  There was no bleeding at the stalk after removal of the polyp head.  The polyp head was removed by suction.  Excess air was evacuated from the colon.  The patient tolerated that part of the procedure well and was taken to recovery in satisfactory condition.  Estimated blood loss approximately 5 mL.,IMPRESSION: , Normal esophagus, stomach, duodenum, and colon as well as terminal ileum except for a 1 x 1-cm rectal polyp, which was removed successfully by polypectomy snare.,PLAN:  ,Histologic evaluation and CLO testing.  I will contact the parents next week with biopsy results and further management plans will be discussed at that time.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "5 mL"
+      ],
+      "caregiver_checklist": [
+        "5 mL"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to explain what happened during your visit and the medicines you'll need to take. Here's what you need to know:\n\nFirst, you had a special test called an endoscopy. This test helps doctors look inside your throat, stomach, and intestines. They also took small pieces of tissue to check for any problems. This is called a biopsy.\n\nYou had a special medicine to help you sleep and not feel anything during the test. The doctors used a long, flexible tube with a tiny camera on the end. They carefully moved it through your throat and down into your stomach and intestines.\n\nThe doctors found a small, round growth in your rectum. They carefully removed it using a special tool. They also took some small pieces of tissue to check if you have any other problems.\n\nYou didn't have any problems during the test, but you did lose a little bit of blood. The doctors took care of that too.\n\nNow, you'll need to take some medicines after you wake up. The doctors will tell you exactly what to take and how often. They'll also tell you when you need to come back for more tests.\n\nIf you have any pain or if you feel sick, you should call the doctors right away. They want to make sure you're okay.\n\nRemember, you're in good hands. The doctors and nurses are here to help you. If you have any questions, please ask them.",
+      "caregiver_checklist": "- Give the patient a liquid diet starting 24 hours after the procedure.\n- Check for signs of bleeding or abdominal pain within 24 hours.\n- Watch for signs of infection such as fever or increased pain.\n- Call if the patient develops severe abdominal pain, bleeding, or signs of infection.\n- Schedule a follow-up appointment with the gastroenterologist next week.\n- Call if the patient experiences severe abdominal pain, bleeding, or signs of infection.\n- Monitor for signs of dehydration, such as dry mouth or decreased urination.\n- Watch for signs of bowel obstruction, such as severe abdominal pain or vomiting.\n- Call if the patient experiences severe abdominal pain, vomiting, or signs of bowel obstruction.\n- Schedule a colonoscopy in 6 months for routine screening.\n- Call if the patient experiences severe abdominal pain, bleeding, or signs of bowel obstruction.",
+      "child_explanation": "You had a check-up to help find out what's making you feel yucky. Grown-ups and doctors carefully looked inside your tummy and bottom. They found no big problems, but they saw a tiny growth. They took it out. Now you'll get more help next week. The doctors are taking good care of you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Esophagogastroduodenoscopy_-_3",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Esophagogastroduodenoscopy_-_3.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Esophagogastroduodenoscopy_-_3.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Esophagogastroduodenoscopy_-_3",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Esophagogastroduodenoscopy_-_3.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Esophagogastroduodenoscopy_-_3.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Esophagogastroduodenoscopy_-_3",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Esophagogastroduodenoscopy_-_3.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Esophagogastroduodenoscopy_-_3.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 48.731,
+      "caregiver_checklist": 41.072,
+      "child_explanation": 15.468,
+      "total": 105.735
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T16:36:48+00:00"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "id": "mtsamples_Dermatitis_-_SOAP",
+  "patient_summary": "Hello you,\n\nI hope you're feeling better. You came in today because your hands are very dry and cracked. You've been using a special soap to clean your hands, but it seems to be causing some burning and pain. Your hands are very dry and you've been wearing gloves to protect them.\n\nThe doctors here have been treating you with a cream called Aristocort. They also gave you another cream called Polysporin to use three times a day. You should stop using the soap and instead use a gentle soap called Cetaphil. \n\nThe doctors also gave you a medicine called Keflex. You'll take this 500 mg twice a day for two weeks. If you don't feel better after a month, you should come back to see us. If you have any more questions or need help, just let us know.\n\nTake care and we'll see you soon.",
+  "caregiver_checklist": [
+    "Give the patient Aristocort ointment 0.1% and equal part of Polysporin ointment three times a day (t.i.d.) and as needed (p.r.n.) for itch.",
+    "Check the patient’s hands for dryness and cracking every day.",
+    "Watch for any signs of infection, such as redness, swelling, or pus.",
+    "Call the doctor if the patient’s hands worsen or if there are signs of infection.",
+    "Schedule a follow-up appointment in one month if the patient’s hands are not better.",
+    "Call the doctor if the patient’s hands are not better after one month.",
+    "Monitor for any signs of worsening eczema, such as increased redness or scaling.",
+    "Watch for any signs of infection, such as redness, swelling, or pus.",
+    "Call the doctor if the patient experiences any severe side effects from the medications.",
+    "Schedule a refill for Keflex 500 mg b.i.d. times two weeks if needed."
+  ],
+  "child_explanation": "Your hands are feeling very dry and cracked, like when you play in the sand too much. You've been using a special soap that made your skin burn. The doctors and grown-ups are taking care of you. They're going to put a special cream on your hands three times a day to help them feel better. You'll also use a different soap that won't hurt your skin. They're giving you some medicine to help, but only for a few days. They want to see you again in a month to check how you're doing.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 587,
+      "end": 591
+    },
+    {
+      "text": "asthma",
+      "label": "CONDITION",
+      "start": 779,
+      "end": 785
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 1383,
+      "end": 1389
+    }
+  ],
+  "regimens": [],
+  "source_text": "SUBJECTIVE:,  This is a 29-year-old Vietnamese female, established patient of dermatology, last seen in our office on 07/13/04.  She comes in today as a referral from ABC, D.O. for a reevaluation of her hand eczema.  I have treated her with Aristocort cream, Cetaphil cream, increased moisturizing cream and lotion, and wash her hands in Cetaphil cleansing lotion.  She comes in today for reevaluation because she is flaring.  Her hands are very dry, they are cracked, she has been washing with soap.  She states that the Cetaphil cleansing lotion apparently is causing some burning and pain because of the fissures in her skin.  She has been wearing some gloves also apparently.  The patient is single.  She is unemployed.,FAMILY, SOCIAL, AND ALLERGY HISTORY: , The patient has asthma, sinus, hives, and history of psoriasis.  No known drug allergies.,MEDICATIONS: , The patient is a nonsmoker.  No bad sunburns or blood pressure problems in the past.,CURRENT MEDICATIONS:,  Claritin and Zyrtec p.r.n.,PHYSICAL EXAMINATION:,  The patient has very dry, cracked hands bilaterally.,IMPRESSION:,  Hand dermatitis.,TREATMENT:,1.  Discussed further treatment with the patient and her interpreter.,2.  Apply Aristocort ointment 0.1% and equal part of Polysporin ointment t.i.d. and p.r.n. itch.,3.  Discontinue hot soapy water and wash her hands with Cetaphil cleansing lotion.,4.  Keflex 500 mg b.i.d. times two weeks with one refill.  Return in one month if not better; otherwise, on a p.r.n. basis and send Dr. XYZ a letter on this office visit.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "500 mg"
+      ],
+      "caregiver_checklist": [
+        "500 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello you, \n\nI hope you're feeling better. You came in today because your hands are very dry and cracked. You've been using a special soap to clean your hands, but it seems to be causing some burning and pain. Your hands are very dry and you've been wearing gloves to protect them. \n\nThe doctors here have been treating you with a cream called Aristocort. They also gave you another cream called Polysporin to use three times a day. You should stop using the soap and instead use a gentle soap called Cetaphil. \n\nThe doctors also gave you a medicine called Keflex. You'll take this twice a day for two weeks. If you don't feel better after a month, you should come back to see us. If you have any more questions or need help, just let us know. \n\nTake care and we'll see you soon.",
+      "caregiver_checklist": "- Give the patient Aristocort ointment 0.1% and equal part of Polysporin ointment three times a day (t.i.d.) and as needed (p.r.n.) for itch.\n- Check the patient’s hands for dryness and cracking every day.\n- Watch for any signs of infection, such as redness, swelling, or pus.\n- Call the doctor if the patient’s hands worsen or if there are signs of infection.\n- Schedule a follow-up appointment in one month if the patient’s hands are not better.\n- Call the doctor if the patient’s hands are not better after one month.\n- Monitor for any signs of worsening eczema, such as increased redness or scaling.\n- Watch for any signs of infection, such as redness, swelling, or pus.\n- Call the doctor if the patient experiences any severe side effects from the medications.\n- Schedule a refill for Keflex if needed.",
+      "child_explanation": "Your hands are feeling very dry and cracked, like when you play in the sand too much. You've been using a special soap that made your skin burn. The doctors and grown-ups are taking care of you. They're going to put a special cream on your hands three times a day to help them feel better. You'll also use a different soap that won't hurt your skin. They're giving you some medicine to help, but only for a few days. They want to see you again in a month to check how you're doing."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Dermatitis_-_SOAP",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Dermatitis_-_SOAP.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Dermatitis_-_SOAP.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Dermatitis_-_SOAP",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Dermatitis_-_SOAP.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Dermatitis_-_SOAP.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Dermatitis_-_SOAP",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Dermatitis_-_SOAP.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Dermatitis_-_SOAP.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 18.948,
+      "caregiver_checklist": 20.651,
+      "child_explanation": 7.528,
+      "total": 47.132
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:36:39+00:00"
+  }
+}

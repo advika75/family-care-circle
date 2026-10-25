@@ -1,0 +1,201 @@
+{
+  "id": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2",
+  "patient_summary": "Hello there, you're a 36-year-old woman who had an abnormal Pap smear test. You didn't follow up on it until recently. The doctor found out you had a small cancer in your cervix. You had a special surgery called a total vaginal hysterectomy. This means they removed your uterus and part of your cervix. You're feeling well now and can walk around and eat normally.\n\nYou were given some medicines to help with any pain and to prevent a urinary tract infection. You'll need to take Vicodin and Motrin at bedtime for pain, and Macrodantin at bedtime for urinary tract infection suppression. You'll need to go back in 10 days for a special test and have your catheter removed. After that, you'll have a follow-up visit with your doctor.\n\nIf you have any problems like pain, bleeding, or a fever, you should call your doctor right away. Remember, you'll still need to have Pap smear tests in the future. Keep following up with your doctor.",
+  "caregiver_checklist": [
+    "Give Vicodin, Motrin, and Macrodantin at bedtime for urinary tract infection suppression.",
+    "Check for signs of urinary tract infection (UTI) such as fever, increased urine output, or burning sensation.",
+    "Watch for signs of infection like fever, increased urine output, or burning sensation.",
+    "Call the healthcare provider if you notice any signs of infection.",
+    "Schedule a cystogram in ten days as instructed.",
+    "Watch for signs of bladder issues like pain, difficulty urinating, or blood in urine.",
+    "Call the healthcare provider if you notice any signs of bladder issues.",
+    "Schedule a follow-up appointment in the office after the cystogram.",
+    "Check for signs of vaginal discharge or bleeding, which could indicate complications.",
+    "Call the healthcare provider if you notice any signs of vaginal discharge or bleeding.",
+    "Schedule a Pap smear in ten days as recommended by the healthcare provider."
+  ],
+  "child_explanation": "You had a tiny bump in your neck. Your doctors found out it was a small problem. They took care of you and fixed it. Now you're feeling better. You'll need to see your doctor in a few days. They'll check your bladder. You can eat and drink now. Your body is healing nicely. You're safe in the care of your doctors.",
+  "entities": [
+    {
+      "text": "at bedtime",
+      "label": "FREQUENCY",
+      "start": 1708,
+      "end": 1718
+    },
+    {
+      "text": "urinary tract infection",
+      "label": "CONDITION",
+      "start": 1723,
+      "end": 1746
+    }
+  ],
+  "regimens": [],
+  "source_text": "ADMISSION DIAGNOSIS: , Microinvasive carcinoma of the cervix.,DISCHARGE DIAGNOSIS: , Microinvasive carcinoma of the cervix.,PROCEDURE PERFORMED: , Total vaginal hysterectomy.,HISTORY OF PRESENT ILLNESS: , The patient is a 36-year-old, white female, gravida 7, para 5, last period mid March, status post tubal ligation.  She had an abnormal Pap smear in the 80s, which she failed to followup on until this year.  Biopsy showed a microinvasive carcinoma of the cervix and a cone biopsy was performed on 02/12/2007 also showing microinvasive carcinoma with a 1 mm invasion.  She has elected definitive therapy with a total vaginal hysterectomy.  She is aware of the future need of Pap smears.,PAST MEDICAL HISTORY: , Past history is significant for seven pregnancies, five term deliveries, and significant past history of tobacco use.,PHYSICAL EXAMINATION: , Physical exam is within normal limits with a taut normal size uterus and a small cervix, status post cone biopsy.,LABORATORY DATA AND DIAGNOSTIC STUDIES: , Chest x-ray was clear.  Discharge hemoglobin 10.8.,HOSPITAL COURSE: , She was taken to the operating room on 04/02/2007 where a total vaginal hysterectomy was performed under general anesthesia.  There was an incidental cystotomy at the time of the creation of the bladder flap.  This was repaired intraoperatively without difficulty.  Postoperative, she did very well.  Bowel and bladder function returned quickly.  She is ambulating well and tolerating a regular diet.,Routine postoperative instructions given and understood.  Followup will be in ten days for a cystogram and catheter removal with followup in the office at that time. ,DISCHARGE MEDICATIONS:,  Vicodin, Motrin, and Macrodantin at bedtime for urinary tract infection suppression.  ,DISCHARGE CONDITION: , Good.,Final pathology report was free of residual disease.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "at bedtime"
+      ],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're a 36-year-old woman who had an abnormal Pap smear test. You didn't follow up on it until recently. The doctor found out you had a small cancer in your cervix. You had a special surgery called a total vaginal hysterectomy. This means they removed your uterus and part of your cervix. You're feeling well now and can walk around and eat normally. \n\nYou were given some medicines to help with any pain and to prevent a urinary tract infection. You'll need to go back in 10 days for a special test and have your catheter removed. After that, you'll have a follow-up visit with your doctor. \n\nIf you have any problems like pain, bleeding, or a fever, you should call your doctor right away. Remember, you'll still need to have Pap smear tests in the future. Keep following up with your doctor.",
+      "caregiver_checklist": "- Give Vicodin, Motrin, and Macrodantin at bedtime for urinary tract infection suppression.\n- Check for signs of urinary tract infection (UTI) such as fever, increased urine output, or burning sensation.\n- Watch for signs of infection like fever, increased urine output, or burning sensation.\n- Call the healthcare provider if you notice any signs of infection.\n- Schedule a cystogram in ten days as instructed.\n- Watch for signs of bladder issues like pain, difficulty urinating, or blood in urine.\n- Call the healthcare provider if you notice any signs of bladder issues.\n- Schedule a follow-up appointment in the office after the cystogram.\n- Check for signs of vaginal discharge or bleeding, which could indicate complications.\n- Call the healthcare provider if you notice any signs of vaginal discharge or bleeding.\n- Schedule a Pap smear in ten days as recommended by the healthcare provider.",
+      "child_explanation": "You had a tiny bump in your neck. Your doctors found out it was a small problem. They took care of you and fixed it. Now you're feeling better. You'll need to see your doctor in a few days. They'll check your bladder. You can eat and drink now. Your body is healing nicely. You're safe in the care of your doctors."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Hysterectomy_-_Discharge_Summary_-_2.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 26.761,
+      "caregiver_checklist": 16.325,
+      "child_explanation": 7.649,
+      "total": 50.748
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:58:31+00:00"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "id": "mtsamples_Sports_Physical_-_1",
+  "patient_summary": "Hello there! I'm here to give you a summary of what the doctor said during your visit. It sounds like you had a great visit and everything checked out well. Here's what you need to know:\n\n### What the Doctor Said:\n1. **Medicines to Take:**\n   - You take Advair twice a day. Advair is a medicine that helps with breathing.\n   - You use Flonase twice a day. Flonase helps with your nose.\n   - You take Allegra once a day. Allegra helps with your allergies.\n   - You use Xopenex and albuterol when you need to breathe better. These are used when you feel short of breath.\n\n2. **When to Take Medicines:**\n   - You take all these medicines at the same time every day. It's important to take them at the same time every day to keep your body working well.\n\n3. **Dosages:**\n   - You take 120 mg of Allegra once a day. This helps with your allergies.\n\n4. **When to Get Help:**\n   - If you feel short of breath or have trouble breathing, you should take your Xopenex and albuterol right away. You can find them in your medicine box.\n   - If you have any other questions or if you feel uncomfortable, you should talk to your doctor or a nurse right away.\n\n### Other Important Points:\n- You're doing well in school and have good vision and hearing. You wear glasses, and your vision is perfect.\n- You have a good dental health and brush your teeth regularly.\n- You don't use drugs, alcohol, or smoke, and you don't have any sexual activity.\n- You had your first hepatitis A vaccine, and you need a booster shot in 6 to 12 months.\n- You will be moving to Texas soon, so you need to find a primary care doctor there. Your mom has already made an appointment with an allergist.\n\n### Other Things to Remember:\n- You had a breast exam, and everything looked good. It's important to have regular exams.\n- You should use sunscreen, wear seat belts, and avoid drugs, alcohol, and smoking.\n- You should continue to use your present medicines and keep your ankles strong with the exercises we gave you.\n\nIf you have any more questions or if you feel uncomfortable, please talk to your doctor or a nurse. They are there to help you.",
+  "caregiver_checklist": [
+    "Check Advair inhaler and metered dose inhaler (MDI) are ready and accessible.",
+    "Schedule a follow-up sports physical in 6 months.",
+    "Watch for any changes in breathing or wheezing.",
+    "Call if there are any new or worsening symptoms.",
+    "Check her Advair inhaler and MDI usage as prescribed.",
+    "Monitor her Flonase nasal spray usage as prescribed.",
+    "Watch for any nasal congestion or itchy eyes.",
+    "Call if she has any allergic reactions.",
+    "Check her Xopenex and albuterol inhaler usage as prescribed.",
+    "Watch for any difficulty breathing or coughing.",
+    "Call if she has any side effects from the inhalers.",
+    "Check her calcium intake and encourage more milk consumption (120 mg per day).",
+    "Watch for any signs of dehydration or bone weakness.",
+    "Call if she has any bone pain or fractures.",
+    "Schedule a dental check-up in 6 months.",
+    "Watch for any changes in her vision or hearing.",
+    "Call if she has any hearing problems or vision changes.",
+    "Schedule a hearing recheck in the school if available.",
+    "Call if she has any new or worsening symptoms."
+  ],
+  "child_explanation": "You had a check-up today, sweetie. You eat lots of yummy foods like meats and veggies. You brush your teeth and see a dentist. You're doing great in school and playing sports. Your body is growing well, like a big tree. Grown-ups and doctors are taking care of you. If you have any problems, they'll check again. Remember to wear your seat belt and use sunscreen. You're doing great!",
+  "entities": [
+    {
+      "text": "120 mg",
+      "label": "DOSAGE",
+      "start": 980,
+      "end": 986
+    },
+    {
+      "text": "albuterol",
+      "label": "MEDICATION",
+      "start": 1000,
+      "end": 1009
+    },
+    {
+      "text": "rash",
+      "label": "SYMPTOM",
+      "start": 2363,
+      "end": 2367
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "albuterol",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "HISTORY: , This child is seen for a sports physical.,NUTRITIONAL HISTORY:,  She takes meats, vegetables, and fruits.  Eats well.  Has may be 1 to 2 cups a day of milk.  Her calcium intake could be better.  She does not drink that much pop but she likes koolaid.  Her stools are normal.  Brushes her teeth.  Sees a dentist.,DEVELOPMENTAL HISTORY: , She did well in school last year.  Hearing and vision, no problems.  She wears corrective lenses.  She will be in 8th grade and involved in volleyball, basketball, and she will be moving to Texas.  She did go to Burton this last year.  She also plays clarinet, and will be involved also in cheerleading.  She likes to swim in the summer time.  Her menarche was January 2004.  It occurs every 7 weeks.  No particular problems at this time.,OTHER ACTIVITIES:  ,TV time about 2 to 3 hours a day.  She does not use drugs, alcohol, or smoke, and denies sexual activity.,MEDICATIONS:,  Advair 250/50 b.i.d., Flonase b.i.d., Allegra q.d.  120 mg, Xopenex and albuterol p.r.n.,ALLERGIES:,  No known drug allergies.,OBJECTIVE:,Vital Signs:  Blood pressure:  98/60.  Temperature:  96.6 tympanic.  Weight:  107 pounds, which places her at approximately the 60th percentile for weight and the height is about 80th percentile at 64-1/2 inches.  Her body mass index is 18.1, which is 40th percentile.  Pulse:  68.,HEENT:  Normocephalic.  Fundi benign.  Pupils are equal and reactive to light and accommodation.  Conjunctivae were non-injected.  Her pupils were equal, and reactive to light and accommodation.  No strabismus.  She wears glasses.  Her vision was 20/20 in both eyes.  TMs are bilaterally clear.  Nonerythematous.  Hearing in the ears, she was able to pass 40 decibel to 30 decibel.  With the right ear, she has some problems, but the left ear she passed.  Throat was clear.  Nonerythematous.  Good dentition.,Neck:  Supple.  Thyroid normal sized.  No increased lymphadenopathy in the submandibular nodes and no axillary nodes.,Respiratory:  Clear.  No wheezes and no crackles.  No tachypnea and no retractions.,Cardiovascular:  Regular rate and rhythm.  S1 and S2 normal.  No murmur.,Abdomen:  Soft.  No organomegaly and no masses.  No hepatosplenomegaly.,GU:  Normal female genitalia.  Tanner stage III in breast and pubic hair development and she was given a breast exam.  Negative for any masses.,Skin:  Without rash.,Extremities:  Deep tendon reflexes 2+/4+ bilaterally and equal.,Neurological:  Romberg negative.,Back:  No scoliosis.,She had good circumduction at the shoulder joints and duck walk is normal.,ASSESSMENT:,  Sports physical with normal growth and development.,PLAN:,  If problems continue, she will need to have her hearing rechecked.  Hopefully in the school, there will be a screening mat.  She received her first hepatitis A vaccine and she needs to have a booster in 6 to 12 months.  We reviewed her immunizations for tetanus and her last acellular DPT was 11/25/1996.  When she goes to Texas, Mom has an appointment already to see an allergist but she needs to find a primary care physician and we will ask for record release.  We talked about her menarche.  Recommended the exam of the breast regularly.  Talked about other anticipatory guidance including sunscreen, use of seat belts, and drugs, alcohol, and smoking, and sexual activity and avoidance at her age and to continue on her present medications.  She also has had problems with her ankles in the past.  She had no limitation here, but we gave her some ankle strengthening exercise handouts while she was in the office.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "120 mg"
+      ],
+      "caregiver_checklist": [
+        "120 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to give you a summary of what the doctor said during your visit. It sounds like you had a great visit and everything checked out well. Here's what you need to know:\n\n### What the Doctor Said:\n1. **Medicines to Take:**\n   - You take Advair twice a day. Advair is a medicine that helps with breathing.\n   - You use Flonase twice a day. Flonase helps with your nose.\n   - You take Allegra once a day. Allegra helps with your allergies.\n   - You use Xopenex and albuterol when you need to breathe better. These are used when you feel short of breath.\n\n2. **When to Take Medicines:**\n   - You take all these medicines at the same time every day. It's important to take them at the same time every day to keep your body working well.\n\n3. **When to Get Help:**\n   - If you feel short of breath or have trouble breathing, you should take your Xopenex and albuterol right away. You can find them in your medicine box.\n   - If you have any other questions or if you feel uncomfortable, you should talk to your doctor or a nurse right away.\n\n### Other Important Points:\n- You're doing well in school and have good vision and hearing. You wear glasses, and your vision is perfect.\n- You have a good dental health and brush your teeth regularly.\n- You don't use drugs, alcohol, or smoke, and you don't have any sexual activity.\n- You had your first hepatitis A vaccine, and you need a booster shot in 6 to 12 months.\n- You will be moving to Texas soon, so you need to find a primary care doctor there. Your mom has already made an appointment with an allergist.\n\n### Other Things to Remember:\n- You had a breast exam, and everything looked good. It's important to have regular exams.\n- You should use sunscreen, wear seat belts, and avoid drugs, alcohol, and smoking.\n- You should continue to use your present medicines and keep your ankles strong with the exercises we gave you.\n\nIf you have any more questions or if you feel uncomfortable, please talk to your doctor or a nurse. They are there to help you.",
+      "caregiver_checklist": "- Check Advair inhaler and metered dose inhaler (MDI) are ready and accessible.\n- Schedule a follow-up sports physical in 6 months.\n- Watch for any changes in breathing or wheezing.\n- Call if there are any new or worsening symptoms.\n- Check her Advair inhaler and MDI usage as prescribed.\n- Monitor her Flonase nasal spray usage as prescribed.\n- Watch for any nasal congestion or itchy eyes.\n- Call if she has any allergic reactions.\n- Check her Xopenex and albuterol inhaler usage as prescribed.\n- Watch for any difficulty breathing or coughing.\n- Call if she has any side effects from the inhalers.\n- Check her calcium intake and encourage more milk consumption.\n- Watch for any signs of dehydration or bone weakness.\n- Call if she has any bone pain or fractures.\n- Schedule a dental check-up in 6 months.\n- Watch for any changes in her vision or hearing.\n- Call if she has any hearing problems or vision changes.\n- Schedule a hearing recheck in the school if available.\n- Call if she has any new or worsening symptoms.",
+      "child_explanation": "You had a check-up today, sweetie. You eat lots of yummy foods like meats and veggies. You brush your teeth and see a dentist. You're doing great in school and playing sports. Your body is growing well, like a big tree. Grown-ups and doctors are taking care of you. If you have any problems, they'll check again. Remember to wear your seat belt and use sunscreen. You're doing great!"
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Sports_Physical_-_1",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Sports_Physical_-_1.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Sports_Physical_-_1.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Sports_Physical_-_1",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Sports_Physical_-_1.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Sports_Physical_-_1.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Sports_Physical_-_1",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Sports_Physical_-_1.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Sports_Physical_-_1.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 68.11,
+      "caregiver_checklist": 36.642,
+      "child_explanation": 12.496,
+      "total": 117.259
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T14:00:44+00:00"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "id": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy",
+  "patient_summary": "Hello there, you're in the hospital today because your doctor needs to take a look at your throat and ear. You had pain in your right ear and your right base of your tongue felt full. Your doctor did a special procedure called a microsuspension direct laryngoscopy with a biopsy. This means they used a tiny camera to look inside your throat and took some small samples to check for any problems.\n\nYou will need to take some special medicine after the procedure. Your doctor will give you a list of the medicines and how often to take them. It's important to follow the instructions carefully. If you have any questions, you can always ask your doctor or nurse.\n\nHere's what you need to know about the medicines:\n- You will take one medicine by mouth every day for a few days. It's called a steroid. This helps reduce swelling and pain.\n- You will also take another medicine by mouth every day for a few days. It's called a pain medicine. This will help with any discomfort you might feel.\n\nYou should call your doctor if you have any of these symptoms:\n- Fever higher than 100.4°F (38°C)\n- Severe pain that doesn't go away\n- Trouble swallowing or breathing\n- Any signs of infection like redness, swelling, or pus\n\nRemember, it's important to follow your doctor's instructions and take your medicines as directed. You'll be okay, and you'll be back to your normal self soon.",
+  "caregiver_checklist": [
+    "Give the patient their prescribed pain medication as directed.",
+    "Check the patient's pain level every 4 hours using a pain scale.",
+    "Watch for signs of increased pain, such as restlessness or difficulty sleeping.",
+    "Call the healthcare provider if the pain worsens or does not improve.",
+    "Schedule a follow-up appointment to discuss the biopsy results.",
+    "Watch for signs of infection, such as fever or increased redness.",
+    "Call the healthcare provider if any unusual symptoms appear.",
+    "Schedule a speech-language pathology evaluation if recommended.",
+    "Watch for signs of voice changes or hoarseness, and report them to the healthcare provider.",
+    "Call the healthcare provider if the patient experiences difficulty swallowing or breathing."
+  ],
+  "child_explanation": "You had a little pain in your ear and your tongue felt full. The doctors carefully looked inside your throat. They took tiny pieces of your throat to check. The grown-ups are taking good care of you. You'll be okay, you're in safe hands.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 338,
+      "end": 342
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 389,
+      "end": 393
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES:,1.  Fullness in right base of the tongue.,2.  Chronic right ear otalgia.,POSTOPERATIVE DIAGNOSIS: , Pending pathology.,PROCEDURE PERFORMED: , Microsuspension direct laryngoscopy with biopsy.,ANESTHESIA: , General.,INDICATION:,  This is a 50-year-old female who presents to the office with a chief complaint of ear pain on the right side.  Exact etiology of her ear pain had not been identified.  A fiberoptic examination had been performed in the office.  Upon examination, she was noted to have fullness in the right base of her tongue.  She was counseled on the risks, benefits, and alternatives to surgery and consented to such.,PROCEDURE: , After informed consent was obtained, the patient was brought to the Operative Suite where she was placed in supine position.  General endotracheal tube intubation was delivered by the Department of Anesthesia.  The patient was rotated 90 degrees away where a shoulder roll was placed.  A tooth guard was then placed to protect the upper dentition.  The Dedo laryngoscope was then inserted into the oral cavity.  It was advanced on the right lateral pharyngeal wall until the epiglottis was brought into view.  At this point, it was advanced underneath the epiglottis until the vocal cords were seen.  At this point, it was suspended via the Lewy suspension arm from the Mayo stand.  At this point, the Zeiss microscope with a 400 mm lens was brought into the surgical field.  Inspection of the vocal cords underneath the microscope revealed them to be white and glistening without any mucosal abnormalities.  It should be mentioned that the right vocal cord did appear to be slightly more hyperemic, however, there were no mucosal abnormalities identified.  This was confirmed with a laryngeal probe as well as use of mirror evaluated in the subglottic portion as well as the ventricle.  At this point, the scope was desuspended and the microscope was removed.  The scope was withdrawn through the vallecular region.  Inspection of the vallecula revealed a fullness on the right side with a papillomatous type growth that appeared very friable.  Biopsies were obtained with straight-biting cup forceps.  Once hemostasis was achieved, the scope was advanced into the piriform sinuses.  Again in the right piriform sinus, there was noted to be studding along the right lateral wall of the piriform sinus.  Again, biopsies were performed and once hemostasis was achieved, the scope was further withdrawn down the lateral pharyngeal wall.  There were no mucosal abnormalities identified within the oropharynx.  The scope was then completely removed and a bimanual examination was performed.  No neck masses were identified.  At this point, the procedure was complete.  The mouth guard was removed and the patient was returned to Anesthesia for awakening and taken to the recovery room without incident.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're in the hospital today because your doctor needs to take a look at your throat and ear. You had pain in your right ear and your right base of your tongue felt full. Your doctor did a special procedure called a microsuspension direct laryngoscopy with a biopsy. This means they used a tiny camera to look inside your throat and took some small samples to check for any problems.\n\nYou will need to take some special medicine after the procedure. Your doctor will give you a list of the medicines and how often to take them. It's important to follow the instructions carefully. If you have any questions, you can always ask your doctor or nurse.\n\nHere's what you need to know about the medicines:\n- You will take one medicine by mouth every day for a few days. It's called a steroid. This helps reduce swelling and pain.\n- You will also take another medicine by mouth every day for a few days. It's called a pain medicine. This will help with any discomfort you might feel.\n\nYou should call your doctor if you have any of these symptoms:\n- Fever higher than 100.4°F (38°C)\n- Severe pain that doesn't go away\n- Trouble swallowing or breathing\n- Any signs of infection like redness, swelling, or pus\n\nRemember, it's important to follow your doctor's instructions and take your medicines as directed. You'll be okay, and you'll be back to your normal self soon.",
+      "caregiver_checklist": "- Give the patient their prescribed pain medication as directed.\n- Check the patient's pain level every 4 hours using a pain scale.\n- Watch for signs of increased pain, such as restlessness or difficulty sleeping.\n- Call the healthcare provider if the pain worsens or does not improve.\n- Schedule a follow-up appointment to discuss the biopsy results.\n- Watch for signs of infection, such as fever or increased redness.\n- Call the healthcare provider if any unusual symptoms appear.\n- Schedule a speech-language pathology evaluation if recommended.\n- Watch for signs of voice changes or hoarseness, and report them to the healthcare provider.\n- Call the healthcare provider if the patient experiences difficulty swallowing or breathing.",
+      "child_explanation": "You had a little pain in your ear and your tongue felt full. The doctors carefully looked inside your throat. They took tiny pieces of your throat to check. The grown-ups are taking good care of you. You'll be okay, you're in safe hands."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Microsuspension_Direct_Laryngoscopy_Biopsy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 24.208,
+      "caregiver_checklist": 13.851,
+      "child_explanation": 8.584,
+      "total": 46.657
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:05:06+00:00"
+  }
+}

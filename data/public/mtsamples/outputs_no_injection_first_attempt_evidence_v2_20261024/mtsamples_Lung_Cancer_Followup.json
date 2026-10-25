@@ -1,0 +1,292 @@
+{
+  "id": "mtsamples_Lung_Cancer_Followup",
+  "patient_summary": "Hello you, \n\nYou're a 67-year-old lady with extensive stage small cell lung cancer. You've been on chemotherapy with two medicines: carboplatin and etoposide. You finished your fifth cycle on August 12th. You're here today because you've been having back pain and had a CT scan of your chest. Your daughters brought you to the clinic.\n\nYou're taking some medicines:\n- Levothyroxine 88 mcg every day to help your thyroid\n- Soriatane 25 mg every day to help your skin\n- Timoptic 0.5% solution twice a day to help your eyes\n- Vicodin 5/500 mg one to two times every 6 hours when you need pain relief\n\nIf you have pain, you can take the Vicodin. But if you have any of these symptoms, you should get help right away:\n- Any new chest pain\n- Fever\n- Chills\n- Night sweats\n- Shortness of breath\n\nYour back pain is still there, and you had a platelet transfusion the other day. You had a mild fever after that, but you don't have any chills or night sweats. Everything else is okay.\n\nThe doctors will look at your CT scan results and talk to you about what's next. If you have any questions or concerns, please let your care team know.",
+  "caregiver_checklist": [
+    "Give the patient the pain medication as needed.",
+    "Check the patient’s vital signs for fever.",
+    "Watch for signs of infection such as chills, night sweats, or increased fever.",
+    "Call the healthcare provider if fever persists or worsens.",
+    "Schedule a follow-up appointment in 2 weeks.",
+    "Monitor the patient for back pain and report any changes.",
+    "Watch for signs of chemotherapy side effects such as fatigue or nausea.",
+    "Call the healthcare provider if new symptoms appear.",
+    "Schedule a CT scan of the thorax if back pain persists.",
+    "Give the patient Levothyroxine 88 mcg daily.",
+    "Give the patient Soriatane 25 mg daily.",
+    "Give the patient Timoptic 0.5% solution b.i.d.",
+    "Give the patient Vicodin 5/500 mg one to two tablets q.6 hours p.r.n."
+  ],
+  "child_explanation": "You had a big cough and the doctors gave you medicine to help. Recently, you had a scan and they saw some pain. Now, you're here with your grown-ups to talk about it. You're still taking your thyroid medicine and other medicines. You also got a special drink to help your blood. You have some back pain, but the doctors gave you medicine for it. They're taking good care of you.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 128,
+      "end": 132
+    },
+    {
+      "text": "back pain",
+      "label": "SYMPTOM",
+      "start": 414,
+      "end": 423
+    },
+    {
+      "text": "Levothyroxine",
+      "label": "MEDICATION",
+      "start": 570,
+      "end": 583
+    },
+    {
+      "text": "88 mcg",
+      "label": "DOSAGE",
+      "start": 584,
+      "end": 590
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 591,
+      "end": 596
+    },
+    {
+      "text": "25 mg",
+      "label": "DOSAGE",
+      "start": 608,
+      "end": 613
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 614,
+      "end": 619
+    },
+    {
+      "text": "5/500 mg",
+      "label": "DOSAGE",
+      "start": 660,
+      "end": 668
+    },
+    {
+      "text": "back pain",
+      "label": "SYMPTOM",
+      "start": 794,
+      "end": 803
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 832,
+      "end": 836
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 910,
+      "end": 915
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 933,
+      "end": 939
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 955,
+      "end": 965
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 970,
+      "end": 989
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Levothyroxine",
+      "dosages": [
+        "88 mcg",
+        "25 mg",
+        "5/500 mg"
+      ],
+      "frequencies": [
+        "daily"
+      ],
+      "durations": []
+    }
+  ],
+  "source_text": "CHIEF COMPLAINT:,1.  Extensive stage small cell lung cancer.,2.  Chemotherapy with carboplatin and etoposide.,3.  Left scapular pain status post CT scan of the thorax.,HISTORY OF PRESENT ILLNESS: , The patient is a 67-year-old female with extensive stage small cell lung cancer.  She is currently receiving treatment with carboplatin and etoposide.  She completed her fifth cycle on 08/12/10.  She has had ongoing back pain and was sent for a CT scan of the thorax.  She comes into clinic today accompanied by her daughters to review the results.,CURRENT MEDICATIONS: , Levothyroxine 88 mcg daily, Soriatane 25 mg daily, Timoptic 0.5% solution b.i.d., Vicodin 5/500 mg one to two tablets q.6 hours p.r.n.,ALLERGIES: , No known drug allergies.,REVIEW OF SYSTEMS:  ,The patient continues to have back pain some time she also take two pain pill.  She received platelet transfusion the other day and reported mild fever.  She denies any chills, night sweats, chest pain, or shortness of breath.  The rest of her review of systems is negative.,PHYSICAL EXAM:,VITALS:\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "Levothyroxine",
+        "88 mcg",
+        "daily",
+        "25 mg",
+        "5/500 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello you, \n\nYou're a 67-year-old lady with extensive stage small cell lung cancer. You've been on chemotherapy with two medicines: carboplatin and etoposide. You finished your fifth cycle on August 12th. You're here today because you've been having back pain and had a CT scan of your chest. Your daughters brought you to the clinic.\n\nYou're taking some medicines:\n- Levothyroxine 88 mcg every day to help your thyroid\n- Soriatane 25 mg every day to help your skin\n- Timoptic 0.5% solution twice a day to help your eyes\n- Vicodin 5/500 mg one to two times every 6 hours when you need pain relief\n\nIf you have pain, you can take the Vicodin. But if you have any of these symptoms, you should get help right away:\n- Any new chest pain\n- Fever\n- Chills\n- Night sweats\n- Shortness of breath\n\nYour back pain is still there, and you had a platelet transfusion the other day. You had a mild fever after that, but you don't have any chills or night sweats. Everything else is okay.\n\nThe doctors will look at your CT scan results and talk to you about what's next. If you have any questions or concerns, please let your care team know.",
+      "caregiver_checklist": "- Give the patient the pain medication as needed.\n- Check the patient’s vital signs for fever.\n- Watch for signs of infection such as chills, night sweats, or increased fever.\n- Call the healthcare provider if fever persists or worsens.\n- Schedule a follow-up appointment in 2 weeks.\n- Monitor the patient for back pain and report any changes.\n- Watch for signs of chemotherapy side effects such as fatigue or nausea.\n- Call the healthcare provider if new symptoms appear.\n- Schedule a CT scan of the thorax if back pain persists.",
+      "child_explanation": "You had a big cough and the doctors gave you medicine to help. Recently, you had a scan and they saw some pain. Now, you're here with your grown-ups to talk about it. You're still taking your thyroid medicine and other medicines. You also got a special drink to help your blood. You have some back pain, but the doctors gave you medicine for it. They're taking good care of you."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Lung_Cancer_Followup",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Lung_Cancer_Followup.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Lung_Cancer_Followup.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Lung_Cancer_Followup",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Lung_Cancer_Followup.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Lung_Cancer_Followup.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Lung_Cancer_Followup",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Lung_Cancer_Followup.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Lung_Cancer_Followup.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 17.472,
+      "caregiver_checklist": 21.708,
+      "child_explanation": 8.421,
+      "total": 47.611
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:19:20+00:00"
+  }
+}

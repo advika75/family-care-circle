@@ -1,0 +1,194 @@
+{
+  "id": "mtsamples_TURP",
+  "patient_summary": "Hello there! I'm here to explain what happened to you during your recent surgery. You had a procedure called a transurethral electrosurgical resection of the prostate. This was done because you had a condition called benign prostatic hyperplasia, which made it hard for you to urinate and caused you to have bladder stones in the past.\n\nYou had a general anesthesia, which means you were asleep during the surgery. Before the surgery, you were given antibiotics to help prevent any infections. After you were asleep, the doctor used a special tool to look inside your bladder and remove part of your prostate. The prostate is the part of your body that helps control your urine flow.\n\nThe surgery went well, and there were no complications. You were able to go home after a few days. You will need to use a catheter, which is a thin tube that helps drain your bladder. This is to make sure everything is working correctly after the surgery.\n\nYou might feel some pain or discomfort, but it will go away with time. You should feel better soon. If you have any bleeding or if you feel sick or have a fever, you should call your doctor right away. Your doctor will give you more instructions on how to take care of yourself after the surgery.",
+  "caregiver_checklist": [
+    "Give the patient a prophylactic antibiotic in the preoperative holding area.",
+    "Check the patient's vital signs every hour for the first 24 hours.",
+    "Watch for signs of infection such as fever, redness, or increased pain.",
+    "Call the surgeon if the patient develops signs of infection.",
+    "Schedule a follow-up appointment in 2 weeks for a postoperative check-up.",
+    "Check the Foley catheter for proper placement and patency.",
+    "Watch for signs of incontinence such as leakage or frequent urination.",
+    "Call the surgeon if the patient experiences signs of incontinence.",
+    "Schedule a follow-up appointment in 6 weeks for a postoperative check-up.",
+    "Watch for signs of impotence such as difficulty maintaining an erection.",
+    "Call the surgeon if the patient experiences signs of impotence.",
+    "Watch for signs of urethral strictures such as difficulty urinating or blood in the urine.",
+    "Call the surgeon if the patient experiences signs of urethral strictures."
+  ],
+  "child_explanation": "You had a small problem with your bladder. Your doctors had to fix it. They used a special tool to remove extra tissue. There were no problems, just tiny helpers like medicine. The grown-ups and doctors are taking care of you. You'll feel better soon.",
+  "entities": [
+    {
+      "text": "Bleeding",
+      "label": "SYMPTOM",
+      "start": 591,
+      "end": 599
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS:,  Benign prostatic hyperplasia.,POSTOPERATIVE DIAGNOSIS:,  Benign prostatic hyperplasia.,OPERATION PERFORMED: , Transurethral electrosurgical resection of the prostate.,ANESTHESIA: , General.,COMPLICATIONS:,  None.,INDICATIONS FOR THE SURGERY:,  This is a 77-year-old man with severe benign prostatic hyperplasia.  He has had problem with urinary retention and bladder stones in the past.  He will need to have transurethral resection of prostate to alleviate the above-mentioned problems.  Potential complications include, but are not limited to:,1.  Infection.,2.  Bleeding.,3.  Incontinence.,4.  Impotence.,5.  Formation of urethral strictures.,PROCEDURE IN DETAIL: , The patient was identified, after which he was taken into the operating room.  General LMA anesthesia was then administered.  The patient was given prophylactic antibiotic in the preoperative holding area.  The patient was then positioned, prepped and draped.  Cystoscopy was then performed by using a #26-French continuous flow resectoscopic sheath and a visual obturator.  The prostatic urethra appeared to be moderately hypertrophied due to the lateral lobes and a large median lobe.  The anterior urethra was normal without strictures or lesions.  The bladder was severely trabeculated with multiple bladder diverticula.  There is a very bladder diverticula located in the right posterior bladder wall just proximal to the trigone.  Using the ***** resection apparatus and a right angle resection loop, the prostate was resected initially at the area of the median lobe.  Once the median lobe has completely resected, the left lateral lobe and then the right lateral lobes were taken down.  Once an adequate channel had been achieved, the prostatic specimen was retrieved from the bladder by using an Ellik evacuator.  A 3-mm bar electrode was then introduced into the prostate to achieve perfect hemostasis.  The sheath was then removed under direct vision and a #24-French Foley catheter was then inserted atraumatically with pinkish irrigation fluid obtained.  The patient tolerated the operation well.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to explain what happened to you during your recent surgery. You had a procedure called a transurethral electrosurgical resection of the prostate. This was done because you had a condition called benign prostatic hyperplasia, which made it hard for you to urinate and caused you to have bladder stones in the past.\n\nYou had a general anesthesia, which means you were asleep during the surgery. Before the surgery, you were given antibiotics to help prevent any infections. After you were asleep, the doctor used a special tool to look inside your bladder and remove part of your prostate. The prostate is the part of your body that helps control your urine flow.\n\nThe surgery went well, and there were no complications. You were able to go home after a few days. You will need to use a catheter, which is a thin tube that helps drain your bladder. This is to make sure everything is working correctly after the surgery.\n\nYou might feel some pain or discomfort, but it will go away with time. You should feel better soon. If you have any bleeding or if you feel sick or have a fever, you should call your doctor right away. Your doctor will give you more instructions on how to take care of yourself after the surgery.",
+      "caregiver_checklist": "- Give the patient a prophylactic antibiotic in the preoperative holding area.\n- Check the patient's vital signs every hour for the first 24 hours.\n- Watch for signs of infection such as fever, redness, or increased pain.\n- Call the surgeon if the patient develops signs of infection.\n- Schedule a follow-up appointment in 2 weeks for a postoperative check-up.\n- Check the Foley catheter for proper placement and patency.\n- Watch for signs of incontinence such as leakage or frequent urination.\n- Call the surgeon if the patient experiences signs of incontinence.\n- Schedule a follow-up appointment in 6 weeks for a postoperative check-up.\n- Watch for signs of impotence such as difficulty maintaining an erection.\n- Call the surgeon if the patient experiences signs of impotence.\n- Watch for signs of urethral strictures such as difficulty urinating or blood in the urine.\n- Call the surgeon if the patient experiences signs of urethral strictures.",
+      "child_explanation": "You had a small problem with your bladder. Your doctors had to fix it. They used a special tool to remove extra tissue. There were no problems, just tiny helpers like medicine. The grown-ups and doctors are taking care of you. You'll feel better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_TURP",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_TURP.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_TURP.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_TURP",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_TURP.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_TURP.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_TURP",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_TURP.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_TURP.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 19.016,
+      "caregiver_checklist": 15.962,
+      "child_explanation": 7.363,
+      "total": 42.353
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:44:33+00:00"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "id": "mtsamples_Tenosynovectomy_Cortisone_Injection",
+  "patient_summary": "Hello there! I'm here to help you understand what's happening with your hand after the surgery. You had a procedure called a carpal tunnel release, which means we fixed a problem in your wrist. We also fixed some other issues with your fingers and palm. Here's what you need to know:\n\n1. You'll be taking a medicine called Darvocet-N. You'll take 1 to 2 tablets every 4 hours, as needed. This is to help with any pain you might feel. You should start taking these tablets 24 to 48 hours after the surgery.\n\n2. You'll be doing some exercises to help your hand move better. We want you to start these gentle exercises 24 to 48 hours after the surgery. You'll be doing these exercises to help your hand and wrist move more freely.\n\n3. You'll be taking 30 tablets of Darvocet-N. You should take 1 to 2 tablets every 4 hours, as needed. This is to help with any pain you might feel. You should start taking these tablets 24 to 48 hours after the surgery.\n\n4. It's important to keep your hand clean and dry. You should check your hand every day to make sure the dressing is clean and not damaged. If you have any questions or if you have any problems, you should call me or come back to see me.\n\n5. You'll be wearing a special splint on your hand. This helps keep your hand in the right position while it heals. You should keep the splint clean and dry, and follow up with me in my office as soon as you can.\n\nRemember, it's normal to feel some pain and stiffness after surgery. If you have any problems or if the pain gets worse, you should call me right away. I'm here to help you get better.",
+  "caregiver_checklist": [
+    "Give Darvocet-N 100, 30 tablets, one to two PO q.4h. p.r.n.",
+    "Check capillary refill and good vascular color at the tips of all digits post-surgery.",
+    "Watch for signs of infection such as redness, swelling, or fever.",
+    "Call if there are signs of increased pain, numbness, or weakness in the hand.",
+    "Schedule follow-up appointment in 2 weeks for postoperative evaluation.",
+    "Watch for signs of glove and stocking sensation, which may indicate nerve damage.",
+    "Call if there are signs of glove and stocking sensation, which may indicate nerve damage.",
+    "Schedule follow-up appointment in 6 weeks for postoperative evaluation.",
+    "Call if there are signs of persistent or worsening symptoms, such as pain, numbness, or weakness.",
+    "Schedule follow-up appointment in 12 weeks for postoperative evaluation."
+  ],
+  "child_explanation": "You had a little surgery to help your hand feel better.\nThe doctors carefully opened your hand to let your nerves move.\nThey took out the stuff that was making your fingers hurt.\nThey gave you some medicine to help you sleep a bit.\nNow you'll rest for a few days and then start moving your fingers.\nGrown-ups will check on you and make sure you're okay.",
+  "entities": [
+    {
+      "text": "30 tablets",
+      "label": "DOSAGE",
+      "start": 3355,
+      "end": 3365
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES,1.  EMG-proven left carpal tunnel syndrome.,2.  Tenosynovitis of the left third and fourth fingers at the A1 and A2 pulley level.,3.  Dupuytren's nodule in the palm.,POSTOPERATIVE DIAGNOSES,1.  EMG-proven left carpal tunnel syndrome.,2.  Tenosynovitis of the left third and fourth fingers at the A1 and A2 pulley level.,3.  Dupuytren's nodule in the palm.,PROCEDURE: , Left carpal tunnel release with flexor tenosynovectomy; cortisone injection of trigger fingers, left third and fourth fingers; injection of Dupuytren's nodule, left palm.,ANESTHESIA: , Local plus IV sedation (MAC).,ESTIMATED BLOOD LOSS:  ,Zero.,SPECIMENS:  ,None.,DRAINS: , None.,PROCEDURE DETAIL: , Patient brought to the operating room.  After induction of IV sedation the left hand was anesthetized suitable for carpal tunnel release; 10 cc of a mixture of 1% Xylocaine and 0.5% Marcaine was injected in the distal forearm and proximal palm suitable for carpal tunnel surgery.  Routine prep and drape was employed.  Arm was exsanguinated by means of elevation of Esmarch elastic tourniquet and tourniquet inflated to 250 mmHg pressure.  Hand was positioned palm up in the lead hand-holder.  A short curvilinear incision about the base of the thenar eminence was made.  Skin was sharply incised.  Sharp dissection was carried down to the transverse carpal ligament and this was carefully incised longitudinally along its ulnar margin.  Care was taken to divide the entire length of the transverse retinaculum including its distal insertion into deep palmar fascia in the midpalm.  Proximally the antebrachial fascia was released for a distance of 2-3 cm proximal to the wrist crease to insure complete decompression of the median nerve.  Retinacular flap was retracted radially to expose the contents of the carpal canal.  Median nerve was identified, seen to be locally compressed with moderate erythema and mild narrowing.  Locally adherent tenosynovium was present and this was carefully dissected free.  Additional tenosynovium was dissected from the flexor tendons, individually stripping and peeling each tendon in sequential order so as to debulk the contents of the carpal canal.  Epineurotomy and partial epineurectomy were carried out on the nerve in the area of mild constriction to relieve local external scarring of the epineurium.  When this was complete retinacular flap was laid loosely in place over the contents of the carpal canal and skin only was closed with interrupted 5-0 nylon horizontal mattress sutures.  A syringe with 3 cc of Kenalog-10 and 3 cc of 1% Xylocaine using a 25 gauge short needle was then selected; 1 cc of this mixture was injected into the third finger A1 and A2 pulley tendon sheaths using standard trigger finger injection technique; 1 cc was injected into the fourth finger A1/A2 pulley tendon sheath using standard tendon sheath injection technique; 1 cc was injected into the Dupuytren's nodule in the midpalm to relieve local discomfort.  Routine postoperative hand dressing with well-padded, well-molded volar plaster splint and lightly compressive Ace wrap was applied.  Tourniquet was deflated.  Good vascular color and capillary refill were seen to return to the tips of all digits.  Patient discharged to the ambulatory recovery area and from there discharged home.  Discharge medication is Darvocet-N 100, 30 tablets, one to two PO q.4h. p.r.n.  Patient asked to begin gentle active flexion, extension and passive nerve glide exercises beginning 24-48 hours after surgery.  She was asked to keep the dressings clean, dry and intact and follow up in my office.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "30 tablets"
+      ],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to help you understand what's happening with your hand after the surgery. You had a procedure called a carpal tunnel release, which means we fixed a problem in your wrist. We also fixed some other issues with your fingers and palm. Here's what you need to know:\n\n1. You'll be taking a medicine called Darvocet-N. You'll take 1 to 2 tablets every 4 hours, as needed. This is to help with any pain you might feel. You should start taking these tablets 24 to 48 hours after the surgery.\n\n2. You'll be doing some exercises to help your hand move better. We want you to start these gentle exercises 24 to 48 hours after the surgery. You'll be doing these exercises to help your hand and wrist move more freely.\n\n3. It's important to keep your hand clean and dry. You should check your hand every day to make sure the dressing is clean and not damaged. If you have any questions or if you have any problems, you should call me or come back to see me.\n\n4. You'll be wearing a special splint on your hand. This helps keep your hand in the right position while it heals. You should keep the splint clean and dry, and follow up with me in my office as soon as you can.\n\nRemember, it's normal to feel some pain and stiffness after surgery. If you have any problems or if the pain gets worse, you should call me right away. I'm here to help you get better.",
+      "caregiver_checklist": "- Give Darvocet-N 100, 30 tablets, one to two PO q.4h. p.r.n.\n- Check capillary refill and good vascular color at the tips of all digits post-surgery.\n- Watch for signs of infection such as redness, swelling, or fever.\n- Call if there are signs of increased pain, numbness, or weakness in the hand.\n- Schedule follow-up appointment in 2 weeks for postoperative evaluation.\n- Watch for signs of glove and stocking sensation, which may indicate nerve damage.\n- Call if there are signs of glove and stocking sensation, which may indicate nerve damage.\n- Schedule follow-up appointment in 6 weeks for postoperative evaluation.\n- Call if there are signs of persistent or worsening symptoms, such as pain, numbness, or weakness.\n- Schedule follow-up appointment in 12 weeks for postoperative evaluation.",
+      "child_explanation": "You had a little surgery to help your hand feel better.\nThe doctors carefully opened your hand to let your nerves move.\nThey took out the stuff that was making your fingers hurt.\nThey gave you some medicine to help you sleep a bit.\nNow you'll rest for a few days and then start moving your fingers.\nGrown-ups will check on you and make sure you're okay."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Tenosynovectomy_Cortisone_Injection",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tenosynovectomy_Cortisone_Injection.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Tenosynovectomy_Cortisone_Injection.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Tenosynovectomy_Cortisone_Injection",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tenosynovectomy_Cortisone_Injection.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Tenosynovectomy_Cortisone_Injection.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Tenosynovectomy_Cortisone_Injection",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Tenosynovectomy_Cortisone_Injection.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Tenosynovectomy_Cortisone_Injection.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 53.055,
+      "caregiver_checklist": 18.927,
+      "child_explanation": 11.6,
+      "total": 83.601
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T15:45:56+00:00"
+  }
+}

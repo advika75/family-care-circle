@@ -1,0 +1,203 @@
+{
+  "id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+  "patient_summary": "Hello there, you're a 46-year-old man. You've been experiencing pain in your back and your leg for about four months. The pain started on your right side and travels down to your buttock and the back of your leg, all the way to your ankle. The pain gets worse when you move and feels better when you rest. Sometimes, when the pain is really bad, you feel a little weakness in your right leg.\n\nYour doctor did some tests and found out that there's a problem with a part of your spine that's causing the pain. It's a small bulge in your spine at the bottom of your back that's pressing on a nerve. This is called a \"radiculopathy,\" which means the nerve is being pinched.\n\nYour doctor also did some more tests to check how your nerves are working. Everything looks normal, but they did notice some weakness in your leg muscles. They think this is because the nerve is being pinched and the muscles are getting less blood and oxygen.\n\nYour doctor has scheduled you to see them again soon. In the meantime, you should take some pain medicine as they told you. You should also try to rest as much as you can, and if the pain gets really bad, you should call your doctor or go to the emergency room. Remember, it's important to follow your doctor's advice and keep them updated on how you're feeling.",
+  "caregiver_checklist": [
+    "Check the patient’s back pain level and note any changes in pain intensity.",
+    "Watch for signs of weakness or numbness in the right leg.",
+    "Call Dr. X if the patient experiences severe pain or weakness.",
+    "Schedule a follow-up appointment with Dr. X in the next 1-2 weeks.",
+    "Check the patient’s reflexes and note any changes.",
+    "Watch for signs of bowel or bladder changes.",
+    "Call if the patient experiences bowel or bladder changes.",
+    "Check the patient’s strength in both legs and note any changes.",
+    "Watch for signs of worsening symptoms or new symptoms.",
+    "Schedule a repeat MRI in 6-12 months if symptoms persist."
+  ],
+  "child_explanation": "You have a sore back, you feel it in your legs too. It hurts more when you move. You can feel a little weakness sometimes. Grown-ups and doctors are taking care of you. They checked your back and legs. The doctors found a small problem in your back that's causing your pain. They will talk more about it soon. You're doing well, just rest and take care.",
+  "entities": [
+    {
+      "text": "back pain",
+      "label": "SYMPTOM",
+      "start": 264,
+      "end": 273
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 279,
+      "end": 283
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 460,
+      "end": 464
+    }
+  ],
+  "regimens": [],
+  "source_text": "HISTORY:,  The patient is a 46-year-old right-handed gentleman with a past medical history of a left L5-S1 lumbar microdiskectomy in 1998 with complete resolution of left leg symptoms, who now presents with a four-month history of gradual onset of right-sided low back pain with pain radiating down into his buttock and posterior aspect of his right leg into the ankle.  Symptoms are worsened by any activity and relieved by rest.  He also feels that when the pain is very severe, he has some subtle right leg weakness.  No left leg symptoms.  No bowel or bladder changes.,On brief examination, full strength in both lower extremities.  No sensory abnormalities.  Deep tendon reflexes are 2+ and symmetric at the patellas and absent at both ankles.  Positive straight leg raising on the right.,MRI of the lumbosacral spine was personally reviewed and reveals a right paracentral disc at L5-S1 encroaching upon the right exiting S1 nerve root.,NERVE CONDUCTION STUDIES:,  Motor and sensory distal latencies, evoked response amplitudes, and conduction velocities are normal in the lower extremities.  The right common peroneal F-wave is minimally prolonged.  The right tibial H reflex is absent.,NEEDLE EMG:,  Needle EMG was performed on the right leg, left gastrocnemius medialis muscle, and right lumbosacral paraspinal muscles using a disposable concentric needle.  It revealed spontaneous activity in the right gastrocnemius medialis, gluteus maximus, and lower lumbosacral paraspinal muscles.  There was evidence of chronic denervation in right gastrocnemius medialis and gluteus maximus muscles.,IMPRESSION: , This electrical study is abnormal.  It reveals an acute right S1 radiculopathy.  There is no evidence for peripheral neuropathy or left or right L5 radiculopathy.,Results were discussed with the patient and he is scheduled to follow up with Dr. X in the near future.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're a 46-year-old man. You've been experiencing pain in your back and your leg for about four months. The pain started on your right side and travels down to your buttock and the back of your leg, all the way to your ankle. The pain gets worse when you move and feels better when you rest. Sometimes, when the pain is really bad, you feel a little weakness in your right leg.\n\nYour doctor did some tests and found out that there's a problem with a part of your spine that's causing the pain. It's a small bulge in your spine at the bottom of your back that's pressing on a nerve. This is called a \"radiculopathy,\" which means the nerve is being pinched.\n\nYour doctor also did some more tests to check how your nerves are working. Everything looks normal, but they did notice some weakness in your leg muscles. They think this is because the nerve is being pinched and the muscles are getting less blood and oxygen.\n\nYour doctor has scheduled you to see them again soon. In the meantime, you should take some pain medicine as they told you. You should also try to rest as much as you can, and if the pain gets really bad, you should call your doctor or go to the emergency room. Remember, it's important to follow your doctor's advice and keep them updated on how you're feeling.",
+      "caregiver_checklist": "- Check the patient’s back pain level and note any changes in pain intensity.\n- Watch for signs of weakness or numbness in the right leg.\n- Call Dr. X if the patient experiences severe pain or weakness.\n- Schedule a follow-up appointment with Dr. X in the next 1-2 weeks.\n- Check the patient’s reflexes and note any changes.\n- Watch for signs of bowel or bladder changes.\n- Call if the patient experiences bowel or bladder changes.\n- Check the patient’s strength in both legs and note any changes.\n- Watch for signs of worsening symptoms or new symptoms.\n- Schedule a repeat MRI in 6-12 months if symptoms persist.",
+      "child_explanation": "You have a sore back, you feel it in your legs too. It hurts more when you move. You can feel a little weakness sometimes. Grown-ups and doctors are taking care of you. They checked your back and legs. The doctors found a small problem in your back that's causing your pain. They will talk more about it soon. You're doing well, just rest and take care."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_EMG_Nerve_Conduction_Study_-_6.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 18.614,
+      "caregiver_checklist": 10.38,
+      "child_explanation": 7.62,
+      "total": 36.617
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T10:44:40+00:00"
+  }
+}

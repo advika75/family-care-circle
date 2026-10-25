@@ -1,0 +1,197 @@
+{
+  "id": "mtsamples_Total_Thyroid_Lumpectomy",
+  "patient_summary": "Hello there! I'll explain what happened to you and what you need to do next. You had a surgery to remove a lump in your thyroid gland. The doctors found a small, rubbery lump about the size of a pea. They removed the whole thyroid gland on your left side. The surgery went well, and you were able to breathe normally afterward. You didn't have any problems during the surgery.\n\nYou'll need to take some medicines after the surgery. Your doctor will give you a prescription for these. You'll need to take them by mouth every day for a few weeks. You might feel a little tired or have a sore throat for a few days. If you have any of these symptoms, or if you have any other concerns, you should call your doctor or nurse.\n\nYou'll need to stay in the hospital for 23 hours after the surgery. Your doctor will check on you to make sure you're healing well. You'll also need to come back for a follow-up visit in one week. If you have any questions or concerns, please talk to your doctor or nurse. They can help you understand everything better.",
+  "caregiver_checklist": [
+    "Check for signs of bleeding",
+    "Watch for swelling or redness in the neck",
+    "Call if swelling increases or if bleeding starts",
+    "Schedule follow-up appointment in one week",
+    "Call if symptoms persist or worsen",
+    "Monitor for hoarseness or difficulty breathing",
+    "Check for any new lumps or changes in the neck",
+    "Call if hoarseness or difficulty breathing occurs",
+    "Schedule for thyroid function tests in 6 weeks",
+    "Watch for any new symptoms of thyroid hormone deficiency"
+  ],
+  "child_explanation": "You had a small bump in your neck. The doctors found out it was a mass. They had to take it out. You're okay now. The doctors are taking care of you. You'll be in the hospital for a few days. You're safe, you're loved.",
+  "entities": [
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 3507,
+      "end": 3515
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 4021,
+      "end": 4029
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSIS:,  Left thyroid mass.,POSTOPERATIVE DIAGNOSIS:,  Left thyroid mass.,PROCEDURE PERFORMED:,  Left total thyroid lumpectomy.,ANESTHESIA,:  General endotracheal.,ESTIMATED BLOOD LOSS: , Less than 50 cc.,COMPLICATIONS:,  None.,INDICATIONS FOR PROCEDURE:,  The patient is a 76-year-old Caucasian female with a history of a left thyroid mass nodule that was confirmed with CT scan along with thyroid uptake scan, which demonstrated a hot nodule on the left anterior pole.  The patient was then discussed the risks, complications, and consequences of a surgical procedure and a written consent was obtained.,PROCEDURE:  ,The patient is brought to the operative suite by Anesthesia.  The patient was placed on the operative table in supine position.  After this, the patient was placed under general endotracheal intubation anesthesia and the patient was then placed upon a shoulder roll.  After this, the skin incision was marked approximately two fingerbreadths above the sternal notch.  It was then localized with 1% lidocaine with epinephrine 1:1000 approximately 7 cc total.,After this, the patient was then prepped and draped in the usual sterile fashion and a #10 blade was then utilized to make a skin incision.  The subcutaneous tissue was then bluntly dissected utilizing a Ray-Tec sponge and a bear claw was then utilized to retract the upper incisional skin with counter retraction performed to allow a subplatysmal plane of skin flaps to be performed in superior and inferolateral directions.  After this, the midline was then identified and grasped on either side with a DeBakey forceps.  The raphe was noted and Bovie cauterization was utilized to cut down into this region.  The fine stats were utilized to further open this area with exposure and bisection of the sternothyroid muscle.  It was separated on the left side from the patient's sternothyroid muscle.  After this, the sternothyroid muscle was identified, grasped with the DeBakey forceps and infiltrated initially through its fascial plane with the Metzenbaum scissors.  Blunt dissection was then utilized to free the sternothyroid muscle from the thyroid gland in superior and inferior directions and laterally with the help of Kitners.  After this, the plane was rotated more anteriorly with the superior and inferior parathyroid glands identified.  The fat cap was noted to be attached on the superior parathyroid to the posterior aspect of the thyroid itself.  It was freed from the thyroid gland and reflected laterally and posteriorly.  The inferior parathyroid gland actually appeared to be attached also to the inferior aspect of the thyroid itself and was reflected laterally.  After this, the patient's thyroid gland was palpated noting a thyroid nodule in the posterior inferior aspect along with the calcification laterally.  The nodule appeared to be sort of rubbery in consistency and approximately 1 cm diameter.  As the gland was rotated more anteriorly, the recurrent laryngeal nerve on the left side was identified and further dissection along Berry's ligament on the medial aspect was performed.  The middle thyroid vein and inferior thyroid artery were both cauterized with a bipolar cautery and bisected.  After this, the gland was easily rotated anteriorly with further dissection carried up to the superior pole.  The superior pole was exposed with the help of a Richardson and Army-Navy retractors with cross-clamping and tying of the superior laryngeal artery and vein.  Further, the small bleeding vessels were identified and bipolared, and cut with the Metzenbaum scissors.  The superior pole was finally freed and the gland was rotated more anteriorly onto the anterior aspect of the trachea.  Berry's ligament was finally freed and the gland was cross-clamped on the opposing thyroid isthmus with a mosquito.  After this, the gland was cut with a Metzenbaum scissors and tied with a #3-0 undyed Vicryl tie.  The defect on the neck now was thoroughly irrigated with normal saline solution and further bleeding was controlled with bipolar cauterization.  Surgicel was then cut in small strips and three replaced in the lateral part of the neck.,The opposing side of the thyroid gland on the right was palpated with no noticeable nodules or masses.  The strap muscles were then reapproximated with #3-0 Vicryl on a SH, followed by reapproximation of the subcutaneous tissue with #4-0 Vicryl, followed by reapproximation of the skin by running subcuticular #5-0 Prolene and a #6-0 fast absorbing gut.  Mastisol, Steri-Strips, and bacitracin were placed followed by a sterile 4 x 4 dressing.  The patient was then turned back to Anesthesia, extubated in the operating room, and transferred to Recovery in stable condition.  The patient tolerated the procedure well and will be admitted to hospital for 23-hour observation and will be followed up in one week afterwards.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened to you and what you need to do next. You had a surgery to remove a lump in your thyroid gland. The doctors found a small, rubbery lump about the size of a pea. They removed the whole thyroid gland on your left side. The surgery went well, and you were able to breathe normally afterward. You didn't have any problems during the surgery.\n\nYou'll need to take some medicines after the surgery. Your doctor will give you a prescription for these. You'll need to take them by mouth every day for a few weeks. You might feel a little tired or have a sore throat for a few days. If you have any of these symptoms, or if you have any other concerns, you should call your doctor or nurse.\n\nYou'll need to stay in the hospital for 23 hours after the surgery. Your doctor will check on you to make sure you're healing well. You'll also need to come back for a follow-up visit in one week. If you have any questions or concerns, please talk to your doctor or nurse. They can help you understand everything better.",
+      "caregiver_checklist": "- Check for signs of bleeding\n- Watch for swelling or redness in the neck\n- Call if swelling increases or if bleeding starts\n- Schedule follow-up appointment in one week\n- Call if symptoms persist or worsen\n- Monitor for hoarseness or difficulty breathing\n- Check for any new lumps or changes in the neck\n- Call if hoarseness or difficulty breathing occurs\n- Schedule for thyroid function tests in 6 weeks\n- Watch for any new symptoms of thyroid hormone deficiency",
+      "child_explanation": "You had a small bump in your neck. The doctors found out it was a mass. They had to take it out. You're okay now. The doctors are taking care of you. You'll be in the hospital for a few days. You're safe, you're loved."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Total_Thyroid_Lumpectomy",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Total_Thyroid_Lumpectomy.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Total_Thyroid_Lumpectomy.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Total_Thyroid_Lumpectomy",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Total_Thyroid_Lumpectomy.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Total_Thyroid_Lumpectomy.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Total_Thyroid_Lumpectomy",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Total_Thyroid_Lumpectomy.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Total_Thyroid_Lumpectomy.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 20.439,
+      "caregiver_checklist": 12.701,
+      "child_explanation": 10.304,
+      "total": 43.452
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:06:51+00:00"
+  }
+}

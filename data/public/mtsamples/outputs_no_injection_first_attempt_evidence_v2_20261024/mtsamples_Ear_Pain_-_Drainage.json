@@ -1,0 +1,296 @@
+{
+  "id": "mtsamples_Ear_Pain_-_Drainage",
+  "patient_summary": "Hello there, you're a 12-year-old boy with your mom. You've been having pain in your right ear for several days and it's also draining. Your mom noticed that it has a bad smell. You've also had a low-grade fever. A few days ago, you had a sore throat and a headache. Your doctor saw you a week ago and found out you didn't have strep throat. They just gave you some medicine to help you feel better. You also had a trip on an airplane a couple of weeks ago. There's no cough, shortness of breath, or wheezing. You don't have a fever or diarrhea. Your doctor saw you today and found that your ear is infected and draining. They gave you some medicine to help your ear feel better. You need to take Ceftin 250 mg by mouth twice a day for 10 days. You also need to put Ciprodex drops in your ear twice a day. You need to come back to the doctor's office in two weeks to check on your ear. If you have any pain or fever, or if the drainage gets worse, you should call the doctor right away.",
+  "caregiver_checklist": [
+    "Give the patient Ceftin 250 mg by mouth twice a day for 10 days.",
+    "Check the patient's temperature twice a day.",
+    "Watch for signs of worsening infection or fever.",
+    "Call the office if the patient develops high fever, severe pain, or drainage changes.",
+    "Schedule the patient's follow-up appointment in two weeks.",
+    "Watch for signs of ear pain, drainage, or fever.",
+    "Call the office if the patient has any new symptoms.",
+    "Check the patient's ear twice a day for drainage or purulence.",
+    "Call the office if the patient has any signs of ear pain or drainage.",
+    "Schedule the patient's follow-up appointment in two weeks."
+  ],
+  "child_explanation": "You have a sore ear that's hurting and it's draining something yucky. You're getting help from the grown-ups and doctors. You're like a superhero fighting the yucky stuff. You'll take a medicine to help. The doctors will put drops in your ear. You'll be okay, and you'll come back to check on you in two weeks.",
+  "entities": [
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 29,
+      "end": 33
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 39,
+      "end": 47
+    },
+    {
+      "text": "drainage",
+      "label": "SYMPTOM",
+      "start": 265,
+      "end": 273
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 410,
+      "end": 415
+    },
+    {
+      "text": "sore throat",
+      "label": "SYMPTOM",
+      "start": 491,
+      "end": 502
+    },
+    {
+      "text": "headache",
+      "label": "SYMPTOM",
+      "start": 504,
+      "end": 512
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 517,
+      "end": 522
+    },
+    {
+      "text": "Strep throat",
+      "label": "CONDITION",
+      "start": 555,
+      "end": 567
+    },
+    {
+      "text": "cough",
+      "label": "SYMPTOM",
+      "start": 711,
+      "end": 716
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 718,
+      "end": 737
+    },
+    {
+      "text": "wheezing",
+      "label": "SYMPTOM",
+      "start": 741,
+      "end": 749
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 755,
+      "end": 763
+    },
+    {
+      "text": "diarrhea",
+      "label": "SYMPTOM",
+      "start": 767,
+      "end": 775
+    },
+    {
+      "text": "otitis media",
+      "label": "CONDITION",
+      "start": 1272,
+      "end": 1284
+    },
+    {
+      "text": "250 mg",
+      "label": "DOSAGE",
+      "start": 1321,
+      "end": 1327
+    },
+    {
+      "text": "twice a day",
+      "label": "FREQUENCY",
+      "start": 1337,
+      "end": 1348
+    },
+    {
+      "text": "10 days",
+      "label": "DURATION",
+      "start": 1353,
+      "end": 1360
+    },
+    {
+      "text": "twice a day",
+      "label": "FREQUENCY",
+      "start": 1400,
+      "end": 1411
+    }
+  ],
+  "regimens": [],
+  "source_text": "CHIEF COMPLAINT:,  Right ear pain with drainage.,HISTORY OF PRESENT ILLNESS:,  This is a 12-year-old white male here with his mother for complaints of his right ear hurting.  Mother states he has been complaining for several days.  A couple of days ago she noticed drainage from the right ear.  The patient states it has been draining for several days and it has a foul smell to it.  He has had some low-grade fever.  The patient was seen in the office about a week ago with complaints of a sore throat, headache and fever.  The patient was evaluated for Strep throat which was negative and just had been doing supportive care.  He did have a recent airplane ride a couple of weeks ago also.  There has been no cough, shortness of breath or wheezing.  No vomiting or diarrhea.,PHYSICAL EXAM:,General:  He is alert in no distress.,Vital Signs:  Temperature:  99.1 degrees.,HEENT:  Normocephalic, atraumatic.  Pupils equal, round and react to light.  The left TM is clear.  The right TM is poorly visualized secondary to purulent secretions in the right ear canal.  There is no erythema of the ear canals.  Nares is patent.  Oropharynx is clear.  The patient does wear braces.,Neck:  Supple.,Lungs:  Clear to auscultation.,Heart:  Regular.  No murmur.,ASSESSMENT:,1.  Right otitis media.,2.  Right otorrhea.,PLAN:,  Ceftin 250 mg by mouth twice a day for 10 days.  Ciprodex four drops to the right ear twice a day.  The patient is to return to the office in two weeks for followup.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "250 mg"
+      ],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're a 12-year-old boy with your mom. You've been having pain in your right ear for several days and it's also draining. Your mom noticed that it has a bad smell. You've also had a low-grade fever. A few days ago, you had a sore throat and a headache. Your doctor saw you a week ago and found out you didn't have strep throat. They just gave you some medicine to help you feel better. You also had a trip on an airplane a couple of weeks ago. There's no cough, shortness of breath, or wheezing. You don't have a fever or diarrhea. Your doctor saw you today and found that your ear is infected and draining. They gave you some medicine to help your ear feel better. You need to take Ceftin twice a day for 10 days. You also need to put Ciprodex drops in your ear twice a day. You need to come back to the doctor's office in two weeks to check on your ear. If you have any pain or fever, or if the drainage gets worse, you should call the doctor right away.",
+      "caregiver_checklist": "- Give the patient Ceftin 250 mg by mouth twice a day for 10 days.\n- Check the patient's temperature twice a day.\n- Watch for signs of worsening infection or fever.\n- Call the office if the patient develops high fever, severe pain, or drainage changes.\n- Schedule the patient's follow-up appointment in two weeks.\n- Watch for signs of ear pain, drainage, or fever.\n- Call the office if the patient has any new symptoms.\n- Check the patient's ear twice a day for drainage or purulence.\n- Call the office if the patient has any signs of ear pain or drainage.\n- Schedule the patient's follow-up appointment in two weeks.",
+      "child_explanation": "You have a sore ear that's hurting and it's draining something yucky. You're getting help from the grown-ups and doctors. You're like a superhero fighting the yucky stuff. You'll take a medicine to help. The doctors will put drops in your ear. You'll be okay, and you'll come back to check on you in two weeks."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Ear_Pain_-_Drainage",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Ear_Pain_-_Drainage.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Ear_Pain_-_Drainage.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Ear_Pain_-_Drainage",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Ear_Pain_-_Drainage.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Ear_Pain_-_Drainage.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Ear_Pain_-_Drainage",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Ear_Pain_-_Drainage.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Ear_Pain_-_Drainage.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 24.736,
+      "caregiver_checklist": 8.831,
+      "child_explanation": 6.05,
+      "total": 39.624
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:38:33+00:00"
+  }
+}

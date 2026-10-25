@@ -1,0 +1,221 @@
+{
+  "id": "mtsamples_Prostate_Fossa_Irradiation_-_Followup",
+  "patient_summary": "Hello there! I'm here to talk about what's happening with you. It seems like you've been having some new symptoms lately. Let me explain what's going on:\n\nYou've been waking up every 1 to 1-1/2 hours, and you've been feeling some abdominal cramping. You also have a sore throat, which your wife has had for about two weeks. Your appetite has been a bit off, and you've lost about 5 pounds. You're still working full-time, but you're feeling a little stressed about some IRS audits of your clients.\n\nYour PSA (a measure of how well your prostate is working) has been slowly going up. This month, it reached 1.2. Your doctor thinks this might be because there's still some cancer in your body, but they're not sure where it is. They're not sure if treating it early will make a difference now.\n\nYour doctor has talked to you about all of this and explained that you should come back in three months for another PSA test. They also suggested you talk to Dr. X about your stress and IRS audits.\n\nFor now, your doctor has asked you to take these medicines:\n\n1. NyQuil (for your sore throat)\n2. Timolol eye drops (for your eye)\n3. Aspirin\n4. Advil (for any pain)\n5. Zinc (for your health)\n\nIf you have any more of these symptoms, or if you have any new ones, you should call your doctor right away. If you have any other questions or concerns, you can also call them. They're here to help you.",
+  "caregiver_checklist": [
+    "Check patient's vital signs and hydration status.",
+    "Give NyQuil as prescribed.",
+    "Watch for signs of infection, worsening abdominal cramping, or new symptoms.",
+    "Call if abdominal cramping increases to 3 or more on a scale of 10.",
+    "Schedule follow-up PSA test in 3 months.",
+    "Check for signs of dehydration, such as dry mouth or decreased urination.",
+    "Watch for signs of worsening cold symptoms, such as fever or difficulty breathing.",
+    "Call if there is blood in the stool or if the cold symptoms persist.",
+    "Schedule an appointment with Dr. X if not already done.",
+    "Check for signs of urinary retention or difficulty urinating.",
+    "Watch for signs of worsening prostate symptoms or pain.",
+    "Watch for signs of aspirin side effects, such as stomach pain or bleeding."
+  ],
+  "child_explanation": "You had a little sickness, you know, like when you get a cold. Your body is working hard to get better. The grown-ups and doctors are taking care of you. You're feeling a bit sore in your tummy and throat, but you're still eating and drinking. Your team of tiny helpers is working to help you feel better. You're doing okay at work, and you're still strong. The doctors want to check you again in a few months.",
+  "entities": [
+    {
+      "text": "sore throat",
+      "label": "SYMPTOM",
+      "start": 359,
+      "end": 370
+    },
+    {
+      "text": "PAIN",
+      "label": "SYMPTOM",
+      "start": 716,
+      "end": 720
+    },
+    {
+      "text": "Aspirin",
+      "label": "MEDICATION",
+      "start": 1201,
+      "end": 1208
+    },
+    {
+      "text": "pharyngitis",
+      "label": "CONDITION",
+      "start": 1501,
+      "end": 1512
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Aspirin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "HISTORY OF PRESENT ILLNESS: , The patient returns for followup evaluation 21 months after undergoing prostate fossa irradiation for recurrent Gleason 8 adenocarcinoma.  His urinary function had been stable until 2 days ago.  Over the past couple of days he has been waking every 1 to 1-1/2 hours and has had associated abdominal cramping, as well as a bit of sore throat (his wife has had a cold for about 2 weeks).  His libido remains intact (but he has not been sexually functional), but his erections have been dysfunctional.  The bowel function is stable with occasional irritative hemorrhoidal symptoms.  He has had no hematochezia.  The PSA has been slowly rising in recent months.  This month it reached 1.2.,PAIN ASSESSMENT: , Abdominal cramping in the past 2 days.  No more than 1 to 2 of 10 in intensity.,PERFORMANCE STATUS: , Karnofsky score 100.  He continues to work full-time.,NUTRITIONAL STATUS: , Appetite has been depressed over the past couple of days, and he has lost about 5 pounds.  (Per him, mostly this week.),PSYCHIATRIC: , Some stress regarding upcoming IRS audits of clients.,REVIEW OF SYSTEMS: , Otherwise noncontributory.,MEDICATIONS,1.  NyQuil.,2.  Timolol eye drops.,3.  Aspirin.,4.  Advil.,5.  Zinc.,PHYSICAL EXAMINATION,GENERAL:  Pleasant, well-developed, gentleman in no acute distress.  Weight is 197 pounds.,HEENT:  Sclerae and conjunctivae are clear.  Extraocular movement are intact.  Hearing is grossly intact.  The oral cavity is without thrush.  There is minor pharyngitis.,LYMPH NODES:  No palpable lymphadenopathy.,SKELETAL:  No focal skeletal tenderness.,LUNGS:  Clear to auscultation bilaterally.,CARDIOVASCULAR:  Regular rate and rhythm.,ABDOMEN:  Soft, nontender without palpable mass or organomegaly.,DIGITAL RECTAL EXAMINATION:  There are external hemorrhoids.  The prostate fossa is flat without suspicious nodularity.  There is no blood on the examining glove.,EXTREMITIES:  Without clubbing, cyanosis, or edema.,NEUROLOGIC:  Without focal deficit.,IMPRESSION:,  Concerning slow ongoing rise in PSA.,PLAN: , Discussed significance of this in detail with the patient.  He understands the probability that there may be residual cancer although the location is unknown.  For now there is no good evidence that early management affects the ultimate prognosis.  Accordingly, he is comfortable with careful monitoring, and I have asked him to return here in 3 months with an updated PSA.  I also suggested that he reestablish contact with Dr. X at his convenience.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "Aspirin"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'm here to talk about what's happening with you. It seems like you've been having some new symptoms lately. Let me explain what's going on:\n\nYou've been waking up every 1 to 1-1/2 hours, and you've been feeling some abdominal cramping. You also have a sore throat, which your wife has had for about two weeks. Your appetite has been a bit off, and you've lost about 5 pounds. You're still working full-time, but you're feeling a little stressed about some IRS audits of your clients.\n\nYour PSA (a measure of how well your prostate is working) has been slowly going up. This month, it reached 1.2. Your doctor thinks this might be because there's still some cancer in your body, but they're not sure where it is. They're not sure if treating it early will make a difference now.\n\nYour doctor has talked to you about all of this and explained that you should come back in three months for another PSA test. They also suggested you talk to Dr. X about your stress and IRS audits.\n\nFor now, your doctor has asked you to take these medicines:\n\n1. NyQuil (for your sore throat)\n2. Timolol eye drops (for your eye)\n3. Aspirin\n4. Advil (for any pain)\n5. Zinc (for your health)\n\nIf you have any more of these symptoms, or if you have any new ones, you should call your doctor right away. If you have any other questions or concerns, you can also call them. They're here to help you.",
+      "caregiver_checklist": "- Check patient's vital signs and hydration status.\n- Give NyQuil as prescribed.\n- Watch for signs of infection, worsening abdominal cramping, or new symptoms.\n- Call if abdominal cramping increases to 3 or more on a scale of 10.\n- Schedule follow-up PSA test in 3 months.\n- Check for signs of dehydration, such as dry mouth or decreased urination.\n- Watch for signs of worsening cold symptoms, such as fever or difficulty breathing.\n- Call if there is blood in the stool or if the cold symptoms persist.\n- Schedule an appointment with Dr. X if not already done.\n- Check for signs of urinary retention or difficulty urinating.\n- Watch for signs of worsening prostate symptoms or pain.",
+      "child_explanation": "You had a little sickness, you know, like when you get a cold. Your body is working hard to get better. The grown-ups and doctors are taking care of you. You're feeling a bit sore in your tummy and throat, but you're still eating and drinking. Your team of tiny helpers is working to help you feel better. You're doing okay at work, and you're still strong. The doctors want to check you again in a few months."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Prostate_Fossa_Irradiation_-_Followup",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Prostate_Fossa_Irradiation_-_Followup.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Prostate_Fossa_Irradiation_-_Followup.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Prostate_Fossa_Irradiation_-_Followup",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Prostate_Fossa_Irradiation_-_Followup.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Prostate_Fossa_Irradiation_-_Followup.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Prostate_Fossa_Irradiation_-_Followup",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Prostate_Fossa_Irradiation_-_Followup.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Prostate_Fossa_Irradiation_-_Followup.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 26.907,
+      "caregiver_checklist": 32.927,
+      "child_explanation": 12.296,
+      "total": 72.142
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:43:10+00:00"
+  }
+}

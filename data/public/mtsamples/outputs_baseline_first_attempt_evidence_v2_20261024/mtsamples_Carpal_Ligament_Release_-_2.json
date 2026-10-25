@@ -1,0 +1,214 @@
+{
+  "id": "mtsamples_Carpal_Ligament_Release_-_2",
+  "patient_summary": "Hello there! I'll explain what happened to you and what you need to do next. You had two surgeries to help with some problems in your hands. First, you had a small cut made in your palm to release a tight band that was causing pain in your left hand. Then, the doctor injected a special liquid into your right hand to help with a problem in your finger.\n\nYou'll need to take some medicine after the surgery. You'll take a liquid medicine called Celestone. You'll need to take 1 mL of Celestone after the surgery. It's important to take this medicine as the doctor told you.\n\nFor the other medicine, you'll get a shot in your right hand. The shot contains a local anesthetic (Xylocaine) and a steroid (Depo-Medrol). You'll get 0.5 mL of this medicine. But you'll also get 40 mg of Depo-Medrol in the shot. The doctor will give you this shot to help with the pain in your finger.\n\nYou should take it easy for a few days. If you have any pain, swelling, or redness, or if you have a fever, you should call the doctor right away. If you have any questions, you can always ask the nurses or doctors.\n\nRemember to follow all the instructions given to you by the doctors and nurses. They are there to help you get better.",
+  "caregiver_checklist": [
+    "Check the patient's vital signs every hour for the first 6 hours.",
+    "Watch for signs of infection: redness, swelling, increased pain, or fever.",
+    "Call the surgeon if the patient experiences severe pain or swelling.",
+    "Schedule a follow-up appointment within 2 weeks to monitor recovery.",
+    "Call if the patient has persistent numbness or weakness in the hand.",
+    "Check the injection site for signs of infection or bleeding.",
+    "Call if the patient has any allergic reactions to the medications.",
+    "Schedule a hand therapy appointment to improve hand function.",
+    "Watch for signs of nerve damage: decreased sensation, muscle weakness.",
+    "Call if the patient has any signs of nerve damage.",
+    "Check the injection site for signs of infection or bleeding.",
+    "Schedule a hand therapy appointment to improve hand function.",
+    "Other dosage: 0.5 mL",
+    "Other dosage: 40 mg"
+  ],
+  "child_explanation": "You had a little surgery today. You're getting better now. The doctors are taking care of you. They helped your hand feel better. You'll be okay, and you're in good hands. You're like a superhero, fighting off the pain. You're doing great, you're strong!",
+  "entities": [
+    {
+      "text": "0.5 mL",
+      "label": "DOSAGE",
+      "start": 2688,
+      "end": 2694
+    },
+    {
+      "text": "0.5 mL",
+      "label": "DOSAGE",
+      "start": 2721,
+      "end": 2727
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 2743,
+      "end": 2748
+    }
+  ],
+  "regimens": [],
+  "source_text": "PREOPERATIVE DIAGNOSES:,1.  Left carpal tunnel syndrome.,2.  Stenosing tenosynovitis of right middle finger (trigger finger).,POSTOPERATIVE DIAGNOSES:,1.  Left carpal tunnel syndrome.,2.  Stenosing tenosynovitis of right middle finger (trigger finger).,PROCEDURES:,1.  Endoscopic release of left transverse carpal ligament.,2.  Steroid injection, stenosing tenosynovitis of right middle finger.,ANESTHESIA:  ,Monitored anesthesia care with regional anesthesia applied by surgeon.,TOURNIQUET TIME: , Left upper extremity was 15 minutes.,OPERATIVE PROCEDURE IN DETAIL:,  With the patient under adequate monitored anesthesia, the left upper extremity was prepped and draped in a sterile manner.  The arm was exsanguinated.  The tourniquet was elevated at 290 mmHg.  Construction lines were made on the left palm to identify the ring ray.  A transverse incision was made in the palm between FCR and FCU, one finger breadth proximal to the interval between the glabrous skin of the palm and normal forearm skin.  Blunt dissection exposed the antebrachial fascia.  Hemostasis was obtained with bipolar cautery.  A distal based window in the antebrachial fascia was then fashioned.  Care was taken to protect the underlying contents.  A synovial elevator was used to palpate the undersurface of the transverse carpal ligament, and synovium was elevated off this undersurface.,Hamate sounds were then used to palpate the Hood of Hamate.  The Agee Inside Job was then inserted into the proximal incision.  The transverse carpal ligament was easily visualized through the portal.  Using palmar pressure, transverse carpal ligament was held against the portal as the instrument was inserted down the transverse carpal ligament to the distal end.  The distal end of the transverse carpal ligament was then identified in the window.  The blade was then elevated, and the Agee Inside Job was withdrawn, dividing transverse carpal ligament under direct vision.  After complete division of transverse carpal ligament, the Agee Inside Job was reinserted.  Radial and ulnar edges of the transverse carpal ligament were identified and complete release was accomplished.  One mL of Celestone was then introduced into the carpal tunnel and irrigated free.  ,The wound was then closed with a running 3-0 Prolene subcuticular stitch.  Steri-strips were applied and a sterile dressing was applied over the Steri-strips.  The tourniquet was deflated.  The patient was awakened from anesthesia and returned to the recovery room in satisfactory condition having tolerated the procedure well.,Attention was turned to the right palm where after a sterile prep, the right middle finger flexor sheath was injected with 0.5 mL of 1% plain Xylocaine and 0.5 mL of Depo-Medrol 40 mg/mL.  A Band-Aid dressing was then applied.,The patient was then awakened from the anesthesia and returned to the recovery room in satisfactory condition having tolerated the procedure well.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 1,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "40 mg"
+      ],
+      "caregiver_checklist": [
+        "0.5 mL",
+        "40 mg"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I'll explain what happened to you and what you need to do next. You had two surgeries to help with some problems in your hands. First, you had a small cut made in your palm to release a tight band that was causing pain in your left hand. Then, the doctor injected a special liquid into your right hand to help with a problem in your finger. \n\nYou'll need to take some medicine after the surgery. You'll take a liquid medicine called Celestone. You'll need to take 1 mL of Celestone after the surgery. It's important to take this medicine as the doctor told you.\n\nFor the other medicine, you'll get a shot in your right hand. The shot contains a local anesthetic (Xylocaine) and a steroid (Depo-Medrol). You'll get 0.5 mL of this medicine. The doctor will give you this shot to help with the pain in your finger.\n\nYou should take it easy for a few days. If you have any pain, swelling, or redness, or if you have a fever, you should call the doctor right away. If you have any questions, you can always ask the nurses or doctors.\n\nRemember to follow all the instructions given to you by the doctors and nurses. They are there to help you get better.",
+      "caregiver_checklist": "- Check the patient's vital signs every hour for the first 6 hours.\n- Watch for signs of infection: redness, swelling, increased pain, or fever.\n- Call the surgeon if the patient experiences severe pain or swelling.\n- Schedule a follow-up appointment within 2 weeks to monitor recovery.\n- Call if the patient has persistent numbness or weakness in the hand.\n- Check the injection site for signs of infection or bleeding.\n- Call if the patient has any allergic reactions to the medications.\n- Schedule a hand therapy appointment to improve hand function.\n- Watch for signs of nerve damage: decreased sensation, muscle weakness.\n- Call if the patient has any signs of nerve damage.\n- Check the injection site for signs of infection or bleeding.\n- Schedule a hand therapy appointment to improve hand function.",
+      "child_explanation": "You had a little surgery today. You're getting better now. The doctors are taking care of you. They helped your hand feel better. You'll be okay, and you're in good hands. You're like a superhero, fighting off the pain. You're doing great, you're strong!"
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Carpal_Ligament_Release_-_2",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Carpal_Ligament_Release_-_2.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Carpal_Ligament_Release_-_2.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Carpal_Ligament_Release_-_2",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Carpal_Ligament_Release_-_2.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Carpal_Ligament_Release_-_2.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Carpal_Ligament_Release_-_2",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Carpal_Ligament_Release_-_2.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Carpal_Ligament_Release_-_2.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 35.126,
+      "caregiver_checklist": 24.27,
+      "child_explanation": 8.033,
+      "total": 67.446
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T10:35:36+00:00"
+  }
+}

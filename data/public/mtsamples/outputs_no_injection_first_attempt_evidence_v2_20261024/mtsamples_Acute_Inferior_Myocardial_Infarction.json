@@ -1,0 +1,417 @@
+{
+  "id": "mtsamples_Acute_Inferior_Myocardial_Infarction",
+  "patient_summary": "Hello there, you're a 40-year-old man with chest pain. You've been feeling this pain for a day, and it's been getting worse. You've had it before, but it's more severe this time. The pain feels sharp and heavy, and it spreads to your neck and left arm. You're also having trouble breathing and feeling sweaty. You've had some nausea and even vomited a few times. You've taken some nitroglycerin tablets, which you take when you need them (PRN), and they helped a little, but the pain is still there. It's been hurting for about an hour now, and you're rating it as a 4 out of 10.\n\nYou have diabetes, heart problems, and you've had a procedure called PTCA before. You smoke a lot and work as a banker. Your family members also have heart problems. You're taking some medicines: aspirin, insulin, a diuretic, and nitroglycerin when you need it (PRN). You've been taking 50 units of insulin in the morning and 50 mg of a diuretic every day. You should take your usual medicines as prescribed. If you feel the pain getting worse or if you have trouble breathing, you should call your doctor or go to the emergency room right away. If you have any questions, don't hesitate to ask your healthcare team. They're here to help you. You also have an allergy to penicillin.",
+  "caregiver_checklist": [
+    "Check the patient's blood pressure and heart rate.",
+    "Give the patient 3 nitroglycerin tablets sublingually every 5 minutes.",
+    "Watch for any changes in the patient's pain level or additional symptoms.",
+    "Call 911 if the pain increases to a 9 or higher.",
+    "Schedule an urgent appointment with the cardiologist.",
+    "Check the patient's blood sugar levels every 4 hours.",
+    "Watch for signs of hypoglycemia (shakiness, confusion, sweating).",
+    "Call the doctor if the patient's blood sugar drops below 70 mg/dL.",
+    "Watch for signs of heart failure (swelling, shortness of breath).",
+    "Schedule an echocardiogram to assess the heart function.",
+    "Call the doctor if the patient experiences chest pain again.",
+    "Schedule a follow-up appointment in 2 weeks.",
+    "Check the patient's aspirin (81 mg QDay) intake.",
+    "Check the patient's insulin (Humulin N, 50 units in the morning) intake.",
+    "Check the patient's HCTZ (50 mg QDay) intake.",
+    "Watch for signs of aspirin overdose (bleeding, bruising).",
+    "Watch for signs of insulin overdose (hypoglycemia, ketoacidosis).",
+    "Watch for signs of HCTZ overdose (electrolyte imbalance, dehydration).",
+    "Watch for signs of penicillin allergy (hives, swelling, difficulty breathing).",
+    "Confirm with the care team: PRN (frequency)"
+  ],
+  "child_explanation": "You had a chest pain yesterday. You told the grown-ups it's getting worse. They're checking you carefully. You're like a toy that needs to be fixed. The doctors are like your helpers. They're taking good care of you. You're resting now, and it feels better. Keep resting, you'll feel better soon.",
+  "entities": [
+    {
+      "text": "Chest pain",
+      "label": "SYMPTOM",
+      "start": 19,
+      "end": 29
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 141,
+      "end": 151
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 275,
+      "end": 285
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 369,
+      "end": 373
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 421,
+      "end": 425
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 447,
+      "end": 451
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 505,
+      "end": 509
+    },
+    {
+      "text": "shortness of breath",
+      "label": "SYMPTOM",
+      "start": 550,
+      "end": 569
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 612,
+      "end": 618
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 635,
+      "end": 643
+    },
+    {
+      "text": "fever",
+      "label": "SYMPTOM",
+      "start": 668,
+      "end": 673
+    },
+    {
+      "text": "chills",
+      "label": "SYMPTOM",
+      "start": 677,
+      "end": 683
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 722,
+      "end": 726
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 769,
+      "end": 773
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 864,
+      "end": 868
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1013,
+      "end": 1017
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1050,
+      "end": 1054
+    },
+    {
+      "text": "pain",
+      "label": "SYMPTOM",
+      "start": 1107,
+      "end": 1111
+    },
+    {
+      "text": "stroke",
+      "label": "CONDITION",
+      "start": 1203,
+      "end": 1209
+    },
+    {
+      "text": "bleeding",
+      "label": "SYMPTOM",
+      "start": 1220,
+      "end": 1228
+    },
+    {
+      "text": "Diabetes mellitus",
+      "label": "CONDITION",
+      "start": 1363,
+      "end": 1380
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 1390,
+      "end": 1402
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 1429,
+      "end": 1448
+    },
+    {
+      "text": "Aspirin",
+      "label": "MEDICATION",
+      "start": 1679,
+      "end": 1686
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 1719,
+      "end": 1726
+    },
+    {
+      "text": "50 units",
+      "label": "DOSAGE",
+      "start": 1727,
+      "end": 1735
+    },
+    {
+      "text": "50 mg",
+      "label": "DOSAGE",
+      "start": 1750,
+      "end": 1755
+    },
+    {
+      "text": "PRN",
+      "label": "FREQUENCY",
+      "start": 1796,
+      "end": 1799
+    },
+    {
+      "text": "chest pain",
+      "label": "SYMPTOM",
+      "start": 1800,
+      "end": 1810
+    },
+    {
+      "text": "Penicillin",
+      "label": "MEDICATION",
+      "start": 1825,
+      "end": 1835
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "Aspirin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "insulin",
+      "dosages": [
+        "50 units",
+        "50 mg"
+      ],
+      "frequencies": [
+        "PRN"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "Penicillin",
+      "dosages": [],
+      "frequencies": [],
+      "durations": []
+    }
+  ],
+  "source_text": "CHIEF COMPLAINT: , Chest pain.,HISTORY OF PRESENT ILLNESS:,  The patient is a 40-year-old white male who presents with a chief complaint of \"chest pain\".,The patient is diabetic and has a prior history of coronary artery disease.  The patient presents today stating that his chest pain started yesterday evening and has been somewhat intermittent.  The severity of the pain has progressively increased.  He describes the pain as a sharp and heavy pain which radiates to his neck & left arm.  He ranks the pain a 7 on a scale of 1-10.  He admits some shortness of breath & diaphoresis.  He states that he has had nausea & 3 episodes of vomiting tonight.  He denies any fever or chills.  He admits prior episodes of similar pain prior to his PTCA in 1995.  He states the pain is somewhat worse with walking and seems to be relieved with rest.  There is no change in pain with positioning.  He states that he took 3 nitroglycerin tablets sublingually over the past 1 hour, which he states has partially relieved his pain.  The patient ranks his present pain a 4 on a scale of 1-10.  The most recent episode of pain has lasted one-hour.,The patient denies any history of recent surgery, head trauma, recent stroke, abnormal bleeding such as blood in urine or stool or nosebleed.,REVIEW OF SYSTEMS:,  All other systems reviewed & are negative.,PAST MEDICAL HISTORY:,  Diabetes mellitus type II, hypertension, coronary artery disease, atrial fibrillation, status post PTCA in 1995 by Dr. ABC.,SOCIAL HISTORY: , Denies alcohol or drugs.  Smokes 2 packs of cigarettes per day.  Works as a banker.,FAMILY HISTORY: , Positive for coronary artery disease (father & brother).,MEDICATIONS: , Aspirin 81 milligrams QDay.  Humulin N. insulin 50 units in a.m.  HCTZ 50 mg QDay.  Nitroglycerin 1/150 sublingually PRN chest pain.,ALLERGIES: , Penicillin.,PHYSICAL EXAM: , The patient is a 40-year-old white male.,General:  The patient is moderately obese but he is otherwise well developed & well nourished.  He appears in moderate discomfort but there is no evidence of distress.  He is alert, and oriented to person place and circumstance.  There is no evidence of respiratory distress.  The patient ambulates\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "50 units",
+        "50 mg",
+        "PRN",
+        "Penicillin"
+      ],
+      "caregiver_checklist": [
+        "Aspirin",
+        "insulin",
+        "50 units",
+        "50 mg",
+        "PRN",
+        "Penicillin"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, you're a 40-year-old man with chest pain. You've been feeling this pain for a day, and it's been getting worse. You've had it before, but it's more severe this time. The pain feels sharp and heavy, and it spreads to your neck and left arm. You're also having trouble breathing and feeling sweaty. You've had some nausea and even vomited a few times. You've taken some nitroglycerin tablets, which helped a little, but the pain is still there. It's been hurting for about an hour now, and you're rating it as a 4 out of 10.\n\nYou have diabetes, heart problems, and you've had a procedure called PTCA before. You smoke a lot and work as a banker. Your family members also have heart problems. You're taking some medicines: aspirin, insulin, a diuretic, and nitroglycerin when you need it.\n\nYou should take your usual medicines as prescribed. If you feel the pain getting worse or if you have trouble breathing, you should call your doctor or go to the emergency room right away. If you have any questions, don't hesitate to ask your healthcare team. They're here to help you.",
+      "caregiver_checklist": "- Check the patient's blood pressure and heart rate.\n- Give the patient 3 nitroglycerin tablets sublingually every 5 minutes.\n- Watch for any changes in the patient's pain level or additional symptoms.\n- Call 911 if the pain increases to a 9 or higher.\n- Schedule an urgent appointment with the cardiologist.\n- Check the patient's blood sugar levels every 4 hours.\n- Watch for signs of hypoglycemia (shakiness, confusion, sweating).\n- Call the doctor if the patient's blood sugar drops below 70 mg/dL.\n- Watch for signs of heart failure (swelling, shortness of breath).\n- Schedule an echocardiogram to assess the heart function.\n- Call the doctor if the patient experiences chest pain again.\n- Schedule a follow-up appointment in 2 weeks.",
+      "child_explanation": "You had a chest pain yesterday. You told the grown-ups it's getting worse. They're checking you carefully. You're like a toy that needs to be fixed. The doctors are like your helpers. They're taking good care of you. You're resting now, and it feels better. Keep resting, you'll feel better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Acute_Inferior_Myocardial_Infarction",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Acute_Inferior_Myocardial_Infarction.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Acute_Inferior_Myocardial_Infarction.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Acute_Inferior_Myocardial_Infarction",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Acute_Inferior_Myocardial_Infarction.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Acute_Inferior_Myocardial_Infarction.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Acute_Inferior_Myocardial_Infarction",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Acute_Inferior_Myocardial_Infarction.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Acute_Inferior_Myocardial_Infarction.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [
+        "PRN"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false,
+        false,
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 53.601,
+      "caregiver_checklist": 46.698,
+      "child_explanation": 7.155,
+      "total": 107.471
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T12:15:56+00:00"
+  }
+}

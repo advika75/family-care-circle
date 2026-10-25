@@ -1,0 +1,183 @@
+{
+  "id": "mtsamples_Carotid_Cerebral_Arteriograms",
+  "patient_summary": "Hello there! I understand you had a medical test done recently. Let me explain what happened in simple terms.\n\nA doctor did some special pictures of your neck and brain blood vessels. They found that the left side of your neck has a big blockage, which means it's hard for blood to flow through. The right side of your neck has a small blockage, but it's not as serious. The doctor also saw that your brain blood vessels on both sides are working well.\n\nThe doctor used some special tools to take these pictures. They cleaned your leg, put a small tube in your leg, and then put a tiny wire through it. They used this wire to put a bigger tube in your leg, which helped them take the pictures of your neck and brain blood vessels.\n\nThe doctor found that your left neck blood vessel is completely blocked, which means it's hard for blood to flow through. The right side has a small blockage, but it's not a big problem.\n\nThe doctor did this procedure and you did really well. They used a special medicine to stop any bleeding at the place where they put the tube in your leg. You will stay in the hospital for a little while to make sure you're okay.\n\nNow, you need to take some medicine to help your blood vessels stay open. You'll need to take these medicines every day for a while. If you have any pain, swelling, or bleeding at the place where they put the tube in your leg, you should tell a doctor or nurse right away.\n\nRemember, if you have any questions or feel worried, you can always ask your doctor or nurse. They are here to help you.",
+  "caregiver_checklist": [
+    "Check the patient’s blood pressure, pulse, and temperature every hour for the first 2 hours.",
+    "Watch for signs of bleeding or bruising at the puncture site.",
+    "Call 911 if the patient experiences severe headache, vision changes, or weakness on one side of the body.",
+    "Schedule a follow-up appointment in 6 months for carotid imaging.",
+    "Call the care team if the patient experiences new or worsening symptoms.",
+    "Schedule a carotid ultrasound in 6 months to monitor for any changes.",
+    "Watch for signs of stroke or TIA (transient ischemic attack) such as sudden numbness, weakness, or confusion.",
+    "Call the care team if the patient experiences any new symptoms or concerns."
+  ],
+  "child_explanation": "You had a special test done today. Doctors looked at your neck and head. They found a big blockage in one of your neck pipes. But the other pipes are fine. They also saw a small blockage in another pipe. The doctors are taking good care of you. You'll feel better soon.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "EXAM: , Carotid and cerebral arteriograms.,INDICATION: , Abnormal carotid duplex studies demonstrating occlusion of the left internal carotid artery.,IMPRESSION:,1.  Complete occlusion of the left common carotid artery approximately 3 cm distal to its origin.,2.  Mild stenosis of the right internal carotid artery measured at 20%.,3.  Patent bilateral vertebral arteries.,4.  No significant disease was identified of the anterior cerebral vessels.,DISCUSSION:  ,Carotid and cerebral arteriograms were performed on Month DD, YYYY, previous studies are not available for comparison.,The right groin was sterilely cleansed and draped.  Lidocaine 1% buffered with sodium bicarbonate was used as local anesthetic.  A 19-French needle was then advanced into the common femoral artery and a wire was advanced.  Over the wire, a sheath was placed.  A wire was then advanced into the abdominal aorta and over the wire and the flushed catheter was then advanced to the arch of the aorta over a wire.  Flushed arteriogram was performed.  Arteriogram demonstrated no significant disease of the great vessels at their origins.  There is demonstration of complete occlusion of the left common carotid artery approximately 3 cm distal to its origin.  The vertebral arteries were widely patent.  Following this, the flushed catheter was exchanged for ***** catheter and selective catheterization of the common carotid artery on the right was performed.  Carotid and cerebral arteriograms were performed.  The carotid arteriograms on the right demonstrated the carotid bulb to be unremarkable.  The external carotid artery on the right is quite tortuous in its appearance.  The internal carotid artery demonstrates a mild plaque creating stenosis, which is measured approximately 20%.  Cerebral arteriogram on the right demonstrated the A1 and M1 segments bilaterally to be normal.  No significant stenosis identified.  There is complete cross-filling into the left brain via the right.  No significant stenosis was appreciated.,Following this, the catheter was parked at the origin of the left common carotid artery and ejection demonstrated complete occlusion.,The patient tolerated the procedure well.  No complications occurred during or immediately after the procedure.  Stasis was achieved of the puncture site using a VasoSeal.  The patient will be observed for at least 2-1/2 hours prior to being discharged to home.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there! I understand you had a medical test done recently. Let me explain what happened in simple terms.\n\nA doctor did some special pictures of your neck and brain blood vessels. They found that the left side of your neck has a big blockage, which means it's hard for blood to flow through. The right side of your neck has a small blockage, but it's not as serious. The doctor also saw that your brain blood vessels on both sides are working well.\n\nThe doctor used some special tools to take these pictures. They cleaned your leg, put a small tube in your leg, and then put a tiny wire through it. They used this wire to put a bigger tube in your leg, which helped them take the pictures of your neck and brain blood vessels.\n\nThe doctor found that your left neck blood vessel is completely blocked, which means it's hard for blood to flow through. The right side has a small blockage, but it's not a big problem.\n\nThe doctor did this procedure and you did really well. They used a special medicine to stop any bleeding at the place where they put the tube in your leg. You will stay in the hospital for a little while to make sure you're okay.\n\nNow, you need to take some medicine to help your blood vessels stay open. You'll need to take these medicines every day for a while. If you have any pain, swelling, or bleeding at the place where they put the tube in your leg, you should tell a doctor or nurse right away.\n\nRemember, if you have any questions or feel worried, you can always ask your doctor or nurse. They are here to help you.",
+      "caregiver_checklist": "- Give the patient aspirin 325 mg daily as prescribed.\n- Check the patient’s blood pressure, pulse, and temperature every hour for the first 2 hours.\n- Watch for signs of bleeding or bruising at the puncture site.\n- Call 911 if the patient experiences severe headache, vision changes, or weakness on one side of the body.\n- Schedule a follow-up appointment in 6 months for carotid imaging.\n- Call the care team if the patient experiences new or worsening symptoms.\n- Schedule a carotid ultrasound in 6 months to monitor for any changes.\n- Watch for signs of stroke or TIA (transient ischemic attack) such as sudden numbness, weakness, or confusion.\n- Call the care team if the patient experiences any new symptoms or concerns.",
+      "child_explanation": "You had a special test done today. Doctors looked at your neck and head. They found a big blockage in one of your neck pipes. But the other pipes are fine. They also saw a small blockage in another pipe. The doctors are taking good care of you. You'll feel better soon."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Carotid_Cerebral_Arteriograms",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Carotid_Cerebral_Arteriograms.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Carotid_Cerebral_Arteriograms.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Carotid_Cerebral_Arteriograms",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Carotid_Cerebral_Arteriograms.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Carotid_Cerebral_Arteriograms.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Carotid_Cerebral_Arteriograms",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Carotid_Cerebral_Arteriograms.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Carotid_Cerebral_Arteriograms.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 26.904,
+      "caregiver_checklist": 26.357,
+      "child_explanation": 9.029,
+      "total": 62.301
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T16:14:47+00:00"
+  }
+}

@@ -1,0 +1,60 @@
+backend: llama_cpp
+dataset: mtsamples
+datasets:
+  mtsamples:
+    figures_dir: results/mtsamples/figures
+    gold_dir: data/public/mtsamples/gold
+    max_notes: 100
+    outputs_dir: data/public/mtsamples/outputs
+    raw_dir: data/public/mtsamples/notes
+    results_dir: results/mtsamples
+    seed: 42
+  synthetic:
+    figures_dir: results/figures
+    gold_dir: data/gold
+    outputs_dir: data/outputs
+    raw_dir: data/raw
+    results_dir: results
+generation:
+  max_new_tokens: 400
+  seed: 42
+  temperature: 0.2
+  top_p: 0.9
+gguf_path: models/qwen2.5-3b-instruct-q4_k_m.gguf
+llama_cpp:
+  n_ctx: 4096
+  n_gpu_layers: -1
+max_retries: 2
+ner:
+  hf_label_map:
+    Disease_disorder: CONDITION
+    Dosage: DOSAGE
+    Duration: DURATION
+    Frequency: FREQUENCY
+    Medication: MEDICATION
+    Sign_symptom: SYMPTOM
+  hf_min_score: 0.6
+  hf_model_id: d4data/biomedical-ner-all
+  use_hf_model: false
+personas:
+  caregiver_checklist:
+    max_new_tokens: 400
+    required_labels:
+    - MEDICATION
+    - DOSAGE
+    - FREQUENCY
+    - DURATION
+  child_explanation:
+    max_new_tokens: 320
+    required_labels: []
+    temperature: 0.3
+  patient_summary:
+    max_new_tokens: 512
+    required_labels:
+    - MEDICATION
+    - DOSAGE
+    - FREQUENCY
+    - DURATION
+prompts:
+  child_variant: v2
+  inject_entities: false

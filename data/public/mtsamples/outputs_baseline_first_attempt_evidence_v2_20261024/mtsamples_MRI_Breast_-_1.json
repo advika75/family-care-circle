@@ -1,0 +1,185 @@
+{
+  "id": "mtsamples_MRI_Breast_-_1",
+  "patient_summary": "Hi there, it looks like there are some changes in your breast after the biopsy. The doctor found some areas that look abnormal, especially in the left breast. This area matches what you told them before. They also found a small spot in the lower part of your left breast that needs more checking. \n\nFor now, you will see a surgeon and a medical oncologist. The surgeon will look at the area that looks abnormal. The medical oncologist will help plan your treatment. \n\nThe doctor also wants you to have a special ultrasound done at the lower part of your left breast. They also want to do ultrasounds on the other spots in your breasts. \n\nIf you notice any new symptoms or if you have any questions or concerns, please call your doctor or nurse. They are there to help you. Remember, you are not alone, and you have a team of doctors who will take care of you.",
+  "caregiver_checklist": [
+    "Check the patient’s history of malignancy and recent diagnosis.",
+    "Call the surgeon and medical oncologist as scheduled.",
+    "Schedule dedicated ultrasonography of the inferior aspect of the left breast at the 6:00 o’clock, N+5.5 cm position.",
+    "Schedule ultrasonography of the remaining masses at the same time.",
+    "Watch for any new or worsening symptoms.",
+    "Call if the patient experiences pain, redness, or fever.",
+    "Schedule follow-up MRI in 6-8 weeks.",
+    "Check for any new or changing masses in the breasts.",
+    "Call if any mass appears suspicious or grows.",
+    "Schedule a breast ultrasound in 2-4 weeks.",
+    "Watch for any changes in the breast appearance or palpable masses."
+  ],
+  "child_explanation": "You had a check-up, and the doctors found some changes in your breasts. It's like when you get a small bump, but this one might be tricky. The doctors are extra careful and will check more with a special machine. They also want to see a surgeon and a doctor who knows about cancer. You're safe, but they want to make sure everything is okay. They'll check more to be extra sure.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "FINDINGS:,There are post biopsy changes seen in the retroareolar region, middle third aspect of the left breast at the post biopsy site.,There is abnormal enhancement seen in this location compatible with patient’s history of malignancy.,There is increased enhancement seen in the inferior aspect of the left breast at the 6:00 o’clock, N+5.5 cm position measuring 1.2 cm. Further work-up with ultrasound is indicated.,There are other multiple benign appearing enhancing masses seen in both the right and left breasts.,None of the remaining masses appear worrisome for malignancy based upon MRI criteria.,IMPRESSION:,  BIRADS CATEGORY M/5,There is a malignant appearing area of enhancement in the left breast which does correspond to the patient’s history of recent diagnosis of malignancy.,She has been scheduled to see a surgeon, as well as Medical Oncologist.,Dedicated ultrasonography of the inferior aspect of the left breast should be performed at the 6:00 o’clock, N+5.5 cm position for further evaluation of the mass. At that same time, ultrasonography of the remaining masses should also be performed.,Please note, however that the remaining masses have primarily benign features based upon MRI criteria. However, further evaluation with ultrasound should be performed.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 0,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hi there, it looks like there are some changes in your breast after the biopsy. The doctor found some areas that look abnormal, especially in the left breast. This area matches what you told them before. They also found a small spot in the lower part of your left breast that needs more checking. \n\nFor now, you will see a surgeon and a medical oncologist. The surgeon will look at the area that looks abnormal. The medical oncologist will help plan your treatment. \n\nThe doctor also wants you to have a special ultrasound done at the lower part of your left breast. They also want to do ultrasounds on the other spots in your breasts. \n\nIf you notice any new symptoms or if you have any questions or concerns, please call your doctor or nurse. They are there to help you. Remember, you are not alone, and you have a team of doctors who will take care of you.",
+      "caregiver_checklist": "- Check the patient’s history of malignancy and recent diagnosis.\n- Call the surgeon and medical oncologist as scheduled.\n- Schedule dedicated ultrasonography of the inferior aspect of the left breast at the 6:00 o’clock, N+5.5 cm position.\n- Schedule ultrasonography of the remaining masses at the same time.\n- Watch for any new or worsening symptoms.\n- Call if the patient experiences pain, redness, or fever.\n- Schedule follow-up MRI in 6-8 weeks.\n- Check for any new or changing masses in the breasts.\n- Call if any mass appears suspicious or grows.\n- Schedule a breast ultrasound in 2-4 weeks.\n- Watch for any changes in the breast appearance or palpable masses.",
+      "child_explanation": "You had a check-up, and the doctors found some changes in your breasts. It's like when you get a small bump, but this one might be tricky. The doctors are extra careful and will check more with a special machine. They also want to see a surgeon and a doctor who knows about cancer. You're safe, but they want to make sure everything is okay. They'll check more to be extra sure."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_MRI_Breast_-_1",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MRI_Breast_-_1.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_MRI_Breast_-_1.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_MRI_Breast_-_1",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MRI_Breast_-_1.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_MRI_Breast_-_1.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_MRI_Breast_-_1",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_MRI_Breast_-_1.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_MRI_Breast_-_1.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 12.271,
+      "caregiver_checklist": 10.517,
+      "child_explanation": 6.961,
+      "total": 29.752
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T11:26:51+00:00"
+  }
+}

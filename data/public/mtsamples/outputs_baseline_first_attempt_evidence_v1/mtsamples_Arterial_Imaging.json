@@ -1,0 +1,185 @@
+{
+  "id": "mtsamples_Arterial_Imaging",
+  "patient_summary": "Hi there! I wanted to explain what's happening with your legs and what you need to do. \n\nYou had some tests done to check how well your blood is flowing in your legs. The tests showed that your blood flow is normal in both legs. This means there's no problem with the blood vessels in your legs.\n\nFor your right leg, the tests showed that your blood pressure is normal and your leg pulses look good. For your left leg, the tests also showed normal blood pressure and pulses, but there's a small change in how the blood flows in one part of your leg.\n\nYou don't need any medicines right now. The doctors just want to keep an eye on your legs to make sure everything stays normal. \n\nYou should take good care of your legs by:\n- Wearing comfortable shoes that fit well\n- Not putting anything on your legs that might irritate them\n- Keeping your legs moving to help the blood flow better\n\nIf you notice any changes in your legs, like pain, swelling, or changes in the color, you should tell your doctor right away. They can check you again and make sure everything is okay.\n\nRemember, you're doing great! Just keep taking good care of your legs.",
+  "caregiver_checklist": [
+    "Check the patient's blood pressure twice a day.",
+    "Watch for any signs of leg pain or swelling.",
+    "Call the healthcare provider if the patient experiences severe leg pain.",
+    "Schedule a follow-up appointment in 6 months.",
+    "Check the patient's ankle brachial index every 3 months.",
+    "Watch for any changes in the patient's leg color or temperature.",
+    "Call the healthcare provider if the patient's ankle brachial index drops below 0.90.",
+    "Schedule a repeat arterial imaging in 6 months.",
+    "Watch for any signs of infection or wound healing issues.",
+    "Call the healthcare provider if the patient has any new or worsening symptoms."
+  ],
+  "child_explanation": "You have normal blood flow in both legs.\nDoctors are checking your legs to make sure.\nThey're looking for tiny helpers to fix your legs.\nYour legs are doing better, but need some care.\nGrown-ups are taking good care of you and your legs.",
+  "entities": [],
+  "regimens": [],
+  "source_text": "INDICATIONS:,  Peripheral vascular disease with claudication.,RIGHT:,  ,1.  Normal arterial imaging of right lower extremity.,2.  Peak systolic velocity is normal.,3.  Arterial waveform is triphasic.,4.  Ankle brachial index is 0.96.,LEFT:,1.  Normal arterial imaging of left lower extremity.,2.  Peak systolic velocity is normal.,3.  Arterial waveform is triphasic throughout except in posterior tibial artery where it is biphasic.,4.  Ankle brachial index is 1.06.,IMPRESSION,:,Normal arterial imaging of both lower extremities.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": true,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 0,
+      "caregiver_checklist": 1,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hi there! I wanted to explain what's happening with your legs and what you need to do. \n\nYou had some tests done to check how well your blood is flowing in your legs. The tests showed that your blood flow is normal in both legs. This means there's no problem with the blood vessels in your legs.\n\nFor your right leg, the tests showed that your blood pressure is normal and your leg pulses look good. For your left leg, the tests also showed normal blood pressure and pulses, but there's a small change in how the blood flows in one part of your leg.\n\nYou don't need any medicines right now. The doctors just want to keep an eye on your legs to make sure everything stays normal. \n\nYou should take good care of your legs by:\n- Wearing comfortable shoes that fit well\n- Not putting anything on your legs that might irritate them\n- Keeping your legs moving to help the blood flow better\n\nIf you notice any changes in your legs, like pain, swelling, or changes in the color, you should tell your doctor right away. They can check you again and make sure everything is okay.\n\nRemember, you're doing great! Just keep taking good care of your legs.",
+      "caregiver_checklist": "- Give the patient aspirin 100 mg daily.\n- Check the patient's blood pressure twice a day.\n- Watch for any signs of leg pain or swelling.\n- Call the healthcare provider if the patient experiences severe leg pain.\n- Schedule a follow-up appointment in 6 months.\n- Check the patient's ankle brachial index every 3 months.\n- Watch for any changes in the patient's leg color or temperature.\n- Call the healthcare provider if the patient's ankle brachial index drops below 0.90.\n- Schedule a repeat arterial imaging in 6 months.\n- Watch for any signs of infection or wound healing issues.\n- Call the healthcare provider if the patient has any new or worsening symptoms.",
+      "child_explanation": "You have normal blood flow in both legs.\nDoctors are checking your legs to make sure.\nThey're looking for tiny helpers to fix your legs.\nYour legs are doing better, but need some care.\nGrown-ups are taking good care of you and your legs."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Arterial_Imaging",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Arterial_Imaging.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Arterial_Imaging.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Arterial_Imaging",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 2,
+        "first_attempt_number": 1,
+        "retry_count": 1,
+        "retry_status": true,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Arterial_Imaging.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Arterial_Imaging.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Arterial_Imaging",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": true,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Arterial_Imaging.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Arterial_Imaging.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": false,
+      "caregiver_checklist": false,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        false
+      ],
+      "caregiver_checklist": [
+        false,
+        false
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 14.324,
+      "caregiver_checklist": 14.756,
+      "child_explanation": 3.802,
+      "total": 32.896
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-23T14:01:03+00:00"
+  }
+}

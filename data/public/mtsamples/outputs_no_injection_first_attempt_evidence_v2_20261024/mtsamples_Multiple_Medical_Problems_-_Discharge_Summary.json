@@ -1,0 +1,689 @@
+{
+  "id": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary",
+  "patient_summary": "Hello there, it looks like you had a tough time in the hospital recently. Let me explain what happened and what you need to do now. Here’s a summary in simple words:\n\n### What Happened in the Hospital:\n- You had a seizure and jerky movements. The doctors thought this might be because of your seizure disorder, so they increased your medicine called Lamictal to 150 mg in the morning and 100 mg in the evening with gradual increase of the dosage until you were on 200 mg twice a day.\n- You also had low blood sugar levels, which is why you were given insulin through a pump. The doctors adjusted the insulin pump to help you better. At different points, they turned down the insulin pump rate to 1.5 units, then decreased it a few other times. You seemed to tolerate the insulin pump rate well throughout your hospital course. There were a few episodes of hypoglycemia and hyperglycemia, but these were related to your not eating (n.p.o.) status and the changing rates of tube feedings throughout your hospital course.\n- At discharge, your endocrinologist was contacted. It was decided to change your insulin pump rate to 3 units per hour from midnight till 6 a.m., from 0.8 units per hour from 6 a.m. until 8 a.m., and then at 0.2 units per hour from 8 a.m. until 6 p.m. The insulin was to be NovoLog.\n- Regarding the anemia, the gastroenterologists were consulted regarding your positive Hemoccult stools. A colonoscopy was performed, which found a mass at the right hepatic flexure. General Surgery was then consulted and a right hemicolectomy was performed on you. The patient tolerated the procedure well and tube feeds were slowly restarted following the procedure, and prior to discharge, they were back at your pre-procedure rates of 120 per hour.\n- The patient was seen by the Infectious Disease specialist. The Infectious Disease specialist recommended vancomycin to cover MRSA bacteria, which was found at the J-tube site. At discharge, the patient was given three additional days of p.o. Levaquin 750 mg and three additional days of Bactrim DS every 12 hours. The Bactrim was used to cover the MRSA at the J-tube site. It was found that MRSA was sensitive to Bactrim.\n\nImportant details from your care team's note: 12.5 mg (dosage); daily (frequency); 40 mg (dosage); 10 mg (dosage); at bedtime (frequency); 0.3 mg (dosage); 6.25 mg (dosage); 0.175 mg (dosage); 325 mg (dosage); 400 mg (dosage); 50 mcg (dosage); 500 mg (dosage); 200 units (dosage); 800mg (dosage); 160 mg (dosage); 3 days (duration).",
+  "caregiver_checklist": [
+    "Check her blood glucose levels every 4 hours and monitor for hypoglycemia or hyperglycemia.",
+    "Watch for signs of infection such as fever, cough, or shortness of breath.",
+    "Call if she experiences severe headaches or seizures.",
+    "Schedule a follow-up appointment with her neurologist in 2 weeks.",
+    "Call if she develops new or worsening symptoms.",
+    "Schedule a colonoscopy follow-up with her gastroenterologist in 6 weeks.",
+    "Call if she experiences any new or worsening abdominal pain.",
+    "Schedule a follow-up appointment with her oncologist in 2 weeks.",
+    "Call if she experiences any new or worsening symptoms related to her colon cancer.",
+    "Schedule a follow-up appointment with her endocrinologist in 2 weeks.",
+    "Call if she experiences any new or worsening symptoms related to her diabetes management.",
+    "Schedule a follow-up appointment with her endocrinologist to adjust her insulin pump rate to 150 mg in the morning and 100 mg at bedtime, 200 mg b.i.d.",
+    "Schedule a follow-up appointment with her gastroenterologist to discuss any issues with her J-tube.",
+    "Schedule a follow-up appointment with her endocrinologist to adjust her insulin pump rate to 3 units per hour from midnight till 6 a.m., from 0.8 units per hour from 6 a.m. until 8 a.m., and then at 0.2 units per hour from 8 a.m. until 6 p.m. with NovoLog.",
+    "Schedule a follow-up appointment with her oncologist to discuss the positive lymph nodes.",
+    "Call if she experiences any new or worsening symptoms related to her positive lymph nodes.",
+    "Schedule a follow-up appointment with her endocrinologist to adjust her insulin pump rate to 12.5 mg p.o. b.i.d.",
+    "Call if she experiences any new or worsening symptoms related to her insulin pump adjustments.",
+    "Schedule a follow",
+    "Confirm with the care team: 750 mg (dosage)",
+    "Confirm with the care team: every 12 hours (frequency)",
+    "Confirm with the care team: daily (frequency)",
+    "Confirm with the care team: 40 mg (dosage)",
+    "Confirm with the care team: twice a day (frequency)",
+    "Confirm with the care team: 10 mg (dosage)",
+    "Confirm with the care team: 0.3 mg (dosage)",
+    "Confirm with the care team: 6.25 mg (dosage)",
+    "Confirm with the care team: 0.175 mg (dosage)",
+    "Confirm with the care team: 325 mg (dosage)",
+    "Confirm with the care team: 400 mg (dosage)",
+    "Confirm with the care team: 50 mcg (dosage)",
+    "Confirm with the care team: 500 mg (dosage)",
+    "Confirm with the care team: 200 units (dosage)",
+    "Confirm with the care team: 800mg (dosage)",
+    "Confirm with the care team: 160 mg (dosage)",
+    "Confirm with the care team: 3 days (duration)"
+  ],
+  "child_explanation": "You had a big fight with your body, you know? Grown-ups and doctors are taking care of you now. You had a seizure, and your body was very tired. They gave you medicine to help you feel better. You also had low sugar, so they changed how much medicine you got. Your tummy was upset, so they did a special check to find out what was wrong. They found a big growth, so they had to take out part of your tummy. You had some coughing, so they gave you special medicine to fight it. Now you're feeling much better, and you'll see your doctors soon to make sure you're all better.",
+  "entities": [
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 211,
+      "end": 220
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 226,
+      "end": 238
+    },
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 255,
+      "end": 268
+    },
+    {
+      "text": "diabetes mellitus",
+      "label": "CONDITION",
+      "start": 452,
+      "end": 469
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 480,
+      "end": 487
+    },
+    {
+      "text": "GERD",
+      "label": "CONDITION",
+      "start": 572,
+      "end": 576
+    },
+    {
+      "text": "150 mg",
+      "label": "DOSAGE",
+      "start": 902,
+      "end": 908
+    },
+    {
+      "text": "in the morning",
+      "label": "FREQUENCY",
+      "start": 909,
+      "end": 923
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 928,
+      "end": 934
+    },
+    {
+      "text": "200 mg",
+      "label": "DOSAGE",
+      "start": 1003,
+      "end": 1009
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 1189,
+      "end": 1196
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 1294,
+      "end": 1301
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 1414,
+      "end": 1421
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 1755,
+      "end": 1762
+    },
+    {
+      "text": "3 units",
+      "label": "DOSAGE",
+      "start": 1776,
+      "end": 1783
+    },
+    {
+      "text": "0.8 units",
+      "label": "DOSAGE",
+      "start": 1825,
+      "end": 1834
+    },
+    {
+      "text": "0.2 units",
+      "label": "DOSAGE",
+      "start": 1882,
+      "end": 1891
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 1931,
+      "end": 1938
+    },
+    {
+      "text": "pneumonia",
+      "label": "CONDITION",
+      "start": 2720,
+      "end": 2729
+    },
+    {
+      "text": "750 mg",
+      "label": "DOSAGE",
+      "start": 3184,
+      "end": 3190
+    },
+    {
+      "text": "every 12 hours",
+      "label": "FREQUENCY",
+      "start": 3238,
+      "end": 3252
+    },
+    {
+      "text": "12.5 mg",
+      "label": "DOSAGE",
+      "start": 3436,
+      "end": 3443
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 3444,
+      "end": 3449
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 3460,
+      "end": 3465
+    },
+    {
+      "text": "twice a day",
+      "label": "FREQUENCY",
+      "start": 3466,
+      "end": 3477
+    },
+    {
+      "text": "heart failure",
+      "label": "CONDITION",
+      "start": 3497,
+      "end": 3510
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 3661,
+      "end": 3667
+    },
+    {
+      "text": "in the morning",
+      "label": "FREQUENCY",
+      "start": 3668,
+      "end": 3682
+    },
+    {
+      "text": "150 mg",
+      "label": "DOSAGE",
+      "start": 3687,
+      "end": 3693
+    },
+    {
+      "text": "12.5 mg",
+      "label": "DOSAGE",
+      "start": 4077,
+      "end": 4084
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 4109,
+      "end": 4114
+    },
+    {
+      "text": "at bedtime",
+      "label": "FREQUENCY",
+      "start": 4120,
+      "end": 4130
+    },
+    {
+      "text": "0.3 mg",
+      "label": "DOSAGE",
+      "start": 4152,
+      "end": 4158
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 4178,
+      "end": 4183
+    },
+    {
+      "text": "6.25 mg",
+      "label": "DOSAGE",
+      "start": 4205,
+      "end": 4212
+    },
+    {
+      "text": "0.175 mg",
+      "label": "DOSAGE",
+      "start": 4245,
+      "end": 4253
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 4259,
+      "end": 4264
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 4277,
+      "end": 4282
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 4288,
+      "end": 4293
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 4308,
+      "end": 4314
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 4320,
+      "end": 4325
+    },
+    {
+      "text": "150 mg",
+      "label": "DOSAGE",
+      "start": 4340,
+      "end": 4346
+    },
+    {
+      "text": "at bedtime",
+      "label": "FREQUENCY",
+      "start": 4352,
+      "end": 4362
+    },
+    {
+      "text": "325 mg",
+      "label": "DOSAGE",
+      "start": 4390,
+      "end": 4396
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 4426,
+      "end": 4431
+    },
+    {
+      "text": "400 mg",
+      "label": "DOSAGE",
+      "start": 4466,
+      "end": 4472
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 4496,
+      "end": 4501
+    },
+    {
+      "text": "50 mcg",
+      "label": "DOSAGE",
+      "start": 4528,
+      "end": 4534
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 4618,
+      "end": 4624
+    },
+    {
+      "text": "200 units",
+      "label": "DOSAGE",
+      "start": 4635,
+      "end": 4644
+    },
+    {
+      "text": "800mg",
+      "label": "DOSAGE",
+      "start": 4681,
+      "end": 4686
+    },
+    {
+      "text": "160 mg",
+      "label": "DOSAGE",
+      "start": 4687,
+      "end": 4693
+    },
+    {
+      "text": "3 days",
+      "label": "DURATION",
+      "start": 4720,
+      "end": 4726
+    },
+    {
+      "text": "750 mg",
+      "label": "DOSAGE",
+      "start": 4742,
+      "end": 4748
+    },
+    {
+      "text": "3 days",
+      "label": "DURATION",
+      "start": 4766,
+      "end": 4772
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 5485,
+      "end": 5492
+    }
+  ],
+  "regimens": [
+    {
+      "medication": "insulin",
+      "dosages": [
+        "150 mg",
+        "100 mg",
+        "200 mg"
+      ],
+      "frequencies": [
+        "in the morning"
+      ],
+      "durations": []
+    },
+    {
+      "medication": "insulin",
+      "dosages": [
+        "3 units",
+        "0.8 units",
+        "0.2 units"
+      ],
+      "frequencies": [],
+      "durations": []
+    },
+    {
+      "medication": "insulin",
+      "dosages": [
+        "750 mg",
+        "12.5 mg",
+        "40 mg",
+        "100 mg",
+        "150 mg",
+        "10 mg",
+        "0.3 mg",
+        "6.25 mg",
+        "0.175 mg",
+        "325 mg",
+        "400 mg",
+        "50 mcg",
+        "500 mg",
+        "200 units",
+        "800mg",
+        "160 mg"
+      ],
+      "frequencies": [
+        "every 12 hours",
+        "daily",
+        "twice a day",
+        "in the morning",
+        "at bedtime"
+      ],
+      "durations": [
+        "3 days"
+      ]
+    }
+  ],
+  "source_text": "ADMISSION DIAGNOSES:,1.  Seizure.,2.  Hypoglycemia.,3.  Anemia.,4.  Hypotension.,5.  Dyspnea.,6.  Edema.,DISCHARGE DIAGNOSES:,1.  Colon cancer, status post right hemicolectomy.,2.  Anemia.,3.  Hospital-acquired pneumonia.,4.  Hypertension.,5.  Congestive heart failure.,6.  Seizure disorder.,PROCEDURES PERFORMED:,1.  Colonoscopy.,2.  Right hemicolectomy.,HOSPITAL COURSE: , The patient is a 59-year-old female with multiple medical problems including diabetes mellitus requiring insulin for 26 years, previous MI and coronary artery disease, history of seizure disorder, GERD, bipolar disorder, and anemia.  She was admitted due to a seizure and myoclonic jerks as well as hypoglycemia and anemia.  Regarding the seizure disorder, Neurology was consulted.  Noncontrast CT of the head was negative.  Neurology felt that the only necessary intervention at that time would be to increase her Lamictal to 150 mg in the morning and 100 mg in the evening with gradual increase of the dosage until she was on 200 mg b.i.d.  Regarding the hypoglycemia, the patient has diabetic gastroparesis and was being fed on J-tube intermittent feedings throughout the night at the rate of 120 an hour.  Her insulin pump had a basal rate of roughly three at night during the feedings.  While in the hospital, the insulin pump rate was turned down to 1.5 and then subsequently decreased a few other times.  She seemed to tolerate the insulin pump rate well throughout her hospital course.  There were a few episodes of hypoglycemia as well as hyperglycemia, but the episode seem to be related to the patient's n.p.o. status and the changing rates of tube feedings throughout her hospital course.,At discharge, her endocrinologist was contacted.  It was decided to change her insulin pump rate to 3 units per hour from midnight till 6 a.m., from 0.8 units per hour from 6 a.m. until 8 a.m., and then at 0.2 units per hour from 8 a.m. until 6 p.m.  The insulin was to be NovoLog.  Regarding the anemia, the gastroenterologists were consulted regarding her positive Hemoccult stools.  A colonoscopy was performed, which found a mass at the right hepatic flexure.  General Surgery was then consulted and a right hemicolectomy was performed on the patient.  The patient tolerated the procedure well and tube feeds were slowly restarted following the procedure, and prior to discharge were back at her predischarge rates of 120 per hour.  Regarding the cancer itself, it was found that 1 out of 53 nodes were positive for cancer.  CT of the abdomen and pelvis revealed no metastasis, a CT of the chest revealed possible lung metastasis.  Later in hospital course, the patient developed a septic-like picture likely secondary to hospital-acquired pneumonia.  She was treated with Zosyn, Levaquin, and vancomycin, and tolerated the medications well.  Her symptoms decreased and serial chest x-rays were followed, which showed some resolution of the illness.  The patient was seen by the Infectious Disease specialist.  The Infectious Disease specialist recommended vancomycin to cover MRSA bacteria, which was found at the J-tube site.  At discharge, the patient was given three additional days of p.o. Levaquin 750 mg as well as three additional days of Bactrim DS every 12 hours.  The Bactrim was used to cover the MRSA at the J-tube site.  It was found that MRSA was sensitive to Bactrim.  Throughout her hospital course, the patient continued to receive Coreg 12.5 mg daily and Lasix 40 mg twice a day for her congestive heart failure, which remains stable.  She also received Lipitor for her high cholesterol.  Her seizure disorder remained stable and she was discharged on a dose of 100 mg in the morning and 150 mg at night.  The dosage increases can begin on an outpatient basis.,DISCHARGE INSTRUCTIONS/MEDICATIONS: , The patient was discharged to home.  She was told to shy away from strenuous activity.  Her discharge diet was to be her usual diet of isotonic fiber feeding through the J-tube at a rate of 120 per hour throughout the night.  The discharge medications were as follows:,1.  Coreg 12.5 mg p.o. b.i.d.,2.  Lipitor 10 mg p.o. at bedtime.,3.  Nitro-Dur patch 0.3 mg per hour one patch daily.,4.  Phenergan syrup 6.25 mg p.o. q.4h. p.r.n.,5.  Synthroid 0.175 mg p.o. daily.,6.  Zyrtec 10 mg p.o. daily.,7.  Lamictal 100 mg p.o. daily.,8.  Lamictal 150 mg p.o. at bedtime.,9.  Ferrous sulfate drops 325 mg, PEG tube b.i.d.,10.  Nexium 40 mg p.o. at breakfast.,11.  Neurontin 400 mg p.o. t.i.d.,12.  Lasix 40 mg p.o. b.i.d.,13.  Fentanyl 50 mcg patch transdermal q.72h.,14.  Calcium and vitamin D combination, calcium carbonate 500 mg/vitamin D 200 units one tab p.o. t.i.d.,15.  Bactrim DS 800mg/160 mg tablet one tablet q.12h. x3 days.,16.  Levaquin 750 mg one tablet p.o. x3 days.,The medications listed above, one listed as p.o. are to be administered via the J-tube.,FOLLOWUP:  ,The patient was instructed to see Dr. X in approximately five to seven days.  She was given a lab sheet to have a CBC with diff as well as a CMP to be drawn prior to her appointment with Dr. X.  She is instructed to follow up with Dr. Y if her condition changes regarding her colon cancer.  She was instructed to follow up with Dr. Z, her oncologist, regarding the positive lymph nodes.  We were unable to contact Dr. Z, but his telephone number was given to the patient and she was instructed to make a followup appointment.  She was also instructed to follow up with her endocrinologist, Dr. A, regarding any insulin pump adjustments, which were necessary and she was also instructed to follow up with Dr. B, her gastroenterologist, regarding any issues with her J-tube.,CONDITION ON DISCHARGE: , Stable.\n",
+  "metadata": {
+    "backend": "llama_cpp",
+    "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "generation_params": {
+      "patient_summary": {
+        "max_new_tokens": 512,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "caregiver_checklist": {
+        "max_new_tokens": 400,
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "child_explanation": {
+        "max_new_tokens": 320,
+        "temperature": 0.3,
+        "top_p": 0.9
+      }
+    },
+    "seed": 42,
+    "max_retries": 2,
+    "inject_entities": false,
+    "child_variant": "v2",
+    "retries": {
+      "patient_summary": 2,
+      "caregiver_checklist": 2,
+      "child_explanation": 0
+    },
+    "missing_first_attempt": {
+      "patient_summary": [
+        "150 mg",
+        "100 mg",
+        "200 mg",
+        "3 units",
+        "0.8 units",
+        "0.2 units",
+        "750 mg",
+        "12.5 mg",
+        "40 mg",
+        "10 mg",
+        "0.3 mg",
+        "6.25 mg",
+        "0.175 mg",
+        "325 mg",
+        "400 mg",
+        "50 mcg",
+        "500 mg",
+        "200 units",
+        "800mg",
+        "160 mg"
+      ],
+      "caregiver_checklist": [
+        "insulin",
+        "150 mg",
+        "in the morning",
+        "100 mg",
+        "200 mg",
+        "3 units",
+        "0.8 units",
+        "0.2 units",
+        "750 mg",
+        "every 12 hours",
+        "12.5 mg",
+        "daily",
+        "40 mg",
+        "twice a day",
+        "10 mg",
+        "at bedtime",
+        "0.3 mg",
+        "6.25 mg",
+        "0.175 mg",
+        "325 mg",
+        "400 mg",
+        "50 mcg",
+        "500 mg",
+        "200 units",
+        "800mg",
+        "160 mg",
+        "3 days"
+      ],
+      "child_explanation": []
+    },
+    "first_attempt_text": {
+      "patient_summary": "Hello there, it looks like you had a tough time in the hospital recently. Let me explain what happened and what you need to do now. Here’s a summary in simple words:\n\n### What Happened in the Hospital:\n- You had a seizure and jerky movements. The doctors thought this might be because of your seizure disorder, so they increased your medicine called Lamictal.\n- You also had low blood sugar levels, which is why you were given insulin through a pump. The doctors adjusted the insulin pump to help you better.\n- You had anemia, which means your blood wasn’t as healthy as it should be. Your doctors did a colonoscopy to find out more about your digestive system. They found a mass in your colon and did a surgery to remove it.\n- You also had a problem with your heart, which is why you were given medicine to help it work better.\n- You had a lung infection, so the doctors gave you antibiotics to help you feel better.\n\n### What You Need to Take Now:\n- You will take a heart medicine called Coreg twice a day.\n- You will take a cholesterol medicine called Lipitor at bedtime.\n- You will use a patch to help your heart.\n- You will take a medicine called Phenergan every 4 hours when you need it.\n- You will take thyroid medicine called Synthroid every day.\n- You will take an allergy medicine called Zyrtec every day.\n- You will take a medicine called Lamictal in the morning and at bedtime.\n- You will take iron drops to help your blood.\n- You will take a medicine called Nexium to help your stomach.\n- You will take a medicine called Neurontin every day.\n- You will take a medicine called Lasix twice a day.\n- You will use a fentanyl patch every 72 hours.\n- You will take calcium and vitamin D every day.\n- You will take Bactrim DS every 12 hours for 3 days.\n- You will take Levaquin every day for 3 days.\n\n### What to Do:\n- Avoid strenuous activities.\n- You will have your usual diet through a J-tube at a rate of 120 per hour at night.\n- You will see your doctor Dr. X in about 5 to 7 days. They will check your blood and other tests.\n- If your colon cancer changes, you will see Dr. Y.\n- If your positive lymph nodes change, you will see Dr. Z.\n- If",
+      "caregiver_checklist": "- Check her blood glucose levels every 4 hours and monitor for hypoglycemia or hyperglycemia.\n- Watch for signs of infection such as fever, cough, or shortness of breath.\n- Call if she experiences severe headaches or seizures.\n- Schedule a follow-up appointment with her neurologist in 2 weeks.\n- Call if she develops new or worsening symptoms.\n- Schedule a colonoscopy follow-up with her gastroenterologist in 6 weeks.\n- Call if she experiences any new or worsening abdominal pain.\n- Schedule a follow-up appointment with her oncologist in 2 weeks.\n- Call if she experiences any new or worsening symptoms related to her colon cancer.\n- Schedule a follow-up appointment with her endocrinologist in 2 weeks.\n- Call if she experiences any new or worsening symptoms related to her diabetes management.",
+      "child_explanation": "You had a big fight with your body, you know? Grown-ups and doctors are taking care of you now. You had a seizure, and your body was very tired. They gave you medicine to help you feel better. You also had low sugar, so they changed how much medicine you got. Your tummy was upset, so they did a special check to find out what was wrong. They found a big growth, so they had to take out part of your tummy. You had some coughing, so they gave you special medicine to fight it. Now you're feeling much better, and you'll see your doctors soon to make sure you're all better."
+    },
+    "first_attempt_evidence": {
+      "patient_summary": {
+        "note_id": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary",
+        "persona": "patient_summary",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 512,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary.json#/metadata/first_attempt_text/patient_summary",
+          "final_output": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary.json#/patient_summary"
+        }
+      },
+      "caregiver_checklist": {
+        "note_id": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary",
+        "persona": "caregiver_checklist",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 400,
+            "temperature": 0.2,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 3,
+        "first_attempt_number": 1,
+        "retry_count": 2,
+        "retry_status": true,
+        "fallback_status": true,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary.json#/metadata/first_attempt_text/caregiver_checklist",
+          "final_output": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary.json#/caregiver_checklist"
+        }
+      },
+      "child_explanation": {
+        "note_id": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary",
+        "persona": "child_explanation",
+        "model_config": {
+          "backend": "llama_cpp",
+          "model_id": "models/qwen2.5-3b-instruct-q4_k_m.gguf",
+          "model_hash": "sha256:626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+          "generation_params": {
+            "max_new_tokens": 320,
+            "temperature": 0.3,
+            "top_p": 0.9
+          },
+          "seed": 42,
+          "inject_entities": false,
+          "child_variant": "v2",
+          "max_retries": 2
+        },
+        "attempt_count": 1,
+        "first_attempt_number": 1,
+        "retry_count": 0,
+        "retry_status": false,
+        "fallback_status": false,
+        "output_references": {
+          "first_attempt_text": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary.json#/metadata/first_attempt_text/child_explanation",
+          "final_output": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary.json#/child_explanation"
+        }
+      }
+    },
+    "missing_after_retries": {
+      "patient_summary": [
+        "12.5 mg",
+        "daily",
+        "40 mg",
+        "10 mg",
+        "at bedtime",
+        "0.3 mg",
+        "6.25 mg",
+        "0.175 mg",
+        "325 mg",
+        "400 mg",
+        "50 mcg",
+        "500 mg",
+        "200 units",
+        "800mg",
+        "160 mg",
+        "3 days"
+      ],
+      "caregiver_checklist": [
+        "750 mg",
+        "every 12 hours",
+        "daily",
+        "40 mg",
+        "twice a day",
+        "10 mg",
+        "0.3 mg",
+        "6.25 mg",
+        "0.175 mg",
+        "325 mg",
+        "400 mg",
+        "50 mcg",
+        "500 mg",
+        "200 units",
+        "800mg",
+        "160 mg",
+        "3 days"
+      ],
+      "child_explanation": []
+    },
+    "fallback_used": {
+      "patient_summary": true,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated": {
+      "patient_summary": true,
+      "caregiver_checklist": true,
+      "child_explanation": false
+    },
+    "truncated_attempts": {
+      "patient_summary": [
+        true,
+        true,
+        true
+      ],
+      "caregiver_checklist": [
+        false,
+        false,
+        true
+      ],
+      "child_explanation": [
+        false
+      ]
+    },
+    "redacted_dosages": {
+      "patient_summary": [],
+      "caregiver_checklist": [],
+      "child_explanation": []
+    },
+    "latency_sec": {
+      "patient_summary": 119.747,
+      "caregiver_checklist": 69.603,
+      "child_explanation": 17.657,
+      "total": 207.03
+    },
+    "valid": true,
+    "validation_errors": [],
+    "created_at": "2026-10-24T13:30:03+00:00"
+  }
+}
