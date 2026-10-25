@@ -1,0 +1,169 @@
+{# Reusable components. Every colour comes from tokens.css classes; nothing here uses inline styles or scripts. #}
+{% from "partials/icons.html" import icon %}
+
+{# ---- buttons: variant = primary | secondary | danger. Use `link` for navigation, `button` for forms. #}
+{% macro link_button(href, label, variant='primary', icon_name=None, block=False, small=False) -%}
+<a class="btn btn-{{ variant }}{% if block %} btn-block{% endif %}{% if small %} btn-small{% endif %}" href="{{ href }}">{% if icon_name %}{{ icon(icon_name) }}{% endif %}{{ label }}</a>
+{%- endmacro %}
+
+{% macro button(label, variant='primary', type='submit', name=None, value=None, icon_name=None, block=False, small=False, novalidate=False) -%}
+<button class="btn btn-{{ variant }}{% if block %} btn-block{% endif %}{% if small %} btn-small{% endif %}" type="{{ type }}"{% if name %} name="{{ name }}" value="{{ value }}"{% endif %}{% if novalidate %} formnovalidate{% endif %}>{% if icon_name %}{{ icon(icon_name) }}{% endif %}{{ label }}</button>
+{%- endmacro %}
+
+{# ---- form field: label, hint and error text are linked to the control for screen readers. #}
+{% macro field(name, label, value='', type='text', hint='', error='', required=False, autocomplete=None, maxlength=None, inputmode=None, autofocus=False) -%}
+<div class="field{% if error %} has-error{% endif %}">
+  <label for="f-{{ name }}">{{ label }}{% if required %} <span class="req">(required)</span>{% endif %}</label>
+  {% if hint %}<p class="hint" id="h-{{ name }}">{{ hint }}</p>{% endif %}
+  <input id="f-{{ name }}" name="{{ name }}" type="{{ type }}"{% if type != 'password' %} value="{{ value }}"{% endif %}{% if required %} required{% endif %}{% if autocomplete %} autocomplete="{{ autocomplete }}"{% endif %}{% if maxlength %} maxlength="{{ maxlength }}"{% endif %}{% if inputmode %} inputmode="{{ inputmode }}"{% endif %}{% if autofocus %} autofocus{% endif %}{% if error %} aria-invalid="true"{% endif %}{% if hint or error %} aria-describedby="{% if hint %}h-{{ name }}{% endif %}{% if hint and error %} {% endif %}{% if error %}e-{{ name }}{% endif %}"{% endif %}>
+  {% if error %}<p class="error-text" id="e-{{ name }}" role="alert">{{ icon('alert') }}<span>{{ error }}</span></p>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro textarea_field(name, label, value='', hint='', error='', rows=5, maxlength=None, required=False) -%}
+<div class="field{% if error %} has-error{% endif %}">
+  <label for="f-{{ name }}">{{ label }}{% if required %} <span class="req">(required)</span>{% endif %}</label>
+  {% if hint %}<p class="hint" id="h-{{ name }}">{{ hint }}</p>{% endif %}
+  <textarea id="f-{{ name }}" name="{{ name }}" rows="{{ rows }}"{% if maxlength %} maxlength="{{ maxlength }}"{% endif %}{% if required %} required{% endif %}{% if error %} aria-invalid="true"{% endif %}{% if hint or error %} aria-describedby="{% if hint %}h-{{ name }}{% endif %}{% if hint and error %} {% endif %}{% if error %}e-{{ name }}{% endif %}"{% endif %}>{{ value }}</textarea>
+  {% if error %}<p class="error-text" id="e-{{ name }}" role="alert">{{ icon('alert') }}<span>{{ error }}</span></p>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro select_field(name, label, options, value='', hint='', error='', required=False, placeholder='Choose one') -%}
+<div class="field{% if error %} has-error{% endif %}">
+  <label for="f-{{ name }}">{{ label }}{% if required %} <span class="req">(required)</span>{% endif %}</label>
+  {% if hint %}<p class="hint" id="h-{{ name }}">{{ hint }}</p>{% endif %}
+  <select id="f-{{ name }}" name="{{ name }}"{% if required %} required{% endif %}{% if error %} aria-invalid="true"{% endif %}{% if hint or error %} aria-describedby="{% if hint %}h-{{ name }}{% endif %}{% if hint and error %} {% endif %}{% if error %}e-{{ name }}{% endif %}"{% endif %}>
+    <option value=""{% if not value %} selected{% endif %}>{{ placeholder }}</option>
+    {% for opt in options %}<option value="{{ opt }}"{% if opt == value %} selected{% endif %}>{{ opt }}</option>{% endfor %}
+  </select>
+  {% if error %}<p class="error-text" id="e-{{ name }}" role="alert">{{ icon('alert') }}<span>{{ error }}</span></p>{% endif %}
+</div>
+{%- endmacro %}
+
+{# ---- stepper: steps = list of labels, current = 1-based index. State is carried by text, not colour alone. #}
+{% macro stepper(steps, current) -%}
+<ol class="stepper" aria-label="Progress: step {{ current }} of {{ steps|length }}">
+  {% for label in steps %}
+  <li{% if loop.index == current %} aria-current="step"{% elif loop.index < current %} class="done"{% endif %}><span>{{ label }}</span>{% if loop.index < current %}<span class="visually-hidden"> (done)</span>{% endif %}</li>
+  {% endfor %}
+</ol>
+{%- endmacro %}
+
+{# ---- chips ---- #}
+{% macro role_chip(role) -%}
+<span class="chip chip-role-{{ role }}">{% if role == 'creator' %}{{ icon('shield') }}{% endif %}{{ role|capitalize }}</span>
+{%- endmacro %}
+
+{% macro status_chip(status) -%}
+<span class="chip chip-status-{{ status }}">{% if status == 'pending' %}{{ icon('clock') }}{% elif status == 'active' %}{{ icon('check') }}{% else %}{{ icon('lock') }}{% endif %}{{ {'pending': 'Pending approval', 'active': 'Active', 'revoked': 'Access removed'}[status] }}</span>
+{%- endmacro %}
+
+{# ---- banner: kind = info | success | warning | error. Has an icon and a text title, so meaning is not colour-only. #}
+{% macro banner(kind, title, text='', live=False) -%}
+<div class="banner banner-{{ kind }}"{% if kind == 'error' %} role="alert"{% elif live %} role="status"{% endif %}>
+  {{ icon({'info': 'info', 'success': 'check', 'warning': 'alert', 'error': 'alert'}[kind]) }}
+  <div class="banner-body"><strong>{{ title }}</strong>{% if text %}<p>{{ text }}</p>{% endif %}{{ caller() if caller else '' }}</div>
+</div>
+{%- endmacro %}
+
+{# ---- empty state ---- #}
+{% macro empty_state(icon_name, title, text) -%}
+<div class="card empty">
+  {{ icon(icon_name) }}
+  <h2>{{ title }}</h2>
+  <p>{{ text }}</p>
+  {% if caller %}<div class="actions">{{ caller() }}</div>{% endif %}
+</div>
+{%- endmacro %}
+
+{# ---- copy button: works with JavaScript (aria-live confirmation); without it the text stays selectable. ---- #}
+{% macro copy_button(target_id, label='Copy', status_id=None) -%}
+<button class="btn btn-secondary btn-small" type="button" data-copy-target="{{ target_id }}" data-copy-status="{{ status_id or (target_id ~ '-status') }}" data-needs-js hidden>{{ icon('copy') }}{{ label }}</button>
+<span class="copy-status" id="{{ status_id or (target_id ~ '-status') }}" role="status" aria-live="polite"></span>
+{%- endmacro %}
+
+{# ---- plain card ---- #}
+{% macro card(title=None, tint=None) -%}
+<section class="card{% if tint %} tint-{{ tint }}{% endif %}">{% if title %}<h2>{{ title }}</h2>{% endif %}{{ caller() }}</section>
+{%- endmacro %}
+
+{# ---- hidden CSRF field for every state-changing form ---- #}
+{% macro csrf_field() -%}<input type="hidden" name="csrf_token" value="{{ csrf_token }}">{%- endmacro %}
+
+
+{# ---- patient-context bar: the open care circle and the viewer's role ---- #}
+{% macro context_bar(circle) -%}
+<div class="inner circle-context"><span class="muted">Care circle:</span> <strong>{{ circle.name }}</strong> {{ role_chip(circle.role) }}</div>
+{%- endmacro %}
+
+{# ---- persona output card. kind = patient | caregiver | child decides the tint and (for child) the larger type. ---- #}
+{% macro persona_card(kind, title, icon_name, updated=None, note_title=None, disclaimer=None, heading_level=2) -%}
+<section class="card persona persona-{{ kind }}" aria-labelledby="persona-{{ kind }}-h">
+  <h{{ heading_level }} id="persona-{{ kind }}-h">{{ icon(icon_name) }} {{ title }}</h{{ heading_level }}>
+  {% if updated %}<p class="updated muted">Updated {{ updated|human_time }}{% if note_title %} from note “{{ note_title }}”{% endif %}</p>{% endif %}
+  {% if kind == 'child' %}<button class="btn btn-secondary btn-small bigger-words-toggle" type="button" data-bigger-words aria-pressed="false" data-needs-js hidden>Bigger words</button>{% endif %}
+  <div class="persona-body">{{ caller() }}</div>
+  {% if disclaimer %}<p class="disclaimer">{{ icon('info') }}<span>{{ disclaimer }}</span></p>{% endif %}
+</section>
+{%- endmacro %}
+
+{# ---- one checklist item as its own small form, so it works without JavaScript ---- #}
+{% macro checklist_item(item, post_url, back_url, can_tick) -%}
+<li class="check-item{% if item.ticked %} is-done{% endif %}" id="item-{{ item.index }}">
+  <div class="check-text">
+    <span class="check-state">{{ icon('check') if item.ticked else icon('clock') }}<span class="visually-hidden">{{ 'Done' if item.ticked else 'Not done yet' }}: </span></span>
+    <span>{{ item.text }}</span>
+    {% if item.ticked %}<span class="muted check-meta">Done by {{ item.ticked_by }}, {{ item.ticked_at|human_time }}</span>{% endif %}
+  </div>
+  {% if can_tick %}
+  <form method="post" action="{{ post_url }}">
+    {{ csrf_field() }}
+    <input type="hidden" name="ticked" value="{{ '0' if item.ticked else '1' }}">
+    <input type="hidden" name="back" value="{{ back_url }}">
+    <button class="btn btn-secondary btn-small" type="submit">{{ 'Mark not done' if item.ticked else 'Mark done' }}<span class="visually-hidden">: {{ item.text }}</span></button>
+  </form>
+  {% endif %}
+</li>
+{%- endmacro %}
+
+{# ---- member row. `m` comes from circle.list_members, so it only has the fields the viewer's role may see. ---- #}
+{% macro member_row(m) -%}
+<div class="member-main">
+  <div>
+    <strong>{{ m.display_name or m.first_name }}</strong>
+    {% if m.relationship_label %}<span class="muted"> · {{ m.relationship_label }}</span>{% endif %}
+    {% if m.email %}<div class="muted member-email">{{ m.email }}</div>{% endif %}
+    {% if m.same_name %}<div class="muted member-warning"><strong>Same name as another member.</strong> Check this is the right person before you approve.</div>{% endif %}
+  </div>
+  <div class="row">
+    {% if m.role %}{{ role_chip(m.role) }}{% endif %}
+    {% if m.status %}{{ status_chip(m.status) }}{% endif %}
+    {% if m.role == 'caregiver' and m.can_add_notes %}<span class="chip chip-note">{{ icon('file-text') }}Can add notes</span>{% endif %}
+  </div>
+</div>
+{%- endmacro %}
+
+{# ---- loading skeleton shown while a note is being prepared ---- #}
+{% macro skeleton(label) -%}
+<div class="skeleton" role="status" aria-live="polite"><span class="visually-hidden">{{ label }}</span><span class="sk-line"></span><span class="sk-line"></span><span class="sk-line short"></span></div>
+{%- endmacro %}
+
+{# ---- note generation state chip ---- #}
+{% macro gen_chip(state) -%}
+{% if state == 'queued' %}<span class="chip chip-status-pending">{{ icon('clock') }}Waiting in line</span>
+{% elif state == 'running' %}<span class="chip chip-status-pending">{{ icon('sparkle') }}Being prepared</span>
+{% elif state == 'done' %}<span class="chip chip-status-active">{{ icon('check') }}Ready</span>
+{% elif state == 'failed' %}<span class="chip chip-status-revoked">{{ icon('alert') }}Could not be prepared</span>
+{% endif %}
+{%- endmacro %}
+
+{# ---- "being prepared" block. data-poll-* lets app.js refresh the page when the note finishes. ---- #}
+{% macro preparing(profile_id, state) -%}
+<section class="card" data-poll-url="/api/p/{{ profile_id }}/status" data-poll-state="{{ state }}" aria-live="polite">
+  <h2>{{ icon('sparkle') }} A new note is being prepared</h2>
+  <p data-poll-label>{{ 'Waiting in line to be prepared…' if state == 'queued' else 'Being prepared now…' }}</p>
+  {{ skeleton('Preparing the explanations') }}
+  <p class="muted">This takes about a minute with the real model. This page updates by itself. <a class="refresh-link tap-link" href="">Refresh now</a></p>
+</section>
+{%- endmacro %}

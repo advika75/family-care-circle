@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import field, textarea_field, button, banner, empty_state, gen_chip, preparing, csrf_field with context %}
+{% from "partials/icons.html" import icon %}
+{% block title %}Notes{% endblock %}
+{% block content %}
+<h1>Notes</h1>
+{% if notice %}{% call banner(notice[0], notice[1], live=True) %}{% if notice[2] %}<p>{{ notice[2] }}</p>{% endif %}{% endcall %}{% endif %}
+{% if active %}{{ preparing(profile_id, active.status) }}{% endif %}
+
+<section class="card" aria-labelledby="add-h">
+  <h2 id="add-h">{{ icon('plus') }} Add a note</h2>
+  <p class="muted">Paste the text of a clinical note, or upload a plain-text (.txt) file. Notes can be up to {{ '{:,}'.format(max_chars) }} characters. Pasting and uploading are both fine, but use one at a time. Please use only made-up or practice text: this prototype is not for real patient data.</p>
+  <form method="post" action="/p/{{ profile_id }}/notes" enctype="multipart/form-data" novalidate>
+    {{ csrf_field() }}
+    {{ field('title', 'Title (optional)', values.title, hint='For example “Clinic visit”. If you leave it blank the note is numbered.', error=errors.title, maxlength=80) }}
+    {{ textarea_field('text', 'Note text', values.text, error=errors.text, rows=10) }}
+    <div class="field{% if errors.file %} has-error{% endif %}">
+      <label for="f-file">Or upload a .txt file</label>
+      <input id="f-file" name="file" type="file" accept=".txt,text/plain"{% if errors.file %} aria-invalid="true" aria-describedby="e-file"{% endif %}>
+      {% if errors.file %}<p class="error-text" id="e-file" role="alert">{{ icon('alert') }}<span>{{ errors.file }}</span></p>{% endif %}
+    </div>
+    <div class="actions">{{ button('Add note', 'primary', icon_name='plus') }}</div>
+  </form>
+</section>
+
+<section class="card" aria-labelledby="list-h">
+  <h2 id="list-h">All notes</h2>
+  {% if notes %}
+  <ul class="note-list">
+    {% for n in notes %}
+    <li class="member">
+      <div class="note-item">
+        <div><strong>{{ n.title }}</strong> {{ gen_chip(n.status) }}
+          <div class="muted">Added by {{ n.added_by_name }}, {{ n.created_at|human_time }}</div>
+          {% if n.status == 'failed' and n.error_message %}<div class="error-text">{{ icon('alert') }}<span>{{ n.error_message }}</span></div>{% endif %}
+        </div>
+        {% if caps.delete_note %}
+        <form method="post" action="/p/{{ profile_id }}/notes/{{ n.id }}/delete">{{ csrf_field() }}
+          <button class="btn btn-danger btn-small" type="submit">{{ icon('trash') }}Delete<span class="visually-hidden"> {{ n.title }} and its explanations</span></button>
+        </form>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p class="muted">No notes yet. Add one above.</p>
+  {% endif %}
+</section>
+{% endblock %}

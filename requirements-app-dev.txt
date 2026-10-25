@@ -1,0 +1,5 @@
+# Development/audit tooling for app/ only (NOT needed to run the app; kept out of requirements.txt on purpose).
+# Install into the project's .venv:  .venv/bin/python -m pip install -r requirements-app-dev.txt
+# then, once:                        .venv/bin/python -m playwright install chromium
+playwright==1.64.1          # real-browser checks and the screenshots in app/audit/screenshots/
+pip-audit==2.10.1           # known-vulnerability scan of the app's pinned dependencies

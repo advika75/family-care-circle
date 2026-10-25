@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import banner, button, member_row, role_chip, status_chip, select_field, field, copy_button, csrf_field with context %}
+{% from "partials/icons.html" import icon %}
+{% block title %}Care circle{% endblock %}
+{% block content %}
+<h1>Care circle</h1>
+{% if notice %}{% call banner(notice[0], notice[1]) %}{% if notice[2] %}<p>{{ notice[2] }}</p>{% endif %}{% endcall %}{% endif %}
+
+{% if new_invite %}
+<section class="card tint-lavender" aria-labelledby="invite-h">
+  <h2 id="invite-h">{{ icon('key') }} Invitation for a {{ new_invite.role }}</h2>
+  <p><strong>This code is shown only once.</strong> Nothing is emailed, so give the person both the patient ID and this code yourself.</p>
+  <dl class="summary-list">
+    <dt>Patient ID</dt><dd><span class="code-box" id="share-patient-id">{{ new_invite.patient_id }}</span> {{ copy_button('share-patient-id', 'Copy ID') }}</dd>
+    <dt>Invitation code</dt><dd><span class="code-box" id="invite-code">{{ new_invite.code }}</span> {{ copy_button('invite-code', 'Copy code') }}</dd>
+    <dt>Expires</dt><dd>{{ new_invite.expires_at|human_time }} (single use)</dd>
+    {% if new_invite.note %}<dt>Note for yourself</dt><dd>{{ new_invite.note }}</dd>{% endif %}
+  </dl>
+  <p class="muted">They then choose Join an Existing Care Circle, and you approve their request here.</p>
+</section>
+{% endif %}
+
+<section class="card" aria-labelledby="members-h">
+  <h2 id="members-h">{{ icon('users') }} Members</h2>
+  {% if level == 'first_names' %}
+    <p class="muted">The grown-ups looking after {{ label }}:</p>
+    <ul class="member-list">{% for m in members %}<li class="member"><strong>{{ m.first_name }}</strong></li>{% endfor %}</ul>
+  {% else %}
+    <ul class="member-list">
+      {% for m in members %}
+      <li class="member{% if m.is_creator %} member-creator{% endif %}">
+        {{ member_row(m) }}
+        {% if m.is_creator %}<p class="muted">Creator of this care circle</p>{% endif %}
+
+        {% if level == 'full' and not m.is_creator %}
+        <div class="member-actions">
+          {% if m.status == 'pending' %}
+            <form method="post" action="/p/{{ profile_id }}/circle/members/{{ m.membership_id }}/approve">{{ csrf_field() }}{{ button('Approve', 'primary', small=True, icon_name='check') }}</form>
+            <form method="post" action="/p/{{ profile_id }}/circle/members/{{ m.membership_id }}/revoke">{{ csrf_field() }}{{ button('Decline', 'danger', small=True) }}</form>
+          {% elif m.status == 'active' %}
+            <form method="post" action="/p/{{ profile_id }}/circle/members/{{ m.membership_id }}/role">
+              {{ csrf_field() }}
+              <div class="field"><label class="visually-hidden" for="role-{{ m.membership_id }}">Role for {{ m.display_name }}</label>
+                <select id="role-{{ m.membership_id }}" name="role">{% for r in invitable_roles %}<option value="{{ r }}"{% if r == m.role %} selected{% endif %}>{{ r|capitalize }}</option>{% endfor %}</select></div>
+              {{ button('Change role', 'secondary', small=True) }}
+            </form>
+            {% if m.role == 'caregiver' %}
+            <form method="post" action="/p/{{ profile_id }}/circle/members/{{ m.membership_id }}/notes">
+              {{ csrf_field() }}<input type="hidden" name="allowed" value="{{ '0' if m.can_add_notes else '1' }}">
+              {{ button('Stop allowing notes' if m.can_add_notes else 'Allow adding notes', 'secondary', small=True) }}
+            </form>
+            {% endif %}
+            <form method="post" action="/p/{{ profile_id }}/circle/members/{{ m.membership_id }}/revoke">{{ csrf_field() }}{{ button('Remove access', 'danger', small=True) }}</form>
+          {% endif %}
+        </div>
+        {% elif level == 'names_roles' and m.status == 'pending' %}
+        <div class="member-actions">
+          <form method="post" action="/p/{{ profile_id }}/circle/members/{{ m.membership_id }}/approve">{{ csrf_field() }}{{ button('Approve this child', 'primary', small=True, icon_name='check') }}</form>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</section>
+
+{% if caps.invite %}
+<section class="card" aria-labelledby="invite-form-h">
+  <h2 id="invite-form-h">{{ icon('user-plus') }} Invite someone</h2>
+  {% if invitations_paused %}
+    {% call banner('warning', 'New invitations are paused') %}<p>Nobody can join with a code until you resume invitations. Codes you already made are kept and work again once you resume.</p>{% endcall %}
+  {% endif %}
+  <form method="post" action="/p/{{ profile_id }}/circle/pause" class="actions">
+    {{ csrf_field() }}<input type="hidden" name="paused" value="{{ '0' if invitations_paused else '1' }}">
+    {{ button('Resume invitations' if invitations_paused else 'Pause new invitations', 'secondary', small=True) }}
+  </form>
+  {% if not invitations_paused %}
+  <form method="post" action="/p/{{ profile_id }}/circle/invite" novalidate>
+    {{ csrf_field() }}
+    {{ select_field('role', 'Role', ['caregiver', 'patient', 'child'], values.role, hint='Caregivers see everything. The patient sees the patient summary. A child sees the child explanation only.', error=errors.role, required=True) }}
+    {{ field('note', 'Note for yourself (optional)', values.note, hint='For example who this is for. Only you see it, and it is not checked when they join.', error=errors.note, maxlength=254) }}
+    <div class="actions">{{ button('Create invitation', 'primary', icon_name='key') }}</div>
+  </form>
+  {% endif %}
+</section>
+
+<section class="card" aria-labelledby="inv-list-h">
+  <h2 id="inv-list-h">Invitations</h2>
+  {% if invitations %}
+  <ul class="member-list">
+    {% for i in invitations %}
+    <li class="member">
+      <div class="member-main">
+        <div>{{ role_chip(i.role) }} <span class="chip chip-status-{{ {'open': 'active', 'used': 'pending', 'expired': 'revoked', 'revoked': 'revoked'}[i.state] }}">{{ {'open': 'Open', 'used': 'Used', 'expired': 'Expired', 'revoked': 'Cancelled'}[i.state] }}</span>
+          {% if i.note %}<span class="muted"> · {{ i.note }}</span>{% endif %}
+          <div class="muted">Created {{ i.created_at|human_time }} · expires {{ i.expires_at|human_time }}</div></div>
+        {% if i.state == 'open' %}
+        <form method="post" action="/p/{{ profile_id }}/circle/invitations/{{ i.id }}/revoke">{{ csrf_field() }}{{ button('Cancel invitation', 'danger', small=True) }}</form>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}<p class="muted">No invitations yet.</p>{% endif %}
+</section>
+{% endif %}
+
+{% if caps.delete_profile %}
+<section class="card danger-zone" aria-labelledby="del-h">
+  <h2 id="del-h">Delete this care circle</h2>
+  <p>This permanently deletes the profile, every note, all generated text and every membership. It cannot be undone.</p>
+  <form method="post" action="/p/{{ profile_id }}/delete" novalidate>
+    {{ csrf_field() }}
+    {{ field('confirm', 'Type the patient ID to confirm', hint='The ID is ' ~ profile_id ~ '.', autocomplete='off', required=True) }}
+    <div class="actions">{{ button('Delete care circle', 'danger', icon_name='trash') }}</div>
+  </form>
+</section>
+{% endif %}
+{% endblock %}

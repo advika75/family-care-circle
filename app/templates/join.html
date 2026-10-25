@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import field, select_field, button, banner, csrf_field with context %}
+{% block title %}Join a care circle{% endblock %}
+{% block content %}
+<div class="narrow">
+  <h1>Join an Existing Care Circle</h1>
+  {% call banner('info', 'The patient ID is not a password') %}<p>To join you need three things: your own account, the patient ID, and a one-time invitation code from the person who manages the circle. They then have to approve your request.</p>{% endcall %}
+
+  {% if result %}
+    {% if result.kind == 'pending' %}
+      {% call banner('info', 'Your request is waiting for approval', live=True) %}<p>You will get access once the care circle manager approves you. <a href="/p/{{ result.patient_id }}">See your request</a>.</p>{% endcall %}
+    {% elif result.kind == 'revoked' %}
+      {% call banner('error', 'You do not have permission to join this care circle') %}<p>{{ result.message }}</p>{% endcall %}
+    {% elif result.kind == 'member' %}
+      {% call banner('info', result.message) %}<p><a href="/p/{{ result.patient_id }}">Open the care circle</a>.</p>{% endcall %}
+    {% else %}
+      {% call banner('error', result.title) %}<p>{{ result.message }}</p>{% endcall %}
+    {% endif %}
+  {% endif %}
+
+  <form method="post" action="/join" class="card" novalidate>
+    {{ csrf_field() }}
+    {{ field('patient_id', 'Patient ID', values.patient_id, hint='Starts with FCC- and has two groups of four letters or numbers, for example FCC-####-####.', error=errors.patient_id, required=True, autocomplete='off', maxlength=20, autofocus=True) }}
+    {{ field('code', 'Invitation code', values.code, hint='Four groups of four letters or numbers, for example ####-####-####-####. It works once and expires after 7 days.', error=errors.code, required=True, autocomplete='off', maxlength=24) }}
+    {{ select_field('relationship_label', 'Your relationship to the patient', relationship_labels, values.relationship_label, hint='A label other members will see. It does not change what you can do.', error=errors.relationship_label, required=True) }}
+    <div class="actions">{{ button('Ask to join', 'primary', icon_name='arrow-right') }}</div>
+  </form>
+</div>
+{% endblock %}

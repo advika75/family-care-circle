@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import link_button, role_chip, status_chip, empty_state, banner %}
+{% block title %}My care circles{% endblock %}
+{% block content %}
+<div class="row spread">
+  <h1>My care circles</h1>
+  <div class="row">
+    {{ link_button('/profiles/new', 'Create a Patient Profile', 'primary', 'plus', small=True) }}
+    {{ link_button('/join', 'Join a Care Circle', 'secondary', 'key', small=True) }}
+  </div>
+</div>
+
+{% if circles %}
+<ul class="circle-list">
+  {% for c in circles %}
+  <li class="card circle-item">
+    <div>
+      <h2><a href="/p/{{ c.patient_id }}">{{ c.display_name }}</a></h2>
+      <p class="muted">Patient ID {{ c.patient_id }}</p>
+    </div>
+    <div class="row">{{ role_chip(c.role) }}{{ status_chip(c.status) }}</div>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+  {% call empty_state('heart', 'You are not in a care circle yet', 'Create a profile for someone you care for, or join a circle you have been invited to.') %}
+    {{ link_button('/profiles/new', 'Create a Patient Profile', 'primary', 'arrow-right') }}
+    {{ link_button('/join', 'Join an Existing Care Circle', 'secondary', 'arrow-right') }}
+  {% endcall %}
+{% endif %}
+{% endblock %}

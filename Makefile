@@ -19,3 +19,25 @@ reproduce-small: test
 
 clean-reproduce-small:
 	rm -rf $(REPRODUCE_SMALL_DIR)
+
+# ---- Family Care Circle web app (app/). Local only; see app/README.md. ----
+# APP_BACKEND=mock (default) needs no model; APP_BACKEND=llama_cpp uses the local GGUF from config.yaml.
+.PHONY: app-run app-test
+
+app-run:
+	python -m uvicorn app.web.main:create_app --factory --host 127.0.0.1 --port 8000 --no-server-header
+
+app-test:
+	python -m pytest tests/app -q
+
+# Create SYNTHETIC demo accounts + notes from data/raw in an EMPTY database (refuses otherwise). See app/dev_seed.py.
+.PHONY: app-seed
+
+app-seed:
+	python -m app.dev_seed
+
+# Slow, browser (Playwright) and real-model tests of the web app; skipped by `make app-test`.
+.PHONY: app-test-slow
+
+app-test-slow:
+	APP_RUN_SLOW=1 python -m pytest tests/app -q -m "slow or browser or realmodel"

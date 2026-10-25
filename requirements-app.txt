@@ -1,0 +1,11 @@
+# Dependencies for the multi-user web app in app/ (kept separate from requirements.txt on purpose).
+# Install into the project's .venv:  .venv/bin/python -m pip install -r requirements-app.txt
+# Everything is local; nothing here makes outbound network calls at runtime.
+#
+# fastapi is pinned to 0.141.0: it is the newest release that does NOT require opentelemetry-api
+# (required from 0.142.0 on), and it works with the Starlette 1.8.0 that Streamlit already needs.
+fastapi==0.141.0            # web framework (pulls in pydantic, annotated-types, pydantic-core, typing-inspection)
+uvicorn==0.54.0             # ASGI server; plain package, no [standard] extras
+jinja2==3.1.6               # server-rendered templates (autoescape on)
+python-multipart==0.0.32    # form posts and .txt uploads
+httpx==0.28.1               # tests only: required by Starlette's TestClient

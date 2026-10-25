@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import field, button, banner, csrf_field with context %}
+{% block title %}Log in{% endblock %}
+{% block content %}
+<div class="narrow">
+  <h1>Log in</h1>
+  {% if form_error %}{% call banner('error', form_error) %}{% endcall %}{% endif %}
+  <form method="post" action="/login" class="card" novalidate>
+    {{ csrf_field() }}
+    <input type="hidden" name="next" value="{{ next }}">
+    {{ field('email', 'Email address', values.email, type='email', required=True, autocomplete='username', maxlength=254, autofocus=True) }}
+    {{ field('password', 'Password', type='password', required=True, autocomplete='current-password') }}
+    <div class="actions">{{ button('Log in', 'primary', block=True) }}</div>
+  </form>
+  <p class="muted">New here? <a href="/signup{% if next_param %}?next={{ next_param }}{% endif %}">Create an account</a>.</p>
+</div>
+{% endblock %}

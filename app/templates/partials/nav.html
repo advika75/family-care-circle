@@ -1,0 +1,39 @@
+{% from "partials/icons.html" import icon %}
+{% from "partials/components.html" import role_chip, status_chip, csrf_field, context_bar with context %}
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="{{ '/profiles' if user else '/' }}">{{ icon('heart') }}<span>Family Care Circle</span></a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        {% if user %}
+          {% for item in nav.links %}
+            <li><a href="{{ item.href }}"{% if item.current %} aria-current="page"{% endif %}>{{ icon(item.icon) }}{{ item.label }}</a></li>
+          {% endfor %}
+          <li>
+            <details>
+              <summary>{{ icon('users') }}<span>{% if nav.circle %}{{ nav.circle.name }}{% else %}My care circles{% endif %}</span>{{ icon('chevron-down') }}</summary>
+              <div class="menu-panel">
+                {% for c in nav.circles %}
+                  <a href="/p/{{ c.patient_id }}"{% if nav.circle and nav.circle.patient_id == c.patient_id %} aria-current="page"{% endif %}><span>{{ c.display_name }}</span><span>{{ role_chip(c.role) }}</span></a>
+                {% else %}
+                  <p class="muted">You are not in a care circle yet.</p>
+                {% endfor %}
+                <a href="/profiles">All my care circles</a>
+              </div>
+            </details>
+          </li>
+          <li>
+            <form method="post" action="/logout">
+              {{ csrf_field() }}
+              <button class="link-button" type="submit">{{ icon('logout') }}Log out</button>
+            </form>
+          </li>
+        {% else %}
+          <li><a href="/login"{% if nav.current == 'login' %} aria-current="page"{% endif %}>Log in</a></li>
+          <li><a href="/signup"{% if nav.current == 'signup' %} aria-current="page"{% endif %}>Sign up</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+  {% if user and nav.circle %}{{ context_bar(nav.circle) }}{% endif %}
+</header>

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import banner, copy_button with context %}
+{% block title %}Info{% endblock %}
+{% block content %}
+<div class="narrow stack">
+  <h1>About this care circle</h1>
+  <section class="card">
+    <dl class="summary-list">
+      <dt>Patient name</dt><dd>{{ info.display_name }}</dd>
+      <dt>Name for the child view</dt><dd>{{ info.preferred_name or 'Not set' }}</dd>
+      <dt>Year of birth</dt><dd>{{ info.year_of_birth or 'Not set' }}</dd>
+      <dt>Care notes</dt><dd>{{ info.care_notes or 'None' }}</dd>
+      <dt>Patient ID</dt><dd><span class="code-box" id="patient-id">{{ info.patient_id }}</span> {{ copy_button('patient-id', 'Copy ID') }}</dd>
+    </dl>
+    {% call banner('info', 'The ID identifies the care circle. It is not a password.') %}<p>Having the ID gives nobody access. Joining needs an invitation code and approval.</p>{% endcall %}
+  </section>
+</div>
+{% endblock %}

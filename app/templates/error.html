@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import link_button, banner %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<div class="narrow stack">
+  <h1>{{ title }}</h1>
+  {% call banner('error' if status_code >= 500 else 'info', message) %}{% endcall %}
+  <div class="actions">{{ link_button('/profiles' if user else '/', 'Go to ' ~ ('my care circles' if user else 'the start page'), 'primary', 'arrow-left') }}</div>
+</div>
+{% endblock %}

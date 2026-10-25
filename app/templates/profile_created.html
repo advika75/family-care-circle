@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import link_button, role_chip, banner, copy_button %}
+{% from "partials/icons.html" import icon %}
+{% block title %}Care circle created{% endblock %}
+{% block content %}
+<div class="narrow stack">
+  <h1>Care circle created</h1>
+  {% call banner('success', 'Your care circle is ready', live=True) %}<p>You are the creator of the care circle for <strong>{{ profile.display_name }}</strong>.</p>{% endcall %}
+
+  <section class="card">
+    <h2>Patient ID</h2>
+    <div class="id-display">
+      <span class="code-box" id="patient-id">{{ profile.patient_id }}</span>
+      {{ copy_button('patient-id', 'Copy ID') }}
+    </div>
+    {% call banner('warning', 'The ID identifies the care circle. It is not a password.') %}<p>Knowing the ID does not give anyone access. People can only join with their own account, an invitation code from you, and your approval.</p>{% endcall %}
+  </section>
+
+  <section class="card">
+    <h2>Your role</h2>
+    <p>{{ role_chip('creator') }} You can see everything, add and delete notes, invite people, approve or remove members, and delete this care circle.</p>
+  </section>
+
+  <section class="card">
+    <h2>How to invite someone</h2>
+    <ol class="steps-list">
+      <li>Open the <a href="/p/{{ profile.patient_id }}/circle">Care Circle page</a> and choose <strong>Invite</strong>.</li>
+      <li>Pick their role: caregiver, patient or child.</li>
+      <li>You will see a one-time invitation code. <strong>Nothing is emailed</strong>, so send the code and this patient ID to them yourself, for example in person or by phone.</li>
+      <li>They go to <strong>Join an Existing Care Circle</strong>, enter both, and you approve their request.</li>
+    </ol>
+    <div class="actions">{{ link_button('/p/' ~ profile.patient_id ~ '/circle', 'Go to the Care Circle page', 'primary', 'users') }}</div>
+  </section>
+</div>
+{% endblock %}

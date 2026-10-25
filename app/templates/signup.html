@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import field, button, banner, csrf_field with context %}
+{% block title %}Sign up{% endblock %}
+{% block content %}
+<div class="narrow">
+  <h1>Create your account</h1>
+  <p class="muted">An account is just for you. You will create a care circle or join one after this.</p>
+  {% if form_error %}{% call banner('error', form_error) %}{% endcall %}{% endif %}
+  <form method="post" action="/signup" class="card" novalidate>
+    {{ csrf_field() }}
+    <input type="hidden" name="next" value="{{ next }}">
+    {{ field('display_name', 'Your name', values.display_name, hint='This is how other members of a care circle will see you.', error=errors.display_name, required=True, autocomplete='name', maxlength=80, autofocus=True) }}
+    {{ field('email', 'Email address', values.email, type='email', error=errors.email, required=True, autocomplete='email', maxlength=254) }}
+    {{ field('password', 'Password', type='password', hint='At least 12 characters. A few ordinary words work well. There are no other rules.', error=errors.password, required=True, autocomplete='new-password') }}
+    <div class="actions">{{ button('Create account', 'primary', block=True) }}</div>
+  </form>
+  <p class="muted">Already have an account? <a href="/login{% if next_param %}?next={{ next_param }}{% endif %}">Log in</a>.</p>
+</div>
+{% endblock %}

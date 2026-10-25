@@ -36,3 +36,20 @@ results/ablations_mock/
 .DS_Store
 .vscode/
 .idea/
+
+# Family Care Circle web app: local database and environment files (never commit these)
+app/var/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+.env.*
+
+# Added before publishing: other database, key and model-weight file types
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.pem
+*.key
+*.bin
+*.pt

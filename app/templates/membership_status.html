@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import banner, link_button, status_chip, role_chip %}
+{% block title %}{% if status == 'pending' %}Waiting for approval{% else %}Access removed{% endif %}{% endblock %}
+{% block content %}
+<div class="narrow stack">
+  {% if status == 'pending' %}
+    <h1>Waiting for approval</h1>
+    {% call banner('info', 'Your request to join has been sent', live=True) %}<p>The care circle manager needs to approve you before you can see anything. Check back later; there is nothing else for you to do.</p>{% endcall %}
+  {% else %}
+    <h1>Access removed</h1>
+    {% call banner('error', 'You no longer have access to this care circle') %}<p>If you think this is a mistake, please speak to the person who manages the circle.</p>{% endcall %}
+  {% endif %}
+  <section class="card">
+    <dl class="summary-list">
+      <dt>Patient ID</dt><dd>{{ patient_id }}</dd>
+      <dt>Your role</dt><dd>{{ role_chip(role) }}</dd>
+      <dt>Status</dt><dd>{{ status_chip(status) }}</dd>
+    </dl>
+    <div class="actions">{{ link_button('/profiles', 'Back to my care circles', 'secondary', 'arrow-left') }}</div>
+  </section>
+</div>
+{% endblock %}

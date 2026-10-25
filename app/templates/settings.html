@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import field, button, banner, csrf_field with context %}
+{% from "partials/icons.html" import icon %}
+{% block title %}Settings{% endblock %}
+{% block content %}
+<div class="narrow stack">
+  <h1>Settings</h1>
+  <p class="muted">Signed in as <strong>{{ user.display_name }}</strong> ({{ user.email }}).</p>
+  {% if notice %}{% call banner(notice[0], notice[1], live=True) %}{% if notice[2] %}<p>{{ notice[2] }}</p>{% endif %}{% endcall %}{% endif %}
+
+  <section class="card" aria-labelledby="pw-h">
+    <h2 id="pw-h">{{ icon('lock') }} Change password</h2>
+    <form method="post" action="/settings/password" novalidate>
+      {{ csrf_field() }}
+      {{ field('current_password', 'Current password', type='password', error=errors.current_password, required=True, autocomplete='current-password') }}
+      {{ field('new_password', 'New password', type='password', hint='At least 12 characters. Changing it logs you out everywhere else.', error=errors.new_password, required=True, autocomplete='new-password') }}
+      <div class="actions">{{ button('Change password', 'primary') }}</div>
+    </form>
+  </section>
+
+  <section class="card" aria-labelledby="out-h">
+    <h2 id="out-h">{{ icon('logout') }} Log out of all sessions</h2>
+    <p>Ends every login of yours on every device, including this one.</p>
+    <form method="post" action="/settings/logout-all">{{ csrf_field() }}<div class="actions">{{ button('Log out everywhere', 'secondary') }}</div></form>
+  </section>
+
+  <section class="card danger-zone" aria-labelledby="del-h">
+    <h2 id="del-h">{{ icon('trash') }} Delete my account</h2>
+    <p>This removes your account and your place in every care circle. Care circles you created must be deleted first.</p>
+    <form method="post" action="/settings/delete" novalidate>
+      {{ csrf_field() }}
+      {{ field('password', 'Your password', type='password', error=errors.password, required=True, autocomplete='current-password') }}
+      <div class="field{% if errors.confirm %} has-error{% endif %}">
+        <label><input type="checkbox" name="confirm" value="yes"{% if errors.confirm %} aria-invalid="true"{% endif %}> I understand this cannot be undone</label>
+        {% if errors.confirm %}<p class="error-text" role="alert">{{ icon('alert') }}<span>{{ errors.confirm }}</span></p>{% endif %}
+      </div>
+      <div class="actions">{{ button('Delete my account', 'danger', icon_name='trash') }}</div>
+    </form>
+  </section>
+</div>
+{% endblock %}

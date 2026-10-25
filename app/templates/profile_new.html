@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import field, textarea_field, select_field, button, banner, stepper, csrf_field with context %}
+{% block title %}Create a Patient Profile{% endblock %}
+{% block content %}
+<div class="narrow">
+  <h1>Create a Patient Profile</h1>
+  {{ stepper(['Patient basics', 'Care information', 'Your details', 'Review'], step) }}
+  {% if form_error %}{% call banner('error', form_error) %}{% endcall %}{% endif %}
+
+  <form method="post" action="/profiles/new" class="card" novalidate>
+    {{ csrf_field() }}
+    <input type="hidden" name="step" value="{{ step }}">
+
+    {# Values for the steps that are not on screen travel as hidden fields (no draft is stored on the server). #}
+    {% if step != 1 %}
+      <input type="hidden" name="display_name" value="{{ values.display_name }}">
+      <input type="hidden" name="preferred_name" value="{{ values.preferred_name }}">
+      <input type="hidden" name="year_of_birth" value="{{ values.year_of_birth }}">
+    {% endif %}
+    {% if step != 2 %}<input type="hidden" name="care_notes" value="{{ values.care_notes }}">{% endif %}
+    {% if step != 3 %}<input type="hidden" name="relationship_label" value="{{ values.relationship_label }}">{% endif %}
+
+    {% if step == 1 %}
+      <h2>Patient basics</h2>
+      {{ field('display_name', 'Patient name', values.display_name, hint='The name shown in the care circle. A first name or nickname is enough.', error=errors.display_name, required=True, maxlength=80, autofocus=True) }}
+      {{ field('preferred_name', 'Name to use in the child view', values.preferred_name, hint='Optional. How a child would say it, for example "Grandma".', error=errors.preferred_name, maxlength=40) }}
+      {{ field('year_of_birth', 'Year of birth', values.year_of_birth, type='text', inputmode='numeric', hint='Optional. Four digits, for example 1948.', error=errors.year_of_birth, maxlength=4) }}
+    {% elif step == 2 %}
+      <h2>Care information</h2>
+      {{ textarea_field('care_notes', 'Care notes', values.care_notes, hint='Optional. Anything the circle should keep in mind, such as routines or preferences. Do not enter identifiers such as ID numbers, addresses, phone numbers or insurance details. Medical details belong in clinical notes you add later.', error=errors.care_notes, rows=6, maxlength=2000) }}
+    {% elif step == 3 %}
+      <h2>Your details</h2>
+      {{ select_field('relationship_label', 'Your relationship to the patient', relationship_labels, values.relationship_label, hint='This is a label other members will see. It does not change what anyone can do.', error=errors.relationship_label, required=True) }}
+      <p class="muted">You will be the <strong>creator</strong> of this care circle and can invite and approve other members.</p>
+    {% else %}
+      <h2>Review</h2>
+      <dl class="summary-list">
+        <dt>Patient name</dt><dd>{{ values.display_name }}</dd>
+        <dt>Name for the child view</dt><dd>{{ values.preferred_name or 'Not set' }}</dd>
+        <dt>Year of birth</dt><dd>{{ values.year_of_birth or 'Not set' }}</dd>
+        <dt>Care notes</dt><dd>{{ values.care_notes or 'None' }}</dd>
+        <dt>Your relationship</dt><dd>{{ values.relationship_label }}</dd>
+      </dl>
+      <p class="muted">After you create the care circle you will get a patient ID. It identifies the circle; it is not a password.</p>
+    {% endif %}
+
+    <div class="actions">
+      {# primary first in the DOM so Enter in a field can never trigger Back (F-18); CSS shows Back first #}
+      {% if step < 4 %}{{ button('Continue', 'primary', name='action', value='next', icon_name='arrow-right') }}
+      {% else %}{{ button('Create care circle', 'primary', name='action', value='create', icon_name='check') }}{% endif %}
+      {% if step > 1 %}{{ button('Back', 'secondary', name='action', value='back', icon_name='arrow-left', novalidate=True) }}{% endif %}
+    </div>
+  </form>
+</div>
+{% endblock %}

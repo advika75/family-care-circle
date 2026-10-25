@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import persona_card, checklist_item, empty_state, banner, link_button, preparing, gen_chip with context %}
+{% from "partials/icons.html" import icon %}
+{% block title %}Summaries{% endblock %}
+{% block content %}
+<h1>Summaries</h1>
+
+{% if gen.state in ('queued', 'running') %}{{ preparing(profile_id, gen.state) }}
+{% elif gen.state == 'failed' and gen.message %}{% call banner('error', 'The latest note could not be prepared') %}<p>{{ gen.message }}</p>{% endcall %}
+{% elif gen.state == 'failed' %}{% call banner('warning', 'The latest information could not be prepared') %}<p>Please ask the person who manages the care circle.</p>{% endcall %}
+{% endif %}
+
+{% if viewing_note %}
+  {% call banner('info', 'You are looking at an earlier note') %}<p><a class="tap-link" href="/p/{{ profile_id }}/summaries?tab={{ tab }}">Go back to the latest</a></p>{% endcall %}
+{% endif %}
+
+{% if not out.available and not viewing_note %}
+  {% call empty_state('file-text', 'Nothing to show yet', 'Summaries appear here after a clinical note has been added and prepared.') %}
+    {% if caps.add_note %}{{ link_button('/p/' ~ profile_id ~ '/notes', 'Add a note', 'primary', 'plus') }}{% endif %}
+  {% endcall %}
+{% else %}
+  {% if tabs|length > 1 %}
+  <nav aria-label="Choose a version">
+    <ul class="tabs">
+      {% for t in tabs %}
+        <li><a href="/p/{{ profile_id }}/summaries?tab={{ t }}{% if viewing_note %}&amp;note={{ viewing_note }}{% endif %}"{% if t == tab %} aria-current="page"{% endif %}>{{ icon(tab_labels[t][1]) }}{{ tab_labels[t][0] }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
+  {% set note_title = out.note.title if out.note is defined else None %}
+
+  {% if tab == 'patient' %}
+    {% call persona_card('patient', 'Patient summary', 'heart', updated=out.updated_at, note_title=note_title, disclaimer=out.disclaimer) %}
+      {% for p in out.patient_summary|paragraphs %}<p>{{ p }}</p>{% endfor %}
+    {% endcall %}
+  {% elif tab == 'caregiver' %}
+    {% call persona_card('caregiver', 'Caregiver checklist', 'list-check', updated=out.updated_at, note_title=note_title, disclaimer=out.disclaimer) %}
+      {% if out.caregiver_checklist %}
+        <p class="progress" role="status">{{ out.checklist_progress.done }} of {{ out.checklist_progress.total }} done</p>
+        <ul class="check-list">
+          {% for item in out.caregiver_checklist %}
+            {{ checklist_item(item, '/p/' ~ profile_id ~ '/checklist/' ~ out.note.id ~ '/' ~ item.index, back, caps.tick) }}
+          {% endfor %}
+        </ul>
+      {% else %}<p>This checklist has no items.</p>{% endif %}
+    {% endcall %}
+  {% elif tab == 'child' %}
+    {% if out.child_withheld %}
+      {% call banner('warning', 'The safety check held back the generated child explanation') %}<p>The child sees the general message below instead. See the review flags for why.</p>{% endcall %}
+    {% endif %}
+    {% call persona_card('child', 'Child explanation', 'sparkle', updated=out.updated_at, note_title=note_title, disclaimer=out.disclaimer) %}
+      {% for p in out.child_explanation|paragraphs %}<p>{{ p }}</p>{% endfor %}
+    {% endcall %}
+  {% endif %}
+
+  {% if flags %}
+  <details class="panel"{% if flags.attention %} open{% endif %}>
+    <summary>Review flags{% if flags.attention %} ({{ flags.attention|length }} to check){% endif %}</summary>
+    {% if flags.attention %}
+      <ul class="attention">{% for a in flags.attention %}<li>{{ a }}</li>{% endfor %}</ul>
+    {% else %}<p>Nothing needs a second look. Doses and instructions should still be checked against the note.</p>{% endif %}
+    <dl class="summary-list">{% for label, value in flags.rows %}<dt>{{ label }}</dt><dd>{{ value }}</dd>{% endfor %}</dl>
+  </details>
+  {% endif %}
+
+  {% if source %}
+  <details class="panel">
+    <summary>Source note: {{ source.title }}</summary>
+    <p class="muted">Added {{ source.created_at|human_time }}</p>
+    <div class="source-text">{{ source.text }}</div>
+  </details>
+  {% endif %}
+
+  {% if history|length > 1 or viewing_note %}
+  <section class="card" aria-labelledby="hist-h">
+    <h2 id="hist-h">Earlier notes</h2>
+    <ul class="note-list">
+      {% for h in history %}
+        <li class="note-item"><span><strong>{{ h.title }}</strong> <span class="muted">· {{ h.updated_at|human_time }}</span></span>
+          <a href="/p/{{ profile_id }}/summaries?tab={{ tab }}&amp;note={{ h.note_id }}"{% if h.note_id == viewing_note or (not viewing_note and loop.first) %} aria-current="page"{% endif %}>{{ 'Latest' if loop.first else 'View' }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% from "partials/components.html" import link_button %}
+{% from "partials/icons.html" import icon %}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>One place for the people who care for someone</h1>
+  <p>Add a clinical note and get three plain-language versions: a summary for the patient, a checklist for caregivers, and a gentle explanation for a child. Each family member sees only what suits their role.</p>
+</section>
+
+<div class="grid-2">
+  <section class="card tint-pink choice" aria-labelledby="create-h">
+    <h2 id="create-h">{{ icon('user-plus') }} Create a Patient Profile</h2>
+    <p>Start a care circle for someone you look after, or for yourself. You get a patient ID and can invite family members.</p>
+    <div class="actions">{{ link_button('/profiles/new', 'Create a Patient Profile', 'primary', 'arrow-right', block=True) }}</div>
+  </section>
+  <section class="card tint-lavender choice" aria-labelledby="join-h">
+    <h2 id="join-h">{{ icon('key') }} Join an Existing Care Circle</h2>
+    <p>Have a patient ID and an invitation code from the person who manages a care circle? Join here. They will approve your request.</p>
+    <div class="actions">{{ link_button('/join', 'Join an Existing Care Circle', 'secondary', 'arrow-right', block=True) }}</div>
+  </section>
+</div>
+
+<section class="card narrow stack">
+  <h2>Please read</h2>
+  <p>This is a research prototype. It is <strong>not medical advice</strong> and it is <strong>not for real patient data</strong>. Generated text can leave things out or get things wrong, so always check doses and instructions with the care team.</p>
+</section>
+{% endblock %}

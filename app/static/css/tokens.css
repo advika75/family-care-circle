@@ -1,0 +1,65 @@
+/* Design tokens. Every colour used anywhere in the app comes from here.
+   Text/background pairs are checked against WCAG AA (4.5:1 for text, 3:1 for UI components) by
+   app/tools/contrast.py (run: .venv/bin/python -m app.tools.contrast) and by tests/app/test_app_design.py. */
+:root {
+  /* surfaces */
+  --bg: #FAF7F2;            /* cream page background */
+  --surface: #FFFFFF;       /* cards, inputs */
+  --pink: #F9E6E7;          /* warm surface / highlight; child view tint */
+  --lavender: #EEE9F8;      /* caregiver tint, info */
+  --green: #E2EDE3;         /* patient tint, success */
+  --warn-bg: #FFF1CC;       /* warning banner */
+  --error-bg: #FBE3E3;      /* error banner */
+
+  /* text */
+  --text: #2B2A33;
+  --muted: #5E5C6B;
+  --line: #E8E2D8;          /* decorative dividers only (not used for control borders) */
+  --control-border: #7A7567; /* input / outline-button borders: >= 3:1 on white and cream */
+
+  /* actions */
+  --primary: #8E3D4E;       /* deep rose */
+  --primary-hover: #772F3F;
+  --on-primary: #FFFFFF;
+  --danger: #A11E1E;        /* deep red (outline buttons, error text) */
+  --danger-hover-bg: #FBE3E3;
+  --link: #6B2A3A;
+  --focus: #3B2E8F;         /* focus ring */
+
+  /* chips / banners: text colours chosen for their own background */
+  --chip-creator-bg: #8E3D4E;   --chip-creator-text: #FFFFFF;
+  --chip-caregiver-text: #3A2B78;   /* on --lavender */
+  --chip-patient-text: #1E4A29;     /* on --green */
+  --chip-child-text: #6B2433;       /* on --pink */
+  --status-active-text: #1E4A29;    /* on --green */
+  --status-pending-text: #3A2B78;   /* on --lavender */
+  --status-revoked-text: #7A1A1A;   /* on --error-bg */
+  --warn-text: #5A4000;             /* on --warn-bg */
+  --error-text: #7A1A1A;            /* on --error-bg */
+  --info-text: #2B2A33;             /* on --lavender */
+  --success-text: #173D20;          /* on --green */
+
+  /* type: Fraunces / Nunito Sans are used if installed on the device; otherwise safe system fallbacks.
+     No font files are bundled and nothing is fetched at runtime. */
+  --font-heading: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --text-base: 1rem;        /* 16px minimum body size */
+  --text-lg: 1.125rem;
+  --text-child: 1.375rem;   /* larger type in the child view */
+  --leading: 1.6;
+
+  /* shape and space */
+  --radius-card: 18px;
+  --radius-control: 12px;
+  --tap: 44px;              /* minimum touch target */
+  --space-1: .5rem;  --space-2: 1rem;  --space-3: 1.5rem;  --space-4: 2rem;  --space-5: 3rem;
+  --gutter: 1rem;           /* 16px side gutter at 360px */
+  --shadow: 0 1px 2px rgba(43, 42, 51, .06), 0 4px 14px rgba(43, 42, 51, .06);
+  --max-width: 60rem;
+}
+
+/* extra tokens for Stage 4 components */
+:root {
+  --chip-note-text: #3A2B78;   /* on --lavender */
+  --skeleton: #EDE6DA;         /* decorative placeholder bars (no text on them) */
+}
