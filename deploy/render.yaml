@@ -1,0 +1,31 @@
+# Render Blueprint: Family Care Circle demo, MOCK backend only, one instance.
+# Prototype. Not for real patient data.
+services:
+  - type: web
+    name: family-care-circle-demo
+    runtime: docker
+    dockerfilePath: ./deploy/Dockerfile
+    dockerContext: .
+    plan: free                  # free instances have NO persistent disk: the database is wiped on restart/redeploy
+    numInstances: 1             # must stay 1: the job queue and the login throttle live in this process's memory
+    healthCheckPath: /          # the welcome page: public, no login, 200. Render health checks are GET requests; 2xx/3xx = healthy
+    autoDeployTrigger: "off"    # redeploy by hand
+    envVars:
+      - key: APP_BACKEND
+        value: mock
+      - key: APP_HTTPS
+        value: "1"              # Render terminates TLS; this marks the session cookie Secure and sends HSTS
+      - key: APP_SECRET_KEY
+        generateValue: true     # random value created once by Render; keeps sign-in forms valid across restarts
+      - key: APP_DB_PATH
+        value: /data/familycare.sqlite3
+      - key: APP_JOB_ISOLATION
+        value: thread
+      # APP_TRUSTED_PROXIES: leave unset at first. See deploy/README.md before setting it.
+
+    # OPTIONAL persistent disk (paid plans only; Render: "a paid Render web service"). To use it: change `plan` above to
+    # a paid plan id from Render's plan list (for example `0.5c-512mb`), then uncomment this block. Without it, every restart and redeploy starts with an EMPTY database.
+    # disk:
+    #   name: fcc-data
+    #   mountPath: /data
+    #   sizeGB: 1

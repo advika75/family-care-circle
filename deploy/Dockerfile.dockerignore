@@ -1,0 +1,21 @@
+# Keeps the build context small and keeps models, results, databases and screenshots out of the image.
+.git
+.venv
+venv
+models
+results
+report
+scripts
+tests
+**/__pycache__
+**/*.pyc
+.pytest_cache
+app/var
+app/audit
+**/*.sqlite3
+**/*.sqlite
+**/*.db
+.env
+.env.*
+data/*
+!data/raw

@@ -1,0 +1,8 @@
+# Extra packages the app's MOCK backend imports from the research code in src/ (src/evaluator.py, src/utils.py).
+# These are the exact versions already pinned in requirements.txt; nothing new is introduced. torch, transformers and
+# llama-cpp-python are NOT needed: src/utils.py imports torch only inside try/except ImportError.
+pyyaml==6.0.3
+numpy==2.5.3
+pandas==3.0.6
+textstat==0.7.8
+rouge-score==0.1.2

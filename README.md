@@ -390,3 +390,7 @@ make app-test                      # the app's tests
 **The patient ID is an identifier, not a credential.** Knowing it grants nothing. Joining needs your own account, a single-use invitation code issued for that profile (shown once, stored only as a hash, valid for 7 days) and approval by the creator.
 
 **What is NOT secured.** No HTTPS termination (use a TLS proxy and `APP_HTTPS=1`); no distributed rate limiting; no third-party audit; no encryption at rest; no email delivery (invitation codes are passed on out of band) and no password reset; sign-up cannot be made fully enumeration-proof; sessions have no idle timeout. The child safety check is rule-based and misses spelled-out numbers, brand or misspelled medicine names, and frightening wording. See `app/README.md` for the complete list and the evidence for each control.
+
+## Hosting a demo
+
+`deploy/` contains a Dockerfile and a Render blueprint for putting the web app online as a throw-away **demo with the mock backend only** (no model file, placeholder output, data wiped on restart on the free plan). Steps, environment variables, the `APP_TRUSTED_PROXIES` caveat and what was and was not verified are in [`deploy/README.md`](deploy/README.md). **Prototype. Not for real patient data.**
