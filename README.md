@@ -1,8 +1,9 @@
 # Family Care Circle
 
 > **Disclaimer:** research prototype for an academic NLP project. It is **not medical advice** and is **not
-> validated for clinical use**. All clinical notes in this repository are **synthetic**. Generated text can omit,
-> distort or invent information; always follow the instructions of a qualified clinician.
+> validated for clinical use**. The notes in `data/raw/` are **synthetic**. The MTSamples notes used for the public
+> evaluation are **real, de-identified public transcriptions** (not synthetic). Generated text can omit, distort or
+> invent information; always follow the instructions of a qualified clinician.
 
 Family Care Circle turns a clinical, EHR-style note into three family-friendly versions using **local open-weight
 models only** (no commercial LLM API is called at runtime):
@@ -43,7 +44,7 @@ Everything is measured, including how often that safety net was needed.
  └──────┬───────┘
         ▼
  ┌──────────────┐  JSON per note: personas, entities, regimens, metadata per persona
- │ Pipeline     │  (retries, fallback_used, truncated, first-attempt misses, latency, params)
+ │ Pipeline     │  (exact first-attempt text, retry/fallback status, truncation, latency, params)
  └──────┬───────┘
         ▼
  ┌──────────────┐  readability (FK grade, Reading Ease), ROUGE-1/L, entity retention (first attempt,
@@ -176,6 +177,8 @@ python scripts/build_limitations.py         # report/limitations.md
   `unsupported_content`, `repetition`, `child_reading_level` (above `--max-child-grade`, default 3), `truncated` and
   `empty_or_short`. The markdown gives counts plus up to 3 examples per category (note id, source excerpt, output
   excerpt, problem). The JSON lists every failure.
+* **Evaluation output safety:** `run_evaluation.py` refuses to replace existing result files. Choose a fresh
+  `--results-dir` for a separate run, or pass `--force` when you intentionally want to regenerate those files.
 * **Report tables:** `main`, `retention`, `ablations`, `ner` and `human_eval` replace the text between
   `<!-- TABLE:name -->` and `<!-- /TABLE:name -->`, so re-running never duplicates. With seeds, the per-note tables pool
   all baseline seeds and the ablation table shows mean ± std. Tables built from mock data carry a warning banner.
@@ -215,7 +218,7 @@ python scripts/build_limitations.py         # report/limitations.md
 | Metric | Meaning |
 |---|---|
 | FK grade / Reading Ease | textstat, source vs each persona; `_fkgl_delta` = persona − source |
-| ROUGE-1 / ROUGE-L | F1 against the source note |
+| ROUGE-1 / ROUGE-L | Lexical overlap F1 against the source note; not a factuality or summary-quality measure |
 | Retention `_first` | share of source MEDICATION / DOSAGE / FREQUENCY / DURATION in the **first attempt**: the honest measure of the model |
 | Retention `_model` | after retries, before the fallback |
 | Retention (final) | final text, including the fallback (100% whenever the fallback ran) |
@@ -255,7 +258,7 @@ persona: patient 512 (350 truncated 8 of 12 Qwen2.5-3B summaries), caregiver 400
   isn't available offline). This lets you confirm two runs used byte-identical weights, not just the same
   `model_id` string.
 * **`make reproduce-small`:** runs the full test suite, then one pass of the real pipeline and evaluation code
-  paths on the mock backend (`.reproduce_small/`, git-ignored). Fully local and fast (no model download); not a
+  paths on the mock backend (`.reproduce_small/`, git-ignored). Runs entirely on this machine and is fast (no model download); not a
   substitute for a real run, just a sanity check that the wiring isn't broken. `make clean-reproduce-small`
   removes the scratch output.
 * **Exact commands for every experiment already run in this repo**, in order:
@@ -269,11 +272,11 @@ persona: patient 512 (350 truncated 8 of 12 Qwen2.5-3B summaries), caregiver 400
   python scripts/error_analysis.py                                             # results/error_analysis.{md,json}
   python scripts/build_report_tables.py                                        # fills report/project_report.md
 
-  # MTSamples (100 real notes, seed 42; see "Public Dataset Evaluation" above for obtaining source.csv):
+  # MTSamples (100 real, de-identified public notes, seed 42; not synthetic; see "Public Dataset Evaluation" above for obtaining source.csv):
   python scripts/prepare_mtsamples.py
   python scripts/run_pipeline.py --dataset mtsamples --backend llama_cpp       # resumable; --force to redo
   python scripts/run_evaluation.py --dataset mtsamples
-  python scripts/evaluate_mtsamples_ner.py                                     # "not available" until gold is complete
+  python scripts/evaluate_mtsamples_ner.py                                     # results/mtsamples_ner/{mtsamples_ner_summary.json,mtsamples_ner_metrics.csv,mtsamples_ner_errors.csv}
   python scripts/error_analysis.py --outputs-dir data/public/mtsamples/outputs --results-dir results/mtsamples
 
   # Human evaluation (UI-based; see "Analysis and reporting" above for the CSV-sheet alternative):
@@ -322,7 +325,7 @@ report/              project_report.md (+ tables/)
 
 ### Public Dataset Evaluation
 
-The synthetic dataset remains the controlled evaluation set. MTSamples is an external/public source of clinical transcription notes; public evaluation uses a reproducibly selected subset (up to 100 notes). Generation stays fully local. Gold annotations use the existing span-based JSON format and are only used for a manually annotated subset.
+The synthetic dataset remains the controlled evaluation set. MTSamples is an external/public source of clinical transcription notes; public evaluation uses a reproducibly selected subset (up to 100 notes). Generation runs on hardware you control, with no external model API. Gold annotations use the existing span-based JSON format and are only used for a manually annotated subset.
 
 Download the Medical Transcriptions CSV from [Kaggle's MTSamples dataset](https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions) (sign in to Kaggle if prompted), then place or rename the CSV to `data/public/mtsamples/source.csv`. Rebuild the prepared notes and `subset.json` with `python scripts/prepare_mtsamples.py --input data/public/mtsamples/source.csv --seed 42`; the default seed is 42. The CSV is not redistributed here.
 
@@ -330,6 +333,60 @@ Place the Qwen GGUF at the `gguf_path` configured in `config.yaml` (the default 
 
 Set `dataset: mtsamples` in `config.yaml` to run the configured pipeline and evaluation commands on that subset.
 
+Each newly generated output JSON stores `metadata.first_attempt_text` as an exact raw string for each persona, alongside `metadata.first_attempt_evidence` (note ID, persona, model/config, attempt and retry counts/status, fallback status, and JSON-pointer output references). Retry/fallback output remains in the persona's ordinary top-level output field. Evaluation calculates first-attempt retention from this captured text and final retention from that top-level final output. Older records without captured text report first-attempt retention as missing (`NaN`) plus an evidence-availability metric; the prior `missing_first_attempt` list is not used to reconstruct prose.
+
+For a future MTSamples generation run, use a new output directory so existing experiment outputs remain untouched:
+
+```bash
+python scripts/run_pipeline.py --dataset mtsamples --output-dir data/public/mtsamples/outputs_first_attempt_evidence
+python scripts/run_evaluation.py --dataset mtsamples --outputs-dir data/public/mtsamples/outputs_first_attempt_evidence --results-dir results/mtsamples_first_attempt_evidence
+```
+
+The paired research comparison uses the same configured MTSamples subset, seed 42, local Qwen2.5-3B Q4_K_M
+model and decoding settings. The no-injection condition removes the initial extracted-entity context and MUST
+INCLUDE block. Retries still give feedback based on missing extracted entities, and the deterministic fallback
+still restores them; this estimates the effect of initial entity injection while keeping the retry/fallback
+policy shared. The runner records the planned note IDs and effective configuration in each `run_info.json`,
+and refuses existing MTSamples ablation result directories instead of overwriting them.
+
+After reviewing the recorded configuration and estimated runtime, run the two conditions together, then analyze
+their paired per-note metrics:
+
+```bash
+python scripts/run_ablations.py --dataset mtsamples --backend llama_cpp --only baseline,no_ner_injection --run-tag first_attempt_evidence_v1 --yes
+python scripts/compare_paired_mtsamples.py --baseline-results-dir results/mtsamples/baseline_first_attempt_evidence_v1 --no-injection-results-dir results/mtsamples/no_injection_first_attempt_evidence_v1 --out-dir results/mtsamples/paired_analysis_first_attempt_evidence_v1
+```
+
+For this run tag, baseline outputs/results go to `data/public/mtsamples/outputs_baseline_first_attempt_evidence_v1/` and
+`results/mtsamples/baseline_first_attempt_evidence_v1/`; no-injection outputs/results go to
+`data/public/mtsamples/outputs_no_injection_first_attempt_evidence_v1/` and
+`results/mtsamples/no_injection_first_attempt_evidence_v1/`. The ablation summary is written under
+`results/mtsamples/ablation_summary_first_attempt_evidence_v1/`; the paired analysis writes to
+`results/mtsamples/paired_analysis_first_attempt_evidence_v1/`. Run tags require fresh output and summary paths.
+The comparison reports paired differences with bootstrap intervals, exact paired sign tests for continuous
+outcomes and exact McNemar tests for binary flags. It lists missing IDs and does not run inference or fabricate
+values for missing outputs. Its detector-derived safety flags are not clinical safety evidence.
+
 shasum -a 256 models/qwen2.5-3b-instruct-q4_k_m.gguf
 
-Annotate without rule-based suggestions visible with `python scripts/annotate_mtsamples.py --blind`. Save gold annotations using the existing span JSON schema; each newly labeled entity records `annotation_source` as `accepted_suggestion`, `edited_suggestion`, or `manual` when applicable. Evaluate completed annotations into a new results directory, for example `python scripts/evaluate_mtsamples_ner.py --results-dir results/mtsamples_ner_blind_run_2026-10-15`.
+Annotate without rule-based suggestions visible with `python scripts/annotate_mtsamples.py --blind`. Save gold annotations using the existing span JSON schema; each newly labeled entity records `annotation_source` as `accepted_suggestion`, `edited_suggestion`, or `manual` when applicable. A save leaves the note `annotated`; to include it in NER evaluation, review the original note and saved spans, select the explicit review-confirmation checkbox, then choose **Save and mark complete**. Later edits return its status to `annotated`. The evaluator's default is the dedicated `results/mtsamples_ner/` directory, separate from generation results, and refuses to overwrite it if it exists. After completing the first manually reviewed note, run `python scripts/evaluate_mtsamples_ner.py --results-dir results/mtsamples_ner_reviewed_batch1` to write a fresh evaluation. For another independent run, choose another new `--results-dir`.
+
+## Multi-user web app
+
+> **Prototype. Not for real patient data.** Full documentation: [`app/README.md`](app/README.md). The self-audit of this app (done by its author, not a third-party review), with the status of every finding, is in [`app/AUDIT.md`](app/AUDIT.md).
+
+`app/` is a self-hosted, multi-user web application built around the pipeline above (which it calls and never modifies). A profile creator makes a patient profile, gets a patient ID, and invites family members; each member sees only the output suited to their role. It uses FastAPI, SQLite and server-rendered templates, and makes no outbound network calls.
+
+```bash
+.venv/bin/python -m pip install -r requirements-app.txt
+make app-run                       # http://127.0.0.1:8000, mock backend (no model needed)
+APP_BACKEND=llama_cpp make app-run # the local GGUF model from config.yaml
+make app-seed                      # SYNTHETIC demo accounts on an empty database
+make app-test                      # the app's tests
+```
+
+**Roles.** *Creator*: everything, including inviting, approving and removing members. *Caregiver*: all three outputs, the source note, review flags, ticking the checklist; adds notes only if the creator allows it; may approve pending *child* requests. *Patient*: the patient summary only. *Child*: the child explanation only (first names of the circle, nothing clinical). Pending and removed members see only a status page. Permissions are enforced on the server in one place (`app/permissions.py`).
+
+**The patient ID is an identifier, not a credential.** Knowing it grants nothing. Joining needs your own account, a single-use invitation code issued for that profile (shown once, stored only as a hash, valid for 7 days) and approval by the creator.
+
+**What is NOT secured.** No HTTPS termination (use a TLS proxy and `APP_HTTPS=1`); no distributed rate limiting; no third-party audit; no encryption at rest; no email delivery (invitation codes are passed on out of band) and no password reset; sign-up cannot be made fully enumeration-proof; sessions have no idle timeout. The child safety check is rule-based and misses spelled-out numbers, brand or misspelled medicine names, and frightening wording. See `app/README.md` for the complete list and the evidence for each control.

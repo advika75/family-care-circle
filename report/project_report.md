@@ -3,8 +3,8 @@
 *Authors: TODO · Course: TODO · Date: TODO*
 
 > **Disclaimer:** Family Care Circle is a research prototype built for a course project. It does not provide
-> medical advice, is not a medical device, and is not validated for clinical use. All clinical notes used are
-> synthetic.
+> medical advice, is not a medical device, and is not validated for clinical use. The 12 notes in `data/raw/` are
+> synthetic; the MTSamples notes used for the public evaluation are real, de-identified public transcriptions.
 
 ## Abstract
 
@@ -17,7 +17,7 @@ key results (Tables 1-5), and main limitation.
 
 - Motivation: health literacy; discharge instructions; families (patients, caregivers, children) need different framings.
 - Goal: generate three persona outputs from one note while preserving medications, doses, frequencies and durations.
-- Constraint: fully local inference (privacy; no commercial APIs).
+- Constraint: inference runs on hardware you control, with no external model API (privacy; no commercial APIs). The web app is self-hosted.
 - Contributions:
   1. A pipeline that combines rule-based clinical NER with per-persona LLM prompting.
   2. A retry-and-fallback mechanism that guarantees required facts are surfaced, with its use measured rather
