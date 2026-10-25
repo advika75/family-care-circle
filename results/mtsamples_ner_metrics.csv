@@ -1,0 +1,8 @@
+label,precision,recall,f1,tp,fp,fn,n_docs
+CONDITION,,,,0,0,0,0
+DOSAGE,,,,0,0,0,0
+DURATION,,,,0,0,0,0
+FREQUENCY,,,,0,0,0,0
+MEDICATION,,,,0,0,0,0
+SYMPTOM,,,,0,0,0,0
+MICRO,,,,0,0,0,0

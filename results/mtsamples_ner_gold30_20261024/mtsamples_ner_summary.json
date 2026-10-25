@@ -1,0 +1,75 @@
+{
+  "dataset": "MTSamples",
+  "matching": "exact (start, end, label)",
+  "ner": "rule-based (extract_rule_based)",
+  "evaluated_note_count": 1,
+  "skipped_note_count": 29,
+  "gold_entity_count": 48,
+  "gold_entities_with_known_provenance": 48,
+  "gold_entities_with_unknown_provenance": 0,
+  "accepted_suggestion_count": 0,
+  "accepted_suggestion_share": 0.0,
+  "predicted_entity_count": 23,
+  "metrics": {
+    "CONDITION": {
+      "precision": 0.75,
+      "recall": 0.3333333333333333,
+      "f1": 0.46153846153846156,
+      "tp": 6,
+      "fp": 2,
+      "fn": 12
+    },
+    "DOSAGE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "DURATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "FREQUENCY": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "MEDICATION": {
+      "precision": 1.0,
+      "recall": 0.5454545454545454,
+      "f1": 0.7058823529411764,
+      "tp": 6,
+      "fp": 0,
+      "fn": 5
+    },
+    "SYMPTOM": {
+      "precision": 0.2,
+      "recall": 0.09090909090909091,
+      "f1": 0.12500000000000003,
+      "tp": 1,
+      "fp": 4,
+      "fn": 10
+    },
+    "MICRO": {
+      "precision": 0.7391304347826086,
+      "recall": 0.3541666666666667,
+      "f1": 0.4788732394366197,
+      "tp": 17,
+      "fp": 6,
+      "fn": 31
+    }
+  },
+  "evaluated_note_ids": [
+    "mtsamples_Weight_Gain_and_Edema"
+  ],
+  "evaluation_timestamp_utc": "2026-10-24T14:55:13.862534+00:00"
+}
