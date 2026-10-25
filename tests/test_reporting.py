@@ -34,8 +34,25 @@ def test_evaluate_outputs_writes_all_artifacts(outputs_dir, tmp_path):
     summary = pd.read_csv(tmp_path / "res" / "summary.csv", index_col="metric")
     assert summary.loc["json_parse_rate", "mean"] == pytest.approx(0.75)   # 3 of 4 files parsed
     for row in ("patient_summary_retention_first", "caregiver_checklist_repetition",
-                "patient_summary_truncation_rate", "patient_summary_unsupported_numbers"):
+                "patient_summary_truncation_rate", "patient_summary_unsupported_numbers",
+                "patient_summary_retries", "caregiver_checklist_latency_sec"):
         assert row in result["key"].index, row
+
+
+def test_evaluate_outputs_refuses_to_overwrite_existing_results_without_force(outputs_dir, tmp_path):
+    results_dir = tmp_path / "existing"
+    results_dir.mkdir()
+    metrics_path = results_dir / "metrics.csv"
+    metrics_path.write_text("preserve this result\n", encoding="utf-8")
+
+    with pytest.raises(FileExistsError, match="choose a new --results-dir or pass --force"):
+        evaluate_outputs(outputs_dir, results_dir, {})
+
+    assert metrics_path.read_text(encoding="utf-8") == "preserve this result\n"
+    assert not (results_dir / "summary.csv").exists()
+
+    evaluate_outputs(outputs_dir, results_dir, {}, overwrite_results=True)
+    assert metrics_path.read_text(encoding="utf-8") != "preserve this result\n"
 
 
 def test_evaluate_outputs_without_ner_and_empty_folder(outputs_dir, tmp_path):

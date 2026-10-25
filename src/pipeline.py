@@ -45,6 +45,7 @@ class FamilyCarePipeline:
         regimens = group_regimens(entities, text)
         record: dict[str, Any] = {"id": doc_id}
         retries, missing, first_missing, fallbacks, latency, params = {}, {}, {}, {}, {}, {}
+        first_attempt_texts, first_attempt_evidence = {}, {}
         truncated, truncated_attempts, redacted_dosages = {}, {}, {}
 
         for persona in PERSONAS:
@@ -76,6 +77,31 @@ class FamilyCarePipeline:
             final_text, redacted = redact_contradicted_dosages(result.text, text)
             if redacted:
                 result.fallback_used = True  # a contradicted dose is a hard validation failure
+            first_attempt_texts[persona] = result.first_attempt_text
+            output_file_ref = f"{doc_id}.json"
+            first_attempt_evidence[persona] = {
+                "note_id": doc_id,
+                "persona": persona,
+                "model_config": {
+                    "backend": self.generator.backend,
+                    "model_id": self.generator.model_id,
+                    "model_hash": self.generator.model_hash,
+                    "generation_params": params[persona],
+                    "seed": self.generator.seed,
+                    "inject_entities": self.inject_entities,
+                    "child_variant": self.child_variant,
+                    "max_retries": self.max_retries,
+                },
+                "attempt_count": result.attempts,
+                "first_attempt_number": 1,
+                "retry_count": result.retries,
+                "retry_status": result.retries > 0,
+                "fallback_status": result.fallback_used,
+                "output_references": {
+                    "first_attempt_text": f"{output_file_ref}#/metadata/first_attempt_text/{persona}",
+                    "final_output": f"{output_file_ref}#/{persona}",
+                },
+            }
             latency[persona] = round(time.perf_counter() - t0, 3)
             retries[persona] = result.retries
             missing[persona] = [m["text"] for m in result.missing]
@@ -106,6 +132,8 @@ class FamilyCarePipeline:
                     "child_variant": self.child_variant,
                     "retries": retries,
                     "missing_first_attempt": first_missing,
+                    "first_attempt_text": first_attempt_texts,
+                    "first_attempt_evidence": first_attempt_evidence,
                     "missing_after_retries": missing,
                     "fallback_used": fallbacks,
                     "truncated": truncated,

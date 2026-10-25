@@ -140,6 +140,7 @@ class GenerationResult:
     text: str
     attempts: int
     retries: int
+    first_attempt_text: str = ""
     missing: list[dict[str, Any]] = field(default_factory=list)
     fallback_used: bool = False
     first_missing: list[dict[str, Any]] = field(default_factory=list)
@@ -162,17 +163,21 @@ def generate_with_retries(
     Retries happen when the cleaned output is empty, misses any ``required`` entity, or (when ``source``
     is given) names a medication that neither the source text nor ``entities`` supports. After
     ``max_retries`` retries, the attempt with the fewest combined issues is kept and the missing entities
-    are appended by :func:`add_fallback`. Hallucinated medications are reported but not stripped: the
-    ``source``/``entities`` check is only engaged when ``source`` is non-empty, so callers that don't pass
-    it see unchanged behavior.
+    are appended by :func:`add_fallback`. If every attempt still contains an unsupported medication, a
+    persona-specific safe fallback replaces that draft. The ``source``/``entities`` check is only engaged
+    when ``source`` is non-empty, so callers that don't pass it see unchanged behavior.
     """
     best: tuple[str, int, list[dict[str, Any]], list[str], int] | None = None
     first_missing: list[dict[str, Any]] | None = None
+    first_attempt_text: str | None = None
     convo = messages
     attempts = 0
     for attempt in range(max_retries + 1):
         attempts = attempt + 1
-        text = clean_output(generate_fn(convo), persona)
+        generated_text = generate_fn(convo)
+        if first_attempt_text is None:
+            first_attempt_text = generated_text
+        text = clean_output(generated_text, persona)
         missing = find_missing(text, required) if text else list(required)
         hallucinated = unsupported_meds(text, source, entities)["unsupported"] if text and source else []
         if first_missing is None:
@@ -181,17 +186,22 @@ def generate_with_retries(
         if text and (best is None or issues < best[1]):
             best = (text, issues, missing, hallucinated, attempt)
         if text and not missing and not hallucinated:
-            return GenerationResult(text=text, attempts=attempts, retries=attempt, first_missing=first_missing,
+            return GenerationResult(text=text, first_attempt_text=first_attempt_text or "", attempts=attempts,
+                                    retries=attempt, first_missing=first_missing,
                                     used_attempt=attempt)
         logger.info("%s attempt %d: %s", persona, attempts,
                     "empty output" if not text else f"{len(missing)} missing, {len(hallucinated)} hallucinated")
         convo = build_retry_messages(messages, text, missing if text else [], hallucinated)
     if best:
         text, _, missing, hallucinated, used = best
+        if hallucinated:
+            # Do not return a known unsupported medication just because retries failed to remove it.
+            text = EMPTY_FALLBACK.get(persona, "")
     else:
         text, missing, hallucinated, used = EMPTY_FALLBACK.get(persona, ""), list(required), [], None
     return GenerationResult(
         text=add_fallback(text, missing, persona),
+        first_attempt_text=first_attempt_text or "",
         attempts=attempts,
         retries=attempts - 1,
         missing=missing,

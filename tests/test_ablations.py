@@ -72,6 +72,8 @@ def test_run_ablation_resumes_and_detects_config_change(tmp_path, notes, base_co
 
     info = run_ablation("baseline", cfg, {}, notes, out, res, GeneratorCache())
     assert info["status"] == "ok" and info["notes_generated"] == 2
+    assert info["source_note_ids"] == ["n1", "n2"]
+    assert info["effective_config"] == fingerprint(cfg)
     assert pending_notes(notes, out) == [] and fingerprint_state(out, fingerprint(cfg)) == "match"
 
     (out / "n2.json").unlink()  # simulate an interrupted run
@@ -132,9 +134,23 @@ def test_seed_dirs_and_config():
 
 
 def test_mtsamples_ablation_uses_isolated_dataset_paths():
-    out, res = ablation_dirs("no_ner_injection", dataset="mtsamples")
-    assert str(out).endswith("data/public/mtsamples/outputs_no_injection")
-    assert str(res).endswith("results/mtsamples/no_injection")
+    from src.utils import load_config
+
+    base = load_config("config.yaml", {"dataset": "mtsamples"})
+    baseline = build_ablation_config(base, base["ablations"]["baseline"], backend="llama_cpp", seed=42)
+    no_injection = build_ablation_config(base, base["ablations"]["no_ner_injection"], backend="llama_cpp", seed=42)
+    assert baseline["prompts"]["inject_entities"] is True
+    assert no_injection["prompts"]["inject_entities"] is False
+    expected_only_difference = {**baseline, "prompts": {**baseline["prompts"], "inject_entities": False}}
+    assert no_injection == expected_only_difference
+
+    baseline_out, baseline_res = ablation_dirs("baseline", dataset="mtsamples")
+    no_injection_out, no_injection_res = ablation_dirs("no_ner_injection", dataset="mtsamples")
+    assert str(baseline_out).endswith("data/public/mtsamples/outputs_baseline")
+    assert str(no_injection_out).endswith("data/public/mtsamples/outputs_no_injection")
+    assert str(baseline_res).endswith("results/mtsamples/baseline")
+    assert str(no_injection_res).endswith("results/mtsamples/no_injection")
+    assert baseline_out != no_injection_out and baseline_res != no_injection_res
     assert str(ablations_root(dataset="mtsamples")).endswith("results/mtsamples/ablation_summary")
 
 

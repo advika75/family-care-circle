@@ -37,10 +37,24 @@ def test_prepare_mtsamples_csv_selects_small_reproducible_subset(tmp_path):
     files = prepare_mtsamples(csv_path, out, limit=2, seed=5)
     assert len(files) == 2
     assert all(path.read_text().startswith("note ") for path in files)
-    repeat = prepare_mtsamples(csv_path, out, limit=2, seed=5)
+    repeat = prepare_mtsamples(csv_path, tmp_path / "repeat", limit=2, seed=5)
     assert [path.name for path in files] == [path.name for path in repeat]
+    assert [path.read_bytes() for path in files] == [path.read_bytes() for path in repeat]
     manifest = json.loads((out / "subset.json").read_text())
     assert manifest["seed"] == 5 and len(manifest["ids"]) == 2
+
+
+def test_prepare_mtsamples_refuses_to_replace_existing_files(tmp_path):
+    csv_path = tmp_path / "source.csv"
+    csv_path.write_text('sample_name,transcription\nA,"note A"\n', encoding="utf-8")
+    out = tmp_path / "notes"
+    files = prepare_mtsamples(csv_path, out, limit=1, seed=5)
+    before = {path.name: path.read_bytes() for path in out.iterdir()}
+
+    with pytest.raises(FileExistsError, match="Refusing to replace existing MTSamples preparation files"):
+        prepare_mtsamples(csv_path, out, limit=1, seed=5)
+
+    assert before == {path.name: path.read_bytes() for path in out.iterdir()}
 
 
 def test_prepare_mtsamples_requires_transcription_and_skips_empty_rows(tmp_path):

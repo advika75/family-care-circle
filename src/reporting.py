@@ -84,6 +84,7 @@ def evaluate_outputs(
     config: dict[str, Any],
     figures_dir: str | Path | None = None,
     extract_fn: Callable[[str], list[dict[str, Any]]] | None = None,
+    overwrite_results: bool = False,
 ) -> dict[str, Any]:
     """Evaluate every output JSON in ``outputs_dir``; write CSVs, summary.md and figures.
 
@@ -92,6 +93,14 @@ def evaluate_outputs(
     """
     outputs_dir, results_dir = resolve_path(outputs_dir), resolve_path(results_dir)
     figures_dir = resolve_path(figures_dir) if figures_dir else results_dir / "figures"
+    targets = [results_dir / "metrics.csv", results_dir / "summary.csv", results_dir / "summary.md",
+               figures_dir / "readability_before_after.png", figures_dir / "entity_retention.png"]
+    if extract_fn is not None:
+        targets.append(results_dir / "ner_metrics.csv")
+    collisions = [path for path in targets if path.exists()]
+    if collisions and not overwrite_results:
+        raise FileExistsError(f"Refusing to replace existing evaluation results: {', '.join(map(str, collisions))}; "
+                              "choose a new --results-dir or pass --force")
     results_dir.mkdir(parents=True, exist_ok=True)
     figures_dir.mkdir(parents=True, exist_ok=True)
 
@@ -110,8 +119,10 @@ def evaluate_outputs(
         "source_fre", *[f"{p}_fre" for p in PERSONAS], *[f"{p}_rouge1" for p in PERSONAS],
         *[f"{p}_rougeL" for p in PERSONAS],
         *[f"{p}_retention{s}" for s in ("_first", "_model", "") for p in RETENTION_PERSONAS],
+        *[f"{p}_retention_first_evidence_available" for p in RETENTION_PERSONAS],
         *[f"{p}_unsupported_{k}" for k in ("numbers", "meds") for p in PERSONAS],
         *[f"{p}_truncation_rate" for p in PERSONAS], *[f"{p}_fallback" for p in PERSONAS],
+        *[f"{p}_retries" for p in PERSONAS], *[f"{p}_latency_sec" for p in PERSONAS],
         *[f"{p}_repetition" for p in PERSONAS],
         "child_explanation_long_sentence_rate", "child_explanation_med_names", "child_explanation_numbers",
         "format_validity_rate", "json_parse_rate", "total_retries", "fallbacks", "latency_total_sec",
@@ -143,4 +154,5 @@ def evaluate_outputs(
     plot_readability(metrics, figures_dir / "readability_before_after.png")
     plot_retention(metrics, figures_dir / "entity_retention.png")
     (results_dir / "summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    return {"metrics": metrics, "summary": summary, "key": key, "ner": ner, "n_records": len(records)}
+    return {"metrics": metrics, "summary": summary, "key": key, "ner": ner, "n_records": len(records),
+            "unparseable_outputs": broken}

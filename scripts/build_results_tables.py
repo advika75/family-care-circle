@@ -48,6 +48,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ablations-root", default="results/ablations")
     parser.add_argument("--synthetic-ner", default="results/ner_metrics.csv")
     parser.add_argument("--mtsamples-results-dir", default="results/mtsamples")
+    parser.add_argument("--mtsamples-ner-results-dir", default="results/mtsamples_ner")
     parser.add_argument("--out-dir", default="results/tables")
     return parser.parse_args()
 
@@ -105,12 +106,13 @@ def main() -> int:
         log.warning("%s -> wrote 'not available'.", reason)
 
     # --- NER: MTSamples (only if gold annotations are actually complete) ---
-    mtsamples_ner_summary_path = mtsamples_dir / "mtsamples_ner_summary.json"
+    mtsamples_ner_dir = resolve_path(args.mtsamples_ner_results_dir)
+    mtsamples_ner_summary_path = mtsamples_ner_dir / "mtsamples_ner_summary.json"
     if mtsamples_ner_summary_path.exists():
         ner_summary = json.loads(mtsamples_ner_summary_path.read_text(encoding="utf-8"))
         status = mtsamples_ner_status(ner_summary)
         if status is None:
-            ner = pd.read_csv(mtsamples_dir / "mtsamples_ner_metrics.csv")
+            ner = pd.read_csv(mtsamples_ner_dir / "mtsamples_ner_metrics.csv")
             df, md = ner_table_for(ner, f"MTSamples ({ner_summary['evaluated_note_count']} completed gold notes)")
         else:
             df, md = status

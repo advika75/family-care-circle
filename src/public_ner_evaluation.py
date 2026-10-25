@@ -28,6 +28,18 @@ def evaluate_mtsamples(gold_dir: str | Path, notes_dir: str | Path) -> tuple[dic
     entries = manifest.get("annotations") if isinstance(manifest, dict) else None
     if not isinstance(entries, list):
         raise ValueError(f"Invalid annotation manifest {manifest_path}: expected annotations list")
+    seen_ids: set[str] = set()
+    for entry in entries:
+        if not isinstance(entry, dict):
+            raise ValueError(f"Malformed annotation entry in {manifest_path}")
+        note_id, source_file = entry.get("id"), entry.get("source_file")
+        if not isinstance(note_id, str) or not note_id or not isinstance(source_file, str) or not source_file:
+            raise ValueError(f"Malformed annotation entry in {manifest_path}: expected id and source_file")
+        if note_id in seen_ids:
+            raise ValueError(f"Duplicate annotation note id {note_id!r} in {manifest_path}")
+        seen_ids.add(note_id)
+        if Path(source_file.replace("\\", "/")).name != f"{note_id}.txt":
+            raise ValueError(f"Manifest source_file for {note_id} must name the original {note_id}.txt note")
 
     completed = [entry for entry in entries if isinstance(entry, dict) and entry.get("status") == "complete"]
     skipped = len(entries) - len(completed)
@@ -37,8 +49,8 @@ def evaluate_mtsamples(gold_dir: str | Path, notes_dir: str | Path) -> tuple[dic
         if not isinstance(note_id, str) or not note_id:
             raise ValueError(f"Malformed completed manifest entry: missing note id ({manifest_path})")
         source_name = Path(str(entry.get("source_file", ""))).name
-        if not source_name:
-            raise ValueError(f"Completed note {note_id}: missing source_file in manifest")
+        if source_name != f"{note_id}.txt":
+            raise ValueError(f"Completed note {note_id}: manifest source_file must name the original {note_id}.txt note")
         note_path = notes_dir / source_name
         annotation_path = gold_dir / f"{note_id}.json"
         try:
@@ -48,6 +60,8 @@ def evaluate_mtsamples(gold_dir: str | Path, notes_dir: str | Path) -> tuple[dic
             raise ValueError(f"Completed note {note_id} has invalid or missing source/gold data: {exc}") from exc
         if annotation["id"] != note_id:
             raise ValueError(f"Completed note {note_id}: annotation id is {annotation['id']!r}")
+        if annotation.get("source_file") != entry["source_file"]:
+            raise ValueError(f"Completed note {note_id}: annotation source_file does not match manifest")
         gold = annotation["entities"]
         seen_entities = set()
         for entity in gold:

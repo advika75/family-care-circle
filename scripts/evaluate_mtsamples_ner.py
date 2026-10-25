@@ -18,7 +18,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--gold-dir", default="data/public/mtsamples/gold")
     parser.add_argument("--notes-dir", default="data/public/mtsamples/notes")
-    parser.add_argument("--results-dir", default="results/mtsamples")
+    parser.add_argument("--results-dir", default="results/mtsamples_ner")
     args = parser.parse_args()
     try:
         summary, metrics, errors = evaluate_mtsamples(args.gold_dir, args.notes_dir)

@@ -2,7 +2,11 @@
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 from src.postprocess import (
+    EMPTY_FALLBACK,
     add_fallback,
     clean_output,
     find_contradicted_dosages,
@@ -62,6 +66,16 @@ def test_retry_until_complete():
     assert "500 mg" in seen[2][-1]["content"]
 
 
+def test_first_attempt_text_is_immutable_across_retry_and_fallback():
+    drafts = iter(["Exact raw first draft.\n", "Second raw draft."])
+    result = generate_with_retries(lambda _: next(drafts), [],
+                                   [{"text": "amoxicillin", "label": "MEDICATION"}],
+                                   "patient_summary", max_retries=1)
+    assert result.first_attempt_text == "Exact raw first draft.\n"
+    assert result.attempts == 2 and result.retries == 1 and result.fallback_used
+    assert "amoxicillin" in result.text and result.text != result.first_attempt_text
+
+
 def test_fallback_lists_missing_entities():
     result = generate_with_retries(lambda m: "Take amoxicillin.", [], REQUIRED, "patient_summary", max_retries=1)
     assert result.fallback_used and result.attempts == 2
@@ -111,6 +125,32 @@ def test_hallucination_check_is_skipped_without_source():
     """Backward compatibility: callers that don't pass ``source`` see the old missing-only behavior."""
     result = generate_with_retries(lambda m: "Take aspirin.", [], [], "caregiver_checklist", max_retries=0)
     assert not result.fallback_used and result.retries == 0
+
+
+def test_persistent_audited_unsupported_medication_uses_safe_fallback():
+    """The audited Escharotomy output kept unsupported acetaminophen after both retries."""
+    note_id = "mtsamples_Escharotomy"
+    source = Path(f"data/public/mtsamples/notes/{note_id}.txt").read_text()
+    audited_output = json.loads(
+        Path(f"data/public/mtsamples/outputs/{note_id}.json").read_text()
+    )["patient_summary"]
+    assert "acetaminophen" not in source.lower()
+    assert "acetaminophen" in audited_output.lower()
+
+    result = generate_with_retries(
+        lambda _messages: audited_output,
+        [{"role": "user", "content": "x"}],
+        [],
+        "patient_summary",
+        max_retries=2,
+        source=source,
+    )
+
+    assert result.attempts == 3 and result.retries == 2
+    assert result.fallback_used
+    assert result.hallucinated_meds
+    assert "acetaminophen" not in result.text.lower()
+    assert result.text == EMPTY_FALLBACK["patient_summary"]
 
 
 def test_find_contradicted_dosages_flags_wrong_directive_dose():

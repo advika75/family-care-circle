@@ -6,6 +6,7 @@ import copy
 import gc
 import json
 import logging
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -111,7 +112,7 @@ def fingerprint(config: dict[str, Any]) -> dict[str, Any]:
 # --------------------------------------------------------------------------- paths & resume
 
 def ablation_dirs(name: str, mock: bool = False, seed: int | None = None,
-                  dataset: str = "synthetic") -> tuple[Path, Path]:
+                  dataset: str = "synthetic", run_tag: str | None = None) -> tuple[Path, Path]:
     """(outputs_dir, results_dir) for an ablation run. Mock runs never share folders with real runs.
 
     Without a seed: data/outputs_<name>/ and results/ablations/<name>/ (single-seed layout).
@@ -120,7 +121,11 @@ def ablation_dirs(name: str, mock: bool = False, seed: int | None = None,
     prefix = "outputs_mock_" if mock else "outputs_"
     suffix = f"_seed{seed}" if seed is not None else ""
     if dataset == "mtsamples":
+        if run_tag is not None and not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", run_tag):
+            raise ValueError("MTSamples run tag must contain only letters, numbers, underscores, or hyphens")
         run_name = "no_injection" if name == "no_ner_injection" else name
+        if run_tag:
+            run_name = f"{run_name}_{run_tag}"
         outputs = resolve_path(f"data/public/mtsamples/{prefix}{run_name}{suffix}")
         results = resolve_path(f"results/mtsamples/{run_name}")
     elif dataset == "synthetic":
@@ -131,10 +136,13 @@ def ablation_dirs(name: str, mock: bool = False, seed: int | None = None,
     return outputs, (results / f"seed{seed}" if seed is not None else results)
 
 
-def ablations_root(mock: bool = False, dataset: str = "synthetic") -> Path:
+def ablations_root(mock: bool = False, dataset: str = "synthetic", run_tag: str | None = None) -> Path:
     """Folder that holds per-ablation results plus the cross-ablation summary."""
     if dataset == "mtsamples":
-        return resolve_path("results/mtsamples/ablation_summary")
+        if run_tag is not None and not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", run_tag):
+            raise ValueError("MTSamples run tag must contain only letters, numbers, underscores, or hyphens")
+        suffix = f"_{run_tag}" if run_tag else ""
+        return resolve_path(f"results/mtsamples/ablation_summary{suffix}")
     return resolve_path("results/ablations_mock" if mock else "results/ablations")
 
 
@@ -219,6 +227,7 @@ def run_ablation(
     results_dir: Path,
     cache: GeneratorCache,
     force: bool = False,
+    run_tag: str | None = None,
 ) -> dict[str, Any]:
     """Generate outputs for the pending notes (all with ``force``), then evaluate. Returns run info.
 
@@ -228,6 +237,12 @@ def run_ablation(
     t0 = time.perf_counter()
     info: dict[str, Any] = {
         "name": name, "overrides": overrides, "backend": config["backend"], "model": model_key(config),
+        "dataset": config.get("dataset", "synthetic"), "source_note_ids": [note.stem for note in notes],
+        "run_tag": run_tag,
+        "effective_config": fingerprint(config),
+        "generation_seed": config.get("generation", {}).get("seed"),
+        "inject_entities": config.get("prompts", {}).get("inject_entities", True),
+        "child_variant": config.get("prompts", {}).get("child_variant", "v2"),
         "notes_total": len(notes), "notes_generated": 0, "status": "ok", "error": None,
         "started_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }
@@ -248,10 +263,24 @@ def run_ablation(
                 info["notes_generated"] += 1
                 logger.info("[%s] %d/%d %s (%.1fs)", name, i, len(todo), note.stem, record["metadata"]["latency_sec"]["total"])
         info["generation_sec"] = round(time.perf_counter() - t0, 1)
-        evaluate_outputs(outputs_dir, results_dir, config, extract_fn=EntityExtractor(config.get("ner", {})).extract)
+        evaluation = evaluate_outputs(
+            outputs_dir, results_dir, config, extract_fn=EntityExtractor(config.get("ner", {})).extract,
+            overwrite_results=True,
+        )
+        if isinstance(evaluation, dict):
+            info["unparseable_outputs"] = evaluation.get("unparseable_outputs", 0)
     except Exception as exc:  # noqa: BLE001 - one broken ablation must not stop the others
         logger.exception("Ablation '%s' failed", name)
         info.update(status="failed", error=f"{type(exc).__name__}: {exc}")
+    model_hashes = set()
+    for output_path in outputs_dir.glob("*.json"):
+        try:
+            model_hash = json.loads(output_path.read_text(encoding="utf-8")).get("metadata", {}).get("model_hash")
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            continue
+        if model_hash:
+            model_hashes.add(model_hash)
+    info["model_hashes"] = sorted(model_hashes)
     info["runtime_sec"] = round(time.perf_counter() - t0, 1)
     write_json(info, results_dir / RUN_INFO_FILE)
     return info
@@ -301,7 +330,8 @@ def metrics_row(m: pd.DataFrame) -> dict[str, float]:
 
 
 def summarize_ablations(
-    names: list[str], mock: bool = False, seeds: list[int] | None = None, dataset: str = "synthetic"
+    names: list[str], mock: bool = False, seeds: list[int] | None = None, dataset: str = "synthetic",
+    run_tag: str | None = None,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Summaries across ablations: (one row per ablation, one row per ablation and seed).
 
@@ -313,7 +343,7 @@ def summarize_ablations(
     for name in names:
         runs = []
         for seed in seed_list:
-            _, results_dir = ablation_dirs(name, mock, seed, dataset)
+            _, results_dir = ablation_dirs(name, mock, seed, dataset, run_tag)
             info_path, metrics_path = results_dir / RUN_INFO_FILE, results_dir / "metrics.csv"
             info = json.loads(info_path.read_text(encoding="utf-8")) if info_path.exists() else {}
             run = {"ablation": name, "seed": seed, "status": info.get("status", "missing"),

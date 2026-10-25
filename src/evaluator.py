@@ -104,6 +104,11 @@ _BARE_NUMBER_WORD_RE = re.compile(
 _LOOSE_UNITS = {"degree", "lb", "year", "minute"}  # not dosing units: a matching bare number is enough
 _LIST_MARKER_RE = re.compile(r"^\s*\d{1,2}[.)]\s+", re.MULTILINE)  # "4. Your doctor ..." is not a quantity
 _IGNORED_NUMBERS = {"911", "988"}  # emergency / crisis line numbers
+_SOURCE_RX_FREQUENCY_RE = re.compile(
+    r"(?<!\w)(?:q\s*\.?\s*\d+\s*(?:[-–]\s*\d+)?\s*h(?:ours?|rs?)?\.?|"
+    r"(?:b|t)\s*\.?\s*i\s*\.?\s*d\s*\.?)(?!\w)", re.IGNORECASE,
+)
+_GRAM_QUANTITY_RE = re.compile(r"(?<=\d)\s*(?:gm|grams?)\b", re.IGNORECASE)
 
 _DRUG_SUFFIXES = (
     "cillin", "mycin", "micin", "cycline", "floxacin", "sartan", "pril", "olol", "statin", "prazole", "tidine",
@@ -135,9 +140,19 @@ def _mask_bare_number_words(text: str) -> str:
 
 
 def source_support(source: str, entities: Iterable[dict[str, Any]] = ()) -> str:
-    """Normalized source text plus plain-English variants of its frequencies ("BID" -> "2 time a day")."""
+    """Normalized source plus extracted and common written Rx frequency variants."""
     variants = [v for e in entities if e.get("label") == "FREQUENCY" for v in frequency_variants(e["text"])]
+    for match in _SOURCE_RX_FREQUENCY_RE.finditer(source):
+        raw = match.group(0)
+        raw = re.sub(r"(?i)\bq\s*\.(?=\s*\d)", "q ", raw)
+        raw = re.sub(r"\.", "", raw)
+        variants.extend(frequency_variants(raw))
     return " ; ".join([normalize(source), *sorted(set(variants))])
+
+
+def _normalize_quantity_units(text: str) -> str:
+    """Canonicalize common ``gm``/``grams`` forms for number grounding."""
+    return normalize(_GRAM_QUANTITY_RE.sub(" g", text))
 
 
 def unsupported_numbers(output: str, source: str, entities: Iterable[dict[str, Any]] = ()) -> dict[str, Any]:
@@ -147,13 +162,13 @@ def unsupported_numbers(output: str, source: str, entities: Iterable[dict[str, A
     both ends); a bare number, or one with a non-dosing unit (degrees, lb), only needs the number.
     Returns ``{"unsupported": [...], "n_checked": int}``.
     """
-    support = source_support(source, entities)
+    support = _normalize_quantity_units(source_support(source, entities))
     src_quantities = set(_quantities(support))
     for m in _RANGE_RE.finditer(support):
         src_quantities.update({(m.group(1), m.group(3)), (m.group(2), m.group(3))})
     src_numbers = {num for num, _ in src_quantities}
     cleaned = _LIST_MARKER_RE.sub("", _mask_bare_number_words(output))
-    found = [q for q in _quantities(normalize(cleaned)) if q[0] not in _IGNORED_NUMBERS]
+    found = [q for q in _quantities(_normalize_quantity_units(cleaned)) if q[0] not in _IGNORED_NUMBERS]
     unsupported = []
     for num, unit in found:
         ok = num in src_numbers if unit is None or unit in _LOOSE_UNITS else (num, unit) in src_quantities
@@ -300,15 +315,26 @@ def evaluate_record(record: dict[str, Any]) -> dict[str, Any]:
         row[f"{persona}_retention"] = ret["overall"]
         row.update({f"{persona}_retention_{lbl.lower()}": v for lbl, v in ret["per_label"].items()})
         row[f"{persona}_missing"] = "; ".join(ret["missing"])
-        # The model's own text: after retries but before the fallback ("model"), and on the first attempt.
-        for suffix, key in (("model", "missing_after_retries"), ("first", "missing_first_attempt")):
+        # After-retry legacy metric uses its logged misses. First-attempt retention requires the
+        # captured text itself; older records remain NaN instead of substituting logged misses.
+        for suffix, key in (("model", "missing_after_retries"),):
             logged = retention_from_missing(record.get("entities", []), meta.get(key, {}).get(persona))
             row[f"{persona}_retention_{suffix}"] = logged["overall"]
             row.update({f"{persona}_retention_{suffix}_{lbl.lower()}": v for lbl, v in logged["per_label"].items()})
+        first_texts = meta.get("first_attempt_text")
+        evidence_available = isinstance(first_texts, dict) and persona in first_texts
+        row[f"{persona}_retention_first_evidence_available"] = float(evidence_available)
+        first = entity_retention(record.get("entities", []), first_texts[persona]) if evidence_available else {
+            "overall": math.nan, "per_label": {label: math.nan for label in RETENTION_LABELS}
+        }
+        row[f"{persona}_retention_first"] = first["overall"]
+        row.update({f"{persona}_retention_first_{lbl.lower()}": v for lbl, v in first["per_label"].items()})
     for persona in PERSONAS:
         # 0/1 per sample, so the mean over samples is a rate. NaN when an older output did not record it.
         row[f"{persona}_truncation_rate"] = _flag(meta.get("truncated", {}).get(persona))
         row[f"{persona}_fallback"] = _flag(meta.get("fallback_used", {}).get(persona))
+        row[f"{persona}_retries"] = meta.get("retries", {}).get(persona, math.nan)
+        row[f"{persona}_latency_sec"] = meta.get("latency_sec", {}).get(persona, math.nan)
         # 0/1: the output repeats a bullet/sentence (mean over samples = repetition rate).
         row[f"{persona}_repetition"] = float(bool(repeated_units(persona_text(record, persona), persona)))
     for key, value in child_rule_checks(persona_text(record, "child_explanation")).items():
@@ -394,7 +420,8 @@ def evaluate_ner_against_gold(
     gold_dir, raw_dir = Path(gold_dir), Path(raw_dir)
     docs = []
     manifest_path = gold_dir / "annotation_manifest.json"
-    if manifest_path.is_file():
+    has_manifest = manifest_path.is_file()
+    if has_manifest:
         try:
             manifest = read_json(manifest_path)
         except (OSError, json.JSONDecodeError) as exc:
@@ -404,17 +431,29 @@ def evaluate_ner_against_gold(
             raise ValueError(f"Invalid annotation manifest {manifest_path}: expected annotations list")
         sources = [(entry.get("id"), entry.get("source_file")) for entry in entries
                    if isinstance(entry, dict) and entry.get("status") == "complete"]
+        completed_ids = [note_id for note_id, _ in sources]
+        if len(set(completed_ids)) != len(completed_ids):
+            raise ValueError(f"Duplicate completed note id in {manifest_path}")
     else:
         sources = [(p.stem, f"{p.stem}.txt") for p in list_files(gold_dir, (".json",))]
     for note_id, source_file in sources:
         if not isinstance(note_id, str) or not note_id or not isinstance(source_file, str) or not source_file:
             raise ValueError(f"Malformed completed annotation entry in {manifest_path}")
+        if Path(source_file.replace("\\", "/")).name != f"{note_id}.txt":
+            raise ValueError(f"Completed note {note_id}: manifest source_file must name the original {note_id}.txt note")
         gold_path = gold_dir / f"{note_id}.json"
         note_path = raw_dir / Path(source_file.replace("\\", "/")).name
         text = read_text(note_path)
         gold = load_annotation(gold_path, note_path)
         if gold["id"] != note_id:
             raise ValueError(f"Completed note {note_id}: annotation id is {gold['id']!r}")
+        gold_source_file = gold.get("source_file")
+        source_matches = (gold_source_file == source_file if has_manifest else
+                          isinstance(gold_source_file, str)
+                          and Path(gold_source_file.replace("\\", "/")).name == source_file)
+        if not source_matches:
+            expected = "manifest" if has_manifest else "note id"
+            raise ValueError(f"Completed note {note_id}: annotation source_file does not match {expected}")
         docs.append((extract_fn(text), gold["entities"]))
     if not docs:
         return pd.DataFrame(columns=["mode", "label", "precision", "recall", "f1", "tp", "fp", "fn", "n_docs"])

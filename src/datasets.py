@@ -78,9 +78,11 @@ def prepare_mtsamples(source: str | Path, output_dir: str | Path, limit: int = 1
     if limit < 0:
         raise ValueError("limit must be non-negative")
     chosen = sorted(random.Random(seed).sample(rows, min(limit, len(rows))), key=lambda item: item[0])
+    if output_path.exists() and any(output_path.iterdir()):
+        raise FileExistsError(
+            f"Refusing to replace existing MTSamples preparation files in {output_path}; choose an empty output directory"
+        )
     output_path.mkdir(parents=True, exist_ok=True)
-    for old_note in output_path.glob("mtsamples_*.txt"):
-        old_note.unlink()
     written = []
     used_ids: set[str] = set()
     for i, (identifier, text) in enumerate(chosen):

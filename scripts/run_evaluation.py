@@ -34,6 +34,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--outputs-dir", default=None, help="Pipeline JSON outputs (default: paths.outputs_dir)")
     parser.add_argument("--results-dir", default=None, help="Where to write metrics (default: paths.results_dir)")
     parser.add_argument("--skip-ner", action="store_true", help="Skip NER evaluation against gold")
+    parser.add_argument("--force", action="store_true", help="Overwrite existing evaluation files in --results-dir")
     return parser.parse_args()
 
 
@@ -49,9 +50,13 @@ def main() -> int:
     figures_dir = results_dir / "figures" if args.results_dir else resolve_path(paths.get("figures_dir", "results/figures"))
     extract_fn = None if args.skip_ner else EntityExtractor(config.get("ner", {})).extract
     try:
-        result = evaluate_outputs(outputs_dir, results_dir, config, figures_dir, extract_fn)
+        result = evaluate_outputs(outputs_dir, results_dir, config, figures_dir, extract_fn,
+                                  overwrite_results=args.force)
     except FileNotFoundError as exc:
         log.error("%s. Run scripts/run_pipeline.py first.", exc)
+        return 1
+    except (OSError, ValueError) as exc:
+        log.error("%s", exc)
         return 1
 
     backends = ", ".join(sorted(set(map(str, result["metrics"]["backend"]))))

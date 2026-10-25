@@ -1,5 +1,7 @@
 import json
+from pathlib import Path
 
+import pandas as pd
 import pytest
 
 from scripts import evaluate_mtsamples_ner
@@ -14,7 +16,8 @@ def setup_data(tmp_path, monkeypatch, status="complete", entities=None, predicte
     note_id = "mtsamples_test"
     text = "aspirin pain"
     (notes / f"{note_id}.txt").write_text(text, encoding="utf-8")
-    annotation = {"id": note_id, "entities": entities if entities is not None else [
+    annotation = {"id": note_id, "source_file": f"{note_id}.txt",
+                  "entities": entities if entities is not None else [
         {"text": "aspirin", "label": "MEDICATION", "start": 0, "end": 7}
     ]}
     (gold / f"{note_id}.json").write_text(json.dumps(annotation), encoding="utf-8")
@@ -101,6 +104,16 @@ def test_malformed_completed_annotation_has_clear_error(monkeypatch, tmp_path):
         evaluate_mtsamples(gold, notes)
 
 
+def test_completed_annotation_must_match_manifest_source_file(tmp_path):
+    gold, notes, note_id = setup_data(tmp_path, None)
+    annotation_path = gold / f"{note_id}.json"
+    annotation = json.loads(annotation_path.read_text())
+    annotation["source_file"] = "another_note.txt"
+    annotation_path.write_text(json.dumps(annotation))
+    with pytest.raises(ValueError, match="annotation source_file does not match manifest"):
+        evaluate_mtsamples(gold, notes)
+
+
 def test_duplicate_completed_gold_entities_are_rejected(monkeypatch, tmp_path):
     entity = {"text": "aspirin", "label": "MEDICATION", "start": 0, "end": 7}
     gold, notes, _ = setup_data(tmp_path, monkeypatch, entities=[entity, dict(entity)])
@@ -126,3 +139,19 @@ def test_cli_prints_message_when_no_annotations_are_complete(monkeypatch, tmp_pa
                                       "--notes-dir", str(notes), "--results-dir", str(tmp_path / "out")])
     assert evaluate_mtsamples_ner.main() == 0
     assert "No completed gold annotations; metrics unavailable." in capsys.readouterr().out
+
+
+def test_cli_default_results_dir_is_separate_from_generation_results(monkeypatch, capsys):
+    captured = {}
+    summary = {"evaluated_note_count": 0, "skipped_note_count": 0, "metrics": {},
+               "accepted_suggestion_share": None, "accepted_suggestion_count": 0,
+               "gold_entities_with_known_provenance": 0}
+    monkeypatch.setattr("sys.argv", ["evaluate_mtsamples_ner.py"])
+    monkeypatch.setattr(evaluate_mtsamples_ner, "evaluate_mtsamples",
+                        lambda *_args: (summary, pd.DataFrame(), pd.DataFrame()))
+    monkeypatch.setattr(evaluate_mtsamples_ner, "write_results",
+                        lambda *_args: captured.setdefault("output", _args[-1]))
+
+    assert evaluate_mtsamples_ner.main() == 0
+    assert Path(captured["output"]) == Path("results/mtsamples_ner")
+    assert "Results written to results/mtsamples_ner" in capsys.readouterr().out

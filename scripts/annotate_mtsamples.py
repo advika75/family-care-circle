@@ -47,8 +47,20 @@ class AnnotationStore:
     def _manifest(self) -> dict[str, Any]:
         with self.manifest_path.open(encoding="utf-8") as stream:
             manifest = json.load(stream)
-        if not isinstance(manifest.get("annotations"), list):
+        if not isinstance(manifest, dict) or not isinstance(manifest.get("annotations"), list):
             raise ValueError("Annotation manifest must contain an annotations list")
+        seen: set[str] = set()
+        for entry in manifest["annotations"]:
+            if not isinstance(entry, dict):
+                raise ValueError("Annotation manifest entries must be objects")
+            note_id, source_file = entry.get("id"), entry.get("source_file")
+            if not isinstance(note_id, str) or not note_id or not isinstance(source_file, str) or not source_file:
+                raise ValueError("Annotation manifest entries require id and source_file")
+            if note_id in seen:
+                raise ValueError(f"Duplicate annotation manifest id: {note_id}")
+            seen.add(note_id)
+            if Path(source_file.replace("\\", "/")).name != f"{note_id}.txt":
+                raise ValueError(f"Manifest source_file for {note_id} must name the original {note_id}.txt note")
         return manifest
 
     def _entry(self, note_id: str) -> dict[str, Any]:
@@ -67,7 +79,13 @@ class AnnotationStore:
         note_path, annotation_path = self._paths(entry)
         if not note_path.is_file():
             raise FileNotFoundError(f"Missing prepared note: {note_path}")
-        return load_annotation(annotation_path, note_path)
+        annotation = load_annotation(annotation_path, note_path)
+        if annotation["id"] != entry["id"]:
+            raise ValueError(f"Annotation id {annotation['id']!r} does not match manifest id {entry['id']!r}")
+        if annotation.get("source_file") != entry["source_file"]:
+            raise ValueError(f"Annotation source_file does not match manifest for {entry['id']}")
+        self._validate_entities(note_path.read_text(encoding="utf-8"), annotation["entities"])
+        return annotation
 
     def state(self) -> dict[str, Any]:
         manifest = self._manifest()
@@ -139,6 +157,8 @@ class AnnotationStore:
             exact = (entity["text"], entity["label"], entity["start"], entity["end"])
             if source == "accepted_suggestion" and (self.blind or exact not in suggestion_keys):
                 raise ValueError("accepted_suggestion must exactly match a visible rule-based suggestion")
+            if exact in suggestion_keys and source is None:
+                raise ValueError("Suggestion-matching spans require explicit manual or accepted_suggestion provenance")
             if source == "edited_suggestion":
                 reference = entity.get("suggestion_reference")
                 if self.blind or not isinstance(reference, dict):
@@ -164,6 +184,23 @@ class AnnotationStore:
             self.manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         return {"ok": True, "id": note_id, "entity_count": len(entities)}
 
+    def complete(self, note_id: str, review_confirmed: bool) -> dict[str, Any]:
+        """Mark a saved annotation complete only after an explicit human review confirmation."""
+        if review_confirmed is not True:
+            raise ValueError("review_confirmed must be true after reviewing the original note and saved spans")
+        entry = self._entry(note_id)
+        self._read_annotation(entry)
+        with self._lock:
+            manifest = self._manifest()
+            for item in manifest["annotations"]:
+                if item.get("id") == note_id:
+                    item["status"] = "complete"
+                    break
+            else:
+                raise KeyError(f"Unknown annotation note: {note_id}")
+            self.manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        return {"ok": True, "id": note_id, "status": "complete"}
+
 
 PAGE = r'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -180,32 +217,42 @@ h2 { margin:0 0 12px; font-size:16px; } h3 { margin:20px 0 8px; font-size:14px; 
 .toolbar { display:flex; flex-wrap:wrap; gap:7px; align-items:center; margin-bottom:12px; } button, input { font:inherit; } button { border:1px solid #b9c7dc; background:#fff; border-radius:5px; padding:7px 10px; cursor:pointer; } button.primary { background:var(--blue); color:#fff; border-color:var(--blue); } button:disabled { opacity:.45; cursor:default; }
 #text { white-space:pre-wrap; word-break:break-word; line-height:1.65; border:1px solid var(--line); border-radius:6px; padding:18px; min-height:55vh; max-height:calc(100vh - 250px); overflow:auto; user-select:text; }
 .entity { border-radius:3px; padding:1px 2px; } .entity-MEDICATION { background:#d9f4e5; } .entity-DOSAGE { background:#ffe6bd; } .entity-FREQUENCY { background:#dceaff; } .entity-DURATION { background:#f0ddff; } .entity-CONDITION { background:#ffd9df; } .entity-SYMPTOM { background:#fff5b8; }
-.item { border:1px solid var(--line); border-radius:5px; padding:8px; margin:7px 0; } .item strong { font-size:12px; } .item code { font-size:12px; color:var(--muted); } .suggestion { background:#fbfcff; } .error { color:#a21d2b; margin:8px 0; }
-label { display:block; font-size:13px; color:var(--muted); margin:7px 0 3px; } input { width:100%; padding:7px; border:1px solid #b9c7dc; border-radius:4px; }
+.item { border:1px solid var(--line); border-radius:5px; padding:8px; margin:7px 0; } .item strong { font-size:12px; } .item code { font-size:12px; color:var(--muted); } .suggestion { background:#fbfcff; } .item.selected { outline:2px solid var(--blue); outline-offset:1px; } .shortcuts { margin:8px 0 14px; } kbd { border:1px solid #b9c7dc; border-radius:3px; padding:1px 4px; background:#f7f9fc; color:var(--ink); } .error { color:#a21d2b; margin:8px 0; }
+label { display:block; font-size:13px; color:var(--muted); margin:7px 0 3px; } input { width:100%; padding:7px; border:1px solid #b9c7dc; border-radius:4px; } input[type=checkbox] { width:auto; }
 @media (max-width:1000px) { main { grid-template-columns:210px minmax(0,1fr); } aside:last-child { grid-column:1/-1; border-left:0; border-top:1px solid var(--line); } }
 </style></head><body>
 <header><h1>Family Care Circle</h1><p>MTSamples Gold Annotation · <span id="progress">Loading…</span></p></header>
 <main><aside><h2>Notes</h2><div class="muted">Select a note to annotate.</div><div id="note-list"></div></aside>
 <section><div class="toolbar"><button id="prev">← Previous</button><button id="next">Next →</button><span class="muted" id="current"></span></div><div class="toolbar"><button data-label="MEDICATION">Medication</button><button data-label="DOSAGE">Dosage</button><button data-label="FREQUENCY">Frequency</button><button data-label="DURATION">Duration</button><button data-label="CONDITION">Condition</button><button data-label="SYMPTOM">Symptom</button><button class="primary" id="add-selection">Add selected span</button></div><p class="muted">Select text, choose a label, then add it to the draft. Gold entities are reviewed spans.</p><div id="text"></div></section>
-<aside id="suggestion-panel"><h2>Draft annotations</h2><label for="annotator">Annotator</label><input id="annotator" placeholder="Your name"><div id="draft"></div><button class="primary" id="save">Save annotation</button><div id="message"></div><div id="suggestion-controls"><h3>Rule-based suggestions</h3><div class="muted">Review each suggestion before adding it.</div><div id="suggestions"></div></div></aside></main>
+<aside id="suggestion-panel"><h2>Draft annotations</h2><label for="annotator">Annotator</label><input id="annotator" placeholder="Your name"><div id="draft"></div><button class="primary" id="save">Save annotation</button><div class="muted shortcuts">Shortcuts: <kbd>Ctrl/⌘ S</kbd> save · <kbd>A</kbd> add selected suggestion · <kbd>Delete</kbd> remove selected draft entity</div><label><input id="review-confirmed" type="checkbox"> I reviewed the original note and saved spans.</label><button id="complete">Save and mark complete</button><div id="message"></div><div id="suggestion-controls"><h3>Rule-based suggestions</h3><div class="muted">Select a suggestion to highlight it; adding always requires an explicit action.</div><button id="add-suggestion" disabled>Add selected suggestion <kbd>A</kbd></button><div id="suggestions"></div></div></aside></main>
 <script>
-let state, currentIndex=0, currentNote=null, draft=[], selectedLabel=null;
+let state, currentIndex=0, currentNote=null, draft=[], selectedLabel=null, selectedSuggestionIndex=null, selectedEntityIndex=null;
 const $=id=>document.getElementById(id);
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function api(url, opts){return fetch(url,opts).then(r=>r.ok?r.json():r.json().then(x=>Promise.reject(new Error(x.error||'Request failed'))));}
 function renderList(){ $('note-list').innerHTML=state.notes.map((n,i)=>`<button class="note-row ${i===currentIndex?'current':''}" data-i="${i}">${esc(n.source_file)}<small>${n.status} · ${n.entity_count} entities</small></button>`).join(''); document.querySelectorAll('.note-row').forEach(b=>b.onclick=()=>loadNote(Number(b.dataset.i))); }
-function renderText(){let a=[...draft].sort((x,y)=>x.start-y.start), out='', pos=0; for(const e of a){if(e.start<pos)return; out+=esc(currentNote.text.slice(pos,e.start))+`<span class="entity entity-${e.label}" title="${e.label}">${esc(e.text)}</span>`;pos=e.end;} out+=esc(currentNote.text.slice(pos));$('text').innerHTML=out;}
-function renderDraft(){ $('draft').innerHTML=draft.length?draft.map((e,i)=>`<div class="item"><strong>${e.label}</strong><br>${esc(e.text)} <code>[${e.start}, ${e.end})</code><br><small>${esc(e.annotation_source||'provenance unknown')}</small><br><button data-remove="${i}">Remove</button></div>`).join(''):'<p class="muted">No draft entities.</p>'; document.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{draft.splice(Number(b.dataset.remove),1);render();}); }
-function renderSuggestions(){ $('suggestions').innerHTML=currentNote.suggestions.length?currentNote.suggestions.map((e,i)=>`<div class="item suggestion"><strong>${e.label}</strong><br>${esc(e.text)} <code>[${e.start}, ${e.end})</code><br><button data-suggest="${i}">Accept suggestion</button><button data-edit-suggest="${i}">Edit suggestion span</button></div>`).join(''):'<p class="muted">No rule-based suggestions.</p>'; document.querySelectorAll('[data-suggest]').forEach(b=>b.onclick=()=>{const e=currentNote.suggestions[Number(b.dataset.suggest)]; if(!draft.some(x=>x.start===e.start&&x.end===e.end&&x.label===e.label))draft.push({...e,annotation_source:'accepted_suggestion'});render();}); document.querySelectorAll('[data-edit-suggest]').forEach(b=>b.onclick=()=>{const e=currentNote.suggestions[Number(b.dataset.editSuggest)]; selectOffsets(e.start,e.end); selectedLabel=e.label; window.pendingSuggestion=e;}); }
+function cpLen(s){return Array.from(s).length;}
+function cpSlice(s,start,end){return Array.from(s).slice(start,end).join('');}
+function renderText(){let a=[...draft].sort((x,y)=>x.start-y.start), out='', pos=0; for(const e of a){if(e.start<pos)return; out+=esc(cpSlice(currentNote.text,pos,e.start))+`<span class="entity entity-${e.label}" title="${e.label}">${esc(e.text)}</span>`;pos=e.end;} out+=esc(cpSlice(currentNote.text,pos));$('text').innerHTML=out;}
+function renderDraft(){ $('draft').innerHTML=draft.length?draft.map((e,i)=>`<div class="item ${i===selectedEntityIndex?'selected':''}" data-entity="${i}" tabindex="0" role="group"><strong>${e.label}</strong><br>${esc(e.text)} <code>[${e.start}, ${e.end})</code><br><small>${esc(e.annotation_source||'provenance unknown')}</small><br><button data-remove="${i}">Remove</button></div>`).join(''):'<p class="muted">No draft entities.</p>'; document.querySelectorAll('[data-entity]').forEach(item=>{const select=()=>{selectedEntityIndex=Number(item.dataset.entity);renderDraft();};item.onclick=select;item.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}};}); document.querySelectorAll('[data-remove]').forEach(b=>b.onclick=e=>{e.stopPropagation();selectedEntityIndex=Number(b.dataset.remove);removeSelectedEntity();}); }
+function renderSuggestions(){ $('suggestions').innerHTML=currentNote.suggestions.length?currentNote.suggestions.map((e,i)=>`<div class="item suggestion ${i===selectedSuggestionIndex?'selected':''}" data-suggestion="${i}" tabindex="0" role="group"><strong>${e.label}</strong><br>${esc(e.text)} <code>[${e.start}, ${e.end})</code><br><button data-suggest="${i}">Add suggestion</button><button data-edit-suggest="${i}">Edit suggestion span</button></div>`).join(''):'<p class="muted">No rule-based suggestions.</p>'; document.querySelectorAll('[data-suggestion]').forEach(item=>{const select=()=>{selectedSuggestionIndex=Number(item.dataset.suggestion);renderSuggestions();};item.onclick=select;item.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}};}); document.querySelectorAll('[data-suggest]').forEach(b=>b.onclick=e=>{e.stopPropagation();addSuggestion(Number(b.dataset.suggest));}); document.querySelectorAll('[data-edit-suggest]').forEach(b=>b.onclick=e=>{e.stopPropagation();const i=Number(b.dataset.editSuggest),item=currentNote.suggestions[i]; selectedSuggestionIndex=i; selectOffsets(item.start,item.end); selectedLabel=item.label; window.pendingSuggestion=item;renderSuggestions();}); $('add-suggestion').disabled=selectedSuggestionIndex===null; }
+function addSuggestion(i){const e=currentNote.suggestions[i];if(!e)return;if(!draft.some(x=>x.start===e.start&&x.end===e.end&&x.label===e.label))draft.push({...e,annotation_source:'accepted_suggestion'});selectedEntityIndex=null;selectedSuggestionIndex=null;render();}
+function removeSelectedEntity(){if(selectedEntityIndex===null||!draft[selectedEntityIndex])return;draft.splice(selectedEntityIndex,1);selectedEntityIndex=null;render();}
 function render(){renderList();renderText();renderDraft();renderSuggestions();$('suggestion-panel').classList.toggle('blind-mode',state.blind_mode);$('suggestion-controls').hidden=state.blind_mode; $('current').textContent=`${currentIndex+1} / ${state.count} · ${currentNote.source_file}`; $('progress').textContent=`Annotated: ${state.notes.filter(n=>n.status==='annotated').length} / ${state.count} · Current: ${currentIndex+1} / ${state.count}`;}
-function loadNote(i){currentIndex=i;api('/api/note?id='+encodeURIComponent(state.notes[i].id)).then(n=>{currentNote=n;draft=n.annotation.entities.map(e=>({...e}));$('annotator').value=n.annotation.annotator||'';render();}).catch(showError);}
+function loadNote(i){currentIndex=i;window.pendingSuggestion=null;selectedLabel=null;selectedSuggestionIndex=null;selectedEntityIndex=null;api('/api/note?id='+encodeURIComponent(state.notes[i].id)).then(n=>{currentNote=n;draft=n.annotation.entities.map(e=>({...e}));$('annotator').value=n.annotation.annotator||'';render();}).catch(showError);}
 function showError(e){$('message').innerHTML=`<p class="error">${esc(e.message||e)}</p>`;}
-function offsets(range,root){let w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),n,start=null,end=null,pos=0,node;while(node=w.nextNode()){if(node===range.startContainer)start=pos+range.startOffset;if(node===range.endContainer)end=pos+range.endOffset;pos+=node.nodeValue.length;}return {start,end};}
-function selectOffsets(start,end){let w=document.createTreeWalker($('text'),NodeFilter.SHOW_TEXT),node,pos=0,a=null,b=null,ao=0,bo=0;while(node=w.nextNode()){let next=pos+node.nodeValue.length;if(a===null&&start<=next){a=node;ao=start-pos;}if(end<=next){b=node;bo=end-pos;break;}pos=next;}if(a&&b){let r=document.createRange();r.setStart(a,ao);r.setEnd(b,bo);let s=window.getSelection();s.removeAllRanges();s.addRange(r);}}
-$('add-selection').onclick=()=>{if(!selectedLabel){showError(new Error('Choose an entity label first.'));return;}let s=window.getSelection();if(!s.rangeCount||s.isCollapsed){showError(new Error('Select text in the note first.'));return;}let r=s.getRangeAt(0),o=offsets(r,$('text')),text=currentNote.text.slice(o.start,o.end);if(!text.trim()){showError(new Error('Selected text is empty.'));return;}let entity={text,label:selectedLabel,start:o.start,end:o.end,annotation_source:'manual'};if(window.pendingSuggestion){const ref=window.pendingSuggestion;entity.annotation_source=(ref.text===text&&ref.label===selectedLabel&&ref.start===o.start&&ref.end===o.end)?'accepted_suggestion':'edited_suggestion';if(entity.annotation_source==='edited_suggestion')entity.suggestion_reference={text:ref.text,label:ref.label,start:ref.start,end:ref.end};window.pendingSuggestion=null;}draft.push(entity);selectedLabel=null;render();};
+function domPointOffset(root,node,offset){let r=document.createRange();r.setStart(root,0);r.setEnd(node,offset);return cpLen(r.toString());}
+function offsets(range,root){if(!root.contains(range.startContainer)||!root.contains(range.endContainer))throw new Error('Select text within the source note.');return {start:domPointOffset(root,range.startContainer,range.startOffset),end:domPointOffset(root,range.endContainer,range.endOffset)};}
+function selectOffsets(start,end){let w=document.createTreeWalker($('text'),NodeFilter.SHOW_TEXT),node,pos=0,a=null,b=null,ao=0,bo=0;while(node=w.nextNode()){let chars=Array.from(node.nodeValue),next=pos+chars.length;if(a===null&&start<=next){a=node;ao=chars.slice(0,start-pos).join('').length;}if(end<=next){b=node;bo=chars.slice(0,end-pos).join('').length;break;}pos=next;}if(a&&b){let r=document.createRange();r.setStart(a,ao);r.setEnd(b,bo);let s=window.getSelection();s.removeAllRanges();s.addRange(r);}}
+$('add-selection').onclick=()=>{if(!selectedLabel){showError(new Error('Choose an entity label first.'));return;}let s=window.getSelection();if(!s.rangeCount||s.isCollapsed){showError(new Error('Select text in the note first.'));return;}let r=s.getRangeAt(0),o=offsets(r,$('text')),text=cpSlice(currentNote.text,o.start,o.end);if(!text.trim()){showError(new Error('Selected text is empty.'));return;}let entity={text,label:selectedLabel,start:o.start,end:o.end,annotation_source:'manual'};if(window.pendingSuggestion){const ref=window.pendingSuggestion;entity.annotation_source=(ref.text===text&&ref.label===selectedLabel&&ref.start===o.start&&ref.end===o.end)?'accepted_suggestion':'edited_suggestion';if(entity.annotation_source==='edited_suggestion')entity.suggestion_reference={text:ref.text,label:ref.label,start:ref.start,end:ref.end};window.pendingSuggestion=null;}draft.push(entity);selectedLabel=null;selectedEntityIndex=draft.length-1;render();};
 document.querySelectorAll('[data-label]').forEach(b=>b.onclick=()=>{selectedLabel=b.dataset.label;document.querySelectorAll('[data-label]').forEach(x=>x.style.outline='');b.style.outline='2px solid #2558a8';});
-$('save').onclick=()=>api('/api/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:currentNote.id,annotator:$('annotator').value,entities:draft})}).then(()=>api('/api/state')).then(s=>{state=s;render();$('message').innerHTML='<p>Saved locally.</p>';}).catch(showError);
+$('save').onclick=saveCurrentAnnotation;
+function saveCurrentAnnotation(){if(!currentNote)return;return api('/api/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:currentNote.id,annotator:$('annotator').value,entities:draft})}).then(()=>api('/api/state')).then(s=>{state=s;render();$('message').innerHTML='<p>Saved locally.</p>';}).catch(showError);}
+$('complete').onclick=()=>{if(!currentNote)return;if(!$('review-confirmed').checked){showError(new Error('Review the original note and saved spans before marking complete.'));return;}api('/api/complete',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:currentNote.id,annotator:$('annotator').value,entities:draft,review_confirmed:true})}).then(()=>api('/api/state')).then(s=>{state=s;render();$('message').innerHTML='<p>Saved and marked complete after review.</p>';}).catch(showError);};
+$('add-suggestion').onclick=()=>{if(selectedSuggestionIndex!==null)addSuggestion(selectedSuggestionIndex);};
 $('prev').onclick=()=>loadNote(Math.max(0,currentIndex-1));$('next').onclick=()=>loadNote(Math.min(state.count-1,currentIndex+1));
+function isTypingTarget(target){return target.isContentEditable||['INPUT','TEXTAREA','SELECT'].includes(target.tagName);}
+document.addEventListener('keydown',e=>{if(isTypingTarget(e.target))return;const key=e.key.toLowerCase();if((e.ctrlKey||e.metaKey)&&key==='s'){e.preventDefault();saveCurrentAnnotation();return;}if(!(e.ctrlKey||e.metaKey||e.altKey)&&key==='a'&&selectedSuggestionIndex!==null){e.preventDefault();addSuggestion(selectedSuggestionIndex);return;}if((e.key==='Delete'||e.key==='Backspace')&&selectedEntityIndex!==null){e.preventDefault();removeSelectedEntity();}});
 api('/api/state').then(s=>{state=s;document.body.classList.toggle('blind-mode',s.blind_mode);renderList();loadNote(0);}).catch(showError);
 </script></body></html>'''
 
@@ -244,12 +291,20 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:  # noqa: N802
         try:
-            if urlparse(self.path).path != "/api/save":
+            route = urlparse(self.path).path
+            if route not in {"/api/save", "/api/complete"}:
                 self._send({"error": "Not found"}, 404)
                 return
             length = int(self.headers.get("Content-Length", "0"))
             payload = json.loads(self.rfile.read(length))
-            self._send(self.store.save(payload))
+            if route == "/api/save":
+                self._send(self.store.save(payload))
+            else:
+                note_id = payload.get("id")
+                if not isinstance(note_id, str):
+                    raise ValueError("id is required")
+                self.store.save(payload)
+                self._send(self.store.complete(note_id, payload.get("review_confirmed") is True))
         except Exception as exc:  # noqa: BLE001 - return validation errors to the UI
             LOGGER.exception("POST failed")
             self._send({"error": str(exc)}, 400)

@@ -68,6 +68,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--yes", action="store_true", help="Do not ask for confirmation on long runs")
     parser.add_argument("--seeds", type=int, nargs="+", default=None,
                         help="Run every ablation once per seed (e.g. --seeds 0 1 2); default: one run, config seed")
+    parser.add_argument("--run-tag", default=None,
+                        help="Unique MTSamples run name suffix for fresh, isolated output/result directories")
     return parser.parse_args()
 
 
@@ -84,6 +86,9 @@ def main() -> int:
     base = load_config(args.config, {"dataset": args.dataset})
     dataset = base.get("dataset", "synthetic")
     log = setup_logging(base.get("logging", {}).get("level", "INFO"))
+    if args.run_tag and dataset != "mtsamples":
+        log.error("--run-tag is only supported for MTSamples runs.")
+        return 2
     if dataset == "mtsamples" and args.force:
         log.error("--force is disabled for MTSamples to protect existing outputs.")
         return 2
@@ -121,7 +126,7 @@ def main() -> int:
     if dataset == "mtsamples" and not notes:
         log.error("No MTSamples note files found in %s.", input_path)
         return 1
-    root = ablations_root(args.mock, dataset)
+    root = ablations_root(args.mock, dataset, args.run_tag)
     if dataset == "mtsamples" and root.exists():
         log.error("Refusing to write MTSamples ablation summary into existing directory %s.", root)
         return 2
@@ -147,7 +152,10 @@ def main() -> int:
                 log.error("MTSamples inference requires llama_cpp, seed 42, and the configured Qwen2.5-3B Q4_K_M GGUF.")
                 return 2
             label = name if seed is None else f"{name} [seed {seed}]"
-            outputs_dir, results_dir = ablation_dirs(name, args.mock, seed, dataset)
+            outputs_dir, results_dir = ablation_dirs(name, args.mock, seed, dataset, args.run_tag)
+            if dataset == "mtsamples" and args.run_tag and outputs_dir.exists():
+                log.error("Refusing to reuse run-tag output directory %s; choose a fresh --run-tag.", outputs_dir)
+                return 2
             if dataset == "mtsamples" and results_dir.exists() and any(results_dir.iterdir()):
                 log.error("Refusing to overwrite MTSamples results in %s.", results_dir)
                 return 2
@@ -183,7 +191,8 @@ def main() -> int:
     t_all = time.perf_counter()
     for name, label, config, outputs_dir, results_dir in plans:
         log.info("=== %s: %s ===", label, ablations[name] or "no overrides")
-        info = run_ablation(name, config, ablations[name] or {}, notes, outputs_dir, results_dir, cache, args.force)
+        info = run_ablation(name, config, ablations[name] or {}, notes, outputs_dir, results_dir, cache,
+                            args.force, args.run_tag)
         log.info("=== %s %s in %s (generated %d, skipped %d)%s ===", label, info["status"], _fmt(info["runtime_sec"]),
                  info["notes_generated"], info["notes_skipped"], f": {info['error']}" if info["error"] else "")
         if dataset == "mtsamples" and (info["status"] != "ok" or
@@ -196,7 +205,7 @@ def main() -> int:
     if dataset == "mtsamples":
         root.mkdir(parents=True, exist_ok=False)
     # Every defined ablation (including ones run earlier), for the seeds of this invocation.
-    summary, by_seed = summarize_ablations(list(ablations), args.mock, args.seeds, dataset)
+    summary, by_seed = summarize_ablations(list(ablations), args.mock, args.seeds, dataset, args.run_tag)
     summary = summary[summary["status"] != "missing"]  # keep failed/partial runs, drop never-run ablations
     by_seed = by_seed[by_seed["status"] != "missing"]
     summary.to_csv(root / "summary.csv", index=False)

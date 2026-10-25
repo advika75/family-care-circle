@@ -4,6 +4,7 @@ repetition, truncation and child-rule metrics."""
 from __future__ import annotations
 
 import copy
+import json
 import math
 
 import pandas as pd
@@ -60,6 +61,23 @@ def test_entity_retention_empty_is_nan():
     assert math.isnan(entity_retention([], "anything")["overall"])
 
 
+def test_first_retention_uses_captured_text_and_missing_evidence_stays_nan():
+    record = {
+        "id": "legacy", "source_text": "aspirin", "entities": [{"text": "aspirin", "label": "MEDICATION"}],
+        "patient_summary": "aspirin", "caregiver_checklist": ["aspirin"], "child_explanation": "aspirin",
+        "metadata": {"missing_first_attempt": {"patient_summary": [], "caregiver_checklist": []}},
+    }
+    row = evaluate_record(record)
+    assert math.isnan(row["patient_summary_retention_first"])
+    assert row["patient_summary_retention_first_evidence_available"] == 0.0
+    record["metadata"]["first_attempt_text"] = {"patient_summary": "", "caregiver_checklist": "aspirin"}
+    row = evaluate_record(record)
+    assert row["patient_summary_retention_first"] == 0.0
+    assert row["patient_summary_retention_first_evidence_available"] == 1.0
+    assert row["caregiver_checklist_retention_first"] == 1.0
+    assert row["patient_summary_retention"] == 1.0  # final retention still uses final persona output
+
+
 def _ent(label, start, end):
     return {"text": "x", "label": label, "start": start, "end": end}
 
@@ -88,7 +106,7 @@ def test_mtsamples_ner_scores_only_complete_manifest_entries(tmp_path):
     gold_dir.mkdir()
     notes_dir.mkdir()
     (notes_dir / "done.txt").write_text("aspirin", encoding="utf-8")
-    (gold_dir / "done.json").write_text(json.dumps({"id": "done", "entities": [
+    (gold_dir / "done.json").write_text(json.dumps({"id": "done", "source_file": "done.txt", "entities": [
         {"text": "aspirin", "label": "MEDICATION", "start": 0, "end": 7}
     ]}), encoding="utf-8")
     (gold_dir / "annotation_manifest.json").write_text(json.dumps({"annotations": [
@@ -99,6 +117,37 @@ def test_mtsamples_ner_scores_only_complete_manifest_entries(tmp_path):
     scores = evaluate_ner_against_gold(gold_dir, notes_dir, extract_entities)
     assert set(scores["n_docs"]) == {1}
     assert scores.loc[(scores["mode"] == "exact") & (scores["label"] == "MEDICATION"), "tp"].iloc[0] == 1
+
+
+def test_mtsamples_ner_rejects_gold_source_file_mismatch(tmp_path):
+    import json
+    import pytest
+
+    gold_dir, notes_dir = tmp_path / "gold", tmp_path / "notes"
+    gold_dir.mkdir()
+    notes_dir.mkdir()
+    (notes_dir / "done.txt").write_text("aspirin", encoding="utf-8")
+    (gold_dir / "done.json").write_text(json.dumps({"id": "done", "source_file": "other.txt", "entities": []}))
+    (gold_dir / "annotation_manifest.json").write_text(json.dumps({"annotations": [
+        {"id": "done", "source_file": "done.txt", "status": "complete"},
+    ]}))
+    with pytest.raises(ValueError, match="source_file does not match manifest"):
+        evaluate_ner_against_gold(gold_dir, notes_dir, extract_entities)
+
+
+def test_legacy_synthetic_gold_accepts_project_relative_source_path(tmp_path):
+    gold_dir, notes_dir = tmp_path / "gold", tmp_path / "notes"
+    gold_dir.mkdir()
+    notes_dir.mkdir()
+    (notes_dir / "note_01.txt").write_text("aspirin", encoding="utf-8")
+    (gold_dir / "note_01.json").write_text(json.dumps({
+        "id": "note_01", "source_file": "data/raw/note_01.txt", "entities": []
+    }), encoding="utf-8")
+
+    scored = evaluate_ner_against_gold(gold_dir, notes_dir, lambda _text: [])
+
+    assert set(scored["mode"]) == {"exact", "relaxed"}
+    assert scored["n_docs"].eq(1).all()
 
 
 def test_evaluate_record_and_summary(sample_note, mock_config):
@@ -152,6 +201,25 @@ def test_counting_words_list_markers_and_911_are_ignored():
     text = "One of your medicines is amoxicillin.\n1. Take it with food.\n2. Call 911 if you cannot breathe."
     assert _nums(text) == []
     assert _nums("Take three tablets.") == ["3 tablet"]  # number word attached to a unit is checked
+
+
+def test_audited_rx_frequency_abbreviations_support_expanded_output_intervals():
+    assert unsupported_numbers(
+        "Take it every 4 to 6 hours as needed.", "Prescription: Vicodin one p.o. q.4-6h p.r.n. pain."
+    )["unsupported"] == []
+    assert unsupported_numbers(
+        "Take oxycodone every 12 hours.", "Oxycodone SR 20 mg p.o. q.12h for five days."
+    )["unsupported"] == []
+
+
+def test_audited_dotted_tid_supports_expanded_count_per_day():
+    assert unsupported_numbers(
+        "Apply the ointment three times a day.", "Start Polysporin ointment t.i.d. and p.r.n. itch."
+    )["unsupported"] == []
+
+
+def test_audited_gram_abbreviation_supports_spelled_out_gram_output():
+    assert unsupported_numbers("Give Nafcillin 2 grams IV.", "Nafcillin 2gm IV q4hrs.")["unsupported"] == []
 
 
 def test_medication_mentions_and_support():
