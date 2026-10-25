@@ -137,6 +137,7 @@ def render(request: Request, name: str, *, conn: sqlite3.Connection | None = Non
            status_code: int = 200, circle_info: tuple[sqlite3.Row, sqlite3.Row] | None = None, **context: Any) -> Response:
     token, new_anon = page_csrf_token(request, authenticated=user is not None)
     context.update(request=request, user=user, csrf_token=token, status_code=status_code,
+                   mock_backend=request.app.state.settings.backend == "mock",
                    nav=nav_context(conn, user, request.url.path, circle_info))
     response = templates.TemplateResponse(request, name, context, status_code=status_code)
     if new_anon:
