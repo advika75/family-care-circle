@@ -2,5 +2,867 @@
   "id": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064",
   "source_file": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "Seizure",
+      "label": "CONDITION",
+      "start": 25,
+      "end": 32,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Hypoglycemia",
+      "label": "CONDITION",
+      "start": 38,
+      "end": 50,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Anemia",
+      "label": "CONDITION",
+      "start": 56,
+      "end": 62,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Hypotension",
+      "label": "CONDITION",
+      "start": 68,
+      "end": 79,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Dyspnea",
+      "label": "CONDITION",
+      "start": 85,
+      "end": 92,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Edema",
+      "label": "CONDITION",
+      "start": 98,
+      "end": 103,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Colon cancer",
+      "label": "CONDITION",
+      "start": 130,
+      "end": 142,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Anemia",
+      "label": "CONDITION",
+      "start": 181,
+      "end": 187,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Hospital-acquired pneumonia",
+      "label": "CONDITION",
+      "start": 193,
+      "end": 220,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Hypertension",
+      "label": "CONDITION",
+      "start": 226,
+      "end": 238,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Congestive heart failure",
+      "label": "CONDITION",
+      "start": 244,
+      "end": 268,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Seizure disorder",
+      "label": "CONDITION",
+      "start": 274,
+      "end": 290,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "diabetes mellitus",
+      "label": "CONDITION",
+      "start": 452,
+      "end": 469,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "insulin",
+      "label": "MEDICATION",
+      "start": 480,
+      "end": 487,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "for 26 years",
+      "label": "DURATION",
+      "start": 488,
+      "end": 500,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "previous MI",
+      "label": "CONDITION",
+      "start": 502,
+      "end": 513,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "coronary artery disease",
+      "label": "CONDITION",
+      "start": 518,
+      "end": 541,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "seizure disorder",
+      "label": "CONDITION",
+      "start": 554,
+      "end": 570,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "GERD",
+      "label": "CONDITION",
+      "start": 572,
+      "end": 576,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "bipolar disorder",
+      "label": "CONDITION",
+      "start": 578,
+      "end": 594,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "anemia",
+      "label": "CONDITION",
+      "start": 600,
+      "end": 606,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "myoclonic jerks",
+      "label": "SYMPTOM",
+      "start": 647,
+      "end": 662,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "hypoglycemia",
+      "label": "CONDITION",
+      "start": 674,
+      "end": 686,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "anemia",
+      "label": "CONDITION",
+      "start": 691,
+      "end": 697,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lamictal",
+      "label": "MEDICATION",
+      "start": 890,
+      "end": 898,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "150 mg",
+      "label": "DOSAGE",
+      "start": 902,
+      "end": 908,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "in the morning",
+      "label": "FREQUENCY",
+      "start": 909,
+      "end": 923,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 928,
+      "end": 934,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "in the evening",
+      "label": "FREQUENCY",
+      "start": 935,
+      "end": 949,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "200 mg",
+      "label": "DOSAGE",
+      "start": 1003,
+      "end": 1009,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "b.i.d.",
+      "label": "FREQUENCY",
+      "start": 1010,
+      "end": 1016,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "diabetic gastroparesis",
+      "label": "CONDITION",
+      "start": 1062,
+      "end": 1084,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "hyperglycemia",
+      "label": "CONDITION",
+      "start": 1523,
+      "end": 1536,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "3 units per hour",
+      "label": "DOSAGE",
+      "start": 1776,
+      "end": 1792,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "0.8 units per hour",
+      "label": "DOSAGE",
+      "start": 1825,
+      "end": 1843,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "0.2 units per hour",
+      "label": "DOSAGE",
+      "start": 1882,
+      "end": 1900,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "NovoLog",
+      "label": "MEDICATION",
+      "start": 1949,
+      "end": 1956,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "mass at the right hepatic flexure",
+      "label": "CONDITION",
+      "start": 2105,
+      "end": 2138,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "possible lung metastasis",
+      "label": "CONDITION",
+      "start": 2585,
+      "end": 2609,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "septic-like picture",
+      "label": "CONDITION",
+      "start": 2662,
+      "end": 2681,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "hospital-acquired pneumonia",
+      "label": "CONDITION",
+      "start": 2702,
+      "end": 2729,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Zosyn",
+      "label": "MEDICATION",
+      "start": 2753,
+      "end": 2758,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Levaquin",
+      "label": "MEDICATION",
+      "start": 2760,
+      "end": 2768,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "vancomycin",
+      "label": "MEDICATION",
+      "start": 2774,
+      "end": 2784,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "vancomycin",
+      "label": "MEDICATION",
+      "start": 3037,
+      "end": 3047,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "MRSA bacteria",
+      "label": "CONDITION",
+      "start": 3057,
+      "end": 3070,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "three additional days",
+      "label": "DURATION",
+      "start": 3145,
+      "end": 3166,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Levaquin",
+      "label": "MEDICATION",
+      "start": 3175,
+      "end": 3183,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "750 mg",
+      "label": "DOSAGE",
+      "start": 3184,
+      "end": 3190,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "three additional days",
+      "label": "DURATION",
+      "start": 3202,
+      "end": 3223,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Bactrim DS",
+      "label": "MEDICATION",
+      "start": 3227,
+      "end": 3237,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "every 12 hours",
+      "label": "FREQUENCY",
+      "start": 3238,
+      "end": 3252,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Coreg",
+      "label": "MEDICATION",
+      "start": 3430,
+      "end": 3435,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "12.5 mg",
+      "label": "DOSAGE",
+      "start": 3436,
+      "end": 3443,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 3444,
+      "end": 3449,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lasix",
+      "label": "MEDICATION",
+      "start": 3454,
+      "end": 3459,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 3460,
+      "end": 3465,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "twice a day",
+      "label": "FREQUENCY",
+      "start": 3466,
+      "end": 3477,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "congestive heart failure",
+      "label": "CONDITION",
+      "start": 3486,
+      "end": 3510,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lipitor",
+      "label": "MEDICATION",
+      "start": 3553,
+      "end": 3560,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "high cholesterol",
+      "label": "CONDITION",
+      "start": 3569,
+      "end": 3585,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 3661,
+      "end": 3667,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "in the morning",
+      "label": "FREQUENCY",
+      "start": 3668,
+      "end": 3682,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "150 mg",
+      "label": "DOSAGE",
+      "start": 3687,
+      "end": 3693,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "at night",
+      "label": "FREQUENCY",
+      "start": 3694,
+      "end": 3702,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Coreg",
+      "label": "MEDICATION",
+      "start": 4071,
+      "end": 4076,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "12.5 mg",
+      "label": "DOSAGE",
+      "start": 4077,
+      "end": 4084,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "b.i.d.",
+      "label": "FREQUENCY",
+      "start": 4090,
+      "end": 4096,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lipitor",
+      "label": "MEDICATION",
+      "start": 4101,
+      "end": 4108,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 4109,
+      "end": 4114,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "at bedtime",
+      "label": "FREQUENCY",
+      "start": 4120,
+      "end": 4130,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Nitro-Dur",
+      "label": "MEDICATION",
+      "start": 4136,
+      "end": 4145,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "0.3 mg per hour",
+      "label": "DOSAGE",
+      "start": 4152,
+      "end": 4167,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one patch",
+      "label": "DOSAGE",
+      "start": 4168,
+      "end": 4177,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 4178,
+      "end": 4183,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Phenergan",
+      "label": "MEDICATION",
+      "start": 4189,
+      "end": 4198,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "6.25 mg",
+      "label": "DOSAGE",
+      "start": 4205,
+      "end": 4212,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q.4h.",
+      "label": "FREQUENCY",
+      "start": 4218,
+      "end": 4223,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "p.r.n.",
+      "label": "FREQUENCY",
+      "start": 4224,
+      "end": 4230,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Synthroid",
+      "label": "MEDICATION",
+      "start": 4235,
+      "end": 4244,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "0.175 mg",
+      "label": "DOSAGE",
+      "start": 4245,
+      "end": 4253,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 4259,
+      "end": 4264,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Zyrtec",
+      "label": "MEDICATION",
+      "start": 4270,
+      "end": 4276,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "10 mg",
+      "label": "DOSAGE",
+      "start": 4277,
+      "end": 4282,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 4288,
+      "end": 4293,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lamictal",
+      "label": "MEDICATION",
+      "start": 4299,
+      "end": 4307,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "100 mg",
+      "label": "DOSAGE",
+      "start": 4308,
+      "end": 4314,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 4320,
+      "end": 4325,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lamictal",
+      "label": "MEDICATION",
+      "start": 4331,
+      "end": 4339,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "150 mg",
+      "label": "DOSAGE",
+      "start": 4340,
+      "end": 4346,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "at bedtime",
+      "label": "FREQUENCY",
+      "start": 4352,
+      "end": 4362,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Ferrous sulfate",
+      "label": "MEDICATION",
+      "start": 4368,
+      "end": 4383,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "325 mg",
+      "label": "DOSAGE",
+      "start": 4390,
+      "end": 4396,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "b.i.d.",
+      "label": "FREQUENCY",
+      "start": 4407,
+      "end": 4413,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Nexium",
+      "label": "MEDICATION",
+      "start": 4419,
+      "end": 4425,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 4426,
+      "end": 4431,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "at breakfast",
+      "label": "FREQUENCY",
+      "start": 4437,
+      "end": 4449,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Neurontin",
+      "label": "MEDICATION",
+      "start": 4456,
+      "end": 4465,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "400 mg",
+      "label": "DOSAGE",
+      "start": 4466,
+      "end": 4472,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "t.i.d.",
+      "label": "FREQUENCY",
+      "start": 4478,
+      "end": 4484,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lasix",
+      "label": "MEDICATION",
+      "start": 4490,
+      "end": 4495,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "40 mg",
+      "label": "DOSAGE",
+      "start": 4496,
+      "end": 4501,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "b.i.d.",
+      "label": "FREQUENCY",
+      "start": 4507,
+      "end": 4513,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Fentanyl",
+      "label": "MEDICATION",
+      "start": 4519,
+      "end": 4527,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "50 mcg",
+      "label": "DOSAGE",
+      "start": 4528,
+      "end": 4534,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q.72h.",
+      "label": "FREQUENCY",
+      "start": 4553,
+      "end": 4559,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Calcium and vitamin D combination",
+      "label": "MEDICATION",
+      "start": 4565,
+      "end": 4598,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "calcium carbonate",
+      "label": "MEDICATION",
+      "start": 4600,
+      "end": 4617,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 4618,
+      "end": 4624,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "vitamin D",
+      "label": "MEDICATION",
+      "start": 4625,
+      "end": 4634,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "200 units",
+      "label": "DOSAGE",
+      "start": 4635,
+      "end": 4644,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one tab",
+      "label": "DOSAGE",
+      "start": 4645,
+      "end": 4652,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "t.i.d.",
+      "label": "FREQUENCY",
+      "start": 4658,
+      "end": 4664,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Bactrim DS",
+      "label": "MEDICATION",
+      "start": 4670,
+      "end": 4680,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "800mg/160 mg",
+      "label": "DOSAGE",
+      "start": 4681,
+      "end": 4693,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one tablet",
+      "label": "DOSAGE",
+      "start": 4701,
+      "end": 4711,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q.12h.",
+      "label": "FREQUENCY",
+      "start": 4712,
+      "end": 4718,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "x3 days",
+      "label": "DURATION",
+      "start": 4719,
+      "end": 4726,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Levaquin",
+      "label": "MEDICATION",
+      "start": 4733,
+      "end": 4741,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "750 mg",
+      "label": "DOSAGE",
+      "start": 4742,
+      "end": 4748,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one tablet",
+      "label": "DOSAGE",
+      "start": 4749,
+      "end": 4759,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "x3 days",
+      "label": "DURATION",
+      "start": 4765,
+      "end": 4772,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "colon cancer",
+      "label": "CONDITION",
+      "start": 5150,
+      "end": 5162,
+      "annotation_source": "manual"
+    }
+  ]
 }

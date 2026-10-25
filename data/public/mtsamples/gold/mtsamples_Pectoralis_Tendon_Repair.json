@@ -2,5 +2,69 @@
   "id": "mtsamples_Pectoralis_Tendon_Repair",
   "source_file": "mtsamples_Pectoralis_Tendon_Repair.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "Right pectoralis major tendon rupture",
+      "label": "CONDITION",
+      "start": 26,
+      "end": 63,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Right pectoralis major tendon rupture",
+      "label": "CONDITION",
+      "start": 92,
+      "end": 129,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "tearing burning pain severe in his right shoulder",
+      "label": "SYMPTOM",
+      "start": 485,
+      "end": 534,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "mild bruising over the proximal arm of the right side",
+      "label": "SYMPTOM",
+      "start": 564,
+      "end": 617,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "complete rupture of a portion of the pectoralis major tendon",
+      "label": "CONDITION",
+      "start": 732,
+      "end": 792,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "complete rupture of the sternal head of the pectoralis major tendon",
+      "label": "CONDITION",
+      "start": 1576,
+      "end": 1643,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "prophylactic antibiotics",
+      "label": "MEDICATION",
+      "start": 2648,
+      "end": 2672,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "approximately 10 days",
+      "label": "DURATION",
+      "start": 5294,
+      "end": 5315,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "4-6 week",
+      "label": "DURATION",
+      "start": 5404,
+      "end": 5412,
+      "annotation_source": "manual"
+    }
+  ]
 }

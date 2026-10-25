@@ -1,0 +1,98 @@
+{
+  "id": "mtsamples_Prostate_Adenocarcinoma_-_H_P",
+  "source_file": "mtsamples_Prostate_Adenocarcinoma_-_H_P.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "adenocarcinoma of the prostate",
+      "label": "CONDITION",
+      "start": 87,
+      "end": 117,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "right parietal lesion",
+      "label": "CONDITION",
+      "start": 415,
+      "end": 436,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "high blood pressure",
+      "label": "CONDITION",
+      "start": 870,
+      "end": 889,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "erectile dysfunction",
+      "label": "CONDITION",
+      "start": 908,
+      "end": 928,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Viagra",
+      "label": "MEDICATION",
+      "start": 955,
+      "end": 961,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lisinopril",
+      "label": "MEDICATION",
+      "start": 978,
+      "end": 988,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Aspirin",
+      "label": "MEDICATION",
+      "start": 990,
+      "end": 997,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Zocor",
+      "label": "MEDICATION",
+      "start": 999,
+      "end": 1004,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Prilosec",
+      "label": "MEDICATION",
+      "start": 1010,
+      "end": 1018,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "high blood pressure",
+      "label": "CONDITION",
+      "start": 1155,
+      "end": 1174,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "obstructive urinary symptoms",
+      "label": "SYMPTOM",
+      "start": 1239,
+      "end": 1267,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Adenocarcinoma of the prostate",
+      "label": "CONDITION",
+      "start": 1684,
+      "end": 1714,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Erectile dysfunction",
+      "label": "CONDITION",
+      "start": 1720,
+      "end": 1740,
+      "annotation_source": "manual"
+    }
+  ]
+}

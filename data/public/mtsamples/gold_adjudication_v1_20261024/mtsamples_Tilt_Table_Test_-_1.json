@@ -1,0 +1,105 @@
+{
+  "id": "mtsamples_Tilt_Table_Test_-_1",
+  "source_file": "mtsamples_Tilt_Table_Test_-_1.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "syncope",
+      "label": "CONDITION",
+      "start": 80,
+      "end": 87,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "dizziness",
+      "label": "SYMPTOM",
+      "start": 125,
+      "end": 134,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "20 minutes",
+      "label": "DURATION",
+      "start": 297,
+      "end": 307,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "20 minutes",
+      "label": "DURATION",
+      "start": 405,
+      "end": 415,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "nitroglycerin",
+      "label": "MEDICATION",
+      "start": 529,
+      "end": 542,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "0.4 mg",
+      "label": "DOSAGE",
+      "start": 543,
+      "end": 549,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "dizzy",
+      "label": "SYMPTOM",
+      "start": 569,
+      "end": 574,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "nauseous",
+      "label": "SYMPTOM",
+      "start": 667,
+      "end": 675,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "felt hot",
+      "label": "SYMPTOM",
+      "start": 680,
+      "end": 688,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "vasovagal syncope",
+      "label": "CONDITION",
+      "start": 816,
+      "end": 833,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one week",
+      "label": "DURATION",
+      "start": 972,
+      "end": 980,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Toprol-XL",
+      "label": "MEDICATION",
+      "start": 999,
+      "end": 1008,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "12.5 mg",
+      "label": "DOSAGE",
+      "start": 1009,
+      "end": 1016,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "every day",
+      "label": "FREQUENCY",
+      "start": 1017,
+      "end": 1026,
+      "annotation_source": "manual"
+    }
+  ]
+}

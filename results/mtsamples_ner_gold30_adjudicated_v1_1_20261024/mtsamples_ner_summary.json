@@ -1,0 +1,104 @@
+{
+  "dataset": "MTSamples",
+  "matching": "exact (start, end, label)",
+  "ner": "rule-based (extract_rule_based)",
+  "evaluated_note_count": 30,
+  "skipped_note_count": 0,
+  "gold_entity_count": 520,
+  "gold_entities_with_known_provenance": 520,
+  "gold_entities_with_unknown_provenance": 0,
+  "accepted_suggestion_count": 0,
+  "accepted_suggestion_share": 0.0,
+  "predicted_entity_count": 195,
+  "metrics": {
+    "CONDITION": {
+      "precision": 0.5925925925925926,
+      "recall": 0.07339449541284404,
+      "f1": 0.1306122448979592,
+      "tp": 16,
+      "fp": 11,
+      "fn": 202
+    },
+    "DOSAGE": {
+      "precision": 0.782608695652174,
+      "recall": 0.48,
+      "f1": 0.5950413223140497,
+      "tp": 36,
+      "fp": 10,
+      "fn": 39
+    },
+    "DURATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 4,
+      "fn": 26
+    },
+    "FREQUENCY": {
+      "precision": 0.8823529411764706,
+      "recall": 0.35714285714285715,
+      "f1": 0.5084745762711864,
+      "tp": 15,
+      "fp": 2,
+      "fn": 27
+    },
+    "MEDICATION": {
+      "precision": 0.6,
+      "recall": 0.13392857142857142,
+      "f1": 0.218978102189781,
+      "tp": 15,
+      "fp": 10,
+      "fn": 97
+    },
+    "SYMPTOM": {
+      "precision": 0.18421052631578946,
+      "recall": 0.2978723404255319,
+      "f1": 0.22764227642276422,
+      "tp": 14,
+      "fp": 62,
+      "fn": 33
+    },
+    "MICRO": {
+      "precision": 0.49230769230769234,
+      "recall": 0.18461538461538463,
+      "f1": 0.26853146853146853,
+      "tp": 96,
+      "fp": 99,
+      "fn": 424
+    }
+  },
+  "evaluated_note_ids": [
+    "mtsamples_2-D_Echocardiogram_-_1",
+    "mtsamples_Acute_Inferior_Myocardial_Infarction",
+    "mtsamples_Aortobifemoral_Bypass_-_1",
+    "mtsamples_Bunionectomy_Osteotomy",
+    "mtsamples_Carotid_Cerebral_Arteriograms",
+    "mtsamples_Carotid_Ultrasound",
+    "mtsamples_Chest_Pulmonary_Angio",
+    "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+    "mtsamples_Epididymectomy",
+    "mtsamples_Escharotomy",
+    "mtsamples_Esophagogastroduodenoscopy_-_3",
+    "mtsamples_Fat_Harvesting",
+    "mtsamples_Full-Field_Digital_Mammogram_FFDM_-_2",
+    "mtsamples_Leaking_Nephrostomy_Tube",
+    "mtsamples_Low-Transverse_C-Section",
+    "mtsamples_MGUS_Followup",
+    "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064",
+    "mtsamples_Pectoralis_Tendon_Repair",
+    "mtsamples_Prostate_Adenocarcinoma_-_H_P",
+    "mtsamples_Psychosocial_Eval_for_Kidney_Transplant",
+    "mtsamples_Radical_Mastectomy",
+    "mtsamples_Sebaceous_Cyst_Removal",
+    "mtsamples_Spinal_fluid_evaluation",
+    "mtsamples_Status_Post_T_A",
+    "mtsamples_Tenosynovectomy_Cortisone_Injection",
+    "mtsamples_Tilt_Table_Test_-_1",
+    "mtsamples_Total_Knee_Replacement",
+    "mtsamples_Total_Thyroid_Lumpectomy",
+    "mtsamples_Transesophageal_Echocardiogram",
+    "mtsamples_Weight_Gain_and_Edema"
+  ],
+  "evaluation_timestamp_utc": "2026-10-24T18:29:59.977863+00:00"
+}

@@ -1,0 +1,19 @@
+note_id,change_type,old_text,old_start,old_end,old_label,new_text,new_start,new_end,new_label,candidate_id,decision_source
+mtsamples_Acute_Inferior_Myocardial_Infarction,retained_no_change,diabetic,169,177,CONDITION,diabetic,169,177,CONDITION,Batch01-C1 (queue C01),adjudication_batch_01_condition.md; gold_adjudication_log.csv row(s) 3
+mtsamples_Acute_Inferior_Myocardial_Infarction,modified,shortness of breath & diaphoresis,550,583,SYMPTOM,shortness of breath,550,569,SYMPTOM,Batch03-C3 (queue PC01),"adjudication_batch_03_boundaries.md; gold_adjudication_log.csv row(s) 4,52"
+mtsamples_Acute_Inferior_Myocardial_Infarction,added,shortness of breath & diaphoresis,550,583,SYMPTOM,diaphoresis,572,583,SYMPTOM,Batch03-C3 (queue PC01),"adjudication_batch_03_boundaries.md; gold_adjudication_log.csv row(s) 4,52"
+mtsamples_Acute_Inferior_Myocardial_Infarction,modified,ever or chills,669,683,SYMPTOM,fever,668,673,SYMPTOM,Batch03-C5 (queue PC03),"adjudication_batch_03_boundaries.md; gold_adjudication_log.csv row(s) 5,53"
+mtsamples_Acute_Inferior_Myocardial_Infarction,added,ever or chills,669,683,SYMPTOM,chills,677,683,SYMPTOM,Batch03-C5 (queue PC03),"adjudication_batch_03_boundaries.md; gold_adjudication_log.csv row(s) 5,53"
+mtsamples_Acute_Inferior_Myocardial_Infarction,modified, episodes of vomiting,622,643,SYMPTOM,vomiting,635,643,SYMPTOM,Batch03-C4 (queue PC02),adjudication_batch_03_boundaries.md; gold_adjudication_log.csv row(s) 6
+mtsamples_Acute_Inferior_Myocardial_Infarction,removed,one-hour.,1123,1132,DURATION,,,,,Batch02-C1 (queue D01),adjudication_batch_02_duration.md; gold_adjudication_log.csv row(s) 7
+mtsamples_Acute_Inferior_Myocardial_Infarction,modified,Chest pain,19,29,CONDITION,Chest pain,19,29,SYMPTOM,Batch01-C8 (queue SC01),adjudication_batch_01_condition.md; gold_adjudication_log.csv row(s) 45
+mtsamples_Tilt_Table_Test_-_1,removed,20 minutes,297,307,DURATION,,,,,Batch02-C2 (queue D02),adjudication_batch_02_duration.md; gold_adjudication_log.csv row(s) 32
+mtsamples_Tilt_Table_Test_-_1,removed,20 minutes,405,415,DURATION,,,,,Batch02-C3 (queue D03),adjudication_batch_02_duration.md; gold_adjudication_log.csv row(s) 33
+mtsamples_2-D_Echocardiogram_-_1,removed,Normal size right and left ventricle,84,120,CONDITION,,,,,Batch01-C2 (queue C02),adjudication_batch_01_condition.md; gold_adjudication_log.csv row(s) 39
+mtsamples_2-D_Echocardiogram_-_1,removed,Normal LV systolic function with left ventricular ejection fraction of 51,126,199,CONDITION,,,,,Batch01-C3 (queue C05),adjudication_batch_01_condition.md; gold_adjudication_log.csv row(s) 40
+mtsamples_2-D_Echocardiogram_-_1,removed,Normal LV diastolic function,206,234,CONDITION,,,,,Batch01-C4 (queue C06),adjudication_batch_01_condition.md; gold_adjudication_log.csv row(s) 41
+mtsamples_2-D_Echocardiogram_-_1,removed,Mild mitral and tricuspid regurgitation,409,448,CONDITION,,,,,Batch01-C5 (queue C03),adjudication_batch_01_condition.md; gold_adjudication_log.csv row(s) 42
+mtsamples_2-D_Echocardiogram_-_1,removed,Trace aortic and pulmonary regurgitation.,454,495,CONDITION,,,,,Batch01-C6 (queue C09),adjudication_batch_01_condition.md; gold_adjudication_log.csv row(s) 43
+mtsamples_Carotid_Ultrasound,removed,greater than 50% stenosis,375,400,CONDITION,,,,,Batch01-C7 (queue C04),adjudication_batch_01_condition.md; gold_adjudication_log.csv row(s) 44
+mtsamples_Leaking_Nephrostomy_Tube,removed,one month ago,385,398,DURATION,,,,,Batch02-C6 (queue D08),adjudication_batch_02_duration.md; gold_adjudication_log.csv row(s) 48
+mtsamples_Low-Transverse_C-Section,removed,several minutes,2866,2881,DURATION,,,,,Batch02-C7 (queue D09),adjudication_batch_02_duration.md; gold_adjudication_log.csv row(s) 49

@@ -1,0 +1,70 @@
+{
+  "id": "mtsamples_Aortobifemoral_Bypass_-_1",
+  "source_file": "mtsamples_Aortobifemoral_Bypass_-_1.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "Aortoiliac occlusive disease bilaterally",
+      "label": "CONDITION",
+      "start": 27,
+      "end": 67,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Dementia",
+      "label": "CONDITION",
+      "start": 73,
+      "end": 81,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Aortoiliac occlusive disease bilaterally",
+      "label": "CONDITION",
+      "start": 111,
+      "end": 151,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Dementia",
+      "label": "CONDITION",
+      "start": 157,
+      "end": 165,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "dementia",
+      "label": "CONDITION",
+      "start": 715,
+      "end": 723,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Full-dose",
+      "label": "DOSAGE",
+      "start": 1951,
+      "end": 1960,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "heparin",
+      "label": "MEDICATION",
+      "start": 1961,
+      "end": 1968,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "full-dose",
+      "label": "DOSAGE",
+      "start": 3844,
+      "end": 3853,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "protamine",
+      "label": "MEDICATION",
+      "start": 3854,
+      "end": 3863,
+      "annotation_source": "manual"
+    }
+  ]
+}

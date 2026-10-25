@@ -2,5 +2,62 @@
   "id": "mtsamples_Radical_Mastectomy",
   "source_file": "mtsamples_Radical_Mastectomy.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "Invasive carcinoma of left breast",
+      "label": "CONDITION",
+      "start": 26,
+      "end": 59,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Invasive carcinoma of left breast",
+      "label": "CONDITION",
+      "start": 88,
+      "end": 121,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "General endotracheal",
+      "label": "MEDICATION",
+      "start": 194,
+      "end": 214,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "invasive carcinoma of the left breast",
+      "label": "CONDITION",
+      "start": 350,
+      "end": 387,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "0.25%",
+      "label": "DOSAGE",
+      "start": 1121,
+      "end": 1126,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Marcaine",
+      "label": "MEDICATION",
+      "start": 1127,
+      "end": 1135,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "epinephrine",
+      "label": "MEDICATION",
+      "start": 1141,
+      "end": 1152,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "clinically palpable lymph nodes",
+      "label": "CONDITION",
+      "start": 1855,
+      "end": 1886,
+      "annotation_source": "manual"
+    }
+  ]
 }

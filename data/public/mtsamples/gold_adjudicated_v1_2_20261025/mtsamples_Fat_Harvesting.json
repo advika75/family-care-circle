@@ -1,0 +1,49 @@
+{
+  "id": "mtsamples_Fat_Harvesting",
+  "source_file": "mtsamples_Fat_Harvesting.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "Incompetent glottis",
+      "label": "CONDITION",
+      "start": 26,
+      "end": 45,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Incompetent glottis",
+      "label": "CONDITION",
+      "start": 74,
+      "end": 93,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "100 cc",
+      "label": "DOSAGE",
+      "start": 742,
+      "end": 748,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "PhysioSol",
+      "label": "MEDICATION",
+      "start": 752,
+      "end": 761,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "100 units",
+      "label": "DOSAGE",
+      "start": 773,
+      "end": 782,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "regular insulin",
+      "label": "MEDICATION",
+      "start": 786,
+      "end": 801,
+      "annotation_source": "manual"
+    }
+  ]
+}

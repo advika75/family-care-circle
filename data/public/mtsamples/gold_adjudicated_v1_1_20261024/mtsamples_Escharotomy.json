@@ -1,0 +1,77 @@
+{
+  "id": "mtsamples_Escharotomy",
+  "source_file": "mtsamples_Escharotomy.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "burn to the bilateral upper extremities and neck and anterior thorax",
+      "label": "CONDITION",
+      "start": 54,
+      "end": 122,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "impending compartment syndrome of the right upper extremity",
+      "label": "CONDITION",
+      "start": 128,
+      "end": 187,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "burn to the bilateral upper extremities and neck and anterior thorax",
+      "label": "CONDITION",
+      "start": 244,
+      "end": 312,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "impending compartment syndrome of the right upper extremity",
+      "label": "CONDITION",
+      "start": 318,
+      "end": 377,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Propofol",
+      "label": "MEDICATION",
+      "start": 537,
+      "end": 545,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Versed",
+      "label": "MEDICATION",
+      "start": 550,
+      "end": 556,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "significant burns to his bilateral upper extremities, neck, and thorax",
+      "label": "CONDITION",
+      "start": 685,
+      "end": 755,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "impending compartment syndrome of the right upper extremity",
+      "label": "CONDITION",
+      "start": 853,
+      "end": 912,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "very tight compartment of his right upper extremity",
+      "label": "CONDITION",
+      "start": 986,
+      "end": 1037,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Silvadene",
+      "label": "MEDICATION",
+      "start": 2321,
+      "end": 2330,
+      "annotation_source": "manual"
+    }
+  ]
+}

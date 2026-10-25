@@ -2,5 +2,20 @@
   "id": "mtsamples_Epididymectomy",
   "source_file": "mtsamples_Epididymectomy.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "0.25%",
+      "label": "DOSAGE",
+      "start": 882,
+      "end": 887,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Marcaine",
+      "label": "MEDICATION",
+      "start": 888,
+      "end": 896,
+      "annotation_source": "manual"
+    }
+  ]
 }

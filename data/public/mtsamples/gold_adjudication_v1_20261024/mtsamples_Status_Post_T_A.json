@@ -1,0 +1,98 @@
+{
+  "id": "mtsamples_Status_Post_T_A",
+  "source_file": "mtsamples_Status_Post_T_A.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "two weeks ago",
+      "label": "DURATION",
+      "start": 77,
+      "end": 90,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "loud snoring at night",
+      "label": "SYMPTOM",
+      "start": 155,
+      "end": 176,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "sinus infections",
+      "label": "CONDITION",
+      "start": 178,
+      "end": 194,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "throat infections",
+      "label": "CONDITION",
+      "start": 196,
+      "end": 213,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "not sleeping well",
+      "label": "SYMPTOM",
+      "start": 215,
+      "end": 232,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "fatigue",
+      "label": "SYMPTOM",
+      "start": 238,
+      "end": 245,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Augmentin",
+      "label": "MEDICATION",
+      "start": 465,
+      "end": 474,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lortab",
+      "label": "MEDICATION",
+      "start": 513,
+      "end": 519,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "ibuprofen",
+      "label": "MEDICATION",
+      "start": 971,
+      "end": 980,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "mouth or jaws are still sensitive",
+      "label": "SYMPTOM",
+      "start": 993,
+      "end": 1026,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "chronic sinusitis",
+      "label": "CONDITION",
+      "start": 1254,
+      "end": 1271,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "chronic hypertrophic tonsillitis",
+      "label": "CONDITION",
+      "start": 1276,
+      "end": 1308,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "adenoiditis",
+      "label": "CONDITION",
+      "start": 1313,
+      "end": 1324,
+      "annotation_source": "manual"
+    }
+  ]
+}

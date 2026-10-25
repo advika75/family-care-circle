@@ -1,0 +1,157 @@
+{
+  "seed": 42,
+  "selection_source": "data/public/mtsamples/notes",
+  "count": 30,
+  "annotations": [
+    {
+      "id": "mtsamples_2-D_Echocardiogram_-_1",
+      "source_file": "mtsamples_2-D_Echocardiogram_-_1.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Acute_Inferior_Myocardial_Infarction",
+      "source_file": "mtsamples_Acute_Inferior_Myocardial_Infarction.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Aortobifemoral_Bypass_-_1",
+      "source_file": "mtsamples_Aortobifemoral_Bypass_-_1.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Bunionectomy_Osteotomy",
+      "source_file": "mtsamples_Bunionectomy_Osteotomy.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Carotid_Cerebral_Arteriograms",
+      "source_file": "mtsamples_Carotid_Cerebral_Arteriograms.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Carotid_Ultrasound",
+      "source_file": "mtsamples_Carotid_Ultrasound.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Chest_Pulmonary_Angio",
+      "source_file": "mtsamples_Chest_Pulmonary_Angio.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
+      "source_file": "mtsamples_EMG_Nerve_Conduction_Study_-_6.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Epididymectomy",
+      "source_file": "mtsamples_Epididymectomy.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Escharotomy",
+      "source_file": "mtsamples_Escharotomy.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Esophagogastroduodenoscopy_-_3",
+      "source_file": "mtsamples_Esophagogastroduodenoscopy_-_3.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Fat_Harvesting",
+      "source_file": "mtsamples_Fat_Harvesting.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Full-Field_Digital_Mammogram_FFDM_-_2",
+      "source_file": "mtsamples_Full-Field_Digital_Mammogram_FFDM_-_2.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Leaking_Nephrostomy_Tube",
+      "source_file": "mtsamples_Leaking_Nephrostomy_Tube.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Low-Transverse_C-Section",
+      "source_file": "mtsamples_Low-Transverse_C-Section.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_MGUS_Followup",
+      "source_file": "mtsamples_MGUS_Followup.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064",
+      "source_file": "mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Pectoralis_Tendon_Repair",
+      "source_file": "mtsamples_Pectoralis_Tendon_Repair.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Prostate_Adenocarcinoma_-_H_P",
+      "source_file": "mtsamples_Prostate_Adenocarcinoma_-_H_P.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant",
+      "source_file": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Radical_Mastectomy",
+      "source_file": "mtsamples_Radical_Mastectomy.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Sebaceous_Cyst_Removal",
+      "source_file": "mtsamples_Sebaceous_Cyst_Removal.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Spinal_fluid_evaluation",
+      "source_file": "mtsamples_Spinal_fluid_evaluation.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Status_Post_T_A",
+      "source_file": "mtsamples_Status_Post_T_A.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Tenosynovectomy_Cortisone_Injection",
+      "source_file": "mtsamples_Tenosynovectomy_Cortisone_Injection.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Tilt_Table_Test_-_1",
+      "source_file": "mtsamples_Tilt_Table_Test_-_1.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Total_Knee_Replacement",
+      "source_file": "mtsamples_Total_Knee_Replacement.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Total_Thyroid_Lumpectomy",
+      "source_file": "mtsamples_Total_Thyroid_Lumpectomy.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Transesophageal_Echocardiogram",
+      "source_file": "mtsamples_Transesophageal_Echocardiogram.txt",
+      "status": "complete"
+    },
+    {
+      "id": "mtsamples_Weight_Gain_and_Edema",
+      "source_file": "mtsamples_Weight_Gain_and_Edema.txt",
+      "status": "complete"
+    }
+  ]
+}

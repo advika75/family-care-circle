@@ -1,0 +1,91 @@
+{
+  "id": "mtsamples_Total_Knee_Replacement",
+  "source_file": "mtsamples_Total_Knee_Replacement.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "Degenerative arthritis of the left knee",
+      "label": "CONDITION",
+      "start": 25,
+      "end": 64,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Degenerative arthritis of the left knee",
+      "label": "CONDITION",
+      "start": 92,
+      "end": 131,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "76 minutes",
+      "label": "DURATION",
+      "start": 341,
+      "end": 351,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Degenerative ware of three compartments",
+      "label": "CONDITION",
+      "start": 638,
+      "end": 677,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "minimal osteophytes",
+      "label": "CONDITION",
+      "start": 828,
+      "end": 847,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "bilateral knee pain",
+      "label": "SYMPTOM",
+      "start": 961,
+      "end": 980,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "for several years",
+      "label": "DURATION",
+      "start": 981,
+      "end": 998,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "past several months",
+      "label": "DURATION",
+      "start": 1030,
+      "end": 1049,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "anti-inflammatory medications",
+      "label": "MEDICATION",
+      "start": 1157,
+      "end": 1186,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "cortisone",
+      "label": "MEDICATION",
+      "start": 1198,
+      "end": 1207,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Synvisc",
+      "label": "MEDICATION",
+      "start": 1212,
+      "end": 1219,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "chondrocalcinosis of the lateral meniscus",
+      "label": "CONDITION",
+      "start": 2297,
+      "end": 2338,
+      "annotation_source": "manual"
+    }
+  ]
+}

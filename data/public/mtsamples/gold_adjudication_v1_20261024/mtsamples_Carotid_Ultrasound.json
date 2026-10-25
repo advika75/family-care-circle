@@ -1,0 +1,105 @@
+{
+  "id": "mtsamples_Carotid_Ultrasound",
+  "source_file": "mtsamples_Carotid_Ultrasound.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "Headache",
+      "label": "SYMPTOM",
+      "start": 57,
+      "end": 65,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "mild intimal thickening",
+      "label": "CONDITION",
+      "start": 225,
+      "end": 248,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "heterogeneous hard plaque",
+      "label": "CONDITION",
+      "start": 306,
+      "end": 331,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "greater than 50% stenosis",
+      "label": "CONDITION",
+      "start": 375,
+      "end": 400,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "plaque formation",
+      "label": "CONDITION",
+      "start": 685,
+      "end": 701,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "greater than 50% stenosis",
+      "label": "CONDITION",
+      "start": 722,
+      "end": 747,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "intimal thickening",
+      "label": "CONDITION",
+      "start": 1188,
+      "end": 1206,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "pronounced plaque formation",
+      "label": "CONDITION",
+      "start": 1290,
+      "end": 1317,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "approximately 50% stenosis",
+      "label": "CONDITION",
+      "start": 1323,
+      "end": 1349,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "prominent focus of hard plaque",
+      "label": "CONDITION",
+      "start": 1612,
+      "end": 1642,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "at least 50% stenosis",
+      "label": "CONDITION",
+      "start": 1654,
+      "end": 1675,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "spectral broadening",
+      "label": "CONDITION",
+      "start": 1840,
+      "end": 1859,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "bilateral hard plaque",
+      "label": "CONDITION",
+      "start": 2197,
+      "end": 2218,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "at least 50% stenosis",
+      "label": "CONDITION",
+      "start": 2274,
+      "end": 2295,
+      "annotation_source": "manual"
+    }
+  ]
+}

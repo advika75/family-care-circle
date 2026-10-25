@@ -1,0 +1,77 @@
+{
+  "id": "mtsamples_Leaking_Nephrostomy_Tube",
+  "source_file": "mtsamples_Leaking_Nephrostomy_Tube.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "leaked around the ostomy site",
+      "label": "SYMPTOM",
+      "start": 145,
+      "end": 174,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "prostate cancer metastasizing",
+      "label": "CONDITION",
+      "start": 416,
+      "end": 445,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "bilateral ureteral obstructions",
+      "label": "CONDITION",
+      "start": 458,
+      "end": 489,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "acute renal failure",
+      "label": "CONDITION",
+      "start": 523,
+      "end": 542,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Metastatic prostate cancer",
+      "label": "CONDITION",
+      "start": 899,
+      "end": 925,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "anemia",
+      "label": "CONDITION",
+      "start": 927,
+      "end": 933,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 935,
+      "end": 947,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "WEAK NEPHROSTOMY SITE FOR THE RIGHT NEPHROSTOMY TUBE",
+      "label": "CONDITION",
+      "start": 3975,
+      "end": 4027,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "PROSTATE CANCER, METASTATIC",
+      "label": "CONDITION",
+      "start": 4033,
+      "end": 4060,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "URETERAL OBSTRUCTION",
+      "label": "CONDITION",
+      "start": 4066,
+      "end": 4086,
+      "annotation_source": "manual"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "mtsamples_MGUS_Followup",
+  "source_file": "mtsamples_MGUS_Followup.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "MGUS",
+      "label": "CONDITION",
+      "start": 19,
+      "end": 23,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "MGUS",
+      "label": "CONDITION",
+      "start": 129,
+      "end": 133,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "thrombocytopenia",
+      "label": "CONDITION",
+      "start": 160,
+      "end": 176,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "plasma cell dyscrasia",
+      "label": "CONDITION",
+      "start": 533,
+      "end": 554,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "MGUS",
+      "label": "CONDITION",
+      "start": 603,
+      "end": 607,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 696,
+      "end": 715,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "two times per week",
+      "label": "FREQUENCY",
+      "start": 754,
+      "end": 772,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Multivitamin",
+      "label": "MEDICATION",
+      "start": 1023,
+      "end": 1035,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q.d.",
+      "label": "FREQUENCY",
+      "start": 1036,
+      "end": 1040,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "aspirin",
+      "label": "MEDICATION",
+      "start": 1042,
+      "end": 1049,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one tablet",
+      "label": "DOSAGE",
+      "start": 1050,
+      "end": 1060,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q.d.",
+      "label": "FREQUENCY",
+      "start": 1061,
+      "end": 1065,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lupron",
+      "label": "MEDICATION",
+      "start": 1067,
+      "end": 1073,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q. three months",
+      "label": "FREQUENCY",
+      "start": 1074,
+      "end": 1089,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Flomax",
+      "label": "MEDICATION",
+      "start": 1091,
+      "end": 1097,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "0.4 mg",
+      "label": "DOSAGE",
+      "start": 1099,
+      "end": 1105,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q.d.",
+      "label": "FREQUENCY",
+      "start": 1106,
+      "end": 1110,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Warfarin",
+      "label": "MEDICATION",
+      "start": 1116,
+      "end": 1124,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "2.5 mg",
+      "label": "DOSAGE",
+      "start": 1125,
+      "end": 1131,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q.d.",
+      "label": "FREQUENCY",
+      "start": 1132,
+      "end": 1136,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Prostate cancer",
+      "label": "CONDITION",
+      "start": 1309,
+      "end": 1324,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lupron",
+      "label": "MEDICATION",
+      "start": 1399,
+      "end": 1405,
+      "annotation_source": "manual"
+    }
+  ]
+}

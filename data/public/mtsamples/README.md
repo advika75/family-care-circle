@@ -3,7 +3,9 @@
 Put a locally obtained and authorized CSV here as `source.csv`. The preparation command accepts a CSV
 header containing the required `transcription` column. An optional stable identifier may be supplied in
 `id`, `sample_name`, or `sample_id`; otherwise the source row number is used. It writes at most 100 reproducibly sampled `.txt`
-notes under `notes/` and a `subset.json` record. Source CSV and prepared clinical text are git-ignored.
+notes under `notes/` and a `subset.json` record. Preparation refuses to write into a non-empty output
+directory so it cannot silently replace an earlier subset; use a new `--output-dir` for another run. Source
+CSV and prepared clinical text are git-ignored.
 
 Gold annotations, if prepared, belong in `gold/` and use the same format and span conventions as
 `data/gold/`: one JSON per note stem, with `id`, `source_file`, `annotator`, and `entities` containing

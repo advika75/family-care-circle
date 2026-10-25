@@ -2,5 +2,104 @@
   "id": "mtsamples_Total_Thyroid_Lumpectomy",
   "source_file": "mtsamples_Total_Thyroid_Lumpectomy.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "Left thyroid mass",
+      "label": "CONDITION",
+      "start": 26,
+      "end": 43,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Left thyroid mass",
+      "label": "CONDITION",
+      "start": 72,
+      "end": 89,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "left thyroid mass nodule",
+      "label": "CONDITION",
+      "start": 340,
+      "end": 364,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "hot nodule on the left anterior pole",
+      "label": "CONDITION",
+      "start": 450,
+      "end": 486,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1%",
+      "label": "DOSAGE",
+      "start": 1031,
+      "end": 1033,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "lidocaine",
+      "label": "MEDICATION",
+      "start": 1034,
+      "end": 1043,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "epinephrine",
+      "label": "MEDICATION",
+      "start": 1049,
+      "end": 1060,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1:1000",
+      "label": "DOSAGE",
+      "start": 1061,
+      "end": 1067,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "7 cc",
+      "label": "DOSAGE",
+      "start": 1082,
+      "end": 1086,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "thyroid nodule in the posterior inferior aspect",
+      "label": "CONDITION",
+      "start": 2741,
+      "end": 2788,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "normal saline solution",
+      "label": "MEDICATION",
+      "start": 3986,
+      "end": 4008,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "bacitracin",
+      "label": "MEDICATION",
+      "start": 4547,
+      "end": 4557,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "23-hour",
+      "label": "DURATION",
+      "start": 4818,
+      "end": 4825,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one week",
+      "label": "DURATION",
+      "start": 4865,
+      "end": 4873,
+      "annotation_source": "manual"
+    }
+  ]
 }

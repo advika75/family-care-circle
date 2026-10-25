@@ -2,5 +2,153 @@
   "id": "mtsamples_Bunionectomy_Osteotomy",
   "source_file": "mtsamples_Bunionectomy_Osteotomy.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "Hallux valgus",
+      "label": "CONDITION",
+      "start": 28,
+      "end": 41,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Hallux interphalangeus",
+      "label": "CONDITION",
+      "start": 59,
+      "end": 81,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Hallux valgus",
+      "label": "CONDITION",
+      "start": 124,
+      "end": 137,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Hallux interphalangeus",
+      "label": "CONDITION",
+      "start": 155,
+      "end": 177,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "painful bunion",
+      "label": "CONDITION",
+      "start": 539,
+      "end": 553,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "painful bunion",
+      "label": "CONDITION",
+      "start": 627,
+      "end": 641,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "over the past several years",
+      "label": "DURATION",
+      "start": 642,
+      "end": 669,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "15 cc",
+      "label": "DOSAGE",
+      "start": 1506,
+      "end": 1511,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "0.5%",
+      "label": "DOSAGE",
+      "start": 1530,
+      "end": 1534,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Marcaine",
+      "label": "MEDICATION",
+      "start": 1535,
+      "end": 1543,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1%",
+      "label": "DOSAGE",
+      "start": 1554,
+      "end": 1556,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lidocaine",
+      "label": "MEDICATION",
+      "start": 1557,
+      "end": 1566,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1 cc",
+      "label": "DOSAGE",
+      "start": 5158,
+      "end": 5162,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "dexamethasone phosphate",
+      "label": "MEDICATION",
+      "start": 5166,
+      "end": 5189,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Vicodin ES",
+      "label": "MEDICATION",
+      "start": 5868,
+      "end": 5878,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one p.o.",
+      "label": "DOSAGE",
+      "start": 5883,
+      "end": 5891,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q.4-6h.",
+      "label": "FREQUENCY",
+      "start": 5892,
+      "end": 5899,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Naprosyn",
+      "label": "MEDICATION",
+      "start": 5916,
+      "end": 5924,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one p.o.",
+      "label": "DOSAGE",
+      "start": 5925,
+      "end": 5933,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "b.i.d.",
+      "label": "FREQUENCY",
+      "start": 5934,
+      "end": 5940,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "500 mg",
+      "label": "DOSAGE",
+      "start": 5942,
+      "end": 5948,
+      "annotation_source": "manual"
+    }
+  ]
 }

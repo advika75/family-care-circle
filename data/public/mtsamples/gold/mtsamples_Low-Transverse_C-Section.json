@@ -2,5 +2,62 @@
   "id": "mtsamples_Low-Transverse_C-Section",
   "source_file": "mtsamples_Low-Transverse_C-Section.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "Intrauterine pregnancy at term",
+      "label": "CONDITION",
+      "start": 28,
+      "end": 58,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Arrest of dilation",
+      "label": "CONDITION",
+      "start": 64,
+      "end": 82,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Intrauterine pregnancy at term",
+      "label": "CONDITION",
+      "start": 114,
+      "end": 144,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Arrest of dilation",
+      "label": "CONDITION",
+      "start": 150,
+      "end": 168,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Epidural",
+      "label": "MEDICATION",
+      "start": 248,
+      "end": 256,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Pitocin",
+      "label": "MEDICATION",
+      "start": 706,
+      "end": 713,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "arrested dilation",
+      "label": "CONDITION",
+      "start": 800,
+      "end": 817,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "several minutes",
+      "label": "DURATION",
+      "start": 2866,
+      "end": 2881,
+      "annotation_source": "manual"
+    }
+  ]
 }

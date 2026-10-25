@@ -1,0 +1,140 @@
+{
+  "id": "mtsamples_Chest_Pulmonary_Angio",
+  "source_file": "mtsamples_Chest_Pulmonary_Angio.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "pulmonary embolism",
+      "label": "CONDITION",
+      "start": 67,
+      "end": 85,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "100 mL",
+      "label": "DOSAGE",
+      "start": 151,
+      "end": 157,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Isovue-300",
+      "label": "MEDICATION",
+      "start": 161,
+      "end": 171,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "very large heterogeneous right chest wall mass",
+      "label": "CONDITION",
+      "start": 641,
+      "end": 687,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "heterogeneous focus of neoplasm",
+      "label": "CONDITION",
+      "start": 789,
+      "end": 820,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "bilateral pleural effusions",
+      "label": "CONDITION",
+      "start": 1060,
+      "end": 1087,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "atelectasis",
+      "label": "CONDITION",
+      "start": 1149,
+      "end": 1160,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "extensive right lung consolidations",
+      "label": "CONDITION",
+      "start": 1178,
+      "end": 1213,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "spiculated region of increased density at the right lung apex",
+      "label": "CONDITION",
+      "start": 1310,
+      "end": 1371,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "fibrosis",
+      "label": "CONDITION",
+      "start": 1392,
+      "end": 1400,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "scarring",
+      "label": "CONDITION",
+      "start": 1404,
+      "end": 1412,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "subcarinal adenopathy",
+      "label": "CONDITION",
+      "start": 1576,
+      "end": 1597,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "metastatic disease",
+      "label": "CONDITION",
+      "start": 1657,
+      "end": 1675,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "aortic root and arch and descending thoracic aortic calcification",
+      "label": "CONDITION",
+      "start": 1692,
+      "end": 1757,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "soft plaque",
+      "label": "CONDITION",
+      "start": 1791,
+      "end": 1802,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "region of lower density within the right hepatic lobe",
+      "label": "CONDITION",
+      "start": 2002,
+      "end": 2055,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "extensive rib destruction",
+      "label": "CONDITION",
+      "start": 2324,
+      "end": 2349,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "large right chest wall mass",
+      "label": "CONDITION",
+      "start": 2494,
+      "end": 2521,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "consolidations and infiltrates",
+      "label": "CONDITION",
+      "start": 2751,
+      "end": 2781,
+      "annotation_source": "manual"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "id": "mtsamples_Tenosynovectomy_Cortisone_Injection",
+  "source_file": "mtsamples_Tenosynovectomy_Cortisone_Injection.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "EMG-proven left carpal tunnel syndrome",
+      "label": "CONDITION",
+      "start": 27,
+      "end": 65,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Tenosynovitis of the left third and fourth fingers at the A1 and A2 pulley level",
+      "label": "CONDITION",
+      "start": 71,
+      "end": 151,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Dupuytren's nodule in the palm",
+      "label": "CONDITION",
+      "start": 157,
+      "end": 187,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "EMG-proven left carpal tunnel syndrome",
+      "label": "CONDITION",
+      "start": 217,
+      "end": 255,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Tenosynovitis of the left third and fourth fingers at the A1 and A2 pulley level",
+      "label": "CONDITION",
+      "start": 261,
+      "end": 341,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Dupuytren's nodule in the palm",
+      "label": "CONDITION",
+      "start": 347,
+      "end": 377,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "10 cc",
+      "label": "DOSAGE",
+      "start": 830,
+      "end": 835,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1%",
+      "label": "DOSAGE",
+      "start": 852,
+      "end": 854,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Xylocaine",
+      "label": "MEDICATION",
+      "start": 855,
+      "end": 864,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "0.5%",
+      "label": "DOSAGE",
+      "start": 869,
+      "end": 873,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Marcaine",
+      "label": "MEDICATION",
+      "start": 874,
+      "end": 882,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "3 cc",
+      "label": "DOSAGE",
+      "start": 2541,
+      "end": 2545,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Kenalog-10",
+      "label": "MEDICATION",
+      "start": 2549,
+      "end": 2559,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "3 cc",
+      "label": "DOSAGE",
+      "start": 2564,
+      "end": 2568,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1%",
+      "label": "DOSAGE",
+      "start": 2572,
+      "end": 2574,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Xylocaine",
+      "label": "MEDICATION",
+      "start": 2575,
+      "end": 2584,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1 cc",
+      "label": "DOSAGE",
+      "start": 2634,
+      "end": 2638,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1 cc",
+      "label": "DOSAGE",
+      "start": 2773,
+      "end": 2777,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1 cc",
+      "label": "DOSAGE",
+      "start": 2891,
+      "end": 2895,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Darvocet-N 100",
+      "label": "MEDICATION",
+      "start": 3339,
+      "end": 3353,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "30 tablets",
+      "label": "DOSAGE",
+      "start": 3355,
+      "end": 3365,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one to two",
+      "label": "DOSAGE",
+      "start": 3367,
+      "end": 3377,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "q.4h.",
+      "label": "FREQUENCY",
+      "start": 3381,
+      "end": 3386,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "p.r.n.",
+      "label": "FREQUENCY",
+      "start": 3387,
+      "end": 3393,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "24-48 hours",
+      "label": "DURATION",
+      "start": 3495,
+      "end": 3506,
+      "annotation_source": "manual"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "mtsamples_Transesophageal_Echocardiogram",
+  "source_file": "mtsamples_Transesophageal_Echocardiogram.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "Atrial fibrillation with rapid ventricular rate",
+      "label": "CONDITION",
+      "start": 96,
+      "end": 143,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Shortness of breath",
+      "label": "SYMPTOM",
+      "start": 149,
+      "end": 168,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "4 mg",
+      "label": "DOSAGE",
+      "start": 266,
+      "end": 270,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Versed",
+      "label": "MEDICATION",
+      "start": 274,
+      "end": 280,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "50 mcg",
+      "label": "DOSAGE",
+      "start": 285,
+      "end": 291,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "fentanyl",
+      "label": "MEDICATION",
+      "start": 295,
+      "end": 303,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Left atrium is dilated",
+      "label": "CONDITION",
+      "start": 610,
+      "end": 632,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "mild MAC",
+      "label": "CONDITION",
+      "start": 788,
+      "end": 796,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "moderate mitral regurgitation",
+      "label": "CONDITION",
+      "start": 1055,
+      "end": 1084,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Mild-to-moderate AI",
+      "label": "CONDITION",
+      "start": 1102,
+      "end": 1121,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Dilated left atrium",
+      "label": "CONDITION",
+      "start": 1297,
+      "end": 1316,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Moderate mitral regurgitation",
+      "label": "CONDITION",
+      "start": 1322,
+      "end": 1351,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Aortic valve sclerosis",
+      "label": "CONDITION",
+      "start": 1357,
+      "end": 1379,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "mild-to-moderate aortic insufficiency",
+      "label": "CONDITION",
+      "start": 1385,
+      "end": 1422,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 1728,
+      "end": 1747,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "beta-blocker",
+      "label": "MEDICATION",
+      "start": 1823,
+      "end": 1835,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "calcium channel blockers",
+      "label": "MEDICATION",
+      "start": 1837,
+      "end": 1861,
+      "annotation_source": "manual"
+    }
+  ]
+}

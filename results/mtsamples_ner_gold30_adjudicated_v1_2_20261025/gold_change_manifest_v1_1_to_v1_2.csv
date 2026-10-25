@@ -1,0 +1,12 @@
+note_id,change_type,old_text,old_start,old_end,old_label,new_text,new_start,new_end,new_label,candidate_id,decision_source
+mtsamples_Acute_Inferior_Myocardial_Infarction,shrunk,Humulin N. insulin,1708,1726,MEDICATION,Humulin N,1708,1717,MEDICATION,Batch04-C7 (queue M01),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 8
+mtsamples_Acute_Inferior_Myocardial_Infarction,removed,over the past 1 hour,948,968,DURATION,,,,,Batch04-C4 (queue D05),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 47
+mtsamples_Acute_Inferior_Myocardial_Infarction,trimmed, Nitroglycerin,1762,1776,MEDICATION,Nitroglycerin,1763,1776,MEDICATION,Batch04-C9 (queue M03),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 54
+mtsamples_Acute_Inferior_Myocardial_Infarction,relabeled,chest pain,141,151,CONDITION,chest pain,141,151,SYMPTOM,Batch04-C10 (queue SC03),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 55
+mtsamples_Acute_Inferior_Myocardial_Infarction,added,,,,,chest pain,275,285,SYMPTOM,Batch04-addition (explicit approval),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 56
+mtsamples_Acute_Inferior_Myocardial_Infarction,added,,,,,chest pain,1800,1810,SYMPTOM,Batch04-addition (explicit approval),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 57
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,relabeled,Dyspnea,85,92,CONDITION,Dyspnea,85,92,SYMPTOM,Batch04-C1 (queue SC02),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 23
+mtsamples_Multiple_Medical_Problems_-_Discharge_Summary_064,removed,for 26 years,488,500,DURATION,,,,,Batch04-C5 (queue D10),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 50
+mtsamples_Pectoralis_Tendon_Repair,removed,prophylactic antibiotics,2648,2672,MEDICATION,,,,,Batch04-C8 (queue M02),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 24
+mtsamples_Pectoralis_Tendon_Repair,retained_no_change,approximately 10 days,5294,5315,DURATION,approximately 10 days,5294,5315,DURATION,Batch04-C3 (queue D04),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 46
+mtsamples_Tenosynovectomy_Cortisone_Injection,removed,24-48 hours,3495,3506,DURATION,,,,,Batch04-C6 (queue D15),adjudication_batch_04_open_items.md; gold_adjudication_log.csv row 51

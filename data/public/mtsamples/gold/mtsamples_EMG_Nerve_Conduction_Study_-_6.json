@@ -2,5 +2,62 @@
   "id": "mtsamples_EMG_Nerve_Conduction_Study_-_6",
   "source_file": "mtsamples_EMG_Nerve_Conduction_Study_-_6.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "left leg symptoms",
+      "label": "SYMPTOM",
+      "start": 166,
+      "end": 183,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "four-month",
+      "label": "DURATION",
+      "start": 209,
+      "end": 219,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "right-sided low back pain",
+      "label": "SYMPTOM",
+      "start": 248,
+      "end": 273,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "pain radiating down into his buttock and posterior aspect of his right leg into the ankle",
+      "label": "SYMPTOM",
+      "start": 279,
+      "end": 368,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "subtle right leg weakness",
+      "label": "SYMPTOM",
+      "start": 493,
+      "end": 518,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "right paracentral disc at L5-S1",
+      "label": "CONDITION",
+      "start": 861,
+      "end": 892,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "chronic denervation",
+      "label": "CONDITION",
+      "start": 1519,
+      "end": 1538,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "acute right S1 radiculopathy",
+      "label": "CONDITION",
+      "start": 1664,
+      "end": 1692,
+      "annotation_source": "manual"
+    }
+  ]
 }

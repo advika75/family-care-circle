@@ -2,5 +2,195 @@
   "id": "mtsamples_Acute_Inferior_Myocardial_Infarction",
   "source_file": "mtsamples_Acute_Inferior_Myocardial_Infarction.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "Chest pain",
+      "label": "CONDITION",
+      "start": 19,
+      "end": 29,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "chest pain",
+      "label": "CONDITION",
+      "start": 141,
+      "end": 151,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "diabetic",
+      "label": "CONDITION",
+      "start": 169,
+      "end": 177,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "coronary artery disease",
+      "label": "CONDITION",
+      "start": 205,
+      "end": 228,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "shortness of breath & diaphoresis",
+      "label": "SYMPTOM",
+      "start": 550,
+      "end": 583,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "nausea",
+      "label": "SYMPTOM",
+      "start": 612,
+      "end": 618,
+      "annotation_source": "manual"
+    },
+    {
+      "text": " episodes of vomiting",
+      "label": "SYMPTOM",
+      "start": 622,
+      "end": 643,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "ever or chills",
+      "label": "SYMPTOM",
+      "start": 669,
+      "end": 683,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "nitroglycerin tablets",
+      "label": "MEDICATION",
+      "start": 913,
+      "end": 934,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "over the past 1 hour",
+      "label": "DURATION",
+      "start": 948,
+      "end": 968,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "one-hour.",
+      "label": "DURATION",
+      "start": 1123,
+      "end": 1132,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Diabetes mellitus type II",
+      "label": "CONDITION",
+      "start": 1363,
+      "end": 1388,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 1390,
+      "end": 1402,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "atrial fibrillation",
+      "label": "CONDITION",
+      "start": 1429,
+      "end": 1448,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Aspirin",
+      "label": "MEDICATION",
+      "start": 1679,
+      "end": 1686,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "81 milligrams",
+      "label": "DOSAGE",
+      "start": 1687,
+      "end": 1700,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "QDay",
+      "label": "FREQUENCY",
+      "start": 1701,
+      "end": 1705,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Humulin N. insulin",
+      "label": "MEDICATION",
+      "start": 1708,
+      "end": 1726,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "50",
+      "label": "DOSAGE",
+      "start": 1727,
+      "end": 1729,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "in a.m",
+      "label": "FREQUENCY",
+      "start": 1736,
+      "end": 1742,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "HCTZ",
+      "label": "MEDICATION",
+      "start": 1745,
+      "end": 1749,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "50 mg",
+      "label": "DOSAGE",
+      "start": 1750,
+      "end": 1755,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "QDay",
+      "label": "FREQUENCY",
+      "start": 1756,
+      "end": 1760,
+      "annotation_source": "manual"
+    },
+    {
+      "text": " Nitroglycerin",
+      "label": "MEDICATION",
+      "start": 1762,
+      "end": 1776,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1/150",
+      "label": "DOSAGE",
+      "start": 1777,
+      "end": 1782,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "PRN",
+      "label": "FREQUENCY",
+      "start": 1796,
+      "end": 1799,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Penicillin",
+      "label": "MEDICATION",
+      "start": 1825,
+      "end": 1835,
+      "annotation_source": "manual"
+    }
+  ]
 }

@@ -1,0 +1,70 @@
+{
+  "id": "mtsamples_Carotid_Cerebral_Arteriograms",
+  "source_file": "mtsamples_Carotid_Cerebral_Arteriograms.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "occlusion of the left internal carotid artery",
+      "label": "CONDITION",
+      "start": 103,
+      "end": 148,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Complete occlusion of the left common carotid artery",
+      "label": "CONDITION",
+      "start": 166,
+      "end": 218,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Mild stenosis of the right internal carotid artery",
+      "label": "CONDITION",
+      "start": 264,
+      "end": 314,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Lidocaine",
+      "label": "MEDICATION",
+      "start": 634,
+      "end": 643,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1%",
+      "label": "DOSAGE",
+      "start": 644,
+      "end": 646,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "sodium bicarbonate",
+      "label": "MEDICATION",
+      "start": 661,
+      "end": 679,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "complete occlusion of the left common carotid artery",
+      "label": "CONDITION",
+      "start": 1142,
+      "end": 1194,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "mild plaque creating stenosis",
+      "label": "CONDITION",
+      "start": 1701,
+      "end": 1730,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "at least 2-1/2 hours",
+      "label": "DURATION",
+      "start": 2353,
+      "end": 2373,
+      "annotation_source": "manual"
+    }
+  ]
+}

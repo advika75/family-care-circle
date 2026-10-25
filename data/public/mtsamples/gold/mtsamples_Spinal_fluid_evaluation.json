@@ -2,5 +2,202 @@
   "id": "mtsamples_Spinal_fluid_evaluation",
   "source_file": "mtsamples_Spinal_fluid_evaluation.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "jelly-like red-brown stool",
+      "label": "SYMPTOM",
+      "start": 315,
+      "end": 341,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "vomit after feeds",
+      "label": "SYMPTOM",
+      "start": 402,
+      "end": 419,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "ampicillin",
+      "label": "MEDICATION",
+      "start": 930,
+      "end": 940,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "cefotaxime",
+      "label": "MEDICATION",
+      "start": 942,
+      "end": 952,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Rocephin",
+      "label": "MEDICATION",
+      "start": 958,
+      "end": 966,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "maternal hypertension",
+      "label": "CONDITION",
+      "start": 1083,
+      "end": 1104,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "nystatin",
+      "label": "MEDICATION",
+      "start": 1257,
+      "end": 1265,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "decreased feeding",
+      "label": "SYMPTOM",
+      "start": 1528,
+      "end": 1545,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "vomiting",
+      "label": "SYMPTOM",
+      "start": 1555,
+      "end": 1563,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "diarrhea",
+      "label": "SYMPTOM",
+      "start": 1573,
+      "end": 1581,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "abundant thrush",
+      "label": "CONDITION",
+      "start": 2102,
+      "end": 2117,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "white patches on the tongue",
+      "label": "SYMPTOM",
+      "start": 2122,
+      "end": 2149,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "upper respiratory infection",
+      "label": "CONDITION",
+      "start": 2755,
+      "end": 2782,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "gastroenteritis",
+      "label": "CONDITION",
+      "start": 2784,
+      "end": 2799,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "urinary tract infection",
+      "label": "CONDITION",
+      "start": 2801,
+      "end": 2824,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "dehydration",
+      "label": "CONDITION",
+      "start": 2826,
+      "end": 2837,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "acidosis",
+      "label": "CONDITION",
+      "start": 2839,
+      "end": 2847,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "viral syndrome",
+      "label": "CONDITION",
+      "start": 2853,
+      "end": 2867,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "1%",
+      "label": "DOSAGE",
+      "start": 3834,
+      "end": 3836,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "lidocaine",
+      "label": "MEDICATION",
+      "start": 3837,
+      "end": 3846,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "acidosis",
+      "label": "CONDITION",
+      "start": 4327,
+      "end": 4335,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "normal saline",
+      "label": "MEDICATION",
+      "start": 4397,
+      "end": 4410,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "D5 half",
+      "label": "MEDICATION",
+      "start": 4472,
+      "end": 4479,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "dehydration",
+      "label": "CONDITION",
+      "start": 4776,
+      "end": 4787,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "gastroenteritis",
+      "label": "CONDITION",
+      "start": 5255,
+      "end": 5270,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "metabolic acidosis",
+      "label": "CONDITION",
+      "start": 5272,
+      "end": 5290,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "dehydration",
+      "label": "CONDITION",
+      "start": 5296,
+      "end": 5307,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "less than 30 minutes",
+      "label": "DURATION",
+      "start": 5348,
+      "end": 5368,
+      "annotation_source": "manual"
+    }
+  ]
 }

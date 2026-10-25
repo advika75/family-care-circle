@@ -2,5 +2,48 @@
   "id": "mtsamples_Esophagogastroduodenoscopy_-_3",
   "source_file": "mtsamples_Esophagogastroduodenoscopy_-_3.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "abdominal pain",
+      "label": "SYMPTOM",
+      "start": 121,
+      "end": 135,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "rectal bleeding",
+      "label": "SYMPTOM",
+      "start": 140,
+      "end": 155,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "rectal polyp",
+      "label": "CONDITION",
+      "start": 219,
+      "end": 231,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "General anesthesia",
+      "label": "MEDICATION",
+      "start": 705,
+      "end": 723,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "pedunculated juvenile-appearing polyp",
+      "label": "CONDITION",
+      "start": 2048,
+      "end": 2085,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "rectal polyp",
+      "label": "CONDITION",
+      "start": 2795,
+      "end": 2807,
+      "annotation_source": "manual"
+    }
+  ]
 }

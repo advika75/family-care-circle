@@ -1,0 +1,63 @@
+{
+  "id": "mtsamples_Full-Field_Digital_Mammogram_FFDM_-_2",
+  "source_file": "mtsamples_Full-Field_Digital_Mammogram_FFDM_-_2.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "right breast cancer",
+      "label": "CONDITION",
+      "start": 168,
+      "end": 187,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "breast cancer",
+      "label": "CONDITION",
+      "start": 277,
+      "end": 290,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "skin thickening and retraction",
+      "label": "CONDITION",
+      "start": 591,
+      "end": 621,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "coarsening of the right breast parenchyma",
+      "label": "CONDITION",
+      "start": 820,
+      "end": 861,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "architectural distortion",
+      "label": "CONDITION",
+      "start": 867,
+      "end": 891,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "postsurgical and postradiation changes",
+      "label": "CONDITION",
+      "start": 936,
+      "end": 974,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "benign-appearing microcalcifications",
+      "label": "CONDITION",
+      "start": 983,
+      "end": 1019,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Annual",
+      "label": "FREQUENCY",
+      "start": 1373,
+      "end": 1379,
+      "annotation_source": "manual"
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "id": "mtsamples_Weight_Gain_and_Edema",
+  "source_file": "mtsamples_Weight_Gain_and_Edema.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "I-131-induced hypothyroidism",
+      "label": "CONDITION",
+      "start": 77,
+      "end": 105,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "increased weight",
+      "label": "SYMPTOM",
+      "start": 134,
+      "end": 150,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "edema",
+      "label": "SYMPTOM",
+      "start": 155,
+      "end": 160,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "over the last few weeks",
+      "label": "DURATION",
+      "start": 161,
+      "end": 184,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "25-pound weight gain",
+      "label": "SYMPTOM",
+      "start": 192,
+      "end": 212,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "fibromyalgia",
+      "label": "CONDITION",
+      "start": 241,
+      "end": 253,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "inflammatory bowel disease",
+      "label": "CONDITION",
+      "start": 255,
+      "end": 281,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Crohn disease",
+      "label": "CONDITION",
+      "start": 283,
+      "end": 296,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "COPD",
+      "label": "CONDITION",
+      "start": 298,
+      "end": 302,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "disc disease",
+      "label": "CONDITION",
+      "start": 308,
+      "end": 320,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "thyroid disorder",
+      "label": "CONDITION",
+      "start": 332,
+      "end": 348,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "increasing abdominal girth",
+      "label": "SYMPTOM",
+      "start": 367,
+      "end": 393,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "increasing edema in her legs",
+      "label": "SYMPTOM",
+      "start": 405,
+      "end": 433,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Norvasc",
+      "label": "MEDICATION",
+      "start": 452,
+      "end": 459,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "lisinopril",
+      "label": "MEDICATION",
+      "start": 464,
+      "end": 474,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "for years",
+      "label": "DURATION",
+      "start": 475,
+      "end": 484,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 489,
+      "end": 501,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "occasional sweats",
+      "label": "SYMPTOM",
+      "start": 512,
+      "end": 529,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Synthroid",
+      "label": "MEDICATION",
+      "start": 624,
+      "end": 633,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "for the last few months",
+      "label": "DURATION",
+      "start": 660,
+      "end": 683,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "levothyroxine",
+      "label": "MEDICATION",
+      "start": 753,
+      "end": 766,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "300 mcg",
+      "label": "DOSAGE",
+      "start": 767,
+      "end": 774,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 775,
+      "end": 780,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "albuterol",
+      "label": "MEDICATION",
+      "start": 782,
+      "end": 791,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Asacol",
+      "label": "MEDICATION",
+      "start": 793,
+      "end": 799,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Prilosec",
+      "label": "MEDICATION",
+      "start": 805,
+      "end": 813,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "amlodipine",
+      "label": "MEDICATION",
+      "start": 820,
+      "end": 830,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "lisinopril",
+      "label": "MEDICATION",
+      "start": 835,
+      "end": 845,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "I-131-induced hypothyroidism",
+      "label": "CONDITION",
+      "start": 969,
+      "end": 997,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "inflammatory bowel disease",
+      "label": "CONDITION",
+      "start": 999,
+      "end": 1025,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Crohn",
+      "label": "CONDITION",
+      "start": 1031,
+      "end": 1036,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "hypertension",
+      "label": "CONDITION",
+      "start": 1038,
+      "end": 1050,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "fibromyalgia",
+      "label": "CONDITION",
+      "start": 1052,
+      "end": 1064,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "COPD",
+      "label": "CONDITION",
+      "start": 1066,
+      "end": 1070,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "disc disease",
+      "label": "CONDITION",
+      "start": 1076,
+      "end": 1088,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "fatigue",
+      "label": "SYMPTOM",
+      "start": 1378,
+      "end": 1385,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "sweats",
+      "label": "SYMPTOM",
+      "start": 1387,
+      "end": 1393,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "weight gain of 20 pounds",
+      "label": "SYMPTOM",
+      "start": 1399,
+      "end": 1423,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "loosening stools",
+      "label": "SYMPTOM",
+      "start": 1475,
+      "end": 1491,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "increasing leg swelling",
+      "label": "SYMPTOM",
+      "start": 1555,
+      "end": 1578,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "hypothyroidism",
+      "label": "CONDITION",
+      "start": 2199,
+      "end": 2213,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Hypothyroidism",
+      "label": "CONDITION",
+      "start": 2216,
+      "end": 2230,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Graves disease",
+      "label": "CONDITION",
+      "start": 2270,
+      "end": 2284,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "levothyroxine",
+      "label": "MEDICATION",
+      "start": 2463,
+      "end": 2476,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "300 mcg",
+      "label": "DOSAGE",
+      "start": 2498,
+      "end": 2505,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "daily",
+      "label": "FREQUENCY",
+      "start": 2506,
+      "end": 2511,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Synthroid",
+      "label": "MEDICATION",
+      "start": 2515,
+      "end": 2524,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "six weeks",
+      "label": "DURATION",
+      "start": 2609,
+      "end": 2618,
+      "annotation_source": "manual"
+    }
+  ]
+}

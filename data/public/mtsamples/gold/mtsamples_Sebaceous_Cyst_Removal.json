@@ -2,5 +2,41 @@
   "id": "mtsamples_Sebaceous_Cyst_Removal",
   "source_file": "mtsamples_Sebaceous_Cyst_Removal.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "Infected sebaceous cyst, right neck",
+      "label": "CONDITION",
+      "start": 26,
+      "end": 61,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Infected sebaceous cyst, right neck",
+      "label": "CONDITION",
+      "start": 90,
+      "end": 125,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "draining tract",
+      "label": "SYMPTOM",
+      "start": 459,
+      "end": 473,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "abscess cavity",
+      "label": "CONDITION",
+      "start": 505,
+      "end": 519,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "necrotic tissue",
+      "label": "CONDITION",
+      "start": 542,
+      "end": 557,
+      "annotation_source": "manual"
+    }
+  ]
 }

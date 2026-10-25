@@ -1,0 +1,28 @@
+{
+  "id": "mtsamples_2-D_Echocardiogram_-_1",
+  "source_file": "mtsamples_2-D_Echocardiogram_-_1.txt",
+  "annotator": "",
+  "entities": [
+    {
+      "text": "Left atrial enlargement with left atrial diameter of 4.7 cm.",
+      "label": "CONDITION",
+      "start": 19,
+      "end": 79,
+      "annotation_source": "manual"
+    },
+    {
+      "text": " No pericardial effusion",
+      "label": "CONDITION",
+      "start": 239,
+      "end": 263,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Normal morphology of aortic valve, mitral valve, tricuspid valve, and pulmonary valve",
+      "label": "CONDITION",
+      "start": 269,
+      "end": 354,
+      "annotation_source": "manual"
+    }
+  ]
+}

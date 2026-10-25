@@ -2,5 +2,90 @@
   "id": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant",
   "source_file": "mtsamples_Psychosocial_Eval_for_Kidney_Transplant.txt",
   "annotator": "",
-  "entities": []
+  "entities": [
+    {
+      "text": "anemia",
+      "label": "CONDITION",
+      "start": 113,
+      "end": 119,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "elevated creatinine",
+      "label": "CONDITION",
+      "start": 127,
+      "end": 146,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Two weeks",
+      "label": "DURATION",
+      "start": 149,
+      "end": 158,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Parenchymal disease",
+      "label": "CONDITION",
+      "start": 264,
+      "end": 283,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "6 months",
+      "label": "DURATION",
+      "start": 387,
+      "end": 395,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Procrit",
+      "label": "MEDICATION",
+      "start": 492,
+      "end": 499,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Procrit",
+      "label": "MEDICATION",
+      "start": 634,
+      "end": 641,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Renagel",
+      "label": "MEDICATION",
+      "start": 646,
+      "end": 653,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "thyroid problem",
+      "label": "CONDITION",
+      "start": 801,
+      "end": 816,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "adenoma",
+      "label": "CONDITION",
+      "start": 962,
+      "end": 969,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "renal failure",
+      "label": "CONDITION",
+      "start": 1409,
+      "end": 1422,
+      "annotation_source": "manual"
+    },
+    {
+      "text": "Bartholin cyst",
+      "label": "CONDITION",
+      "start": 1568,
+      "end": 1582,
+      "annotation_source": "manual"
+    }
+  ]
 }
