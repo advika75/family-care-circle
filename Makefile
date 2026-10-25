@@ -41,3 +41,14 @@ app-seed:
 
 app-test-slow:
 	APP_RUN_SLOW=1 python -m pytest tests/app -q -m "slow or browser or realmodel"
+
+# ---- One-command local demo with the REAL model (needs the GGUF and llama-cpp-python; see app/README.md) ----
+.PHONY: app-demo app-demo-seed
+
+app-demo:
+	python scripts/app_demo.py
+
+# Creates creator/caregiver/patient/child demo accounts (SYNTHETIC) in an EMPTY app/var/demo.sqlite3 and saves the
+# one-time passwords to app/var/demo_credentials.txt (git-ignored).
+app-demo-seed:
+	python scripts/app_demo.py --seed

@@ -91,6 +91,51 @@ Only then check that two different visitors are no longer counted together.
   lost every time the service redeploys or restarts" without one. A service with a disk cannot be scaled, which is what we want anyway.
   Back up the SQLite file yourself; there is no backup feature in the app.
 
+## Keeping accounts on Render (why logins stop working, and two ways to fix it)
+
+**Cause.** The app keeps every account, session, profile and note in one SQLite file (`APP_DB_PATH`, `/data/familycare.sqlite3` in this image).
+On Render's free plan that file sits on an ephemeral filesystem, which Render says is "lost every time the service redeploys
+or restarts". After a restart the app starts with a new, empty database, so the account you created no longer exists and
+logging in returns "wrong email or password". Locally the same file lives on your disk and survives restarts: I created an
+account, stopped the server, started it again and logged in successfully (HTTP 303). The local default is
+`app/var/familycare.sqlite3`; the local demo (`make app-demo`) uses `app/var/demo.sqlite3`.
+
+**Option 1: a paid persistent disk (small change, recommended).** The block is already in `deploy/render.yaml`, commented out:
+
+```yaml
+    # OPTIONAL persistent disk (paid plans only; Render: "a paid Render web service"). To use it: change `plan` above to
+    # a paid plan id from Render's plan list (for example `0.5c-512mb`), then uncomment this block.
+    # disk:
+    #   name: fcc-data
+    #   mountPath: /data
+    #   sizeGB: 1
+```
+
+To enable it: (1) in `render.yaml` change `plan: free` to a paid plan id (`0.5c-512mb` is listed in Render's blueprint spec; check the
+current price list); (2) delete the leading `# ` from the four `disk:` lines (keep the indentation, so `disk:` lines up with
+`plan:`); (3) commit and redeploy (or **Manual Deploy**). The disk is mounted at `/data`, which is where `APP_DB_PATH` already points,
+so no code change is needed. Render says a service with a disk cannot be scaled (we run one instance anyway) and `sizeGB` can be
+increased but not decreased. Back up the SQLite file yourself; the app has no backup feature.
+
+**Option 2: move the data to Postgres (a real code change; not started).** Based on reading `app/`:
+
+* What would change: `app/db.py` (connection, transaction and migration runner), `app/migrations.py` (SQL types and
+  `COLLATE NOCASE`), and every SQL call in `accounts.py`, `circle.py`, `notes.py`, `outputs.py`, `permissions.py` and `jobs.py`
+  (about 70 `execute` calls in 8 files, around 1,400 lines of data-layer code). Specific points: `?` placeholders become `%s`;
+  `cursor.lastrowid` (10 uses) becomes `INSERT ... RETURNING id`; `sqlite3.Row` and `sqlite3.IntegrityError` (13 imports, 3 catches) need the
+  new driver's equivalents; `BEGIN IMMEDIATE` (used so that a single-use invitation code cannot be redeemed twice at once) needs an
+  explicit lock or a serializable transaction, although the conditional `UPDATE ... WHERE used_at IS NULL` that enforces it is portable;
+  case-insensitive unique email needs `citext` or a `lower(email)` index; the PRAGMAs and WAL setup go away.
+* What would not change: the web layer, templates, permissions logic, safety gate, in-memory job queue and throttle.
+* New things needed: a Postgres driver (a **new Python dependency**, which this project's rules do not allow without your approval),
+  a Render Postgres instance and its connection string as a secret environment variable. Render's free Postgres tier terms (for
+  example whether the database expires) were not checked.
+* Size: roughly **2 to 4 days** for one developer, most of it in the tests. The 596 app tests build throw-away SQLite files, so they
+  would need either a Postgres test database or a thin switch that keeps SQLite for tests, and the concurrency tests (invitation
+  race, queue claim) must be re-proved on Postgres. This estimate is from reading the code, not from trying it.
+* Recommendation: for a demo, Option 1, or simply re-create the demo accounts after a restart (`make app-demo-seed` locally; sign up
+  again on Render). Do Option 2 only if the app is going to be kept online for real users.
+
 ## Known limits of this deployment
 
 * No real model: every note produces placeholder text from the mock backend. Every output card shown to the creator,
