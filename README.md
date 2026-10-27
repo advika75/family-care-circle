@@ -1,6 +1,6 @@
 # Family Care Circle
 
-> **Disclaimer:** research prototype for an academic NLP project. It is **not medical advice** and is **not
+> **Disclaimer:** research prototype for an academic NLP project. Generated text may be inaccurate; it is **not medical advice** and is **not
 > validated for clinical use**. The notes in `data/raw/` are **synthetic**. The MTSamples notes used for the public
 > evaluation are **real, de-identified public transcriptions** (not synthetic). Generated text can omit, distort or
 > invent information; always follow the instructions of a qualified clinician.
@@ -373,14 +373,15 @@ Annotate without rule-based suggestions visible with `python scripts/annotate_mt
 
 ## Multi-user web app
 
-> **Prototype. Not for real patient data.** Full documentation: [`app/README.md`](app/README.md). The self-audit of this app (done by its author, not a third-party review), with the status of every finding, is in [`app/AUDIT.md`](app/AUDIT.md).
+> **Prototype. Not for real patient data.** Generated text may be inaccurate and is not a substitute for professional medical advice. Use synthetic or practice information only. Full documentation: [`app/README.md`](app/README.md). The self-audit of this app (done by its author, not a third-party review), with the status of every finding, is in [`app/AUDIT.md`](app/AUDIT.md).
 
-`app/` is a self-hosted, multi-user web application built around the pipeline above (which it calls and never modifies). A profile creator makes a patient profile, gets a patient ID, and invites family members; each member sees only the output suited to their role. It uses FastAPI, SQLite and server-rendered templates, and makes no outbound network calls.
+`app/` is a self-hosted, multi-user web application built around the pipeline above (which it calls and never modifies). A profile creator makes a patient profile, gets a patient ID, and invites family members; each member sees only the output suited to their role. It uses FastAPI, SQLite and server-rendered templates. Mock and llama.cpp modes make no model API calls; optional Ollama mode talks to a loopback Ollama server by default and refuses remote hosts unless explicitly enabled.
 
 ```bash
 .venv/bin/python -m pip install -r requirements-app.txt
 make app-run                       # http://127.0.0.1:8000, mock backend (no model needed)
 APP_BACKEND=llama_cpp make app-run # the local GGUF model from config.yaml
+APP_BACKEND=ollama APP_OLLAMA_MODEL=qwen2.5:3b make app-demo-ollama # optional local Ollama; see app/README.md
 make app-seed                      # SYNTHETIC demo accounts on an empty database
 make app-test                      # the app's tests
 ```
@@ -393,4 +394,4 @@ make app-test                      # the app's tests
 
 ## Hosting a demo
 
-`deploy/` contains a Dockerfile and a Render blueprint for putting the web app online as a throw-away **demo with the mock backend only** (no model file, placeholder output, data wiped on restart on the free plan). Steps, environment variables, the `APP_TRUSTED_PROXIES` caveat and what was and was not verified are in [`deploy/README.md`](deploy/README.md). **Prototype. Not for real patient data.**
+`deploy/` contains a Dockerfile and a Render blueprint for putting the web app online as a demo with the mock backend only (no model file; the output is placeholder text). The free plan has no persistent disk, so the demo's data is wiped on every restart or redeploy. See [`deploy/README.md`](deploy/README.md). **Prototype. Not for real patient data.**

@@ -147,6 +147,14 @@ Playwright is not installed, so no screenshots will be taken unless it is approv
 - Starlette's test client warns that `httpx` is deprecated in favour of `httpx2` (not approved, not installed).
 - With `APP_BACKEND=mock` the child explanation is always withheld (the mock writes 9 sentences; the limit is 8).
 
+## Stage 7 — optional Ollama backend (implementation ready; security-test update pending approval)
+
+- Added `app/ollama_generator.py`, using only `urllib.request` and `json`; it posts structured messages to Ollama's non-streaming chat API, reads model tags/digests, forwards config sampling/token/context settings, and refuses non-loopback hosts unless explicitly allowed.
+- `APP_BACKEND=ollama` keeps the existing single-job queue and records backend, tag and API digest. The saved output disclaimer labels Ollama output as not the model used for the paper's results. Render remains mock-only.
+- New isolated tests use a fake loopback HTTP server; no new Python dependency is needed. Focused result: 19 passed, 1 slow real-Ollama test skipped by default. The full suite now passes: 850 passed, 23 skipped.
+- With owner approval, the network-import security regression now permits `urllib.request` only in `app/ollama_generator.py`; all other banned clients remain prohibited. Exception and job tests verify that request/response bodies are not exposed in error messages or logs.
+- Ollama's server-side chat template is not guaranteed to match llama.cpp's GGUF template; this is documented in `app/README.md`. The opted-in real test passed against the installed `qwen2.5:3b` model using synthetic one-word prompt text; no patient note was sent. The adapter also disables environment proxies and refuses redirects so a loopback URL cannot silently route its request elsewhere.
+
 ## Assumptions made where the spec was silent (change if you disagree)
 
 - `delete_note` is creator-only (the spec lists note deletion only under the creator).
