@@ -1,4 +1,4 @@
-"""The visible prototype notice: on every page footer (public and signed-in) and on the welcome page."""
+"""The data-use and medical safety notice appears on every page."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ import pytest
 from conftest import Site
 from test_app_security_review import routes_of
 
-NOTICE = "Prototype. Not for real patient data."
+NOTICE = "Not for real patient data. Not medical advice. Generated text may be inaccurate. Check doses and instructions with the care team."
 PUBLIC = ("/", "/login", "/signup")
 ROLES = ("owner", "caregiver", "patient", "child")
 
@@ -21,21 +21,22 @@ def _footer(html: str) -> str:
     return html.split("<footer", 1)[1]
 
 
-def test_every_public_page_has_the_notice_in_its_footer(app):
+def test_every_public_page_has_the_safety_notice_in_its_footer(app):
     s = Site(app)
     for url in PUBLIC:
         r = s.get(url)
         assert r.status_code == 200 and NOTICE in _footer(r.text), url
 
 
-def test_welcome_page_states_the_notice_in_its_body_too(app):
+def test_welcome_page_states_the_data_use_notice_in_its_body_too(app):
     html = Site(app).get("/").text
     body = html.split("<footer", 1)[0]
-    assert NOTICE in body and "not for real patient data" in body
+    assert "For demonstration use with synthetic information only." in body
+    assert "must not be used with real patient data" in body.lower() and "not medical advice" in body.lower()
 
 
 @pytest.mark.parametrize("role", ROLES)
-def test_every_signed_in_html_page_has_the_notice_in_its_footer(full, app, role):
+def test_every_signed_in_html_page_has_the_safety_notice_in_its_footer(full, app, role):
     seen = 0
     for path in _html_get_routes(app):
         url = path.replace("{patient_id}", full.pid)

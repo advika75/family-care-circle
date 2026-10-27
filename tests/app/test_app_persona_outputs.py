@@ -157,4 +157,4 @@ def test_user_facing_pages_keep_product_branding_and_the_prototype_notice(full, 
         page = site.get(url)
         assert page.status_code == 200
         assert "Family Care Circle" in page.text
-        assert "Prototype. Not for real patient data." in page.text
+        assert "Not for real patient data. Not medical advice." in page.text

@@ -35,6 +35,10 @@ _CHILD_YOU_RULE = '- Talk to the child as "you". Be warm and never scary.'
 _CHILD_CARE_RULE = "- Say that the grown-ups and doctors are taking care of them."
 _CHILD_GROUNDING_RULES = (
     "\n\nAdditional child-output safety rules for this family-care app:\n"
+    "Write for a child around ages 6 to 10: use 3 to 5 short sentences and familiar, gentle words. Explain the broad "
+    "meaning in a reassuring way, rather than copying clinical wording. Avoid diagnoses, medicine names, numbers, doses, "
+    "hospital details, and frightening terms; the app will withhold text containing these. Do not invent what will happen. "
+    "Keep the explanation useful and specific only to facts that can be said safely.\n"
     "The child reading this may be a different person from the patient in the note. Do not say that the child has or had "
     "{ref}'s condition. Refer to the patient as {ref}. Use only health facts plainly stated in the "
     "note. Do not infer a diagnosis, procedure, device, hospital event, recovery, or treatment instruction. Never advise "

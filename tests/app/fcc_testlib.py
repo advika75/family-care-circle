@@ -170,7 +170,7 @@ def assert_clean_page(html: str, *, expect_h1: bool = True) -> _Audit:
         assert a.h1 == 1, f"{a.h1} <h1> elements"
     for tag, cid, aria in a.controls:
         assert aria or (cid and cid in a.label_for), f"<{tag} id={cid}> has no label"
-    assert "Prototype. Not for real patient data." in html
+    assert "Not for real patient data. Not medical advice." in html
     return a
 
 

@@ -12,7 +12,7 @@ from conftest import Site
 from fcc_testlib import (CLEAN_CHILD, PASSWORD, PATIENT_NAME, SOURCE_MARK, SOURCE_TEXT, TITLE, FakePipeline, assert_clean_page,
                          csrf_from, make_record)
 
-DISCLAIMER = "Research prototype. Not medical advice. Check doses and instructions with the care team."
+DISCLAIMER = "Not for real patient data. Not medical advice. Generated text may be inaccurate. Check doses and instructions with the care team."
 
 
 def token_of(site: Site, pid: str | None = None) -> str:
