@@ -19,15 +19,19 @@
 {% endif %}
 
 {% if out.available %}
+  {% if out.output_warning %}{% call banner('warning', 'Some saved text is unavailable') %}<p>{{ out.output_warning }}</p>{% endcall %}{% endif %}
+  {% if out.review_message %}{% call banner('warning', 'Please review the note') %}<p>{{ out.review_message }}</p>{% endcall %}{% endif %}
+  {% if out.patient_warning %}{% call banner('warning', out.patient_warning_title) %}<p>{{ out.patient_warning }}</p>{% endcall %}{% endif %}
+  {% if out.dose_warning %}{% call banner('warning', 'A detail was removed') %}<p>{{ out.dose_warning }}</p>{% endcall %}{% endif %}
   <div class="cards{% if out.caregiver_checklist is defined %} two{% endif %}">
     {% if out.patient_summary is defined %}
-      {% call persona_card('patient', 'Patient summary', 'heart', updated=out.updated_at, note_title=(out.note.title if out.note is defined else None), disclaimer=out.disclaimer) %}
+      {% call persona_card('patient', 'Patient summary', 'heart', updated=out.updated_at, note_title=(out.note.title if out.note is defined else None)) %}
         {% for p in out.patient_summary|paragraphs %}<p>{{ p }}</p>{% endfor %}
         {% if caps.view_info or out.caregiver_checklist is defined %}<p><a class="tap-link" href="/p/{{ profile_id }}/summaries?tab=patient">Read the full summary</a></p>{% endif %}
       {% endcall %}
     {% endif %}
     {% if out.caregiver_checklist is defined %}
-      {% call persona_card('caregiver', 'Caregiver checklist', 'list-check', updated=out.updated_at, note_title=out.note.title, disclaimer=out.disclaimer) %}
+      {% call persona_card('caregiver', 'Caregiver checklist', 'list-check', updated=out.updated_at, note_title=out.note.title) %}
         {% if out.checklist_progress.total %}
           <p class="progress">{{ out.checklist_progress.done }} of {{ out.checklist_progress.total }} done</p>
           <p><a class="tap-link" href="/p/{{ profile_id }}/summaries?tab=caregiver">Open the checklist</a></p>
@@ -35,9 +39,8 @@
       {% endcall %}
     {% endif %}
     {% if out.child_explanation is defined %}
-      {% call persona_card('child', 'Child explanation' if role != 'child' else 'What is happening', 'sparkle', updated=out.updated_at, note_title=(out.note.title if out.note is defined else None), disclaimer=out.disclaimer) %}
+      {% call persona_card('child', 'Child explanation' if role != 'child' else 'What is happening', 'sparkle', updated=out.updated_at, note_title=(out.note.title if out.note is defined else None)) %}
         {% for p in out.child_explanation|paragraphs %}<p>{{ p }}</p>{% endfor %}
-        {% if out.child_withheld %}<p class="muted">The safety check held back the generated text, so a general message is shown.</p>{% endif %}
       {% endcall %}
     {% endif %}
   </div>

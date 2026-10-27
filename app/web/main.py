@@ -43,6 +43,12 @@ def create_app(settings: Settings | None = None, *, ctx: Ctx | None = None, runn
     ctx = ctx or Ctx(settings=settings)
     runner = runner or JobRunner(settings, ctx)
 
+    from app.pipeline_adapter import timeout_budget_problem
+
+    budget_problem = timeout_budget_problem(settings)
+    if budget_problem:
+        log.warning("Generation timeout budget: %s", budget_problem)    # settings values only
+
     conn = connect(settings.db_path)
     try:
         migrate(conn)

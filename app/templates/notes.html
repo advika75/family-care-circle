@@ -9,7 +9,7 @@
 
 <section class="card" aria-labelledby="add-h">
   <h2 id="add-h">{{ icon('plus') }} Add a note</h2>
-  <p class="muted">Paste the text of a clinical note, or upload a plain-text (.txt) file. Notes can be up to {{ '{:,}'.format(max_chars) }} characters. Pasting and uploading are both fine, but use one at a time. Please use only made-up or practice text: this prototype is not for real patient data.</p>
+  <p class="muted">Paste the text of a clinical note, or upload a plain-text (.txt) file. Notes can be up to {{ '{:,}'.format(max_chars) }} characters. Pasting and uploading are both fine, but use one at a time. Please use only synthetic or practice text; do not enter real patient information.</p>
   <form method="post" action="/p/{{ profile_id }}/notes" enctype="multipart/form-data" novalidate>
     {{ csrf_field() }}
     {{ field('title', 'Title (optional)', values.title, hint='For example “Clinic visit”. If you leave it blank the note is numbered.', error=errors.title, maxlength=80) }}

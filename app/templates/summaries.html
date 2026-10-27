@@ -13,6 +13,10 @@
 {% if viewing_note %}
   {% call banner('info', 'You are looking at an earlier note') %}<p><a class="tap-link" href="/p/{{ profile_id }}/summaries?tab={{ tab }}">Go back to the latest</a></p>{% endcall %}
 {% endif %}
+{% if out.output_warning %}{% call banner('warning', 'Some saved text is unavailable') %}<p>{{ out.output_warning }}</p>{% endcall %}{% endif %}
+{% if out.review_message %}{% call banner('warning', 'Please review the note') %}<p>{{ out.review_message }}</p>{% endcall %}{% endif %}
+{% if out.patient_warning %}{% call banner('warning', out.patient_warning_title) %}<p>{{ out.patient_warning }}</p>{% endcall %}{% endif %}
+{% if out.dose_warning %}{% call banner('warning', 'A detail was removed') %}<p>{{ out.dose_warning }}</p>{% endcall %}{% endif %}
 
 {% if not out.available and not viewing_note %}
   {% call empty_state('file-text', 'Nothing to show yet', 'Summaries appear here after a clinical note has been added and prepared.') %}
@@ -32,11 +36,11 @@
   {% set note_title = out.note.title if out.note is defined else None %}
 
   {% if tab == 'patient' %}
-    {% call persona_card('patient', 'Patient summary', 'heart', updated=out.updated_at, note_title=note_title, disclaimer=out.disclaimer) %}
+    {% call persona_card('patient', 'Patient summary', 'heart', updated=out.updated_at, note_title=note_title) %}
       {% for p in out.patient_summary|paragraphs %}<p>{{ p }}</p>{% endfor %}
     {% endcall %}
   {% elif tab == 'caregiver' %}
-    {% call persona_card('caregiver', 'Caregiver checklist', 'list-check', updated=out.updated_at, note_title=note_title, disclaimer=out.disclaimer) %}
+    {% call persona_card('caregiver', 'Caregiver checklist', 'list-check', updated=out.updated_at, note_title=note_title) %}
       {% if out.caregiver_checklist %}
         <p class="progress" role="status">{{ out.checklist_progress.done }} of {{ out.checklist_progress.total }} done</p>
         <ul class="check-list">
@@ -47,22 +51,9 @@
       {% else %}<p>This checklist has no items.</p>{% endif %}
     {% endcall %}
   {% elif tab == 'child' %}
-    {% if out.child_withheld %}
-      {% call banner('warning', 'The safety check held back the generated child explanation') %}<p>The child sees the general message below instead. See the review flags for why.</p>{% endcall %}
-    {% endif %}
-    {% call persona_card('child', 'Child explanation', 'sparkle', updated=out.updated_at, note_title=note_title, disclaimer=out.disclaimer) %}
+    {% call persona_card('child', 'Child explanation', 'sparkle', updated=out.updated_at, note_title=note_title) %}
       {% for p in out.child_explanation|paragraphs %}<p>{{ p }}</p>{% endfor %}
     {% endcall %}
-  {% endif %}
-
-  {% if flags %}
-  <details class="panel"{% if flags.attention %} open{% endif %}>
-    <summary>Review flags{% if flags.attention %} ({{ flags.attention|length }} to check){% endif %}</summary>
-    {% if flags.attention %}
-      <ul class="attention">{% for a in flags.attention %}<li>{{ a }}</li>{% endfor %}</ul>
-    {% else %}<p>Nothing needs a second look. Doses and instructions should still be checked against the note.</p>{% endif %}
-    <dl class="summary-list">{% for label, value in flags.rows %}<dt>{{ label }}</dt><dd>{{ value }}</dd>{% endfor %}</dl>
-  </details>
   {% endif %}
 
   {% if source %}

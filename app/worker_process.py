@@ -6,7 +6,9 @@ the next job starts a fresh process (the model is reloaded then).
 
 Safety properties
 * Only plain, JSON-like data crosses the pipe (the pipeline already returns such a record).
-* Errors cross the pipe as an exception CLASS name plus one boolean, never the message (which can contain note text).
+* Progress crosses the pipe as ("progress", persona, attempt): a fixed persona name and a count, never text.
+* Errors cross the pipe as an exception CLASS name plus one boolean. Only the Ollama adapter's fixed, explicitly
+  safe user message may cross; arbitrary exception text (which could contain note text) never does.
 * If the web process dies abruptly (kill -9), the child notices its parent changed and exits, so no orphan is left
   holding the model in memory.
 """
@@ -15,7 +17,13 @@ from __future__ import annotations
 
 import multiprocessing as mp
 import os
+import time
 from typing import Any, Callable
+
+from app.ollama_generator import OllamaError
+
+
+_PERSONAS = ("patient", "caregiver", "child", "unknown")
 
 
 class JobTimeout(Exception):
@@ -25,9 +33,9 @@ class JobTimeout(Exception):
 class WorkerError(Exception):
     """The pipeline raised inside the worker process. ``kind`` is the exception class name only."""
 
-    def __init__(self, kind: str, too_long: bool = False) -> None:
+    def __init__(self, kind: str, too_long: bool = False, safe_message: str | None = None) -> None:
         super().__init__(kind)
-        self.kind, self.too_long = kind, too_long
+        self.kind, self.too_long, self.safe_message = kind, too_long, safe_message
 
 
 def is_context_overflow(exc: BaseException) -> bool:
@@ -51,9 +59,13 @@ def _child_main(conn: Any, factory: Callable[[], Any], parent_pid: int) -> None:
             try:
                 if pipeline is None:
                     pipeline = factory()
+                    generator = getattr(pipeline, "generator", None)
+                    if hasattr(generator, "on_attempt"):
+                        generator.on_attempt = lambda persona, attempt: conn.send(("progress", persona, attempt))
                 conn.send(("ok", pipeline.run(text, doc_id=doc_id)))
             except Exception as exc:  # noqa: BLE001 - class name only crosses the pipe
-                conn.send(("err", type(exc).__name__, is_context_overflow(exc)))
+                safe_message = exc.safe_message if isinstance(exc, OllamaError) else None
+                conn.send(("err", type(exc).__name__, is_context_overflow(exc), safe_message))
     except (EOFError, BrokenPipeError, KeyboardInterrupt, OSError):
         return
 
@@ -66,6 +78,7 @@ class ProcessPipeline:
         self._proc: Any = None
         self._conn: Any = None
         self.killed_pids: list[int] = []
+        self.last_progress: tuple[str, int] | None = None   # persona and attempt the worker last reported
 
     def ensure_started(self) -> int:
         if self._proc is None or not self._proc.is_alive():
@@ -79,18 +92,27 @@ class ProcessPipeline:
 
     def run(self, text: str, doc_id: str = "doc") -> dict[str, Any]:
         self.ensure_started()
+        self.last_progress = None
         try:
             self._conn.send(("run", text, doc_id))
-            if not self._conn.poll(self._timeout):
-                self.kill()
-                raise JobTimeout()
-            message = self._conn.recv()
+            deadline = time.monotonic() + self._timeout
+            while True:
+                remaining = deadline - time.monotonic()
+                if remaining <= 0 or not self._conn.poll(remaining):
+                    self.kill()
+                    raise JobTimeout()
+                message = self._conn.recv()
+                if message[0] != "progress":
+                    break
+                if message[1] in _PERSONAS and isinstance(message[2], int):
+                    self.last_progress = (message[1], message[2])
         except (EOFError, BrokenPipeError, OSError):
             self.kill()
             raise WorkerError("WorkerDied") from None
         if message[0] == "ok":
             return message[1]
-        raise WorkerError(message[1], too_long=bool(message[2]))
+        safe_message = message[3] if len(message) > 3 and isinstance(message[3], str) else None
+        raise WorkerError(message[1], too_long=bool(message[2]), safe_message=safe_message)
 
     def kill(self) -> None:
         proc, self._proc = self._proc, None

@@ -28,6 +28,8 @@ def test_documented_counts_match_the_code(app):
     assert f"all {len(posts)} `POST` routes" in DOC
     assert f"checks {len(contrast.PAIRS)} text/background" in DOC
     assert "Prototype. Not for real patient data." in DOC and "Prototype. Not for real patient data." in README
+    assert "Family Care Circle" in DOC and "Family Care Circle" in README
+    assert "not a substitute for professional medical advice" in DOC.lower()
 
 
 def test_the_not_secured_list_is_present_in_both_documents():
@@ -41,7 +43,7 @@ def test_the_not_secured_list_is_present_in_both_documents():
 
 
 def test_root_readme_section_was_appended_and_documents_how_to_run():
-    assert "## Multi-user web app" in README and README.index("## Multi-user web app") > README.index("## ") 
+    assert "## Multi-user web app" in README and README.index("## Multi-user web app") > README.index("## ")
     for cmd in ("make app-run", "make app-seed", "make app-test", "APP_BACKEND=llama_cpp"):
         assert cmd in README and cmd in DOC
 

@@ -295,10 +295,9 @@ def test_end_to_end_with_the_real_pipeline_on_the_mock_backend(conn, ctx, settin
     out = outputs.latest_outputs(conn, owner, p)
     assert out["patient_summary"] and out["caregiver_checklist"] and out["child_explanation"]
     assert out["flags"]["model_id"] == "mock" and out["flags"]["validation_errors"] == []
-    # The mock backend writes 9 sentences, so the (8-sentence) child gate fires and the safe message is stored.
-    assert out["child_withheld"] is True and out["flags"]["child_gate"]["reasons"] == ["too_long"]
-    assert out["child_explanation"] == "A grown-up will help explain what the doctor said."
-    assert "pesky visitors" not in "|".join(str(tuple(r)) for r in conn.execute("SELECT * FROM outputs"))   # rejected text not kept
+    # The deterministic child output uses only the approved general message.
+    assert out["child_withheld"] is False and out["flags"]["child_gate"]["reasons"] == []
+    assert out["child_explanation"] == outputs.safety.SAFE_CHILD_MESSAGE
 
 
 def test_source_text_is_stored_only_in_the_notes_table(conn, ctx, runner, world):
@@ -327,7 +326,7 @@ def test_child_gate_withholds_and_records_why_for_adults_only(conn, ctx, runner,
     add(conn, ctx, runner, owner, p)
     runner.drain()
     adult, kid = outputs.latest_outputs(conn, owner, p), outputs.latest_outputs(conn, ch, p)
-    assert adult["child_explanation"] == kid["child_explanation"] == "A grown-up will help explain what the doctor said."
+    assert adult["child_explanation"] == kid["child_explanation"] == outputs.safety.SAFE_CHILD_MESSAGE
     assert adult["child_withheld"] is True and adult["flags"]["child_gate"] == {"fired": True, "reasons": [reason]}
     assert "flags" not in kid and "child_withheld" not in kid
     assert child not in str(kid) and child not in str(adult)
@@ -342,3 +341,21 @@ def test_clean_child_text_is_stored_and_the_patient_text_is_never_gated(conn, ct
     assert outputs.latest_outputs(conn, ch, p)["child_explanation"] == CLEAN_CHILD
     summary = outputs.latest_outputs(conn, pt, p)["patient_summary"]
     assert "Amoxicillin" in summary and "500 mg" in summary and "10 days" in summary      # doses and names stay for patients
+
+
+def test_model_output_with_unsupported_serious_child_claim_is_withheld(conn, ctx, runner, pipeline, world):
+    pipeline.record_factory = lambda _text: make_record(
+        child="You had a heart attack. Doctors put a tiny helper in your heart.")
+    owner = world.user("Owner"); p = world.profile(owner)
+    child, _ = world.member(p, owner, "child", "Kid")
+    note = "Patient reports a mild cough. The note says nothing about a heart attack or heart procedure."
+    created = add(conn, ctx, runner, owner, p, text=note)
+    runner.drain()
+
+    assert status(conn, created["id"]) == "done"
+    adult = outputs.latest_outputs(conn, owner, p)
+    kid = outputs.latest_outputs(conn, child, p)
+    assert adult["child_explanation"] == kid["child_explanation"] == outputs.safety.SAFE_CHILD_MESSAGE
+    assert adult["child_withheld"] is True
+    assert adult["flags"]["clinical_claim_gate"]["child"]
+    assert "heart attack" not in kid["child_explanation"].casefold()

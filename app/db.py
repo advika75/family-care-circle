@@ -12,6 +12,11 @@ from typing import Iterator
 from app.migrations import MIGRATIONS
 
 
+def is_database_error(error: BaseException) -> bool:
+    """True for a database failure (used by the job runner to fail a note quietly)."""
+    return isinstance(error, sqlite3.Error)
+
+
 def connect(path: str | Path) -> sqlite3.Connection:
     """Open a connection in autocommit mode; use :func:`transaction` for atomic multi-statement changes.
 

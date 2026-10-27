@@ -23,9 +23,10 @@ from typing import Any, Callable
 from app import outputs as outputs_mod
 from app.config import Settings
 from app.context import Ctx
-from app.db import connect, iso, transaction
+from app.db import connect, is_database_error, iso, transaction
 from app.pipeline_adapter import build_pipeline
 from app.worker_process import JobTimeout, ProcessPipeline, WorkerError, is_context_overflow
+from app.ollama_generator import OllamaError
 
 log = logging.getLogger("app.jobs")
 
@@ -47,6 +48,7 @@ class JobRunner:
         self.job_timeout = float(job_timeout if job_timeout is not None else settings.job_timeout_seconds)
         self._pipeline: Any = None
         self._build_error = False
+        self._build_error_message = MSG_UNAVAILABLE
         self._queue: queue.Queue[int] = queue.Queue()
         self._pipeline_lock = threading.Lock()      # the pipeline is never entered by two threads
         self._thread: threading.Thread | None = None
@@ -140,7 +142,26 @@ class JobRunner:
             except Exception as exc:  # noqa: BLE001 - reported safely below
                 self._build_error = True
                 log.error("pipeline could not be built: %s", type(exc).__name__)
+                if isinstance(exc, OllamaError):
+                    self._build_error_message = exc.safe_message
         return self._pipeline
+
+    def _reset_progress(self) -> None:
+        if isinstance(self._pipeline, ProcessPipeline):
+            self._pipeline.last_progress = None
+        elif hasattr(getattr(self._pipeline, "generator", None), "progress"):
+            self._pipeline.generator.progress = None
+
+    def _running_step(self) -> str:
+        """Persona and attempt that was being generated (fixed names and a count; never note text)."""
+        if isinstance(self._pipeline, ProcessPipeline):
+            step = self._pipeline.last_progress
+        else:
+            step = getattr(getattr(self._pipeline, "generator", None), "progress", None)
+        if (isinstance(step, tuple) and len(step) == 2 and step[0] in ("patient", "caregiver", "child", "unknown")
+                and isinstance(step[1], int)):
+            return f"persona={step[0]} attempt={step[1]}"
+        return "persona=unknown attempt=unknown"
 
     def _set_failed(self, conn: sqlite3.Connection, note_id: int, message: str) -> None:
         conn.execute("UPDATE notes SET status = 'failed', error_message = ?, finished_at = ? WHERE id = ?",
@@ -149,8 +170,9 @@ class JobRunner:
     def _fail_quietly(self, conn: sqlite3.Connection, note_id: int, message: str) -> None:
         try:
             self._set_failed(conn, note_id, message)
-        except sqlite3.Error:
-            pass
+        except Exception as exc:
+            if not is_database_error(exc):
+                raise
 
     def process(self, note_id: int) -> None:
         conn = connect(self.settings.db_path)
@@ -164,8 +186,9 @@ class JobRunner:
                 with self._pipeline_lock:
                     pipeline = self._get_pipeline()
                     if pipeline is None:
-                        self._set_failed(conn, note_id, MSG_UNAVAILABLE)
+                        self._set_failed(conn, note_id, self._build_error_message)
                         return
+                    self._reset_progress()
                     record = pipeline.run(note["text"], doc_id=f"note-{note_id}")
                 if not record.get("metadata", {}).get("valid", False):
                     log.warning("note_id=%s pipeline output failed validation", note_id)
@@ -179,13 +202,18 @@ class JobRunner:
                         conn.execute("UPDATE notes SET status = 'done', finished_at = ? WHERE id = ?",
                                      (iso(self.ctx.now()), note_id))
             except JobTimeout:
-                log.error("note_id=%s generation exceeded %ss and its worker process was killed", note_id, int(self.job_timeout))
+                log.error("note_id=%s generation exceeded %ss at %s and its worker process was killed", note_id,
+                          int(self.job_timeout), self._running_step())
                 self._fail_quietly(conn, note_id, MSG_TIMEOUT)
             except WorkerError as exc:
-                log.error("note_id=%s generation failed: %s", note_id, exc.kind)
-                self._fail_quietly(conn, note_id, self._too_long_message() if exc.too_long else MSG_FAILED)
+                log.error("note_id=%s generation failed at %s: %s", note_id, self._running_step(), exc.kind)
+                message = exc.safe_message or (self._too_long_message() if exc.too_long else MSG_FAILED)
+                self._fail_quietly(conn, note_id, message)
+            except OllamaError as exc:
+                log.error("note_id=%s generation failed at %s: %s", note_id, self._running_step(), type(exc).__name__)
+                self._fail_quietly(conn, note_id, exc.safe_message)
             except Exception as exc:  # noqa: BLE001 - never surface exception text (it could contain note text)
-                log.error("note_id=%s generation failed: %s", note_id, type(exc).__name__)
+                log.error("note_id=%s generation failed at %s: %s", note_id, self._running_step(), type(exc).__name__)
                 self._fail_quietly(conn, note_id, self._too_long_message() if is_context_overflow(exc) else MSG_FAILED)
         finally:
             conn.close()

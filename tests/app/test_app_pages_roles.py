@@ -98,7 +98,7 @@ def test_patient_pages_contain_nothing_the_patient_may_not_see(full, suffix):
 
 def test_the_child_sees_only_the_child_explanation_the_patient_only_the_summary(full):
     child = full.site["child"].get(f"/p/{full.pid}/summaries?tab=patient")
-    assert "tiny helpers" in child.text and "Patient summary" not in child.text and "strep throat" not in child.text
+    assert "trusted grown-up" in child.text and "Patient summary" not in child.text and "strep throat" not in child.text
     assert "aria-label=\"Choose a version\"" not in child.text                  # only one version: no tabs
     patient = full.site["patient"].get(f"/p/{full.pid}/summaries?tab=child")
     assert "strep throat" in patient.text and "tiny helpers" not in patient.text and "Child explanation" not in patient.text

@@ -10,6 +10,8 @@ The child text is REJECTED, and the generic safe message shown instead, if any o
   hyphen characters are ignored, so ``amoxi<ZWSP>cillin`` is still ``amoxicillin``),
 * a word on the frightening-words denylist (die, death, dying, cancer, tumour/tumor, fatal, terminal, surgery,
   "hospital stay"),
+* a health statement addressed to the child as if they were the patient ("you have diabetes", "your medicine",
+  "the doctors are taking care of you"), or the research pipeline's generic empty-output child text, which does that,
 * more than ``MAX_CHILD_SENTENCES`` sentences, or more than ``MAX_CHILD_WORDS`` words (a long run-on with no
   punctuation counts as one sentence, so the word cap closes that gap).
 
@@ -29,7 +31,10 @@ import re
 import unicodedata
 from typing import Any, Iterable
 
-SAFE_CHILD_MESSAGE = "A grown-up will help explain what the doctor said."
+from app.clinical_safety import unsupported_claims
+
+SAFE_CHILD_MESSAGE = ("The note has information about someone's health. Their care team can explain what it means. "
+                      "You can ask a trusted adult if you have questions.")
 MAX_CHILD_SENTENCES = 8
 MAX_CHILD_WORDS = 120
 
@@ -40,6 +45,9 @@ REASON_MEDICATION = "medication_name"
 REASON_DENYLIST = "denylist"
 REASON_TOO_LONG = "too_long"
 REASON_EMPTY = "empty"
+REASON_UNSUPPORTED_CLAIM = "unsupported_clinical_claim"
+REASON_CHILD_AS_PATIENT = "child_as_patient"
+REASON_GENERIC_FALLBACK = "generic_fallback"
 
 # Sentence ends: . ! ? … ; : (a run of them, with or without a space after) and line breaks. Deliberately generous:
 # counting too many sentences only withholds more.
@@ -66,6 +74,46 @@ _UNIT_WORDS = _UNIT_WORDS - {"drop", "drops", "puff", "puffs", "gram", "grams", 
 _DENYLIST = re.compile(
     r"(?<!\w)(?:die|dies|died|dying|death|deaths|dead|cancer|cancers|tumou?rs?|fatal|fatally|terminal|terminally|"
     r"surgery|surgeries|hospital[\s\-]+stays?)(?!\w)", re.IGNORECASE)
+
+
+# The child reading the explanation is not assumed to be the patient. Health statements written to "you" are withheld:
+# a possessive health noun ("your body", "your medicine", "your doctor"), a second-person state or action followed in
+# the same sentence by a health word or a condition/symptom the research lexicon knows ("you have diabetes", "you feel
+# dizzy"), or care aimed at "you" ("the doctors are taking care of you"). "You can ask ...", "if you have questions" and
+# "you are loved" carry no health word and pass.
+_HEALTH_WORDS = (r"sick|ill|unwell|hurts?|hurting|pain|sore|dizzy|dizziness|diabetes|sugar|blood|pressure|fever|cough|"
+                 r"cold|flu|infection|asthma|allerg(?:y|ies)|rash|medicines?|medications?|pills?|doctors?|nurses?|"
+                 r"hospital|condition|disease|illness|sickness|symptoms?|treatment|better|checked|numbers")
+_YOUR_HEALTH = re.compile(
+    r"\byour\s+(?:own\s+)?(?:body|blood|sugar|heart|lungs?|tummy|stomach|belly|brain|kidneys?|liver|skin|throat|"
+    r"medicines?|medications?|pills?|treatment|illness|sickness|condition|disease|health|doctors?|nurses?|care\s+team|"
+    r"symptoms?|diabetes|infection|check-?ups?|appointments?|numbers)\b", re.IGNORECASE)
+_YOU_STATE = re.compile(
+    r"\byou(?:\s+(?:have|had|got|get|are|were|feel|felt|take|took|need|must|should)|['’](?:re|ve))\b([^.!?\n]{0,60})",
+    re.IGNORECASE)
+_HEALTH_WORD = re.compile(rf"\b(?:{_HEALTH_WORDS})\b", re.IGNORECASE)
+_CARE_FOR_YOU = re.compile(
+    r"\b(?:doctors?|nurses?|medicines?|care\s+team)\b[^.!?\n]{0,60}\b(?:care\s+of|caring\s+for|help(?:s|ing)?|"
+    r"treat(?:s|ing)?|check(?:s|ing|ed)?\s+on|fix(?:es|ing)?)\s+you\b", re.IGNORECASE)
+
+
+def _treats_child_as_patient(text: str) -> bool:
+    from src.ner import extract_entities   # research lexicons, called not edited
+
+    if _YOUR_HEALTH.search(text) or _CARE_FOR_YOU.search(text):
+        return True
+    for match in _YOU_STATE.finditer(text):
+        rest = match.group(1)
+        if _HEALTH_WORD.search(rest) or any(e["label"] in ("CONDITION", "SYMPTOM") for e in extract_entities(rest)):
+            return True
+    return False
+
+
+def _is_research_empty_fallback(text: str) -> bool:
+    """The research retry loop's text for an all-empty child output; it speaks to the child as the patient."""
+    from src.postprocess import EMPTY_FALLBACK   # called not edited
+
+    return " ".join(text.split()) == " ".join(EMPTY_FALLBACK["child_explanation"].split())
 
 
 def _clean(text: str) -> str:
@@ -101,7 +149,7 @@ def _mentions(clean_text: str, name: str) -> bool:
     return re.search(r"(?<!\w)" + body + r"(?:['’]s|'|’|s|es)?(?!\w)", clean_text) is not None
 
 
-def check_child_text(text: str, medications: Iterable[str]) -> list[str]:
+def check_child_text(text: str, medications: Iterable[str], source_text: str | None = None) -> list[str]:
     """Return the reasons the text must be withheld (empty list = it may be shown)."""
     if not (text or "").strip():
         return [REASON_EMPTY]
@@ -118,6 +166,12 @@ def check_child_text(text: str, medications: Iterable[str]) -> list[str]:
         reasons.append(REASON_MEDICATION)
     if _DENYLIST.search(clean):
         reasons.append(REASON_DENYLIST)
+    if _is_research_empty_fallback(text):
+        reasons.append(REASON_GENERIC_FALLBACK)
+    if _treats_child_as_patient(unicodedata.normalize("NFKC", text)):
+        reasons.append(REASON_CHILD_AS_PATIENT)
+    if source_text is not None and unsupported_claims(text, source_text, persona="child"):
+        reasons.append(REASON_UNSUPPORTED_CLAIM)
     if count_sentences(text) > MAX_CHILD_SENTENCES or count_words(text) > MAX_CHILD_WORDS:
         reasons.append(REASON_TOO_LONG)
     return reasons

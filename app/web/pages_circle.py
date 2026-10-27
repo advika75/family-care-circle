@@ -187,8 +187,6 @@ def summaries(request: Request, tab: str = "", note: int = 0, s=Depends(scope), 
     extra: dict = {}                                             # keys exist ONLY for roles allowed to see them
     if out.get("available") and "note" in out:
         extra["source"] = notes_svc.get_note_source(conn, user, profile, out["note"]["id"])
-    if "flags" in out:
-        extra["flags"] = present.flag_summary(out["flags"])
     return page(request, "summaries.html", conn, user, profile, m, out=out, gen=out.get("generation", {"state": "none"}),
                 tabs=tabs, tab=current, tab_labels=TAB_LABELS, history=history, back=back,
                 viewing_note=note, label=circle.patient_label(profile, m["role"]), **extra)
@@ -218,7 +216,7 @@ def notes_page(request: Request, added: int = 0, s=Depends(scope), conn=Depends(
     user, profile, m = s
     if not perm.can(conn, user, profile, perm.ADD_NOTE):
         raise NotAllowed()
-    notice = ("success", "Note added", "It is being prepared. This page updates by itself, and takes about a minute with the real model.") if added else None
+    notice = ("success", "Note added", "It is being prepared. This page updates by itself, and takes about a minute.") if added else None
     return _notes_page(request, conn, user, profile, m, notice=notice)
 
 

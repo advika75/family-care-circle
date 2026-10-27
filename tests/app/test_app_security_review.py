@@ -236,13 +236,16 @@ def test_no_credentials_or_secret_keys_are_hardcoded():
             assert not re.search(r"""sk-[A-Za-z0-9]{10,}|AKIA[0-9A-Z]{12,}""", s), (py.name, i)
 
 
-def test_no_outbound_network_libraries_are_imported_by_the_app():
+def test_only_ollama_adapter_imports_the_standard_library_http_client():
     banned = {"requests", "httpx", "urllib3", "aiohttp", "socket", "smtplib", "ftplib", "http.client", "urllib.request", "openai", "anthropic"}
     for py in APP.rglob("*.py"):
         tree = ast.parse(py.read_text())
         for node in ast.walk(tree):
             mods = [a.name for a in node.names] if isinstance(node, ast.Import) else [node.module] if isinstance(node, ast.ImportFrom) and node.module else []
             for m in mods:
+                if m == "urllib.request":
+                    assert py == APP / "ollama_generator.py", (py.name, m)
+                    continue
                 assert m not in banned and m.split(".")[0] not in {"requests", "httpx", "aiohttp", "openai", "anthropic", "smtplib"}, (py.name, m)
 
 

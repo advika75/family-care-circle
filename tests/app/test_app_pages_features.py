@@ -7,7 +7,7 @@ import threading
 
 import pytest
 
-from app import circle, notes, permissions as P
+from app import circle, notes, outputs, permissions as P
 from conftest import Site
 from fcc_testlib import (CLEAN_CHILD, PASSWORD, PATIENT_NAME, SOURCE_MARK, SOURCE_TEXT, TITLE, FakePipeline, assert_clean_page,
                          csrf_from, make_record)
@@ -35,10 +35,10 @@ def test_dashboard_shows_role_limited_cards_and_the_disclaimer_everywhere(full):
     patient = full.site["patient"].get(f"/p/{full.pid}").text
     assert "Patient summary" in patient and "Caregiver checklist" not in patient and "Child explanation" not in patient
     child = full.site["child"].get(f"/p/{full.pid}").text
-    assert "What is happening" in child and "Hi! This is about Grandma" in child and "tiny helpers" in child
+    assert "What is happening" in child and "Hi! This is about Grandma" in child and "trusted grown-up" in child
     for who in ("owner", "caregiver", "patient", "child"):
         html = full.site[who].get(f"/p/{full.pid}").text
-        assert html.count(DISCLAIMER) >= 2                                   # in the output card(s) and in the footer
+        assert DISCLAIMER in html
 
 
 def test_dashboard_shows_updated_time_and_note_title_to_adults_only(full):
@@ -68,12 +68,12 @@ def test_empty_state_has_an_action_only_for_people_who_can_add_notes(world, app,
         assert_clean_page(html)
 
 
-def test_a_note_in_progress_shows_a_polling_skeleton_and_keeps_old_outputs(full, conn, ctx, runner):
+def test_a_note_in_progress_shows_a_polling_skeleton_without_stale_outputs(full, conn, ctx, runner):
     notes.add_note(conn, ctx, runner, full.users["owner"], full.p, title="Next", text="more")        # queued
     html = full.site["patient"].get(f"/p/{full.pid}").text
     assert f'data-poll-url="/api/p/{full.pid}/status"' in html and 'data-poll-state="queued"' in html
     assert 'class="skeleton"' in html and "A new note is being prepared" in html and "Refresh now" in html
-    assert "strep throat" in html                                          # the previous summary stays visible
+    assert "strep throat" not in html                                     # prior output must not look current
     assert "Next" not in html                                              # the patient is not told the note's title
     assert "Next" in full.site["owner"].get(f"/p/{full.pid}").text
 
@@ -90,6 +90,18 @@ def test_failed_generation_is_explained_to_adults_and_generic_for_others(world, 
     assert "Please ask the person who manages the care circle" in child and "Bad" not in child and "Please try adding it again" not in child
 
 
+def test_failed_new_note_does_not_leave_an_older_child_output_looking_current(full, conn, ctx, runner, pipeline):
+    pipeline.fail_with = RuntimeError("synthetic failure")
+    notes.add_note(conn, ctx, runner, full.users["owner"], full.p, title="New", text="Synthetic note without a diagnosis.")
+    runner.drain()
+
+    assert outputs.latest_outputs(conn, full.users["child"], full.p)["available"] is False
+    patient_page = full.site["patient"].get(f"/p/{full.pid}").text
+    child_page = full.site["child"].get(f"/p/{full.pid}").text
+    assert "strep throat" not in patient_page and "tiny helpers" not in child_page
+    assert "latest note could not be prepared" in full.site["owner"].get(f"/p/{full.pid}").text.lower()
+
+
 # ================================================================================================== summaries
 def test_tabs_are_limited_to_the_versions_a_role_may_see(full):
     owner = full.site["owner"].get(f"/p/{full.pid}/summaries").text
@@ -101,15 +113,16 @@ def test_tabs_are_limited_to_the_versions_a_role_may_see(full):
         assert 'aria-label="Choose a version"' not in full.site[who].get(f"/p/{full.pid}/summaries").text
 
 
-def test_each_tab_shows_its_own_output_with_disclaimer_and_provenance(full):
+def test_each_tab_shows_its_own_output_with_safety_notice_in_the_footer(full):
     s = full.site["caregiver"]
     p = s.get(f"/p/{full.pid}/summaries?tab=patient").text
-    assert "You have strep throat" in p and "tiny helpers" not in p and DISCLAIMER in p.split("<footer")[0]
+    assert "You have strep throat" in p and "tiny helpers" not in p and DISCLAIMER not in p.split("<footer")[0]
+    assert DISCLAIMER in p.split("<footer")[1]
     assert "from note “Clinic visit”" in p
     c = s.get(f"/p/{full.pid}/summaries?tab=caregiver").text
     assert "Give Amoxicillin 500 mg twice a day" in c and "0 of 3 done" in c
     k = s.get(f"/p/{full.pid}/summaries?tab=child").text
-    assert "tiny helpers" in k and "persona-child" in k
+    assert "trusted grown-up" in k and "persona-child" in k
     assert "You have strep throat" in s.get(f"/p/{full.pid}/summaries?tab=nonsense").text          # unknown tab -> first tab
 
 
@@ -117,7 +130,7 @@ def test_flags_source_and_history_are_for_adults_only(full, conn, ctx, runner, p
     pipeline.record_factory = lambda text: make_record(patient="Second summary.")
     notes.add_note(conn, ctx, runner, full.users["owner"], full.p, title="Follow-up", text=SOURCE_MARK + " second"); runner.drain()
     adult = full.site["caregiver"].get(f"/p/{full.pid}/summaries?tab=patient").text
-    assert "Review flags" in adult and "Source note: Follow-up" in adult and SOURCE_MARK in adult
+    assert "Review flags" not in adult and "Source note: Follow-up" in adult and SOURCE_MARK in adult
     assert "Earlier notes" in adult and "Clinic visit" in adult
     older = full.site["caregiver"].get(f"/p/{full.pid}/summaries?tab=patient&note=1").text
     assert "You are looking at an earlier note" in older and "You have strep throat" in older and "Second summary." not in older.split("persona-body")[1].split("</section>")[0]
@@ -126,7 +139,7 @@ def test_flags_source_and_history_are_for_adults_only(full, conn, ctx, runner, p
         assert "Review flags" not in html and "Source note" not in html and "Earlier notes" not in html and SOURCE_MARK not in html
 
 
-def test_review_flags_explain_what_to_check(world, app, ctx, conn, runner, pipeline):
+def test_review_notice_is_concise_and_hides_internal_generation_details(world, app, ctx, conn, runner, pipeline):
     rec = make_record(child="You will take it for 3 days. Rest well.")
     rec["metadata"]["fallback_used"]["patient_summary"] = True
     rec["metadata"]["missing_after_retries"]["patient_summary"] = ["10 days"]
@@ -137,10 +150,10 @@ def test_review_flags_explain_what_to_check(world, app, ctx, conn, runner, pipel
     notes.add_note(conn, ctx, runner, owner, p, title="Flagged", text=SOURCE_TEXT); runner.drain()
     s = Site(app); s.login(owner["email"])
     html = s.get(f"/p/{p['patient_id']}/summaries?tab=child").text
-    assert "to check)" in html and "added automatically" in html and "10 days" in html and "cut off" in html
-    assert "900 mg" in html and "withheld by the safety check" in html and "it contained a number" in html
-    assert "The safety check held back the generated child explanation" in html
-    assert "A grown-up will help explain what the doctor said." in html and "3 days" not in html.split("Review flags")[0]
+    assert "Please review the note" in html and "Some generated details could not be confirmed" in html
+    for internal in ("Review flags", "added automatically", "cut off", "900 mg", "retries", "model_id"):
+        assert internal not in html
+    assert "The note has information about someone&#39;s health." in html and "3 days" not in html
 
 
 def test_hostile_text_is_escaped_in_titles_names_notes_and_labels(world, app, ctx, conn, runner, pipeline):
@@ -198,14 +211,16 @@ def test_tick_requires_csrf(full):
     assert "0 of 3 done" in full.site["owner"].get(f"/p/{full.pid}/summaries?tab=caregiver").text
 
 
-def test_empty_checklist_state(world, app, ctx, conn, runner, pipeline):
+def test_empty_checklist_uses_review_fallback_and_visible_flag(world, app, ctx, conn, runner, pipeline):
     pipeline.record_factory = lambda text: {**make_record(), "caregiver_checklist": []}
     owner = world.user("Owner"); p = world.profile(owner, "Empty List")
     notes.add_note(conn, ctx, runner, owner, p, title="x", text="t"); runner.drain()
     s = Site(app); s.login(owner["email"])
     assert conn.execute("SELECT COUNT(*) FROM outputs WHERE profile_id = ?", (p["id"],)).fetchone()[0] == 1
+    assert conn.execute("SELECT status FROM notes WHERE profile_id = ?", (p["id"],)).fetchone()[0] == "done"
     html = s.get(f"/p/{p['patient_id']}/summaries?tab=caregiver").text
-    assert "This checklist has no items" in html and "Mark done" not in html
+    assert "Some generated details could not be confirmed" in html
+    assert "Mark done" in html
 
 
 # ============================================================================================ circle management

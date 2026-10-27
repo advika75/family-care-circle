@@ -10,8 +10,9 @@ MEDS = ["Amoxicillin", "Ibuprofen", "Vitamin D 3"]
 
 
 def test_clean_text_passes():
-    text = ("You have a sore throat. The doctors are helping you. Your medicine is like a team of tiny helpers. "
-            "The grown-ups are taking care of you.")
+    # The child is a separate role from the patient, so child text speaks about the patient in the third person.
+    text = ("Grandma has a sore throat. The doctors are helping her. Her medicine is like a team of tiny helpers. "
+            "The grown-ups are taking care of her.")
     assert safety.check_child_text(text, MEDS) == []
 
 
@@ -30,7 +31,8 @@ def test_medication_names_withhold_case_insensitively(text):
 
 def test_medication_match_respects_word_boundaries():
     assert safety.check_child_text("An amoxicillinlike story.", MEDS) == []       # not a whole word
-    assert safety.check_child_text("Your medicine helps you.", MEDS) == []        # the word "medicine" is fine
+    # The child is a separate role from the patient, so child text speaks about the patient in the third person.
+    assert safety.check_child_text("Her medicine helps her.", MEDS) == []         # the word "medicine" is fine
 
 
 def test_only_this_notes_medications_are_checked():
@@ -69,8 +71,16 @@ def test_medication_names_come_from_entities_and_regimens_longest_first():
 
 
 def test_safe_message_is_the_specified_text_and_passes_its_own_gate():
-    assert safety.SAFE_CHILD_MESSAGE == "A grown-up will help explain what the doctor said."
+    assert safety.SAFE_CHILD_MESSAGE == ("The note has information about someone's health. Their care team can explain what it means. "
+                                         "You can ask a trusted adult if you have questions.")
     assert safety.check_child_text(safety.SAFE_CHILD_MESSAGE, MEDS) == []
+
+
+def test_child_grounding_gate_rejects_unsupported_claims_and_medication_instructions():
+    unsupported = safety.check_child_text("You had a heart attack.", MEDS, "Patient reports a mild cough.")
+    assert safety.REASON_UNSUPPORTED_CLAIM in unsupported
+    instruction = safety.check_child_text("You need to take special medicine.", MEDS, "Patient reports a mild cough.")
+    assert safety.REASON_UNSUPPORTED_CLAIM in instruction
 
 
 # ------------------------------------------------------------------------------------------ F-14 (Phase B)
@@ -131,9 +141,12 @@ def test_f14_stricter_sentence_splitter():
 
 
 @pytest.mark.parametrize("text", [
-    "You are a bit sick. The doctors help you. Rest and drink water. Your family is near. You will feel better soon.",
-    "Your body is fighting germs. Sleep helps your body get strong. Grown-ups are taking care of you.",
-    "Your medicine helps you feel better. Drink water and rest. The nurse is kind.",
+    # The child is a separate role from the patient, so child text speaks about the patient in the third person.
+    "Grandma is a bit sick. The doctors help her. She rests and drinks water. Her family is near. You can visit her.",
+    # The child is a separate role from the patient, so child text speaks about the patient in the third person.
+    "Her body is fighting germs. Sleep helps her body get strong. Grown-ups are taking care of her.",
+    # The child is a separate role from the patient, so child text speaks about the patient in the third person.
+    "Her medicine helps her body. She drinks water and rests. The nurse is kind.",
 ])
 def test_f14_ordinary_child_text_still_passes(text):
     assert safety.check_child_text(text, MEDS2) == []

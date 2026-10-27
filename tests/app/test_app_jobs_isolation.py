@@ -71,6 +71,22 @@ def test_an_exception_in_the_worker_process_fails_the_note_without_leaking_its_t
         r.shutdown()
 
 
+def test_ollama_safe_failure_message_survives_process_boundary(conn, ctx, settings, world):
+    from fcc_testlib import OllamaTimeoutPipelineFactory
+    from app.ollama_generator import OllamaTimeout
+
+    owner = world.user("Owner"); profile = world.profile(owner)
+    r = JobRunner(settings, ctx, pipeline_factory=OllamaTimeoutPipelineFactory(), isolation="process", job_timeout=10)
+    try:
+        note = notes.add_note(conn, ctx, r, owner, profile, title="synthetic", text="synthetic note")
+        r.drain()
+        row = status(conn, note["id"])
+        assert row["status"] == "failed"
+        assert row["error_message"] == OllamaTimeout.safe_message
+    finally:
+        r.shutdown()
+
+
 def test_process_mode_produces_the_same_outputs_with_the_real_mock_pipeline(conn, ctx, settings, world):
     from functools import partial
     from app.pipeline_adapter import build_pipeline
@@ -90,6 +106,7 @@ def test_process_mode_produces_the_same_outputs_with_the_real_mock_pipeline(conn
 
 def test_defaults_isolate_the_real_model_and_not_the_mock():
     assert Settings(backend="llama_cpp").effective_job_isolation == "process"
+    assert Settings(backend="ollama").effective_job_isolation == "process"
     assert Settings(backend="mock").effective_job_isolation == "thread"
     assert Settings(backend="mock", job_isolation="process").effective_job_isolation == "process"
     assert Settings().job_timeout_seconds == 900

@@ -11,7 +11,7 @@ from app import notes
 from fcc_testlib import CLEAN_CHILD, make_record
 
 SECRETS_FOR_CHILD_AND_PATIENT = ["ZEBRA-SOURCE-TOKEN", "Note 1", "Clinic visit"]
-DISCLAIMER = "Research prototype. Not medical advice. Check doses and instructions with the care team."
+DISCLAIMER = "Generated text may be inaccurate. Not a substitute for professional medical advice. Check doses and instructions with the care team."
 
 
 @pytest.fixture
@@ -60,8 +60,9 @@ def test_child_receives_only_the_child_explanation_and_no_clinical_detail(circle
     assert set(data) == {"available", "output_id", "updated_at", "disclaimer", "child_explanation", "generation"}
     assert data["child_explanation"] == CLEAN_CHILD and data["disclaimer"] == DISCLAIMER
     text = body(r).replace(DISCLAIMER, "")          # the mandated disclaimer itself says "doses": not a dose value
+    assert "note" not in data
     for leak in SECRETS_FOR_CHILD_AND_PATIENT + ["Amoxicillin", "Ibuprofen", "500", "mg", "10 days", "patient_summary",
-                                                 "caregiver_checklist", "flags", "retention", "entities", "dose", "model_id", "note"]:
+                                                 "caregiver_checklist", "flags", "retention", "entities", "dose", "model_id"]:
         assert leak not in text, leak
     assert not any(ch.isdigit() for ch in data["child_explanation"])
 
@@ -179,11 +180,11 @@ def test_a_newer_note_replaces_the_latest_view_and_keeps_history_for_adults(conn
     assert older["patient_summary"].startswith("You have strep throat")
 
 
-def test_previous_output_stays_visible_while_a_newer_note_is_being_prepared(conn, ctx, runner, circle_world):
+def test_previous_output_is_hidden_while_a_newer_note_is_being_prepared(conn, ctx, runner, circle_world):
     notes.add_note(conn, ctx, runner, circle_world.users["owner"], circle_world.p, title="Next", text="more text")       # queued, not run
     for who in ("owner", "patient", "child"):
         data = circle_world.b[who].get(f"/api/p/{circle_world.pid}/outputs").json()
-        assert data["available"] and data["generation"]["state"] == "queued", who
+        assert not data["available"] and data["generation"]["state"] == "queued", who
     patient = circle_world.b["patient"].get(f"/api/p/{circle_world.pid}/status").json()
     assert patient["state"] == "queued" and "note" not in patient
     assert circle_world.b["owner"].get(f"/api/p/{circle_world.pid}/status").json()["note"]["title"] == "Next"

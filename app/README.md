@@ -1,45 +1,78 @@
 # Family Care Circle — multi-user web app (`app/`)
 
-> **Prototype. Not for real patient data.** Research prototype. Not medical advice. Check doses and instructions with the care team.
+> **Prototype. Not for real patient data.** Family Care Circle is a research prototype. Generated text may be inaccurate and is not a substitute for professional medical advice. Check doses and instructions with the care team. Use synthetic or practice information only.
 
-A self-hosted web application in which a **profile creator** makes a patient profile, gets a patient ID, and invites family members. Each member sees only the AI-generated output suited to their role: a **patient summary**, a **caregiver checklist**, and a **child explanation**. The text is produced by the research pipeline in `src/` (called, never modified), running locally. No outbound network calls and no commercial LLM API are made at runtime.
+A self-hosted web application in which a **profile creator** makes a patient profile, gets a patient ID, and invites family members. Each member sees only the AI-generated output suited to their role: a **patient summary**, a **caregiver checklist**, and a **child explanation**. The text is produced by the research pipeline in `src/` (called, never modified). Mock and llama.cpp modes make no model API calls. The optional Ollama mode sends prompts to the configured Ollama server; it defaults to loopback and refuses remote hosts unless explicitly allowed.
 
 Stack: FastAPI + Uvicorn, SQLite (stdlib `sqlite3`), Jinja2 server-rendered templates, static CSS, a small vanilla-JavaScript file. No Node toolchain.
+
+Account and application data are stored in SQLite. Sessions have a seven-day absolute expiry by default
+(`APP_SESSION_TTL_HOURS=168`); expiry removes only the session, and the account can sign in again.
 
 ## Run it
 
 ```bash
 .venv/bin/python -m pip install -r requirements-app.txt     # fastapi, uvicorn, jinja2, python-multipart, httpx (tests)
-make app-run                                                # http://127.0.0.1:8000  (mock backend, no model needed)
-make app-seed                                               # optional: SYNTHETIC demo accounts, on an EMPTY database
+make app-demo                                               # http://127.0.0.1:8000  (mock backend, no model needed)
+make app-demo-seed                                          # optional: SYNTHETIC demo accounts, on an EMPTY demo database
+make app-seed                                               # optional: seed the separate APP_DB_PATH database used by app-run
 make app-test                                               # the app's own tests
 ```
 
 `make` calls `python`, so activate the project's environment first (`source .venv/bin/activate`) or put `.venv/bin` on your `PATH`.
+`make app-demo` selects the mock backend, uses `app/var/demo.sqlite3`, and binds only to port 8000. It prints the backend and URL, does not start Ollama or a local model, and exits if that port is already in use. For the Ollama demo, Ollama runs separately and the app checks the configured URL and model tag before it starts.
 
-**With the real model** (the local Qwen2.5-3B GGUF configured in `config.yaml`, via `llama-cpp-python` as described in the main README):
+**With the llama.cpp model** (the local Qwen2.5-3B GGUF configured in `config.yaml`, via `llama-cpp-python` as described in the main README):
 
 ```bash
 APP_BACKEND=llama_cpp make app-run
 ```
 
-The model is loaded lazily by the single worker thread when the first note is processed. In the one real-model run made while building this (one synthetic note from `data/raw`, scripted through `python -m app.dev_seed --notes 1`), generation took **81 s**, and the stored model hash was identical to the one recorded in the research runs. Pages show a "being prepared" state and update on their own.
+The model is loaded lazily in the isolated worker process when the first note is processed. In the one real-model run made while building this (one synthetic note from `data/raw`, scripted through `python -m app.dev_seed --notes 1`), generation took **81 s**, and the stored model hash was identical to the one recorded in the research runs. Pages show a "being prepared" state and update on their own.
 
-With the **mock** backend the child explanation is always withheld by the safety gate (the mock writes 9 sentences and the limit is 8). That is expected, not a bug; use the real model to see child text.
+The **mock** backend uses deterministic templates for all three audiences. Its child text only names a topic when that wording appears in the note; otherwise it uses a calm general message. The app adds app-specific grounding rules to model prompts and applies conservative phrase checks before saving text. These checks catch some unsupported claims but cannot establish clinical accuracy.
+
+### Persona-output investigation
+
+The stored field mappings and role-specific API permissions were correct. The earlier mock child template exceeded the sentence limit, and the mock caregiver writer appended generic tasks that were not always supported by the note. The pipeline's structural validation did not check whether a generated diagnosis or procedure was supported by the source. The app now replaces unsupported high-impact claims with calm review text and does not show a previous note's output while a newer note is pending or failed. A screenshot alone cannot establish the origin of an earlier saved claim; the original note and output record are needed for that.
+
+The app supplies its own deterministic mock generator without changing `src/`: caregiver items use extracted note regimens and explicit instructions; the mock child view uses a calm general message rather than naming a diagnosis. A malformed checklist is replaced with note-based review steps or a general request to review the note with the care team. Internal retry counts, model identity, and detailed flags stay out of the ordinary summary UI. These controls are conservative filters, not proof of factual or clinical correctness.
+
+### Optional Ollama backend
+
+Install Ollama using its [official download instructions](https://ollama.com/download), start the local service if it is not already running (`ollama serve`), and pull a model tag you choose. For example:
+
+```bash
+ollama serve                         # in a separate terminal, if Ollama is not already running
+ollama pull qwen2.5:3b               # once, before starting the demo
+make app-demo-ollama                 # http://127.0.0.1:8001
+```
+
+`app-demo-ollama` explicitly selects `APP_BACKEND=ollama`, defaults to `APP_OLLAMA_MODEL=qwen2.5:3b`, `APP_OLLAMA_URL=http://127.0.0.1:11434`, a 120-second per-request timeout, a 1200-second whole-job timeout (at least 3 personas x 3 attempts x 120 s; preflight refuses to start if the job timeout is shorter), process isolation, and fixed web port 8001. Override these Make variables when invoking the target, for example `make app-demo-ollama APP_OLLAMA_MODEL=qwen2.5:7b`. Startup first queries `GET /api/tags` and checks that the exact selected model tag is installed; it sends no note and makes no generation request during preflight. It stops before serving if Ollama is unreachable or the model is missing. Uvicorn binds only to port 8001 and exits with an address-in-use error if another service already owns it; the target never falls back to mock or silently changes ports. See Ollama's [chat API](https://docs.ollama.com/api/chat) and [model tags API](https://docs.ollama.com/api/tags).
+
+| Variable | Default | Meaning |
+|---|---|---|
+| `APP_OLLAMA_URL` | `http://127.0.0.1:11434` | Ollama base URL; non-loopback hosts are refused by default |
+| `APP_OLLAMA_MODEL` | unset | Exact installed Ollama tag to use |
+| `APP_OLLAMA_TIMEOUT_SECONDS` | `120` | Timeout for each Ollama HTTP request |
+| `APP_OLLAMA_ALLOW_REMOTE` | `0` | Set to `1` to permit a non-loopback host. This sends note text over the network and breaks the project's local-processing privacy claim. |
+
+Ollama receives structured system/user messages, with app-specific grounding rules added for child output. The adapter passes configured sampling values, per-persona token limits, and the context size. Ollama applies its installed model's own chat template, so formatting and outputs can differ from the llama.cpp GGUF used for the paper. Backend and model identity are kept in internal output metadata and are not shown in ordinary summary cards; keep Ollama runs separate from research results. The Ollama digest from `/api/tags` is recorded as the model hash.
 
 ### Configuration (environment variables; nothing secret lives in the repo)
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `APP_BACKEND` | `mock` | `mock` or `llama_cpp` |
+| `APP_BACKEND` | `mock` | `mock`, `llama_cpp`, or `ollama` |
 | `APP_DB_PATH` | `app/var/familycare.sqlite3` | SQLite file (created `0600`, directory `0700`; `app/var/` is git-ignored) |
 | `APP_HTTPS` | `0` | `1` marks cookies `Secure` and sends HSTS. The app does **not** terminate TLS itself |
 | `APP_SECRET_KEY` | random per process | key for CSRF tokens; if unset, anonymous (login/signup) tokens stop working after a restart |
 | `APP_SESSION_TTL_HOURS` | `168` | absolute session lifetime |
 | `APP_INVITE_TTL_DAYS` | `7` | invitation lifetime |
 | `APP_TRUSTED_PROXIES` | none | comma-separated **exact addresses** of reverse proxies whose `X-Forwarded-For` header may be believed (no CIDR ranges). Leave empty unless you run behind a proxy; see "What is NOT secured" |
-| `APP_JOB_ISOLATION` | `auto` | `auto` = the real model runs in a separate process that is killed on timeout; the mock runs in a thread. `process` or `thread` to force one |
+| `APP_JOB_ISOLATION` | `auto` | `auto` = llama.cpp and Ollama run in a separate process that is killed on timeout; the mock runs in a thread. `process` or `thread` to force one |
 | `APP_JOB_TIMEOUT_SECONDS` | `900` | a generation running longer than this is stopped and the note marked failed (process isolation only) |
+| `APP_OLLAMA_URL` / `APP_OLLAMA_MODEL` / `APP_OLLAMA_TIMEOUT_SECONDS` / `APP_OLLAMA_ALLOW_REMOTE` | loopback URL / unset / `120` / `0` | Ollama connection settings; see the Ollama section above |
 | `APP_MAX_PENDING_PER_CIRCLE` / `APP_MAX_PENDING_TOTAL` | `3` / `20` | notes waiting or running per care circle / in the whole app; more are refused with a clear message |
 | `APP_SEED_PASSWORD` | generated | only for `dev_seed`: one password (12+ chars) for all demo accounts |
 
@@ -117,10 +150,19 @@ PDF or photo upload, a recent-activity feed (it would show members what others d
 
 ## The AI-generated text
 
-* One **worker thread** runs one job at a time (the pipeline keeps per-instance state), first in first out, with the pipeline built once per process. States: queued, running, done, failed. A failed job stores a fixed, safe message (never exception text). After a restart, notes left queued or running are re-queued.
+* One queue worker runs one job at a time (the pipeline keeps per-instance state), first in first out. Mock mode runs it in a thread; llama.cpp and Ollama use a separate process that can be stopped at the whole-job timeout. States: queued, running, done, failed. A failed job stores a fixed, safe message (never exception text). After a restart, notes left queued or running are re-queued.
 * For each note the app stores the three outputs plus the pipeline's own flags (retries, fallback used, truncated, redacted doses, retention, unsupported medicines/numbers, validation errors, model id and hash). The source text lives only in the `notes` table. Creators and caregivers see these flags (with plain-language explanations); patients and children never do.
-* Every output view shows: *Research prototype. Not medical advice. Check doses and instructions with the care team.*
-* **Child safety gate** (`app/safety.py`): before a child explanation is stored as displayable it is rejected, and the fixed message *A grown-up will help explain what the doctor said.* is shown instead, if it contains **a digit of any kind** (including circled, superscript and fraction forms), **a spelled-out number or dose word** (zero to ninety-nine, hundred, thousand, dozen, half, once, twice, thrice), **a unit word** (mg, mcg, ml, milligram, tablet, capsule, pill, unit and similar), **a medication name extracted from that note** (any case, plurals and possessives included, invisible zero-width characters ignored), **a frightening word** (die, death, dying, cancer, tumour/tumor, fatal, terminal, surgery, hospital stay), **more than 8 sentences** (sentences end at `. ! ? … ; :` or a line break), or **more than 120 words** (so a long run-on with no punctuation cannot count as one sentence). The limit of 8 matches the pipeline's own prompt of "5 to 8 sentences"; the first draft of the spec said 6. **At 6 the gate withheld 65 of the 100 stored real-model child outputs; at 8 it withheld 17** (measured before the F-14 rules were added), which is why 8 was kept. The reason is recorded in the flags, visible to creators and caregivers only, and the rejected text is not stored.
+* **Lab values are not doses** (`app/pipeline_adapter.py`, `AppEntityExtractor`): a dose-like match followed by `/dL`, `/L`, `per dL` or `per liter` (for example `168 mg/dL`, `140 mEq/L`) is dropped from the app pipeline's entities, so it is never a "required dose". Dose rates such as `10 mg/kg` are kept. The research extractor is unchanged.
+* **Patient summary after a pipeline fallback** (`app/outputs.py`): if the research pipeline's generic empty-output text replaced the whole draft, the patient sees *Summary unavailable. Please ask your care team to go over the visit notes with you.* and a warning, never the appended "Important details" list. If a real draft was kept but facts were appended or a dose was redacted, the draft is shown with a review warning that the patient also sees.
+* **Child perspective**: the child is a separate role from the patient. For the child persona the app replaces the research prompt's "talk to the child as you" rule with a third-person rule (first name only from an explicit `Patient:` or `Name:` line, otherwise "the person"), and the child gate withholds health statements addressed to "you".
+* **Dose-to-drug check** (`app/dose_check.py`): in the patient summary and caregiver checklist, each dose is attached to the nearest medicine name in the same sentence or line (within 50 characters) and compared with the doses the note gives for that medicine (extracted regimens plus numbered or bulleted medicine-list lines). A sentence or line whose dose belongs to another medicine, or names a medicine the note does not support, is removed, flagged `dose_mismatch`, and the patient and caregiver roles see *A detail was removed because it did not match the note. Please check doses with your care team.* Pronouns, unknown medicine names, frequencies and unit conversions are not checked.
+* **Recovery phrases** in the patient summary and caregiver checklist remove only the offending sentence or line (flag `recovery_removed`); if nothing is left the patient sees "Summary unavailable". The child text is still withheld whole. Other unsupported serious claims still replace the whole patient or caregiver text.
+* **Caregiver appendix lines** from the research retry loop ("Confirm with the care team: 30 mg (dosage)") are rendered from the extracted regimen that contains the fact ("Confirm with the care team: Prednisolone, 30 mg, daily, 4 more days."); a fact that matches no regimen is dropped.
+* **Outputs saved before the current checks** (flag `gate_version` below `GATE_VERSION`) are shown with the safe child message and a review warning instead of their stored child text.
+* **Ollama time budget**: one note can make up to 3 personas x 3 attempts model calls. The Ollama demo preflight refuses to start if `APP_JOB_TIMEOUT_SECONDS` is below that many per-request timeouts; the web app logs a warning. A failed job's log line names the persona and attempt that was running (fixed names and a count, never note text).
+* **Known limitation**: the research retry loop counts any medication word the note does not contain as invented, including an explanation such as "a hormone called insulin", and then replaces the draft with its generic text. `app/medication_check.py` is a context-aware reference check, but the pipeline cannot use it without a change in `src/`.
+* Every output view clearly states that generated text may be inaccurate and is not a substitute for professional medical advice. Check doses and instructions with the care team.
+* **Child safety checks** (`app/safety.py`, `app/clinical_safety.py`): text is replaced with *The note has information about someone's health. Their care team can explain what it means. You can ask a trusted adult if you have questions.* if it contains a digit, dose word, unit, extracted medication name, frightening term, unsupported serious diagnosis/procedure/event, unsupported recovery claim, child-as-patient claim, medication-change advice, more than 8 sentences, or more than 120 words. Phrase checks cover selected terms only and can miss paraphrases, implied claims, negation scope, or incorrect details that use different words. They do not guarantee accuracy; the generated text still needs review by the care team.
 
 **What the gate does not catch** (checked by a run and pinned by a test): brand names it has never seen ("Amoxil" when the note says amoxicillin, "Tylenol" when the extractor found no such medicine); misspellings of a drug name ("amoxicilin"); paraphrased fears that use none of the listed words ("you will not get better"); and a chain of short clauses joined only by commas, which counts as one sentence. It is a narrow, rule-based guard, not a content-safety system, and the patient and caregiver outputs are not gated at all.
 

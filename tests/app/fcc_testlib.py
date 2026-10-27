@@ -24,8 +24,7 @@ SOURCE_TEXT = (
     "2. Ibuprofen 200 mg PO q6h PRN pain.\n"
 )
 
-CLEAN_CHILD = ("You have a sore throat. The doctors are helping you. Your medicine is like a team of tiny helpers. "
-               "Rest and drink water. The grown-ups are taking care of you.")
+CLEAN_CHILD = "A trusted grown-up can explain what is happening. You can ask questions."
 
 
 def make_record(*, child: str = CLEAN_CHILD, valid: bool = True, patient: str | None = None,
@@ -198,3 +197,50 @@ class TestPipelineFactory:
 
     def __call__(self):
         return _TestPipeline()
+
+
+class _OllamaTimeoutPipeline:
+    def run(self, *_args, **_kwargs):
+        from app.ollama_generator import OllamaTimeout
+        raise OllamaTimeout()
+
+
+class OllamaTimeoutPipelineFactory:
+    """Picklable factory for verifying safe Ollama errors across the worker pipe."""
+
+    def __call__(self):
+        return _OllamaTimeoutPipeline()
+
+
+class _SilentGenerator:
+    backend, model_id, model_hash, seed, last_truncated = "fake", "fake", "fake", 1, False
+
+    def generate(self, messages, **overrides):
+        return "draft"
+
+
+class _ProgressPipeline:
+    """Makes one caregiver call and one caregiver retry through the app's prompt guard, then hangs on 'hang' notes or
+    raises on 'boom' notes (with private-looking text in the error), otherwise returns a normal record."""
+
+    def __init__(self):
+        from app.pipeline_adapter import _AppPromptGuard
+        self.generator = _AppPromptGuard(_SilentGenerator())
+
+    def run(self, text, doc_id="x"):
+        import time
+        first = [{"role": "system", "content": "s"}, {"role": "user", "content": "AUDIENCE: caregiver\n" + text}]
+        self.generator.generate(first)
+        self.generator.generate([*first, {"role": "assistant", "content": "draft"}, {"role": "user", "content": "again"}])
+        if text.startswith("hang"):
+            time.sleep(3600)
+        if text.startswith("boom"):
+            raise RuntimeError("PRIVATE-FRAGMENT 123-45-6789")
+        return make_record()
+
+
+class ProgressPipelineFactory:
+    """Picklable factory for the persona/attempt progress tests."""
+
+    def __call__(self):
+        return _ProgressPipeline()
